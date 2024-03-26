@@ -292,7 +292,7 @@ export default function Testimonials() {
               </div>
               <blockquote className="text-lg text-gray-400 grow">
                 
-              "Working with the team at Precious Infosystem has been a pleasure from start to finish. Their collaborative approach, proactive communication, and ability to understand our business needs set them apart. They delivered a software solution that has transformed our business processes. Highly recommend their services!"                         
+              "Working with the team at Zenqua Technologies has been a pleasure from start to finish. Their collaborative approach, proactive communication, and ability to understand our business needs set them apart. They delivered a software solution that has transformed our business processes. Highly recommend their services!"                         
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                 <cite className="text-gray-200 not-italic">Amanda Roberts</cite>{" "}
