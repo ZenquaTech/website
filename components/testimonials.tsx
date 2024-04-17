@@ -220,7 +220,7 @@ export default function Testimonials() {
                   className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
-                  CTO of Parikya Enterprises
+                  CTO of V7 Infotech
                 </a>
               </div>
             </div>
@@ -261,7 +261,7 @@ export default function Testimonials() {
                   className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
-                  COO of diaspark Industries
+                  COO of Nblik
                 </a>
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function Testimonials() {
                   className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
-                 Operations Manager at taskup Corporation
+                 Operations Manager at Open Track
                 </a>
               </div>
             </div>
