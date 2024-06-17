@@ -6,9 +6,12 @@ const LazyFeatures = dynamic(() => import("@/components/features"));
 const LazyTestimonials = dynamic(() => import("@/components/testimonials"));
 const LazyZigzag = dynamic(() => import("@/components/zigzag"));
 export const metadata = {
-  title: 'The leading Custom Software development solutions | Zenqua technology',
-  description: 'Top Software Development company In Indore offering Custom Solutions,app Development, Web design, and IT Services For Businesses WorldWide',
-  keywords:"best it custom software development company 2024 , best software development company in indore, top it services company in indore,best software services in indore, custom software development company , best app development company in indore, software development companies"
+  title:
+    "The leading Custom Software development solutions | Zenqua technology",
+  description:
+    "Top Software Development company In Indore offering Custom Solutions,app Development, Web design, and IT Services For Businesses WorldWide",
+  keywords:
+    "best it custom software development company 2024 , best software development company in indore, top it services company in indore,best software services in indore, custom software development company , best app development company in indore, software development companies,firebase expert,redis development services,redis solutions,firebase development company,firebase development services,vuejs services,nopcommerce development services",
 };
 
 export default function Home() {

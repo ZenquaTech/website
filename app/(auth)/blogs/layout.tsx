@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Driven by innovation, ZenQua is your reliable development partner for cutting-edge digital solutions. With our extensive expertise in custom web and mobile app development, we help automate businesses, empower agility and optimize digital experiences. Unleash the power of digital transformation and build a future-proof scaffolding for success.",
     keywords:
-      "web development, mobile app development, backend development, frontend development, eCommerce solutions, digital marketing, ZenQua Technologies",
+      "web development, mobile app development, backend development, frontend development, eCommerce solutions, digital marketing, ZenQua Technologies,firebase expert,redis development services,redis solutions,firebase development company,firebase development services,vuejs services,nopcommerce development services",
     openGraph: {
       title: "ZenQua Technologies Pvt Ltd | Premier Web and Mobile App Development Company",
       description:

@@ -63,7 +63,7 @@ export default function Header() {
   return (
     <>
       <header
-        className="absolute w-full z-30"
+        className="absolute w-full z-30 h-[100px]"
         // className="max-w-6xl mx-auto px-4 sm:px-6"
         style={{ justifyContent: "space-between", zIndex: 1000 }}
       >

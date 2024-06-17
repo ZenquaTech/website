@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title:"Flexible Engagement Models For Software Development | Hire Dedicated Teams Developers",
     description:"Explore Our Flexible Engagement models For Software Deveopment, Including Dedicated Terms, Fixed-Price, and time & Material Options To Meet Your Project Needs.",
     keywords:
-      "Engagement Models, Fixed Price Model, Time and Material Model, Dedicated Team, Team Formation, Scalable IT Solutions, Flexible Engagement Options, IT Project Management, Agile Development, Expert IT Services, Reliable IT Partner, Cost-Effective IT Solutions, Innovative IT Services, IT Security Solutions, Custom IT Engagement Models",
+      "Engagement Models, Fixed Price Model, Time and Material Model, Dedicated Team, Team Formation, Scalable IT Solutions, Flexible Engagement Options, IT Project Management, Agile Development, Expert IT Services,firebase expert,redis development services,redis solutions,firebase development company,firebase development services,vuejs services,nopcommerce development services, Reliable IT Partner, Cost-Effective IT Solutions, Innovative IT Services, IT Security Solutions, Custom IT Engagement Models",
     icons: {
       icon: new URL("/images/favicon.ico", metadataBase).toString(),
     },

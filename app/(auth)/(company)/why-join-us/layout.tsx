@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Discover exciting career opportunities at ZenQua! Explore industry trends and opportunities in Software Development, Digital Transformation, Mobile App Development, Enterprise Mobility, and more. Innovate and grow your career with ZenQua’s dynamic work environment and cutting-edge tech solutions.",
     keywords:
-      "ZenQua careers, software development, mobile app development, digital transformation, enterprise mobility, tech trends, IT careers, software outsourcing, innovation in tech, career opportunities, thought leadership, life at ZenQua, technology job opportunities, IT industry trends, explore tech careers.",
+      "ZenQua careers, software development, mobile app development, digital transformation, enterprise mobility,firebase expert,redis development services,redis solutions,firebase development company,firebase development services,vuejs services,nopcommerce development services, tech trends, IT careers, software outsourcing, innovation in tech, career opportunities, thought leadership, life at ZenQua, technology job opportunities, IT industry trends, explore tech careers.",
     icons: {
       icon: new URL("/images/favicon.ico", metadataBase).toString(),
     },
