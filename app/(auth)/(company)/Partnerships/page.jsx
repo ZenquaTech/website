@@ -1,11 +1,13 @@
 "use client";
-import { Button, Box, Typography, Grid, styled } from "@material-ui/core";
+import { Button, Box, Typography, styled,useMediaQuery, useTheme,Grid  } from "@mui/material";
 import Image from "next/image";
 import ModeStandbyTwoToneIcon from "@mui/icons-material/ModeStandbyTwoTone";
 import { useRouter } from "next/navigation";
 
 
 export default function Partnerships() {
+      const theme = useTheme();
+      const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const data = [
     {
       title: 'Channel Partners',
@@ -29,12 +31,11 @@ export default function Partnerships() {
       <Grid
         container
         //  className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
-           className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[100px]  mb-8"
-         >
-        <Grid item
-         xs={12}>
+        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[150px]  mb-8"
+      >
+        <Grid item xs={12}>
           <Box className="box-1">
-             <Typography className="typo-1">Explore Our Partnerships</Typography>
+            <Typography className="typo-1">Explore Our Partnerships</Typography>
             <Typography className="typo-2">
               We Don't Just Form Partnerships, We Build Alliances
             </Typography>
@@ -46,8 +47,10 @@ export default function Partnerships() {
               welcome any potential partner whose values are in-line with our
               own and whose goals align with ours.
             </Typography>
-            <Box style={{ marginTop: "5rem" }}>
-              <Button onClick={scrollToBottom} className="typo-4">Talk to Expert</Button>
+            <Box style={{ marginTop: "1rem" }}>
+              <Button onClick={scrollToBottom} className="typo-4">
+                Talk to Expert
+              </Button>
             </Box>
             <Box
               style={{
@@ -57,36 +60,36 @@ export default function Partnerships() {
               }}
             >
               <Typography className="typo-5">Channel Partnership</Typography>
-            </Box> 
-           
+            </Box>
           </Box>
         </Grid>
       </Grid>
 
       {/* //first container */}
 
-      <Grid 
-      container 
-      // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
-      className="w-full max-w-[100rem] mx-auto px-4 sm:px-6  mb-8"
+      <Grid
+        container
+        // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
+        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6  mb-8"
       >
         <Grid item xs={12} sm={6} md={6}>
-        {data.map((item, index) => (
-          <Box key={index}>
-            <Typography className="channel">{item.title}</Typography>
+          {data.map((item, index) => (
+            <Box key={index}>
+              <Typography className="channel">{item.title}</Typography>
 
-            {item.paragraphs.map((paragraph, idx) => (
-              <Typography key={idx} className={`typo-${idx + 6}`}>
-                {paragraph}</Typography>
-                ))}
+              {item.paragraphs.map((paragraph, idx) => (
+                <Typography key={idx} className={`typo-${idx + 6}`}>
+                  {paragraph}
+                </Typography>
+              ))}
 
-          {item.paragraphsone.map((paragraphsone, idx) => (
-           <Typography key={idx} className={`typo-${idx + 6}`}>
-              {paragraphsone}</Typography>
+              {item.paragraphsone.map((paragraphsone, idx) => (
+                <Typography key={idx} className={`typo-${idx + 6}`}>
+                  {paragraphsone}
+                </Typography>
+              ))}
+            </Box>
           ))}
-
-          </Box>
-        ))}
         </Grid>
 
         <Grid item xs={12} sm={6} md={6}>
@@ -104,11 +107,17 @@ export default function Partnerships() {
       {/* //second container */}
 
       <Grid
-        container 
+        container
         // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
         className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[100px]  mb-8"
+      >
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          style={{ order: isSmallScreen ? 2 : 1 }}
         >
-        <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
               marginTop: "4rem",
@@ -124,8 +133,14 @@ export default function Partnerships() {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
-            <Typography className="typo-8">Joint Venture</Typography>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          style={{ order: isSmallScreen ? 1 : 2 }}
+        >
+          <Typography className="typo-8">Joint Venture</Typography>
           <Box>
             <Typography className="typo-9">
               We assist you with the technology and business support along with
@@ -177,7 +192,7 @@ export default function Partnerships() {
             <Typography
               style={{
                 fontWeight: "bold",
-                fontSize: "45px",
+                fontSize: isSmallScreen ? "30px" : "45px",
                 color: "#fff",
                 margin: "3rem",
               }}
@@ -191,12 +206,12 @@ export default function Partnerships() {
       {/* //Third container */}
 
       <Grid
-        container 
+        container
         // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
         className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
-        >
+      >
         <Grid item xs={12} sm={6} md={6}>
-            <Typography className="typo-10">Offshore Partners</Typography>
+          <Typography className="typo-10">Offshore Partners</Typography>
           <Box>
             <Typography
               style={{
@@ -241,12 +256,18 @@ export default function Partnerships() {
 
       {/* //fourth container */}
 
-      <Grid 
-      container 
+      <Grid
+        container
         // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
         className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
       >
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          style={{ order: isSmallScreen ? 2 : 1 }}
+        >
           <Box
             style={{
               marginTop: "4rem",
@@ -262,34 +283,40 @@ export default function Partnerships() {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
-            <Typography
-              style={{
-                fontWeight: "bold",
-                fontSize: "25px",
-                display: "flex",
-                justifyContent: "center",
-                color: "#fff",
-              }}
-            >
-              Joint Venture
-            </Typography>
-  
-            <Typography
-              style={{
-                margin: "2rem",
-                color: "rgba(255,255,255,.75)",
-                fontSize: "16px",
-                display: "flex",
-                justifyContent: "center",
-                textAlign: "justify",
-              }}
-            >
-              We assist you with the technology and business support along with
-              the training and development to get ahead of our competition.
-              Through long-term relations, we can always remain mutually
-              beneficial both financially and stable business practices.
-            </Typography>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          style={{ order: isSmallScreen ? 1 : 2 }}
+        >
+          <Typography
+            style={{
+              fontWeight: "bold",
+              fontSize: "25px",
+              display: "flex",
+              justifyContent: "center",
+              color: "#fff",
+            }}
+          >
+            Joint Venture
+          </Typography>
+
+          <Typography
+            style={{
+              margin: "2rem",
+              color: "rgba(255,255,255,.75)",
+              fontSize: "16px",
+              display: "flex",
+              justifyContent: "center",
+              textAlign: "justify",
+            }}
+          >
+            We assist you with the technology and business support along with
+            the training and development to get ahead of our competition.
+            Through long-term relations, we can always remain mutually
+            beneficial both financially and stable business practices.
+          </Typography>
           <Box
             style={{
               margin: "2rem",
@@ -333,7 +360,7 @@ export default function Partnerships() {
             <Typography
               style={{
                 fontWeight: "bold",
-                fontSize: "45px",
+                fontSize: isSmallScreen ? "30px" : "45px",
                 color: "#fff",
                 margin: "3rem",
               }}
@@ -345,8 +372,8 @@ export default function Partnerships() {
       </Grid>
 
       {/* //fifth container */}
-      <Grid 
-      container 
+      <Grid
+        container
         // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
         className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
       >
@@ -392,7 +419,6 @@ export default function Partnerships() {
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
-
               display: "flex",
               justifyContent: "center",
             }}
@@ -408,12 +434,22 @@ export default function Partnerships() {
       </Grid>
 
       {/* //sixth container */}
-      <Grid 
+      <Grid
         container
         // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
-        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
+        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8 "
+        // style={{
+        //   display: "flex",
+        //   flexDirection: isSmallScreen ? "column-reverse" : "row",
+        // }}
+      >
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          style={{ order: isSmallScreen ? 2 : 1 }}
         >
-        <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
               display: "flex",
@@ -428,7 +464,13 @@ export default function Partnerships() {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          style={{ order: isSmallScreen ? 1 : 2 }}
+        >
           <Box style={{ marginTop: "4rem" }}>
             <Typography
               style={{
@@ -491,16 +533,16 @@ export default function Partnerships() {
       </Grid>
 
       <Grid
-        container 
+        container
         // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
         className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
-        >
+      >
         <Grid item xs={12}>
           <Box>
             <Typography
               style={{
                 fontWeight: "bold",
-                fontSize: "45px",
+                fontSize: isSmallScreen ? "30px" : "45px",
                 color: "#fff",
                 textAlign: "center",
                 display: "flex",
@@ -533,7 +575,7 @@ export default function Partnerships() {
               style={{
                 color: "rgba(255,255,255,.75)",
                 fontWeight: "bold",
-                fontSize: "25px",
+                fontSize: isSmallScreen ? "18px" : "25px",
                 display: "flex",
                 justifyContent: "center",
               }}
@@ -565,7 +607,7 @@ export default function Partnerships() {
               style={{
                 color: "rgba(255,255,255,.75)",
                 fontWeight: "bold",
-                fontSize: "25px",
+                fontSize: isSmallScreen ? "18px" : "25px",
                 display: "flex",
                 justifyContent: "center",
               }}
@@ -595,36 +637,70 @@ export default function Partnerships() {
 
       {/* //seventh container */}
       <Grid className="w-full max-w-[100rem] mx-auto  mb-8">
-              <Box
-      // className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[100px]  mb-8"
-        style={{ display: "flex", flexDirection: "column", justifyContent: "center", fontSize: "18px", backgroundColor: "#019dce", textAlign: "center", marginBottom: "2rem" }}
+        <Box
+          // className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[100px]  mb-8"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            fontSize: "18px",
+            backgroundColor: "#019dce",
+            textAlign: "center",
+            marginBottom: "2rem",
+          }}
         >
-        <Grid container className="max-w-[95%] mx-auto py-6">
-          <Grid item sm={8} md={8}>
-            <Typography style={{ fontSize: "28px", color: "#fff", fontWeight: '600' }}>Partnerships Are Great. Let's Get Work Together</Typography>
+          <Grid container className="max-w-[95%] mx-auto py-6">
+            <Grid item sm={8} md={8}>
+              <Typography
+                style={{
+                  fontSize: isSmallScreen ? "20px" : "28px",
+                  color: "#fff",
+                  fontWeight: "600",
+                }}
+              >
+                Partnerships Are Great. Let's Get Work Together
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                  width: "100%",
+                }}
+              >
+                <Button
+                  onClick={scrollToBottom}
+                  style={{
+                    backgroundColor: "#fff",
+                    fontSize: "15px",
+                    color: "#019dce",
+                    borderRadius: "5px",
+                    textTransform: "none",
+                    padding: "8px 10px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Partner With Us
+                </Button>
+              </Box>
+            </Grid>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
-              <Button onClick={scrollToBottom} style={{ backgroundColor: "#fff", fontSize: "15px", color: "#019dce", borderRadius: "5px", textTransform: 'none', padding: '8px 10px', fontWeight: '600' }}>
-                Partner With Us
-              </Button>
-            </Box>
-          </Grid>
-        </Grid>
-      </Box>
-</Grid>
-
+        </Box>
+      </Grid>
     </MainWrapper>
   );
 }
 
-const MainWrapper = styled(Box)({
+const MainWrapper = styled(Box)(({ theme }) => ({
   "& .typo-1": {
     color: "white",
     // marginTop: "7rem",
     justifyContent: "space-around",
     fontWeight: "bold",
-   textAlign: "center",
+    textAlign: "center",
     fontSize: "15px",
     marginLeft: "1rem",
   },
@@ -636,6 +712,9 @@ const MainWrapper = styled(Box)({
     fontFamily: "sans-serif",
     color: "#fff",
     textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "27px", // Example: Adjust font size for small screens
+    },
   },
 
   "& .typo-3": {
@@ -643,7 +722,7 @@ const MainWrapper = styled(Box)({
     justifyContent: "space-around",
     fontSize: "18px",
     margin: "3%",
-    textAlign: "justify",
+    textAlign: "center",
     color: "rgba(255,255,255,.75)",
   },
   "& .typo-4": {
@@ -657,13 +736,16 @@ const MainWrapper = styled(Box)({
     color: "white",
     fontWeight: "bold",
     height: "50px",
-    textTransform:'none'
+    textTransform: "none",
   },
   "& .typo-5": {
     fontWeight: "bold",
     fontSize: "45px",
     margin: "3rem",
     color: "#fff",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "30px", // Example: Adjust font size for small screens
+    },
   },
 
   "& .channel": {
@@ -719,4 +801,4 @@ const MainWrapper = styled(Box)({
   //     display: "none",
   //   },
   // },
-});
+}));
