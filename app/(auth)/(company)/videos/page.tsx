@@ -2,7 +2,7 @@
 import { Paper, Typography, Avatar, Box, Grid } from "@material-ui/core";
 import React, { Component } from "react";
 
-export class page extends Component {
+export default class page extends Component {
   render() {
     const style1 = {
       height: "250px",
@@ -54,7 +54,10 @@ export class page extends Component {
               >
                 <Paper
                   style={{
-                    ...style1,
+                    height: "250px",
+                    flexWrap: "wrap",
+                    backgroundColor: "black",
+                    boxShadow: "0px 0px 5px white",
                     width: "100%",
                     boxSizing: "border-box",
                     // padding: "20px",
@@ -67,8 +70,8 @@ export class page extends Component {
                     title="1. Introduction to C++ | Data Structures and Algorithms | College Placement Course | Lecture 1"
                     // frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
                   ></iframe>
                 </Paper>
               </Grid>
@@ -87,7 +90,10 @@ export class page extends Component {
               >
                 <Paper
                   style={{
-                    ...style1,
+                    height: "250px",
+                    flexWrap: "wrap",
+                    backgroundColor: "black",
+                    boxShadow: "0px 0px 5px white",
                     width: "100%",
                     boxSizing: "border-box",
                     // padding: "20px",
@@ -100,8 +106,8 @@ export class page extends Component {
                     title="Javascript for beginners | chai aur #javascript"
                     // frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
                   ></iframe>
                 </Paper>
               </Grid>
@@ -178,4 +184,3 @@ export class page extends Component {
   }
 }
 
-export default page;

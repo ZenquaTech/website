@@ -85,7 +85,7 @@ const people: Person[] = [
   },
 ];
 
-export class page extends Component {
+export default class page extends Component {
   render() {
     const style1 = {
       flexWrap: "wrap" as "nowrap" | "wrap" | "wrap-reverse",
@@ -1027,4 +1027,3 @@ export class page extends Component {
   }
 }
 
-export default page;

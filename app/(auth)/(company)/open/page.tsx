@@ -6,7 +6,7 @@ import { FaRegCircleDot } from "react-icons/fa6";
 import { Divider } from "@material-ui/core";
 import { Button } from "reactstrap";
 
-class page extends Component {
+export default class page extends Component {
   render() {
     const style1 = {
       height: "max(70%,100%)",
@@ -129,7 +129,10 @@ class page extends Component {
               <Box className="flex justify-center">
                 <Paper
                   style={{
-                    ...style1,
+                    height: "max(70%,100%)",
+                    flexWrap: "wrap",
+                    backgroundColor: "transparent",
+                    boxShadow: "0px 0px 5px white",
                     width: "92%",
                     boxSizing: "border-box",
                     padding: "20px",
@@ -293,4 +296,4 @@ class page extends Component {
   }
 }
 
-export default page;
+

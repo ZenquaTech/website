@@ -867,12 +867,46 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
         ...stat,
         value: 0,
       })),
-      clickedButton5: "Backend Development",
-      clickedButton6: "Cost-Effectiveness",
+      backend: false,
+      frontend: false,
+      mobile: false,
+      framework: false,
+      ecommerce: false,
+      cms: false,
+      database: false,
+      devops: false,
+      digital: false,
       clickedButton2: "Big Data",
       clickedButton3: "Cost-Effectiveness",
       selectedService: "Backend Development",
       techTrendsButton: "Big Data",
+      State: {
+        backend: false,
+        frontend: false,
+        mobile: false,
+        framework: false,
+        ecommerce: false,
+        cms: false,
+        database: false,
+        devops: false,
+        digital: false,
+      },
+      clickedButton5: "Backend Development",
+      State2: {
+        Cost: false,
+        Vast: false,
+        Time: false,
+        Experienced: false,
+        Reduced: false,
+        Custom: false,
+      },
+      clickedButton6: "Cost-Effectiveness",
+      Cost: false,
+      Vast: false,
+      Time: false,
+      Experienced: false,
+      Reduced: false,
+      Custom: false,
     };
   }
 
@@ -1234,7 +1268,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                   >
                     <Box className="flex justify-center items-center text-[#5D5DFF]">
                       <div className="text-4xl font-bold text-purple-600">
-                        <CountUp end={item.number} />
+                        <CountUp end={Number(item?.number)} />
                       </div>
                       <AddIcon style={{ fontSize: "40px" }} />
                     </Box>
@@ -1279,7 +1313,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         <h3
                           className="font-bold flex items-center"
                           style={{
-                            color: "#9BA9B4",
+                            // color: "#9BA9B4",
                             width: "100%",
                             height: "40px",
                             marginTop: "3%",
@@ -1343,7 +1377,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               navButtonsAlwaysVisible={false}
               indicators={false}
               animation="slide"
-              direction="left"
+              // direction="left"
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -2304,7 +2338,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 navButtonsAlwaysVisible={false}
                 indicators={false}
                 animation="slide"
-                direction="left"
+                // direction="left"
                 sx={{
                   display: "flex",
                   flexDirection: "column",
@@ -2623,7 +2657,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               navButtonsAlwaysVisible={false}
               indicators={false}
               animation="slide"
-              direction="left"
+              // direction="left"
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -2712,7 +2746,10 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               >
                 <Paper
                   style={{
-                    ...style1,
+                    height: "max(70%,100%)",
+                    flexWrap: "wrap",
+                    backgroundColor: "transparent",
+                    boxShadow: "0px 0px 5px white",
                     width: "100%",
                     boxSizing: "border-box",
                     padding: "20px",
@@ -2803,7 +2840,10 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               >
                 <Paper
                   style={{
-                    ...style1,
+                    height: "max(70%,100%)",
+                    flexWrap: "wrap",
+                    backgroundColor: "transparent",
+                    boxShadow: "0px 0px 5px white",
                     width: "100%",
                     boxSizing: "border-box",
                     padding: "20px",

@@ -2,7 +2,7 @@
 import { Paper, Typography, Avatar, Box, Grid } from "@material-ui/core";
 import React, { Component } from "react";
 
-export class page extends Component {
+export default class page extends Component {
   render() {
     return (
       <>
@@ -73,5 +73,3 @@ export class page extends Component {
     );
   }
 }
-
-export default page;

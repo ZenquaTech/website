@@ -42,6 +42,7 @@ interface SubMenuItem {
 
 interface MenuItem {
   title: string;
+  href?: string;
   subMenu: SubMenuItem[];
 }
 
@@ -60,24 +61,25 @@ const menuData: MenuData = {
         title: "ABOUT US",
         subMenu: [
           { title: "Partnerships", href: "/Partnerships" },
-          { title: "Engagement Models" , href: "/EngagementModel" },
-          { title: "Global Delivery Models" , href:'/Global'},
-          { title: "Contact Us" , href:'ContactUs'},
+          { title: "Engagement Models", href: "/EngagementModel" },
+          { title: "Global Delivery Models", href: '/Global' },
+          { title: "Contact Us", href: 'ContactUs' },
         ],
       },
       {
         title: "INSIGHTS",
         subMenu: [
-          { title: "Blogs"},
+          { title: "Blogs" },
           { title: "White Papers" },
-          { title: "Videos" ,  href: "/videos" },
+          { title: "Videos", href: "/videos" },
         ],
       },
       {
         title: "CAREERS",
         subMenu: [
-          { title: "Open Positions" , href: "/open" }, 
-          { title: "Why Join Us" , href: "/why"  }],
+          { title: "Open Positions", href: "/open" },
+          { title: "Why Join Us", href: "/why" },
+        ],
       },
     ],
   },
@@ -85,30 +87,30 @@ const menuData: MenuData = {
     title: "TECHNOLOGIES",
     items: [
       {
-        title: "BACKEND", href: "/backend" ,
+        title: "BACKEND", href: "/backend",
         subMenu: [
-          { title: "NodeJS" , href:"/backend/nodejs" },
-          { title: "NestJS" , href:"/backend/nestjs" },
-          { title: "Python" , href:"/backend/python" },
+          { title: "NodeJS", href: "/backend/nodejs" },
+          { title: "NestJS", href: "/backend/nestjs" },
+          { title: "Python", href: "/backend/python" },
         ],
       },
       {
         title: "FRONTEND",
         subMenu: [
-          { title: "AngularJS" , href:'/frontend/angular' },
-          { title: "ReactJS"  ,  href:'/frontend/react' },
-          { title: "VueJS" ,  href:'/frontend/vue' },
-          { title: "NextJS" ,  href:'/frontend/next' },
+          { title: "AngularJS", href: '/frontend/angular' },
+          { title: "ReactJS", href: '/frontend/react' },
+          { title: "VueJS", href: '/frontend/vue' },
+          { title: "NextJS", href: '/frontend/next' },
         ],
       },
       {
         title: "MOBILE",
         subMenu: [
-          { title: "iOS"  , href:'/mobile/ios'},
-          { title: "Android" , href:'/mobile/android' },
-          { title: "Swift" , href:'/mobile/swift'},
-          { title: "Flutter" , href:'/mobile/flutter'},
-          { title: "React Native" , href:'/mobile/reactnative'},
+          { title: "iOS", href: '/mobile/ios' },
+          { title: "Android", href: '/mobile/android' },
+          { title: "Swift", href: '/mobile/swift' },
+          { title: "Flutter", href: '/mobile/flutter' },
+          { title: "React Native", href: '/mobile/reactnative' },
         ],
       },
       {
@@ -306,8 +308,14 @@ handleItemClick = () => {
                 aria-haspopup="true"
                 onMouseEnter={this.handleMenuEnter(menu)}
                 onMouseLeave={this.handleMenuLeave}
-                onMouseOver={(e) => (e.target.style.color = "#5D5DFF")}
-                onMouseOut={(e) => (e.target.style.color = "#ffffffbf")}
+                onMouseOver={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.color = "#5D5DFF";
+                }}
+                onMouseOut={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.color = "#ffffffbf";
+                }}
               >
                 <Box
                   style={{
@@ -370,17 +378,19 @@ handleItemClick = () => {
                                   fontSize: "12.544px",
                                   cursor: "pointer",
                                 }}
-                                onMouseOver={(e) =>
-                                  (e.target.style.color = "#5D5DFF")
-                                }
-                                onMouseOut={(e) =>
-                                  (e.target.style.color = "#ffffffbf")
-                                }
+                                onMouseOver={(e) => {
+                                  const target = e.target as HTMLElement;
+                                  target.style.color = "#5D5DFF";
+                                }}
+                                onMouseOut={(e) => {
+                                  const target = e.target as HTMLElement;
+                                  target.style.color = "#ffffffbf";
+                                }}
                               >
                                 {item.title}
                               </Typography>
                               </Link>
-                              {item.subMenu.length > 0 && (
+                              {item?.subMenu?.length > 0 && (
                                 <Box display="flex" flexDirection="column">
                                   {item.subMenu.map((subItem, subItemIndex) => (
                                     <Link
@@ -400,12 +410,14 @@ handleItemClick = () => {
                                           opacity: "0.75",
                                           lineHeight:'1.8rem'
                                         }}
-                                        onMouseOver={(e) =>
-                                          (e.target.style.color = "#5D5DFF")
-                                        }
-                                        onMouseOut={(e) =>
-                                          (e.target.style.color = "#ffffffbf")
-                                        }
+                                        onMouseOver={(e) => {
+                                          const target = e.target as HTMLElement;
+                                          target.style.color = "#5D5DFF";
+                                        }}
+                                        onMouseOut={(e) => {
+                                          const target = e.target as HTMLElement;
+                                          target.style.color = "#ffffffbf";
+                                        }}
                                         
                                       >
                                         {subItem.title}
@@ -470,12 +482,14 @@ handleItemClick = () => {
                                   fontSize: "12.544px",
                                   cursor: "pointer",
                                 }}
-                                onMouseOver={(e) =>
-                                  (e.target.style.color = "#5D5DFF")
-                                }
-                                onMouseOut={(e) =>
-                                  (e.target.style.color = "#ffffffbf")
-                                }
+                                onMouseOver={(e) => {
+                                  const target = e.target as HTMLElement;
+                                  target.style.color = "#5D5DFF";
+                                }}
+                                onMouseOut={(e) => {
+                                  const target = e.target as HTMLElement;
+                                  target.style.color = "#ffffffbf";
+                                }}
                               >
                                 {item.title}
                               </Typography>
@@ -499,12 +513,14 @@ handleItemClick = () => {
                                           opacity: "0.75",
                                           lineHeight:'1.8rem'
                                         }}
-                                        onMouseOver={(e) =>
-                                          (e.target.style.color = "#5D5DFF")
-                                        }
-                                        onMouseOut={(e) =>
-                                          (e.target.style.color = "#ffffffbf")
-                                        }
+                                        onMouseOver={(e) => {
+                                          const target = e.target as HTMLElement;
+                                          target.style.color = "#5D5DFF";
+                                        }}
+                                        onMouseOut={(e) => {
+                                          const target = e.target as HTMLElement;
+                                          target.style.color = "#ffffffbf";
+                                        }}
                                         onClick={()=>this.handleMenuLeave}
                                       >
                                         {subItem.title}

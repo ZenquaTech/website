@@ -97,22 +97,22 @@
     "project": [
         {
             "title": "Project Delivered",
-            "number": "2500"
+            "number": 2500
         },
         {
             
             "title": "Satisfied Clients",
-            "number": "800"
+            "number": 800
         },
         {
             
             "title": "Experts on Board",
-            "number": "100"
+            "number": 100
         },
         {
             
             "title": "Years of Experience",
-            "number": "14"
+            "number": 14
         }
 
     ]
