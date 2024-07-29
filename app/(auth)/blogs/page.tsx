@@ -5,11 +5,7 @@ import { Button } from "reactstrap";
 import ModalVideo from "@/components/modal-video";
 import VideoThumb from "@/public/images/hero-image-01.jpg";
 
-<<<<<<< HEAD
 export default class page extends Component {
-=======
-class page extends Component {
->>>>>>> master
   render() {
     const style1 = {
       // marginTop:'2%' ,
