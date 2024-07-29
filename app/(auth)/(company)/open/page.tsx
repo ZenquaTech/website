@@ -6,7 +6,7 @@ import { FaRegCircleDot } from "react-icons/fa6";
 import { Divider } from "@material-ui/core";
 import { Button } from "reactstrap";
 
-export class page extends Component {
+class page extends Component {
   render() {
     const style1 = {
       height: "max(70%,100%)",
