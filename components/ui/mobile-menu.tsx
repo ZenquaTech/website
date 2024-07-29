@@ -17,6 +17,7 @@ import {
 import { createTheme } from "@mui/material/styles";
 
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
+import { number } from "prop-types";
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     marginBottom: "3em",
@@ -57,12 +58,12 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "auto",
   },
   tab: {
-    ...theme.typography.tab,
+    ...theme.typography,
     minWidth: 10,
     marginLeft: "25px",
   },
   button: {
-    ...theme.typography.estimate,
+    ...theme.typography,
     borderRadius: "50px",
     marginLeft: "50px",
     marginRight: "50px",
@@ -81,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "0px",
   },
   menuItem: {
-    ...theme.typography.tab,
+    ...theme.typography,
     opacity: 0.7,
     "&:hover": {
       opacity: 1,
@@ -107,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
     width: "17em",
   },
   drawerItem: {
-    ...theme.typography.tab,
+    ...theme.typography,
     opacity: 1,
     fontSize: "16px",
     fontWeight: 500,
@@ -394,28 +395,28 @@ export default function MobileMenu() {
 
   const trigger = useRef<HTMLButtonElement>(null);
   const mobileNav = useRef<HTMLDivElement>(null);
-  const [openSubMenu, setOpenSubMenu] = useState(null);
-  const [openSubItem, setOpenSubItem] = useState(null);
+  const [openSubMenu, setOpenSubMenu] = useState(0);
+  const [openSubItem, setOpenSubItem] = useState(0);
 
-  const handleSubMenuToggle = (index) => {
-    setOpenSubMenu(openSubMenu === index ? null : index);
+  const handleSubMenuToggle = (index: number) => {
+    setOpenSubMenu(openSubMenu === index ? 0 : index);
   };
 
-  const handleSubItemToggle = (index) => {
-    setOpenSubItem(openSubItem === index ? null : index);
+  const handleSubItemToggle = (index:number) => {
+    setOpenSubItem(openSubItem === index ? 0 : index);
   };
 
-  const [selected, setSelected] = useState(null);
-  const [selectedTitle, setSelectedTitle] = useState(null);
-  const [selectedSubTitle, setSelectedSubTitle] = useState(null);
+  const [selected, setSelected] = useState(0);
+  const [selectedTitle, setSelectedTitle] = useState(0);
+  const [selectedSubTitle, setSelectedSubTitle] = useState(0);
 
-  const handleSelect = (index) => {
+  const handleSelect = (index:number) => {
     setSelected(index);
   };
-  const handleSelectTitle = (index) => {
+  const handleSelectTitle = (index:number) => {
     setSelectedTitle(index);
   };
-  const handleSelectSubTitle = (index) => {
+  const handleSelectSubTitle = (index:number) => {
     setSelectedSubTitle(index);
   };
 

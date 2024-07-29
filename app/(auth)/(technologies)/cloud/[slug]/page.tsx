@@ -65,12 +65,28 @@ class Content extends Component<ContentProps> {
 }
 
 class RoutePage extends Component<RoutePageProps, PageState> {
-  constructor(props: {}) {
+  constructor(props: RoutePageProps) {
     super(props);
     this.state = {
       clickedButton: "Frame Work",
       clickedButton6: "Cost-Effectiveness",
       hoveredCircle: 1,
+      Cost: false,
+      Vast: false,
+      Time: false,
+      Experienced: false,
+      Reduced: false,
+      Custom: false,
+      State2: {
+        backend: false,
+        Cost: false,
+        Vast: false,
+        Time: false,
+        Experienced: false,
+        Reduced: false,
+        Custom: false,
+        clickedButton6: "",
+      },
     };
   }
 
@@ -145,7 +161,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
     const { hoveredCircle } = this.state;
 
     const { params } = this.props;
-    const content = jsonData[params.slug] || {
+    const content = jsonData[params.slug as keyof typeof jsonData] || {
       title: "Page not found",
       body: "Content not available for this route.",
     };
@@ -171,15 +187,20 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               return (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-transparent p-8 flex flex-col text-left">
-                    <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">{item.heading1}</h2>
+                    <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">
+                      {item.heading1}
+                    </h2>
                     <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA]">
                       {item.heading2}
                     </h1>
                     <p className="text-xl my-2 text-justify text-[#9BA9B4]">
                       {item.para}
                     </p>
-                    <button className="bg-[#5D5DFF] text-[#D9E3EA] text-md mt-4 px-6 py-3 rounded-md h-14 w-40 font-medium" onClick={() => scrollToBottom()}>
-                    {item.button}
+                    <button
+                      className="bg-[#5D5DFF] text-[#D9E3EA] text-md mt-4 px-6 py-3 rounded-md h-14 w-40 font-medium"
+                      onClick={() => scrollToBottom()}
+                    >
+                      {item.button}
                     </button>
                   </div>
                   <div className="mt-20 flex justify-center">
@@ -226,7 +247,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
                       <Typography
                         variant="body1"
-                        style={{ color: "#9BA9B4", marginLeft: "2%", fontSize:'19px' , textAlign:'justify' }}
+                        style={{
+                          color: "#9BA9B4",
+                          marginLeft: "2%",
+                          fontSize: "19px",
+                          textAlign: "justify",
+                        }}
                       >
                         {item.para}
                       </Typography>
@@ -243,15 +269,15 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       <Button
                         variant="contained"
                         style={{
-                          alignItems:'center',
+                          alignItems: "center",
                           fontSize: "15px",
                           marginTop: "2%",
-                          textAlign:'center',
-                          flexWrap:'wrap',
+                          textAlign: "center",
+                          flexWrap: "wrap",
                           backgroundColor: "#5D5DFF",
                           color: "#D9E3EA",
-                          padding:'2%',
-                          fontWeight:'bold',
+                          padding: "2%",
+                          fontWeight: "bold",
                           textTransform: "uppercase",
                           // height: "55px",
                           width: "80%",
@@ -279,7 +305,16 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       <Typography className="typo-2 text-center text-[#D9E3EA]">
                         {item.heading2}
                       </Typography>
-                      <Typography className="text-justify py-2" style={{fontSize:'19px' , color:'#9BA9B4' , width:'98%'}}>{item.para}</Typography>
+                      <Typography
+                        className="text-justify py-2"
+                        style={{
+                          fontSize: "19px",
+                          color: "#9BA9B4",
+                          width: "98%",
+                        }}
+                      >
+                        {item.para}
+                      </Typography>
                     </Box>
                   </Grid>
                 );
@@ -374,7 +409,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* ************************section4********************************** */}
 
-         <Grid container>
+            <Grid container>
               {content.section4.map((item: any, index: any) => {
                 return (
                   <Grid item xs={12}>
@@ -471,13 +506,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   </Box>
                 </Grid>
               ))}
-            </Grid> 
+            </Grid>
 
             {/* ***********************end************************** */}
 
             <div className="max-w-6xl mx-auto px-4 sm:px-6 max-w-[100%] mt-[4%] ">
-              <h2
-                className=" font text-center service-button uppercase"> 
+              <h2 className=" font text-center service-button uppercase">
                 OUR PROCESS
               </h2>
               <h2 className="text-3xl font-bold text-center mb-8 hover:text-[#5D5DFF]">
@@ -485,13 +519,19 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               </h2>
             </div>
             <div className="App">
-              <div >
+              <div>
                 <div className="main-circle">
                   <div
                     className="content-circle"
                     style={{ display: "flex", flexDirection: "column" }}
                   >
-                    <h1 style={{ fontSize:'15px' , marginBottom:'2%' , fontWeight:'bold'}}>
+                    <h1
+                      style={{
+                        fontSize: "15px",
+                        marginBottom: "2%",
+                        fontWeight: "bold",
+                      }}
+                    >
                       {" "}
                       {hoveredCircle &&
                         this.circleData[hoveredCircle - 1]?.title}
@@ -505,9 +545,11 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         data.id === hoveredCircle ? "hovered" : ""
                       } ${this.getCirclePositionClass(data.id)}`}
                       onMouseEnter={() => this.handleMouseEnter(data.id)}
-                      style={{  display: "flex",
-                      justifyContent: "center",
-                      textAlign: "center" }}
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        textAlign: "center",
+                      }}
                     >
                       <div>
                         {data.id} . {data.title}
@@ -522,8 +564,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* *******************************GLANCE******************************    */}
 
             <div className="max-w-6xl mx-auto px-4 sm:px-6 max-w-[100%] mt-[4%] ">
-              <h2
-                className=" font text-center uppercase service-button text-[#D9E3EA]">
+              <h2 className=" font text-center uppercase service-button text-[#D9E3EA]">
                 ZenQua AT GLANCE
               </h2>
               <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#5D5DFF]">
@@ -545,7 +586,9 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           </div>
                           <AddIcon style={{ fontSize: "40px" }} />
                         </Box>
-                        <div className="text-md text-#D9E3EA">{item.title} </div>
+                        <div className="text-md text-#D9E3EA">
+                          {item.title}{" "}
+                        </div>
                       </div>
                       <div className="h-[5px] bg-[rgb(93,93,255)] mt-[15px] w-full text-[#5D5DFF]"></div>
                     </Grid>
@@ -559,14 +602,13 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* *********************************************************** */}
 
             <Box className="w-full flex justify-center">
-            <div className="w-[100%] mt-[20px]">
-            <h2
-              className="font text-center uppercase text-[#D9E3EA]">
-              ADAPTABLE APPROACH
-            </h2>
-            <h2 className="text-3xl font-bold text-center mb-6 text-[#D9E3EA]">
-              Our Flexible Engagement Models
-            </h2>
+              <div className="w-[100%] mt-[20px]">
+                <h2 className="font text-center uppercase text-[#D9E3EA]">
+                  ADAPTABLE APPROACH
+                </h2>
+                <h2 className="text-3xl font-bold text-center mb-6 text-[#D9E3EA]">
+                  Our Flexible Engagement Models
+                </h2>
 
                 <Grid
                   container
@@ -601,7 +643,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                             {items.title}
                           </h2>
                           <Typography
-                            style={{ textAlign:'justify' ,color: "#9BA9B4", marginTop: "5%" , fontSize:'19px' }}
+                            style={{
+                              textAlign: "justify",
+                              color: "#9BA9B4",
+                              marginTop: "5%",
+                              fontSize: "19px",
+                            }}
                           >
                             {items.decription}
                           </Typography>
@@ -634,8 +681,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                                 color: "#9BA9B4",
                                 width: "50%",
                                 padding: "10px",
-                                textAlign:'justify',
-                                fontSize:'19px'
+                                textAlign: "justify",
+                                fontSize: "19px",
                               }}
                             >
                               {items.para1}
@@ -645,8 +692,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                                 color: "#9BA9B4",
                                 width: "50%",
                                 padding: "10px",
-                                textAlign:'justify', 
-                                fontSize:'19px'
+                                textAlign: "justify",
+                                fontSize: "19px",
                               }}
                             >
                               {items.para2}
@@ -663,108 +710,107 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* ******************** Why Outsource Your Project to ZenQua? ************************ */}
 
             <div className="box-border w-full mt-[4%]">
-              <h2
-                className=" font text-center uppercase text-[#D9E3EA]">
+              <h2 className=" font text-center uppercase text-[#D9E3EA]">
                 WHY US
               </h2>
               <h2 className="text-3xl font-bold text-center mb-6 service-button">
                 Why Outsource Your Project to ZenQua?
               </h2>
               {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
-                <div className="hidden sm:flex justify-center flex rounded-[20px]"
-                style={{ border: "1px solid #D9E3EA !important" }}>
-                  <Grid
-                    container
-                    spacing={0}
-                    // className="justify-center w-full rounded-[20px] p-4"
-                    className="justify-center w-full p-4"
-                    // style={{ border: "1px solid #D9E3EA !important" }}
-                  >
-                    <Grid item xs={6} sm={3}>
-                      <Paper
-                        style={{
-                          height: "100%",
-                          paddingRight: "4px",
-                          backgroundColor: "transparent",
-                          // boxShadow: "none",
-                        }}
-                      >
-                        {content.servicesData2.map(
-                          (service: any, index: any) => (
-                            <Button
-                              className="hover:text-#D9E3EA w-full"
-                              key={index}
-                              onClick={() =>
-                                this.handleClick6(
-                                  service.stateKey,
-                                  service.label
-                                )
-                              }
-                              disableRipple
-                            >
-                              <h3
-                                className="font-bold flex items-center w-full h-full"
-                                style={{
-                                  width: "100%",
-                                  height: "40px",
-                                  marginTop: "3%",
-                                  borderRight:
-                                    this.state.clickedButton6 === service.label
-                                      ? "2px solid #5D5DFF"
-                                      : "none",
-                                  paddingLeft: 10,
-                                  color:
-                                    this.state.clickedButton6 === service.label
-                                      ? "#5D5DFF"
-                                      : "#D9E3EA",
-                                  fontSize:
-                                    this.state.clickedButton6 === service.label
-                                      ? "16px"
-                                      : "14.50px",
-                                  backgroundColor:
-                                    this.state.clickedButton6 === service.label
-                                      ? "#222224"
-                                      : "transparent",
-                                }}
-                              >
-                                {service.label}
-                              </h3>
-                            </Button>
-                          )
-                        )}
-                      </Paper>
-                    </Grid>
-
-                    <Grid item xs={6} sm={9}>
-                      <Paper
-                        style={{
-                          height: "100%",
-                          backgroundColor: "transparent",
-                          boxShadow: "none",
-                          padding: "12px",
-                          color: "#D9E3EA",
-                        }}
-                      >
-                        {content.servicesData2.map((service: any) =>
-                          this.state.clickedButton6 === service.label ? (
-                            <div>
-                              <div
-                                className="text-2xl font-bold text-[#5D5DFF]"
-                                // style={{ color: "#5D5DFF" }}
-                              >
-                                {service.label}
-                              </div>
-
-                              <div
-                              className="text-xl  text-[#9BA9B4]" 
-                              key={service.label}>{service.content}</div>
-                            </div>
-                          ) : null
-                        )}
-                      </Paper>
-                    </Grid>
+              <div
+                className="hidden sm:flex justify-center flex rounded-[20px]"
+                style={{ border: "1px solid #D9E3EA !important" }}
+              >
+                <Grid
+                  container
+                  spacing={0}
+                  // className="justify-center w-full rounded-[20px] p-4"
+                  className="justify-center w-full p-4"
+                  // style={{ border: "1px solid #D9E3EA !important" }}
+                >
+                  <Grid item xs={6} sm={3}>
+                    <Paper
+                      style={{
+                        height: "100%",
+                        paddingRight: "4px",
+                        backgroundColor: "transparent",
+                        // boxShadow: "none",
+                      }}
+                    >
+                      {content.servicesData2.map((service: any, index: any) => (
+                        <Button
+                          className="hover:text-#D9E3EA w-full"
+                          key={index}
+                          onClick={() =>
+                            this.handleClick6(service.stateKey, service.label)
+                          }
+                          disableRipple
+                        >
+                          <h3
+                            className="font-bold flex items-center w-full h-full"
+                            style={{
+                              width: "100%",
+                              height: "40px",
+                              marginTop: "3%",
+                              borderRight:
+                                this.state.clickedButton6 === service.label
+                                  ? "2px solid #5D5DFF"
+                                  : "none",
+                              paddingLeft: 10,
+                              color:
+                                this.state.clickedButton6 === service.label
+                                  ? "#5D5DFF"
+                                  : "#D9E3EA",
+                              fontSize:
+                                this.state.clickedButton6 === service.label
+                                  ? "16px"
+                                  : "14.50px",
+                              backgroundColor:
+                                this.state.clickedButton6 === service.label
+                                  ? "#222224"
+                                  : "transparent",
+                            }}
+                          >
+                            {service.label}
+                          </h3>
+                        </Button>
+                      ))}
+                    </Paper>
                   </Grid>
-                </div>
+
+                  <Grid item xs={6} sm={9}>
+                    <Paper
+                      style={{
+                        height: "100%",
+                        backgroundColor: "transparent",
+                        boxShadow: "none",
+                        padding: "12px",
+                        color: "#D9E3EA",
+                      }}
+                    >
+                      {content.servicesData2.map((service: any) =>
+                        this.state.clickedButton6 === service.label ? (
+                          <div>
+                            <div
+                              className="text-2xl font-bold text-[#5D5DFF]"
+                              // style={{ color: "#5D5DFF" }}
+                            >
+                              {service.label}
+                            </div>
+
+                            <div
+                              className="text-xl  text-[#9BA9B4]"
+                              key={service.label}
+                            >
+                              {service.content}
+                            </div>
+                          </div>
+                        ) : null
+                      )}
+                    </Paper>
+                  </Grid>
+                </Grid>
+              </div>
               {/* </div> */}
 
               <Box
@@ -774,21 +820,21 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   justifyContent: "center",
                   alignItems: "center",
                   width: "98%",
-                  marginBottom:'2%'
+                  marginBottom: "2%",
                 }}
               >
                 <Carousel
-                    autoPlay={true}
-                    navButtonsAlwaysVisible={false}
-                    indicators={false}
-                    animation="slide"
-                    direction="left"
-                   
-                   sx={{
+                  autoPlay={true}
+                  navButtonsAlwaysVisible={false}
+                  indicators={false}
+                  animation="slide"
+                  //  direction="left"
+
+                  sx={{
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
-                    transition: "transform 0.10s ease-in-out"
+                    transition: "transform 0.10s ease-in-out",
                   }}
                 >
                   {content.servicesData2.map((item: any, i: any) => (
@@ -811,8 +857,13 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                             variant="h5"
                             component="h2"
                             // style={{ textAlign: "center", color: "#5D5DFF" }}
-                        style={{ fontWeight:'bold' , textAlign: "center" , fontSize:'21px' , marginBottom:'5%' , color: "#5D5DFF",}}
-
+                            style={{
+                              fontWeight: "bold",
+                              textAlign: "center",
+                              fontSize: "21px",
+                              marginBottom: "5%",
+                              color: "#5D5DFF",
+                            }}
                           >
                             {item.label}
                           </Typography>
@@ -823,9 +874,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                             style={{
                               color: "#9BA9B4",
                               fontSize: "19px",
-                              margin:'2%',
-                              textAlign:'justify'
-                              
+                              margin: "2%",
+                              textAlign: "justify",
                             }}
                           >
                             {item.content}
@@ -853,11 +903,11 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 Tailored development solutions for all business types
               </h2>
               <Carousel
-              autoPlay={true}
-              navButtonsAlwaysVisible={false}
-              indicators={false}
-              animation="slide"
-              direction="left"
+                autoPlay={true}
+                navButtonsAlwaysVisible={false}
+                indicators={false}
+                animation="slide"
+                //  direction="left"
               >
                 {content.business.map((item: any, i: any) => (
                   <Grid
@@ -922,10 +972,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               spacing={4}
             >
               <Grid item xs={12}>
-                <h2
-                  className=" font text-center uppercase">
-                  PORTFOLIO
-                </h2>
+                <h2 className=" font text-center uppercase">PORTFOLIO</h2>
                 <h2 className="text-3xl font-bold text-center mb-6 txt-[#D9E3EA]  ">
                   Why Outsource Your Project to ZenQua?
                 </h2>
@@ -998,10 +1045,10 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       textTransform: "none",
                       marginTop: "16px",
                       backgroundColor: "#5D5DFF",
-                      color: "#FFF",
+                      // color: "#FFF",
                       height: "50px",
                       width: "150px",
-                      color:'#D9E3EA'
+                      color: "#D9E3EA",
                     }}
                   >
                     Load More

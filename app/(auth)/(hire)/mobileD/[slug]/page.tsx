@@ -65,9 +65,8 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
     const { params } = this.props;
     const { showDetails, selectedSection } = this.state;
     // Ensure we have valid content for the route
-    const content = jsonData[params.slug] || {
+    const content = jsonData[params.slug as keyof typeof jsonData] || {
       title: "Page not found",
-
       body: "Content not available for this route.",
     };
     return (
@@ -240,10 +239,24 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                     fontSize: "20px",
                   }}
                 >
-                  {content.sectionDetails[selectedSection].title}
+                   {
+                          (
+                            content.sectionDetails as {
+                              [key: string]: { title: string };
+                            }
+                          )[selectedSection].title
+                        }
+                  {/* {content.sectionDetails[selectedSection].title} */}
                 </Typography>
                 <Typography style={{ color: "rgba(255, 255, 255, 0.75)" }}>
-                {content.sectionDetails[selectedSection].description}
+                {
+                          (
+                            content.sectionDetails as {
+                              [key: string]: { description: string };
+                            }
+                          )[selectedSection].description
+                        }
+                {/* {content.sectionDetails[selectedSection].description} */}
                 </Typography>
               </>
             )}

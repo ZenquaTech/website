@@ -65,14 +65,23 @@ class Content extends Component<ContentProps> {
 }
 
 class RoutePage extends Component<RoutePageProps, PageState> {
-  constructor(props: {}) {
+  constructor(props: RoutePageProps) {
     super(props);
     this.state = {
       clickedButton: "Frame Work",
       clickedButton6: "Cost-Effectiveness",
       hoveredCircle: 1,
+      Cost: false,
+      Vast: false,
+      Time: false,
+      Experienced: false,
+      Reduced: false,
+      Custom: false,
+      State2:this.state.State2
+    }
     };
-  }
+  
+
 
   handleMouseEnter = (circleIndex: number) => {
     this.setState({ hoveredCircle: circleIndex });
@@ -145,7 +154,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
     const { hoveredCircle } = this.state;
 
     const { params } = this.props;
-    const content = jsonData[params.slug] || {
+    const content = jsonData[params.slug as keyof typeof jsonData] || {
       title: "Page not found",
       body: "Content not available for this route.",
     };
@@ -975,7 +984,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     navButtonsAlwaysVisible={false}
                     indicators={false}
                     animation="slide"
-                    direction="left"
+                    // //  direction="left"
                    
                    sx={{
                     display: "flex",
@@ -1050,7 +1059,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               navButtonsAlwaysVisible={false}
               indicators={false}
               animation="slide"
-              direction="left"
+              //  direction="left"
+              
               >
                 {content.business.map((item: any, i: any) => (
                   <Grid
@@ -1191,7 +1201,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       textTransform: "none",
                       marginTop: "16px",
                       backgroundColor: "#5D5DFF",
-                      color: "#FFF",
+                      // color: "#FFF",
                       height: "50px",
                       width: "150px",
                       color:'#D9E3EA'
