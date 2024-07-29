@@ -2,7 +2,7 @@
 import { Paper, Typography, Avatar, Box, Grid } from "@material-ui/core";
 import React, { Component } from "react";
 
-export class page extends Component {
+class page extends Component {
   render() {
     const style1 = {
       height: "250px",

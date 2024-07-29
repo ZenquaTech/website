@@ -5,7 +5,7 @@ import { Button } from "reactstrap";
 import ModalVideo from "@/components/modal-video";
 import VideoThumb from "@/public/images/hero-image-01.jpg";
 
-export class page extends Component {
+class page extends Component {
   render() {
 
     const style1 = {
