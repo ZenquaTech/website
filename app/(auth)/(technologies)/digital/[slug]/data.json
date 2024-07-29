@@ -1,0 +1,306 @@
+{ 
+  "seo": {
+      "section1":[
+         {
+             "heading1":"Search Engine Optimization Company",
+             "heading2":"Search Engine Optimization – SEO Company",
+             "para":"Are you looking for search engine optimisation services to help you grow your website? Look no further! We offer comprehensive SEO services tailored to your unique business needs. Our team of experienced professionals will help you to rank higher in search engine results, drive organic traffic to your website, and increase conversions. With our expertise, you can make sure your website is seen by the right people, in the right places.",
+             "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135733/seo_1.png" ,
+             "button":"Talk to Expert"          
+         }
+      ],
+      "section2":[
+         {
+             "heading":"Want To Hire An Offshore ",
+             "heading1":"SEO Team?",
+             "para":"We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
+             "button":"Hire SEO Expert"          
+         }
+      ],   
+     "section3": [
+         {
+             "heading1":"WHAT WE DO",
+             "heading2":"Our SEO Services",
+             "para":"We provide tailored Search Engine Optimization Services to help businesses achieve higher organic rankings and maximize their potential for online visibility and success. Our team of experienced optimization experts use a wide range of advanced strategies, such as keyword research and analysis, content optimization and link building, to develop a tailor made strategy fit for every website’s unique requirements. With our effectual SEO techniques, we strive to increase website rankings and performance, helping your business reach its fullest potential.              "
+         }
+     ], 
+     "item1": [
+         {
+             "starLogo": "<FaStar />",
+             "title": "Full Suite SEO",
+             "description":"We provide a full suite of SEO services that are tailored to your specific business needs. Our services encompass the entire SEO lifecycle, ranging from keyword and topic research, optimization of content and on-page elements for maximum search engine visibility, to ongoing reporting on link building, website performance and visibility in the SERPs. Our team of experts utilize the latest tactics and technologies to ensure you get the best results."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "Local SEO Services",
+             "description":"We are experts in developing CMS solutions using the .NET Framework with a comprehensive set of features, including content editing, page and template creation, workflow management, and advanced analytics. We also expertise in third-party integrations, custom plugins, and user-defined roles and permissions, which ensures that your content is secure and easily managed. We can design solutions which can help businesses of all sizes, whether you’re a small business or a large enterprise, to easily create and manage your digital content."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "Technical SEO",
+             "description":"Our Technical SEO Services focus on optimizing websites for higher visibility in search engines through optimization of content, keyword research, backlink building, and technical analysis of a website’s structure and speed. We also perform complete site audits to identify potential issues related to performance and design. Our team of specialists understand how best to optimize websites and drive quality traffic to your website."
+         }
+     ],
+     "item2": [
+         {
+             "starLogo": "<FaStar />",
+             "title": "On-Page SEO Services",
+             "description":"We provide comprehensive On-Page SEO services to help ensure your website is 100% optimized for the best possible organic search engine rankings. Our services include keyword research and analysis, website structure optimization, content optimization, metatag changes, canonical tag updates, and other related activities that ensure your website is SEO."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "Off-Page SEO Services",
+             "description":"We provide comprehensive Off-Page SEO services to help our clients establish and build their online presence. Our proven methods help clients create engaging content, build backlinks, participate in social media, and increase their visibility on major search engines. Our goal is to get clients noticed, boost their authority, and attract more customers."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "Conversion Rate Optimization",
+             "description":"We provide Conversion Rate Optimization services to ensure that your website traffic generates relevant leads and conversion goals. Our approach to optimizing conversion rates leverages thorough research and analysis, to identify and target areas of improvement such as optimizing user experience, analyzing user behaviour and leveraging creative and effective landing pages."
+         }
+     ],
+     "project": [
+         {
+             "title": "Project Delivered",
+             "number": "2500"
+         },
+         {
+             
+             "title": "Satisfied Clients",
+             "number": "800"
+         },
+         {
+             
+             "title": "Experts on Board",
+             "number": "100"
+         },
+         {
+             
+             "title": "Years of Experience",
+             "number": "14"
+         }
+ 
+     ],
+     "adaptable": [
+         {
+             "title": "Time & Material Basis Model",
+             "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+             "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+             "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
+             "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
+         },
+         {
+             "title": "Dedicated Developer Model",
+             "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+             "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+             "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
+             "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
+         }
+           
+     ],
+     "business" : [
+     {
+       "title": "Backend Development",
+       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+     },
+     {
+       "title": "Small & Medium Businesses",
+       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+     },
+     {
+       "title": "Large Businesses",
+       "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
+       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+     }
+   ],
+   "servicesData2": [
+     {
+       "label": "Cost-Effectiveness",
+       "stateKey": "Cost",
+       "content":"Building a website or application doesn't have to be expensive.Partnering with a reliable development company can help you save on costs associated with hiring an in-house development team, such as software licensing, taxes, hardware, salaries and compensation.With their expertise, you can create an attractive and cost-effective      solution for your business."
+     },
+     {
+       "label": "Vast Knowledge",
+       "stateKey": "Vast",
+       "content":"At ZenQua, we have the expertise and experience to create customwebsites andapps that are tailored to your specific business needs.Our dedicated team of developers has the technical knowledge and coding.experience to handle any challenges and provide solutions that comply with industry regulations. With a proven track record of delivering successful projects, you can trust us to create the perfect            digital solution for you."
+     },
+   
+     {
+       "label": "Time-Saving",
+       "stateKey": "Time",
+       "content":"Launch your digital product quickly by outsourcing your development services to a reputable offshore software development agency.ZenQua experienced developers can create a high-quality solution efficiently, enabling you to validate your business idea and adapt your promotional strategies and sales channels as needed. Don't waste          time forming an in-house development team- outsource and get.up and runing in no time!"
+  
+     },
+   
+     {
+       "label": "Experienced Partner",
+       "stateKey": "Experienced",
+       "content":"We have a strict quality assurance process in place for all our web      development projects. Our dedicated QA team continously checks for bugs and errors, guaranteeing high-quality code. Our custom solutions are reliable, flexible and cost-effective, offering clients more features and functionalities within their budget and timeline. with us, you can trust that the solutions we provide are reliable and      flecible."   
+     },
+   
+     {
+       "label": "Reduced Costs",
+       "stateKey": "Reduced",
+       "content":"Our team carefully assesses your requirements, understands your goals and applies a standard development process tailored to your project needs to avoid unnecessary costs. To make web application development more accessible for businesses, we offer cost-effective development models.This allows companies with limited budgets to complete their projects without breaking the bank."
+       },
+     {
+       "label": "Custom Solution",
+       "stateKey": "Custom",
+       "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
+     }
+   ] 
+},
+"smo": {
+    "section1": [
+        {
+          "heading1": "Social Media Optimization Company",
+          "heading2": "Social Media Optimization – SMO Company",
+          "para": "Are you looking to amplify your online presence and drive more traffic to your website? Look no further! Our Social Media Optimization (SMO) services are designed to do just that. We offer a comprehensive range of SMO services tailored to your unique business needs, helping you connect with your audience on the platforms they use the most.",
+          "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135733/seo_1.png",
+          "button": "Talk to Expert"
+        }
+      ],
+      "section2": [
+        {
+          "heading": "Want To Hire An Offshore ",
+          "heading1": "SMO Team?",
+          "para": "We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
+          "button": "Hire SMO Expert"
+        }
+      ],
+      "section3": [
+        {
+          "heading1": "WHAT WE DO",
+          "heading2": "Our SMO Services",
+          "para": "We provide tailored Social Media Optimization services to help businesses achieve higher online visibility and engagement. Our team of experienced optimization experts uses advanced strategies to develop a customized approach for every brand's unique requirements. With our effective SMO techniques, we strive to increase brand awareness and performance, helping your business reach its fullest potential."
+        }
+      ],
+      "item1": [
+        {
+          "starLogo": "<FaStar />",
+          "title": "Full Suite SMO",
+          "description": "We provide a full suite of SMO services tailored to your specific business needs. Our services encompass the entire SMO lifecycle, from profile optimization and content creation to community management and performance analysis. Our team of experts utilizes the latest tactics and technologies to ensure you get the best results."
+        },
+        {
+          "starLogo": "<FaStar />",
+          "title": "Profile Optimization",
+          "description": "We optimize your social media profiles to make them more attractive and informative. By enhancing your profiles, we ensure your brand stands out and appeals to your target audience, driving more engagement and followers."
+        },
+        {
+          "starLogo": "<FaStar />",
+          "title": "Content Creation",
+          "description": "Our creative team produces engaging content that captures your brand's voice and resonates with your audience. We focus on creating content that drives interaction and fosters a sense of community around your brand."
+        }
+      ],
+      "item2": [
+        {
+          "starLogo": "<FaStar />",
+          "title": "Community Management",
+          "description": "We manage your social media communities, fostering positive interactions and building a loyal following. Our goal is to ensure your audience feels connected and valued, leading to higher engagement and brand loyalty."
+        },
+        {
+          "starLogo": "<FaStar />",
+          "title": "Paid Social Media Advertising",
+          "description": "We design and implement targeted ad campaigns to reach a broader audience and drive conversions. Our expertise in social media advertising ensures your ads are seen by the right people, at the right times."
+        },
+        {
+          "starLogo": "<FaStar />",
+          "title": "Performance Analysis",
+          "description": "We leverage analytics and performance metrics to continuously refine and improve our strategies. Regular reporting and analysis help us track the effectiveness of our SMO efforts, ensuring optimal results for your business."
+        }
+    ],
+   "project": [
+       {
+           "title": "Project Delivered",
+           "number": "2500"
+       },
+       {
+           
+           "title": "Satisfied Clients",
+           "number": "800"
+       },
+       {
+           
+           "title": "Experts on Board",
+           "number": "100"
+       },
+       {
+           
+           "title": "Years of Experience",
+           "number": "14"
+       }
+
+   ],
+   "adaptable": [
+       {
+           "title": "Time & Material Basis Model",
+           "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+           "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
+           "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
+       },
+       {
+           "title": "Dedicated Developer Model",
+           "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+           "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
+           "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
+       }
+         
+   ],
+   "business" : [
+   {
+     "title": "Backend Development",
+     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+   },
+   {
+     "title": "Small & Medium Businesses",
+     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+   },
+   {
+     "title": "Large Businesses",
+     "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
+     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+   }
+ ],
+ "servicesData2": [
+   {
+     "label": "Cost-Effectiveness",
+     "stateKey": "Cost",
+     "content":"Building a website or application doesn't have to be expensive.Partnering with a reliable development company can help you save on costs associated with hiring an in-house development team, such as software licensing, taxes, hardware, salaries and compensation.With their expertise, you can create an attractive and cost-effective      solution for your business."
+   },
+   {
+     "label": "Vast Knowledge",
+     "stateKey": "Vast",
+     "content":"At ZenQua, we have the expertise and experience to create customwebsites andapps that are tailored to your specific business needs.Our dedicated team of developers has the technical knowledge and coding.experience to handle any challenges and provide solutions that comply with industry regulations. With a proven track record of delivering successful projects, you can trust us to create the perfect            digital solution for you."
+   },
+ 
+   {
+     "label": "Time-Saving",
+     "stateKey": "Time",
+     "content":"Launch your digital product quickly by outsourcing your development services to a reputable offshore software development agency.ZenQua experienced developers can create a high-quality solution efficiently, enabling you to validate your business idea and adapt your promotional strategies and sales channels as needed. Don't waste          time forming an in-house development team- outsource and get.up and runing in no time!"
+
+   },
+ 
+   {
+     "label": "Experienced Partner",
+     "stateKey": "Experienced",
+     "content":"We have a strict quality assurance process in place for all our web      development projects. Our dedicated QA team continously checks for bugs and errors, guaranteeing high-quality code. Our custom solutions are reliable, flexible and cost-effective, offering clients more features and functionalities within their budget and timeline. with us, you can trust that the solutions we provide are reliable and      flecible."   
+   },
+ 
+   {
+     "label": "Reduced Costs",
+     "stateKey": "Reduced",
+     "content":"Our team carefully assesses your requirements, understands your goals and applies a standard development process tailored to your project needs to avoid unnecessary costs. To make web application development more accessible for businesses, we offer cost-effective development models.This allows companies with limited budgets to complete their projects without breaking the bank."
+     },
+   {
+     "label": "Custom Solution",
+     "stateKey": "Custom",
+     "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
+   }
+ ] 
+}
+}

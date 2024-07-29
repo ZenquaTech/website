@@ -1,67 +1,132 @@
 "use client";
 import Link from "next/link";
 import MobileMenu from "./mobile-menu";
+import { useEffect, useState } from "react";
+import Navbar from "./navbar";
+import { Box, useMediaQuery, useTheme } from "@material-ui/core";
+
+import { ThemeProvider } from "@mui/styles";
+
+const scrollToBottom = () => {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth",
+  });
+};
+
+const textStyle: React.CSSProperties = {
+  color: "red",
+  fontSize: "15px",
+  marginTop: "30px",
+};
+
+const buttonStyle: React.CSSProperties = {
+  margin: "0 20px",
+  cursor: "pointer",
+  transition: "color 0.3s",
+};
+
+const hoverEffect = {
+  ":hover": {
+    color: "blue",
+  },
+};
 
 export default function Header() {
+  const [screenWidth, setScreenWidth] = useState<number>(0);
+  const theme = useTheme();
+  const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    setScreenWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [screenWidth]);
+
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
       behavior: "smooth",
     });
   };
+
   return (
-    <header className="absolute w-full z-30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-20">
-          {/* Site branding */}
-          <div className="shrink-0 mr-4 mt-2">
-            {/* Logo */}
-            <Link href="/" className="block" aria-label="Cruip">
-              <img
-                style={{ position: "absolute", top: "0%" }}
-                height="150px"
-                width="150px"
-                src="/images/WhatsApp_Image_2024-03-23_at_4.37.01_PM-removebg-preview.png"
-                alt="logo"
-              />
-              {/* <span style={{fontWeight:700,fontSize:14,position:"absolute",top:"74%"}}>Zenqua</span> */}
-            </Link>
-          </div>
-
-          {/* Desktop navigation */}
-          <nav className="hidden md:flex md:grow">
-            {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
-                {/* <button onClick={scrollToBottom}>Scroll to Bottom</button> */}
-                <button
-                  // href="/"
-                  style={{
-                    backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
-                    width: "100%",
-                    color: "white",
-                    display: "flex",
-                    justifyContent: "center",
-                    height: 42,
-                    borderRadius: "3px",
-                  }}
-                  onClick={() => scrollToBottom()}
-                  className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                >
-                  Contact Us
-                </button>
-              </li>
-              {/* <li>
-                <Link href="/signup" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">
-                  Sign up
+    <>
+      <header
+        className="absolute w-full z-30"
+        style={{ width: "95%", justifyContent: "space-between", zIndex: 1000 }}
+      >
+        <nav
+          className="md:flex md:grow "
+          style={{ backgroundColor: "transparent", width: "100%" }}
+        >
+          <div
+            className="max-w-6xl mx-auto px-4 sm:px-6"
+            style={{ width: "100%" }}
+          >
+            <div
+              className="flex items-center justify-between h-20"
+              style={{ justifyContent: "space-between" }}
+            >
+              {/* Site branding */}
+              <div
+                className="shrink-0 mr-4 mt-2"
+                style={{
+                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                  borderRadius: "none",
+                }}
+              >
+                {/* Logo */}
+                <Link href="/" className="block" aria-label="Cruip">
+                  <img
+                    style={{
+                      top: "0%",
+                      marginTop: "-1%",
+                    }}
+                    height="110px"
+                    width="110px"
+                    src="/images/WhatsApp_Image_2024-03-23_at_4.37.01_PM-removebg-preview.png"
+                    alt="logo"
+                  />
                 </Link>
-              </li> */}
-            </ul>
-          </nav>
+              </div>
 
-          <MobileMenu />
-        </div>
-      </div>
-    </header>
+              {matches ? (
+                <MobileMenu />
+              ) : (
+                <div
+                  className="flex-grow flex justify-center"
+                  style={{
+                    display: "flex",
+                    width: "90%",
+                    justifyContent: "",
+                  }}
+                >
+                  <div style={{ ...buttonStyle, ...hoverEffect }}>
+                    <ThemeProvider theme={theme}>
+                      <Navbar />
+                    </ThemeProvider>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+          {!matches ? (
+            <ul className="justify-start flex-wrap items-center mt-5">
+              <li></li>
+            </ul>
+          ) : null}
+        </nav>
+      </header>
+    </>
   );
 }
