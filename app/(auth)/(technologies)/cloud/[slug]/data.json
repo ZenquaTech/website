@@ -1,0 +1,578 @@
+{ 
+  "aws": {
+      "section1":[
+         {
+             "heading1":"AWS Cloud Development Company",
+             "heading2":"AWS Managed services and cloud development Services",
+             "para":"Experience the power of ZenQua's Amazon Cloud Managed Services and Cloud Development Services. Leverage our team of experienced professionals to transform your on-premise business processes and drive strategic advantages using AWS cloud services. We employ a tried and tested methodology to revolutionise your entire technological infrastructure, allowing for easy adaptability and enhancing its responsiveness. Our experts can help you efficiently create cloud infrastructures that are fast, highly secure and less complex to implement. Rely on ZenQua for comprehensive cloud solutions that fit your unique needs.",
+             "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135731/AWS.png" ,
+             "button":"Talk to Expert"          
+         }
+      ],
+      "section2":[
+         {
+             "heading":"Want To Hire An Offshore ",
+             "heading1":"AWS Engineers ?",
+             "para":"We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
+             "button":"Hire AWS ENGINEER"          
+         }
+      ],   
+     "section3": [
+         {
+             "heading1":"WHAT WE DO",
+             "heading2":"Our AWS Services",
+             "para":"We provide AWS services to our clients to help them optimize their cloud infrastructure. Our services include setup and deployment of AWS services such as EC2, S3, Lambda, and RDS. Our team of cloud specialists can help configure and manage AWS services, ensuring your applications are running at peak performance. We also provide monitoring and security services to help protect your data and applications from malicious threats. With our expertise, you can trust us to provide the best AWS services for your business."
+         }
+     ], 
+     "item1": [
+         {
+             "starLogo": "<FaStar />",
+             "title": " AWS Consulting Services",
+             "description":"Our AWS-certified Cloud Consultants can help businesses migrate to the cloud, architect, secure and manage cloud-based solutions, develop DevOps strategies, and optimize performance and scalability. We provide a comprehensive suite of AWS services, ranging from assessment and planning to implementation and optimization, to help organizations move faster, save costs and gain greater control over their digital transformation journey."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "AWS Application Development Services",
+             "description":"We are experts in developing CMS solutions using the .NET Framework with a comprehensive set of features, including content editing, page and template creation, workflow management, and advanced analytics. We also expertise in third-party integrations, custom plugins, and user-defined roles and permissions, which ensures that your content is secure and easily managed. "
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "AWS Cloud Migration Services",
+             "description":"We are an experienced provider of AWS Cloud Migration Services, having a proven track record of successful migrations. Our cloud experts have extensive experience in planning and executing migrations from on-premise and other cloud solutions to AWS Cloud. We also provide post-migration support and maintenance services to ensure optimal performance and scalability of your cloud environment."
+         }
+     ],
+     "item2": [
+         {
+             "starLogo": "<FaStar />",
+             "title": "AWS Cloud Managed Services",
+             "description":"We provide comprehensive AWS Cloud Managed Services to our clients, enabling them to focus on their core business. Our AWS certified professionals are well versed in architecting, deploying and managing cloud-based applications. We ensure that the applications are monitored, maintained and secured in accordance with best practices and industry standards. Our services extend to include cloud migration, cost optimization, performance optimization and 24×7 support."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "Cloud Business Intelligence & Analytics",
+             "description":"Our suite of services allows us to quickly deploy and scale cloud analytics solutions with minimal effort and cost. We leverage AWS services such as Amazon Redshift, Amazon Athena, Amazon EMR, Amazon Kinesis, and Amazon QuickSight to rapidly build and deploy end-to-end cloud analytics solutions. We specialize in designing data pipelines, data warehousing, data lakes, analytics dashboards and data visualizations that allow our customers to gain insights quickly and cost-effectively."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "Cloud migration & app modernization with AWS?",
+             "description":"Our skilled developers and engineers leverage their expertise in the .NET framework and CRM platforms such as Dynamics 365, Salesforce, and Hubspot to create custom solutions that streamline your business processes. We offer end-to-end services including design, development, testing, and deployment of CRM solutions, ensuring seamless integration with your existing systems. Our experts also provide ongoing support and maintenance to ensure your CRM is always up to date and running smoothly."
+         }
+     ],
+     "section4": [
+         {
+             "heading1":"Advanced AWS Services",
+             "heading2":"Advance ASP.Net development Services"
+         }
+     ], 
+     "item3": [
+         {
+             "starLogo": "<FaStar />",
+             "title": "AWS Application Development Services",
+             "description":"Our AWS certified developers is capable of delivering bespoke applications for businesses seeking to take advantage of the scalability and security that AWS offers. We ensure that our applications are designed and developed to meet the needs of the customer and are optimized for the cloud."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "AWS Compliance",
+             "description":"We understand the importance of meeting industry standards and frameworks, and use best practices to ensure that your cloud infrastructure is secure and compliant. We work with you to develop a tailored compliance strategy for your business and provide ongoing support to help you maintain a secure and compliant cloud environment."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "AWS Migrations",
+             "description":"Our AWS certified engineers has extensive experience with migrating applications and databases to the AWS cloud. We use an automated process to ensure a smooth transition with minimal downtime. Our team is also well-versed in the nuances of the AWS platform, allowing us to support clients through the entire migration process."
+         }
+     ],
+     "item4": [
+         {
+             "starLogo": "<FaStar />",
+             "title": "AWS Support",
+             "description":"Our AWS certified experts have vast experience and knowledge to help customers to deploy, manage and troubleshoot their applications running on AWS. We provide a wide range of services, from technical support and consulting to migration and optimization. With our 24/7 support, we can help you find the best solutions to any AWS related issues quickly and efficiently."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "AWS Integrations",
+             "description":"We specialize in providing comprehensive AWS Integrations services that enable organizations to quickly and seamlessly integrate with their existing IT systems. Our experienced team of cloud and integration experts have the necessary skills to develop and deploy dynamic integration solutions tailored to the specific needs of our customers."
+         },
+         {
+             "starLogo": "<FaStar />",
+             "title": "AWS Security",
+             "description":"Our AWS security experts ensure that your AWS environment is secure and compliant. We offer a wide range of security services, including secure architecture design, secure identity and access management, and monitoring and logging. Additionally, we offer managed services to ensure that your AWS environment is always up-to-date with the latest security patches and configurations."
+         }
+     ],
+     "project": [
+        {
+            "title": "Project Delivered",
+            "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": "80"
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": "100"
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": "14"
+        }
+
+    ],
+     "adaptable": [
+         {
+             "title": "Time & Material Basis Model",
+             "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+             "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+             "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
+             "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
+         },
+         {
+             "title": "Dedicated Developer Model",
+             "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+             "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+             "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
+             "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
+         }
+           
+     ],
+     "business" : [
+     {
+       "title": "Backend Development",
+       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+     },
+     {
+       "title": "Small & Medium Businesses",
+       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+     },
+     {
+       "title": "Large Businesses",
+       "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
+       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+     }
+   ],
+   "servicesData2": [
+     {
+       "label": "Cost-Effectiveness",
+       "stateKey": "Cost",
+       "content":"Building a website or application doesn't have to be expensive.Partnering with a reliable development company can help you save on costs associated with hiring an in-house development team, such as software licensing, taxes, hardware, salaries and compensation.With their expertise, you can create an attractive and cost-effective      solution for your business."
+     },
+     {
+       "label": "Vast Knowledge",
+       "stateKey": "Vast",
+       "content":"At ZenQua, we have the expertise and experience to create customwebsites andapps that are tailored to your specific business needs.Our dedicated team of developers has the technical knowledge and coding.experience to handle any challenges and provide solutions that comply with industry regulations. With a proven track record of delivering successful projects, you can trust us to create the perfect            digital solution for you."
+     },
+   
+     {
+       "label": "Time-Saving",
+       "stateKey": "Time",
+       "content":"Launch your digital product quickly by outsourcing your development services to a reputable offshore software development agency.ZenQua experienced developers can create a high-quality solution efficiently, enabling you to validate your business idea and adapt your promotional strategies and sales channels as needed. Don't waste          time forming an in-house development team- outsource and get.up and runing in no time!"
+  
+     },
+   
+     {
+       "label": "Experienced Partner",
+       "stateKey": "Experienced",
+       "content":"We have a strict quality assurance process in place for all our web      development projects. Our dedicated QA team continously checks for bugs and errors, guaranteeing high-quality code. Our custom solutions are reliable, flexible and cost-effective, offering clients more features and functionalities within their budget and timeline. with us, you can trust that the solutions we provide are reliable and      flecible."   
+     },
+   
+     {
+       "label": "Reduced Costs",
+       "stateKey": "Reduced",
+       "content":"Our team carefully assesses your requirements, understands your goals and applies a standard development process tailored to your project needs to avoid unnecessary costs. To make web application development more accessible for businesses, we offer cost-effective development models.This allows companies with limited budgets to complete their projects without breaking the bank."
+       },
+     {
+       "label": "Custom Solution",
+       "stateKey": "Custom",
+       "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
+     }
+   ] 
+},
+"azure": {
+    "section1":[
+       {
+           "heading1":"Microsoft Azure Development Company",
+           "heading2":"Cloud-centric web solutions by our Microsoft Azure Certified Experts",
+           "para":"ZenQua's Microsoft certified experts utilize the power of Azure to drive down costs, improve productivity, deploy applications faster, and leverage advanced payment models. We are experienced in deploying cloud-centric web solutions across multiple languages, such as VB, C#, .NET and more. Make the move to Azure for your enterprise and ZenQua can manage the shift with minimal change or disruption to existing code. We create secure environments to develop, deploy and run your application on Microsoft’s data centres that span across the globe. From boosting scalability to enhancing security and flexibility, ZenQua has the skills and experience to pivot your app for devices and frameworks. Deploy your next-gen web solution backed by Microsoft Azure.",
+           "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135729/Azure.png" ,
+           "button":"Talk to Expert"          
+       }
+    ],
+    "section2":[
+       {
+           "heading":"Want To Hire An Offshore ",
+           "heading1":"Azure Engineers?",
+           "para":"We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
+           "button":"Hire Azure Engineer?"          
+       }
+    ],   
+   "section3": [
+       {
+           "heading1":"WHAT WE DO",
+           "heading2":"Our Azure Cloud Development Services",
+           "para":"We offer Microsoft Azure cloud services to help you maximize the power of the cloud for your business. Our services are designed to provide you with the flexibility, scalability, and reliability you need to meet your business goals. We have certified experts on staff who can help you build the best cloud solution for your needs. Our services include a range of options such as migration, security, and cost optimization that can help you save time and money. With our help, you can take advantage of the benefits of the cloud without the hassle."
+       }
+   ], 
+   "item1": [
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Web Development",
+           "description":"We specialize in providing comprehensive Azure Web Development services. Our services encompass the entire process of developing cloud-based web applications, from planning and architecture to coding and deployment. We have experienced developers who are skilled in using Microsoft Azure to create and deploy secure, scalable, and highly available web apps."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Mobile App Development",
+           "description":"Our team of experienced Azure developers are well-versed in building highly-scalable and secure mobile applications. We apply the latest cloud technologies such as Azure Functions, Azure App Services, and Azure IoT Hubs to create powerful mobile applications. Additionally, we provide comprehensive maintenance and support services to ensure that your mobile application is always operational with the highest levels of availability."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Hybride App Development",
+           "description":"Azure hybrid app development is one of our core areas of expertise. We provide end-to-end solutions for the development, deployment, and management of your hybrid applications. Our Azure experts are well-versed in cloud-native development and the latest Azure technologies, ensuring your applications are developed with best practices and industry standards in mind."
+       }
+   ],
+   "item2": [
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Asp.net MVP Development",
+           "description":"We specialize in developing applications based on Microsoft Azure cloud computing platform, leveraging the latest version of the Asp.net framework. Our highly experienced Asp.net MVP developers are well-versed in the nuances of this technology and are capable of delivering robust, secure, and reliable applications. We ensure that the applications we develop leverage the latest Azure features and comply with industry standards and security protocols."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Python Development with Azure",
+           "description":"Our expertise lies in leveraging the power of Python, along with the scalability and high availability of Azure, to provide industry-leading solutions for our clients. Our team is highly experienced in developing solutions that leverage the full range of Azure services, such as Azure Functions, Azure App Services, Azure Machine Learning, and Azure Container Service."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Analytics Services",
+           "description":"Azure Analytics Solutions are designed to help customers extract maximum value from their data. Our expertise in Azure Analytics provides customers with powerful and cost-effective tools to obtain actionable insights. Our Azure certified professionals are experienced in leveraging Azure technologies such as Azure Databricks, Azure SQL Data Warehouse, and Azure HDInsight to develop custom cloud-based analytics solutions."
+       }
+   ],
+   "section4": [
+       {
+           "heading1":"EXPERTISE IN ASP.NET DEVELOPMENT",
+           "heading2":"Advanced Azure Cloud Development Services"
+       }
+   ], 
+   "item3": [
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure for Big Data and Analytics",
+           "description":"We have extensive expertise in leveraging the services offered by Azure to create effective solutions for Big Data and Analytics. We have experience in utilizing Azure's Data Lake Storage, Data Factory, Data Bricks, HDInsight, and Azure Machine Learning services to process and analyze large amounts of data. Additionally, our team can use the rich visualization tools of Power BI."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Hybrid Cloud Infrastructure",
+           "description":"We have expertise in developing and delivering end-to-end Azure Hybrid Cloud Infrastructure Solutions includes architecture planning and implementation, identity management and access control, application migrations, system and data integrations, workload automation, and more. Moreover, our comprehensive services portfolio also covers cost optimization."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Storage and Disaster Recovery",
+           "description":"Our expertise in this area helps customers to quickly, easily and securely deploy their applications and data in the cloud. Our experience allows us to provide consistent and reliable backups, helping protect customers from data loss. Our solutions are designed to meet each customer's specific requirements, ensuring their data is available when needed."
+       }
+   ],
+   "item4": [
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Enterprise Mobility",
+           "description":"Our expertise enables us to develop powerful solutions that leverage Azure's broad range of mobile capabilities, including authentication, data synchronization and secure storage. We also provide integration with backend systems, allowing organizations to securely access their data and applications from any device, anywhere"
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Cloud Automation",
+           "description":"Our team of experts has extensive knowledge and experience in leveraging the capabilities of Azure for cloud automation. We specialize in leveraging the automation capabilities of Azure for cloud provisioning, deployment, and management. Our automation solutions offer a range of benefits such as increased scalability, improved security."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Azure Application Migration",
+           "description":"We have expertise in providing solutions for Application Migration in Azure allows us to leverage these services to ensure successful and secure migrations. Our certified professionals are well-versed in the nuances of Azure cloud technology, making us the ideal partner for smooth application migration to the cloud."
+       }
+   ],
+   "project": [
+        {
+            "title": "Project Delivered",
+            "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": "80"
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": "100"
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": "14"
+        }
+
+    ],
+   "adaptable": [
+       {
+           "title": "Time & Material Basis Model",
+           "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+           "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
+           "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
+       },
+       {
+           "title": "Dedicated Developer Model",
+           "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+           "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
+           "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
+       }
+         
+   ],
+   "business" : [
+   {
+     "title": "Backend Development",
+     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+   },
+   {
+     "title": "Small & Medium Businesses",
+     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+   },
+   {
+     "title": "Large Businesses",
+     "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
+     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+   }
+ ],
+ "servicesData2": [
+   {
+     "label": "Cost-Effectiveness",
+     "stateKey": "Cost",
+     "content":"Building a website or application doesn't have to be expensive.Partnering with a reliable development company can help you save on costs associated with hiring an in-house development team, such as software licensing, taxes, hardware, salaries and compensation.With their expertise, you can create an attractive and cost-effective      solution for your business."
+   },
+   {
+     "label": "Vast Knowledge",
+     "stateKey": "Vast",
+     "content":"At ZenQua, we have the expertise and experience to create customwebsites andapps that are tailored to your specific business needs.Our dedicated team of developers has the technical knowledge and coding.experience to handle any challenges and provide solutions that comply with industry regulations. With a proven track record of delivering successful projects, you can trust us to create the perfect            digital solution for you."
+   },
+ 
+   {
+     "label": "Time-Saving",
+     "stateKey": "Time",
+     "content":"Launch your digital product quickly by outsourcing your development services to a reputable offshore software development agency.ZenQua experienced developers can create a high-quality solution efficiently, enabling you to validate your business idea and adapt your promotional strategies and sales channels as needed. Don't waste          time forming an in-house development team- outsource and get.up and runing in no time!"
+
+   },
+ 
+   {
+     "label": "Experienced Partner",
+     "stateKey": "Experienced",
+     "content":"We have a strict quality assurance process in place for all our web      development projects. Our dedicated QA team continously checks for bugs and errors, guaranteeing high-quality code. Our custom solutions are reliable, flexible and cost-effective, offering clients more features and functionalities within their budget and timeline. with us, you can trust that the solutions we provide are reliable and      flecible."   
+   },
+ 
+   {
+     "label": "Reduced Costs",
+     "stateKey": "Reduced",
+     "content":"Our team carefully assesses your requirements, understands your goals and applies a standard development process tailored to your project needs to avoid unnecessary costs. To make web application development more accessible for businesses, we offer cost-effective development models.This allows companies with limited budgets to complete their projects without breaking the bank."
+     },
+   {
+     "label": "Custom Solution",
+     "stateKey": "Custom",
+     "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
+   }
+ ] 
+},
+"google": {
+    "section1":[
+       {
+           "heading1":"Google Cloud Development Company",
+           "heading2":"Google Cloud Platform Application Development Services",
+           "para":"ZenQua provides a comprehensive suite of Google Cloud Platform Application Development Services. Leverage our expertise in multi-dimensional google app engine and Google Cloud solutions to ensure post-modern efficiency and optimal performance. We have highly-skilled domain experts to develop customised solutions along with enterprise-scale implementations, maintenance and support services. Our team is ever-ready to help you with cloud migrations, app engine website consulting and data integration. Let us bring efficiency and rapid access to information to your business.",
+           "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135730/Google_Cloud.png" ,
+           "button":"Talk to Expert"          
+       }
+    ],
+    "section2":[
+       {
+           "heading":"Want To Hire An Offshore ",
+           "heading1":"Google Cloud Development Team??",
+           "para":"We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
+           "button":"Hire GCD ENGINEER"          
+       }
+    ],   
+   "section3": [
+       {
+           "heading1":"WHAT WE DO",
+           "heading2":"Our Google Cloud Development Services",
+           "para":"Our Google Cloud services include cloud computing, storage, networking, and analytics. With these services, customers can quickly and easily manage their cloud infrastructure, build applications, store data, and analyze insights. Our team of experts is available to help customers every step of the way, from initial setup to ongoing maintenance and support."
+       }
+   ], 
+   "item1": [
+       {
+           "starLogo": "<FaStar />",
+           "title": "GCP Consulting Services",
+           "description":"Our GCP Consulting Services include helping clients identify the best cloud solutions for their organization, designing, building, and deploying cloud-native applications, and providing ongoing support and maintenance. Our GCP experts have extensive experience in designing and deploying cloud-native applications, and are well-versed in the features of the GCP platform, allowing us to provide tailored solutions that meet our clients’ unique needs."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "GCP Development Services",
+           "description":"Our certified professionals has extensive knowledge in deploying and managing applications on GCP. We provide solutions for the full application lifecycle, from development and testing to deployment and maintenance. Our services are tailored to meet the specific needs of our clients, from small businesses to large enterprises. By leveraging GCP’s scalability and reliability, we are able to provide secure and cost-effective solutions for our clients."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Google G Suite Services",
+           "description":"Our google certified professionals have the technical knowledge and expertise to ensure that your business is utilising the full range of Google G Suite Services, including Gmail, Calendar, Drive, Docs, Sheets, and Slides. We provide comprehensive support and training to ensure that you and your team are fully equipped to take full advantage of Google G Suite’s powerful collaboration tools."
+       }
+   ],
+   "item2": [
+       {
+           "starLogo": "<FaStar />",
+           "title": "GCP Integration Services",
+           "description":"We are a leading provider of GCP Integration Services, providing comprehensive solutions that enable organizations to maximize the power of the Google Cloud Platform. Our experts are well-versed in GCP integration, from the simplest of requirements to the most complex of scenarios. We have deep experience in helping organizations to develop and implement custom GCP integration solutions that meet their specific requirements."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "GCP Migration Services",
+           "description":"Our company specializes in providing expert ASP.NET Cloud Application Development services. We utilize our in-depth knowledge of Microsoft Azure and other cloud technologies to build scalable and secure cloud-based applications. We also provide end-to-end cloud application development services, including architecture design, implementation, and deployment, as well as ongoing maintenance and support, to ensure the smooth operation of our clients’ cloud-based solutions."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Google Cloud Managed Services",
+           "description":"Google Cloud Managed Services provide organizations with the ability to easily deploy, manage, and optimize their cloud infrastructure. We have extensive experience in the deployment of Google Cloud Platform services, such as BigQuery, Compute Engine, Cloud Storage, Kubernetes, App Engine, Cloud Spanner, and Cloud TPU, as well as providing ongoing management, monitoring, and optimization of these services."
+       }
+   ],
+   "section4": [
+       {
+           "heading1":"EXPERTISE IN GOOGLE CLOUD SERVICE",
+           "heading2":"Advanced Google Cloud Development Services"
+       }
+   ], 
+   "item3": [
+       {
+           "starLogo": "<FaStar />",
+           "title": "Migrate to Google Cloud",
+           "description":"We specialize in migrating to Google Cloud, utilizing a range of proven strategies and technologies to ensure a seamless transition. Our team of experienced engineers are adept in leveraging Google Cloud Platform (GCP) to its fullest potential, taking full advantage of its scalability and robust feature set. We have a track record of successful migrations, deploying best practices such as automated infrastructure provisioning, deployment automation, and cost optimization."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Next Gen App Development",
+           "description":"Our GCP engineers are well-versed in modern technology stack such as containerization, serverless computing, and cloud-native development paradigms. We offer end-to-end solutions for complex applications, from design to deployment. Our solutions are optimized for scalability, performance, and cost-efficiency, enabling our customers to quickly benefit from the power of cloud computing."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "AI Conversational Experience",
+           "description":"Our expertise lies in leveraging GCP’s managed services such as Cloud Speech-to-Text and Cloud Natural Language to enable natural conversation flows. We are well-versed in using Dialogflow to create conversational AI agents capable of understanding user intents and providing contextual responses. Additionally, we are experienced in using Cloud Functions to enable integration of our conversational AI agents with other Google services such as Analytics and BigQuery."
+       }
+   ],
+   "item4": [
+       {
+           "starLogo": "<FaStar />",
+           "title": "Wordforce Productivity",
+           "description":"Our team of highly-skilled engineers is well-versed in all aspects of GCP, ensuring a comprehensive and secure solution for Wordforce Productivity. We specialize in developing custom solutions that are tailored to the needs of our clients and provide a fully-integrated experience with GCP. Our expertise in GCP allows us to quickly deploy and configure Wordforce Productivity, ensuring a fast and effective solution."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Data Modernization",
+           "description":"Data Modernization in GCP is one of our areas of expertise. We have extensive experience in the GCP platform, enabling us to provide cutting-edge solutions for your data modernization needs. Additionally, our solutions are designed to maximize the scalability, security, performance and cost-effectiveness of your data modernization projects."
+       },
+       {
+           "starLogo": "<FaStar />",
+           "title": "Industry Specific Solutions",
+           "description":"Our team has in-depth expertise in leveraging Google Cloud's powerful, cost-effective solutions to create custom solutions for a wide range of industries. We are able to utilize Google Cloud's unique features, such as Artificial Intelligence and Machine Learning, to develop powerful, tailored solutions that optimize operations and improve user experience."
+       }
+   ],
+   "project": [
+        {
+            "title": "Project Delivered",
+            "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": "80"
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": "100"
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": "14"
+        }
+
+    ],
+   "adaptable": [
+       {
+           "title": "Time & Material Basis Model",
+           "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+           "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
+           "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
+       },
+       {
+           "title": "Dedicated Developer Model",
+           "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+           "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
+           "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
+       }
+         
+   ],
+   "business" : [
+   {
+     "title": "Backend Development",
+     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+   },
+   {
+     "title": "Small & Medium Businesses",
+     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+   },
+   {
+     "title": "Large Businesses",
+     "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
+     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+   }
+ ],
+ "servicesData2": [
+   {
+     "label": "Cost-Effectiveness",
+     "stateKey": "Cost",
+     "content":"Building a website or application doesn't have to be expensive.Partnering with a reliable development company can help you save on costs associated with hiring an in-house development team, such as software licensing, taxes, hardware, salaries and compensation.With their expertise, you can create an attractive and cost-effective solution for your business."
+   },
+   {
+     "label": "Vast Knowledge",
+     "stateKey": "Vast",
+     "content":"At ZenQua, we have the expertise and experience to create customwebsites andapps that are tailored to your specific business needs.Our dedicated team of developers has the technical knowledge and coding.experience to handle any challenges and provide solutions that comply with industry regulations. With a proven track record of delivering successful projects, you can trust us to create the perfect digital solution for you."
+   },
+ 
+   {
+     "label": "Time-Saving",
+     "stateKey": "Time",
+     "content":"Launch your digital product quickly by outsourcing your development services to a reputable offshore software development agency.ZenQua experienced developers can create a high-quality solution efficiently, enabling you to validate your business idea and adapt your promotional strategies and sales channels as needed. Don't waste          time forming an in-house development team- outsource and get.up and runing in no time!"
+
+   },
+ 
+   {
+     "label": "Experienced Partner",
+     "stateKey": "Experienced",
+     "content":"We have a strict quality assurance process in place for all our web      development projects. Our dedicated QA team continously checks for bugs and errors, guaranteeing high-quality code. Our custom solutions are reliable, flexible and cost-effective, offering clients more features and functionalities within their budget and timeline. with us, you can trust that the solutions we provide are reliable and      flecible."   
+   },
+ 
+   {
+     "label": "Reduced Costs",
+     "stateKey": "Reduced",
+     "content":"Our team carefully assesses your requirements, understands your goals and applies a standard development process tailored to your project needs to avoid unnecessary costs. To make web application development more accessible for businesses, we offer cost-effective development models.This allows companies with limited budgets to complete their projects without breaking the bank."
+     },
+   {
+     "label": "Custom Solution",
+     "stateKey": "Custom",
+     "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
+   }
+ ] 
+}
+}

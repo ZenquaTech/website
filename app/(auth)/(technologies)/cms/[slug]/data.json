@@ -1,0 +1,382 @@
+{
+  "wordpress": {
+    "section1": [
+      {
+        "heading1": "WordPress Development Company",
+        "heading2": "Transforming Your Ideas into Powerful WordPress Solutions!",
+        "para": "Are you looking to transform your ideas into powerful WordPress solutions? Look no further than ZenQua. Our team of highly trained professionals understand the ins-and-outs of developing feature-rich, efficient and eye-catching digital solutions. We are dedicated to maximizing the potential of WordPress-based web development and staying ahead of market trends and requirements. And we guarantee that your brand statements, positioning and user engagements will be reflected in the web solutions we deliver. From enterprises large and small, ZenQua provides custom WordPress web development that will meet your business needs and budget. Transform your ideas into powerful online products with ZenQua.",
+        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135637/Wordpress1-1536x1360.png",
+        "button": "Talk to Expert"
+      }
+    ],
+    "section2": [
+      {
+        "heading": "Want To Hire An Offshore ",
+        "heading1": "WordPress Development Team?",
+        "para": "We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
+        "button": "Hire WordPress DEVELOPER"
+      }
+    ],
+    "section3": [
+      {
+        "heading1": "WHAT WE DO",
+        "heading2": "Our WordPress Development Services",
+        "para": "We offer comprehensive WordPress development services to help you create a powerful, intuitive web presence. Our team of skilled professionals provide custom WordPress design and development solutions to help you build an engaging,user friendly website. We specialize in custom theme and plugin development, as well as WooCommerce integration, SEO optimization, and maintenance services. Our services are designed to make your website stand out from the competition and provide your users with an exceptional experience."
+      }
+    ],
+    "item1": [
+      {
+        "starLogo": "<FaStar />",
+        "title": "WordPress Theme Customisation",
+        "description": "We provide expert WordPress Theme Customisation services to assist you in customising and optimising your WordPress website. Our services include customising and enhancing existing themes, creating custom themes, building custom page templates, optimising user interface, adding custom features and functionality, and much more."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "WordPress Plugin Development",
+        "description": "We specialize in custom WordPress Plugin Development. Our services include creating plugins from scratch, customizing existing plugins, and integrating third-party APIs. Our skilled developers use the latest technologies and techniques to create robust, secure, and user-friendly plugins that ensure your website runs smoothly."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "PSD to WordPress Integration",
+        "description": "We offer professional PSD to WordPress Integration services to help clients build custom websites. Our experienced developers are skilled in HTML coding, WordPress theme integration, and responsive design techniques. We utilize the latest technologies to ensure fast loading times, secure coding, and cross-browser compatibility."
+      }
+    ],
+    "item2": [
+      {
+        "starLogo": "<FaStar />",
+        "title": "WooCommerce Development",
+        "description": "We provide comprehensive WooCommerce development services to help businesses create, maintain, and optimize their e-commerce stores. Our WooCommerce developers specialize in creating custom WooCommerce sites, integrating with existing systems, and developing plugins and extensions to enhance the customer experience. We also provide ongoing support and maintenance services to ensure your WooCommerce store is running smoothly and securely."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "WordPress Migration Services",
+        "description": "Our WordPress experts can quickly and securely migrate your WordPress website and its content from one hosting provider to another. We will also ensure that the migration is completed with no downtime and that the website is optimized for the new server. Our WordPress Migration services include site backup, database migration, plugin installation, media upload and more. We guarantee that your website will remain secure and fully functional throughout the migration process."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "WordPress Support & Maintenance",
+        "description": "We provide comprehensive WordPress Support & Maintenance services to keep your WordPress website running smoothly and efficiently. Our services include plugin and theme updates, server maintenance, security audits, performance optimization, and backup solutions. Additionally, we provide personalized customer service, troubleshooting, and problem-solving to ensure that your WordPress website is running optimally."
+      }
+    ],
+    "section4": [
+      {
+        "heading1": "EXPERTISE IN WORDPRESS DEVELOPMENT",
+        "heading2": "Advance WordPress development Services"
+      }
+    ],
+      "item3": [
+      {
+        "starLogo": "<FaStar />",
+        "title": "WordPress CMS Development",
+        "description": "Our team of WordPress developers possesses the expertise to enhance the user experience of your website by customizing it according to your requirements. We are skilled in incorporating advanced features, such as custom post types, custom fields, and custom taxonomies, that help maximize the user experience. Additionally, we specialize in crafting intricate plugins and extensions that offer clients additional custom functionality for their websites."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "WordPress eCommerce Development",
+        "description": "Our expertise lies in constructing tailor-made WordPress eCommerce solutions that seamlessly integrate with payment gateways, shipping carriers, and inventory management systems. Our team of WooCommerce experts possesses a wealth of knowledge and experience in designing secure, scalable, and user-friendly online stores. We employ industry-leading technologies and adhere to the best development practices to guarantee that your online store performs at its best."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "WordPress Plugin Development",
+        "description": "We are experts in WordPress Plugin Development, with experience in developing custom plugins for WordPress websites. We specialize in creating plugins that provide unique functionalities, from custom integration of third-party APIs to complex automation solutions. Our expertise covers the full development cycle, from design & planning to testing & deployment. We use clean & well-documented code, ensuring scalability and maintainability, as well as compatibility with the latest WordPress version."
+      }
+    ],
+    "item4": [
+      {
+        "starLogo": "<FaStar />",
+        "title": "Custom Development & Integration",
+        "description": "Our experts have extensive knowledge and expertise in developing custom themes and plugins, integrating third-party APIs, customizing existing WordPress functionality, and more. Our team has vast experience in integrating various plugins and themes, developing and customizing PHP, JavaScript, and HTML code, optimizing WordPress performance, and creating secure and scalable solutions."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "WordPress Customization",
+        "description": "We specialize in customization of WordPress websites, leveraging our expertise and experience in HTML, CSS, JavaScript, PHP, MySQL, and WordPress APIs. Our team is well-versed in developing custom themes, plugins, and widgets to meet the specific requirements of our clients, as well as optimizing and troubleshooting existing WordPress installations."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "Payment Gateway Integration",
+        "description": "We specialize in providing seamless integration of payment gateways into WordPress. Our expertise allows us to develop custom solutions tailored to specific requirements. We integrate payment gateways such as PayPal, Stripe, Authorize.net, 2Checkout, and many more to ensure secure and reliable transactions. Our solutions adhere to PCI DSS compliance and offer enhanced security, scalability, and customization."
+      }
+    ],
+    "project": [
+        {
+            "title": "Project Delivered",
+            "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": "80"
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": "100"
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": "14"
+        }
+
+    ],
+    "adaptable": [
+      {
+        "title": "Time & Material Basis Model",
+        "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
+        "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
+      },
+      {
+        "title": "Dedicated Developer Model",
+        "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
+        "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
+      }
+    ],
+    "business": [
+      {
+        "title": "Backend Development",
+        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+      },
+      {
+        "title": "Small & Medium Businesses",
+        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+      },
+      {
+        "title": "Large Businesses",
+        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
+        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+      }
+    ],
+    "servicesData2": [
+      {
+        "label": "Cost-Effectiveness",
+        "stateKey": "Cost",
+        "content": "Building a website or application doesn't have to be expensive.Partnering with a reliable development company can help you save on costs associated with hiring an in-house development team, such as software licensing, taxes, hardware, salaries and compensation.With their expertise, you can create an attractive and cost-effective      solution for your business."
+      },
+      {
+        "label": "Vast Knowledge",
+        "stateKey": "Vast",
+        "content": "At ZenQua, we have the expertise and experience to create customwebsites andapps that are tailored to your specific business needs.Our dedicated team of developers has the technical knowledge and coding.experience to handle any challenges and provide solutions that comply with industry regulations. With a proven track record of delivering successful projects, you can trust us to create the perfect            digital solution for you."
+      },
+
+      {
+        "label": "Time-Saving",
+        "stateKey": "Time",
+        "content": "Launch your digital product quickly by outsourcing your development services to a reputable offshore software development agency.ZenQua experienced developers can create a high-quality solution efficiently, enabling you to validate your business idea and adapt your promotional strategies and sales channels as needed. Don't waste          time forming an in-house development team- outsource and get.up and runing in no time!"
+      },
+
+      {
+        "label": "Experienced Partner",
+        "stateKey": "Experienced",
+        "content": "We have a strict quality assurance process in place for all our web      development projects. Our dedicated QA team continously checks for bugs and errors, guaranteeing high-quality code. Our custom solutions are reliable, flexible and cost-effective, offering clients more features and functionalities within their budget and timeline. with us, you can trust that the solutions we provide are reliable and      flecible."
+      },
+
+      {
+        "label": "Reduced Costs",
+        "stateKey": "Reduced",
+        "content": "Our team carefully assesses your requirements, understands your goals and applies a standard development process tailored to your project needs to avoid unnecessary costs. To make web application development more accessible for businesses, we offer cost-effective development models.This allows companies with limited budgets to complete their projects without breaking the bank."
+      },
+      {
+        "label": "Custom Solution",
+        "stateKey": "Custom",
+        "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
+      }
+    ]
+  },
+  "drupal": {
+    "section1": [
+      {
+        "heading1": "Drupal Development Company",
+        "heading2": "Scalable and dynamic web applications with Mean Stack Development services",
+        "para": "ZenQua is the perfect partner to build powerful, robust, and secure Drupal solutions that address all your custom needs. Our experienced Drupal development team will help you leverage the full potential of the domain to create tailor-made Drupal websites. We understand the complexities of the software and develop solutions to meet your exact requirements. With our expertise and industry knowledge, you can rely on us to create reliable Drupal opportunities for your business. Our goal is to develop quality solutions that reach milestones and realize your vision.",
+        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135636/drupal_1-1024x907.png",
+        "button": "Talk to Expert"
+      }
+    ],
+    "section2": [
+      {
+        "heading": "Want To Hire An Offshore ",
+        "heading1": "Drupal Stack Development Team?",
+        "para": "We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
+        "button": "Hire Drupal DEVELOPER"
+      }
+    ],
+    "section3": [
+      {
+        "heading1": "WHAT WE DO",
+        "heading2": "Our Drupal Development Services",
+        "para": "We provide Drupal development services to help you build custom, secure, and reliable web applications. Our experienced team of developers can create custom modules, integrate APIs, and ensure your website meets the highest standards of performance and security. With our expertise in Drupal, we can help you build a dynamic website that meets your unique needs."
+      }
+    ],
+      "item1": [
+      {
+        "starLogo": "<FaStar />",
+        "title": "Drupal Theme & Templates",
+        "description": "We specialize in developing custom Drupal themes and templates using HTML, CSS, JavaScript, and PHP to create dynamic, feature-rich websites. Our experienced development team is proficient in creating responsive, SEO-friendly designs, leveraging the latest Drupal technologies to create an optimal user experience."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "Drupal Plugin Development",
+        "description": "As a reliable Drupal Development Company, we provide custom development of plugins and modules for Drupal websites. Our team of experienced developers specialize in creating custom plugins for Drupal 8 and 9, leveraging the latest technologies, such as Symfony, Twig, PHP, and jQuery. Our plugins are optimized for high performance, security, and scalability."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "PSD to Drupal Integration",
+        "description": "PSD to Drupal Integration services offered by our company specialize in transforming static PSD designs into dynamic, responsive Drupal websites. Leveraging the latest technologies, our expert Drupal developers efficiently convert complex PSD designs into fully functional Drupal themes. We also offer custom Drupal development services to enhance the user experience."
+      }
+    ],
+    "item2": [
+      {
+        "starLogo": "<FaStar />",
+        "title": "Drupal Migration Services",
+        "description": "We provide the perfect solution for organizations looking to transition from legacy systems to modern, cloud-based platforms. We have certified professionals who possess the technical knowledge and expertise to ensure a seamless transition, minimizing the disruption to existing operations. Our ASP.Net Integration & Migration Services include data migration, system integration, application migration, and cloud migration."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "Drupal eCommerce Development",
+        "description": "We specialize in providing comprehensive Drupal eCommerce Development services, leveraging the full range of Drupal’s core and contributed modules to create efficient, secure, and user-friendly online stores. We have expertise in coding and customizing themes, creating custom modules, integrating payment gateways, and ensuring scalability and optimal performance."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "Drupal Support & Maintenance",
+        "description": "We provide comprehensive Drupal Support & Maintenance services, including server monitoring, codebase, and module updates, bug fixes, security patching, web performance optimization, and custom development. Our team of experienced Drupal experts are skilled in leveraging the latest Drupal technology to ensure your website is secure and running efficiently."
+      }
+    ],
+    "section4": [
+      {
+        "heading1": "EXPERTISE IN DRUPAL DEVELOPMENT",
+        "heading2": "Advance Drupal development Services"
+      }
+    ],
+      "item3": [
+      {
+        "starLogo": "<FaStar />",
+        "title": "Drupal 9 Development",
+        "description": "We specialize in Drupal 9 development services, including custom module and theme development, content migration, site building, and maintenance. Our experienced team of developers is well-versed in PHP, HTML, CSS, JavaScript, MySQL, and other technologies to provide effective solutions for Drupal 9 projects."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "Drupal Consulting",
+        "description": "We provide top-notch Drupal Consulting services, leveraging our vast experience and expertise in Drupal development. Our team is skilled in planning, architecture, design, development, testing, and deployment of custom Drupal websites and applications. We provide full-cycle Drupal support, from initial consultancy to ongoing maintenance and support."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "Drupal CMS Development",
+        "description": "We specialize in Drupal CMS Development services, providing custom development and integration, installation, configuration, and maintenance of Drupal websites. Our experienced team is highly proficient in leveraging the power of Drupal to create secure, flexible, and scalable websites. We provide comprehensive solutions to deliver robust and feature-rich websites."
+      }
+    ],
+    "item4": [
+      {
+        "starLogo": "<FaStar />",
+        "title": "Drupal Staffing Services",
+        "description": "We are a leading Drupal staffing provider with an extensive network of highly-skilled Drupal developers. We offer flexible and cost-effective solutions to help you hire the best developers for your project. Our rigorous vetting process ensures that we select only the most qualified and experienced developers with extensive knowledge of Drupal and its related technologies."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "Custom Drupal Development Services",
+        "description": "We specialize in providing comprehensive custom Drupal development services, including Drupal module development, theming, integration, and maintenance. Our experienced Drupal developers utilize the latest technologies to create efficient, secure, and reliable Drupal solutions tailored to your unique requirements."
+      },
+      {
+        "starLogo": "<FaStar />",
+        "title": "Third Party Integration with Drupal",
+        "description": "We offer certified and experienced Drupal developers to provide Third Party Integration services with Drupal. Our team is well-versed in leveraging the latest technologies and tools to ensure seamless communication between Drupal and third-party applications and services. Our expertise includes integrating Drupal with popular services such as Salesforce, Dropbox, MailChimp, and more."
+      }
+    ],
+    "project": [
+        {
+            "title": "Project Delivered",
+            "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": "80"
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": "100"
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": "14"
+        }
+
+    ],
+    "adaptable": [
+      {
+        "title": "Time & Material Basis Model",
+        "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
+        "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
+      },
+      {
+        "title": "Dedicated Developer Model",
+        "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
+        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
+        "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
+      }
+    ],
+    "business": [
+      {
+        "title": "Backend Development",
+        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+      },
+      {
+        "title": "Small & Medium Businesses",
+        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
+        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+      },
+      {
+        "title": "Large Businesses",
+        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
+        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+      }
+    ],
+    "servicesData2": [
+      {
+        "label": "Cost-Effectiveness",
+        "stateKey": "Cost",
+        "content": "Building a website or application doesn't have to be expensive.Partnering with a reliable development company can help you save on costs associated with hiring an in-house development team, such as software licensing, taxes, hardware, salaries and compensation.With their expertise, you can create an attractive and cost-effective      solution for your business."
+      },
+      {
+        "label": "Vast Knowledge",
+        "stateKey": "Vast",
+        "content": "At ZenQua, we have the expertise and experience to create customwebsites andapps that are tailored to your specific business needs.Our dedicated team of developers has the technical knowledge and coding.experience to handle any challenges and provide solutions that comply with industry regulations. With a proven track record of delivering successful projects, you can trust us to create the perfect            digital solution for you."
+      },
+
+      {
+        "label": "Time-Saving",
+        "stateKey": "Time",
+        "content": "Launch your digital product quickly by outsourcing your development services to a reputable offshore software development agency.ZenQua experienced developers can create a high-quality solution efficiently, enabling you to validate your business idea and adapt your promotional strategies and sales channels as needed. Don't waste          time forming an in-house development team- outsource and get.up and runing in no time!"
+      },
+
+      {
+        "label": "Experienced Partner",
+        "stateKey": "Experienced",
+        "content": "We have a strict quality assurance process in place for all our web      development projects. Our dedicated QA team continously checks for bugs and errors, guaranteeing high-quality code. Our custom solutions are reliable, flexible and cost-effective, offering clients more features and functionalities within their budget and timeline. with us, you can trust that the solutions we provide are reliable and      flecible."
+      },
+
+      {
+        "label": "Reduced Costs",
+        "stateKey": "Reduced",
+        "content": "Our team carefully assesses your requirements, understands your goals and applies a standard development process tailored to your project needs to avoid unnecessary costs. To make web application development more accessible for businesses, we offer cost-effective development models.This allows companies with limited budgets to complete their projects without breaking the bank."
+      },
+      {
+        "label": "Custom Solution",
+        "stateKey": "Custom",
+        "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
+      }
+    ]
+  }
+}

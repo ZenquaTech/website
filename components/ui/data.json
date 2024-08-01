@@ -1,0 +1,120 @@
+{
+    "item1": [
+        {
+            "starLogo": "<FaStar />",
+            "title": "Web App Development",
+            "description":"Whether you need a standalone app or a web-based application that is optimized for mobile use, we have the expertise and experience to create a custom solution that meets your specific needs."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "Website & Portal Development",
+            "description":"Our team has the expertise and experience to build custom CRM, ERP, and portal development solutions using PHP. Whether you need a simple tool or a complex system, we have the skills and resources to deliver a solution that is tailored to your specific requirements."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "Ecommerce Development",
+            "description":"Whether you are a small business owner or a large enterprise. Whether you need a simple online store or a more complex B2B platform, we have the skills and resources to make it happen. Our team specializes in PHP e-commerce development can help you get your project up and running quickly and professionally."
+        }
+    ],
+    "item2": [
+        {
+            "starLogo": "<FaStar />",
+            "title": "CMS Development",
+            "description":"Whether you prefer WordPress, Drupal, or another platform, as a top PHP website development company, we have the skills and experience to help you create a custom content management system (CMS) that meets your specific needs."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "Custom PHP Development",
+            "description":"Our team is committed to working with you to understand your requirements and design a solution that meets your specific needs. Hire our PHP expert who can help you create a powerful, user-centered app that meets the needs of your business."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "Website Support & Maintenance",
+            "description":"Whether you need help fixing bugs, updating features, or optimizing performance, we have the expertise and resources to keep your application running smoothly. We pride ourselves on providing round-the-clock fast, reliable support that helps you maximize the value of your investment in PHP development."
+        }
+    ],
+    "item3": [
+        {
+            "starLogo": "<FaStar />",
+            "title": "Codeigniter Development",
+            "description":"We provides robust web services and solutions for ambitious businesses. Our certified developers are experts in the CodeIgniter framework, and are passionate about creating powerful applications, supported by clean, reusable code. With years of experience, the team is available to provide technical advice, or complete complex projects for dynamic businesses."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "Zend Framework Development",
+            "description":"Our company offers top-notch Zend Framework Development services. We leverage the full potential of Zend’s rich features and components to create scalable and secure web applications. Our team of experienced developers keep up to date with the ever-evolving Zend tools and technologies, making sure to utilize the most recent version and provide our clients with effective solutions."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "CakePHP Development",
+            "description":"CakePHP Development services from I-Verve allow businesses to leverage all the benefits of the widely used open-source PHP framework to build quickly, rapidly deployable web applications. We provide expert-level CakePHP development, designing and implementation services to ensure custom applications are built to exact specifications. Our dedicated team of certified CakePHP developers provide result-driven solutions."
+        }
+    ],
+    "item4": [
+        {
+            "starLogo": "<FaStar />",
+            "title": "Symfony Development",
+            "description":"We are passionate about helping our clients deliver outstanding websites and applications. Our experienced team specializes in providing comprehensive Symfony development services for all types of projects, from small scale customizations to large scale enterprise applications. We pride ourselves on our expertise in the Symfony framework, and our ability to craft custom, tailored solutions that meet all of our clients’ needs."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "Laravel Development",
+            "description":"We understand what it takes to bring innovative and creative web-applications to life that meet client goals and expectations. We are passionate about leveraging the power of the Laravel framework to create robust and long-lasting web projects. Our team of highly-skilled Laravel developers offers complete support throughout the development lifecycle, from initial consultation and project planning to implementation and deployment."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "Yii Development",
+            "description":"We provide top-notch Yii development services to businesses of all sizes. Our experienced developers have been working with the Yii framework since its release and can give you the perfect turnkey solution. You can rest assured that you’re getting the best Yii software development services on the market as we are passionate about our craft and love finding innovative solutions to challenging tasks."
+        }
+    ],
+    "content": [
+        {
+            "starLogo": "/images/pic1.png",
+            "title": "Send an Inquiry",
+            "description": "Send us an initial inquiry outlining your web and app development requirements. We will review the details and provide feedback on the feasibility and estimated timeline for completion."
+        },
+        {
+            "starLogo": "/images/pic1.png",
+            "title": "Send an Inquiry",
+            "description": "Send us an initial inquiry outlining your web and app development requirements. We will review the details and provide feedback on the feasibility and estimated timeline for completion."
+        },
+        {
+            "starLogo": "/images/pic1.png",
+            "title": "Send an Inquiry",
+            "description": "Send us an initial inquiry outlining your web and app development requirements. We will review the details and provide feedback on the feasibility and estimated timeline for completion."
+        },
+        {
+            "starLogo": "/images/pic1.png",
+            "title": "Send an Inquiry",
+            "description": "Send us an initial inquiry outlining your web and app development requirements. We will review the details and provide feedback on the feasibility and estimated timeline for completion."
+        },
+        {
+            "starLogo": "/images/pic1.png",
+            "title": "Send an Inquiry",
+            "description": "Send us an initial inquiry outlining your web and app development requirements. We will review the details and provide feedback on the feasibility and estimated timeline for completion."
+        }
+    ],
+    "project": [
+        {
+            "title": "Project Delivered",
+            "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": "80"
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": "100"
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": "14"
+        }
+
+    ]
+}
+
