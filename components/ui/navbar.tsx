@@ -89,7 +89,6 @@ const menuData: MenuData = {
         subMenu: [
           { title: "NodeJS" , href:"/backend/nodejs" },
           { title: "Ruby on rails" , href:"/backend/ror" },
-          { title: "Blockchain" , href:"/backend/blockchain" },
           { title: "Python" , href:"/backend/python" },
         ],
       },
@@ -168,7 +167,7 @@ const menuData: MenuData = {
         title: "BACKEND DEVELOPERS" ,
         subMenu: [
           { title: "NodeJS Developer" , href:"/backendD/nodejsdeveloper" },
-          { title: "NestJS Developer" , href:"/backendD/nestjsdeveloper" },
+          { title: "Ruby on rails Developer" , href:"/backendD/rordeveloper" },
           { title: "Python Developer" , href:"/backendD/pythondeveloper" },
         ],
       },

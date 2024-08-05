@@ -50,68 +50,36 @@ interface Person {
 
 const people: Person[] = [
   {
-    name: "Mehul P",
+    name: "Mehul Manu",
     experience: "10+ Years",
     expertise: "AWS | Azure | Linux",
     workedWith: "CICD | Terraform",
     avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
+      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
   },
   {
-    name: "Umesh G",
+    name: "Dev Girisha",
     experience: "5+ Years",
     expertise: "Core | MVC | PowerBI",
     workedWith: " SQL | APIs",
     avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
+      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
   },
   {
-    name: "Ram N",
+    name: "Sumat Bala",
+    experience: "7+ Years",
+    expertise: "Net | Sharepoint | Blazor",
+    workedWith: " APIs | MVC",
+    avatarSrc:
+      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
+  },
+  {
+    name: "Prabhakara Indra",
     experience: "10+ Years",
     expertise: "Net | Sharepoint | Blazor",
     workedWith: " APIs | MVC",
     avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
+      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
   },
 ];
 
@@ -221,13 +189,6 @@ const servicesData: ServiceData[] = [
               alt="Backend Development"
             />
             <p>NodeJS</p>
-          </div>
-          <div className="flex flex-col items-center mt-4">
-            <img
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/blockchain.svg"
-              alt="Backend Development"
-            />
-            <p>Blockchain</p>
           </div>
           <div className="flex flex-col items-center mt-4">
             <img
@@ -2365,7 +2326,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
 
         {/* ************ZenQua Industry Expertise */}
 
-        <Box sx={{ display: "flex", justifyContent: "center" ,margin:'50px'}}>
+        <Box sx={{ display: "flex", justifyContent: "center"}}>
           <div style={{ boxSizing: "border-box", width: "98%" }}>
             <Grid container spacing={2} style={{ padding: "20px" }}>
               <Grid item xs={12} className="py-3">
@@ -2801,19 +2762,17 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                   <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
                     <Avatar
                       style={{
-                        borderRadius: "30px",
-                        width: "120px",
-                        height: "120px",
+                        borderRadius: "50%",
+                        width: "100px",
+                        height: "100px",
                       }}
                       src={person.avatarSrc}
                     />
                     <Box
                       className="bg-gray-700"
-                      // className="bg-slate-600"
                       sx={{
-                        // backgroundColor: "RGB(71, 85, 119)",
 
-                        height: { xs: "326px" },
+                        height: { xs: "300px" },
                         width: {
                           xs: "55vw",
                           sm: "34vw",
@@ -2821,6 +2780,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           lg: "19vw",
                         },
                         marginTop: "-50px",
+                        borderRadius:'20px'
                       }}
                     >
                       <br />
@@ -2828,6 +2788,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       <Typography
                         style={{
                           fontSize: "16px",
+                          fontWeight:'600',
                           marginTop: "20px",
                           color: "#D9E3EA",
                         }}
@@ -2862,7 +2823,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         Worked with: {person.workedWith}
                       </Typography>
                       <br />
-                      <button className="bg-[#2090a4] text-white text-md mt-4 px-6 py-3 rounded-md h-12 w-34 font-medium text-[#D9E3EA]">
+                      <button className="bg-[#2090a4] text-white text-md mt-4 px-8 py-2 rounded-md w-34 font-medium text-[#D9E3EA]">
                         Hire Me
                       </button>
                     </Box>

@@ -24,6 +24,28 @@ const scrollToBottom = () => {
     behavior: "smooth",
   });
 };
+const projects = [
+  {
+    src: "https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg",
+    alt: "Enterprise e-Commerce Store – CAMPSAVER",
+    description: "Enterprise e-Commerce Store – CAMPSAVER"
+  },
+  {
+    src: "https://media.istockphoto.com/id/1362508194/vector/modern-3d-illustration-of-web-development.jpg?s=612x612&w=0&k=20&c=FzoSgPjIPiPV7wFtCHCFDOehKVgOkDWVdgtZb8N797s=",
+    alt: "UAE Government Application – DTMC",
+    description: "UAE Government Application – DTMC"
+  },
+  {
+    src: "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg",
+    alt: "Marshalls World of Sport Website",
+    description: "Marshalls World of Sport Website"
+  },
+  {
+    src: "https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg",
+    alt: "Employees Shift Management Web App – Shift Manager",
+    description: "Employees Shift Management Web App – Shift Manager"
+  }
+];
 interface PageState {
   hoveredCircle: number | null;
   clickedButton: string;
@@ -167,27 +189,25 @@ class RoutePage extends Component<RoutePageProps, PageState> {
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
 
-            {content.section1.map((item: any, index: any) => {
-              return (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-transparent p-8 flex flex-col text-left">
-                    <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">{item.heading1}</h2>
-                    <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA]">
-                      {item.heading2}
-                    </h1>
-                    <p className="text-lg my-2 text-justify text-[#9BA9B4]">
-                      {item.para}
-                    </p>
-                    <button className="bg-[#2090a4] text-[#D9E3EA] text-md mt-4 px-6 py-3 rounded-md h-14 w-40 font-medium" onClick={() => scrollToBottom()}>
+            {content?.section1?.map((item: any, index: any) => (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4" key={index}>
+                <div className="bg-transparent p-8 flex flex-col text-left">
+                  <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">{item.heading1}</h2>
+                  <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA]">
+                    {item.heading2}
+                  </h1>
+                  <p className="text-medium my-2 text-justify text-[#9BA9B4]">
+                    {item.para}
+                  </p>
+                  <button className="bg-[#2090a4] text-[#D9E3EA] text-md mt-4 px-6 rounded-lg py-2 w-40 font-medium" onClick={() => scrollToBottom()}>
                     {item.button}
-                    </button>
-                  </div>
-                  <div className="mt-20 flex justify-center">
-                    <img src={item.image} alt="" />
-                  </div>
+                  </button>
                 </div>
-              );
-            })}
+                <div className="mt-20 flex justify-center">
+                  <img src={item.image} alt="" className="object-contain" />
+                </div>
+              </div>
+            ))}
             {/* ************************end********************************** */}
 
             {/* ************************section2********************************** */}
@@ -195,7 +215,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             <Box
               style={{
                 flexGrow: "1px",
-                borderLeft: "1px solid blue",
+                borderLeft: "2px solid rgb(32, 144, 164)",
                 marginTop: "4%",
               }}
             >
@@ -226,7 +246,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
                       <Typography
                         variant="body1"
-                        style={{ color: "#9BA9B4", marginLeft: "2%", fontSize:'19px' , textAlign:'justify' }}
+                        style={{ color: "#9BA9B4", marginLeft: "2%", fontSize: '16px', textAlign: 'justify' }}
                       >
                         {item.para}
                       </Typography>
@@ -243,17 +263,16 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       <Button
                         variant="contained"
                         style={{
-                          alignItems:'center',
+                          alignItems: "center",
                           fontSize: "15px",
                           marginTop: "2%",
-                          textAlign:'center',
-                          flexWrap:'wrap',
+                          textAlign: "center",
+                          flexWrap: "wrap",
                           backgroundColor: "#2090a4",
                           color: "#D9E3EA",
-                          padding:'2%',
-                          fontWeight:'bold',
+                          padding: "2%",
+                          fontWeight: "bold",
                           textTransform: "uppercase",
-                          // height: "55px",
                           width: "80%",
                         }}
                       >
@@ -279,7 +298,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       <Typography className="typo-2 text-center text-[#D9E3EA]">
                         {item.heading2}
                       </Typography>
-                      <Typography className="text-justify py-2" style={{fontSize:'19px' , color:'#9BA9B4' , width:'98%'}}>{item.para}</Typography>
+                      <Typography className="text-justify py-2" style={{fontSize:'16px' , color:'#9BA9B4' , width:'98%'}}>{item.para}</Typography>
                     </Box>
                   </Grid>
                 );
@@ -294,14 +313,14 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
-                      height: "530px",
+                      height: "500px",
+                      borderRadius: '20px',
                       flexWrap: "wrap",
                     }}
                   >
                     <Typography
                       style={{
                         display: "flex",
-                        // justifyContent: "center",
                         marginTop: "1rem",
                         fontSize: "21px",
                         color: "#D9E3EA",
@@ -309,8 +328,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       {" "}
-                      <FaStar style={{ color: "#2090a4", fontSize: "200%" }} />
-                      <Box style={{ marginTop: "2%", paddingLeft: "3%" }}>
+                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <Box style={{ paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
                     </Typography>
@@ -337,8 +356,9 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
-                      height: "560px",
+                      height: "500px",
                       flexWrap: "wrap",
+                      borderRadius: '20px',
                     }}
                   >
                     <Typography
@@ -351,8 +371,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#2090a4", fontSize: "200%" }} />
-                      <Box style={{ marginTop: "2%", paddingLeft: "3%" }}>
+                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <Box style={{  paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
                     </Typography>
@@ -399,7 +419,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
-                      height: "550px",
+                      height: "500px",
+                      borderRadius: '20px',
                       flexWrap: "wrap",
                     }}
                   >
@@ -413,8 +434,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#2090a4", fontSize: "200%" }} />
-                      <Box style={{ marginTop: "2%", paddingLeft: "3%" }}>
+                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <Box style={{  paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
                     </Typography>
@@ -440,7 +461,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
-                      height: "530px",
+                      height: "500px",
+                      borderRadius: '20px',
                       flexWrap: "wrap",
                     }}
                   >
@@ -454,8 +476,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#2090a4", fontSize: "200%" }} />
-                      <Box style={{ marginTop: "2%", paddingLeft: "3%" }}>
+                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <Box style={{  paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
                     </Typography>
@@ -527,7 +549,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 ZenQua AT GLANCE
               </h2>
               <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#2090a4]">
-                Over 2500+ Completed Projects & Still Counting.
+                Over 150+ Completed Projects & Still Counting.
               </h2>
               <div className="max-w[100%]">
                 <Grid container spacing={2}>
@@ -547,8 +569,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         </Box>
                         <div className="text-md text-#D9E3EA">{item.title} </div>
                       </div>
-                      <div className="h-[5px] bg-[rgb(93,93,255)] mt-[15px] w-full text-[#2090a4]"></div>
-                    </Grid>
+                      <div className="h-[5px] bg-[#2090a4] mt-[15px] w-full text-[#2090a4]"></div>                    </Grid>
                   ))}
                 </Grid>
               </div>
@@ -676,9 +697,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   <Grid
                     container
                     spacing={0}
-                    // className="justify-center w-full rounded-[20px] p-4"
-                    className="justify-center w-full p-4"
-                    // style={{ border: "1px solid #D9E3EA !important" }}
+                    className="justify-center w-full border rounded-[20px] p-4"
                   >
                     <Grid item xs={6} sm={3}>
                       <Paper
@@ -930,84 +949,33 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   Why Outsource Your Project to ZenQua?
                 </h2>
               </Grid>
-              <Grid item xs={12}></Grid>
-              <Grid item xs={12} lg={6}>
-                <figure>
-                  <img
-                    src="https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg"
-                    alt="Shoes"
-                    className="rounded-xl w-full h-full md:h-[400px]"
-                  />
-                </figure>
-                <Box className="text-xl w-full mt-4 flex justify-center flex-wrap">
-                  <Box className="text-center w-[80%] text-[#9BA9B4]">
-                    Enterprise e-Commerce Store – CAMPSAVER
+              <Grid container spacing={3}>
+                {projects?.map((project, index) => (
+                  <Grid item xs={12} lg={6} key={index}>
+                    <div className="w-full h-full md:h-[400px] flex flex-col items-center">
+                      <img
+                        src={project.src}
+                        alt={project.alt}
+                        className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover rounded-xl"
+                      />
+                      <p className="text-center w-full text-[#9BA9B4] py-4 text-sm md:text-base lg:text-lg xl:text-xl">
+                        {project.description}
+                      </p>
+                    </div>
+                  </Grid>
+                ))}
+                <Grid item xs={12}>
+                  <Box className="w-full flex justify-center mt-4">
+                    <Button
+                      variant="contained"
+                      className="text-lg text-left text-white bg-[#2090a4] hover:bg-[#1a7687] h-12 w-36 normal-case"
+                    >
+                      Load More
+                    </Button>
                   </Box>
-                </Box>
-              </Grid>
-              <Grid item xs={12} lg={6}>
-                <figure>
-                  <img
-                    src="https://media.istockphoto.com/id/1362508194/vector/modern-3d-illustration-of-web-development.jpg?s=612x612&w=0&k=20&c=FzoSgPjIPiPV7wFtCHCFDOehKVgOkDWVdgtZb8N797s="
-                    alt="Shoes"
-                    className="rounded-xl w-full h-full md:h-[400px]"
-                  />
-                </figure>
-                <Box className="text-xl w-full mt-4 flex justify-center flex-wrap">
-                  <Box className="text-center w-[80%] text-[#9BA9B4]">
-                    UAE Government Application – DTMC
-                  </Box>
-                </Box>
-              </Grid>
-              <Grid item xs={12} lg={6}>
-                <figure>
-                  <img
-                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
-                    alt="Shoes"
-                    className="rounded-xl w-full h-full md:h-[400px]"
-                  />
-                </figure>
-                <Box className="text-xl w-full mt-4 flex justify-center flex-wrap">
-                  <Box className="text-center w-[80%] text-[#9BA9B4]">
-                    Marshalls World of Sport Website
-                  </Box>
-                </Box>
-              </Grid>
-              <Grid item xs={12} lg={6}>
-                <figure>
-                  <img
-                    src="https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg"
-                    alt="Shoes"
-                    className="rounded-xl w-full h-full md:h-[400px]"
-                  />
-                </figure>
-                <Box className="text-xl w-full mt-4 flex justify-center flex-wrap">
-                  <Box className="text-center w-[80%] text-[#9BA9B4]">
-                    Employees Shift Management Web App – Shift Manager
-                  </Box>
-                </Box>
+                </Grid>
               </Grid>
 
-              <Grid item xs={12}>
-                <Box className="w-full flex justify-center">
-                  <Button
-                    variant="contained"
-                    style={{
-                      fontSize: "17px",
-                      textAlign: "left",
-                      textTransform: "none",
-                      marginTop: "16px",
-                      backgroundColor: "#2090a4",
-                      color: "#FFF",
-                      height: "50px",
-                      width: "150px",
-                      color:'#D9E3EA'
-                    }}
-                  >
-                    Load More
-                  </Button>
-                </Box>
-              </Grid>
             </Grid>
 
             {/* **********************  End   ****************************** */}
@@ -1045,114 +1013,68 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 className=" flex justify-center items-center w-[95%]"
               >
                 <Box
-                  className="w-[100%] p-12"
+                  className="w-full p-12 rounded-xl m-8"
                   style={{
                     ...style1,
                     boxSizing: "border-box",
                     margin: "30px",
                   }}
                 >
-                  <Grid container spacing={3}>
-                    <Grid item xs={12} md={6} className="m-[10px] font-bold">
-                      <Box className="mb-[10px]">First name</Box>
-                      <input
-                        type="text"
-                        placeholder="First name"
-                        className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]"
-                      />
-                    </Grid>
-                    <Grid item xs={12} md={6} className="m-[10px] font-bold">
-                      <Box className="mb-[10px]">Last name</Box>
-                      <input
-                        type="text"
-                        placeholder="Last name"
-                        className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]"
-                      />
-                    </Grid>
-                    <Grid item xs={12} className="m-[10px] w-full font-bold">
-                      <Box className="mb-[10px]">Email</Box>
-                      <Box className="w-full">
+               <Grid container spacing={3}>
+                    {[
+                      { label: 'First name', placeholder: 'First name' },
+                      { label: 'Last name', placeholder: 'Last name' },
+                      { label: 'Email', placeholder: 'Email', fullWidth: true },
+                      { label: 'Phone', placeholder: 'Phone number', fullWidth: true },
+                    ].map((field, index) => (
+                      <Grid item xs={12} md={field.fullWidth ? 12 : 6} className="m-2 font-bold" key={index}>
+                        <Box className="mb-2">{field.label}</Box>
                         <input
                           type="text"
-                          placeholder="Email"
-                          className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]"
+                          placeholder={field.placeholder}
+                          className="input input-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#2090a4] border-gray-500"
                         />
-                      </Box>
-                    </Grid>
-                    <Grid item xs={12} className="m-[10px] font-bold">
-                      <Box className="mb-[10px]">Phone</Box>
-                      <input
-                        type="text"
-                        placeholder="Phone number"
-                        className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]"
-                      />
-                    </Grid>
-                    <Grid item xs={12} md={6} className="m-[10px] font-bold">
-                      <Box className="mb-[10px]">Choose a service</Box>
-                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]">
-                        <option disabled selected>
-                          Select
-                        </option>
-                        <option>item 1</option>
-                        <option>item 2</option>
-                      </select>
-                    </Grid>
-                    <Grid item xs={12} md={6} className="m-[10px] font-bold">
-                      <Box className="mb-[10px]">Engagement type</Box>
-                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]">
-                        <option disabled selected>
-                          Select
-                        </option>
-                        <option>item 1</option>
-                        <option>item 2</option>
-                      </select>
-                    </Grid>
-                    <Grid item xs={12} md={6} className="m-[10px] font-bold">
-                      <Box className="mb-[10px]">When to start?</Box>
-                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]">
-                        <option disabled selected>
-                          Select
-                        </option>
-                        <option>item 1</option>
-                        <option>item 2</option>
-                      </select>
-                    </Grid>
-                    <Grid item xs={12} md={6} className="m-[10px] font-bold">
-                      <Box className="mb-[10px]">Budget (USD)</Box>
-                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]">
-                        <option disabled selected>
-                          Select
-                        </option>
-                        <option>item 1</option>
-                        <option>item 2</option>
-                      </select>
-                    </Grid>
-                    <Grid item xs={12} className="m-[10px] font-bold">
-                      <Box className="mb-[10px]">Brief about the Project</Box>
+                      </Grid>
+                    ))}
+                    {[
+                      { label: 'Choose a service' },
+                      { label: 'Engagement type' },
+                      { label: 'When to start?' },
+                      { label: 'Budget (USD)' },
+                    ].map((field, index) => (
+                      <Grid item xs={12} md={6} className="m-2 font-bold" key={index}>
+                        <Box className="mb-2">{field.label}</Box>
+                        <select className="select select-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#2090a4] border-gray-500">
+                          <option disabled selected>Select</option>
+                          <option>item 1</option>
+                          <option>item 2</option>
+                        </select>
+                      </Grid>
+                    ))}
+                    <Grid item xs={12} className="m-2 font-bold">
+                      <Box className="mb-2">Brief about the Project</Box>
                       <textarea
-                        className="textarea input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 h-36 focus:border-[#2090a4]"
+                        className="textarea input input-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 h-36 focus:border-[#2090a4] border-gray-500"
                         placeholder="About project"
                       ></textarea>
                     </Grid>
-                    <Grid item xs={12}>
-                      <Box className="w-[400px]">
-                        <Button
-                          style={{
-                            backgroundColor: "#2090a4",
-                            color: "#D9E3EA",
-                            padding: "15px",
-                            width: "50%",
-                          }}
-                        >
-                          <Box className="font-bold">Send Your Message</Box>
-                        </Button>
-                      </Box>
+                    <Grid item xs={12} className="flex justify-center">
+                      <Button
+                        style={{
+                          backgroundColor: "#2090a4",
+                          color: "#D9E3EA",
+                          padding: "10px",
+                          textTransform: 'none',
+                          width: "50%",
+                        }}
+                      >
+                        Send Your Message
+                      </Button>
                     </Grid>
                   </Grid>
                 </Box>
               </Grid>
             </Grid>
-
             {/* ********************************** End *********************** */}
           </div>
         </MainWrapper>
