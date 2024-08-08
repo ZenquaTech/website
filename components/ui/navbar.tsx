@@ -105,7 +105,6 @@ const menuData: MenuData = {
         title: "MOBILE",
         subMenu: [
           { title: "iOS"  , href:'/mobile/ios'},
-          { title: "Swift" , href:'/mobile/swift'},
           { title: "Flutter" , href:'/mobile/flutter'},
           { title: "React Native" , href:'/mobile/reactnative'},
         ],
@@ -184,10 +183,8 @@ const menuData: MenuData = {
         title: "MOBILE DEVELOPERS",
         subMenu: [
           { title: "iOS Developer" , href:'/mobileD/ios' },
-          { title: "Android Developer" , href:'/mobileD/reactnative'},
-          { title: "Swift Developer" , href:'/mobileD/flutter'},
           { title: "Flutter Developer" , href:'/mobileD/'},
-          { title: "React Native Developer" , href:'/mobileD/'},
+          { title: "React Native Developer" , href:'/mobileD/reactnative'},
         ],
       },
       {

@@ -189,68 +189,36 @@
 
     "people": [
       {
-        "name": "Mehul P",
+        "name": "Mehul Manu",
         "experience": "10+ Years",
-        "expertise": "AWS | Azure | Linux",
-        "workedWith": "CICD | Terraform",
+        "expertise": "Net | Sharepoint | Blazor",
+        "workedWith": " APIs | MVC",
         "avatarSrc":
-          "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+          "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
       },
       {
-          "name": "Umesh G",
+        "name": "Dev Girisha",
         "experience": "5+ Years",
-        "expertise": "Core | MVC | PowerBI",
+        "expertise":  "Core | MVC | PowerBI",
         "workedWith": " SQL | APIs",
         "avatarSrc":
-          "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+          "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
       },
       {
-        "name": "Ram N",
+        "name": "Sumat Bala",
+        "experience": "7+ Years",
+        "expertise": "Net | Sharepoint | Blazor",
+        "workedWith": " APIs | MVC",
+        "avatarSrc":
+          "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+      },
+      {
+        "name": "Prabhakara Indra",
         "experience": "10+ Years",
         "expertise": "Net | Sharepoint | Blazor",
         "workedWith": " APIs | MVC",
         "avatarSrc":
-          "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
-      },
-      {
-        "name": "Gaurang S",
-        "experience": "10+ Years",
-        "expertise": "Net | Sharepoint | Blazor",
-        "workedWith": " APIs | MVC",
-        "avatarSrc":
-          "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
-      },
-      {
-        "name": "Gaurang S",
-        "experience": "10+ Years",
-        "expertise": "Net | Sharepoint | Blazor",
-        "workedWith": " APIs | MVC",
-        "avatarSrc":
-          "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
-      },
-      {
-        "name": "Gaurang S",
-        "experience": "10+ Years",
-        "expertise": "Net | Sharepoint | Blazor",
-        "workedWith": " APIs | MVC",
-        "avatarSrc":
-          "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
-      },
-      {
-        "name": "Gaurang S",
-        "experience": "10+ Years",
-        "expertise": "Net | Sharepoint | Blazor",
-        "workedWith": " APIs | MVC",
-        "avatarSrc":
-          "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
-      },
-      {
-        "name": "Gaurang S",
-        "experience": "10+ Years",
-        "expertise": "Net | Sharepoint | Blazor",
-        "workedWith": " APIs | MVC",
-        "avatarSrc":
-          "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+          "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
       }
     ],
     "hiringNew": [
@@ -322,12 +290,12 @@
   "items": [
       {
           "image": "<FaStar />",
-          "title": "Custom NestJs Development",
+          "title": "Custom Ruby on rails Development",
           "description": "Our company specializes in delivering custom Nest.js development services, leveraging the framework's advanced capabilities to create high-performance and scalable applications. Our skilled developers use Nest.js's modular architecture and powerful tools to build customized solutions tailored to our clients' unique needs. With expertise in TypeScript, Node.js, and advanced Nest.js features, such as middleware and dependency injection, we deliver robust and efficient solutions that exceed our clients' expectations."
       },
       {
           "image": "<FaStar />",
-          "title": "NestJs Data Management",
+          "title": "Ruby on rails Data Management",
           "description": "We specializes in providing advanced Data Management solutions using Next.js. With our deep expertise in React and JavaScript, we can deliver robust and efficient applications that manage data at large scale. Developers at our company have that capabilities to optimize performance and create highly responsive user interfaces. With our hands on expertise in modular architecture and advanced data management tools, we help businesses streamline their data management processes and achieve their goals."
       },
       {
@@ -339,17 +307,17 @@
   "text": [
       {
           "image": "<FaStar />",
-          "title": "NestJs Web Development Solutions",
+          "title": "Ruby on rails Web Development Solutions",
           "description": "At our company, we excel in delivering exceptional web development solutions using Nest.js. Our skilled developers use the framework's modular architecture and advanced tools to create high-performing server-side applications. We specialize in TypeScript and Node.js, allowing us to deliver robust and efficient solutions that meet even the most complex business requirements. With our expertise in Nest.js's advanced features, such as dependency injection and middleware, we can tailor custom solutions that are optimized for each client's unique needs."
       },
       {
           "image": "<FaStar />",
-          "title": "NestJs Mobile app development",
+          "title": "Ruby on rails Mobile app development",
           "description": "We are leading Nest.js mobile app development service provider, leveraging the framework's powerful features to deliver high-performance and scalable solutions. Our skilled developers use Nest.js's modular architecture, TypeScript, and Node.js to create mobile apps that meet complex business requirements. With our expertise in Nest.js's advanced features, such as GraphQL and WebSockets, we can deliver custom solutions that are optimized for each client's specific needs."
       },
       {
           "image": "<FaStar />",
-          "title": "NestJs Consulting",
+          "title": "Ruby on rails Consulting",
           "description": "We offers expert Nest.js consulting services, providing businesses with the technical expertise they need to build efficient and scalable powerful web applications. Our experienced consultants leverage their knowledge of Nest.js's advanced features, such as its modular architecture and dependency injection, to provide clients with tailored solutions that meet their specific needs. With our help, businesses can take full advantage of Nest.js's capabilities, ensuring that their web applications are optimized for high-performance and efficiency."
       }
   ],
@@ -395,7 +363,7 @@
 
       { 
           "description1": "OUR EXPERTISE",
-          "description2": "Our NestJs Developer's Expertise",
+          "description2": "Our Ruby on rails Developer's Expertise",
           "description3": "Our team of experts specializes in delivering efficient, reliable, and scalable web applications using NestJS technology. With a focus on high-quality results and seamless user experience, and top-notch development services. "   
         }
 
@@ -413,7 +381,7 @@
 
       { 
           "description1": "WHY CHOOSE ZENQUA",
-          "description2": "Benefits of Hiring NestJs Developers from ZenQua",
+          "description2": "Benefits of Hiring Ruby on rails Developers from ZenQua",
           "description3": "Hiring Nest.js developers from our company can provide you with numerous benefits for your web development project. With our skilled developers, you can have full control over your project team and choose developers from favourable time zones. We also provide regular progress reports, ensure code security, and sign NDA for confidentiality. Our pocket-friendly services and post-launch support are additional features that make our services even more attractive. Trust us to deliver a cost-effective, secure, and successful project for your business."
        
         }

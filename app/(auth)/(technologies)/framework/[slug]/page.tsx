@@ -17,6 +17,7 @@ import AddIcon from "@material-ui/icons/Add";
 import CountUp from "react-countup";
 import Carousel from "react-material-ui-carousel";
 import "./styles.css";
+import ContactUs from "@/components/ui/contactus";
 
 const scrollToBottom = () => {
   window.scrollTo({
@@ -46,6 +47,7 @@ const projects = [
     description: "Employees Shift Management Web App – Shift Manager"
   }
 ];
+
 interface PageState {
   hoveredCircle: number | null;
   clickedButton: string;
@@ -330,7 +332,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     >
                       {" "}
                       <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
-                      <Box style={{ marginTop: "2%", paddingLeft: "3%" }}>
+                      <Box style={{paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
                     </Typography>
@@ -693,12 +695,11 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 Why Outsource Your Project to ZenQua?
               </h2>
               {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
-                <div className="hidden sm:flex justify-center flex rounded-[20px]"
-                style={{ border: "1px solid #D9E3EA !important" }}>
+                <div className="hidden sm:flex justify-center flex border rounded-[20px]">
                   <Grid
                     container
                     spacing={0}
-                    className="justify-center w-full border rounded-[20px] p-4"
+                    className="justify-center w-full p-4"
                   >
                     <Grid item xs={6} sm={3}>
                       <Paper
@@ -712,7 +713,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         {content.servicesData2.map(
                           (service: any, index: any) => (
                             <Button
-                              className="hover:text-#D9E3EA w-full"
+                              className="hover:text-[#D9E3EA] w-full"
                               key={index}
                               onClick={() =>
                                 this.handleClick6(
@@ -967,12 +968,20 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 ))}
                 <Grid item xs={12}>
                   <Box className="w-full flex justify-center mt-4">
-                    <Button
-                      variant="contained"
-                      className="text-lg text-left text-white bg-[#2090a4] hover:bg-[#1a7687] h-12 w-36 normal-case"
-                    >
-                      Load More
-                    </Button>
+                  <Button
+                  variant="contained"
+                  style={{
+                    fontSize: "17px",
+                    textAlign: "left",
+                    borderRadius:'10px',
+                    textTransform: "none",
+                    marginTop: "16px",
+                    backgroundColor: "#2090a4",
+                    color: "#FFF",
+                  }}
+                >
+                  Load More
+                </Button>
                   </Box>
                 </Grid>
               </Grid>
@@ -982,100 +991,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* **********************  End   ****************************** */}
 
             {/* ********************************** Contact Us *********************** */}
-            <Grid container className="my-24 px-4 sm:px-16">
-            <Grid item xs={12} md={6}>
-                <Box className="w-full flex flex-col justify-center items-center p-[20px]">
-                  <Box className="text-5xl font-bold text-center service-button mt-16 mb-12">
-                    Contact Us
-                  </Box>
-                  <img
-                    style={{
-                      height: "100%",
-                      width: "80%",
-                      margin: "15px",
-                    }}
-                    src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg"
-                    alt="Time & Material Model"
-                  />
-                  <Box>
-                    <h2 className="text-md text-center mb-10 mt-20 w-[97%] text-[#9BA9B4]">
-                      Let’s kickstart the journey together with a friendly
-                      greeting! Whether you have questions to ask or just want
-                      to connect, drop us a message and let’s build a strong
-                      relationship.
-                    </h2>
-                  </Box>
-                </Box>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                className=" flex justify-center items-center w-[95%]"
-              >
-                <Box
-                  className="w-full p-12 rounded-xl m-8"
-                  style={{
-                    ...style1,
-                    boxSizing: "border-box",
-                    margin: "30px",
-                  }}
-                >
-               <Grid container spacing={3}>
-                    {[
-                      { label: 'First name', placeholder: 'First name' },
-                      { label: 'Last name', placeholder: 'Last name' },
-                      { label: 'Email', placeholder: 'Email', fullWidth: true },
-                      { label: 'Phone', placeholder: 'Phone number', fullWidth: true },
-                    ].map((field, index) => (
-                      <Grid item xs={12} md={field.fullWidth ? 12 : 6} className="m-2 font-bold" key={index}>
-                        <Box className="mb-2">{field.label}</Box>
-                        <input
-                          type="text"
-                          placeholder={field.placeholder}
-                          className="input input-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#2090a4] border-gray-500"
-                        />
-                      </Grid>
-                    ))}
-                    {[
-                      { label: 'Choose a service' },
-                      { label: 'Engagement type' },
-                      { label: 'When to start?' },
-                      { label: 'Budget (USD)' },
-                    ].map((field, index) => (
-                      <Grid item xs={12} md={6} className="m-2 font-bold" key={index}>
-                        <Box className="mb-2">{field.label}</Box>
-                        <select className="select select-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#2090a4] border-gray-500">
-                          <option disabled selected>Select</option>
-                          <option>item 1</option>
-                          <option>item 2</option>
-                        </select>
-                      </Grid>
-                    ))}
-                    <Grid item xs={12} className="m-2 font-bold">
-                      <Box className="mb-2">Brief about the Project</Box>
-                      <textarea
-                        className="textarea input input-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 h-36 focus:border-[#2090a4] border-gray-500"
-                        placeholder="About project"
-                      ></textarea>
-                    </Grid>
-                    <Grid item xs={12} className="flex justify-center">
-                      <Button
-                        style={{
-                          backgroundColor: "#2090a4",
-                          color: "#D9E3EA",
-                          padding: "10px",
-                          textTransform: 'none',
-                          width: "50%",
-                        }}
-                      >
-                        Send Your Message
-                      </Button>
-                    </Grid>
-                  </Grid>
-                </Box>
-              </Grid>
-            </Grid>
+            <ContactUs/>
 
             {/* ********************************** End *********************** */}
           </div>
