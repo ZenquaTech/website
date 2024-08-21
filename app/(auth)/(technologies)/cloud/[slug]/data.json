@@ -101,7 +101,7 @@
      "project": [
          {
              "title": "Project Delivered",
-             "number": "2500"
+             "number": "150"
          },
          {
              
@@ -290,28 +290,28 @@
            "description":"We have expertise in providing solutions for Application Migration in Azure allows us to leverage these services to ensure successful and secure migrations. Our certified professionals are well-versed in the nuances of Azure cloud technology, making us the ideal partner for smooth application migration to the cloud."
        }
    ],
-   "project": [
-       {
-           "title": "Project Delivered",
-           "number": "2500"
-       },
-       {
-           
-           "title": "Satisfied Clients",
-           "number": "800"
-       },
-       {
-           
-           "title": "Experts on Board",
-           "number": "100"
-       },
-       {
-           
-           "title": "Years of Experience",
-           "number": "14"
-       }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
 
-   ],
+    ],
    "adaptable": [
        {
            "title": "Time & Material Basis Model",

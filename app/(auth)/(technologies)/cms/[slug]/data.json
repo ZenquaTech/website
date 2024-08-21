@@ -101,7 +101,7 @@
     "project": [
       {
         "title": "Project Delivered",
-        "number": "2500"
+        "number": "150"
       },
       {
         "title": "Satisfied Clients",
@@ -284,23 +284,27 @@
         "description": "We offer certified and experienced Drupal developers to provide Third Party Integration services with Drupal. Our team is well-versed in leveraging the latest technologies and tools to ensure seamless communication between Drupal and third-party applications and services. Our expertise includes integrating Drupal with popular services such as Salesforce, Dropbox, MailChimp, and more."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {

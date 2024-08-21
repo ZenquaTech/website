@@ -98,23 +98,27 @@
             "description":"We implement real-time web socket programming concepts to take advantage of low-latency benefits and develop web applications using Node.js. This ensure that your application provides a seamless and efficient user experience, improving its overall performance and success."
         }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -327,23 +331,27 @@
             "description":"We offers tailored solutions to help businesses build effective server-side applications. Our experts provide expert advice and development services to ensure optimal performance and scalability. We provide end-to-end solutions using NestJs, Typescript, and GraphQL. Our team of experienced professionals is here to provide support and guidance for a successful project."
         }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -556,22 +564,26 @@
         }
     ],
     "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {

@@ -564,7 +564,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 ZenQua AT GLANCE
               </h2>
               <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#5D5DFF]">
-                Over 2500+ Completed Projects & Still Counting.
+                Over 150+ Completed Projects & Still Counting.
               </h2>
               <div className="max-w[100%]">
                 <Grid container spacing={2}>
@@ -1205,7 +1205,7 @@ const MainWrapper = styled(Box)({
     fontSize: "18px",
   },
   "& .btn1": {
-    background: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    background: "#2090a4",
     borderRadius: "5px",
     marginTop: "1.5rem",
   },

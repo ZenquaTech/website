@@ -158,7 +158,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
         {content.content.map((content:any, index:any) => (
           <Grid item xs={12} sm={3} key={index}>
             <Box className="box3">
-              <img src={content.image} alt={content.title} style={{color: "rgb(93 93 255 / var(--tw-bg-opacity))"}}/>
+              <img src={content.image} alt={content.title} style={{color: "#2090a4"}}/>
               <Typography className="typo-11"> {content.title} </Typography>
               <Typography className="typo-12">{content.description}</Typography>
             </Box>
@@ -301,7 +301,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                         gutterBottom
                         variant="h5"
                         component="h2"
-                        style={{ textAlign: "center", marginTop: "2%", color: "rgb(93 93 255 / var(--tw-bg-opacity))" }}
+                        style={{ textAlign: "center", marginTop: "2%", color: "#2090a4" }}
                       >
                         {value.title}
                       </Typography>
@@ -523,7 +523,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                     <br />
                     <Button
                       style={{
-                        background: "rgb(93 93 255 / var(--tw-bg-opacity))",
+                        background: "#2090a4",
                         color: "#fff",
                         padding: "15px",
                         width: "50%",
@@ -815,7 +815,7 @@ const MainWrapper = styled(Box)({
     fontSize: "18px",
   },
   "& .btn1": {
-    background: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    background: "#2090a4",
     borderRadius: "5px",
     marginTop: "1.5rem",
   },
@@ -840,7 +840,7 @@ const MainWrapper = styled(Box)({
   " & .typo-5": {
     display: "flex",
     justifyContent: "center",
-    color: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    color: "#2090a4",
     fontSize: "25px",
   },
   " & .typo-6": {
@@ -892,7 +892,7 @@ const MainWrapper = styled(Box)({
 
   " & .typo-13": {
     fontSize: "25px",
-    color: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    color: "#2090a4",
   },
   " & .typo-14": {
     fontSize: "25px",

@@ -267,7 +267,7 @@ export default function Global() {
         >
           <Box style={{display: "flex",alignItems: "center",flexDirection: "column",
                         textAlign: "center",margin: "50px",padding: "40px",}}>
-            <Bs1CircleFill  style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}}/>
+            <Bs1CircleFill  style={{fontSize:'50px',color:"#2090a4"}}/>
             <Typography style={{marginTop:'1rem'}}>DEFINE</Typography>
             <Typography >SET A CLEAR VISION</Typography>
           </Box>
@@ -279,7 +279,7 @@ export default function Global() {
           style={{ width: "9vw", margin: "30px" }}
         >
           <Box className="box2">
-            <Bs2CircleFill style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}} />
+            <Bs2CircleFill style={{fontSize:'50px',color:"#2090a4"}} />
             <Typography style={{marginTop:'1rem'}}>DEPLOY </Typography>
             <Typography>DEPLOYMENT AND SUPPORT </Typography>
           </Box>
@@ -291,7 +291,7 @@ export default function Global() {
           style={{ width: "9vw", margin: "30px" }}
         >
           <Box className="box2">
-          <Bs3CircleFill style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}} />
+          <Bs3CircleFill style={{fontSize:'50px',color:"#2090a4"}} />
             <Typography style={{marginTop:'1rem'}}>DIGEST</Typography>
             <Typography>UNDERSTAND REQUIREMENT </Typography>
           </Box>
@@ -303,7 +303,7 @@ export default function Global() {
           style={{ width: "9vw", margin: "30px" }}
         >
           <Box className="box2">
-          <Bs4CircleFill style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}} />
+          <Bs4CircleFill style={{fontSize:'50px',color:"#2090a4"}} />
             <Typography style={{marginTop:'1rem'}}>DELIVER</Typography>
             <Typography>MONITOR & IMPLEMENT PRODUCT</Typography>
           </Box>
@@ -315,7 +315,7 @@ export default function Global() {
           style={{ width: "9vw", margin: "30px" }}
         >
           <Box className="box2">
-          <Bs5CircleFill style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}} />
+          <Bs5CircleFill style={{fontSize:'50px',color:"#2090a4"}} />
             <Typography style={{marginTop:'1rem'}}>DISCOVER </Typography>
             <Typography>EXPLORE POTENTIAL & PROVIDE SOLUTIONS </Typography>
           </Box>
@@ -327,7 +327,7 @@ export default function Global() {
           style={{ width: "9vw", margin: "30px" }}
         >
           <Box className="box2">
-          <Bs6CircleFill style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}} />
+          <Bs6CircleFill style={{fontSize:'50px',color:"#2090a4"}} />
             <Typography style={{marginTop:'1rem'}}>DESIGN </Typography>
             <Typography>DESIGN EXPERIENCE </Typography>
           </Box>
@@ -339,7 +339,7 @@ export default function Global() {
           style={{ width: "9vw", margin: "30px" }}
         >
           <Box className="box2">
-          <Bs7CircleFill style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}} />
+          <Bs7CircleFill style={{fontSize:'50px',color:"#2090a4"}} />
             <Typography style={{marginTop:'1rem'}}>DRIVE</Typography>
             <Typography>MAINTAIN & EVOLVE</Typography>
           </Box>
@@ -563,7 +563,7 @@ export default function Global() {
               alignItems:"center"
             }}
           >
-            <FaLeaf style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}} />
+            <FaLeaf style={{fontSize:'50px',color:"#2090a4"}} />
             <Typography
               style={{ fontWeight: "bold", fontSize: "25px", color: "#fff",marginTop: "1rem" }}
             >
@@ -592,7 +592,7 @@ export default function Global() {
               alignItems:"center"
             }}
           >
-            <IoMdStopwatch style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}} />
+            <IoMdStopwatch style={{fontSize:'50px',color:"#2090a4"}} />
             <Typography
               style={{ fontWeight: "bold", fontSize: "25px", color: "#fff",marginTop: "1rem", }}
             >
@@ -621,7 +621,7 @@ export default function Global() {
               alignItems:"center"
             }}
           >
-            <BsBuildingsFill style={{fontSize:'50px',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}} />
+            <BsBuildingsFill style={{fontSize:'50px',color:"#2090a4"}} />
             <Typography
               style={{ fontWeight: "bold", fontSize: "25px", color: "#fff" ,marginTop: "1rem"}}
             >

@@ -30,7 +30,7 @@ export default function Engagement() {
       <Grid container>
         <Grid item xs={12} sm={6} md={3}>
           <Box className="box-1">
-            <FaDatabase  style={{fontSize:'40px',color:"rgb(93 93 255 / var(--tw-bg-opacity))",borderColor: "#f13c31"}} />
+            <FaDatabase  style={{fontSize:'40px',color:"#2090a4",borderColor: "#f13c31"}} />
             <Typography className="typo-3">CURIOSITY </Typography>
             <Typography className="typo-4">
               A small river named Duden flows by their place and supplies it
@@ -41,7 +41,7 @@ export default function Engagement() {
 
         <Grid item xs={12} sm={6} md={3}>
           <Box className="box-1">
-            <FaWpexplorer  style={{fontSize:'40px',color:"rgb(93 93 255 / var(--tw-bg-opacity))",borderColor: "#f13c31"}}/>
+            <FaWpexplorer  style={{fontSize:'40px',color:"#2090a4",borderColor: "#f13c31"}}/>
             <Typography className="typo-3">Exploration </Typography>
             <Typography className="typo-4">
               We love to move into uncharted waters to explore the best creative
@@ -53,7 +53,7 @@ export default function Engagement() {
 
         <Grid item xs={12} sm={6} md={3}>
           <Box className="box-1">
-            <FaSpinner style={{fontSize:'40px',color:"rgb(93 93 255 / var(--tw-bg-opacity))",borderColor: "#f13c31"}}/>
+            <FaSpinner style={{fontSize:'40px',color:"#2090a4",borderColor: "#f13c31"}}/>
             
             <Typography className="typo-3">Innovation </Typography>
             <Typography className="typo-4">
@@ -65,7 +65,7 @@ export default function Engagement() {
 
         <Grid item xs={12} sm={6} md={3}>
           <Box className="box-1">
-            <IoMdSettings  style={{fontSize:'40px',color:"rgb(93 93 255 / var(--tw-bg-opacity))",borderColor: "#f13c31"}} />
+            <IoMdSettings  style={{fontSize:'40px',color:"#2090a4",borderColor: "#f13c31"}} />
             <Typography className="typo-3">Ingenuity </Typography>
             <Typography className="typo-4">
               We trust our workers’ ingenuity. We tell them what we want and
@@ -338,7 +338,7 @@ export default function Engagement() {
               justifyContent: "center",
               fontSize:"18px",
               // backgroundColor: "#eb5d3d",
-              backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
+              backgroundColor: "#2090a4",
               textAlign:'center',
               width:"100vw",
               marginBottom:'2rem',
@@ -374,7 +374,7 @@ export default function Engagement() {
                   backgroundColor: "#fff",
                   fontSize: "15px",
                   // color: "#eb5d3d",
-                  color:"rgb(93 93 255 / var(--tw-bg-opacity))",
+                  color:"#2090a4",
                   height:'40%',
                   width:"60%",
                   borderRadius:'5px'

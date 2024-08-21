@@ -573,7 +573,7 @@ export default function Partnerships() {
           justifyContent: "center",
           fontSize: "18px",
           // backgroundColor: "#eb5d3d",
-          backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
+          backgroundColor: "#2090a4",
           textAlign: "center",
           width: "100vw",
           marginBottom: "2rem",
@@ -611,10 +611,10 @@ export default function Partnerships() {
               <Button
                 style={{
                   backgroundColor: "#fff",
-                  // backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
+                  // backgroundColor: "#2090a4",
                   fontSize: "15px",
                   // color: "#eb5d3d",
-                  color: "rgb(93 93 255 / var(--tw-bg-opacity))",
+                  color: "#2090a4",
                   height: "45%",
                   width: "60%",
                   borderRadius: "5px",
@@ -659,7 +659,7 @@ const MainWrapper = styled(Box)({
   },
   "& .typo-4": {
     // backgroundColor: "#e04a36",
-    backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    backgroundColor: "#2090a4",
     alignItems: "center",
     display: "flex",
     justifyContent: "center",

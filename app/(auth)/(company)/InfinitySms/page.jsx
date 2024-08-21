@@ -322,7 +322,7 @@ export default function InfinitySms() {
           </Box>
           <Button
             style={{
-              backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
+              backgroundColor: "#2090a4",
               borderRadius: "5px",
               margin: "2rem",
               fontSize:'12px',
@@ -775,7 +775,7 @@ const MainWrapper = styled(Box)({
   "& .typo-1": {
     fontSize: "40px",
     fontWeight: "bold",
-    color: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    color: "#2090a4",
     margin: "3rem",
   },
   "& .box-1": {
@@ -794,7 +794,7 @@ const MainWrapper = styled(Box)({
   "& .typo-3": {
     fontSize: "60px",
     fontWeight: "bold",
-    color: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    color: "#2090a4",
     margin: "3rem",
   },
   "& .box-2": {

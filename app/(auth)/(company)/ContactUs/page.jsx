@@ -89,8 +89,8 @@ export default function ContactUs() {
            
             <Box className="box-1">
             <Typography className="typo-1">Get in touch </Typography>
-            <Typography style={{color:"rgb(93 93 255 / var(--tw-bg-opacity))"}}>+91 731-4028250</Typography>
-            <Typography style={{margin:'2rem',color:"rgb(93 93 255 / var(--tw-bg-opacity))"}}></Typography>
+            <Typography style={{color:"#2090a4"}}>+91 731-4028250</Typography>
+            <Typography style={{margin:'2rem',color:"#2090a4"}}></Typography>
             <Typography>Assistance hours:</Typography>
             <Typography>Monday – Friday</Typography>
             <Typography style={{margin:'2rem'}}>8 am to 6 pm </Typography>    

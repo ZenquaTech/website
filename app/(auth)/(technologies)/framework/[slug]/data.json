@@ -98,23 +98,27 @@
         "description": "We offer comprehensive Django Consulting Services with expertise in all aspects of web development, from project inception to deployment. Our team consists of experienced web developers and engineers with expertise in Django and Python, as well as databases and web hosting services. We offer end-to-end solutions for creating applications, setting up custom domains, deploying on cloud services, performing system architecture design and optimization."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -284,23 +288,27 @@
         "description": "We provide comprehensive MEAN Stack Application Modernization Services - leveraging MongoDB, Express.js, Angular, Node.js - to bring organizational applications up to date with contemporary development standards. We utilize industry-leading tools and technologies to maximize application scalability, performance, maintainability, and security, allowing our clients to optimize their application development lifecycles."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -469,23 +477,27 @@
         "description": "Our ROR Rescue Mission helps businesses maximize their return on investment. It offers comprehensive services, such as code optimization, issue resolution, performance monitoring, and security enhancements. Our services guarantee improved performance, scalability, and security."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
