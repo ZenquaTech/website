@@ -11,10 +11,10 @@ export default function Hero() {
           <h2 className="text-lg mt-12 font-bold text-[#D9E3EA] ">
             Best Web and Mobile App Development Company
           </h2>
-          <h1 className="text-2xl md:text-3xl font-bold uppercase my-4 text-[#D9E3EA] ">
+          <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA] ">
             Developing Software For Your Digital Success
           </h1>
-          <p className="text-[#9BA9B4] text-xl my-2 text-justify">
+          <p className="text-[#9BA9B4] text-lg my-2 text-justify">
             Driven by innovation, ZenQua is your reliable development partner
             for cutting-edge digital solutions. With our extensive expertise in
             custom web and mobile app development, we help automate businesses,
@@ -22,7 +22,7 @@ export default function Hero() {
             of digital transformation and build a future-proof scaffolding for
             success.
           </p>
-          <button className="bg-[#5D5DFF] text-white text-md mt-4 px-6 py-3 rounded-md h-14 w-36 font-medium text-[#D9E3EA]">
+          <button className="bg-[#2090a4] text-white text-md mt-6 px-6 rounded-md h-10 w-36 font-medium text-[#D9E3EA]">
             What we do
           </button>
         </div>

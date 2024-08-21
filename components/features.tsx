@@ -17,7 +17,7 @@ import {
 import React, { Component } from "react";
 import Paper from "@material-ui/core/Paper";
 import Carousel from "react-material-ui-carousel";
-import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import { SiNestjs } from "react-icons/si";
 import AddIcon from "@material-ui/icons/Add";
@@ -50,68 +50,36 @@ interface Person {
 
 const people: Person[] = [
   {
-    name: "Mehul P",
+    name: "Mehul Manu",
     experience: "10+ Years",
     expertise: "AWS | Azure | Linux",
     workedWith: "CICD | Terraform",
     avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
+      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
   },
   {
-    name: "Umesh G",
+    name: "Dev Girisha",
     experience: "5+ Years",
     expertise: "Core | MVC | PowerBI",
     workedWith: " SQL | APIs",
     avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
+      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
   },
   {
-    name: "Ram N",
+    name: "Sumat Bala",
+    experience: "7+ Years",
+    expertise: "Net | Sharepoint | Blazor",
+    workedWith: " APIs | MVC",
+    avatarSrc:
+      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
+  },
+  {
+    name: "Prabhakara Indra",
     experience: "10+ Years",
     expertise: "Net | Sharepoint | Blazor",
     workedWith: " APIs | MVC",
     avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
-  {
-    name: "Gaurang S",
-    experience: "10+ Years",
-    expertise: "Net | Sharepoint | Blazor",
-    workedWith: " APIs | MVC",
-    avatarSrc:
-      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
+      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
   },
 ];
 
@@ -131,7 +99,6 @@ interface StatsCardProps {
 }
 
 interface StatsCardState {
-  animatedStatistics: Statistic[];
   backend: boolean;
   frontend: boolean;
   mobile: boolean;
@@ -194,56 +161,43 @@ const servicesData: ServiceData[] = [
     label: "Backend Development",
     stateKey: "backend",
     content: (
-      <div className="col-span-2 sm:col-span-3 text-xl text-[#9BA9B4] text-justify">
+      <div className="col-span-2 sm:col-span-3 text-medium text-[#9BA9B4] text-justify p-3">
         <p>
-          We understand the necessity of reliable, secure, and efficient
-          back-end solutions for any business. Our team of experts is well
-          versed in backend development services involving a wide range of
-          programming languages, such as PHP, ASP.NET, Java, NodeJS, NestJS,
-          Python, Blockchain, and SharePoint.
+          We understand the crucial role of reliable, secure, and efficient back-end solutions in driving business success. Our team of seasoned experts excels in back-end development across various programming languages, including PHP, ASP.NET, Java, NodeJS, NestJS, Python, Blockchain, and SharePoint.
         </p>
         <br />
         <p>
-          We recognize the potential of open source technologies and cloud
-          platforms, and combine these with our creative and analytical
-          abilities to develop ideal solutions for any business. At ZenQua, we
-          prioritize agility, user-friendliness, and flexibility when it comes
-          to developing the perfect system. Our team stays updated with the
-          latest technologies, making sure your business remains competitive
-          amidst ever-evolving requirements.
+          At ZenQua, we harness the power of open-source technologies and cloud platforms, blending them with our innovative and analytical prowess to craft optimal solutions for your business. We prioritize agility, user-friendliness, and flexibility, ensuring that our systems are perfectly tailored to your needs. Our team stays abreast of the latest technological advancements, ensuring your business remains competitive in an ever-changing landscape.
         </p>
         <br />
         <p>
-          Our mission is to help you step closer to your success. With our
-          comprehensive back-end system development services, you won’t have to
-          worry about spending too much money on getting the results you need.
-          Contact us today to see how we can help your business reach its full
-          potential.
+          Our mission is to propel you closer to your goals. With our all-encompassing back-end development services, you can achieve outstanding results without overspending. Contact us today to discover how we can help your business unlock its full potential.
         </p>
 
-        <div className="flex items-center justify-center flex-wrap mb-10">
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/python-1.svg"
-            alt="Backend Development"
-            className="flex mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/nodejs-1.svg"
-            alt="Backend Development"
-            className="mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/blockchain.svg"
-            alt="Backend Development"
-            className="mt-4"
-          />
-
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/java-1.svg"
-            alt="Backend Development"
-            className="mt-4"
-          />
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/python-1.svg"
+              alt="Backend Development"
+            />
+            <p>Python</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/nodejs-1.svg"
+              alt="Backend Development"
+            />
+            <p>NodeJS</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/ruby-on-rails.svg"
+              alt="Backend Development"
+            />
+            <p>Ruby on Rails</p>
+          </div>
         </div>
+
       </div>
     ),
   },
@@ -251,57 +205,51 @@ const servicesData: ServiceData[] = [
     label: "Frontend Development",
     stateKey: "frontend",
     content: (
-      <div className="col-span-2 sm:col-span-3 text-lg text-xl text-[#9BA9B4] text-justify">
+      <div className="col-span-2 sm:col-span-3 text-medium text-[#9BA9B4] text-justify p-3">
         <p>
-          We provide comprehensive frontend development services, using
-          AngularJS, VueJS, KnockutJS, ReactJS and NextJS. Our team of
-          highly-skilled developers works closely with our clients to understand
-          their requirements and create seamless user experiences. We are
-          committed to helping you reach your business objectives using the best
-          of the available technologies and creating web solutions that are
-          secure and aligned with up-to-date industry standards.
+          We offer comprehensive front-end development services, utilizing AngularJS, VueJS, KnockoutJS, ReactJS, and NextJS. Our team of highly skilled developers collaborates closely with clients to understand their needs and create seamless user experiences. We are dedicated to helping you achieve your business goals by leveraging the best available technologies to build secure and industry-standard web solutions.
         </p>
         <br />
         <p>
-          By partnering with us, our clients get access to the newest IT
-          Solutions combined with well-defined processes that allows for quick
-          execution of projects, and faster development cycles. We make sure to
-          provide our clients with maximum value for money by crafting solutions
-          that are on-time, within budget and of the highest quality. Our
-          developers have extensive experience in developing frontend user
-          interfaces – from single page websites to complex interactive web
-          applications, as well as progressive web apps (PWAs).
+          Partnering with us grants our clients access to cutting-edge IT solutions combined with well-defined processes, enabling swift project execution and accelerated development cycles. We ensure our clients receive maximum value for their investment by delivering on-time, within-budget solutions of the highest quality. Our developers possess extensive experience in creating front-end user interfaces, ranging from single-page websites to complex, interactive web applications, including progressive web apps (PWAs).
         </p>
         <br />
         <p>
-          At ZenQua, we understand the need for giving your users the best
-          possible experience, which is why we focus on enhancing page load
-          times, UX/UI design and customer satisfaction. Let us help you create
-          the perfect digital experience for your customers and take your
-          business to the next level.
+          At ZenQua, we prioritize providing your users with the best possible experience. We focus on optimizing page load times, UX/UI design, and customer satisfaction. Let us help you craft the perfect digital experience for your customers and elevate your business to the next level.
         </p>
-        <div className="flex items-center justify-center flex-wrap mb-10">
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/vuejs.svg"
-            alt="Backend Development"
-            className="flex mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/reactjs.svg"
-            alt="Backend Development"
-            className="mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/angular-1.svg"
-            alt="Backend Development"
-            className="mt-4"
-          />
-
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/nextjs.svg"
-            alt="Backend Development"
-            className="mt-4"
-          />
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/vuejs.svg"
+              alt="Frontend Development"
+              className="flex mt-4"
+            />
+            <p>VueJS</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/reactjs.svg"
+              alt="Frontend Development"
+              className="flex mt-4"
+            />
+            <p>ReactJS</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/angular-1.svg"
+              alt="Frontend Development"
+              className="flex mt-4"
+            />
+            <p>AngularJS</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/nextjs.svg"
+              alt="Frontend Development"
+              className="flex mt-4"
+            />
+            <p>NextJS</p>
+          </div>
         </div>
       </div>
     ),
@@ -310,55 +258,51 @@ const servicesData: ServiceData[] = [
     label: "Mobile App Development",
     stateKey: "mobile",
     content: (
-      <div className="col-span-2 sm:col-span-3 text-lg text-xl text-[#9BA9B4] text-justify">
+      <div className="col-span-2 sm:col-span-3 text-medium text-[#9BA9B4] text-justify p-3">
         <p>
-          We focus on providing our customers with custom mobile app development
-          services in a variety of platforms and languages including IOS,
-          Android, ReactNative, Swift, Ionic, Flutter, Xamarin, and Kotlin among
-          many others. Our talented team of mobile app developers is equipped
-          with the knowledge and tools to design, develop, and deploy your
-          mobile app withas much ease and effeciency as possible.
+          We specialize in delivering custom mobile app development services across various platforms and languages, including iOS, Android, React Native, Swift, Ionic, Flutter, Xamarin, and Kotlin, among others. Our talented team of mobile app developers possesses the knowledge and tools necessary to design, develop, and deploy your mobile app with ease and efficiency.
         </p>
         <br />
         <p>
-          We offer complete end-to-end mobile app development services that
-          enhance the user engagement and experience by creating an amazing UI
-          and UX. We bring everything together – from our custom back-end
-          programming to intuitive user interface design – to build reliable,
-          secure, and feature-rich for Android, Apple, and Tablet. Our mobile
-          app developers ensure that app design, UX/UI are given their due
-          importance before getting into development and deployment.
+          Our comprehensive end-to-end mobile app development services enhance user engagement and experience through exceptional UI and UX design. We integrate everything – from custom back-end programming to intuitive user interface design – to create reliable, secure, and feature-rich apps for Android, iOS, and tablets. Our mobile app developers prioritize app design and UX/UI before diving into development and deployment.
         </p>
         <br />
         <p>
-          We make sure that the code used to develop your mobile app is robust
-          and can handle any loads and spikes so that your application is
-          future-ready. With our comprehensive mobile app development services,
-          you can launch or deploy your application quickly, meet your business
-          goals and improve customer engagement.
+          We ensure that the code used to develop your mobile app is robust, capable of handling varying loads and spikes, making your application future-ready. With our all-encompassing mobile app development services, you can launch or deploy your application quickly, achieve your business objectives, and enhance customer engagement.
         </p>
-        <div className="flex items-center justify-center flex-wrap mb-10">
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/reactjs.svg"
-            alt="reactnative"
-            className="flex mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/apple.svg"
-            alt="apple"
-            className="mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/flutter.svg"
-            alt="flutter"
-            className="mt-4"
-          />
-
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/swift.svg"
-            alt="swift"
-            className="mt-4"
-          />
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/reactjs.svg"
+              alt="ReactNative"
+              className="flex mt-4"
+            />
+            <p>ReactNative</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/apple.svg"
+              alt="iOS"
+              className="flex mt-4"
+            />
+            <p>iOS</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/flutter.svg"
+              alt="Flutter"
+              className="flex mt-4"
+            />
+            <p>Flutter</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/swift.svg"
+              alt="Swift"
+              className="flex mt-4"
+            />
+            <p>Swift</p>
+          </div>
         </div>
       </div>
     ),
@@ -367,55 +311,51 @@ const servicesData: ServiceData[] = [
     label: "Framework Development",
     stateKey: "framework",
     content: (
-      <div className="col-span-2 sm:col-span-3 text-xl text-[#9BA9B4] text-justify">
+      <div className="col-span-2 sm:col-span-3 text-medium text-[#9BA9B4] text-justify p-3">
         <p>
-          We provide custom backend framework development services tailored to
-          your exact needs. Our experienced framework developers specialize in
-          many different welknown frameworks, such as Laravel, Codeigniter,
-          Django, Cakephp, MEAN Stack, Ruby on Rails and more. We have extensive
-          expertise in leveraging these powerful open-source frameworks to build
-          custom solutions to fit modern business demands.
+          We offer custom backend framework development services tailored to meet your specific needs. Our experienced developers specialize in a variety of well-known frameworks, including Laravel, CodeIgniter, Django, CakePHP, MEAN Stack, Ruby on Rails, and more. With extensive expertise in leveraging these powerful open-source frameworks, we build custom solutions that address modern business demands.
         </p>
         <br />
         <p>
-          At ZenQua, we stay up-to-date with the newest technologies in order to
-          keep our clients competitive. Our state-of-the-art approach combines
-          creativity with advanced analytics to deliver the best backend
-          development solutions for our customers. We strive to develop systems
-          that are reliable and agile, helping our clients maintain their
-          business operations stress free.
+          At ZenQua, we stay current with the latest technologies to ensure our clients remain competitive. Our state-of-the-art approach combines creativity with advanced analytics to deliver the best backend development solutions. We strive to develop reliable and agile systems, enabling our clients to maintain their business operations smoothly.
         </p>
         <br />
         <p>
-          When you work with ZenQua, you can expect a cost-effective solution
-          and expert technical support. We are dedicated to providing our
-          clients with backend solutions that will optimize their infrastructure
-          and help their business reach new heights. Our team of experienced
-          developers bring not just modern technology, but their commitment to
-          customer excellence to every project.
+          When you partner with ZenQua, you can expect cost-effective solutions and expert technical support. We are committed to providing backend solutions that optimize your infrastructure and elevate your business. Our team of experienced developers brings not only modern technology but also a dedication to customer excellence to every project.
         </p>
-        <div className="flex items-center justify-center flex-wrap mb-10">
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/ruby-on-rails.svg"
-            alt="ror"
-            className="flex mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/laravel.svg"
-            alt="laravel"
-            className="mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/Codeignitor.svg"
-            alt="Codeignitor"
-            className="mt-4"
-          />
-
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/django.svg"
-            alt="django"
-            className="mt-4"
-          />
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/ruby-on-rails.svg"
+              alt="ror"
+              className="flex mt-4"
+            />
+            <p>Ruby on Rails</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/laravel.svg"
+              alt="laravel"
+              className="flex mt-4"
+            />
+            <p>Laravel</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/django.svg"
+              alt="django"
+              className="flex mt-4"
+            />
+            <p>Django</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/Codeignitor.svg"
+              alt="Codeignitor"
+              className="flex mt-4"
+            />
+            <p>Codeignitor</p>
+          </div>
         </div>
       </div>
     ),
@@ -424,62 +364,52 @@ const servicesData: ServiceData[] = [
     label: "Ecommerce Development",
     stateKey: "ecommerce",
     content: (
-      <div className="col-span-2 sm:col-span-3 text-lg text-xl text-[#9BA9B4] text-justify">
+      <div className="col-span-2 sm:col-span-3 text-medium text-[#9BA9B4] text-justify p-3">
         <p>
-          We are your go-to experts for comprehensive and reliable eCommerce
-          development services. Our development team is experienced in
-          delivering extensive and extensible solutions on leading platforms
-          including Magento, Shopify, WooCommerce, Nopcommerce and more. We
-          understand the importance of an agile, fast and secure solution and
-          prioritize quality control and compatibility when wrapping up a
-          project. We approach each of our projects with a tailored and creative
-          mindset and combine analytics and modern tools to deliver the right
-          solution for your business needs.
+          We are your go-to experts for comprehensive and reliable eCommerce development services. Our development team excels in delivering robust and scalable solutions on leading platforms such as Magento, Shopify, WooCommerce, NopCommerce, and more. We understand the importance of creating agile, fast, and secure solutions, and we prioritize quality control and compatibility throughout the project. Each project is approached with a tailored and creative mindset, combining analytics and modern tools to deliver the right solution for your business needs.
         </p>
         <br />
         <p>
-          Our team towards approach not only focuses on creating a powerful and
-          robust frontend, it pays greater attention to building a secure and
-          reliable backend. We stay well-versed with the latest technologies to
-          ensure that our solutions are up-to-date with modern trends and meet
-          the client’s unique requirements. Our services are designed to help
-          you get the most out of your eCommerce development, both in terms of
-          usability and performance. We make sure that our solutions are
-          cost-effective, user-friendly and flexible for continuous improvement
-          and growth.
+          Our approach focuses not only on building a powerful and robust frontend but also emphasizes creating a secure and reliable backend. We stay updated with the latest technologies to ensure our solutions are aligned with modern trends and meet our clients’ unique requirements. Our services are designed to maximize the usability and performance of your eCommerce platform, ensuring that our solutions are cost-effective, user-friendly, and flexible for continuous improvement and growth.
         </p>
         <br />
         <p>
-          We are committed to helping our clients succeed and make their
-          operations more efficient and cost-effective with our backend
-          development services. Our experienced team takes pride in leveraging
-          open source technologies and cloud platforms to provide reliable and
-          secure solutions. At ZenQua, your success is our priority, and we
-          strive relentlessly to bring you the most agile and secure eCommerce
-          development solutions.
+          We are dedicated to helping our clients succeed by making their operations more efficient and cost-effective with our backend development services. Our experienced team leverages open-source technologies and cloud platforms to provide reliable and secure solutions. At ZenQua, your success is our priority, and we relentlessly strive to deliver the most agile and secure eCommerce development solutions.
         </p>
-        <div className="flex items-center justify-center flex-wrap mb-10">
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/magento.svg"
-            alt="magento"
-            className="flex mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/nopcommerce.svg"
-            alt="nopcommerce"
-            className="mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Shopify.svg"
-            alt="Shopify"
-            className="mt-4"
-          />
 
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/woocommerce.svg"
-            alt="woocommerce"
-            className="mt-4"
-          />
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/magento.svg"
+              alt="magento"
+              className="flex mt-4"
+            />
+            <p>Magento</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/nopcommerce.svg"
+              alt="nopcommerce"
+              className="flex mt-4"
+            />
+            <p>Nop Commerce</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Shopify.svg"
+              alt="Shopify"
+              className="flex mt-4"
+            />
+            <p>Shopify</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/woocommerce.svg"
+              alt="woocommerce"
+              className="flex mt-4"
+            />
+            <p>Woo Commerce </p>
+          </div>
         </div>
       </div>
     ),
@@ -488,61 +418,36 @@ const servicesData: ServiceData[] = [
     label: "CMS Development",
     stateKey: "cms",
     content: (
-      <div className="col-span-2 sm:col-span-3 text-lg text-xl text-[#9BA9B4] text-justify">
+      <div className="col-span-2 sm:col-span-3 text-medium text-[#9BA9B4] text-justify p-3">
         <p>
-          At ZenQua, we provide powerful CMS development services in leading
-          platforms such as WordPress, Drupal, Kentico, DotnetNuke and more. Our
-          experienced development team assists clients in creating solutions
-          tailored to their needs, leveraging the latest technologies and cloud
-          platforms so that they stay ahead of their competition.
+          At ZenQua, we offer robust CMS development services across leading platforms such as WordPress, Drupal, and more. Our skilled development team works closely with clients to create customized solutions that leverage the latest technologies and cloud platforms, ensuring they stay ahead of their competition.
         </p>
         <br />
         <p>
-          We understand the importance of having a modern website with backend
-          solutions that ensure data integrity and smooth operations. Our expert
-          developers take the time to understand the objectives of our clients
-          and craft solutions that offer increased scalability, improved
-          performance, and bug-free coding. To match the evolving needs of our
-          clients, our solutions are designed for maximum security, usability,
-          and efficiency. At ZenQua, we take an integrated approach to CMS
-          development, ensuring that data is managed securely, networks are safe
-          and reliable, and the right tools are in place to help you succeed.
-          Our team is well-versed in a variety of languages, including PHP,
-          ASP.Net, Java, NodeJS, NestJS, Python, Blockchain, and SharePoint, and
-          we place a great emphasis on ensuring our solutions are
-          well-integrated, secure and intuitive to use.
+          We recognize the importance of a modern website with backend solutions that guarantee data integrity and seamless operations. Our developers take the time to understand your objectives, crafting solutions that provide increased scalability, enhanced performance, and error-free coding. Designed to meet evolving needs, our solutions prioritize security, usability, and efficiency. We adopt an integrated approach to CMS development, ensuring secure data management, reliable networks, and the right tools for your success. Our expertise spans various languages, including PHP, ASP.Net, Java, NodeJS, NestJS, Python, Blockchain, and SharePoint, with a focus on delivering well-integrated, secure, and intuitive solutions.
         </p>
         <br />
         <p>
-          Our primary aim is to provide our clients with advanced solutions that
-          meet their business objectives. We offer comprehensive and agile
-          services that open up pathways to success, increasing customers’ ROI
-          and helping them stay ahead of their competitors. Get in touch with
-          our team today to experience our professional CMS development
-          services.
+          Our goal is to provide advanced solutions that align with your business objectives. We offer agile and comprehensive services designed to drive success, enhance ROI, and keep you ahead of the competition. Contact our team today to discover how our professional CMS development services can benefit your business.
         </p>
-        <div className="flex items-center justify-center flex-wrap mb-10">
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/wordpress.svg"
-            alt="wordpress"
-            className="flex mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/dnn.svg"
-            alt="dotnet"
-            className="mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/drupal.svg"
-            alt="drupal"
-            className="mt-4"
-          />
-
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/kentico.svg"
-            alt="kentico"
-            className="mt-4"
-          />
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/wordpress.svg"
+              alt="wordpress"
+              className="flex mt-4"
+            />
+            <p>Wordpress</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/drupal.svg"
+              alt="drupal"
+              className="flex mt-4"
+            />
+            <p>Drupal</p>
+          </div>
+        
         </div>
       </div>
     ),
@@ -551,61 +456,43 @@ const servicesData: ServiceData[] = [
     label: "Database Development",
     stateKey: "database",
     content: (
-      <div className="col-span-2 sm:col-span-3 text-lg text-xl text-[#9BA9B4] text-justify">
+      <div className="col-span-2 sm:col-span-3 text-medium text-[#9BA9B4] text-justify p-3">
         <p>
-          Our team of highly experienced professionals specialize in providing
-          powerful, reliable and secure database development services in MSSQL,
-          MySQL, PostgreSQL, MongoDB, Redis, Oracle, Firebase and more. We
-          provide clients with the ability to develop tailored solutions that
-          match their precise needs and demands. Our solutions enable them to
-          make the best use of available data to increase their competitive
-          edge. Our experts employ advanced approaches and make use of latest
-          technologies to ensure high efficiency, performance and scalability of
-          our services.
+          Our team of highly skilled professionals specializes in delivering robust, reliable, and secure database development services across platforms such as MSSQL, MySQL, PostgreSQL, MongoDB, Redis, Oracle, Firebase, and more. We create customized solutions tailored to meet specific needs and demands, enabling clients to leverage their data effectively and enhance their competitive edge. By utilizing advanced techniques and the latest technologies, we ensure high efficiency, performance, and scalability in our services.
         </p>
         <br />
         <p>
-          Our flexible solutions cover all aspects of database development,
-          including comprehensive data modelling, data normalization and
-          indexing, ETL processes, backup and recovery planning, database
-          optimization and performance tuning, complex query optimization and
-          more. We also provide professional administrative services for the
-          upkeep and ongoing maintenance of our clients’ databases. Our
-          solutions are designed to guarantee a maximum level of security and
-          compliance with industry standards.
+          Our flexible solutions encompass all facets of database development, including detailed data modeling, data normalization and indexing, ETL processes, backup and recovery planning, database optimization, performance tuning, and complex query optimization. Additionally, we offer professional administrative services for the maintenance and ongoing support of our clients’ databases. Our solutions are crafted to ensure the highest level of security and compliance with industry standards.
         </p>
         <br />
         <p>
-          At ZenQua, we are dedicated to delivering top-tier database solutions
-          that will help our clients maximize their profits and business
-          potential. Our team understands the importance of accurate and
-          reliable data-driven decisions and work diligently to ensure our
-          solutions are designed to meet the highest of standards. We strive to
-          provide our customers with the best possible value for their time and
-          investment.
+          At ZenQua, we are committed to delivering exceptional database solutions that help clients maximize their profitability and business potential. Understanding the significance of accurate and reliable data-driven decisions, we work diligently to meet the highest standards and provide the best value for your time and investment.
         </p>
-        <div className="flex items-center justify-center flex-wrap mb-10">
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mysql.svg"
-            alt="mysql"
-            className="flex mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/firebase.svg"
-            alt="firebase"
-            className="mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mongodb.svg"
-            alt="mongodb"
-            className="mt-4"
-          />
-
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/oracle.svg"
-            alt="oracle"
-            className="mt-4"
-          />
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mysql.svg"
+              alt="mysql"
+              className="flex mt-4"
+            />
+            <p>Mysql</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/firebase.svg"
+              alt="firebase"
+              className="flex mt-4"
+            />
+            <p>Firebase</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mongodb.svg"
+              alt="mongodb"
+              className="flex mt-4"
+            />
+            <p>Mongodb</p>
+          </div>
         </div>
       </div>
     ),
@@ -614,52 +501,43 @@ const servicesData: ServiceData[] = [
     label: "Devops Development",
     stateKey: "devops",
     content: (
-      <div className="col-span-2 sm:col-span-3 text-xl text-[#9BA9B4] text-justify">
+      <div className="col-span-2 sm:col-span-3 text-medium text-[#9BA9B4] text-justify p-3">
         <p>
-          At ZenQua, we take pride in offering comprehensive DevOps & Infra
-          services in popular cloud environments such as AWS, Azure, & Google
-          Cloud etc. Our experienced DevOps and Infra professionals understand
-          customer requirements and develop strategies to optimally utilize
-          cloud resources. We take a strategic approach to leveraging the power
-          of the cloud and designing reliable environments that can be easily
-          managed. Our team sets up applications, databases, and environments
-          with ease and is well-versed in the usage of automation tools such as
-          Chef, Puppet, Ansible, Docker etc.
+          At ZenQua, we are dedicated to providing comprehensive DevOps and infrastructure services across leading cloud environments such as AWS, Azure, and Google Cloud. Our seasoned DevOps and infrastructure experts assess customer requirements to create strategies for optimal cloud resource utilization. We approach cloud integration strategically, designing reliable, easily manageable environments. Our team excels in setting up applications, databases, and environments, and is proficient in using automation tools like Chef, Puppet, Ansible, and Docker.
         </p>
         <br />
         <p>
-          We also specialize in building and managing virtual machines and
-          provisioning of solutions on the public clouds. We are also very
-          experienced with configuring and managing serverless solutions in
-          multiple cloud environments. Our team uses the best practices to
-          assess, optimize and secure the cloud infrastructure environment for
-          our clients. We understand the challenges associated with different
-          cloud platforms and take steps to provide solutions to protect the
-          environment and secure critical data.
+          We also specialize in building and managing virtual machines and provisioning solutions on public clouds. Additionally, we have extensive experience in configuring and managing serverless solutions across various cloud platforms. Our team adheres to best practices to evaluate, optimize, and secure cloud infrastructure for our clients. We address the challenges associated with different cloud platforms, implementing solutions to safeguard the environment and protect critical data.
         </p>
         <br />
         <p>
-          With us, clients can rest assured that their platforms are secure,
-          well-maintained, and tightly governed. At ZenQua, we strive to empower
-          our customers with best-in-class solutions designed to reduce costs,
-          improve performance and aid in scaling applications and workloads.
+          With ZenQua, clients can be confident that their platforms are secure, well-maintained, and effectively governed. We are committed to providing top-notch solutions designed to reduce costs, enhance performance, and support the scaling of applications and workloads.
         </p>
-        <div className="flex items-center justify-center flex-wrap mb-10">
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Azure.svg"
-            alt="Azure"
-            className="flex mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Aws.svg"
-            alt="Aws"
-            className="mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/google.svg"
-            alt="google"
-            className="mt-4"
-          />
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Azure.svg"
+              alt="Azure"
+              className="flex mt-4"
+            />
+            <p>Azure</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Aws.svg"
+              alt="Aws"
+              className="flex mt-4"
+            />
+            <p>AWS</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/google.svg"
+              alt="google"
+              className="flex mt-4"
+            />
+            <p>Google</p>
+          </div>
         </div>
       </div>
     ),
@@ -668,52 +546,35 @@ const servicesData: ServiceData[] = [
     label: "Digital Marketing",
     stateKey: "digital",
     content: (
-      <div className="col-span-2 sm:col-span-3 text-xl text-[#9BA9B4] text-justify">
+      <div className="col-span-2 sm:col-span-3 text-medium text-[#9BA9B4] text-justify p-3">
         <p>
-          At ZenQua, we offer comprehensive digital marketing services to help
-          you reach your business goals and gain maximum exposure across all
-          digital channels. Our experienced digital marketing specialists are
-          experts in SEO, SMM, PPC, and other services that are proven to help
-          small and large businesses maximize their online visibility. Our
-          tailored digital marketing strategies help to enhance your brand
-          awareness, increase website traffic, and improve conversion rates,
-          leading to higher ROI. Dedicated to staying up-to-date with the latest
-          marketing trends and technologies, our team specializes in providing
-          innovative yet practical solutions to boost your marketing efforts.
+          At ZenQua, we provide a full suite of digital marketing services designed to help you achieve your business objectives and maximize your exposure across all digital channels. Our team of seasoned digital marketing experts excels in SEO, SMM, and other strategies proven to enhance online visibility for both small and large businesses. We craft tailored digital marketing strategies to boost brand awareness, drive website traffic, and improve conversion rates, ultimately leading to a higher ROI. By staying current with the latest marketing trends and technologies, we deliver innovative yet practical solutions to elevate your marketing efforts.
         </p>
         <br />
         <p>
-          From search engine optimization (SEO) to content creation, we are
-          experts in every corner of the digital marketing landscape. Whether
-          you are looking to spread brand awareness, improve visibility, drive
-          more organic traffic to your website, or convert more customers, our
-          team is capable of delivering the results you need.
+          From search engine optimization (SEO) to content creation, our expertise spans the entire digital marketing spectrum. Whether you aim to increase brand awareness, enhance visibility, attract more organic traffic, or improve customer conversions, our team is equipped to deliver the results you need.
         </p>
         <br />
         <p>
-          We understand that different businesses have different needs, which is
-          why we take the time to get to know your business and develop a
-          personalized marketing plan that best meets your requirements. At
-          ZenQua, you can expect to receive reliable, custom-made digital
-          marketing services that will help ensure that you reach your desired
-          business objectives.
+          Recognizing that each business has unique needs, we take the time to understand your specific goals and develop a customized marketing plan tailored to your requirements. At ZenQua, you can count on receiving reliable, bespoke digital marketing services designed to help you achieve your desired business outcomes.
         </p>
-        <div className="flex items-center justify-center flex-wrap mb-10">
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151308/ppc-1.svg"
-            alt="ppc"
-            className="flex mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151308/smm.svg"
-            alt="smm"
-            className="mt-4"
-          />
-          <img
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151308/seo-1.svg"
-            alt="seo"
-            className="mt-4"
-          />
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151308/smm.svg"
+              alt="smm"
+              className="flex mt-4"
+            />
+            <p>SMM</p>
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            <img
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151308/seo-1.svg"
+              alt="seo"
+              className="flex mt-4"
+            />
+            <p>SEO</p>
+          </div>
         </div>
       </div>
     ),
@@ -727,11 +588,11 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg">
         <div>
-          <p className="text-2xl font-bold text-[#5D5DFF] mb-[2%]">
+          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
             Cost-Effectiveness
           </p>
         </div>
-        <p className="text-xl text-[#9BA9B4] text-justify">
+        <p className="text-lg text-[#9BA9B4] text-justify">
           Building a website or application doesn't have to be expensive.
           Partnering with a reliable development company can help you save on
           costs associated with hiring an in-house development team, such as
@@ -748,11 +609,11 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg">
         <div>
-          <p className="text-2xl font-bold text-[#5D5DFF] mb-[2%]">
+          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
             Vast Knowledge
           </p>
         </div>
-        <p className="text-xl text-[#9BA9B4] text-justify">
+        <p className="text-lg text-[#9BA9B4] text-justify">
           At ZenQua, we have the expertise and experience to create custom
           websites and apps that are tailored to your specific business needs.
           Our dedicated team of developers has the technical knowledge and
@@ -771,12 +632,12 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg">
         <div>
-          <p className="text-2xl font-bold text-[#5D5DFF] mb-[2%]">
+          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
             Time-Saving
           </p>
         </div>
-        <p className="text-xl text-[#9BA9B4] text-justify">
-          launch your digital product quickly by outsourcing your development
+        <p className="text-lg text-[#9BA9B4] text-justify">
+          Launch your digital product quickly by outsourcing your development
           services to a reputable offshore software development agency. ZenQua's
           experienced developers can create a high-quality solution efficiently,
           enabling you to validate your business idea and adapt your promotional
@@ -794,11 +655,11 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg ">
         <div>
-          <p className="text-2xl font-bold text-[#5D5DFF] mb-[2%]">
+          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
             Experienced Partner
           </p>
         </div>
-        <p className="text-xl text-[#9BA9B4] text-justify">
+        <p className="text-lg text-[#9BA9B4] text-justify">
           We have a strict quality assurance process in place for all our web
           development projects. Our dedicated QA team continously checks for
           bugs and errors, guaranteeing high-quality code. Our custom solutions
@@ -817,11 +678,11 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg ">
         <div>
-          <p className="text-2xl font-bold text-[#5D5DFF] mb-[2%]">
+          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
             Reduced Costs
           </p>
         </div>
-        <p className="text-xl text-[#9BA9B4] text-justify">
+        <p className="text-lg text-[#9BA9B4] text-justify">
           Our team carefully assesses your requirements, understands your goals
           and applies a standard development process tailored to your project
           needs to avoid unnecessary costs. To make web application development
@@ -838,11 +699,11 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg ">
         <div>
-          <p className="text-2xl font-bold text-[#5D5DFF] mb-[2%]">
+          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
             Custom Solution
           </p>
         </div>
-        <p className="text-xl text-[#9BA9B4] text-justify">
+        <p className="text-lg text-[#9BA9B4] text-justify">
           We help you achieve your goals one step at a time by scaling your idea
           in a budget-focused manner. Our customized web and application
           development approach, suitable for startups, businesses and
@@ -863,50 +724,46 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
   constructor(props: StatsCardProps) {
     super(props);
     this.state = {
-      animatedStatistics: this.props.statistics.map((stat) => ({
-        ...stat,
-        value: 0,
-      })),
-      backend: false,
-      frontend: false,
-      mobile: false,
-      framework: false,
-      ecommerce: false,
-      cms: false,
-      database: false,
-      devops: false,
-      digital: false,
+      clickedButton5: "Backend Development",
+      clickedButton6: "Cost-Effectiveness",
       clickedButton2: "Big Data",
       clickedButton3: "Cost-Effectiveness",
-      selectedService: "Backend Development",
+      selectedService: "Backend Development" as ServiceNames, // Ensure this is of type ServiceNames
       techTrendsButton: "Big Data",
       State: {
-        backend: false,
-        frontend: false,
-        mobile: false,
-        framework: false,
-        ecommerce: false,
-        cms: false,
-        database: false,
-        devops: false,
-        digital: false,
+        backend: true,
+        frontend: true,
+        mobile: true,
+        framework: true,
+        ecommerce: true,
+        cms: true,
+        database: true,
+        devops: true,
+        digital: true,
       },
-      clickedButton5: "Backend Development",
       State2: {
-        Cost: false,
-        Vast: false,
-        Time: false,
-        Experienced: false,
-        Reduced: false,
-        Custom: false,
+        Cost: true,
+        Vast: true,
+        Time: true,
+        Experienced: true,
+        Reduced: true,
+        Custom: true,
       },
-      clickedButton6: "Cost-Effectiveness",
-      Cost: false,
-      Vast: false,
-      Time: false,
-      Experienced: false,
-      Reduced: false,
-      Custom: false,
+      backend: true, // Add missing properties to match StatsCardState
+      frontend: true,
+      mobile: true,
+      framework: true,
+      ecommerce: true,
+      cms: true,
+      database: true,
+      devops: true,
+      digital: true,
+      Cost: true,
+      Vast: true,
+      Time: true,
+      Experienced: true,
+      Reduced: true,
+      Custom: true,
     };
   }
 
@@ -938,48 +795,20 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
     }
   };
 
-  handleClick2 = (service: ServiceNames) => {
-    this.setState({ selectedService: service });
-  };
+  // handleClick2 = (service: ServiceNames) => {
+  //   this.setState({ selectedService: service });
+  // };
 
-  componentDidMount() {
-    this.animateStatistics();
-  }
+  // componentDidMount() {
+  //   this.animateStatistics();
+  // }
 
   componentWillUnmount() {
     this.animationIntervals.forEach((interval) => clearInterval(interval));
   }
 
-  animateStatistics() {
-    const { statistics } = this.props;
-
-    statistics.forEach((stat, index) => {
-      const { value } = stat;
-      const animationDuration = 1000;
-      const fps = 30;
-      const stepSize = value / ((animationDuration / 1000) * fps);
-
-      let animatedValue = 0;
-      const intervalId = setInterval(() => {
-        animatedValue += stepSize;
-        if (animatedValue >= value) {
-          animatedValue = value;
-          clearInterval(intervalId);
-        }
-
-        this.setState((prevState) => ({
-          animatedStatistics: prevState.animatedStatistics.map((item, i) =>
-            i === index ? { ...item, value: animatedValue } : item
-          ),
-        }));
-      }, 1000 / fps);
-
-      this.animationIntervals.push(intervalId);
-    });
-  }
 
   render() {
-    const { animatedStatistics } = this.state;
     const { clickedButton2 } = this.state;
     const { clickedButton3 } = this.state;
 
@@ -1009,24 +838,6 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
       "DevOps & Infra",
       "Digital Marketing",
     ];
-
-    const style1 = {
-      height: "max(70%,100%)",
-      flexWrap: "wrap",
-      backgroundColor: "transparent",
-      boxShadow: "0px 0px 5px white",
-    };
-    const mainDiv = {
-      width: "94%",
-      marginTop: "20px",
-    };
-
-    const Boxes = {
-      width: "100%",
-      height: "5px",
-      background: "#5D5DFF",
-      marginTop: "10px",
-    };
 
     const items = [
       {
@@ -1253,28 +1064,28 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
           <h2 className=" font text-center service-button uppercase text-[#D9E3EA] ">
             ZenQua AT GLANCE
           </h2>
-          <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#5D5DFF]">
-            Over 2500+ Completed Projects & Still Counting.
+          <h2 className="text-4xl font-extrabold text-center mb-10 text-[#D9E3EA]">
+            Over 150+ Completed Projects & Still Counting.
           </h2>
           <div className="max-w[100%] text-[#9BA9B4]">
             <Grid container spacing={2}>
-              {Data.project.map((item, index) => (
-                <Grid item xs={12} md={6} lg={3}>
+              {Data.project.map((item:any, index:any) => (
+                <Grid key={index} item xs={12} md={6} lg={3}>
                   <div
                     key={index}
-                    className="flex flex-col items-center bg-gray-800 p-6 max-w[100%]"
+                    className="flex flex-col items-center bg-white p-8 max-w[100%]"
                     data-aos="fade-up"
                     data-aos-delay={index * 200}
                   >
-                    <Box className="flex justify-center items-center text-[#5D5DFF]">
-                      <div className="text-4xl font-bold text-purple-600">
-                        <CountUp end={Number(item?.number)} />
+                    <Box className="flex justify-center items-center text-[#2090a4]">
+                      <div className="text-4xl font-bold text-black">
+                        <CountUp end={item.number} />
                       </div>
                       <AddIcon style={{ fontSize: "40px" }} />
                     </Box>
-                    <div className="text-md text-[#9BA9B4]">{item.title} </div>
+                    <div className="text-md text-[#000] font-medium">{item.title} </div>
                   </div>
-                  <div className="h-[5px] bg-[rgb(93,93,255)] mt-[15px] w-full text-[#5D5DFF]"></div>
+                  <div className="h-[5px] bg-[#2090a4] mt-[15px] w-full text-[#2090a4]"></div>
                 </Grid>
               ))}
             </Grid>
@@ -1286,19 +1097,19 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
           <h2 className=" font text-center uppercase service-button text-[#D9E3EA]">
             WHAT WE DO
           </h2>
-          <h2 className="text-3xl font-bold text-center mb-6 service-button text-[#D9E3EA] ">
+          <h2 className="text-4xl font-extrabold text-center mb-4 service-button text-[#D9E3EA] ">
             Our Core Services
           </h2>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={{ display: "flex", justifyContent: "center",boxShadow: "0px 0px 3px white",borderRadius:'20px' }}>
             <div className="hidden sm:flex justify-center">
               <Grid container spacing={0} className="justify-center w-full">
                 <Grid item xs={6} sm={3} lg={3} xl={2}>
                   <Paper
                     style={{
                       height: "100%",
-                      paddingRight: "4px",
+                      padding: "2px",
+                      boxShadow:'none',
                       backgroundColor: "transparent",
-                      boxShadow: "0px 0px 3px white",
                     }}
                   >
                     {servicesData.map((service, index) => (
@@ -1313,18 +1124,16 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         <h3
                           className="font-bold flex items-center"
                           style={{
-                            // color: "#9BA9B4",
                             width: "100%",
                             height: "40px",
-                            marginTop: "3%",
-                            borderLeft:
+                            borderRight:
                               this.state.clickedButton5 === service.label
-                                ? "2px solid #5D5DFF"
+                                ? "2px solid #2090a4"
                                 : "none",
                             paddingLeft: 10,
                             color:
                               this.state.clickedButton5 === service.label
-                                ? "#5D5DFF"
+                                ? "#2090a4"
                                 : "rgba(255,255,255,.75)",
                             fontSize:
                               this.state.clickedButton5 === service.label
@@ -1348,7 +1157,6 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                     style={{
                       height: "100%",
                       backgroundColor: "transparent",
-                      boxShadow: "0px 0px 3px white",
                       padding: "12px",
                     }}
                   >
@@ -1363,21 +1171,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
             </div>
           </div>
 
-          <Box
-            sx={{
-              display: { xs: "block", sm: "none" },
-              flexWrap: "wrap",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
+          <div className="block sm:hidden flex-wrap justify-center items-center w-full">
             <Carousel
               autoPlay={true}
               navButtonsAlwaysVisible={false}
               indicators={false}
               animation="slide"
-              // direction="left"
+              
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -1389,13 +1189,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 <Card
                   key={i}
                   style={{
-                    height: "50%",
+                    height: "58vh",
                     width: "100%",
                     border: "solid 1px white",
                     borderRadius: "20px",
                     background: "transparent",
                     color: "white",
-                    // animation: "slide-in 1s forwards"
                   }}
                 >
                   <CardActionArea>
@@ -1444,7 +1243,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 </Card>
               ))}
             </Carousel>
-          </Box>
+          </div>
         </div>
 
         {/* *************** Our Core Services End ******************************** */}
@@ -1455,30 +1254,15 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
           <h2 className=" font text-center uppercase text-[#D9E3EA]">
             TRENDING TECHNOLOGIES
           </h2>
-          <h2 className="text-3xl font-bold text-center mb-6 text-[#D9E3EA]">
+          <h2 className="text-4xl font-extrabold text-center mb-10 service-button text-[#D9E3EA] ">
+
             Improve and Innovate with the Tech Trends
           </h2>
 
           <Box
-            //  style={{ display: "flex", justifyContent: "center" }}
             className=" text-[#9BA9B4] justify-center flex"
           >
-            <Box
-              sx={{
-                display: {
-                  xs: "none",
-                  sm: "block",
-                  flexWrap: "wrap",
-                  justifyContent: "center",
-                  width: "100%",
-                },
-              }}
-              style={{
-                flexWrap: "wrap",
-                justifyContent: "center",
-                width: "100%",
-              }}
-            >
+            <div className="hidden sm:block flex-wrap justify-center items-center w-full">
               <Grid
                 container
                 spacing={0}
@@ -1495,6 +1279,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       padding: "theme.spacing(2)",
                       backgroundColor: "transparent",
                       boxShadow: "0px 0px 5px white",
+                      borderRadius :'20px',
                       width: "92%",
                     }}
                   >
@@ -1513,23 +1298,25 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Big Data"
-                              ? "2px solid #5D5DFF"
+                              ? "2px solid #2090a4"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
+                          padding:"6px 18px",
                           fontSize:
                             this.state.clickedButton2 === "Big Data"
                               ? "16px"
                               : "14.50px",
                           fontWeight: "bold",
                           borderRadius: 0,
+                          textTransform: "none",
                           background:
                             this.state.clickedButton2 === "Big Data"
                               ? "#171717"
                               : "none",
                           color:
                             this.state.clickedButton2 === "Big Data"
-                              ? "#5D5DFF"
+                              ? "#2090a4"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Big Data"
@@ -1557,31 +1344,33 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 ===
-                            "Artificial Intelligence"
-                              ? "2px solid #5D5DFF"
+                              "Artificial Intelligence"
+                              ? "2px solid #2090a4"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
+                          textTransform: "none",
+                          padding:"6px 18px",
                           fontSize:
                             this.state.clickedButton2 ===
-                            "Artificial Intelligence"
+                              "Artificial Intelligence"
                               ? "16px"
                               : "14.50px",
                           fontWeight: "bold",
                           borderRadius: 0,
                           background:
                             this.state.clickedButton2 ===
-                            "Artificial Intelligence"
+                              "Artificial Intelligence"
                               ? "#171717"
                               : "none",
                           color:
                             this.state.clickedButton2 ===
-                            "Artificial Intelligence"
-                              ? "#5D5DFF"
+                              "Artificial Intelligence"
+                              ? "#2090a4"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 ===
-                            "Artificial Intelligence"
+                              "Artificial Intelligence"
                               ? "#222224"
                               : "transparent",
                         }}
@@ -1598,23 +1387,25 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Computer Vision"
-                              ? "2px solid #5D5DFF"
+                              ? "2px solid #2090a4"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
+                          padding:"6px 18px",
                           fontSize:
                             this.state.clickedButton2 === "Computer Vision"
                               ? "16px"
                               : "14.50px",
                           fontWeight: "bold",
                           borderRadius: 0,
+                          textTransform: "none",
                           background:
                             this.state.clickedButton2 === "Computer Vision"
                               ? "#171717"
                               : "none",
                           color:
                             this.state.clickedButton2 === "Computer Vision"
-                              ? "#5D5DFF"
+                              ? "#2090a4"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Computer Vision"
@@ -1637,10 +1428,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Internet of Things"
-                              ? "2px solid #5D5DFF"
+                              ? "2px solid #2090a4"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
+                          padding:"6px 18px",
+                          textTransform: "none",
                           fontSize:
                             this.state.clickedButton2 === "Internet of Things"
                               ? "16px"
@@ -1653,7 +1446,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "none",
                           color:
                             this.state.clickedButton2 === "Internet of Things"
-                              ? "#5D5DFF"
+                              ? "#2090a4"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Internet of Things"
@@ -1673,10 +1466,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Blockchain"
-                              ? "2px solid #5D5DFF"
+                              ? "2px solid #2090a4"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
+                           textTransform: "none",
+                           padding:"6px 18px",
                           fontSize:
                             this.state.clickedButton2 === "Blockchain"
                               ? "16px"
@@ -1689,7 +1484,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "none",
                           color:
                             this.state.clickedButton2 === "Blockchain"
-                              ? "#5D5DFF"
+                              ? "#2090a4"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Blockchain"
@@ -1697,6 +1492,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "transparent",
                         }}
                         disableRipple
+                       
                       >
                         Blockchain
                       </Button>
@@ -1709,10 +1505,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Mixed Reality"
-                              ? "2px solid #5D5DFF"
+                              ? "2px solid #2090a4"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
+                          textTransform: "none",
+                          padding:"6px 18px",
                           fontSize:
                             this.state.clickedButton2 === "Mixed Reality"
                               ? "16px"
@@ -1725,7 +1523,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "none",
                           color:
                             this.state.clickedButton2 === "Mixed Reality"
-                              ? "#5D5DFF"
+                              ? "#2090a4"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Mixed Reality"
@@ -1738,7 +1536,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       </Button>
                     </Box>
 
-                    <div style={{ width: "100%" }}>
+                    <div style={{ width: "100%" ,padding:'10px'}}>
                       {clickedButton2 === "Big Data" && (
                         <div style={{ margin: "20px" }}>
                           <Typography
@@ -1756,7 +1554,8 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                             variant="h6"
                             style={{
                               margin: "10px",
-                              fontSize: "30px",
+                              fontSize: "25px",
+                              fontWeight:'600',
                               color: "#D9E3EA",
                             }}
                           >
@@ -1772,14 +1571,15 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
+                      
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                   boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -1793,15 +1593,16 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
+                                 
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
                                   borderRadius: "none",
+                                   boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -1814,15 +1615,16 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
+                                 
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
                                   borderRadius: "none",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -1835,15 +1637,16 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
+                                  
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
                                   borderRadius: "none",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -1856,7 +1659,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         </div>
                       )}
                       {clickedButton2 === "Artificial Intelligence" && (
-                        <div style={{ margin: "10px", color: "white" }}>
+                        <div style={{ color: "white",padding:'10px' }}>
                           <Typography
                             variant="body1"
                             style={{
@@ -1871,7 +1674,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "30px" }}
+                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
                           >
                             Selected AI Technologies We Master :
                           </Typography>
@@ -1885,14 +1688,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -1905,14 +1708,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -1925,14 +1728,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -1945,14 +1748,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -1965,7 +1768,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         </div>
                       )}
                       {clickedButton2 === "Computer Vision" && (
-                        <div style={{ margin: "10px", color: "white" }}>
+                        <div style={{ padding: "10px", color: "white" }}>
                           <Typography
                             variant="body1"
                             style={{
@@ -1978,7 +1781,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "30px" }}
+                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
                           >
                             Selected Solutions :
                           </Typography>
@@ -1992,14 +1795,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2012,14 +1815,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2032,14 +1835,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2052,14 +1855,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2072,7 +1875,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         </div>
                       )}
                       {clickedButton2 === "Internet of Things" && (
-                        <div style={{ margin: "10px", color: "white" }}>
+                        <div style={{ padding: "10px", color: "white" }}>
                           <Typography
                             variant="body1"
                             style={{
@@ -2086,7 +1889,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "30px" }}
+                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
                           >
                             Services We Offer:
                           </Typography>
@@ -2100,14 +1903,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2120,14 +1923,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2140,14 +1943,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2160,14 +1963,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  padding: "10px",
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2180,7 +1983,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         </div>
                       )}
                       {clickedButton2 === "Blockchain" && (
-                        <div style={{ margin: "10px", color: "white" }}>
+                        <div style={{ padding: "10px", color: "white" }}>
                           <Typography
                             variant="body1"
                             style={{
@@ -2194,7 +1997,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "30px" }}
+                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
                           >
                             Services We Offer:
                           </Typography>
@@ -2213,9 +2016,10 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2234,9 +2038,10 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2250,7 +2055,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         </div>
                       )}
                       {clickedButton2 === "Mixed Reality" && (
-                        <div style={{ margin: "10px", color: "white" }}>
+                        <div style={{ padding: "10px", color: "white" }}>
                           <Typography
                             variant="body1"
                             style={{
@@ -2265,7 +2070,8 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "30px" }}
+                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
+
                           >
                             Services We Offer:
                           </Typography>
@@ -2284,9 +2090,10 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                  boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2304,9 +2111,10 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
+                                   boxShadow: "none"
                                 }}
                               >
-                                <CheckBoxOutlineBlankIcon
+                                <FiberManualRecordIcon
                                   style={{
                                     fontSize: "17px",
                                     marginRight: "7px",
@@ -2322,23 +2130,15 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                   </Paper>
                 </Grid>
               </Grid>
-            </Box>
+            </div>
 
-            <Box
-              sx={{
-                display: { xs: "block", sm: "none" },
-                flexWrap: "wrap",
-                justifyContent: "center",
-                alignItems: "center",
-                width: "80%",
-              }}
-            >
+            <div className="block sm:hidden flex-wrap justify-center items-center w-[80%]">
               <Carousel
                 autoPlay={true}
                 navButtonsAlwaysVisible={false}
                 indicators={false}
                 animation="slide"
-                // direction="left"
+                
                 sx={{
                   display: "flex",
                   flexDirection: "column",
@@ -2350,7 +2150,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                   <Card
                     key={i}
                     style={{
-                      height: "100%",
+                      height: "70vh",
                       width: "100%",
                       border: "solid 1px white",
                       borderRadius: "20px",
@@ -2358,7 +2158,6 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       color: "#D9E3EA",
                       fontWeight: "bold",
                       fontSize: "20px",
-                      // margin: "25px",
                     }}
                   >
                     <CardActionArea>
@@ -2407,12 +2206,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                             fontSize: "19px",
                           }}
                         >
-                          <CheckBoxOutlineBlankIcon
+                          <FiberManualRecordIcon
                             style={{
                               fontSize: "19px",
                               marginRight: "7px",
-                              color: "#5D5DFF",
-                              backgroundColor: "#5D5DFF",
+                              color: "#2090a4",
+                              backgroundColor: "#2090a4",
                             }}
                           />
                           {item.item1}
@@ -2429,12 +2228,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                             marginBottom: "12%",
                           }}
                         >
-                          <CheckBoxOutlineBlankIcon
+                          <FiberManualRecordIcon
                             style={{
                               fontSize: "17px",
                               marginRight: "7px",
-                              color: "#5D5DFF",
-                              backgroundColor: "#5D5DFF",
+                              color: "#2090a4",
+                              backgroundColor: "#2090a4",
                             }}
                           />
                           {item.item2}
@@ -2452,12 +2251,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               marginBottom: "12%",
                             }}
                           >
-                            <CheckBoxOutlineBlankIcon
+                            <FiberManualRecordIcon
                               style={{
                                 fontSize: "19px",
                                 marginRight: "7px",
-                                color: "#5D5DFF",
-                                backgroundColor: "#5D5DFF",
+                                color: "#2090a4",
+                                backgroundColor: "#2090a4",
                               }}
                             />
                             {item.item3}
@@ -2477,12 +2276,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               marginBottom: "10%",
                             }}
                           >
-                            <CheckBoxOutlineBlankIcon
+                            <FiberManualRecordIcon
                               style={{
                                 fontSize: "19px",
                                 marginRight: "7px",
-                                color: "#5D5DFF",
-                                backgroundColor: "#5D5DFF",
+                                color: "#2090a4",
+                                backgroundColor: "#2090a4",
                               }}
                             />
                             {item.item4}
@@ -2493,7 +2292,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                   </Card>
                 ))}
               </Carousel>
-            </Box>
+            </div>
           </Box>
         </div>
 
@@ -2501,14 +2300,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
 
         {/* ************ZenQua Industry Expertise */}
 
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Box sx={{ display: "flex", justifyContent: "center"}}>
           <div style={{ boxSizing: "border-box", width: "98%" }}>
             <Grid container spacing={2} style={{ padding: "20px" }}>
-              <Grid item xs={12}>
+              <Grid item xs={12} className="py-3">
                 <h2 className=" font text-center uppercase text-[#D9E3EA]">
                   INDUSTRIES WE SERVE
                 </h2>
-                <h2 className="text-3xl font-bold text-center mb-6 text-[#D9E3EA]">
+                <h2 className="text-4xl font-extrabold text-center mb-6 service-button text-[#D9E3EA] ">
                   ZenQua Industry Expertise
                 </h2>
               </Grid>
@@ -2564,27 +2363,24 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
 
         <div className="m-[50px] box-border">
           <h2 className=" font text-center uppercase text-[#D9E3EA]">WHY US</h2>
-          <h2 className="text-3xl font-bold text-center mb-6  text-[#D9E3EA]">
+          <h2 className="text-4xl font-extrabold text-center mb-6 service-button text-[#D9E3EA] ">
             Why Outsource Your Project to ZenQua?
           </h2>
           <div>
-            <div
-              className="hidden sm:flex justify-center flex rounded-[20px]"
-              style={{ border: "1px solid #D9E3EA !important" }}
-            >
-              <Grid container spacing={0} className="justify-center w-full p-4">
+          <div className="hidden sm:block flex-wrap justify-center items-center w-full">
+              <Grid container spacing={0} className="justify-center border rounded-xl w-full p-4">
                 <Grid item xs={6} sm={3}>
                   <Paper
                     style={{
                       height: "100%",
                       paddingRight: "4px",
+                      boxShadow:'none',
                       backgroundColor: "transparent",
-                      // boxShadow: "none",
                     }}
                   >
                     {servicesData2.map((service, index) => (
                       <Button
-                        className="hover:text-[#9BA9B4] w-full "
+                        className="hover:text-[#9BA9B4] w-full"
                         key={index}
                         onClick={() =>
                           this.handleClick6(service.stateKey, service.label)
@@ -2596,20 +2392,17 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           style={{
                             width: "100%",
                             height: "40px",
-                            marginTop: "3%",
+                            padding :"0px 8px",
                             borderRight:
                               this.state.clickedButton6 === service.label
-                                ? "2px solid #5D5DFF"
+                                ? "2px solid #2090a4"
                                 : "none",
                             paddingLeft: 10,
                             color:
                               this.state.clickedButton6 === service.label
-                                ? "#5D5DFF"
+                                ? "#2090a4"
                                 : "#9BA9B4",
-                            fontSize:
-                              this.state.clickedButton6 === service.label
-                                ? "16px"
-                                : "14.50px",
+                            fontSize: "14px",
                             backgroundColor:
                               this.state.clickedButton6 === service.label
                                 ? "#222224"
@@ -2643,21 +2436,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
             </div>
           </div>
 
-          <Box
-            sx={{
-              display: { xs: "block", sm: "none" },
-              flexWrap: "wrap",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
+          <div className="block sm:hidden flex-wrap justify-center items-center w-[100%]">
             <Carousel
               autoPlay={true}
               navButtonsAlwaysVisible={false}
               indicators={false}
               animation="slide"
-              // direction="left"
+              
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -2669,12 +2454,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 <Card
                   key={i}
                   style={{
-                    height: "100%",
+                    height: "55vh",
                     width: "100%",
                     border: "solid 1px white",
                     borderRadius: "20px",
                     background: "transparent",
                     color: "#D9E3EA",
+                    boxShadow:'none'
                     // margin: "25px",
                   }}
                 >
@@ -2689,7 +2475,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           textAlign: "center",
                           fontSize: "21px",
                           marginBottom: "5%",
-                          color: "#5D5DFF",
+                          color: "#2090a4",
                         }}
                       >
                         {item.title}
@@ -2712,17 +2498,17 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 </Card>
               ))}
             </Carousel>
-          </Box>
+          </div>
         </div>
 
         {/* ************Our Flexible Engagement Models************ */}
 
-        <Box className="w-full flex justify-center">
+        <div className="w-full flex justify-center">
           <div className="w-[94%] mt-[20px]">
             <h2 className="font text-center uppercase text-[#D9E3EA]">
               ADAPTABLE APPROACH
             </h2>
-            <h2 className="text-3xl font-bold text-center mb-6 text-[#D9E3EA]">
+            <h2 className="text-4xl font-extrabold text-center mb-6 service-button text-[#D9E3EA] ">
               Our Flexible Engagement Models
             </h2>
 
@@ -2734,25 +2520,24 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
             >
               <Grid
                 item
-                // xs={12}
                 sm={12}
                 md={6}
                 style={{
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  // padding: "20px",
                 }}
               >
                 <Paper
                   style={{
                     height: "max(70%,100%)",
-                    flexWrap: "wrap",
-                    backgroundColor: "transparent",
-                    boxShadow: "0px 0px 5px white",
+      flexWrap: "wrap",
+      backgroundColor: "transparent",
+      boxShadow: "0px 0px 5px white",
                     width: "100%",
                     boxSizing: "border-box",
                     padding: "20px",
+                    borderRadius:"20px"
                   }}
                 >
                   <h2 className="font-bold text-xl text-[#D9E3EA]">
@@ -2763,7 +2548,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       textAlign: "justify",
                       color: "#9BA9B4",
                       marginTop: "5%",
-                      fontSize: "19px",
+                      fontSize: "16px",
                     }}
                   >
                     Time and Material hiring model offers flexibility, cost
@@ -2802,7 +2587,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         width: "50%",
                         padding: "10px",
                         textAlign: "justify",
-                        fontSize: "19px",
+                        fontSize: "16px",
                       }}
                     >
                       Flexibility to hire resources as needed. cost-effective
@@ -2815,7 +2600,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         width: "50%",
                         padding: "10px",
                         textAlign: "justify",
-                        fontSize: "19px",
+                        fontSize: "16px",
                       }}
                     >
                       opportunity to work with experienced professionals.
@@ -2841,12 +2626,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 <Paper
                   style={{
                     height: "max(70%,100%)",
-                    flexWrap: "wrap",
-                    backgroundColor: "transparent",
-                    boxShadow: "0px 0px 5px white",
+      flexWrap: "wrap",
+      backgroundColor: "transparent",
+      boxShadow: "0px 0px 5px white",
                     width: "100%",
                     boxSizing: "border-box",
                     padding: "20px",
+                    borderRadius:"20px"
                   }}
                 >
                   <h2 className="font-bold text-xl text-[#D9E3EA]">
@@ -2858,7 +2644,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       textAlign: "justify",
                       color: "#9BA9B4",
                       marginTop: "5%",
-                      fontSize: "19px",
+                      fontSize: "16px",
                     }}
                   >
                     Dedicated developer model is a cost-effective way for
@@ -2897,7 +2683,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         width: "50%",
                         padding: "10px",
                         textAlign: "justify",
-                        fontSize: "19px",
+                        fontSize: "16px",
                       }}
                     >
                       Ability to create a team around your project’s needs.
@@ -2910,7 +2696,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         width: "50%",
                         padding: "10px",
                         textAlign: "justify",
-                        fontSize: "19px",
+                        fontSize: "16px",
                       }}
                     >
                       Ability to use existing framework environments. Increased
@@ -2922,11 +2708,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               </Grid>
             </Grid>
           </div>
-        </Box>
+        </div>
 
         {/* ************************ */}
         <center>
-          <Box
+          <div
             style={{
               justifyContent: "space-around",
               marginTop: "30px",
@@ -2936,10 +2722,10 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               <h2 className="font text-center uppercase  text-[#D9E3EA]">
                 HIRE TEAM
               </h2>
-              <h2 className="text-3xl font-bold text-center mb-6 text-[#D9E3EA]">
+              <h2 className="text-4xl font-extrabold text-center mb-6 service-button text-[#D9E3EA] ">
                 Hire The Best Developers
               </h2>
-              <h2 className="font text-center text-[#9BA9B4] mb-[80px] text-xl text-justify m-[2%]">
+              <h2 className="font text-center text-[#9BA9B4] mb-[80px] text-lg text-justify m-[2%]">
                 ZenQua offers expert developers for fixed-time/cost and
                 dedicated projects in web design and software development. Our
                 web developers specialise in trending technologies like PHP,
@@ -2950,30 +2736,29 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 cutting-edge mobile apps for Android, iOS, and cross-platform.
               </h2>
               <Grid container spacing={5} justifyContent="space-around">
-                {people.map((person, index) => (
+                {people.map((person:any, index:any) => (
                   <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
                     <Avatar
                       style={{
-                        borderRadius: "40px",
-                        width: "150px",
-                        height: "150px",
+                        borderRadius: "50%",
+                        width: "100px",
+                        height: "100px",
                       }}
                       src={person.avatarSrc}
                     />
                     <Box
                       className="bg-gray-700"
-                      // className="bg-slate-600"
                       sx={{
-                        // backgroundColor: "RGB(71, 85, 119)",
 
-                        height: { xs: "346px" },
+                        height: { xs: "300px" },
                         width: {
                           xs: "55vw",
-                          sm: "37vw",
-                          md: "27vw",
+                          sm: "34vw",
+                          md: "24vw",
                           lg: "19vw",
                         },
                         marginTop: "-50px",
+                        borderRadius:'20px'
                       }}
                     >
                       <br />
@@ -2981,6 +2766,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       <Typography
                         style={{
                           fontSize: "16px",
+                          fontWeight:'600',
                           marginTop: "20px",
                           color: "#D9E3EA",
                         }}
@@ -2990,7 +2776,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       <Typography
                         style={{
                           fontSize: "14px",
-                          marginTop: "50px",
+                          marginTop: "20px",
                           color: "#9BA9B4",
                         }}
                       >
@@ -3015,7 +2801,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         Worked with: {person.workedWith}
                       </Typography>
                       <br />
-                      <button className="bg-[#5D5DFF] text-white text-md mt-4 px-6 py-3 rounded-md h-12 w-34 font-medium text-[#D9E3EA]">
+                      <button className="bg-[#2090a4] text-white text-md mt-4 px-8 py-2 rounded-md w-34 font-medium text-[#D9E3EA]">
                         Hire Me
                       </button>
                     </Box>
@@ -3023,7 +2809,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 ))}
               </Grid>
             </div>
-          </Box>
+          </div>
         </center>
       </>
     );

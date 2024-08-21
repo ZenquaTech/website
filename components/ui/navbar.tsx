@@ -310,7 +310,7 @@ handleItemClick = () => {
                 onMouseLeave={this.handleMenuLeave}
                 onMouseOver={(e) => {
                   const target = e.target as HTMLElement;
-                  target.style.color = "#5D5DFF";
+                  target.style.color = "#2090a4";
                 }}
                 onMouseOut={(e) => {
                   const target = e.target as HTMLElement;
@@ -380,7 +380,7 @@ handleItemClick = () => {
                                 }}
                                 onMouseOver={(e) => {
                                   const target = e.target as HTMLElement;
-                                  target.style.color = "#5D5DFF";
+                                  target.style.color = "#2090a4";
                                 }}
                                 onMouseOut={(e) => {
                                   const target = e.target as HTMLElement;
@@ -404,7 +404,7 @@ handleItemClick = () => {
                                         key={subItemIndex}
                                         style={{
                                           color: "#ffffffbf",
-                                          fontSize: "15.68px",
+                                          fontSize: "12px",
                                           fontWeight: "400",
                                           cursor: "pointer",
                                           opacity: "0.75",
@@ -412,7 +412,7 @@ handleItemClick = () => {
                                         }}
                                         onMouseOver={(e) => {
                                           const target = e.target as HTMLElement;
-                                          target.style.color = "#5D5DFF";
+                                          target.style.color = "#2090a4";
                                         }}
                                         onMouseOut={(e) => {
                                           const target = e.target as HTMLElement;
@@ -484,7 +484,7 @@ handleItemClick = () => {
                                 }}
                                 onMouseOver={(e) => {
                                   const target = e.target as HTMLElement;
-                                  target.style.color = "#5D5DFF";
+                                  target.style.color = "#2090a4";
                                 }}
                                 onMouseOut={(e) => {
                                   const target = e.target as HTMLElement;
@@ -507,7 +507,7 @@ handleItemClick = () => {
                                         key={subItemIndex}
                                         style={{
                                           color: "#ffffffbf",
-                                          fontSize: "15.68px",
+                                          fontSize: "12px",
                                           fontWeight: "400",
                                           cursor: "pointer",
                                           opacity: "0.75",
@@ -515,7 +515,7 @@ handleItemClick = () => {
                                         }}
                                         onMouseOver={(e) => {
                                           const target = e.target as HTMLElement;
-                                          target.style.color = "#5D5DFF";
+                                          target.style.color = "#2090a4";
                                         }}
                                         onMouseOut={(e) => {
                                           const target = e.target as HTMLElement;

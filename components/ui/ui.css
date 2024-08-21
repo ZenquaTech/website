@@ -16,17 +16,17 @@
 }
 .blue-dash {
     transform: rotate(90deg); 
-    color: rgb(93 93 255 / var(--tw-bg-opacity));
+    color: #2090a4;
     height: 200%;
   }
   .follow-us {
     transform: rotate(-90deg); 
     margin-top: 10px;
-    color: rgb(93 93 255 / var(--tw-bg-opacity));
+    color: #2090a4;
   }
 
 .linkedin-link {
-    color: rgb(93 93 255 / var(--tw-bg-opacity));
+    color: #2090a4;
   }
 
 /* scroll */
