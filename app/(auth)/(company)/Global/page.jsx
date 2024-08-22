@@ -438,7 +438,7 @@ export default function Global() {
         <Grid item xs={12} sm={6} md={4}>
           <Box
             style={{ 
-              backgroundImage: "linear-gradient(90deg,rgba(59, 57, 57, 0.719),#2090a4 100%)",
+              backgroundImage: "linear-gradient(90deg,rgba(59, 57, 57, 0.719),#019dce 100%)",
               margin: "3rem",
               padding: "2rem",
               borderRadius:'20px'
@@ -480,7 +480,7 @@ export default function Global() {
         <Grid item xs={12} sm={6} md={4}>
         <Box
             style={{ 
-              backgroundImage: "linear-gradient(90deg,rgba(59, 57, 57, 0.719),#2090a4 100%)",
+              backgroundImage: "linear-gradient(90deg,rgba(59, 57, 57, 0.719),#019dce 100%)",
               margin: "3rem",
               padding: "2rem",
               borderRadius:'20px'
@@ -522,7 +522,7 @@ export default function Global() {
         <Grid item xs={12} sm={6} md={4}>
         <Box
             style={{ 
-              backgroundImage: "linear-gradient(90deg,rgba(59, 57, 57, 0.719),#2090a4 100%)",
+              backgroundImage: "linear-gradient(90deg,rgba(59, 57, 57, 0.719),#019dce 100%)",
               margin: "3rem",
               padding: "2rem",
               borderRadius:'20px'

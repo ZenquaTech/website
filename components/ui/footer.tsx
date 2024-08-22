@@ -199,7 +199,7 @@ export default function Footer() {
                       {/* <li>
                 <Link
                   href="/"
-                  className="flex justify-center items-center text-[#2090a4] bg-gray-800 hover:text-gray-100 hover:bg-[#2090a4] rounded-full transition duration-150 ease-in-out"
+                  className="flex justify-center items-center text-[#019dce] bg-gray-800 hover:text-gray-100 hover:bg-[#019dce] rounded-full transition duration-150 ease-in-out"
                   aria-label="Twitter"
                 >
                   <svg
@@ -216,7 +216,7 @@ export default function Footer() {
                         <Link
                           target="_blank"
                           href="https://www.linkedin.com/company/zenqua-technologies/"
-                          className="flex justify-center items-center text-[#2090a4] bg-gray-800 hover:text-gray-100 hover:bg-[#2090a4] rounded-full transition duration-150 ease-in-out"
+                          className="flex justify-center items-center text-[#019dce] bg-gray-800 hover:text-gray-100 hover:bg-[#019dce] rounded-full transition duration-150 ease-in-out"
                           aria-label="Linkedin"
                         >
                           <svg
@@ -233,7 +233,7 @@ export default function Footer() {
                         <Link
                           target="_blank"
                           href="https://github.com/zenqua-technologies"
-                          className="flex justify-center items-center text-[#2090a4] bg-gray-800 hover:text-gray-100 hover:bg-[#2090a4] rounded-full transition duration-150 ease-in-out"
+                          className="flex justify-center items-center text-[#019dce] bg-gray-800 hover:text-gray-100 hover:bg-[#019dce] rounded-full transition duration-150 ease-in-out"
                           aria-label="Github"
                         >
                           <svg
@@ -249,7 +249,7 @@ export default function Footer() {
                       <li className="ml-4">
                         <Link
                           href="https://www.instagram.com/zenqua_technologies/"
-                          className="flex justify-center items-center text-[#2090a4] bg-gray-800 hover:text-gray-100 hover:bg-[#2090a4] rounded-full transition duration-150 ease-in-out"
+                          className="flex justify-center items-center text-[#019dce] bg-gray-800 hover:text-gray-100 hover:bg-[#019dce] rounded-full transition duration-150 ease-in-out"
                           aria-label="Instagram"
                         >
                           <svg
@@ -266,7 +266,7 @@ export default function Footer() {
                       <li className="ml-4">
                         <Link
                           href="https://www.facebook.com/profile.php?id=61557762022662"
-                          className="flex justify-center items-center text-[#2090a4] bg-gray-800 hover:text-gray-100 hover:bg-[#2090a4] rounded-full transition duration-150 ease-in-out"
+                          className="flex justify-center items-center text-[#019dce] bg-gray-800 hover:text-gray-100 hover:bg-[#019dce] rounded-full transition duration-150 ease-in-out"
                           aria-label="Facebook"
                         >
                           <svg

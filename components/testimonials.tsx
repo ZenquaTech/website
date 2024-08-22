@@ -31,7 +31,7 @@ export default function Testimonials() {
                     alt="Testimonial 01"
                   />
                   <svg
-                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-[#2090a4]"
+                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-[#019dce]"
                     viewBox="0 0 24 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -53,7 +53,7 @@ export default function Testimonials() {
                 </cite>{" "}
                 -{" "}
                 <a
-                  className="text-[#2090a4] hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-[#019dce] hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   CTO of V7 Infotech
@@ -77,7 +77,7 @@ export default function Testimonials() {
                     alt="Testimonial 02"
                   />
                   <svg
-                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-[#2090a4]"
+                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-[#019dce]"
                     viewBox="0 0 24 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -98,7 +98,7 @@ export default function Testimonials() {
                 </cite>{" "}
                 -{" "}
                 <a
-                  className="text-[#2090a4] hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-[#019dce] hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   COO of Nblik
@@ -122,7 +122,7 @@ export default function Testimonials() {
                     alt="Testimonial 03"
                   />
                   <svg
-                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-[#2090a4]"
+                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-[#019dce]"
                     viewBox="0 0 24 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -142,7 +142,7 @@ export default function Testimonials() {
                 <cite className="text-gray-200 not-italic">Amanda Roberts</cite>{" "}
                 -{" "}
                 <a
-                  className="text-[#2090a4] hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-[#019dce] hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Operations Manager at Open Track

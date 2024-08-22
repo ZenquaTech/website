@@ -14,12 +14,12 @@ import {
   CardActionArea,
   Avatar,
 } from "@material-ui/core";
+import Link from 'next/link';
 import React, { Component } from "react";
 import Paper from "@material-ui/core/Paper";
 import Carousel from "react-material-ui-carousel";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
-import { SiNestjs } from "react-icons/si";
 import AddIcon from "@material-ui/icons/Add";
 import Data from "./ui/data.json";
 import CountUp from "react-countup";
@@ -447,7 +447,7 @@ const servicesData: ServiceData[] = [
             />
             <p>Drupal</p>
           </div>
-        
+
         </div>
       </div>
     ),
@@ -588,7 +588,7 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg">
         <div>
-          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
+          <p className="text-2xl font-bold text-[#019dce] mb-[2%]">
             Cost-Effectiveness
           </p>
         </div>
@@ -609,7 +609,7 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg">
         <div>
-          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
+          <p className="text-2xl font-bold text-[#019dce] mb-[2%]">
             Vast Knowledge
           </p>
         </div>
@@ -632,7 +632,7 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg">
         <div>
-          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
+          <p className="text-2xl font-bold text-[#019dce] mb-[2%]">
             Time-Saving
           </p>
         </div>
@@ -655,7 +655,7 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg ">
         <div>
-          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
+          <p className="text-2xl font-bold text-[#019dce] mb-[2%]">
             Experienced Partner
           </p>
         </div>
@@ -678,7 +678,7 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg ">
         <div>
-          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
+          <p className="text-2xl font-bold text-[#019dce] mb-[2%]">
             Reduced Costs
           </p>
         </div>
@@ -699,7 +699,7 @@ const servicesData2: ServiceData2[] = [
     content: (
       <div className="col-span-2 sm:col-span-3 text-lg ">
         <div>
-          <p className="text-2xl font-bold text-[#2090a4] mb-[2%]">
+          <p className="text-2xl font-bold text-[#019dce] mb-[2%]">
             Custom Solution
           </p>
         </div>
@@ -1069,15 +1069,15 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
           </h2>
           <div className="max-w[100%] text-[#9BA9B4]">
             <Grid container spacing={2}>
-              {Data.project.map((item:any, index:any) => (
+              {Data.project.map((item: any, index: any) => (
                 <Grid key={index} item xs={12} md={6} lg={3}>
                   <div
                     key={index}
-                    className="flex flex-col items-center bg-white p-8 max-w[100%]"
+                    className="flex flex-col items-center bg-white p-8 max-w[100%] rounded-t-xl"
                     data-aos="fade-up"
                     data-aos-delay={index * 200}
                   >
-                    <Box className="flex justify-center items-center text-[#2090a4]">
+                    <Box className="flex justify-center items-center text-[#019dce]">
                       <div className="text-4xl font-bold text-black">
                         <CountUp end={item.number} />
                       </div>
@@ -1085,7 +1085,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                     </Box>
                     <div className="text-md text-[#000] font-medium">{item.title} </div>
                   </div>
-                  <div className="h-[5px] bg-[#2090a4] mt-[15px] w-full text-[#2090a4]"></div>
+                  <div className="h-[5px] bg-[#019dce] mt-[15px] w-full text-[#019dce]"></div>
                 </Grid>
               ))}
             </Grid>
@@ -1100,7 +1100,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
           <h2 className="text-4xl font-extrabold text-center mb-4 service-button text-[#D9E3EA] ">
             Our Core Services
           </h2>
-          <div style={{ display: "flex", justifyContent: "center",boxShadow: "0px 0px 3px white",borderRadius:'20px' }}>
+          <div style={{ display: "flex", justifyContent: "center", boxShadow: "0px 0px 3px white", borderRadius: '20px' }}>
             <div className="hidden sm:flex justify-center">
               <Grid container spacing={0} className="justify-center w-full">
                 <Grid item xs={6} sm={3} lg={3} xl={2}>
@@ -1108,7 +1108,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                     style={{
                       height: "100%",
                       padding: "2px",
-                      boxShadow:'none',
+                      boxShadow: 'none',
                       backgroundColor: "transparent",
                     }}
                   >
@@ -1128,12 +1128,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                             height: "40px",
                             borderRight:
                               this.state.clickedButton5 === service.label
-                                ? "2px solid #2090a4"
+                                ? "2px solid #019dce"
                                 : "none",
                             paddingLeft: 10,
                             color:
                               this.state.clickedButton5 === service.label
-                                ? "#2090a4"
+                                ? "#019dce"
                                 : "rgba(255,255,255,.75)",
                             fontSize:
                               this.state.clickedButton5 === service.label
@@ -1177,7 +1177,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               navButtonsAlwaysVisible={false}
               indicators={false}
               animation="slide"
-              
+
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -1279,7 +1279,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       padding: "theme.spacing(2)",
                       backgroundColor: "transparent",
                       boxShadow: "0px 0px 5px white",
-                      borderRadius :'20px',
+                      borderRadius: '20px',
                       width: "92%",
                     }}
                   >
@@ -1297,11 +1297,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Big Data"
-                              ? "2px solid #2090a4"
+                              ? "2px solid #019dce"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
-                          padding:"6px 18px",
+                          padding: "6px 18px",
                           fontSize:
                             this.state.clickedButton2 === "Big Data"
                               ? "16px"
@@ -1315,7 +1315,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "none",
                           color:
                             this.state.clickedButton2 === "Big Data"
-                              ? "#2090a4"
+                              ? "#019dce"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Big Data"
@@ -1344,12 +1344,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           borderBottom:
                             this.state.clickedButton2 ===
                               "Artificial Intelligence"
-                              ? "2px solid #2090a4"
+                              ? "2px solid #019dce"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
                           textTransform: "none",
-                          padding:"6px 18px",
+                          padding: "6px 18px",
                           fontSize:
                             this.state.clickedButton2 ===
                               "Artificial Intelligence"
@@ -1365,7 +1365,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           color:
                             this.state.clickedButton2 ===
                               "Artificial Intelligence"
-                              ? "#2090a4"
+                              ? "#019dce"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 ===
@@ -1386,11 +1386,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Computer Vision"
-                              ? "2px solid #2090a4"
+                              ? "2px solid #019dce"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
-                          padding:"6px 18px",
+                          padding: "6px 18px",
                           fontSize:
                             this.state.clickedButton2 === "Computer Vision"
                               ? "16px"
@@ -1404,7 +1404,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "none",
                           color:
                             this.state.clickedButton2 === "Computer Vision"
-                              ? "#2090a4"
+                              ? "#019dce"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Computer Vision"
@@ -1427,11 +1427,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Internet of Things"
-                              ? "2px solid #2090a4"
+                              ? "2px solid #019dce"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
-                          padding:"6px 18px",
+                          padding: "6px 18px",
                           textTransform: "none",
                           fontSize:
                             this.state.clickedButton2 === "Internet of Things"
@@ -1445,7 +1445,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "none",
                           color:
                             this.state.clickedButton2 === "Internet of Things"
-                              ? "#2090a4"
+                              ? "#019dce"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Internet of Things"
@@ -1465,12 +1465,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Blockchain"
-                              ? "2px solid #2090a4"
+                              ? "2px solid #019dce"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
-                           textTransform: "none",
-                           padding:"6px 18px",
+                          textTransform: "none",
+                          padding: "6px 18px",
                           fontSize:
                             this.state.clickedButton2 === "Blockchain"
                               ? "16px"
@@ -1483,7 +1483,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "none",
                           color:
                             this.state.clickedButton2 === "Blockchain"
-                              ? "#2090a4"
+                              ? "#019dce"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Blockchain"
@@ -1491,7 +1491,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "transparent",
                         }}
                         disableRipple
-                       
+
                       >
                         Blockchain
                       </Button>
@@ -1504,12 +1504,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 === "Mixed Reality"
-                              ? "2px solid #2090a4"
+                              ? "2px solid #019dce"
                               : "none",
                           width: "-1px",
                           alignItems: "center",
                           textTransform: "none",
-                          padding:"6px 18px",
+                          padding: "6px 18px",
                           fontSize:
                             this.state.clickedButton2 === "Mixed Reality"
                               ? "16px"
@@ -1522,7 +1522,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "none",
                           color:
                             this.state.clickedButton2 === "Mixed Reality"
-                              ? "#2090a4"
+                              ? "#019dce"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 === "Mixed Reality"
@@ -1535,7 +1535,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       </Button>
                     </Box>
 
-                    <div style={{ width: "100%" ,padding:'10px'}}>
+                    <div style={{ width: "100%", padding: '10px' }}>
                       {clickedButton2 === "Big Data" && (
                         <div style={{ margin: "20px" }}>
                           <Typography
@@ -1554,7 +1554,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                             style={{
                               margin: "10px",
                               fontSize: "25px",
-                              fontWeight:'600',
+                              fontWeight: '600',
                               color: "#D9E3EA",
                             }}
                           >
@@ -1570,12 +1570,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                      
+
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                   boxShadow: "none"
+                                  boxShadow: "none"
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1592,13 +1592,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                 
+
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
                                   borderRadius: "none",
-                                   boxShadow: "none"
+                                  boxShadow: "none"
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1614,7 +1614,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                 
+
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
@@ -1636,7 +1636,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               <Paper
                                 style={{
                                   fontSize: "17px",
-                                  
+
                                   background: "transparent",
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
@@ -1658,7 +1658,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         </div>
                       )}
                       {clickedButton2 === "Artificial Intelligence" && (
-                        <div style={{ color: "white",padding:'10px' }}>
+                        <div style={{ color: "white", padding: '10px' }}>
                           <Typography
                             variant="body1"
                             style={{
@@ -1673,7 +1673,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
+                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
                           >
                             Selected AI Technologies We Master :
                           </Typography>
@@ -1780,7 +1780,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
+                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
                           >
                             Selected Solutions :
                           </Typography>
@@ -1888,7 +1888,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
+                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
                           >
                             Services We Offer:
                           </Typography>
@@ -1996,7 +1996,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
+                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
                           >
                             Services We Offer:
                           </Typography>
@@ -2069,7 +2069,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px",fontWeight:'600' }}
+                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
 
                           >
                             Services We Offer:
@@ -2110,7 +2110,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                   boxShadow: "none"
+                                  boxShadow: "none"
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -2137,7 +2137,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 navButtonsAlwaysVisible={false}
                 indicators={false}
                 animation="slide"
-                
+
                 sx={{
                   display: "flex",
                   flexDirection: "column",
@@ -2209,8 +2209,8 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                             style={{
                               fontSize: "19px",
                               marginRight: "7px",
-                              color: "#2090a4",
-                              backgroundColor: "#2090a4",
+                              color: "#019dce",
+                              backgroundColor: "#019dce",
                             }}
                           />
                           {item.item1}
@@ -2231,8 +2231,8 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                             style={{
                               fontSize: "17px",
                               marginRight: "7px",
-                              color: "#2090a4",
-                              backgroundColor: "#2090a4",
+                              color: "#019dce",
+                              backgroundColor: "#019dce",
                             }}
                           />
                           {item.item2}
@@ -2254,8 +2254,8 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               style={{
                                 fontSize: "19px",
                                 marginRight: "7px",
-                                color: "#2090a4",
-                                backgroundColor: "#2090a4",
+                                color: "#019dce",
+                                backgroundColor: "#019dce",
                               }}
                             />
                             {item.item3}
@@ -2279,8 +2279,8 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               style={{
                                 fontSize: "19px",
                                 marginRight: "7px",
-                                color: "#2090a4",
-                                backgroundColor: "#2090a4",
+                                color: "#019dce",
+                                backgroundColor: "#019dce",
                               }}
                             />
                             {item.item4}
@@ -2299,7 +2299,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
 
         {/* ************ZenQua Industry Expertise */}
 
-        <Box sx={{ display: "flex", justifyContent: "center"}}>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
           <div style={{ boxSizing: "border-box", width: "98%" }}>
             <Grid container spacing={2} style={{ padding: "20px" }}>
               <Grid item xs={12} className="py-3">
@@ -2366,14 +2366,14 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
             Why Outsource Your Project to ZenQua?
           </h2>
           <div>
-          <div className="hidden sm:block flex-wrap justify-center items-center w-full">
+            <div className="hidden sm:block flex-wrap justify-center items-center w-full">
               <Grid container spacing={0} className="justify-center border rounded-xl w-full p-4">
                 <Grid item xs={6} sm={3}>
                   <Paper
                     style={{
                       height: "100%",
                       paddingRight: "4px",
-                      boxShadow:'none',
+                      boxShadow: 'none',
                       backgroundColor: "transparent",
                     }}
                   >
@@ -2391,15 +2391,15 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           style={{
                             width: "100%",
                             height: "40px",
-                            padding :"0px 8px",
+                            padding: "0px 8px",
                             borderRight:
                               this.state.clickedButton6 === service.label
-                                ? "2px solid #2090a4"
+                                ? "2px solid #019dce"
                                 : "none",
                             paddingLeft: 10,
                             color:
                               this.state.clickedButton6 === service.label
-                                ? "#2090a4"
+                                ? "#019dce"
                                 : "#9BA9B4",
                             fontSize: "14px",
                             backgroundColor:
@@ -2441,7 +2441,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               navButtonsAlwaysVisible={false}
               indicators={false}
               animation="slide"
-              
+
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -2459,7 +2459,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                     borderRadius: "20px",
                     background: "transparent",
                     color: "#D9E3EA",
-                    boxShadow:'none'
+                    boxShadow: 'none'
                     // margin: "25px",
                   }}
                 >
@@ -2474,7 +2474,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           textAlign: "center",
                           fontSize: "21px",
                           marginBottom: "5%",
-                          color: "#2090a4",
+                          color: "#019dce",
                         }}
                       >
                         {item.title}
@@ -2530,13 +2530,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 <Paper
                   style={{
                     height: "max(70%,100%)",
-      flexWrap: "wrap",
-      backgroundColor: "transparent",
-      boxShadow: "0px 0px 5px white",
+                    flexWrap: "wrap",
+                    backgroundColor: "transparent",
+                    boxShadow: "0px 0px 5px white",
                     width: "100%",
                     boxSizing: "border-box",
                     padding: "20px",
-                    borderRadius:"20px"
+                    borderRadius: "20px"
                   }}
                 >
                   <h2 className="font-bold text-xl text-[#D9E3EA]">
@@ -2625,13 +2625,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 <Paper
                   style={{
                     height: "max(70%,100%)",
-      flexWrap: "wrap",
-      backgroundColor: "transparent",
-      boxShadow: "0px 0px 5px white",
+                    flexWrap: "wrap",
+                    backgroundColor: "transparent",
+                    boxShadow: "0px 0px 5px white",
                     width: "100%",
                     boxSizing: "border-box",
                     padding: "20px",
-                    borderRadius:"20px"
+                    borderRadius: "20px"
                   }}
                 >
                   <h2 className="font-bold text-xl text-[#D9E3EA]">
@@ -2735,7 +2735,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 cutting-edge mobile apps for Android, iOS, and cross-platform.
               </h2>
               <Grid container spacing={5} justifyContent="space-around">
-                {people.map((person:any, index:any) => (
+                {people.map((person: any, index: any) => (
                   <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
                     <Avatar
                       style={{
@@ -2757,7 +2757,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           lg: "19vw",
                         },
                         marginTop: "-50px",
-                        borderRadius:'20px'
+                        borderRadius: '20px'
                       }}
                     >
                       <br />
@@ -2765,7 +2765,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       <Typography
                         style={{
                           fontSize: "16px",
-                          fontWeight:'600',
+                          fontWeight: '600',
                           marginTop: "20px",
                           color: "#D9E3EA",
                         }}
@@ -2800,9 +2800,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         Worked with: {person.workedWith}
                       </Typography>
                       <br />
-                      <button className="bg-[#2090a4] text-white text-md mt-4 px-8 py-2 rounded-md w-34 font-medium text-[#D9E3EA]">
-                        Hire Me
-                      </button>
+                      <Link href="/ContactUs">
+                        <button className="bg-[#019dce] text-white text-md mt-4 px-8 py-2 rounded-md w-34 font-medium text-[#D9E3EA]">
+                          Hire Me
+                        </button>
+                      </Link>
                     </Box>
                   </Grid>
                 ))}

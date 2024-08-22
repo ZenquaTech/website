@@ -52,10 +52,10 @@ const models = [
 ];
 
 const icons = [
-  { icon: <FaDatabase style={{ fontSize: '40px', color: "#2090a4" }} />, title: "CURIOSITY", description: "A small river named Duden flows by their place and supplies it with the necessary regelialia." },
-  { icon: <FaWpexplorer className="text-[#2090a4] text-4xl" />, title: "EXPLORATION", description: "We love to move into uncharted waters to explore the best creative ideas and insight of what we have on offer both in terms of talent and capabilities." },
-  { icon: <FaSpinner className="text-[#2090a4] text-4xl" />, title: "INNOVATION", description: "We are an idea factory. We imagine, innovate and implement great ideas into technology solutions." },
-  { icon: <IoMdSettings className="text-[#2090a4] text-4xl" />, title: "INGENUITY", description: "We trust our workers’ ingenuity. We tell them what we want and they keep on surprising us with new and disruptive ways the technology works." }
+  { icon: <FaDatabase style={{ fontSize: '40px', color: "#019dce" }} />, title: "CURIOSITY", description: "A small river named Duden flows by their place and supplies it with the necessary regelialia." },
+  { icon: <FaWpexplorer className="text-[#019dce] text-4xl" />, title: "EXPLORATION", description: "We love to move into uncharted waters to explore the best creative ideas and insight of what we have on offer both in terms of talent and capabilities." },
+  { icon: <FaSpinner className="text-[#019dce] text-4xl" />, title: "INNOVATION", description: "We are an idea factory. We imagine, innovate and implement great ideas into technology solutions." },
+  { icon: <IoMdSettings className="text-[#019dce] text-4xl" />, title: "INGENUITY", description: "We trust our workers’ ingenuity. We tell them what we want and they keep on surprising us with new and disruptive ways the technology works." }
 ];
 
 const ModelDetails = ({ title, description, items, imageSrc, reverse }) => (
@@ -105,7 +105,7 @@ export default function Engagement() {
         {icons.map((icon, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
             <Box className="box-1">
-              <div className="inline-flex justify-center items-center border-4 border-[#2090a4] rounded-full p-3">
+              <div className="inline-flex justify-center items-center border-4 border-[#019dce] rounded-full p-3">
                 {icon.icon}
               </div>
               <Typography className="typo-3">{icon.title}</Typography>
@@ -133,14 +133,14 @@ export default function Engagement() {
 ))}
 
 
-      <Box style={{ display: "flex", flexDirection: "column", justifyContent: "center", fontSize: "18px", backgroundColor: "#2090a4", textAlign: "center", marginBottom: "2rem" }}>
+      <Box style={{ display: "flex", flexDirection: "column", justifyContent: "center", fontSize: "18px", backgroundColor: "#019dce", textAlign: "center", marginBottom: "2rem" }}>
         <Grid container className="max-w-[95%] mx-auto py-6">
           <Grid item sm={8} md={8}>
             <Typography style={{ fontSize: "28px", color: "#fff", fontWeight: '600' }}>Partnerships Are Great. Let's Get Work Together</Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
-              <Button style={{ backgroundColor: "#fff", fontSize: "15px", color: "#2090a4", borderRadius: "5px", textTransform: 'none', padding: '8px 10px', fontWeight: '600' }}>
+              <Button style={{ backgroundColor: "#fff", fontSize: "15px", color: "#019dce", borderRadius: "5px", textTransform: 'none', padding: '8px 10px', fontWeight: '600' }}>
                 Partner With Us
               </Button>
             </Box>

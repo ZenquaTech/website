@@ -1,6 +1,7 @@
 "use client";
 import React, { Component } from "react";
-import jsonData from "./data.json"; // Define interfaces for props
+import jsonData from "./data.json"; 
+import Link from 'next/link';
 import {
   Typography,
   Grid,
@@ -158,7 +159,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
         {content.content.map((content:any, index:any) => (
           <Grid item xs={12} sm={3} key={index}>
             <Box className="box3">
-              <img src={content.image} alt={content.title} style={{color: "#2090a4"}}/>
+              <img src={content.image} alt={content.title} style={{color: "#019dce"}}/>
               <Typography className="typo-11"> {content.title} </Typography>
               <Typography className="typo-12">{content.description}</Typography>
             </Box>
@@ -301,7 +302,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                         gutterBottom
                         variant="h5"
                         component="h2"
-                        style={{ textAlign: "center", marginTop: "2%", color: "#2090a4" }}
+                        style={{ textAlign: "center", marginTop: "2%", color: "#019dce" }}
                       >
                         {value.title}
                       </Typography>
@@ -521,9 +522,11 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                       Worked with: {person.workedWith}
                     </Typography>
                     <br />
+                    <Link href="/ContactUs">
+                    
                     <Button
                       style={{
-                        background: "#2090a4",
+                        background: "#019dce",
                         color: "#fff",
                         padding: "15px",
                         width: "50%",
@@ -531,6 +534,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                     >
                       Hire Me
                     </Button>
+                    </Link>
                   </Box>
                 </Grid>
               ))}
@@ -613,7 +617,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 textAlign: "left",
                 textTransform: "none",
                 marginTop: "16px",
-                backgroundColor: "#2090a4",
+                backgroundColor: "#019dce",
                 color: "#FFF",
               }}
             >
@@ -668,7 +672,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                   type="text"
                   placeholder="First name"
                   className="input input-bordered w-full bg-gray-900 
-                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
+                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                 />
               </Grid>
               <Grid item xs={12} md={6} className="m-[10px] font-bold">
@@ -677,7 +681,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                   type="text"
                   placeholder="Last name"
                   className="input input-bordered w-full bg-gray-900 
-                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
+                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                 />
               </Grid>
               <Grid item xs={12} className="m-[10px] w-full font-bold">
@@ -687,7 +691,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                     type="text"
                     placeholder="Email"
                     className="input input-bordered w-full bg-gray-900 
-                      bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
+                      bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                   />
                 </Box>
               </Grid>
@@ -697,14 +701,14 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                   type="text"
                   placeholder="Phone number"
                   className="input input-bordered w-full bg-gray-900 
-                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
+                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                 />
               </Grid>
               <Grid item xs={12} md={6} className="m-[10px] font-bold">
                 <Box className="mb-[10px]">Choose a service</Box>
                 <select
                   className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                 >
                   <option disabled selected>
                     Select
@@ -723,7 +727,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <Box className="mb-[10px]">Engagement type</Box>
                 <select
                   className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                 >
                   <option disabled selected>
                     Select
@@ -738,7 +742,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <Box className="mb-[10px]">When to start?</Box>
                 <select
                   className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                 >
                   <option disabled selected>
                     Select
@@ -753,7 +757,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <Box className="mb-[10px]">Budget (USD)</Box>
                 <select
                   className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                 >
                   <option disabled selected>
                     Select
@@ -769,7 +773,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <textarea
                   className="textarea input input-bordered w-full bg-gray-900 
                  bg-[rgba(150,144,162,.08)] 
-                  text-white focus:bg-gray-800 h-36 focus:border-[#2090a4]"
+                  text-white focus:bg-gray-800 h-36 focus:border-[#019dce]"
                   placeholder="About project"
                 ></textarea>
               </Grid>
@@ -777,7 +781,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <Box className="w-[400px]">
                   <Button
                     style={{
-                      backgroundColor: "#2090a4",
+                      backgroundColor: "#019dce",
                       color: "white",
                       padding: "15px",
                       width: "50%",
@@ -815,7 +819,7 @@ const MainWrapper = styled(Box)({
     fontSize: "18px",
   },
   "& .btn1": {
-    background: "#2090a4",
+    background: "#019dce",
     borderRadius: "5px",
     marginTop: "1.5rem",
   },
@@ -840,7 +844,7 @@ const MainWrapper = styled(Box)({
   " & .typo-5": {
     display: "flex",
     justifyContent: "center",
-    color: "#2090a4",
+    color: "#019dce",
     fontSize: "25px",
   },
   " & .typo-6": {
@@ -892,7 +896,7 @@ const MainWrapper = styled(Box)({
 
   " & .typo-13": {
     fontSize: "25px",
-    color: "#2090a4",
+    color: "#019dce",
   },
   " & .typo-14": {
     fontSize: "25px",
@@ -939,6 +943,6 @@ const mainDiv = {
 const Boxes = {
   width: "100%",
   height: "5px",
-  background: "#2090a4",
+  background: "#019dce",
   marginTop: "10px",
 };

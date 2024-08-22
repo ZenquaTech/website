@@ -22,7 +22,7 @@ export default function Hero() {
             of digital transformation and build a future-proof scaffolding for
             success.
           </p>
-          <button className="bg-[#2090a4] text-white text-md mt-6 px-6 rounded-md h-10 w-36 font-medium text-[#D9E3EA]">
+          <button className="bg-[#019dce] text-white text-md mt-6 px-6 rounded-md h-10 w-36 font-medium text-[#D9E3EA]">
             What we do
           </button>
         </div>

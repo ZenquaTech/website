@@ -558,14 +558,14 @@ export default function Partnerships() {
 
       {/* //seventh container */}
 
-      <Box style={{ display: "flex", flexDirection: "column", justifyContent: "center", fontSize: "18px", backgroundColor: "#2090a4", textAlign: "center", marginBottom: "2rem" }}>
+      <Box style={{ display: "flex", flexDirection: "column", justifyContent: "center", fontSize: "18px", backgroundColor: "#019dce", textAlign: "center", marginBottom: "2rem" }}>
         <Grid container className="max-w-[95%] mx-auto py-6">
           <Grid item sm={8} md={8}>
             <Typography style={{ fontSize: "28px", color: "#fff", fontWeight: '600' }}>Partnerships Are Great. Let's Get Work Together</Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
-              <Button style={{ backgroundColor: "#fff", fontSize: "15px", color: "#2090a4", borderRadius: "5px", textTransform: 'none', padding: '8px 10px', fontWeight: '600' }}>
+              <Button style={{ backgroundColor: "#fff", fontSize: "15px", color: "#019dce", borderRadius: "5px", textTransform: 'none', padding: '8px 10px', fontWeight: '600' }}>
                 Partner With Us
               </Button>
             </Box>
@@ -604,7 +604,7 @@ const MainWrapper = styled(Box)({
     color: "rgba(255,255,255,.75)",
   },
   "& .typo-4": {
-    backgroundColor: "#2090a4",
+    backgroundColor: "#019dce",
     alignItems: "center",
     display: "flex",
     justifyContent: "center",

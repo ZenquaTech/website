@@ -63,7 +63,7 @@ const menuData: MenuData = {
           { title: "Partnerships", href: "/Partnerships" },
           { title: "Engagement Models", href: "/EngagementModel" },
           { title: "Global Delivery Models", href: '/Global' },
-          { title: "Contact Us", href: 'ContactUs' },
+          { title: "Contact Us", href: '/ContactUs' },
         ],
       },
       {
@@ -167,67 +167,65 @@ const menuData: MenuData = {
       {
         title: "BACKEND Developers" ,
         subMenu: [
-          { title: "NodeJS Developer" , href:"/backendD/nodejsdeveloper" },
-          { title: "NestJS Developer" , href:"/backendD/nestjsdeveloper" },
-          { title: "ROR Developer" , href:"/backendD/rordeveloper" },
+          { title: "NodeJS Developer" , href:"/backend/nodejs" },
+          { title: "NestJS Developer" , href:"/backend/nestjs" },
+          { title: "ROR Developer" , href:"/backend/ror" },
         ],
       },
       {
         title: "FRONTEND Developers",
         subMenu: [
-          { title: "AngularJS Developer" , href:'/frontendD/angulardeveloper' },
-          { title: "ReactJS Developer"  ,  href:'/frontendD/reactjsdeveloper' },
-          { title: "VueJS Developer" ,  href:'/frontendD/vuejsdeveloper' },
-          { title: "NextJS Developer" ,  href:'/frontendD/nextjsdeveloper' },
+          { title: "AngularJS Developer" , href:'/frontend/angular' },
+          { title: "ReactJS Developer"  ,  href:'/frontend/reactjs' },
+          { title: "VueJS Developer" ,  href:'/frontend/vuejs' },
+          { title: "NextJS Developer" ,  href:'/frontend/nextjs' },
         ],
       },
       {
         title: "MOBILE Developer",
         subMenu: [
-          { title: "React Native Developer" , href:'/mobileD/'},
+          { title: "React Native Developer" , href:'/mobile/reactnative'},
         ],
       },
       {
         title: "E-Commerce Developers",
         subMenu: [
-          { title: "Woo Commerce Developer" },
-          { title: "Magento Developer" },
-          { title: "Shopify Developer" },
-          { title: "Nop Commerce Developer" },
+          { title: "Woo Commerce Developer" , href:'/ecommerce/woo' },
+          { title: "Magento Developer" , href:'/ecommerce/magento' },
+          { title: "Shopify Developer" , href:'/ecommerce/shopify'},
+          { title: "Nop Commerce Developer" , href:'/ecommerce/nop' },
         ],
       },
       {
         title: "CMS Developer",
         subMenu: [
-          { title: "WordPress Developer" },
+          { title: "WordPress Developer", href:'/cms/wordpress' },
         ],
       },
       {
         title: "FRAMEWORKS Developer",
         subMenu: [
-          { title: "MERN Stack Developer" },
-          { title: "MEAN Stack Developer" },
-          { title: "Ruby on Rails Developer" },
+          { title: "MERN Stack Developer" , href:'/framework/mern' },
+          { title: "MEAN Stack Developer", href:'/framework/mean' },
+          { title: "Ruby on Rails Developer", href:'/framework/ror' },
         ],
       },
       {
         title: "DATABASE Developers",
         subMenu: [
-          { title: "MYSQL Developer" },
-          { title: "PostgreSQL Developer" },
-          { title: "MongoDB Developer" },
-          { title: "Redis Developer" },
-          { title: "Firebase Developer" },
+          { title: "MYSQL Developer" , href:'/database/mysql' },
+          { title: "PostgreSQL Developer", href:'/database/postgresql'  },
+          { title: "MongoDB Developer", href:'/database/mongodb'  },
+          { title: "Redis Developer" , href:'/database/redis' },
+          { title: "Firebase Developer" , href:'/database/firebase' },
         ],
       },
       {
         title: "DEVOPS developers",
         subMenu: [
-          { title: "AWS Engineer developer" },
-          { title: "Azure Engineer developer" },
-          { title: "Google Cloud Engineer developer" },
-          { title: "" },
-          { title: "" },
+          { title: "AWS Engineer developer",href:'/cloud/aws' },
+          { title: "Azure Engineer developer" ,href:'/cloud/azure' },
+          { title: "Google Cloud Engineer developer",href:'/cloud/google' },
         ],
       },
     ],
@@ -236,11 +234,11 @@ const menuData: MenuData = {
     title: "Expertise",
     items: [{ title: "", 
     subMenu: [
-    { title: "ReactJS Developer" },
-    { title: "React Native Developer" },
-    { title: "NodeJS Developer" },
-    { title: "NextJS Developer" },
-    { title: "Ruby on Rails" },
+    { title: "ReactJS Developer", href:'/frontend/reactjs'},
+    { title: "React Native Developer" , href:'/mobile/reactnative'},
+    { title: "NodeJS Developer", href:"/backend/nodejs" },
+    { title: "NextJS Developer" , href:'/frontend/nextjs'},
+    { title: "Ruby on Rails", href:"/backend/ror" },
   ] 
 }],
   },
@@ -299,7 +297,7 @@ handleItemClick = () => {
                 onMouseLeave={this.handleMenuLeave}
                 onMouseOver={(e) => {
                   const target = e.target as HTMLElement;
-                  target.style.color = "#2090a4";
+                  target.style.color = "#019dce";
                 }}
                 onMouseOut={(e) => {
                   const target = e.target as HTMLElement;
@@ -369,7 +367,7 @@ handleItemClick = () => {
                                 }}
                                 onMouseOver={(e) => {
                                   const target = e.target as HTMLElement;
-                                  target.style.color = "#2090a4";
+                                  target.style.color = "#019dce";
                                 }}
                                 onMouseOut={(e) => {
                                   const target = e.target as HTMLElement;
@@ -401,7 +399,7 @@ handleItemClick = () => {
                                         }}
                                         onMouseOver={(e) => {
                                           const target = e.target as HTMLElement;
-                                          target.style.color = "#2090a4";
+                                          target.style.color = "#019dce";
                                         }}
                                         onMouseOut={(e) => {
                                           const target = e.target as HTMLElement;
@@ -473,7 +471,7 @@ handleItemClick = () => {
                                 }}
                                 onMouseOver={(e) => {
                                   const target = e.target as HTMLElement;
-                                  target.style.color = "#2090a4";
+                                  target.style.color = "#019dce";
                                 }}
                                 onMouseOut={(e) => {
                                   const target = e.target as HTMLElement;
@@ -504,7 +502,7 @@ handleItemClick = () => {
                                         }}
                                         onMouseOver={(e) => {
                                           const target = e.target as HTMLElement;
-                                          target.style.color = "#2090a4";
+                                          target.style.color = "#019dce";
                                         }}
                                         onMouseOut={(e) => {
                                           const target = e.target as HTMLElement;

@@ -9,6 +9,7 @@ import {
 } from "@material-ui/core";
 import React, { Component } from "react"
 import { FaArrowRight } from "react-icons/fa";
+import Link from 'next/link';
 
 interface Person {
   name: string;
@@ -873,16 +874,19 @@ export default class page extends Component {
                 </Typography>
                 <br />
                 <Box className="w-full flex justify-center">
-                  <Button
-                    style={{
-                      backgroundColor: "#5D5DFF",
-                      color: "white",
-                      padding: "15px",
-                      width: "50%",
-                    }}
-                  >
-                    Hire Me
-                  </Button>
+                <Link href="/ContactUs">
+                    
+                    <Button
+                      style={{
+                        background: "#019dce",
+                        color: "#fff",
+                        padding: "15px",
+                        width: "50%",
+                      }}
+                    >
+                      Hire Me
+                    </Button>
+                    </Link>
                 </Box>
               </Box>
             </Grid>

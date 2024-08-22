@@ -70,7 +70,7 @@ export default function Header() {
           style={{ backgroundColor: "transparent", width: "100%" }}
         >
           <div
-            className="max-w-6xl mx-auto px-4 sm:px-6"
+            className="max-w-6xl mx-auto"
             style={{ width: "100%" }}
           >
             <div

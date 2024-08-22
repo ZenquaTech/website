@@ -216,7 +216,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   <p className="text-medium my-2 text-justify text-[#9BA9B4]">
                     {item.para}
                   </p>
-                  <button className="bg-[#2090a4] text-[#D9E3EA] text-md mt-4 px-6 rounded-lg py-2 w-40 font-medium" onClick={() => scrollToBottom()}>
+                  <button className="bg-[#019dce] text-[#D9E3EA] text-md mt-4 px-6 rounded-lg py-2 w-40 font-medium" onClick={() => scrollToBottom()}>
                     {item.button}
                   </button>
                 </div>
@@ -253,7 +253,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         {item.heading}
                         <span
                           style={{
-                            color: "#2090a4",
+                            color: "#019dce",
                             flexWrap: "wrap",
                             margin: "1%",
                           }}
@@ -286,7 +286,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           marginTop: "2%",
                           textAlign: 'center',
                           flexWrap: 'wrap',
-                          backgroundColor: "#2090a4",
+                          backgroundColor: "#019dce",
                           color: "#D9E3EA",
                           padding: '2%',
                           fontWeight: 'bold',
@@ -348,7 +348,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       {" "}
-                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
                       <Box style={{ paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -391,7 +391,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
                       <Box style={{ paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -454,7 +454,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
                       <Box style={{ paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -496,7 +496,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
                       <Box style={{ paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -522,7 +522,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 className=" font text-center service-button uppercase">
                 OUR PROCESS
               </h2>
-              <h2 className="text-3xl font-bold text-center mb-8 hover:text-[#2090a4]">
+              <h2 className="text-3xl font-bold text-center mb-8 hover:text-[#019dce]">
                 Software Development Methodology
               </h2>
             </div>
@@ -569,29 +569,29 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 className=" font text-center uppercase service-button text-[#D9E3EA]">
                 ZenQua AT GLANCE
               </h2>
-              <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#2090a4]">
+              <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#019dce]">
                 Over 150+ Completed Projects & Still Counting.
               </h2>
               <div className="max-w[100%]">
                 <Grid container spacing={2}>
                   {content?.project?.map((item: any, index: any) => (
-                    <Grid item xs={12} md={6} lg={3}>
-                      <div
-                        key={index}
-                        className="flex flex-col items-center bg-gray-800 p-6 max-w[100%]"
-                        data-aos="fade-up"
-                        data-aos-delay={index * 200}
-                      >
-                        <Box className="flex justify-center items-center text-[#2090a4]">
-                          <div className="text-4xl font-bold text-purple-600">
-                            <CountUp end={item.number} />
-                          </div>
-                          <AddIcon style={{ fontSize: "40px" }} />
-                        </Box>
-                        <div className="text-md text-#D9E3EA">{item.title} </div>
-                      </div>
-                      <div className="h-[5px] bg-[#2090a4] mt-[15px] w-full text-[#2090a4]"></div>
-                    </Grid>
+                    <Grid key={index} item xs={12} md={6} lg={3}>
+                    <div
+                      key={index}
+                     className="flex flex-col items-center bg-white p-8 max-w[100%] rounded-t-xl"
+                      data-aos="fade-up"
+                      data-aos-delay={index * 200}
+                    >
+                      <Box className="flex justify-center items-center text-[#019dce]">
+                        <div className="text-4xl font-bold text-black">
+                          <CountUp end={item.number} />
+                        </div>
+                        <AddIcon style={{ fontSize: "40px" }} />
+                      </Box>
+                      <div className="text-md text-[#000] font-medium">{item.title} </div>
+                    </div>
+                    <div className="h-[5px] bg-[#019dce] mt-[15px] w-full text-[#019dce]"></div>
+                  </Grid>
                   ))}
                 </Grid>
               </div>
@@ -674,7 +674,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                                   borderBottom:
                                     this.state.clickedButton ===
                                       `${item.button}`
-                                      ? "2px solid #2090a4"
+                                      ? "2px solid #019dce"
                                       : "none",
                                   width: "-1px",
                                   alignItems: "center",
@@ -693,7 +693,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                                   color:
                                     this.state.clickedButton ===
                                       `${item.button}`
-                                      ? "#2090a4"
+                                      ? "#019dce"
                                       : "white",
                                 }}
                                 disableRipple
@@ -943,12 +943,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                                 height: "40px",
                                 borderRight:
                                   this.state.clickedButton6 === service.label
-                                    ? "2px solid #2090a4"
+                                    ? "2px solid #019dce"
                                     : "none",
                                 padding: "0px 8px",
                                 color:
                                   this.state.clickedButton6 === service.label
-                                    ? "#2090a4"
+                                    ? "#019dce"
                                     : "#D9E3EA",
                                 fontSize: "14px",
                                 backgroundColor:
@@ -979,7 +979,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         this.state.clickedButton6 === service.label ? (
                           <div>
                             <div
-                              className="text-2xl font-bold text-[#2090a4]"
+                              className="text-2xl font-bold text-[#019dce]"
                             >
                               {service.label}
                             </div>
@@ -1038,8 +1038,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                             // gutterBottom
                             variant="h5"
                             component="h2"
-                            // style={{ textAlign: "center", color: "#2090a4" }}
-                            style={{ fontWeight: 'bold', textAlign: "center", fontSize: '21px', marginBottom: '5%', color: "#2090a4", }}
+                            // style={{ textAlign: "center", color: "#019dce" }}
+                            style={{ fontWeight: 'bold', textAlign: "center", fontSize: '21px', marginBottom: '5%', color: "#019dce", }}
 
                           >
                             {item.label}
@@ -1176,7 +1176,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   <Box className="w-full flex justify-center mt-4">
                     <Button
                       variant="contained"
-                      className="text-lg text-left text-white bg-[#2090a4] hover:bg-[#1a7687] h-12 w-36 normal-case"
+                      className="text-lg text-left text-white bg-[#019dce] hover:bg-[#1a7687] h-12 w-36 normal-case"
                     >
                       Load More
                     </Button>

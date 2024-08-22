@@ -216,7 +216,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   <p className="text-medium my-2 text-justify text-[#9BA9B4]">
                     {item.para}
                   </p>
-                  <button className="bg-[#2090a4] text-[#D9E3EA] text-md mt-4 px-6 rounded-lg py-2 w-40 font-medium" onClick={() => scrollToBottom()}>
+                  <button className="bg-[#019dce] text-[#D9E3EA] text-md mt-4 px-6 rounded-lg py-2 w-40 font-medium" onClick={() => scrollToBottom()}>
                     {item.button}
                   </button>
                 </div>
@@ -236,7 +236,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 marginTop: "4%",
               }}
             >
-              {content.section2.map((item: any, index: any) => {
+              {content?.section2?.map((item: any, index: any) => {
                 return (
                   <Grid container spacing={2} key={index}>
                     <Grid item xs={12} md={8}>
@@ -252,7 +252,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         {item.heading}
                         <span
                           style={{
-                            color: "#2090a4",
+                            color: "#019dce",
                             flexWrap: "wrap",
                             margin: "1%",
                           }}
@@ -285,7 +285,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           marginTop: "2%",
                           textAlign: 'center',
                           flexWrap: 'wrap',
-                          backgroundColor: "#2090a4",
+                          backgroundColor: "#019dce",
                           color: "#D9E3EA",
                           padding: '2%',
                           fontWeight: 'bold',
@@ -333,7 +333,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             </Grid>
 
             <Grid container>
-              {content.item1.map((item: any, index: any) => (
+              {content?.item1?.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
                   <Box
                     sx={{
@@ -355,7 +355,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       {" "}
-                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
                       <Box style={{ paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -376,7 +376,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             </Grid>
 
             <Grid container>
-              {content.item2.map((item: any, index: any) => (
+              {content?.item2?.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
                   <Box
                     style={{
@@ -398,7 +398,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
                       <Box style={{paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -422,7 +422,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* ************************section4********************************** */}
 
           <Grid container>
-              {content.section4.map((item: any, index: any) => {
+              {content?.section4?.map((item: any, index: any) => {
                 return (
                   <Grid item xs={12}>
                     <Box className="box1">
@@ -439,7 +439,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             </Grid>
 
             <Grid container>
-              {content.item3.map((item: any, index: any) => (
+              {content?.item3?.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
                   <Box
                     style={{
@@ -461,7 +461,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
                       <Box style={{ paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -481,7 +481,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             </Grid>
 
             <Grid container>
-              {content.item4.map((item: any, index: any) => (
+              {content?.item4?.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
                   <Box
                     style={{
@@ -503,7 +503,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#2090a4", fontSize: "150%" }} />
+                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
                       <Box style={{ paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -529,7 +529,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 className=" font text-center service-button uppercase"> 
                 OUR PROCESS
               </h2>
-              <h2 className="text-3xl font-bold text-center mb-8 hover:text-[#2090a4]">
+              <h2 className="text-3xl font-bold text-center mb-8 hover:text-[#019dce]">
                 Software Development Methodology
               </h2>
             </div>
@@ -575,28 +575,29 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 className=" font text-center uppercase service-button text-[#D9E3EA]">
                 ZenQua AT GLANCE
               </h2>
-              <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#2090a4]">
+              <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#019dce]">
                 Over 150+ Completed Projects & Still Counting.
               </h2>
               <div className="max-w[100%]">
                 <Grid container spacing={2}>
-                  {content.project.map((item: any, index: any) => (
-                    <Grid item xs={12} md={6} lg={3}>
-                      <div
-                        key={index}
-                        className="flex flex-col items-center bg-gray-800 p-6 max-w[100%]"
-                        data-aos="fade-up"
-                        data-aos-delay={index * 200}
-                      >
-                        <Box className="flex justify-center items-center text-[#2090a4]">
-                          <div className="text-4xl font-bold text-purple-600">
-                            <CountUp end={item.number} />
-                          </div>
-                          <AddIcon style={{ fontSize: "40px" }} />
-                        </Box>
-                        <div className="text-md text-#D9E3EA">{item.title} </div>
-                      </div>
-                      <div className="h-[5px] bg-[#2090a4] mt-[15px] w-full text-[#2090a4]"></div>                    </Grid>
+                  {content?.project?.map((item: any, index: any) => (
+              <Grid key={index} item xs={12} md={6} lg={3}>
+              <div
+                key={index}
+               className="flex flex-col items-center bg-white p-8 max-w[100%] rounded-t-xl"
+                data-aos="fade-up"
+                data-aos-delay={index * 200}
+              >
+                <Box className="flex justify-center items-center text-[#019dce]">
+                  <div className="text-4xl font-bold text-black">
+                    <CountUp end={item.number} />
+                  </div>
+                  <AddIcon style={{ fontSize: "40px" }} />
+                </Box>
+                <div className="text-md text-[#000] font-medium">{item.title} </div>
+              </div>
+              <div className="h-[5px] bg-[#019dce] mt-[15px] w-full text-[#019dce]"></div>
+            </Grid>
                   ))}
                 </Grid>
               </div>
@@ -622,7 +623,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   justifyContent="center"
                   style={{ width: "95%", margin: "0 auto" }}
                 >
-                  {content.adaptable.map((items: any) => {
+                  {content?.adaptable?.map((items: any) => {
                     return (
                       <Grid
                         item
@@ -733,7 +734,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           // boxShadow: "none",
                         }}
                       >
-                        {content.servicesData2.map(
+                        {content?.servicesData2?.map(
                           (service: any, index: any) => (
                             <Button
                               className="hover:text-#D9E3EA w-full"
@@ -754,12 +755,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                                   marginTop: "3%",
                                   borderRight:
                                     this.state.clickedButton6 === service.label
-                                      ? "2px solid #2090a4"
+                                      ? "2px solid #019dce"
                                       : "none",
                                   paddingLeft: 10,
                                   color:
                                     this.state.clickedButton6 === service.label
-                                      ? "#2090a4"
+                                      ? "#019dce"
                                       : "#D9E3EA",
                                   fontSize:
                                     this.state.clickedButton6 === service.label
@@ -789,12 +790,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           color: "#D9E3EA",
                         }}
                       >
-                        {content.servicesData2.map((service: any) =>
+                        {content?.servicesData2?.map((service: any) =>
                           this.state.clickedButton6 === service.label ? (
                             <div>
                               <div
-                                className="text-2xl font-bold text-[#2090a4]"
-                                // style={{ color: "#2090a4" }}
+                                className="text-2xl font-bold text-[#019dce]"
+                                // style={{ color: "#019dce" }}
                               >
                                 {service.label}
                               </div>
@@ -834,7 +835,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     transition: "transform 0.10s ease-in-out"
                   }}
                 >
-                  {content.servicesData2.map((item: any, i: any) => (
+                  {content?.servicesData2?.map((item: any, i: any) => (
                     <Card
                       key={i}
                       style={{
@@ -853,8 +854,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                             // gutterBottom
                             variant="h5"
                             component="h2"
-                            // style={{ textAlign: "center", color: "#2090a4" }}
-                        style={{ fontWeight:'bold' , textAlign: "center" , fontSize:'21px' , marginBottom:'5%' , color: "#2090a4",}}
+                            // style={{ textAlign: "center", color: "#019dce" }}
+                        style={{ fontWeight:'bold' , textAlign: "center" , fontSize:'21px' , marginBottom:'5%' , color: "#019dce",}}
 
                           >
                             {item.label}
@@ -901,7 +902,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               indicators={false}
               animation="slide"
               >
-                {content.business.map((item: any, i: any) => (
+                {content?.business?.map((item: any, i: any) => (
                   <Grid
                     key={i}
                     container
@@ -991,7 +992,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   <Box className="w-full flex justify-center mt-4">
                     <Button
                       variant="contained"
-                      className="text-lg text-left text-white bg-[#2090a4] hover:bg-[#1a7687] h-12 w-36 normal-case"
+                      className="text-lg text-left text-white bg-[#019dce] hover:bg-[#1a7687] h-12 w-36 normal-case"
                     >
                       Load More
                     </Button>

@@ -121,7 +121,7 @@ const ContactUs = () => {
                   name={field.label.toLowerCase().replace(' ', '')}
                   value={formData[field.label.toLowerCase().replace(' ', '') as keyof FormData]}
                   onChange={handleChange}
-                  className="input input-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#2090a4] border-gray-500"
+                  className="input input-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#019dce] border-gray-500"
                 />
               </Grid>
             ))}
@@ -132,7 +132,7 @@ const ContactUs = () => {
                   name={field.label.toLowerCase().replace(' ', '')}
                   value={formData[field.label.toLowerCase().replace(' ', '') as keyof FormData]}
                   onChange={handleChange}
-                  className="select select-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#2090a4] border-gray-500"
+                  className="select select-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#019dce] border-gray-500"
                 >
                   <option value="" disabled>Select</option>
                   {field.options.map((option, optIndex) => (
@@ -147,7 +147,7 @@ const ContactUs = () => {
               <Box className="mb-2">Brief about the Project</Box>
               <textarea
                 name="projectBrief"
-                className="textarea input input-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 h-36 focus:border-[#2090a4] border-gray-500"
+                className="textarea input input-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 h-36 focus:border-[#019dce] border-gray-500"
                 placeholder="About project"
                 value={formData.projectBrief}
                 onChange={handleChange}
@@ -157,7 +157,7 @@ const ContactUs = () => {
               <Button
                 type="submit"
                 style={{
-                  backgroundColor: "#2090a4",
+                  backgroundColor: "#019dce",
                   color: "#D9E3EA",
                   padding: "10px",
                   textTransform: 'none',
