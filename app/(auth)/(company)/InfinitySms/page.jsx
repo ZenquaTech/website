@@ -322,7 +322,7 @@ export default function InfinitySms() {
           </Box>
           <Button
             style={{
-              backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
+              backgroundColor: "#019dce",
               borderRadius: "5px",
               margin: "2rem",
               fontSize:'12px',
@@ -651,7 +651,7 @@ export default function InfinitySms() {
                     type="text"
                     placeholder="First name"
                     className="input input-bordered w-full bg-gray-900 
-                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                   />
                 </Grid>
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
@@ -660,7 +660,7 @@ export default function InfinitySms() {
                     type="text"
                     placeholder="Last name"
                     className="input input-bordered w-full bg-gray-900 
-                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                   />
                 </Grid>
                 <Grid item xs={12} className="m-[10px] w-full font-bold">
@@ -670,7 +670,7 @@ export default function InfinitySms() {
                       type="text"
                       placeholder="Email"
                       className="input input-bordered w-full bg-gray-900 
-                      bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                      bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                     />
                   </Box>
                 </Grid>
@@ -680,13 +680,13 @@ export default function InfinitySms() {
                     type="text"
                     placeholder="Phone number"
                     className="input input-bordered w-full bg-gray-900 
-                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]"
                   />
                 </Grid>
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
                   <Box className="mb-[10px]">Choose a service</Box>
                   <select className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]">
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]">
                     <option disabled selected>
                       Select
                     </option>
@@ -703,7 +703,7 @@ export default function InfinitySms() {
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
                   <Box className="mb-[10px]">Engagement type</Box>
                   <select className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]">
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]">
                     <option disabled selected>
                       Select
                     </option>
@@ -716,7 +716,7 @@ export default function InfinitySms() {
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
                   <Box className="mb-[10px]">When to start?</Box>
                   <select className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]">
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]">
                     <option disabled selected>
                       Select
                     </option>
@@ -729,7 +729,7 @@ export default function InfinitySms() {
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
                   <Box className="mb-[10px]">Budget (USD)</Box>
                   <select className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]">
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#019dce]">
                     <option disabled selected>
                       Select
                     </option>
@@ -743,13 +743,13 @@ export default function InfinitySms() {
                   <Box className="mb-[10px]">Brief about the Project</Box>
                   <textarea className="textarea input input-bordered w-full bg-gray-900 
                  bg-[rgba(150,144,162,.08)] 
-                  text-white focus:bg-gray-800 h-36 focus:border-[#5D5DFF]" placeholder="About project"></textarea>
+                  text-white focus:bg-gray-800 h-36 focus:border-[#019dce]" placeholder="About project"></textarea>
                 </Grid>
                 <Grid item xs={12}>
                 <Box className="w-[400px]">
                   <Button
                     style={{
-                      backgroundColor: "#5D5DFF",
+                      backgroundColor: "#019dce",
                       color: "white",
                       padding: "15px",
                       width: "50%",
@@ -775,7 +775,7 @@ const MainWrapper = styled(Box)({
   "& .typo-1": {
     fontSize: "40px",
     fontWeight: "bold",
-    color: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    color: "#019dce",
     margin: "3rem",
   },
   "& .box-1": {
@@ -794,7 +794,7 @@ const MainWrapper = styled(Box)({
   "& .typo-3": {
     fontSize: "60px",
     fontWeight: "bold",
-    color: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    color: "#019dce",
     margin: "3rem",
   },
   "& .box-2": {

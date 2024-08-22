@@ -22,7 +22,7 @@ export default function Partnerships() {
 
   return (
     <MainWrapper>
-      <Grid container>
+      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
         <Grid item xs={12}>
           <Box className="box-1">
              <Typography className="typo-1">Explore Our Partnerships</Typography>
@@ -56,7 +56,7 @@ export default function Partnerships() {
 
       {/* //first container */}
 
-      <Grid container>
+      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
         <Grid item xs={12} sm={6} md={6}>
         {data.map((item, index) => (
           <Box key={index}>
@@ -90,7 +90,7 @@ export default function Partnerships() {
 
       {/* //second container */}
 
-      <Grid container>
+      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
@@ -108,9 +108,7 @@ export default function Partnerships() {
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={6}>
-          <Box style={{ marginTop: "4rem" }}>
             <Typography className="typo-8">Joint Venture</Typography>
-          </Box>
           <Box>
             <Typography className="typo-9">
               We assist you with the technology and business support along with
@@ -123,7 +121,7 @@ export default function Partnerships() {
             style={{
               margin: "2rem",
               fontWeight: 600,
-              fontSize: "18px",
+              fontSize: "16px",
               color: "rgba(255,255,255,.75)",
             }}
           >
@@ -175,11 +173,9 @@ export default function Partnerships() {
 
       {/* //Third container */}
 
-      <Grid container>
+      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
         <Grid item xs={12} sm={6} md={6}>
-          <Box style={{ marginTop: "4rem" }}>
             <Typography className="typo-10">Offshore Partners</Typography>
-          </Box>
           <Box>
             <Typography
               style={{
@@ -208,7 +204,6 @@ export default function Partnerships() {
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
-              marginTop: "4rem",
               display: "flex",
               justifyContent: "center",
             }}
@@ -225,7 +220,7 @@ export default function Partnerships() {
 
       {/* //fourth container */}
 
-      <Grid container>
+      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
@@ -243,7 +238,6 @@ export default function Partnerships() {
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={6}>
-          <Box style={{ marginTop: "4rem" }}>
             <Typography
               style={{
                 fontWeight: "bold",
@@ -255,13 +249,12 @@ export default function Partnerships() {
             >
               Joint Venture
             </Typography>
-          </Box>
-          <Box style={{ marginTop: "4rem" }}>
+  
             <Typography
               style={{
                 margin: "2rem",
                 color: "rgba(255,255,255,.75)",
-                fontSize: "18px",
+                fontSize: "16px",
                 display: "flex",
                 justifyContent: "center",
                 textAlign: "justify",
@@ -272,12 +265,11 @@ export default function Partnerships() {
               Through long-term relations, we can always remain mutually
               beneficial both financially and stable business practices.
             </Typography>
-          </Box>
           <Box
             style={{
               margin: "2rem",
               fontWeight: 600,
-              fontSize: "18px",
+              fontSize: "16px",
               color: "rgba(255,255,255,.75)",
             }}
           >
@@ -328,9 +320,9 @@ export default function Partnerships() {
       </Grid>
 
       {/* //fifth container */}
-      <Grid container>
+      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
         <Grid item xs={12} sm={6} md={6}>
-          <Box style={{ marginTop: "4rem" }}>
+          <Box>
             <Typography
               style={{
                 fontWeight: "bold",
@@ -343,11 +335,11 @@ export default function Partnerships() {
               Technology Partners
             </Typography>
           </Box>
-          <Box style={{ marginTop: "4rem" }}>
+          <Box>
             <Typography
               style={{
                 color: "rgba(255,255,255,.75)",
-                fontSize: "18px",
+                fontSize: "16px",
                 display: "flex",
                 justifyContent: "center",
                 textAlign: "justify",
@@ -371,7 +363,7 @@ export default function Partnerships() {
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
-              marginTop: "4rem",
+
               display: "flex",
               justifyContent: "center",
             }}
@@ -387,11 +379,10 @@ export default function Partnerships() {
       </Grid>
 
       {/* //sixth container */}
-      <Grid container>
+      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
-              marginTop: "4rem",
               display: "flex",
               justifyContent: "center",
             }}
@@ -418,12 +409,12 @@ export default function Partnerships() {
               Agent Partners
             </Typography>
           </Box>
-          <Box style={{ marginTop: "4rem" }}>
+          <Box>
             <Typography
               style={{
                 margin: "2rem",
                 color: "rgba(255,255,255,.75)",
-                fontSize: "18px",
+                fontSize: "16px",
                 display: "flex",
                 justifyContent: "center",
                 textAlign: "justify",
@@ -441,7 +432,7 @@ export default function Partnerships() {
             style={{
               margin: "2rem",
               fontWeight: 600,
-              fontSize: "18px",
+              fontSize: "16px",
               color: "rgba(255,255,255,.75)",
             }}
           >
@@ -466,9 +457,9 @@ export default function Partnerships() {
         </Grid>
       </Grid>
 
-      <Grid container>
+      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
         <Grid item xs={12}>
-          <Box style={{ marginTop: "4rem", width: "100vw" }}>
+          <Box>
             <Typography
               style={{
                 fontWeight: "bold",
@@ -484,7 +475,7 @@ export default function Partnerships() {
             <Typography
               style={{
                 color: "rgba(255,255,255,.75)",
-                fontSize: "18px",
+                fontSize: "16px",
                 display: "flex",
                 justifyContent: "center",
                 textAlign: "center",
@@ -517,7 +508,7 @@ export default function Partnerships() {
                 marginTop: "2rem",
                 margin: "3rem",
                 color: "rgba(255,255,255,.75)",
-                fontSize: "18px",
+                fontSize: "16px",
                 display: "flex",
                 justifyContent: "center",
                 textAlign: "justify",
@@ -536,6 +527,7 @@ export default function Partnerships() {
             <Typography
               style={{
                 color: "rgba(255,255,255,.75)",
+                fontWeight: "bold",
                 fontSize: "25px",
                 display: "flex",
                 justifyContent: "center",
@@ -548,7 +540,7 @@ export default function Partnerships() {
                 marginTop: "2rem",
                 margin: "3rem",
                 color: "rgba(255,255,255,.75)",
-                fontSize: "18px",
+                fontSize: "16px",
                 display: "flex",
                 justifyContent: "center",
                 textAlign: "justify",
@@ -566,60 +558,14 @@ export default function Partnerships() {
 
       {/* //seventh container */}
 
-      <Box
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          fontSize: "18px",
-          // backgroundColor: "#eb5d3d",
-          backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
-          textAlign: "center",
-          width: "100vw",
-          marginBottom: "2rem",
-
-          "@media (max-width:767px)": {
-            marginBottom: "none",
-          },
-        }}
-      >
-        <Grid container>
+      <Box style={{ display: "flex", flexDirection: "column", justifyContent: "center", fontSize: "18px", backgroundColor: "#019dce", textAlign: "center", marginBottom: "2rem" }}>
+        <Grid container className="max-w-[95%] mx-auto py-6">
           <Grid item sm={8} md={8}>
-            <Box>
-              <Typography
-                style={{
-                  margin: "2rem",
-                  fontSize: "25px",
-                  color: "#fff",
-                }}
-              >
-                Partnerships Are Great.Let's Get Work Together
-              </Typography>
-            </Box>
+            <Typography style={{ fontSize: "28px", color: "#fff", fontWeight: '600' }}>Partnerships Are Great. Let's Get Work Together</Typography>
           </Grid>
-
           <Grid item xs={12} sm={4}>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                height: "100%",
-                width: "100%",
-              }}
-            >
-              <Button
-                style={{
-                  backgroundColor: "#fff",
-                  // backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
-                  fontSize: "15px",
-                  // color: "#eb5d3d",
-                  color: "rgb(93 93 255 / var(--tw-bg-opacity))",
-                  height: "45%",
-                  width: "60%",
-                  borderRadius: "5px",
-                }}
-              >
+            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
+              <Button style={{ backgroundColor: "#fff", fontSize: "15px", color: "#019dce", borderRadius: "5px", textTransform: 'none', padding: '8px 10px', fontWeight: '600' }}>
                 Partner With Us
               </Button>
             </Box>
@@ -658,18 +604,17 @@ const MainWrapper = styled(Box)({
     color: "rgba(255,255,255,.75)",
   },
   "& .typo-4": {
-    // backgroundColor: "#e04a36",
-    backgroundColor: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    backgroundColor: "#019dce",
     alignItems: "center",
     display: "flex",
     justifyContent: "center",
-    border: "1px solid white",
     borderRadius: "9px",
     width: "150px",
     margin: "auto",
     color: "white",
     fontWeight: "bold",
     height: "50px",
+    textTransform:'none'
   },
   "& .typo-5": {
     fontWeight: "bold",
@@ -694,9 +639,6 @@ const MainWrapper = styled(Box)({
     justifyContent: "center",
     textAlign: "justify",
     flexWrap: "wrap",
-    // "@media only screen and (max-width: 430px)": {
-    //   fontSize: "15px",
-    // }
   },
 
   "& .typo-8": {

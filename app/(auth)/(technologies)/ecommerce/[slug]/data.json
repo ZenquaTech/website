@@ -113,23 +113,27 @@
         "description": "As a company specializing in Woocommerce Headless Development, we possess extensive expertise in developing decoupled e-commerce solutions using the Woocommerce REST API and headless front-end frameworks such as React or Angular. Our proficiency in integrating headless architecture with Woocommerce ensures scalable, high-performing, and customizable online stores with enhanced flexibility and agility."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -299,23 +303,27 @@
         "description": "We specialize in providing professional Magento B2B Development services that empower businesses to design, develop, and deploy robust eCommerce solutions. Our services include custom module development, API integration, 3rd party integration, performance optimization, scalability solutions, and platform migration."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -485,23 +493,27 @@
           "description": "We provide comprehensive Shopify Consulting Services to help businesses maximize their eCommerce platform. Our services encompass strategy, design, implementation, customization, integration, migration, and support. Our team of Shopify experts has extensive experience in optimizing Shopify stores for superior performance, scalability, and security. With our expertise in Shopify APIs, third-party integrations, and storefront customization."
         }
       ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -671,23 +683,27 @@
         "description": "Our team of skilled developers can help you seamlessly migrate your e-commerce store from any other platform to NopCommerce, ensuring minimal downtime and data loss. We have extensive experience in handling complex migrations and can assist you in achieving a smooth transition to NopCommerce. We follow a comprehensive approach to NopCommerce migration that includes analysis of your existing platform, data migration, design and theme migration, plugin and extension migration, and post-migration testing and support."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {

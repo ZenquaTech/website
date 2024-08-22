@@ -49,7 +49,7 @@ export default function Zigzag() {
                 data-aos="fade-right"
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">
+                  <div className="font-architects-daughter text-xl text-[#019dce] mb-2">
                     Give your ideas in responsible hand
                   </div>
                   <h3 className="h3 mb-3">Protecting Your Project</h3>
@@ -126,7 +126,7 @@ export default function Zigzag() {
                 data-aos="fade-left"
               >
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">
+                  <div className="font-architects-daughter text-xl text-[#019dce] mb-2">
                     More speed. Less spend
                   </div>
                   <h3 className="h3 mb-3">
@@ -203,7 +203,7 @@ export default function Zigzag() {
                 data-aos="fade-right"
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">
+                  <div className="font-architects-daughter text-xl text-[#019dce] mb-2">
                     We're more than just a product vendor
                   </div>
                   <h3 className="h3 mb-3">Support and Training</h3>

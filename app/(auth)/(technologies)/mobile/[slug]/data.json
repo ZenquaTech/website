@@ -99,22 +99,26 @@
       }
     ],
     "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -285,22 +289,26 @@
       }
     ],
     "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -471,22 +479,26 @@
         }
       ],
     "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -656,23 +668,27 @@
           "description": "We are a Flutter app development company that provides comprehensive upgrade and maintenance services for apps developed using Flutter. Our team of experienced Flutter developers can help with bug fixes and feature updates, ensuring that your app remains in top condition."
         }
       ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+   "project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -842,23 +858,27 @@
           "description": "Our React Native developers excel in app maintenance and support. With a deep understanding of React Native technology, they swiftly identify and resolve issues. Their expertise in debugging and optimization ensures effective resolution of any existing problems."
         }
       ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+  "project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {

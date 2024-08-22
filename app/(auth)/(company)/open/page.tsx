@@ -265,7 +265,7 @@ export default class page extends Component {
                     fontSize: "17px",
                     textTransform: "none",
                     marginTop: "16px",
-                    backgroundColor: "#5D5DFF",
+                    backgroundColor: "#019dce",
                     color: "#FFF",
                     height: "60px",
                     width: "180px",

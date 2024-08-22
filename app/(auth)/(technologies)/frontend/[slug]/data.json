@@ -99,27 +99,27 @@
          }
      ],
      "project": [
-         {
-             "title": "Project Delivered",
-             "number": "2500"
-         },
-         {
-             
-             "title": "Satisfied Clients",
-             "number": "800"
-         },
-         {
-             
-             "title": "Experts on Board",
-             "number": "100"
-         },
-         {
-             
-             "title": "Years of Experience",
-             "number": "14"
-         }
- 
-     ],
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
+    ],
      "adaptable": [
          {
              "title": "Time & Material Basis Model",
@@ -327,27 +327,27 @@
      }
  ],
  "project": [
-     {
-         "title": "Project Delivered",
-         "number": "2500"
-     },
-     {
-         
-         "title": "Satisfied Clients",
-         "number": "800"
-     },
-     {
-         
-         "title": "Experts on Board",
-         "number": "100"
-     },
-     {
-         
-         "title": "Years of Experience",
-         "number": "14"
-     }
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
 
- ],
+    ],
  "adaptable": [
      {
          "title": "Time & Material Basis Model",
@@ -544,28 +544,28 @@
              "description":"We specialize in providing comprehensive maintenance and upgradation services for VueJS applications, ensuring optimal performance, scalability and security. Our expert team is well-versed in the latest VueJS technologies and can provide customized solutions for your app. We also offer ongoing support services to ensure your app remains up-to-date and secure."
          }
      ],
-     "project": [
-         {
-             "title": "Project Delivered",
-             "number": "2500"
-         },
-         {
-             
-             "title": "Satisfied Clients",
-             "number": "800"
-         },
-         {
-             
-             "title": "Experts on Board",
-             "number": "100"
-         },
-         {
-             
-             "title": "Years of Experience",
-             "number": "14"
-         }
- 
-     ],
+ "project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
+    ],
      "adaptable": [
          {
              "title": "Time & Material Basis Model",

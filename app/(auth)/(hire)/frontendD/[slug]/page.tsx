@@ -1,6 +1,7 @@
 "use client";
 import React, { Component } from "react";
-import jsonData from "./data.json"; // Define interfaces for props
+import jsonData from "./data.json";
+import Link from 'next/link'; // Define interfaces for props
 import {
   Typography,
   Grid,
@@ -162,7 +163,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
         {content.content.map((content:any, index:any) => (
           <Grid item xs={12} sm={3} key={index}>
             <Box className="box3">
-              <img src={content.image} alt={content.title} style={{color: "rgb(93 93 255 / var(--tw-bg-opacity))"}}/>
+              <img src={content.image} alt={content.title} style={{color: "#019dce"}}/>
               <Typography className="typo-11"> {content.title} </Typography>
               <Typography className="typo-12">{content.description}</Typography>
             </Box>
@@ -305,7 +306,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                         gutterBottom
                         variant="h5"
                         component="h2"
-                        style={{ textAlign: "center", marginTop: "2%", color: "rgb(93 93 255 / var(--tw-bg-opacity))" }}
+                        style={{ textAlign: "center", marginTop: "2%", color: "#019dce" }}
                       >
                         {value.title}
                       </Typography>
@@ -525,9 +526,11 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                       Worked with: {person.workedWith}
                     </Typography>
                     <br />
+                    <Link href="/ContactUs">
+                    
                     <Button
                       style={{
-                        background: "rgb(93 93 255 / var(--tw-bg-opacity))",
+                        background: "#019dce",
                         color: "#fff",
                         padding: "15px",
                         width: "50%",
@@ -535,6 +538,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                     >
                       Hire Me
                     </Button>
+                    </Link>
                   </Box>
                 </Grid>
               ))}
@@ -819,7 +823,7 @@ const MainWrapper = styled(Box)({
     fontSize: "18px",
   },
   "& .btn1": {
-    background: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    background: "#019dce",
     borderRadius: "5px",
     marginTop: "1.5rem",
   },
@@ -844,7 +848,7 @@ const MainWrapper = styled(Box)({
   " & .typo-5": {
     display: "flex",
     justifyContent: "center",
-    color: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    color: "#019dce",
     fontSize: "25px",
   },
   " & .typo-6": {
@@ -896,7 +900,7 @@ const MainWrapper = styled(Box)({
 
   " & .typo-13": {
     fontSize: "25px",
-    color: "rgb(93 93 255 / var(--tw-bg-opacity))",
+    color: "#019dce",
   },
   " & .typo-14": {
     fontSize: "25px",

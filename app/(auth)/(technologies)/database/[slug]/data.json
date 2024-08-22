@@ -98,23 +98,27 @@
         "description": "Our team provides comprehensive advice on database design and implementation, query optimization and performance tuning, replication strategies, and backup and recovery solutions. We also provide support for high-availability and scalability requirements. Our MySQL Consultation service is tailored to the needs of each individual client, ensuring the most efficient, reliable, and secure MySQL databases."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -284,23 +288,27 @@
         "description": "We are experts in PostgreSQL Application Development, specialized in creating robust applications using the PostgreSQL relational database technology. Our expertise includes developing custom PostgreSQL solutions, integrating PostgreSQL with other technologies, providing maintenance and support services, and providing custom application development for PostgreSQL. We use the latest PostgreSQL features."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -470,23 +478,27 @@
         "description": "Our experienced software engineers provide end-to-end integration services to help you securely integrate your applications with MongoDB. We use MongoDB's native language drivers to ensure that your integration process is as seamless as possible. We also provide solutions for data migration from other databases to MongoDB and vice versa. With our expertise, we can ensure that your data is stored, managed, and accessed efficiently and securely."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -656,23 +668,27 @@
         "description": "We have extensive experience in programming in Linux shell scripting, allowing us to connect to Redis and manage it effectively. We can help you create scripts to automate processes and manage your data, as well as maintain and monitor your Redis instance. Additionally, we are experienced in creating complex scripts to handle complex tasks and to integrate with other applications."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
@@ -842,23 +858,27 @@
         "description": "We provide Firebase Consulting Services with comprehensive expertise in the design, development, and deployment of Firebase applications. Our experienced consultants have in-depth knowledge of key Firebase capabilities such as Cloud Firestore, Authentication, Cloud Storage, Cloud Messaging, Cloud Functions, and Firebase Hosting. We provide custom solutions that meet our clients' unique business requirements, helping them to quickly and cost-effectively launch and scale their Firebase applications."
       }
     ],
-    "project": [
-      {
-        "title": "Project Delivered",
-        "number": "2500"
-      },
-      {
-        "title": "Satisfied Clients",
-        "number": "800"
-      },
-      {
-        "title": "Experts on Board",
-        "number": "100"
-      },
-      {
-        "title": "Years of Experience",
-        "number": "14"
-      }
+"project": [
+        {
+            "title": "Project Delivered",
+           "number": "150"
+        },
+        {
+            
+            "title": "Satisfied Clients",
+            "number": 80
+        },
+        {
+            
+            "title": "Experts on Board",
+            "number": 70
+        },
+        {
+            
+            "title": "Years of Experience",
+            "number": 10
+        }
+
     ],
     "adaptable": [
       {
