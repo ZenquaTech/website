@@ -91,20 +91,20 @@ export default function ContactUs() {
         "iV2LpGhkJHKT6wGLR"
       )
       .then((response) => {
-        notifySuccess("Email sent successfully!");
+        notifySuccess("Request sent successfully!");
         // Reset form
-        // setFormData({
-        //   firstName: "",
-        //   lastName: "",
-        //   email: "",
-        //   phone: "",
-        //   service: "",
-        //   engagementType: "",
-        //   whenToStart: "",
-        //   budget: 0,
-        //   projectBrief: "",
-        //   captchaChecked: false,
-        // });
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          service: "",
+          engagementType: "",
+          whenToStart: "",
+          budget: 0,
+          projectBrief: "",
+          captchaChecked: false,
+        });
       })
       .catch((error) => {
         notifyError("Error while sending contact request")
@@ -205,7 +205,7 @@ export default function ContactUs() {
         <Grid item xs={12} sm={4} style={{ borderBottom: "1px solid #fff" }}>
           <Box className="box-1">
             <Typography className="typo-1">Social Media</Typography>
-            {/* <div style={{ display: "flex", gap: 16 }}>
+            <div style={{ display: "flex", gap: 16 }}>
               <a
                 className="linkedin-link"
                 href="//www.linkedin.com/company/zenqua-technologies/"
@@ -241,7 +241,7 @@ export default function ContactUs() {
               >
                 <FaTwitter />
               </a>
-            </div> */}
+            </div>
             <Typography></Typography>
           </Box>
         </Grid>
