@@ -17,9 +17,7 @@ export default function Footer() {
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
-                      // /* padding-top: 0px; */
                       justifyContent: "center",
-
                       fontWeight: 600,
                     }}
                   >
