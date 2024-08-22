@@ -1026,4 +1026,3 @@ export default class page extends Component {
     );
   }
 }
-

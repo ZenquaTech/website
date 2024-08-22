@@ -1,10 +1,10 @@
 {
-  "django": {
+  "mern": {
     "section1": [
       {
-        "heading1": "Django Development Company",
-        "heading2": "Expand your business with our Django Development Services",
-        "para": "Boost your business with ZenQua Django Development Services. Our experienced Django developers draw on years of expertise to build cost-effective and efficient solutions for your business. We leverage the powerful features of the Django framework to provide you with immersive web experiences. Our development teams stay up-to-date with the latest trends to build applications with an MVC structure, detailed library and logical structure. We create polished, secure web experiences using the latest coding standards and ensuring strict guidelines are followed. With our Django development services, you get customized website development, tailored software development, and tailored API development according to your business requirements. ZenQua stands for outstanding service for your business success.",
+        "heading1": "Mern Development Company",
+        "heading2": "Expand your business with our Mern Development Services",
+        "para": "Boost your business with ZenQua Mern Development Services. Our experienced Mern developers draw on years of expertise to build cost-effective and efficient solutions for your business. We leverage the powerful features of the Mern framework to provide you with immersive web experiences. Our development teams stay up-to-date with the latest trends to build applications with an MVC structure, detailed library and logical structure. We create polished, secure web experiences using the latest coding standards and ensuring strict guidelines are followed. With our Mern development services, you get customized website development, tailored software development, and tailored API development according to your business requirements. ZenQua stands for outstanding service for your business success.",
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135625/django_1-1536x1360.png",
         "button": "Talk to Expert"
       }
@@ -12,9 +12,9 @@
     "section2": [
       {
         "heading": "Want To Hire An Offshore ",
-        "heading1": "Django Development Team?",
+        "heading1": "Mern Development Team?",
         "para": "We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
-        "button": "Hire Django DEVELOPER"
+        "button": "Hire Mern DEVELOPER"
       }
     ],
     "section3": [
@@ -27,75 +27,75 @@
     "item1": [
       {
         "starLogo": "<FaStar />",
-        "title": "Django Application Development",
-        "description": "We specialize in Django Application Development, leveraging the Python framework to create complex, powerful software solutions tailored to your business needs. With years of experience, our team of experts is capable of creating robust web applications that bring a wealth of functions, features, and security to your organization. From secure user authentication to powerful data analytics and beyond, our custom Django solutions are designed to deliver the highest level of performance and extend the capabilities of your business."
+        "title": "Mern Application Development",
+        "description": "We specialize in Mern Application Development, leveraging the Python framework to create complex, powerful software solutions tailored to your business needs. With years of experience, our team of experts is capable of creating robust web applications that bring a wealth of functions, features, and security to your organization. From secure user authentication to powerful data analytics and beyond, our custom Mern solutions are designed to deliver the highest level of performance and extend the capabilities of your business."
       },
       {
         "starLogo": "<FaStar />",
-        "title": "Django Website development",
-        "description": "We are experienced in developing custom websites using the Django web development framework. Our expertise enables us to create robust and reliable web applications, from small scale data-driven applications to enterprise-level web portals. We have proficient coding experience in Django ORM, Python, MVC, and RESTful APIs. Our developers also have experience in HTML5, CSS3, JavaScript, jQuery and other modern web technologies to build landmark websites."
+        "title": "Mern Website development",
+        "description": "We are experienced in developing custom websites using the Mern web development framework. Our expertise enables us to create robust and reliable web applications, from small scale data-driven applications to enterprise-level web portals. We have proficient coding experience in Mern ORM, Python, MVC, and RESTful APIs. Our developers also have experience in HTML5, CSS3, JavaScript, jQuery and other modern web technologies to build landmark websites."
       },
       {
         "starLogo": "<FaStar />",
-        "title": "Django eCommerce & MCommerce Development",
-        "description": "Our team of certified Django developers brings with them an exceptional range of knowledge in designing hybrid applications with responsive & secure frontend platforms and Django based backend. Our specialties include developing custom websites, apps & APIs, and integrations with payment gateways. We boast of an impressive portfolio of successful projects based add-ons and customizations for overall eCommerce & MCommerce needs."
+        "title": "Mern eCommerce & MCommerce Development",
+        "description": "Our team of certified Mern developers brings with them an exceptional range of knowledge in designing hybrid applications with responsive & secure frontend platforms and Mern based backend. Our specialties include developing custom websites, apps & APIs, and integrations with payment gateways. We boast of an impressive portfolio of successful projects based add-ons and customizations for overall eCommerce & MCommerce needs."
       }
     ],
     "item2": [
       {
         "starLogo": "<FaStar />",
-        "title": "Django API Development",
-        "description": "We provide specialized expertise to develop back-end web applications using Django REST Framework. Our expertise also includes building and connecting to databases, customizing APIs, developing complex functionalities, and ensuring secure and scalable API solutions using best coding practices. Our experienced developers assist organizations to bring their ideas to life and deliver high-performance APIs."
+        "title": "Mern API Development",
+        "description": "We provide specialized expertise to develop back-end web applications using Mern REST Framework. Our expertise also includes building and connecting to databases, customizing APIs, developing complex functionalities, and ensuring secure and scalable API solutions using best coding practices. Our experienced developers assist organizations to bring their ideas to life and deliver high-performance APIs."
       },
       {
         "starLogo": "<FaStar />",
-        "title": "Django MVP Development",
-        "description": "We are expertise in providing comprehensive MVP development services using Django, a powerful open-source web application framework. Our team specializes in custom Django application development and deployment, helping you quickly create web applications with secure and dynamic features. We deliver reliable and secure web solutions that easily scale up according to your project size and technical requirements."
+        "title": "Mern MVP Development",
+        "description": "We are expertise in providing comprehensive MVP development services using Mern, a powerful open-source web application framework. Our team specializes in custom Mern application development and deployment, helping you quickly create web applications with secure and dynamic features. We deliver reliable and secure web solutions that easily scale up according to your project size and technical requirements."
       },
       {
         "starLogo": "<FaStar />",
-        "title": "Django Migration Services",
-        "description": "We provides professional Django Migration Services to help migrate databases, applications or components with ease. With proven experience in Django migration, our highly skilled migration experts can ensure minimal disruption with rapid speed. We handle project planning, execution and implementation, providing solutions with massive scalability and impeccable secure automation processes."
+        "title": "Mern Migration Services",
+        "description": "We provides professional Mern Migration Services to help migrate databases, applications or components with ease. With proven experience in Mern migration, our highly skilled migration experts can ensure minimal disruption with rapid speed. We handle project planning, execution and implementation, providing solutions with massive scalability and impeccable secure automation processes."
       }
     ],
     "section4": [
       {
         "heading1": "EXPERTISE IN DJANGO DEVELOPMENT",
-        "heading2": "Advance Django development Services"
+        "heading2": "Advance Mern development Services"
       }
     ],
     "item3": [
       {
         "starLogo": "<FaStar />",
-        "title": "Advance Django development Services",
-        "description": "Our consulting services integrate best-in-class technologies and provide expertise in leveraging Django and Python frameworks to develop advanced web applications. Our Django and Python consulting experts have experience in developing and managing solutions tailored to meet specific business requirements and needs. We offer comprehensive services, including design, development, testing, deployment, maintenance, and support. Our solutions are custom designed to rapidly boost project productivity and ensure cost-effectiveness."
+        "title": "Advance Mern development Services",
+        "description": "Our consulting services integrate best-in-class technologies and provide expertise in leveraging Mern and Python frameworks to develop advanced web applications. Our Mern and Python consulting experts have experience in developing and managing solutions tailored to meet specific business requirements and needs. We offer comprehensive services, including design, development, testing, deployment, maintenance, and support. Our solutions are custom designed to rapidly boost project productivity and ensure cost-effectiveness."
       },
       {
         "starLogo": "<FaStar />",
-        "title": "Django QA Services",
-        "description": "Our highly qualified and experienced QA team provides detailed defect analysis, test configuration isolation, minimal test coverage, test automation and compliance with industry-standard QA processes. We use cutting-edge technologies and testing tools to ensure proper execution of automated tests and manual exploratory tests. Our comprehensive suite of services effectively meets the highest quality requirements for Quality Engineering and Quality Assurance of Django projects."
+        "title": "Mern QA Services",
+        "description": "Our highly qualified and experienced QA team provides detailed defect analysis, test configuration isolation, minimal test coverage, test automation and compliance with industry-standard QA processes. We use cutting-edge technologies and testing tools to ensure proper execution of automated tests and manual exploratory tests. Our comprehensive suite of services effectively meets the highest quality requirements for Quality Engineering and Quality Assurance of Mern projects."
       },
       {
         "starLogo": "<FaStar />",
-        "title": "Custom Django app development",
-        "description": "We provide comprehensive Django Custom App development solutions that enable clients to build and deploy powerful custom applications. Our expertise includes development of robust, secure and scalable custom applications utilizing the powerful Django Framework. Our development team is highly experienced in leveraging latest-tech to customize the applications to suit specific business requirements. Leveraging our years of experience in the industry, we ensure to deliver reliable solutions that are tailored to help accelerate ROI."
+        "title": "Custom Mern app development",
+        "description": "We provide comprehensive Mern Custom App development solutions that enable clients to build and deploy powerful custom applications. Our expertise includes development of robust, secure and scalable custom applications utilizing the powerful Mern Framework. Our development team is highly experienced in leveraging latest-tech to customize the applications to suit specific business requirements. Leveraging our years of experience in the industry, we ensure to deliver reliable solutions that are tailored to help accelerate ROI."
       }
     ],
     "item4": [
       {
         "starLogo": "<FaStar />",
-        "title": "Machine Learning with Django",
-        "description": "We have expertise in the application of Machine Learning algorithms like Artificial Neural Networks, Support Vector Machines, Decision Trees, and Unsupervised Learning to build custom Django models tailored to client's needs. Utilizing the easy-to-use classes in Django we combine the power of open-source Machine Learning libraries like Scikit-Learn, TensorFlow and PyTorch with scalability, reliability and ease of use of Django. We help clients to build secure and robust Machine Learning applications with Django."
+        "title": "Machine Learning with Mern",
+        "description": "We have expertise in the application of Machine Learning algorithms like Artificial Neural Networks, Support Vector Machines, Decision Trees, and Unsupervised Learning to build custom Mern models tailored to client's needs. Utilizing the easy-to-use classes in Mern we combine the power of open-source Machine Learning libraries like Scikit-Learn, TensorFlow and PyTorch with scalability, reliability and ease of use of Mern. We help clients to build secure and robust Machine Learning applications with Mern."
       },
       {
         "starLogo": "<FaStar />",
-        "title": "Django CMS Development",
-        "description": "We offer end-to-end CMS Development solutions using the latest Django framework, ensuring speedy and secure development of content management systems. Our team of experienced Django developers ensures that every application is tailored to match clients’ requirements, with quality assurance testing and optimized code. We also provide complete customization, seamless integration with enterprise applications, secure maintenance, and scalability."
+        "title": "Mern CMS Development",
+        "description": "We offer end-to-end CMS Development solutions using the latest Mern framework, ensuring speedy and secure development of content management systems. Our team of experienced Mern developers ensures that every application is tailored to match clients’ requirements, with quality assurance testing and optimized code. We also provide complete customization, seamless integration with enterprise applications, secure maintenance, and scalability."
       },
       {
         "starLogo": "<FaStar />",
-        "title": "Django Consulting Services",
-        "description": "We offer comprehensive Django Consulting Services with expertise in all aspects of web development, from project inception to deployment. Our team consists of experienced web developers and engineers with expertise in Django and Python, as well as databases and web hosting services. We offer end-to-end solutions for creating applications, setting up custom domains, deploying on cloud services, performing system architecture design and optimization."
+        "title": "Mern Consulting Services",
+        "description": "We offer comprehensive Mern Consulting Services with expertise in all aspects of web development, from project inception to deployment. Our team consists of experienced web developers and engineers with expertise in Mern and Python, as well as databases and web hosting services. We offer end-to-end solutions for creating applications, setting up custom domains, deploying on cloud services, performing system architecture design and optimization."
       }
     ],
 "project": [
@@ -189,7 +189,7 @@
       }
     ]
   },
-  "mern": {
+  "mean": {
     "section1": [
       {
         "heading1": "Mean Stack Development Company",

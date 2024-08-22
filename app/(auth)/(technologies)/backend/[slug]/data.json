@@ -464,12 +464,12 @@
       }
     ]
   },
-  "python": {
+  "ror": {
     "section1": [
       {
-        "heading1": " Python Development Company",
-        "heading2": "Partner with the Best Python Development Services Provider",
-        "para": "Partner with the best Python Development Services Provider – ZenQua. With experienced python resources, high-end tools, and robust tech stack, we are specialized in crafting scalable Python websites and applications that will stand high against any business challenges. From PWA apps to Data Science solutions, get ready to accelerate your business with our wide array of Python Development Services. Leverage our expertise to experience faster delivery models, best-in-class performance, and innovative solutions without compromising on quality.",
+        "heading1": " ROR Development Company",
+        "heading2": "Partner with the Best ROR Development Services Provider",
+        "para": "Partner with the best ROR Development Services Provider – ZenQua. With experienced ror resources, high-end tools, and robust tech stack, we are specialized in crafting scalable ROR websites and applications that will stand high against any business challenges. From PWA apps to Data Science solutions, get ready to accelerate your business with our wide array of ROR Development Services. Leverage our expertise to experience faster delivery models, best-in-class performance, and innovative solutions without compromising on quality.",
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/07/18135050/nestjs_1-1920x1701-min.png",
         "button": "Talk to Expert"
       }
@@ -477,90 +477,90 @@
     "section2": [
       {
         "heading": "Want To Hire An Offshore ",
-        "heading1": "Python Development Team?",
+        "heading1": "ROR Development Team?",
         "para": "We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
-        "button": "Hire Python Developer"
+        "button": "Hire ROR Developer"
       }
     ],
     "section3": [
       {
         "heading1": "WHAT WE DO",
-        "heading2": " Our Python Development Services",
-        "para": "Python Development Services offered by our company provide custom web development solutions. Our experts create reliable and scalable web applications using Python, Django, Flask, and other frameworks. We offer support, maintenance and consulting to ensure optimal performance."
+        "heading2": " Our ROR Development Services",
+        "para": "ROR Development Services offered by our company provide custom web development solutions. Our experts create reliable and scalable web applications using ROR, Django, Flask, and other frameworks. We offer support, maintenance and consulting to ensure optimal performance."
       }
     ], 
     "item1": [
         {
             "starLogo": "<FaStar />",
             "title": "Machine Learning Solutions",
-            "description":"Our team of Python developers specializes in providing Machine Learning Solutions, leveraging state-of-the-art technologies such as Scikit-Learn, Keras, and TensorFlow. We leverage our expertise to create custom ML solutions to meet specific requirements, ensuring efficient data analysis and predictive modeling"
+            "description":"Our team of ROR developers specializes in providing Machine Learning Solutions, leveraging state-of-the-art technologies such as Scikit-Learn, Keras, and TensorFlow. We leverage our expertise to create custom ML solutions to meet specific requirements, ensuring efficient data analysis and predictive modeling"
         },
         {
             "starLogo": "<FaStar />",
-            "title": "Python Upgradation & Migration",
-            "description":"We offer Python Upgradation & Migration services that allow users to upgrade their existing Python version to the latest version and migrate their existing applications to a more advanced version of Python. Our team of experienced Python developers ensures a seamless transition of your application while maintaining its core functionality and performance."
+            "title": "ROR Upgradation & Migration",
+            "description":"We offer ROR Upgradation & Migration services that allow users to upgrade their existing ROR version to the latest version and migrate their existing applications to a more advanced version of ROR. Our team of experienced ROR developers ensures a seamless transition of your application while maintaining its core functionality and performance."
         },
         {
             "starLogo": "<FaStar />",
-            "title": "Python Mobile App Development",
-            "description":"We provide comprehensive Python Mobile App Development services, utilizing cutting-edge technology and modern tools to create robust and secure mobile applications. Our experienced team of developers can build powerful mobile solutions, using the flexibility and scalability of Python to achieve desired results."
+            "title": "ROR Mobile App Development",
+            "description":"We provide comprehensive ROR Mobile App Development services, utilizing cutting-edge technology and modern tools to create robust and secure mobile applications. Our experienced team of developers can build powerful mobile solutions, using the flexibility and scalability of ROR to achieve desired results."
         }
     ],
     "item2": [
         {
             "starLogo": "<FaStar />",
-            "title": "Python backend Development",
-            "description":"We offer Python Backend Development Services with a comprehensive range of development solutions, including API integration, web application development, database design, and more. Our team has expertise in developing custom solutions in Python, leveraging the latest tools and technologies to ensure reliable, secure and efficient results."
+            "title": "ROR backend Development",
+            "description":"We offer ROR Backend Development Services with a comprehensive range of development solutions, including API integration, web application development, database design, and more. Our team has expertise in developing custom solutions in ROR, leveraging the latest tools and technologies to ensure reliable, secure and efficient results."
         },
         {
             "starLogo": "<FaStar />",
-            "title": "Python Framework development",
-            "description":"We offer comprehensive Python Framework development services. Our Python development team has extensive experience developing robust and reliable applications using a variety of Python frameworks such as Django, Flask, Pyramid, and CherryPy. We specialize in full-stack development, providing custom solutions that meet the unique needs of each client."
+            "title": "ROR Framework development",
+            "description":"We offer comprehensive ROR Framework development services. Our ROR development team has extensive experience developing robust and reliable applications using a variety of ROR frameworks such as Django, Flask, Pyramid, and CherryPy. We specialize in full-stack development, providing custom solutions that meet the unique needs of each client."
         },
         {
             "starLogo": "<FaStar />",
-            "title": "Custom Python Application Development",
-            "description":"Our team of experienced developers provide custom Python application development services, utilizing the latest technologies and frameworks to create high-performance, scalable, and secure solutions. We specialize in creating web and mobile applications, data processing and analysis systems, machine learning and artificial intelligence applications, and more."
+            "title": "Custom ROR Application Development",
+            "description":"Our team of experienced developers provide custom ROR application development services, utilizing the latest technologies and frameworks to create high-performance, scalable, and secure solutions. We specialize in creating web and mobile applications, data processing and analysis systems, machine learning and artificial intelligence applications, and more."
         }
     ],
     "section4": [
       {
         "heading1": "EXPERTISE IN PYTHON DEVELOPMENT",
-        "heading2": "Our Python Development Services"
+        "heading2": "Our ROR Development Services"
       }
     ],
     "item3": [
         {
             "starLogo": "<FaStar />",
             "title": "AI & ML",
-            "description":"Leverage our python development services and work with our AI/ML experts who will help your business eliminate human errors, reduce operational costs, and automate complicated manual processes by making intelligent AI/ML-based software."
+            "description":"Leverage our ror development services and work with our AI/ML experts who will help your business eliminate human errors, reduce operational costs, and automate complicated manual processes by making intelligent AI/ML-based software."
         },
         {
             "starLogo": "<FaStar />",
             "title": "Computer Vision",
-            "description":"Our Python development services include computer vision implementation that adds value to industries such as manufacturing, banking, and insurance. With facial recognition technology, you can improve security and prevent fraud. Let us help you leverage the power of computer vision to enhance your business operations."
+            "description":"Our ROR development services include computer vision implementation that adds value to industries such as manufacturing, banking, and insurance. With facial recognition technology, you can improve security and prevent fraud. Let us help you leverage the power of computer vision to enhance your business operations."
         },
         {
             "starLogo": "<FaStar />",
             "title": "Natural Language Processing",
-            "description":"Looking to build a chatbot or digital assistant platform to improve market research and analysis by processing more information quickly? Our Python development team can help you build smart chatbots that will provide immediate responses to queries and will help you build trust."
+            "description":"Looking to build a chatbot or digital assistant platform to improve market research and analysis by processing more information quickly? Our ROR development team can help you build smart chatbots that will provide immediate responses to queries and will help you build trust."
         }
     ],
     "item4": [
         {
             "starLogo": "<FaStar />",
             "title": "Big Data Processing",
-            "description":"We specialize in providing Big Data Processing services using Python development. Our expertise includes data processing, machine learning, data visualization, and web development. Our team of experienced professionals provide reliable, secure and scalable solutions to help you achieve your business objectives."
+            "description":"We specialize in providing Big Data Processing services using ROR development. Our expertise includes data processing, machine learning, data visualization, and web development. Our team of experienced professionals provide reliable, secure and scalable solutions to help you achieve your business objectives."
         },
         {
             "starLogo": "<FaStar />",
             "title": "Medical Image Processing",
-            "description":"Our Python development services can help your healthcare organization achieve significant improvements in diagnostic accuracy, surgical and treatment planning, research, and computer-assisted surgeries through the implementation of medical image processing. By taking advantage of these benefits, you can enhance patient care and increase organizational efficiency. Contact us to learn more about how we can help."
+            "description":"Our ROR development services can help your healthcare organization achieve significant improvements in diagnostic accuracy, surgical and treatment planning, research, and computer-assisted surgeries through the implementation of medical image processing. By taking advantage of these benefits, you can enhance patient care and increase organizational efficiency. Contact us to learn more about how we can help."
         },
         {
             "starLogo": "<FaStar />",
             "title": "Blockchain",
-            "description":"We provide comprehensive Python Development services for Blockchain solutions, including distributed ledger technology, smart contracts, and cryptocurrency wallets. Our experienced developers leverage cutting-edge technologies to create secure, reliable, and scalable applications. We also offer consulting and support to ensure smooth integration of Blockchain solutions into existing systems."
+            "description":"We provide comprehensive ROR Development services for Blockchain solutions, including distributed ledger technology, smart contracts, and cryptocurrency wallets. Our experienced developers leverage cutting-edge technologies to create secure, reliable, and scalable applications. We also offer consulting and support to ensure smooth integration of Blockchain solutions into existing systems."
         }
     ],
     "project": [

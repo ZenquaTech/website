@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 .small-circle.hovered {
-    background-color: #5D5DFF;
+    background-color: #2090a4;
 }
 .top {
     top: -8%;
@@ -104,7 +104,7 @@
     cursor: pointer;
 }
 .small-circle.hovered {
-    background-color: #5D5DFF;
+    background-color: #2090a4;
 }
 .top {
     top: -51.5px; 

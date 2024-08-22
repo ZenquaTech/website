@@ -613,7 +613,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 textAlign: "left",
                 textTransform: "none",
                 marginTop: "16px",
-                backgroundColor: "#5D5DFF",
+                backgroundColor: "#2090a4",
                 color: "#FFF",
               }}
             >
@@ -668,7 +668,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                   type="text"
                   placeholder="First name"
                   className="input input-bordered w-full bg-gray-900 
-                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
                 />
               </Grid>
               <Grid item xs={12} md={6} className="m-[10px] font-bold">
@@ -677,7 +677,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                   type="text"
                   placeholder="Last name"
                   className="input input-bordered w-full bg-gray-900 
-                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
                 />
               </Grid>
               <Grid item xs={12} className="m-[10px] w-full font-bold">
@@ -687,7 +687,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                     type="text"
                     placeholder="Email"
                     className="input input-bordered w-full bg-gray-900 
-                      bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                      bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
                   />
                 </Box>
               </Grid>
@@ -697,14 +697,14 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                   type="text"
                   placeholder="Phone number"
                   className="input input-bordered w-full bg-gray-900 
-                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                    bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
                 />
               </Grid>
               <Grid item xs={12} md={6} className="m-[10px] font-bold">
                 <Box className="mb-[10px]">Choose a service</Box>
                 <select
                   className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
                 >
                   <option disabled selected>
                     Select
@@ -723,7 +723,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <Box className="mb-[10px]">Engagement type</Box>
                 <select
                   className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
                 >
                   <option disabled selected>
                     Select
@@ -738,7 +738,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <Box className="mb-[10px]">When to start?</Box>
                 <select
                   className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
                 >
                   <option disabled selected>
                     Select
@@ -753,7 +753,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <Box className="mb-[10px]">Budget (USD)</Box>
                 <select
                   className="select select-bordered w-full bg-gray-900 
-                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#5D5DFF]"
+                 bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 focus:border-[#2090a4]"
                 >
                   <option disabled selected>
                     Select
@@ -769,7 +769,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <textarea
                   className="textarea input input-bordered w-full bg-gray-900 
                  bg-[rgba(150,144,162,.08)] 
-                  text-white focus:bg-gray-800 h-36 focus:border-[#5D5DFF]"
+                  text-white focus:bg-gray-800 h-36 focus:border-[#2090a4]"
                   placeholder="About project"
                 ></textarea>
               </Grid>
@@ -777,7 +777,7 @@ class RoutePage extends Component<RoutePageProps, RoutePageState> {
                 <Box className="w-[400px]">
                   <Button
                     style={{
-                      backgroundColor: "#5D5DFF",
+                      backgroundColor: "#2090a4",
                       color: "white",
                       padding: "15px",
                       width: "50%",
@@ -939,6 +939,6 @@ const mainDiv = {
 const Boxes = {
   width: "100%",
   height: "5px",
-  background: "#5D5DFF",
+  background: "#2090a4",
   marginTop: "10px",
 };

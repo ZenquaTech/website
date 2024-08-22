@@ -102,7 +102,7 @@ export default class page extends Component {
                     textAlign: "left",
                     textTransform: "none",
                     marginTop: "16px",
-                    backgroundColor: "#5D5DFF",
+                    backgroundColor: "#2090a4",
                     color: "#FFF",
                     height: "50px",
                     width: "150px",

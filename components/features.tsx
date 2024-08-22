@@ -1260,7 +1260,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
           </h2>
 
           <Box
-            className=" text-[#9BA9B4] justify-center flex"
+            className="text-[#9BA9B4] justify-center flex w-full"
           >
             <div className="hidden sm:block flex-wrap justify-center items-center w-full">
               <Grid
@@ -1285,13 +1285,12 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                   >
                     <Box
                       style={{
-                        width: "100%",
+                        width: "100% !important",
                         display: "flex",
                         justifyContent: "center",
                       }}
                     >
                       <Button
-                        // className="service-button"
                         onClick={() =>
                           this.handleClick("Big Data", "clickedButton2")
                         }

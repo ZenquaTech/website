@@ -197,7 +197,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       {item.para}
                     </p>
                     <button
-                      className="bg-[#5D5DFF] text-[#D9E3EA] text-md mt-4 px-6 py-3 rounded-md h-14 w-40 font-medium"
+                      className="bg-[#2090a4] text-[#D9E3EA] text-md mt-4 px-6 py-3 rounded-md h-14 w-40 font-medium"
                       onClick={() => scrollToBottom()}
                     >
                       {item.button}
@@ -236,7 +236,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         {item.heading}
                         <span
                           style={{
-                            color: "#5D5DFF",
+                            color: "#2090a4",
                             flexWrap: "wrap",
                             margin: "1%",
                           }}
@@ -274,7 +274,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           marginTop: "2%",
                           textAlign: "center",
                           flexWrap: "wrap",
-                          backgroundColor: "#5D5DFF",
+                          backgroundColor: "#2090a4",
                           color: "#D9E3EA",
                           padding: "2%",
                           fontWeight: "bold",
@@ -344,7 +344,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       {" "}
-                      <FaStar style={{ color: "#5D5DFF", fontSize: "200%" }} />
+                      <FaStar style={{ color: "#2090a4", fontSize: "200%" }} />
                       <Box style={{ marginTop: "2%", paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -386,7 +386,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#5D5DFF", fontSize: "200%" }} />
+                      <FaStar style={{ color: "#2090a4", fontSize: "200%" }} />
                       <Box style={{ marginTop: "2%", paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -448,7 +448,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#5D5DFF", fontSize: "200%" }} />
+                      <FaStar style={{ color: "#2090a4", fontSize: "200%" }} />
                       <Box style={{ marginTop: "2%", paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -489,7 +489,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         fontWeight: "bold",
                       }}
                     >
-                      <FaStar style={{ color: "#5D5DFF", fontSize: "200%" }} />
+                      <FaStar style={{ color: "#2090a4", fontSize: "200%" }} />
                       <Box style={{ marginTop: "2%", paddingLeft: "3%" }}>
                         {item.title}
                       </Box>
@@ -514,7 +514,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               <h2 className=" font text-center service-button uppercase">
                 OUR PROCESS
               </h2>
-              <h2 className="text-3xl font-bold text-center mb-8 hover:text-[#5D5DFF]">
+              <h2 className="text-3xl font-bold text-center mb-8 hover:text-[#2090a4]">
                 Software Development Methodology
               </h2>
             </div>
@@ -567,7 +567,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               <h2 className=" font text-center uppercase service-button text-[#D9E3EA]">
                 ZenQua AT GLANCE
               </h2>
-              <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#5D5DFF]">
+              <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#2090a4]">
                 Over 150+ Completed Projects & Still Counting.
               </h2>
               <div className="max-w[100%]">
@@ -580,7 +580,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         data-aos="fade-up"
                         data-aos-delay={index * 200}
                       >
-                        <Box className="flex justify-center items-center text-[#5D5DFF]">
+                        <Box className="flex justify-center items-center text-[#2090a4]">
                           <div className="text-4xl font-bold text-purple-600">
                             <CountUp end={item.number} />
                           </div>
@@ -590,7 +590,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           {item.title}{" "}
                         </div>
                       </div>
-                      <div className="h-[5px] bg-[rgb(93,93,255)] mt-[15px] w-full text-[#5D5DFF]"></div>
+                      <div className="h-[5px] bg-[rgb(93,93,255)] mt-[15px] w-full text-[#2090a4]"></div>
                     </Grid>
                   ))}
                 </Grid>
@@ -754,12 +754,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                               marginTop: "3%",
                               borderRight:
                                 this.state.clickedButton6 === service.label
-                                  ? "2px solid #5D5DFF"
+                                  ? "2px solid #2090a4"
                                   : "none",
                               paddingLeft: 10,
                               color:
                                 this.state.clickedButton6 === service.label
-                                  ? "#5D5DFF"
+                                  ? "#2090a4"
                                   : "#D9E3EA",
                               fontSize:
                                 this.state.clickedButton6 === service.label
@@ -792,8 +792,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         this.state.clickedButton6 === service.label ? (
                           <div>
                             <div
-                              className="text-2xl font-bold text-[#5D5DFF]"
-                              // style={{ color: "#5D5DFF" }}
+                              className="text-2xl font-bold text-[#2090a4]"
+                              // style={{ color: "#2090a4" }}
                             >
                               {service.label}
                             </div>
@@ -856,13 +856,13 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                             // gutterBottom
                             variant="h5"
                             component="h2"
-                            // style={{ textAlign: "center", color: "#5D5DFF" }}
+                            // style={{ textAlign: "center", color: "#2090a4" }}
                             style={{
                               fontWeight: "bold",
                               textAlign: "center",
                               fontSize: "21px",
                               marginBottom: "5%",
-                              color: "#5D5DFF",
+                              color: "#2090a4",
                             }}
                           >
                             {item.label}
@@ -1044,7 +1044,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       textAlign: "left",
                       textTransform: "none",
                       marginTop: "16px",
-                      backgroundColor: "#5D5DFF",
+                      backgroundColor: "#2090a4",
                       // color: "#FFF",
                       height: "50px",
                       width: "150px",
@@ -1105,7 +1105,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       <input
                         type="text"
                         placeholder="First name"
-                        className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#5D5DFF]"
+                        className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]"
                       />
                     </Grid>
                     <Grid item xs={12} md={6} className="m-[10px] font-bold">
@@ -1113,7 +1113,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       <input
                         type="text"
                         placeholder="Last name"
-                        className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#5D5DFF]"
+                        className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]"
                       />
                     </Grid>
                     <Grid item xs={12} className="m-[10px] w-full font-bold">
@@ -1122,7 +1122,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         <input
                           type="text"
                           placeholder="Email"
-                          className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#5D5DFF]"
+                          className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]"
                         />
                       </Box>
                     </Grid>
@@ -1131,12 +1131,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       <input
                         type="text"
                         placeholder="Phone number"
-                        className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#5D5DFF]"
+                        className="input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]"
                       />
                     </Grid>
                     <Grid item xs={12} md={6} className="m-[10px] font-bold">
                       <Box className="mb-[10px]">Choose a service</Box>
-                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#5D5DFF]">
+                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]">
                         <option disabled selected>
                           Select
                         </option>
@@ -1146,7 +1146,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     </Grid>
                     <Grid item xs={12} md={6} className="m-[10px] font-bold">
                       <Box className="mb-[10px]">Engagement type</Box>
-                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#5D5DFF]">
+                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]">
                         <option disabled selected>
                           Select
                         </option>
@@ -1156,7 +1156,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     </Grid>
                     <Grid item xs={12} md={6} className="m-[10px] font-bold">
                       <Box className="mb-[10px]">When to start?</Box>
-                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#5D5DFF]">
+                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]">
                         <option disabled selected>
                           Select
                         </option>
@@ -1166,7 +1166,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     </Grid>
                     <Grid item xs={12} md={6} className="m-[10px] font-bold">
                       <Box className="mb-[10px]">Budget (USD)</Box>
-                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#5D5DFF]">
+                      <select className="select select-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 focus:border-[#2090a4]">
                         <option disabled selected>
                           Select
                         </option>
@@ -1177,7 +1177,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     <Grid item xs={12} className="m-[10px] font-bold">
                       <Box className="mb-[10px]">Brief about the Project</Box>
                       <textarea
-                        className="textarea input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 h-36 focus:border-[#5D5DFF]"
+                        className="textarea input input-bordered w-full bg-gray-900 text-#D9E3EA focus:bg-gray-800 h-36 focus:border-[#2090a4]"
                         placeholder="About project"
                       ></textarea>
                     </Grid>
@@ -1185,7 +1185,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       <Box className="w-[400px]">
                         <Button
                           style={{
-                            backgroundColor: "#5D5DFF",
+                            backgroundColor: "#2090a4",
                             color: "#D9E3EA",
                             padding: "15px",
                             width: "50%",

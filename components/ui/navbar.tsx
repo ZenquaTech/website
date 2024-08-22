@@ -91,7 +91,7 @@ const menuData: MenuData = {
         subMenu: [
           { title: "NodeJS", href: "/backend/nodejs" },
           { title: "NestJS", href: "/backend/nestjs" },
-          { title: "Python", href: "/backend/python" },
+          { title: "ROR", href: "/backend/ror" },
         ],
       },
       {
@@ -106,10 +106,6 @@ const menuData: MenuData = {
       {
         title: "MOBILE",
         subMenu: [
-          { title: "iOS", href: '/mobile/ios' },
-          { title: "Android", href: '/mobile/android' },
-          { title: "Swift", href: '/mobile/swift' },
-          { title: "Flutter", href: '/mobile/flutter' },
           { title: "React Native", href: '/mobile/reactnative' },
         ],
       },
@@ -126,14 +122,13 @@ const menuData: MenuData = {
         title: "CMS",
         subMenu: [
           { title: "WordPress" , href:'/cms/wordpress' },
-          { title: "Drupal" , href:'/cms/drupal'},
         ],
       },
       {
         title: "FRAMEWORKS",
         subMenu: [
-          { title: "Django" , href:'/framework/django' },
-          { title: "MEAN Stack", href:'/framework/mern' },
+          { title: "MERN Stack" , href:'/framework/mern' },
+          { title: "MEAN Stack", href:'/framework/mean' },
           { title: "Ruby on Rails", href:'/framework/ror' },
         ],
       },
@@ -161,7 +156,6 @@ const menuData: MenuData = {
         title: "DIGITAL MARKETING",
         subMenu: [
           { title: "SEO" , href:"/digital/seo" },
-          { title: "SMO" , href:"/digital/smo"},
         ],
       },
     ],
@@ -175,7 +169,7 @@ const menuData: MenuData = {
         subMenu: [
           { title: "NodeJS Developer" , href:"/backendD/nodejsdeveloper" },
           { title: "NestJS Developer" , href:"/backendD/nestjsdeveloper" },
-          { title: "Python Developer" , href:"/backendD/pythondeveloper" },
+          { title: "ROR Developer" , href:"/backendD/rordeveloper" },
         ],
       },
       {
@@ -190,10 +184,6 @@ const menuData: MenuData = {
       {
         title: "MOBILE Developer",
         subMenu: [
-          { title: "iOS Developer" , href:'/mobileD/ios' },
-          { title: "Android Developer" , href:'/mobileD/reactnative'},
-          { title: "Swift Developer" , href:'/mobileD/flutter'},
-          { title: "Flutter Developer" , href:'/mobileD/'},
           { title: "React Native Developer" , href:'/mobileD/'},
         ],
       },
@@ -210,13 +200,12 @@ const menuData: MenuData = {
         title: "CMS Developer",
         subMenu: [
           { title: "WordPress Developer" },
-          { title: "Drupal Developer" },
         ],
       },
       {
         title: "FRAMEWORKS Developer",
         subMenu: [
-          { title: "Django Developer" },
+          { title: "MERN Stack Developer" },
           { title: "MEAN Stack Developer" },
           { title: "Ruby on Rails Developer" },
         ],
