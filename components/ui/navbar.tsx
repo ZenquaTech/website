@@ -363,16 +363,9 @@ handleItemClick = () => {
                                   fontWeight: "bold",
                                   marginRight: "20px",
                                   fontSize: "12.544px",
-                                  cursor: "pointer",
+                                  // cursor: "pointer",
                                 }}
-                                onMouseOver={(e) => {
-                                  const target = e.target as HTMLElement;
-                                  target.style.color = "#019dce";
-                                }}
-                                onMouseOut={(e) => {
-                                  const target = e.target as HTMLElement;
-                                  target.style.color = "#ffffffbf";
-                                }}
+                               
                               >
                                 {item.title}
                               </Typography>
