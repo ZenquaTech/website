@@ -62,8 +62,8 @@ const menuData: MenuData = {
         subMenu: [
           { title: "Partnerships", href: "/Partnerships" },
           { title: "Engagement Models", href: "/EngagementModel" },
-          { title: "Global Delivery Models", href: '/Global' },
-          { title: "Contact Us", href: '/ContactUs' },
+          { title: "Global Delivery Models", href: "/Global" },
+          { title: "Contact Us", href: "/ContactUs" },
         ],
       },
       {
@@ -88,6 +88,7 @@ const menuData: MenuData = {
     items: [
       {
         title: "BACKEND",
+        href: "/backend",
         subMenu: [
           { title: "NodeJS", href: "/backend/nodejs" },
           { title: "NestJS", href: "/backend/nestjs" },
@@ -97,65 +98,60 @@ const menuData: MenuData = {
       {
         title: "FRONTEND",
         subMenu: [
-          { title: "AngularJS", href: '/frontend/angular' },
-          { title: "ReactJS", href: '/frontend/react' },
-          { title: "VueJS", href: '/frontend/vue' },
-          { title: "NextJS", href: '/frontend/next' },
+          { title: "AngularJS", href: "/frontend/angular" },
+          { title: "ReactJS", href: "/frontend/react" },
+          { title: "VueJS", href: "/frontend/vue" },
+          { title: "NextJS", href: "/frontend/next" },
         ],
       },
       {
         title: "MOBILE",
-        subMenu: [
-          { title: "React Native", href: '/mobile/reactnative' },
-        ],
+        subMenu: [{ title: "React Native", href: "/mobile/reactnative" }],
       },
       {
         title: "E-Commerce",
         subMenu: [
-          { title: "Woo Commerce" , href:'/ecommerce/woo' },
-          { title: "Magento" , href:'/ecommerce/magento' },
-          { title: "Shopify" , href:'/ecommerce/shopify'},
-          { title: "Nop Commerce" , href:'/ecommerce/nop' },
+          { title: "Woo Commerce", href: "/ecommerce/woo" },
+          { title: "Magento", href: "/ecommerce/magento" },
+          { title: "Shopify", href: "/ecommerce/shopify" },
+          { title: "Nop Commerce", href: "/ecommerce/nop" },
         ],
       },
       {
         title: "CMS",
-        subMenu: [
-          { title: "WordPress" , href:'/cms/wordpress' },
-        ],
+        subMenu: [{ title: "WordPress", href: "/cms/wordpress" }],
       },
       {
         title: "FRAMEWORKS",
         subMenu: [
-          { title: "MERN Stack" , href:'/framework/mern' },
-          { title: "MEAN Stack", href:'/framework/mean' },
-          { title: "Ruby on Rails", href:'/framework/ror' },
+          { title: "MERN Stack", href: "/framework/mern" },
+          { title: "MEAN Stack", href: "/framework/mean" },
+          { title: "Ruby on Rails", href: "/framework/ror" },
         ],
       },
       {
         title: "DATABASE",
         subMenu: [
-          { title: "MYSQL" , href:'/database/mysql' },
-          { title: "PostgreSQL", href:'/database/postgresql'  },
-          { title: "MongoDB", href:'/database/mongodb'  },
-          { title: "Redis" , href:'/database/redis' },
-          { title: "Firebase" , href:'/database/firebase' },
+          { title: "MYSQL", href: "/database/mysql" },
+          { title: "PostgreSQL", href: "/database/postgresql" },
+          { title: "MongoDB", href: "/database/mongodb" },
+          { title: "Redis", href: "/database/redis" },
+          { title: "Firebase", href: "/database/firebase" },
         ],
       },
       {
         title: "CLOUD",
         subMenu: [
-          { title: "AWS Cloud", href:'/cloud/aws' },
-          { title: "Azure Cloud" ,href:'/cloud/azure'},
-          { title: "Google Cloud" ,href:'/cloud/google'},
-
+          { title: "AWS Cloud", href: "/cloud/aws" },
+          { title: "Azure Cloud", href: "/cloud/azure" },
+          { title: "Google Cloud", href: "/cloud/google" },
+          { title: "" },
+          { title: "" },
         ],
       },
       {
         title: "DIGITAL MARKETING",
-        subMenu: [
-          { title: "SEO" , href:"/digital/seo" },
-        ],
+        subMenu: [{ title: "SEO", href: "/digital/seo" }],
       },
     ],
   },
@@ -164,82 +160,83 @@ const menuData: MenuData = {
     title: "Hire Developers",
     items: [
       {
-        title: "BACKEND Developers" ,
+        title: "BACKEND Developers",
         subMenu: [
-          { title: "NodeJS Developer" , href:"/backend/nodejs" },
-          { title: "NestJS Developer" , href:"/backend/nestjs" },
-          { title: "ROR Developer" , href:"/backend/ror" },
+          { title: "NodeJS Developer", href: "/backend/nodejs" },
+          { title: "NestJS Developer", href: "/backend/nestjs" },
+          { title: "ROR Developer", href: "/backend/ror" },
         ],
       },
       {
         title: "FRONTEND Developers",
         subMenu: [
-          { title: "AngularJS Developer" , href:'/frontend/angular' },
-          { title: "ReactJS Developer"  ,  href:'/frontend/react' },
-          { title: "VueJS Developer" ,  href:'/frontend/vuejs' },
-          { title: "NextJS Developer" ,  href:'/frontend/next' },
+          { title: "AngularJS Developer", href: "/frontend/angular" },
+          { title: "ReactJS Developer", href: "/frontend/reactjs" },
+          { title: "VueJS Developer", href: "/frontend/vuejs" },
+          { title: "NextJS Developer", href: "/frontend/nextjs" },
         ],
       },
       {
         title: "MOBILE Developer",
         subMenu: [
-          { title: "React Native Developer" , href:'/mobile/reactnative'},
+          { title: "React Native Developer", href: "/mobile/reactnative" },
         ],
       },
       {
         title: "E-Commerce Developers",
         subMenu: [
-          { title: "Woo Commerce Developer" , href:'/ecommerce/woo' },
-          { title: "Magento Developer" , href:'/ecommerce/magento' },
-          { title: "Shopify Developer" , href:'/ecommerce/shopify'},
-          { title: "Nop Commerce Developer" , href:'/ecommerce/nop' },
+          { title: "Woo Commerce Developer", href: "/ecommerce/woo" },
+          { title: "Magento Developer", href: "/ecommerce/magento" },
+          { title: "Shopify Developer", href: "/ecommerce/shopify" },
+          { title: "Nop Commerce Developer", href: "/ecommerce/nop" },
         ],
       },
       {
         title: "CMS Developer",
-        subMenu: [
-          { title: "WordPress Developer", href:'/cms/wordpress' },
-        ],
+        subMenu: [{ title: "WordPress Developer", href: "/cms/wordpress" }],
       },
       {
         title: "FRAMEWORKS Developer",
         subMenu: [
-          { title: "MERN Stack Developer" , href:'/framework/mern' },
-          { title: "MEAN Stack Developer", href:'/framework/mean' },
-          { title: "Ruby on Rails Developer", href:'/framework/ror' },
+          { title: "MERN Stack Developer", href: "/framework/mern" },
+          { title: "MEAN Stack Developer", href: "/framework/mean" },
+          { title: "Ruby on Rails Developer", href: "/framework/ror" },
         ],
       },
       {
         title: "DATABASE Developers",
         subMenu: [
-          { title: "MYSQL Developer" , href:'/database/mysql' },
-          { title: "PostgreSQL Developer", href:'/database/postgresql'  },
-          { title: "MongoDB Developer", href:'/database/mongodb'  },
-          { title: "Redis Developer" , href:'/database/redis' },
-          { title: "Firebase Developer" , href:'/database/firebase' },
+          { title: "MYSQL Developer", href: "/database/mysql" },
+          { title: "PostgreSQL Developer", href: "/database/postgresql" },
+          { title: "MongoDB Developer", href: "/database/mongodb" },
+          { title: "Redis Developer", href: "/database/redis" },
+          { title: "Firebase Developer", href: "/database/firebase" },
         ],
       },
       {
         title: "DEVOPS developers",
         subMenu: [
-          { title: "AWS Engineer developer",href:'/cloud/aws' },
-          { title: "Azure Engineer developer" ,href:'/cloud/azure' },
-          { title: "Google Cloud Engineer developer",href:'/cloud/google' },
+          { title: "AWS Engineer developer", href: "/cloud/aws" },
+          { title: "Azure Engineer developer", href: "/cloud/azure" },
+          { title: "Google Cloud Engineer developer", href: "/cloud/google" },
         ],
       },
     ],
   },
-  "Expertise": {
+  Expertise: {
     title: "Expertise",
-    items: [{ title: "", 
-    subMenu: [
-    { title: "ReactJS Developer", href:'/frontend/react'},
-    { title: "React Native Developer" , href:'/mobile/reactnative'},
-    { title: "NodeJS Developer", href:"/backend/nodejs" },
-    { title: "NextJS Developer" , href:'/frontend/next'},
-    { title: "Ruby on Rails", href:"/backend/ror" },
-  ] 
-}],
+    items: [
+      {
+        title: "",
+        subMenu: [
+          { title: "ReactJS Developer", href: "/frontend/react" },
+          { title: "React Native Developer", href: "/mobile/reactnative" },
+          { title: "NodeJS Developer", href: "/backend/nodejs" },
+          { title: "NextJS Developer", href: "/frontend/next" },
+          { title: "Ruby on Rails", href: "/backend/ror" },
+        ],
+      },
+    ],
   },
 };
 
@@ -268,10 +265,9 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
       isMenuOpen: !prevState.isMenuOpen,
     }));
   };
-handleItemClick = () => {
-  this.setState({ openMenu: null });
+  handleItemClick = () => {
+    this.setState({ openMenu: null });
   };
-  
 
   render() {
     const { classes } = this.props;
@@ -313,10 +309,9 @@ handleItemClick = () => {
                   }}
                 >
                   {menu}
-                 
                 </Box>
               </Button>
-              {menu !== "Expertise" && openMenu === menu  && (
+              {menu !== "Expertise" && openMenu === menu && (
                 <div
                   onMouseEnter={this.handleMenuEnter(menu)}
                   onMouseLeave={this.handleMenuLeave}
@@ -351,21 +346,19 @@ handleItemClick = () => {
                               marginBottom="10px"
                               style={{ flex: 1, margin: "0 10px" }}
                             >
-                               <Link
-                                      href={item.href ? item.href : "/"}
-                                      passHref
-                                    >
-                              <Typography
-                                style={{
-                                  color: "#ffffffa6",
-                                  opacity: "0.65",
-                                  fontWeight: "bold",
-                                  marginRight: "20px",
-                                  fontSize: "12.544px",
-                                }}
-                              >
-                                {item.title}
-                              </Typography>
+                              <Link href={item.href ? item.href : "/"} passHref>
+                                <Typography
+                                  style={{
+                                    color: "#ffffffa6",
+                                    opacity: "0.65",
+                                    fontWeight: "bold",
+                                    marginRight: "20px",
+                                    fontSize: "12.544px",
+                                    // cursor: "pointer",
+                                  }}
+                                >
+                                  {item.title}
+                                </Typography>
                               </Link>
                               {item?.subMenu?.length > 0 && (
                                 <Box display="flex" flexDirection="column">
@@ -385,17 +378,18 @@ handleItemClick = () => {
                                           fontWeight: "400",
                                           cursor: "pointer",
                                           opacity: "0.75",
-                                          lineHeight:'1.8rem'
+                                          lineHeight: "1.8rem",
                                         }}
                                         onMouseOver={(e) => {
-                                          const target = e.target as HTMLElement;
+                                          const target =
+                                            e.target as HTMLElement;
                                           target.style.color = "#019dce";
                                         }}
                                         onMouseOut={(e) => {
-                                          const target = e.target as HTMLElement;
+                                          const target =
+                                            e.target as HTMLElement;
                                           target.style.color = "#ffffffbf";
                                         }}
-                                        
                                       >
                                         {subItem.title}
                                       </Typography>
@@ -411,14 +405,13 @@ handleItemClick = () => {
                   </Grid>
                 </div>
               )}
-              {menu === "Expertise" && openMenu === menu
-                && (
-                  <div
+              {menu === "Expertise" && openMenu === menu && (
+                <div
                   onMouseEnter={this.handleMenuEnter(menu)}
                   onMouseLeave={this.handleMenuLeave}
                   style={{
                     position: "absolute",
-                    backgroundColor:"red",
+                    backgroundColor: "red",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
                     zIndex: 10,
                     borderRadius: "20px",
@@ -432,7 +425,7 @@ handleItemClick = () => {
                           display: "flex",
                           flexDirection: "column",
                           backgroundColor: "#1B1A1F",
-                          
+
                           padding: "10% 0px",
                           width: "216px",
                         }}
@@ -446,30 +439,27 @@ handleItemClick = () => {
                               marginBottom="10px"
                               style={{ flex: 1, margin: "0 10px" }}
                             >
-                               <Link
-                                      href={item.href ? item.href : "/"}
-                                      passHref
-                                    >
-                              <Typography
-                                style={{
-                                  color: "#ffffffa6",
-                                  opacity: "0.65",
-                                  fontWeight: "bold",
-                                  marginRight: "20px",
-                                  fontSize: "12.544px",
-                                  cursor: "pointer",
-                                }}
-                                onMouseOver={(e) => {
-                                  const target = e.target as HTMLElement;
-                                  target.style.color = "#019dce";
-                                }}
-                                onMouseOut={(e) => {
-                                  const target = e.target as HTMLElement;
-                                  target.style.color = "#ffffffbf";
-                                }}
-                              >
-                                {item.title}
-                              </Typography>
+                              <Link href={item.href ? item.href : "/"} passHref>
+                                <Typography
+                                  style={{
+                                    color: "#ffffffa6",
+                                    opacity: "0.65",
+                                    fontWeight: "bold",
+                                    marginRight: "20px",
+                                    fontSize: "12.544px",
+                                    cursor: "pointer",
+                                  }}
+                                  onMouseOver={(e) => {
+                                    const target = e.target as HTMLElement;
+                                    target.style.color = "#019dce";
+                                  }}
+                                  onMouseOut={(e) => {
+                                    const target = e.target as HTMLElement;
+                                    target.style.color = "#ffffffbf";
+                                  }}
+                                >
+                                  {item.title}
+                                </Typography>
                               </Link>
                               {item.subMenu.length > 0 && (
                                 <Box display="flex" flexDirection="column">
@@ -488,17 +478,19 @@ handleItemClick = () => {
                                           fontWeight: "400",
                                           cursor: "pointer",
                                           opacity: "0.75",
-                                          lineHeight:'1.8rem'
+                                          lineHeight: "1.8rem",
                                         }}
                                         onMouseOver={(e) => {
-                                          const target = e.target as HTMLElement;
+                                          const target =
+                                            e.target as HTMLElement;
                                           target.style.color = "#019dce";
                                         }}
                                         onMouseOut={(e) => {
-                                          const target = e.target as HTMLElement;
+                                          const target =
+                                            e.target as HTMLElement;
                                           target.style.color = "#ffffffbf";
                                         }}
-                                        onClick={()=>this.handleMenuLeave}
+                                        onClick={() => this.handleMenuLeave}
                                       >
                                         {subItem.title}
                                       </Typography>
@@ -513,26 +505,25 @@ handleItemClick = () => {
                     </Grid>
                   </Grid>
                 </div>
-                )
-              }
+              )}
             </div>
           ))}
-           <Button
-             onClick={() => {
-              this.scrollToBottom();
-            }}
+          <Button
+          
+          >
+            <Link href={"/ContactUs"} passHref onClick={this.handleItemClick}>
+              <Box
+                style={{
+                  color: "rgba(255, 255, 255, 0.75)",
+                  textTransform: "capitalize",
+                  fontSize: "16px",
+                  fontWeight: "500",
+                }}
               >
-                <Box
-                  style={{
-                    color: "rgba(255, 255, 255, 0.75)",
-                    textTransform: "capitalize",
-                    fontSize: "16px",
-                    fontWeight: "500",
-                  }}
-                >
-                  Contact Us
-                </Box>
-              </Button>
+                Contact Us
+              </Box>
+            </Link>
+          </Button>
         </div>
       </Grid>
     );

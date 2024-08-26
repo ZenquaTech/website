@@ -1,5 +1,6 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
-import { Grid, Box, Button } from '@mui/material';
+import { ChangeEvent, FormEvent, useState } from "react";
+import { Grid, Box, Button } from "@mui/material";
+import emailjs from "@emailjs/browser";
 
 type FormData = {
   firstName: string;
@@ -8,71 +9,91 @@ type FormData = {
   phone: string;
   service: string;
   engagementType: string;
-  startWhen: string;
+  whenToStart: string;
   budget: string;
   projectBrief: string;
 };
 
 const fields = [
   {
-    label: 'First name',
-    placeholder: 'First name',
-    type: 'text',
+    label: "First name",
+    placeholder: "First name",
+    type: "text",
     fullWidth: false,
+    field: "firstName",
   },
   {
-    label: 'Last name',
-    placeholder: 'Last name',
-    type: 'text',
+    label: "Last name",
+    placeholder: "Last name",
+    type: "text",
     fullWidth: false,
+    field: "lastName",
   },
   {
-    label: 'Email',
-    placeholder: 'Email',
-    type: 'email',
+    label: "Email",
+    placeholder: "Email",
+    type: "email",
     fullWidth: true,
+    field: "email",
   },
   {
-    label: 'Phone',
-    placeholder: 'Phone number',
-    type: 'tel',
+    label: "Phone",
+    placeholder: "Phone number",
+    type: "tel",
     fullWidth: true,
+    field: "phone",
   },
 ];
 
 const selectFields = [
   {
-    label: 'Choose a service',
-    options: ['Mobile App Development', 'Web Development', 'Customized Development', 'Cloud Computing and DevOps', 'UI/UX Designing', 'AI/ML/IOT', 'Quality Control Service', 'Others'],
+    label: "Choose a service",
+    options: [
+      "Mobile App Development",
+      "Web Development",
+      "Customized Development",
+      "Cloud Computing and DevOps",
+      "UI/UX Designing",
+      "AI/ML/IOT",
+      "Quality Control Service",
+      "Others",
+    ],
   },
   {
-    label: 'Engagement type',
-    options: ['Hire Dedicated developer', 'New Project', 'Ongoing Project', 'Maintenance & Support'],
+    label: "Engagement type",
+    options: [
+      "Hire Dedicated developer",
+      "New Project",
+      "Ongoing Project",
+      "Maintenance & Support",
+    ],
   },
   {
-    label: 'When to start?',
-    options: ['Immediately', 'within Week', 'within Month', 'Not Sure'],
+    label: "When to start?",
+    options: ["Immediately", "within Week", "within Month", "Not Sure"],
   },
   {
-    label: 'Budget (USD)',
-    options: ['0-$10k+', '$10k-$25k+', '$25k-$50k+', '$50k-$100k'],
+    label: "Budget (USD)",
+    options: ["0-$10k+", "$10k-$25k+", "$25k-$50k+", "$50k-$100k"],
   },
 ];
 
 const ContactUs = () => {
   const [formData, setFormData] = useState<FormData>({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    service: '',
-    engagementType: '',
-    startWhen: '',
-    budget: '',
-    projectBrief: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    service: "",
+    engagementType: "",
+    whenToStart: "",
+    budget: "",
+    projectBrief: "",
   });
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  // console.log(formData,"formData")
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -80,10 +101,59 @@ const ContactUs = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Implement form submission logic here, e.g., sending data to an API
-    console.log('Form submitted:', formData);
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    // if (!formData.captchaChecked) {
+    //   alert("Please check the 'I'm not a robot' checkbox.");
+    //   return;
+    // }
+
+    const templateParams = {
+      from_name: formData.firstName + " " + formData.lastName,
+      to_name: "Ayush tule",
+      subject: "New Contact Form Submission",
+      message: `
+      First Name: ${formData.firstName}
+      Last Name: ${formData.lastName}
+      Email: ${formData.email}
+      Phone: ${formData.phone}
+      Service: ${formData.service}
+      Engagement Type: ${formData.engagementType}
+      Phone Number :${formData.phone}
+      Service : ${formData?.service}
+      Engagement Type : ${formData?.engagementType}
+      When to Start: ${formData.whenToStart}
+      Budget: ${formData.budget}
+      Project Brief: ${formData.projectBrief}
+      email : ${formData?.email} 
+    `,
+    };
+
+    emailjs
+      .send(
+        "service_14pyn8e",
+        "template_zzxciyv",
+        templateParams,
+        "iV2LpGhkJHKT6wGLR"
+      )
+      .then((response) => {
+        alert("Email sent successfully!");
+        // Reset form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          service: "",
+          engagementType: "",
+          whenToStart: "",
+          budget: "",
+          projectBrief: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
   };
 
   return (
@@ -104,22 +174,46 @@ const ContactUs = () => {
           />
           <Box>
             <h2 className="text-md text-center mb-10 mt-20 w-[97%] text-[#9BA9B4]">
-              Let’s kickstart the journey together with a friendly greeting! Whether you have questions to ask or just want to connect, drop us a message and let’s build a strong relationship.
+              Let’s kickstart the journey together with a friendly greeting!
+              Whether you have questions to ask or just want to connect, drop us
+              a message and let’s build a strong relationship.
             </h2>
           </Box>
         </Box>
       </Grid>
-      <Grid item xs={12} md={6} className="flex justify-center items-center w-[95%]">
-        <Box component="form" onSubmit={handleSubmit} className="w-full p-12 border rounded-xl m-8" style={{ boxSizing: "border-box", margin: "30px" }}>
+      <Grid
+        item
+        xs={12}
+        md={6}
+        className="flex justify-center items-center w-[95%]"
+      >
+        <Box
+          component="form"
+          onSubmit={handleSubmit}
+          className="w-full p-12 border rounded-xl m-8"
+          style={{ boxSizing: "border-box", margin: "30px" }}
+        >
           <Grid container spacing={3}>
             {fields.map((field, index) => (
-              <Grid item xs={12} md={field.fullWidth ? 12 : 6} className="m-2 font-bold" key={index}>
+              <Grid
+                item
+                xs={12}
+                md={field.fullWidth ? 12 : 6}
+                className="m-2 font-bold"
+                key={index}
+              >
                 <Box className="mb-2">{field.label}</Box>
                 <input
                   type={field.type}
                   placeholder={field.placeholder}
-                  name={field.label.toLowerCase().replace(' ', '')}
-                  value={formData[field.label.toLowerCase().replace(' ', '') as keyof FormData]}
+                  name={field.field}
+                  value={
+                    formData[
+                      field.label
+                        .toLowerCase()
+                        .replace(" ", "") as keyof FormData
+                    ]
+                  }
                   onChange={handleChange}
                   className="input input-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#019dce] border-gray-500"
                 />
@@ -129,12 +223,20 @@ const ContactUs = () => {
               <Grid item xs={12} md={6} className="m-2 font-bold" key={index}>
                 <Box className="mb-2">{field.label}</Box>
                 <select
-                  name={field.label.toLowerCase().replace(' ', '')}
-                  value={formData[field.label.toLowerCase().replace(' ', '') as keyof FormData]}
+                  name={field.label.toLowerCase().replace(" ", "")}
+                  value={
+                    formData[
+                      field.label
+                        .toLowerCase()
+                        .replace(" ", "") as keyof FormData
+                    ]
+                  }
                   onChange={handleChange}
                   className="select select-bordered w-full bg-gray-900 text-[#D9E3EA] focus:bg-gray-800 focus:border-[#019dce] border-gray-500"
                 >
-                  <option value="" disabled>Select</option>
+                  <option value="" disabled>
+                    Select
+                  </option>
                   {field.options.map((option, optIndex) => (
                     <option key={optIndex} value={option}>
                       {option}
@@ -160,9 +262,9 @@ const ContactUs = () => {
                   backgroundColor: "#019dce",
                   color: "#D9E3EA",
                   padding: "10px",
-                  textTransform: 'none',
+                  textTransform: "none",
                   width: "100%",
-                  borderRadius:'10px'
+                  borderRadius: "10px",
                 }}
               >
                 Send Your Message

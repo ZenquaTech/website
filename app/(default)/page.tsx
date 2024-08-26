@@ -6,7 +6,7 @@ import Zigzag from '@/components/zigzag';
 import Testimonials from '@/components/testimonials';
 
 export const metadata = {
-  title: 'Home - Open PRO',
+  title: 'Zenqua Technologies',
   description: 'Page description',
 };
 
