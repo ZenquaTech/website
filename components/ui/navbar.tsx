@@ -87,7 +87,7 @@ const menuData: MenuData = {
     title: "TECHNOLOGIES",
     items: [
       {
-        title: "BACKEND", href: "/backend",
+        title: "BACKEND",
         subMenu: [
           { title: "NodeJS", href: "/backend/nodejs" },
           { title: "NestJS", href: "/backend/nestjs" },
@@ -148,8 +148,7 @@ const menuData: MenuData = {
           { title: "AWS Cloud", href:'/cloud/aws' },
           { title: "Azure Cloud" ,href:'/cloud/azure'},
           { title: "Google Cloud" ,href:'/cloud/google'},
-          { title: "" },
-          { title: "" },
+
         ],
       },
       {
@@ -176,9 +175,9 @@ const menuData: MenuData = {
         title: "FRONTEND Developers",
         subMenu: [
           { title: "AngularJS Developer" , href:'/frontend/angular' },
-          { title: "ReactJS Developer"  ,  href:'/frontend/reactjs' },
+          { title: "ReactJS Developer"  ,  href:'/frontend/react' },
           { title: "VueJS Developer" ,  href:'/frontend/vuejs' },
-          { title: "NextJS Developer" ,  href:'/frontend/nextjs' },
+          { title: "NextJS Developer" ,  href:'/frontend/next' },
         ],
       },
       {
@@ -234,10 +233,10 @@ const menuData: MenuData = {
     title: "Expertise",
     items: [{ title: "", 
     subMenu: [
-    { title: "ReactJS Developer", href:'/frontend/reactjs'},
+    { title: "ReactJS Developer", href:'/frontend/react'},
     { title: "React Native Developer" , href:'/mobile/reactnative'},
     { title: "NodeJS Developer", href:"/backend/nodejs" },
-    { title: "NextJS Developer" , href:'/frontend/nextjs'},
+    { title: "NextJS Developer" , href:'/frontend/next'},
     { title: "Ruby on Rails", href:"/backend/ror" },
   ] 
 }],
@@ -363,15 +362,6 @@ handleItemClick = () => {
                                   fontWeight: "bold",
                                   marginRight: "20px",
                                   fontSize: "12.544px",
-                                  cursor: "pointer",
-                                }}
-                                onMouseOver={(e) => {
-                                  const target = e.target as HTMLElement;
-                                  target.style.color = "#019dce";
-                                }}
-                                onMouseOut={(e) => {
-                                  const target = e.target as HTMLElement;
-                                  target.style.color = "#ffffffbf";
                                 }}
                               >
                                 {item.title}
