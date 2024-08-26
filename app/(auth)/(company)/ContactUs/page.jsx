@@ -179,7 +179,7 @@ export default function ContactUs() {
       {/* //2nd container */}
 
       <Grid container>
-        <Grid item xs={12} sm={4} style={{ borderBottom: "1px solid #fff" }}>
+        <Grid item xs={12} sm={4} style={{ borderBottom: "1px solid gray" }}>
           <Box className="box-1">
             <Typography className="typo-1">Get in touch </Typography>
             <Typography style={{ color: "#019dce" }}>
@@ -190,11 +190,11 @@ export default function ContactUs() {
             ></Typography>
             <Typography>Assistance hours:</Typography>
             <Typography>Monday – Friday</Typography>
-            <Typography style={{ margin: "2rem" }}>8 am to 6 pm </Typography>
+            <Typography style={{ marginBottom: "2rem" }}>8 am to 6 pm </Typography>
           </Box>
         </Grid>
 
-        <Grid item xs={12} sm={4} style={{ borderBottom: "1px solid #fff" }}>
+        <Grid item xs={12} sm={4} style={{ borderBottom: "1px solid gray" }}>
           <Box className="box-1">
             <Typography className="typo-1"> Address</Typography>
             <Typography>Shreevardhan Complex, RNT Marg, South</Typography>
@@ -202,7 +202,7 @@ export default function ContactUs() {
           </Box>
         </Grid>
 
-        <Grid item xs={12} sm={4} style={{ borderBottom: "1px solid #fff" }}>
+        <Grid item xs={12} sm={4} style={{ borderBottom: "1px solid gray" }}>
           <Box className="box-1">
             <Typography className="typo-1">Social Media</Typography>
             <div style={{ display: "flex", gap: 16 }}>
@@ -270,7 +270,7 @@ export default function ContactUs() {
                     name="firstName"
                     type="text"
                     placeholder="First name"
-                    className="input input-bordered w-full bg-gray-900 text-white  bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce]"
+                    className="input input-bordered w-full bg-gray-800 text-white  bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce]"
                   />
                 </Grid>
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
@@ -282,7 +282,7 @@ export default function ContactUs() {
                     name="lastName"
                     type="text"
                     placeholder="Last name"
-                    className="input input-bordered w-full bg-gray-900 text-white 
+                    className="input input-bordered w-full bg-gray-800 text-white 
                     bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce]"
                   />
                 </Grid>
@@ -296,7 +296,7 @@ export default function ContactUs() {
                       name="email"
                       type="email"
                       placeholder="Email"
-                      className="input input-bordered w-full bg-gray-900 text-white 
+                      className="input input-bordered w-full bg-gray-800 text-white 
                       bg-[rgba(150,144,162,.08)]  focus:bg-gray-800 focus:border-[#019dce]"
                     />
                   </Box>
@@ -310,14 +310,14 @@ export default function ContactUs() {
                     name="phone"
                     type="number"
                     placeholder="Phone number"
-                    className="input input-bordered w-full bg-gray-900 text-white 
+                    className="input input-bordered w-full bg-gray-800 text-white 
                     bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce]"
                   />
                 </Grid>
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
                   <Box className="mb-[10px]">Choose a service</Box>
                   <select
-                    className="select select-bordered w-full bg-gray-900 text-white 
+                    className="select select-bordered w-full bg-gray-800 text-white 
                  bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce]"
                     name="service"
                     onChange={(e) => {
@@ -340,7 +340,7 @@ export default function ContactUs() {
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
                   <Box className="mb-[10px]">Engagement type</Box>
                   <select
-                    className="select select-bordered w-full bg-gray-900 text-white 
+                    className="select select-bordered w-full bg-gray-800 text-white 
                  bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce]"
                     name="engagementType"
                     onChange={(e) => {
@@ -359,7 +359,7 @@ export default function ContactUs() {
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
                   <Box className="mb-[10px]">When to start?</Box>
                   <select
-                    className="select select-bordered w-full bg-gray-900 text-white 
+                    className="select select-bordered w-full bg-gray-800 text-white 
                  bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce]"
                     name="whenToStart"
                     onChange={(e) => {
@@ -378,7 +378,7 @@ export default function ContactUs() {
                 <Grid item xs={12} md={6} className="m-[10px] font-bold">
                   <Box className="mb-[10px]">Budget (USD)</Box>
                   <select
-                    className="select select-bordered w-full bg-gray-900 text-white 
+                    className="select select-bordered w-full bg-gray-800 text-white 
                  bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce]"
                     name="budget"
                     onChange={(e) => {
@@ -397,7 +397,7 @@ export default function ContactUs() {
                 <Grid item xs={12} className="m-[10px] font-bold">
                   <Box className="mb-[10px]">Brief about the Project</Box>
                   <textarea
-                    className="textarea input input-bordered w-full bg-gray-900 
+                    className="textarea input input-bordered w-full bg-gray-800 
                  bg-[rgba(150,144,162,.08)] text-white focus:bg-gray-800 h-36 focus:border-[#019dce]"
                     placeholder="About project"
                     name="projectBrief"
@@ -407,20 +407,21 @@ export default function ContactUs() {
                   ></textarea>
                 </Grid>
                 <Grid item xs={12}>
-                  <Box className="w-[400px]">
+
                     <Button
                       style={{
                         backgroundColor: "#019dce",
                         color: "white",
-                        padding: "15px",
-                        width: "50%",
+                        padding: "10px 30px",
+                        fontWeight:'bold',
+                        textTransform:'none'
                       }}
+                      onClick={handleSubmit}
                     >
-                      <Box onClick={handleSubmit} className="font-bold">
+
                         Send Your Message
-                      </Box>
+
                     </Button>
-                  </Box>
                 </Grid>
               </Grid>
             </form>
