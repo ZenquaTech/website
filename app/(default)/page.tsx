@@ -24,7 +24,7 @@ export default function Home() {
               "@type": "Organization",
               "name": "Zenqua Technologies",
               "url": "https://zenqua.com",
-              "logo": "/favicon.ico",
+              "logo": "https://zenqua.com/favicon.ico",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://zenqua.com/search?q={search_term_string}",
