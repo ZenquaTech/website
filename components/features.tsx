@@ -2332,7 +2332,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               width: "92%",
               flexWrap: "wrap",
               color: "white",
-              boxShadow: "0px 0px 6px white",
+              boxShadow: "0px 0px 8px #fff",
               margin: "10px",
               display: "flex",
               justifyContent: "center",

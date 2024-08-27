@@ -60,10 +60,10 @@ const menuData: MenuData = {
       {
         title: "ABOUT US",
         subMenu: [
-          { title: "Partnerships", href: "/Partnerships" },
-          { title: "Engagement Models", href: "/EngagementModel" },
-          { title: "Global Delivery Models", href: "/Global" },
-          { title: "Contact Us", href: "/ContactUs" },
+          { title: "Partnerships", href: "/partnerships" },
+          { title: "Engagement Models", href: "/engagement-model" },
+          { title: "Global Delivery Models", href: "/global" },
+          { title: "Contact Us", href: "/contact-us" },
         ],
       },
       {
@@ -77,8 +77,8 @@ const menuData: MenuData = {
       {
         title: "CAREERS",
         subMenu: [
-          { title: "Open Positions", href: "/open" },
-          { title: "Why Join Us", href: "/why" },
+          { title: "Open Positions", href: "/career" },
+          { title: "Why Join Us", href: "/why-join-us" },
         ],
       },
     ],

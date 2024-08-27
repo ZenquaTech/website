@@ -1,4 +1,3 @@
-// pages/index.js (or your main page file)
 import Head from 'next/head';
 import Hero from '@/components/hero';
 import Features from '@/components/features';
@@ -22,11 +21,29 @@ export default function Home() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": metadata.title,
-              "description": metadata.description,
-              "url": "https://www.zenqua.com"
-            })
+              "@type": "WebSite",
+              "name": "Zenqua Technologies",
+              "url": "https://zenqua.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://zenqua.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+              "mainEntity": [
+                {
+                  "@type": "WebPage",
+                  "@id": "https://zenqua.com/contact-us",
+                  "name": "Contact Us",
+                  "url": "https://zenqua.com/contact-us",
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": "https://zenqua.com/career",
+                  "name": "Careers",
+                  "url": "https://zenqua.com/career",
+                },
+              ],
+            }),
           }}
         />
       </Head>

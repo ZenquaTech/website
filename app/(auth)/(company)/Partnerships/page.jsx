@@ -347,7 +347,7 @@ export default function Partnerships() {
                 margin: "2rem",
               }}
             >
-              ou should look for a professional technology partner that can
+              You should look for a professional technology partner that can
               handle all service requests, automated software, application
               migration, QA and testing, web and app development, cloud and
               database integration services etc. ZenQua comes with a bag full of
