@@ -21,9 +21,10 @@ export default function Home() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebSite",
+              "@type": "Organization",
               "name": "Zenqua Technologies",
               "url": "https://zenqua.com",
+              "logo": "/favicon.ico",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://zenqua.com/search?q={search_term_string}",
