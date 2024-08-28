@@ -24,12 +24,7 @@ export default function Home() {
               "@type": "Organization",
               "name": "Zenqua Technologies",
               "url": "https://www.zenqua.com",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.zenqua.com/favicon.ico",
-                "width": 128,
-                "height": 128,
-              },
+              "logo": "https://www.zenqua.com/favicon.ico",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://www.zenqua.com/search?q={search_term_string}",
@@ -46,8 +41,8 @@ export default function Home() {
                   "@type": "WebPage",
                   "@id": "https://www.zenqua.com/career",
                   "name": "Careers",
-                  "url": "https://www.zenqua.com/career",
-                },
+                  "url": "https://www.zenqua.com/career"
+                }
               ],
             }),
           }}
