@@ -290,7 +290,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           color: "#D9E3EA",
                           padding:'2%',
                           fontWeight:'bold',
-                          textTransform: "uppercase",
+                          textTransform: 'none',
                           width: "80%",
                         }}
                       >

@@ -1,6 +1,7 @@
 "use client";
 import React, { Component } from "react";
 import jsonData from "./data.json";
+import Link from 'next/link';
 import {
   Box,
   Grid,
@@ -278,6 +279,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       justifyContent="center"
                       alignItems="center"
                     >
+                      {/* <Link href="/contact-us"> */}
                       <Button
                         variant="contained"
                         style={{
@@ -297,6 +299,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       >
                         {item.button}
                       </Button>
+                      {/* </Link> */}
                     </Grid>
                   </Grid>
                 );

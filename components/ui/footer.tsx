@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2">
                 {/* Logo */}
-                <Link href="/" className="inline-block" aria-label="Cruip">
+                <Link href="/" className="inline-block" aria-label="Zenqua Technologies">
                   <div
                     style={{
                       display: "inline-flex",
@@ -45,7 +45,7 @@ export default function Footer() {
                         }}
                         className="text-gray-400"
                       >
-                        Zenqua Techologies Pvt. Ltd.
+                        Zenqua Technologies Pvt. Ltd.
                       </span>
 
                       <div
@@ -112,10 +112,9 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* 2nd, 3rd and 4th blocks */}
+            {/* 2nd, 3rd, and 4th blocks */}
             <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-2 gap-8">
               {/* 2nd block */}
-
               {/* 3rd block */}
               <div className="text-sm ml-1">
                 <h6 className="text-gray-200 font-medium mb-1">Services</h6>
@@ -196,22 +195,7 @@ export default function Footer() {
                   <div className="md:flex md:items-center md:justify-between mt-28">
                     {/* Social links */}
                     <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
-                      {/* <li>
-                <Link
-                  href="/"
-                  className="flex justify-center items-center text-[#019dce] bg-gray-800 hover:text-gray-100 hover:bg-[#019dce] rounded-full transition duration-150 ease-in-out"
-                  aria-label="Twitter"
-                >
-                  <svg
-                    className="w-8 h-8 fill-current"
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
-                  </svg>
-                </Link>
-              </li> */}
-
+                      {/* LinkedIn */}
                       <li className="ml-4">
                         <Link
                           target="_blank"
@@ -229,12 +213,13 @@ export default function Footer() {
                         </Link>
                       </li>
 
+                      {/* GitHub */}
                       <li className="ml-4">
                         <Link
                           target="_blank"
                           href="https://github.com/zenqua-technologies"
                           className="flex justify-center items-center text-[#019dce] bg-gray-800 hover:text-gray-100 hover:bg-[#019dce] rounded-full transition duration-150 ease-in-out"
-                          aria-label="Github"
+                          aria-label="GitHub"
                         >
                           <svg
                             className="w-8 h-8 fill-current"
@@ -246,8 +231,10 @@ export default function Footer() {
                         </Link>
                       </li>
 
+                      {/* Instagram */}
                       <li className="ml-4">
                         <Link
+                          target="_blank"
                           href="https://www.instagram.com/zenqua_technologies/"
                           className="flex justify-center items-center text-[#019dce] bg-gray-800 hover:text-gray-100 hover:bg-[#019dce] rounded-full transition duration-150 ease-in-out"
                           aria-label="Instagram"
@@ -263,8 +250,11 @@ export default function Footer() {
                           </svg>
                         </Link>
                       </li>
+
+                      {/* Facebook */}
                       <li className="ml-4">
                         <Link
+                          target="_blank"
                           href="https://www.facebook.com/profile.php?id=61557762022662"
                           className="flex justify-center items-center text-[#019dce] bg-gray-800 hover:text-gray-100 hover:bg-[#019dce] rounded-full transition duration-150 ease-in-out"
                           aria-label="Facebook"
@@ -279,265 +269,13 @@ export default function Footer() {
                         </Link>
                       </li>
                     </ul>
-
-                    {/* Copyrights note */}
-                    <div className="text-gray-400 text-sm mr-4">
-                      {/* &copy; Cruip.com. All rights reserved. */}
-                    </div>
                   </div>
-
-                  {/* <li className="mb-1">
-                    <Link
-                      href="/"
-                      className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
-                    >
-                      Labore et dolore
-                    </Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link
-                      href="/"
-                      className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
-                    >
-                      Consectetur adipiscing
-                    </Link>
-                  </li> */}
                 </ul>
               </div>
             </div>
           </div>
-
-          {/* Bottom area */}
         </div>
       </div>
     </footer>
   );
 }
-
-// import React, { Component } from "react";
-// import {
-//   Box,
-//   Grid,
-//   Typography,
-//   withStyles,
-//   WithStyles,
-// } from "@material-ui/core";
-// import { FaFacebookF  , FaInstagram  , FaLinkedin ,  FaPinterest , FaTwitter , FaYoutube} from "react-icons/fa";
-
-// const styles = {
-//   root: {
-//     flexGrow: 1,
-//     padding: 20,
-//     backgroundColor: "#222",
-//     width: "100vw",
-//     display: "flex",
-//     flexDirection: "column",
-//     alignItems: "center",
-//     "& .MuiGrid-spacing-xs-3": {
-//       display: "flex",
-//       justifyContent: "center",
-//     },
-//   },
-//   column: {
-//     padding: 10,
-//   },
-//   title: {
-//     color: "#fff",
-//     marginBottom: 15,
-//   },
-//   item: {
-//     color: "grey",
-//     marginBottom: 5,
-//   },
-//   contactInfo: {
-//     color: "#fff",
-//     marginTop: 30,
-//   },
-// };
-
-// interface Props extends WithStyles<typeof styles> {}
-
-// class VIVERVEFlyer extends Component<Props> {
-//   render() {
-//     const { classes } = this.props;
-
-//     return (
-//       <div className={classes.root} >
-//         <Box style={{ width: "100%"  }}>
-//           <Grid container spacing={3}>
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-
-//               </Typography>
-
-//               <Typography className={classes.item}>
-
-//                 <img
-//                   style={{ marginLeft: "0" , height:'150' , width:'150px' }}
-//                   height="110px"
-//                   width="110px"
-//                   src="http://localhost:3000/images/WhatsApp_Image_2024-03-23_at_4.37.01_PM-removebg-preview.png"
-//                   alt="logo"
-//                 />
-//                 <Box style={{ display:"flex" ,flexWrap:'wrap'}}>
-
-//                   <Box style={{ margin:'16px' , padding:'8px' , border:'solid 1px red' , borderRadius:'50%'}}>
-//                    <FaFacebookF style={{ color:'red' }} />
-//                   </Box>
-//                   <Box style={{margin:'16px' , padding:'8px' , border:'solid 1px red' , borderRadius:'50%'}}>
-//                    <FaInstagram  style={{ color:'red' }} />
-//                   </Box>
-//                   <Box style={{ margin:'16px'  ,padding:'8px' , border:'solid 1px red' , borderRadius:'50%'}}>
-//                    <FaLinkedin  style={{ color:'red' }} />
-//                   </Box>
-//                   <Box style={{ margin:'16px'  ,padding:'8px' , border:'solid 1px red' , borderRadius:'50%'}}>
-//                    < FaPinterest  style={{ color:'red' }} />
-//                   </Box>
-//                   <Box style={{ margin:'16px'  ,padding:'8px' , border:'solid 1px red' , borderRadius:'50%'}}>
-//                    <FaTwitter  style={{ color:'red' }} />
-//                   </Box>
-//                   <Box style={{ margin:'16px'  ,padding:'8px' , border:'solid 1px red' , borderRadius:'50%'}}>
-//                    <FaYoutube  style={{ color:'red' }} />
-//                   </Box>
-//                 </Box>
-
-//               </Typography>
-//             </Grid>
-
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 BACKEND DEVELOPERS
-//               </Typography>
-//               <Typography className={classes.item}>
-//                 Hire PHP Developers Hire Java Developers Hire NodeJS Developers
-//                 Hire NestJS Developers Hire Python Developers Hire Blockchain
-//                 Developers
-//               </Typography>
-//             </Grid>
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 MICROSOFT DEVELOPERS
-//               </Typography>
-//               <Typography className={classes.item}>
-//                 Hire ASP.NET Developer Hire ASP.NET Developer Hire ASP.NET
-//                 Developer Hire ASP.NET Developer Hire ASP.NET Developer
-//               </Typography>
-//             </Grid>
-
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 MOBILE APP DEVELOPERS
-//               </Typography>
-//               <Typography className={classes.item}>
-//                 Hire iOS Developer Hire Android Developer Hire Swift Developer
-//                 Hire Flutter Developer Hire Ionic Developer Hire Kotlin
-//                 Developer Hire ReactNative Developer Hire Xamarin Developer
-//               </Typography>
-//             </Grid>
-//           </Grid>
-//         </Box>
-
-//         <Box style={{ width: "100%" }}>
-//           <Grid container spacing={3}>
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 Write us now
-//               </Typography>
-
-//               <Typography className={classes.item}>
-//                 Email: hello@i-verve.com
-//               </Typography>
-//               <Typography variant="h6" className={classes.title}>
-//                 Write us now
-//               </Typography>
-
-//               <Typography className={classes.item}>
-//                 Email: hello@i-verve.com
-//               </Typography>
-//             </Grid>
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 FRONTEND DEVELOPERS
-//               </Typography>
-
-//               <Typography className={classes.item}>
-//                 Hire AngularJs Developer Hire ReactJs Developer Hire VueJs
-//                 Developer Hire KnockoutJs Developer Hire NextJs Developer
-//               </Typography>
-//             </Grid>
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 DATABASE DEVELOPERS
-//               </Typography>
-
-//               <Typography className={classes.item}>
-//                 Hire MSSQL Developer Hire MYSQL Developer Hire Postgres
-//                 Developer Hire MongoDB Developer Hire Redis Developer Hire
-//                 Oracle Developer Hire Firebase Developer
-//               </Typography>
-//             </Grid>
-
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 FRAMEWORK DEVELOPERS
-//               </Typography>
-
-//               <Typography className={classes.item}>
-//                 Hire Laravel Developer Hire Codeigniter Developer Hire Django
-//                 Developer Hire MEAN Stack Developer Hire CakePHP Developer Hire
-//                 ROR Developer
-//               </Typography>
-//             </Grid>
-//           </Grid>
-//         </Box>
-
-//         <Box style={{ width: "100%" }}>
-//           <Grid container spacing={3}>
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 Call Now
-//               </Typography>
-
-//               <Typography className={classes.item}>
-//                 Phone: +1 404-641-9041 Phone: +1 848-313-6176
-//               </Typography>
-//             </Grid>
-
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 DEVOPS &DATA
-//               </Typography>
-
-//               <Typography className={classes.item}>
-//                 Hire AWS Engineer Hire Azure Engineer Hire Google Cloud Engineer
-//               </Typography>
-//             </Grid>
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 CMS DEVELOPERS
-//               </Typography>
-
-//               <Typography className={classes.item}>
-//                 Hire WordPress Developer Hire Drupal Developer Hire Kentico
-//                 Developer Hire DotNetNuke Developer
-//               </Typography>
-//             </Grid>
-
-//             <Grid item xs={12} sm={4} lg={2} className={classes.column}>
-//               <Typography variant="h6" className={classes.title}>
-//                 E-COMMERCE DEVELOPERS
-//               </Typography>
-
-//               <Typography className={classes.item}>
-//                 Hire Woocommerce Developer Hire Magento Developer Hire Shopify
-//                 Developer Hire NopCommerce Developer
-//               </Typography>
-//             </Grid>
-//           </Grid>
-//         </Box>
-//       </div>
-//     );
-//   }
-// }
-
-// export default withStyles(styles)(VIVERVEFlyer);
