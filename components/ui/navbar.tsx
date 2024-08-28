@@ -1,59 +1,28 @@
 "use client";
 import React, { useState } from "react";
 import { Grid, Button, Paper, Typography, Box } from "@material-ui/core";
-import { withStyles, createStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Link from "next/link";
 
-const styles = (theme: Theme) =>
-  createStyles({
-    menu: {
-      color: "white",
-      backgroundColor: "black",
-      borderRadius: "20px",
-      marginTop: "40px",
-      "& .MuiMenuItem-root": {
-        width: "100vw",
-      },
+const useStyles = makeStyles((theme) => ({
+  menu: {
+    color: "white",
+    backgroundColor: "black",
+    borderRadius: "20px",
+    marginTop: "40px",
+    "& .MuiMenuItem-root": {
+      width: "100vw",
     },
-    menuItem: {
-      opacity: 0.7,
-      "&:hover": {
-        opacity: 1,
-      },
+  },
+  menuItem: {
+    opacity: 0.7,
+    "&:hover": {
+      opacity: 1,
     },
-  });
+  },
+}));
 
-interface NavbarProps {
-  classes: {
-    menu: string;
-    menuItem: string;
-  };
-}
-
-interface NavbarState {
-  openMenu: string | null;
-  isMenuOpen: boolean;
-}
-
-interface SubMenuItem {
-  title: string;
-  href?: string;
-}
-
-interface MenuItem {
-  title: string;
-  href?: string;
-  subMenu: SubMenuItem[];
-}
-
-interface MenuData {
-  [key: string]: {
-    title: string;
-    items: MenuItem[];
-  };
-}
-
-const menuData: MenuData = {
+const menuData: Record<string, { title: string; items: any[] }> = {
   Company: {
     title: "COMPANY",
     items: [
@@ -69,7 +38,7 @@ const menuData: MenuData = {
       {
         title: "INSIGHTS",
         subMenu: [
-          { title: "Blogs" },
+          { title: "Blogs"},
           { title: "White Papers" },
           { title: "Videos", href: "/videos" },
         ],
@@ -240,294 +209,271 @@ const menuData: MenuData = {
   },
 };
 
-class Navbar extends React.Component<NavbarProps, NavbarState> {
-  state: NavbarState = {
-    openMenu: null,
-    isMenuOpen: false,
+const Navbar = () => {
+  const classes = useStyles();
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  const handleMenuEnter = (menu: string) => () => {
+    setOpenMenu(menu);
   };
 
-  handleMenuEnter = (menu: string) => () => {
-    this.setState({ openMenu: menu });
-  };
-  scrollToBottom = () => {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: "smooth",
-    });
+  const handleMenuLeave = () => {
+    setOpenMenu(null);
   };
 
-  handleMenuLeave = () => {
-    this.setState({ openMenu: null });
+  const handleItemClick = () => {
+    setOpenMenu(null);
   };
 
-  toggleMenu = () => {
-    this.setState((prevState) => ({
-      isMenuOpen: !prevState.isMenuOpen,
-    }));
-  };
-  handleItemClick = () => {
-    this.setState({ openMenu: null });
-  };
-
-  render() {
-    const { classes } = this.props;
-    const { openMenu } = this.state;
-
-    return (
-      <Grid
-        container
-        direction="column"
-        style={{ color: "white", display: "flex", justifyContent: "center" }}
-      >
-        <div>
-          {Object.keys(menuData).map((menu) => (
-            <div
-              key={menu}
-              style={{ display: "inline-block", marginRight: "20px" }}
-            >
-              <Button
-                aria-controls={`${menu}-menu`}
-                aria-haspopup="true"
-                onMouseEnter={this.handleMenuEnter(menu)}
-                onMouseLeave={this.handleMenuLeave}
-                onMouseOver={(e) => {
-                  const target = e.target as HTMLElement;
-                  target.style.color = "#019dce";
-                }}
-                onMouseOut={(e) => {
-                  const target = e.target as HTMLElement;
-                  target.style.color = "#ffffffbf";
-                }}
-              >
-                <Box
-                  style={{
-                    display: "flex",
-                    color: "rgba(255, 255, 255, 0.75)",
-                    textTransform: "capitalize",
-                    fontSize: "16px",
-                    fontWeight: "500",
-                  }}
-                >
-                  {menu}
-                </Box>
-              </Button>
-              {menu !== "Expertise" && openMenu === menu && (
-                <div
-                  onMouseEnter={this.handleMenuEnter(menu)}
-                  onMouseLeave={this.handleMenuLeave}
-                  style={{
-                    position: "absolute",
-                    backgroundColor: "#1B1A1F",
-                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                    zIndex: 10,
-                    borderRadius: "20px",
-                    left: 10,
-                    right: 10,
-                  }}
-                >
-                  <Grid container spacing={1}>
-                    <Grid item xs={12}>
-                      <Paper
-                        style={{
-                          borderRadius: "20px",
-                          display: "flex",
-                          flexDirection: "column",
-                          backgroundColor: "#1B1A1F",
-                          padding: "3% 7%",
-                          width: "100vw",
-                        }}
-                      >
-                        <Box style={{ display: "flex", flexDirection: "row" }}>
-                          {menuData[menu].items.map((item, itemIndex) => (
-                            <Box
-                              key={itemIndex}
-                              display="flex"
-                              flexDirection="column"
-                              marginBottom="10px"
-                              style={{ flex: 1, margin: "0 10px" }}
-                            >
-                              <Link href={item.href ? item.href : "/"} passHref>
-                                <Typography
-                                  style={{
-                                    color: "#ffffffa6",
-                                    opacity: "0.65",
-                                    fontWeight: "bold",
-                                    marginRight: "20px",
-                                    fontSize: "12.544px",
-                                    // cursor: "pointer",
-                                  }}
-                                >
-                                  {item.title}
-                                </Typography>
-                              </Link>
-                              {item?.subMenu?.length > 0 && (
-                                <Box display="flex" flexDirection="column">
-                                  {item.subMenu.map((subItem, subItemIndex) => (
-                                    <Link
-                                      key={subItemIndex}
-                                      href={subItem.href ? subItem.href : "/"}
-                                      passHref
-                                      onClick={this.handleItemClick}
-                                    >
-                                      <Typography
-                                        component="a"
-                                        key={subItemIndex}
-                                        style={{
-                                          color: "#ffffffbf",
-                                          fontSize: "12px",
-                                          fontWeight: "400",
-                                          cursor: "pointer",
-                                          opacity: "0.75",
-                                          lineHeight: "1.8rem",
-                                        }}
-                                        onMouseOver={(e) => {
-                                          const target =
-                                            e.target as HTMLElement;
-                                          target.style.color = "#019dce";
-                                        }}
-                                        onMouseOut={(e) => {
-                                          const target =
-                                            e.target as HTMLElement;
-                                          target.style.color = "#ffffffbf";
-                                        }}
-                                      >
-                                        {subItem.title}
-                                      </Typography>
-                                    </Link>
-                                  ))}
-                                </Box>
-                              )}
-                            </Box>
-                          ))}
-                        </Box>
-                      </Paper>
-                    </Grid>
-                  </Grid>
-                </div>
-              )}
-              {menu === "Expertise" && openMenu === menu && (
-                <div
-                  onMouseEnter={this.handleMenuEnter(menu)}
-                  onMouseLeave={this.handleMenuLeave}
-                  style={{
-                    position: "absolute",
-                    backgroundColor: "red",
-                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                    zIndex: 10,
-                    borderRadius: "20px",
-                  }}
-                >
-                  <Grid container spacing={1}>
-                    <Grid item xs={12}>
-                      <Paper
-                        style={{
-                          borderRadius: "5.6px",
-                          display: "flex",
-                          flexDirection: "column",
-                          backgroundColor: "#1B1A1F",
-
-                          padding: "10% 0px",
-                          width: "216px",
-                        }}
-                      >
-                        <Box style={{ display: "flex", flexDirection: "row" }}>
-                          {menuData[menu].items.map((item, itemIndex) => (
-                            <Box
-                              key={itemIndex}
-                              display="flex"
-                              flexDirection="column"
-                              marginBottom="10px"
-                              style={{ flex: 1, margin: "0 10px" }}
-                            >
-                              <Link href={item.href ? item.href : "/"} passHref>
-                                <Typography
-                                  style={{
-                                    color: "#ffffffa6",
-                                    opacity: "0.65",
-                                    fontWeight: "bold",
-                                    marginRight: "20px",
-                                    fontSize: "12.544px",
-                                    cursor: "pointer",
-                                  }}
-                                  onMouseOver={(e) => {
-                                    const target = e.target as HTMLElement;
-                                    target.style.color = "#019dce";
-                                  }}
-                                  onMouseOut={(e) => {
-                                    const target = e.target as HTMLElement;
-                                    target.style.color = "#ffffffbf";
-                                  }}
-                                >
-                                  {item.title}
-                                </Typography>
-                              </Link>
-                              {item.subMenu.length > 0 && (
-                                <Box display="flex" flexDirection="column">
-                                  {item.subMenu.map((subItem, subItemIndex) => (
-                                    <Link
-                                      key={subItemIndex}
-                                      href={subItem.href ? subItem.href : "/"}
-                                      passHref
-                                    >
-                                      <Typography
-                                        component="a"
-                                        key={subItemIndex}
-                                        style={{
-                                          color: "#ffffffbf",
-                                          fontSize: "12px",
-                                          fontWeight: "400",
-                                          cursor: "pointer",
-                                          opacity: "0.75",
-                                          lineHeight: "1.8rem",
-                                        }}
-                                        onMouseOver={(e) => {
-                                          const target =
-                                            e.target as HTMLElement;
-                                          target.style.color = "#019dce";
-                                        }}
-                                        onMouseOut={(e) => {
-                                          const target =
-                                            e.target as HTMLElement;
-                                          target.style.color = "#ffffffbf";
-                                        }}
-                                        onClick={() => this.handleMenuLeave}
-                                      >
-                                        {subItem.title}
-                                      </Typography>
-                                    </Link>
-                                  ))}
-                                </Box>
-                              )}
-                            </Box>
-                          ))}
-                        </Box>
-                      </Paper>
-                    </Grid>
-                  </Grid>
-                </div>
-              )}
-            </div>
-          ))}
-          <Button
-          
+  return (
+    <Grid
+      container
+      direction="column"
+      style={{ color: "white", display: "flex", justifyContent: "center" }}
+    >
+      <div>
+        {Object.keys(menuData).map((menu) => (
+          <div
+            key={menu}
+            style={{ display: "inline-block", marginRight: "20px" }}
           >
-            <Link href={"/contact-us"} passHref onClick={this.handleItemClick}>
+            <Button
+              aria-controls={`${menu}-menu`}
+              aria-haspopup="true"
+              onMouseEnter={handleMenuEnter(menu)}
+              onMouseLeave={handleMenuLeave}
+              onMouseOver={(e) => {
+                const target = e.target as HTMLElement;
+                target.style.color = "#019dce";
+              }}
+              onMouseOut={(e) => {
+                const target = e.target as HTMLElement;
+                target.style.color = "#ffffffbf";
+              }}
+            >
               <Box
                 style={{
+                  display: "flex",
                   color: "rgba(255, 255, 255, 0.75)",
                   textTransform: "capitalize",
                   fontSize: "16px",
                   fontWeight: "500",
                 }}
               >
-                Contact Us
+                {menu}
               </Box>
-            </Link>
-          </Button>
-        </div>
-      </Grid>
-    );
-  }
-}
+            </Button>
+            {menu !== "Expertise" && openMenu === menu && (
+              <div
+                onMouseEnter={handleMenuEnter(menu)}
+                onMouseLeave={handleMenuLeave}
+                style={{
+                  position: "absolute",
+                  backgroundColor: "#1B1A1F",
+                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                  zIndex: 10,
+                  borderRadius: "20px",
+                  left: 10,
+                  right: 10,
+                }}
+              >
+                <Grid container spacing={1}>
+                  <Grid item xs={12}>
+                    <Paper
+                      style={{
+                        borderRadius: "20px",
+                        display: "flex",
+                        flexDirection: "column",
+                        backgroundColor: "#1B1A1F",
+                        padding: "3% 7%",
+                        width: "100vw",
+                      }}
+                    >
+                      <Box style={{ display: "flex", flexDirection: "row" }}>
+                        {menuData[menu].items.map((item, itemIndex) => (
+                          <Box
+                            key={itemIndex}
+                            display="flex"
+                            flexDirection="column"
+                            marginBottom="10px"
+                            style={{ flex: 1, margin: "0 10px" }}
+                          >
+                            <Link href={item.href ? item.href : "/"} passHref>
+                              <Typography
+                                style={{
+                                  color: "#ffffffa6",
+                                  opacity: "0.65",
+                                  fontWeight: "bold",
+                                  marginRight: "20px",
+                                  fontSize: "12.544px",
+                                }}
+                              >
+                                {item.title}
+                              </Typography>
+                            </Link>
+                            {item?.subMenu?.length > 0 && (
+                              <Box display="flex" flexDirection="column">
+                                {item.subMenu.map((subItem: any, subItemIndex: any) => (
+                                  <Link
+                                    key={subItemIndex}
+                                    href={subItem.href ? subItem.href : "/"}
+                                    passHref
+                                    onClick={handleItemClick}
+                                  >
+                                    <Typography
+                                      component="a"
+                                      key={subItemIndex}
+                                      style={{
+                                        color: "#ffffffbf",
+                                        fontSize: "12px",
+                                        fontWeight: "400",
+                                        cursor: "pointer",
+                                        opacity: "0.75",
+                                        lineHeight: "1.8rem",
+                                      }}
+                                      onMouseOver={(e) => {
+                                        const target = e.target as HTMLElement;
+                                        target.style.color = "#019dce";
+                                      }}
+                                      onMouseOut={(e) => {
+                                        const target = e.target as HTMLElement;
+                                        target.style.color = "#ffffffbf";
+                                      }}
+                                    >
+                                      {subItem.title}
+                                    </Typography>
+                                  </Link>
+                                ))}
+                              </Box>
+                            )}
+                          </Box>
+                        ))}
+                      </Box>
+                    </Paper>
+                  </Grid>
+                </Grid>
+              </div>
+            )}
+            {menu === "Expertise" && openMenu === menu && (
+              <div
+                onMouseEnter={handleMenuEnter(menu)}
+                onMouseLeave={handleMenuLeave}
+                style={{
+                  position: "absolute",
+                  backgroundColor: "red",
+                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                  zIndex: 10,
+                  borderRadius: "20px",
+                }}
+              >
+                <Grid container spacing={1}>
+                  <Grid item xs={12}>
+                    <Paper
+                      style={{
+                        borderRadius: "5.6px",
+                        display: "flex",
+                        flexDirection: "column",
+                        backgroundColor: "#1B1A1F",
+                        padding: "10% 0px",
+                        width: "216px",
+                      }}
+                    >
+                      <Box style={{ display: "flex", flexDirection: "row" }}>
+                        {menuData[menu].items.map((item, itemIndex) => (
+                          <Box
+                            key={itemIndex}
+                            display="flex"
+                            flexDirection="column"
+                            marginBottom="10px"
+                            style={{ flex: 1, margin: "0 10px" }}
+                          >
+                            <Link href={item.href ? item.href : "/"} passHref>
+                              <Typography
+                                style={{
+                                  color: "#ffffffa6",
+                                  opacity: "0.65",
+                                  fontWeight: "bold",
+                                  marginRight: "20px",
+                                  fontSize: "12.544px",
+                                }}
+                              >
+                                {item.title}
+                              </Typography>
+                            </Link>
+                            {item.subMenu.length > 0 && (
+                              <Box display="flex" flexDirection="column">
+                                {item.subMenu.map((subItem: any, subItemIndex: any) => (
+                                  <Link
+                                    key={subItemIndex}
+                                    href={subItem.href ? subItem.href : "/"}
+                                    passHref
+                                  >
+                                    <Typography
+                                      component="a"
+                                      key={subItemIndex}
+                                      style={{
+                                        color: "#ffffffbf",
+                                        fontSize: "12px",
+                                        fontWeight: "400",
+                                        cursor: "pointer",
+                                        opacity: "0.75",
+                                        lineHeight: "1.8rem",
+                                      }}
+                                      onMouseOver={(e) => {
+                                        const target =
+                                          e.target as HTMLElement;
+                                        target.style.color = "#019dce";
+                                      }}
+                                      onMouseOut={(e) => {
+                                        const target =
+                                          e.target as HTMLElement;
+                                        target.style.color = "#ffffffbf";
+                                      }}
+                                      onClick={() => handleMenuLeave}
+                                    >
+                                      {subItem.title}
+                                    </Typography>
+                                  </Link>
+                                ))}
+                              </Box>
+                            )}
+                          </Box>
+                        ))}
+                      </Box>
+                    </Paper>
+                  </Grid>
+                </Grid>
+              </div>
+            )}
+          </div>
+        ))}
+        <Button
+          onMouseOver={(e) => {
+            const target = e.target as HTMLElement;
+            target.style.color = "#019dce";
+          }}
+          onMouseOut={(e) => {
+            const target =
+              e.target as HTMLElement;
+            target.style.color = "#ffffffbf";
+          }}>
+          <Link href={"/contact-us"} passHref onClick={handleItemClick}>
+            <Box
+              style={{
+                color: "rgba(255, 255, 255, 0.75)",
+                textTransform: "capitalize",
+                fontSize: "16px",
+                fontWeight: "500",
+              }}
+            >
+              Contact Us
+            </Box>
+          </Link>
+        </Button>
+      </div>
+    </Grid>
+  );
+};
 
-export default withStyles(styles)(Navbar);
+export default Navbar;

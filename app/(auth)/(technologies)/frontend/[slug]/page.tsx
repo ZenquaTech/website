@@ -291,7 +291,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           fontWeight: 'bold',
                           borderRadius: '10px',
                           width: "80%",
-                          textTransform: 'none'
+                          textTransform: 'none',
                         }}
                       >
                         {item.button}

@@ -2,9 +2,6 @@
 import {
   Box,
   Button,
-  ButtonBase,
-  Hidden,
-  ImageList,
   Typography,
 } from "@material-ui/core";
 import {
@@ -404,8 +401,8 @@ const servicesData: ServiceData[] = [
           </div>
           <div className="flex flex-col items-center mt-4">
             <img
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/woocommerce.svg"
-              alt="woocommerce"
+              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/WooCommerce.svg"
+              alt="WooCommerce"
               className="flex mt-4"
             />
             <p>Woo Commerce </p>
@@ -728,7 +725,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
       clickedButton6: "Cost-Effectiveness",
       clickedButton2: "Big Data",
       clickedButton3: "Cost-Effectiveness",
-      selectedService: "Backend Development" as ServiceNames, // Ensure this is of type ServiceNames
+      selectedService: "Backend Development" as ServiceNames,
       techTrendsButton: "Big Data",
       State: {
         backend: true,
@@ -749,7 +746,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
         Reduced: true,
         Custom: true,
       },
-      backend: true, // Add missing properties to match StatsCardState
+      backend: true,
       frontend: true,
       mobile: true,
       framework: true,
@@ -795,14 +792,6 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
     }
   };
 
-  // handleClick2 = (service: ServiceNames) => {
-  //   this.setState({ selectedService: service });
-  // };
-
-  // componentDidMount() {
-  //   this.animateStatistics();
-  // }
-
   componentWillUnmount() {
     this.animationIntervals.forEach((interval) => clearInterval(interval));
   }
@@ -810,34 +799,6 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
 
   render() {
     const { clickedButton2 } = this.state;
-    const { clickedButton3 } = this.state;
-
-    const {
-      backend,
-      frontend,
-      mobile,
-      ecommerce,
-      cms,
-      database,
-      devops,
-      digital,
-      clickedButton5,
-    } = this.state;
-
-    const { Cost, Vast, Time, Experienced, Reduced, Custom, clickedButton6 } =
-      this.state;
-
-    const services: ServiceNames[] = [
-      "Backend Development",
-      "Frontend Development",
-      "Mobile App Development",
-      "Framework Development",
-      "E-Commerce Development",
-      "CMS Development",
-      "Database Development",
-      "DevOps & Infra",
-      "Digital Marketing",
-    ];
 
     const items = [
       {
@@ -2803,7 +2764,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         Worked with: {person.workedWith}
                       </Typography>
                       <br />
-                      <Link href="/ContactUs">
+                      <Link href="/contact-us">
                         <button className="bg-[#019dce] text-white text-md mt-4 px-8 py-2 rounded-md w-34 font-medium text-[#D9E3EA]">
                           Hire Me
                         </button>

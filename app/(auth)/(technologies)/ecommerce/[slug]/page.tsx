@@ -290,7 +290,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           color: "#D9E3EA",
                           padding: "2%",
                           fontWeight: "bold",
-                          textTransform: "uppercase",
+                          textTransform: 'none',
                           width: "80%",
                         }}
                       >
@@ -331,7 +331,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
-                      height: "500px",
+                      height: "520px",
                       borderRadius: '20px',
                       flexWrap: "wrap",
                     }}
@@ -374,7 +374,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
-                      height: "500px",
+                      height: "520px",
                       flexWrap: "wrap",
                       borderRadius: '20px',
                     }}
@@ -437,7 +437,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
-                      height: "500px",
+                      height: "520px",
                       borderRadius: '20px',
                       flexWrap: "wrap",
                     }}
@@ -479,7 +479,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
-                      height: "500px",
+                      height: "520px",
                       borderRadius: '20px',
                       flexWrap: "wrap",
                     }}
