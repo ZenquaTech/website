@@ -5,7 +5,7 @@ import Zigzag from '@/components/zigzag';
 import Testimonials from '@/components/testimonials';
 
 export const metadata = {
-  title: 'Zenqua Technologies',
+  title: 'Zenqua Technologies Pvt Ltd',
   description: 'Page description',
 };
 
@@ -22,7 +22,7 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Zenqua Technologies",
+              "name": "Zenqua Technologies Pvt Ltd",
               "url": "https://www.zenqua.com",
               "logo": "https://www.zenqua.com/favicon.ico",
               "potentialAction": {
