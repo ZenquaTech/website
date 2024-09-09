@@ -1,0 +1,5 @@
+# robots.txt for Zenqua Technologies
+User-agent: *
+Allow: /
+
+Sitemap: https://www.zenqua.com/sitemap.xml
