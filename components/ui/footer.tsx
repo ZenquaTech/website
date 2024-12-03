@@ -188,7 +188,7 @@ export default function Footer() {
                       href="/"
                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
                     >
-                      Ph : +91 731-4028250
+                      Ph : +91 74006-20393
                     </Link>
                   </li>
 

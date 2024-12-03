@@ -287,7 +287,7 @@ const Navbar = () => {
                         flexDirection: "column",
                         backgroundColor: "#1B1A1F",
                         padding: "3% 7%",
-                        width: "100vw",
+                        width: "98vw",
                       }}
                     >
                       <Box style={{ display: "flex", flexDirection: "row" }}>

@@ -129,7 +129,7 @@ export default function ContactUs() {
         <Grid item xs={12} sm={4} style={{ borderBottom: "1px solid gray" }}>
           <Box className="box-1">
             <Typography className="typo-1">Get in touch </Typography>
-            <Typography style={{ color: "#019dce" }}>+91 731-4028250</Typography>
+            <Typography style={{ color: "#019dce" }}>+91 74006-20393</Typography>
             <Typography>Assistance hours:</Typography>
             <Typography>Monday – Friday</Typography>
             <Typography style={{ marginBottom: "2rem" }}>8 am to 6 pm </Typography>
