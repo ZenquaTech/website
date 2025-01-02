@@ -29,16 +29,16 @@ const menuData: Record<string, { title: string; items: any[] }> = {
       {
         title: "ABOUT US",
         subMenu: [
-          { title: "Partnerships", href: "/partnerships" },
+          { title: "Partnerships", href: "/Partnerships" },
           { title: "Engagement Models", href: "/engagement-model" },
-          { title: "Global Delivery Models", href: "/global" },
+          { title: "Global Delivery Models", href: "/Global" },
           { title: "Contact Us", href: "/contact-us" },
         ],
       },
       {
         title: "INSIGHTS",
         subMenu: [
-          { title: "Blogs"},
+          { title: "Blogs", href: "/blogs"},
           { title: "White Papers" },
           { title: "Videos", href: "/videos" },
         ],

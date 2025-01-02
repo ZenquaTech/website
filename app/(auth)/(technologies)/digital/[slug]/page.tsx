@@ -27,22 +27,22 @@ const scrollToBottom = () => {
 };
 const projects = [
   {
-    src: "https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg",
+    src: "../images/webpFile/one.webp",
     alt: "Enterprise e-Commerce Store – CAMPSAVER",
     description: "Enterprise e-Commerce Store – CAMPSAVER"
   },
   {
-    src: "https://media.istockphoto.com/id/1362508194/vector/modern-3d-illustration-of-web-development.jpg?s=612x612&w=0&k=20&c=FzoSgPjIPiPV7wFtCHCFDOehKVgOkDWVdgtZb8N797s=",
+    src: "../images/webpFile/two.webp",
     alt: "UAE Government Application – DTMC",
     description: "UAE Government Application – DTMC"
   },
   {
-    src: "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg",
+    src: "../images/webpFile/three.webp",
     alt: "Marshalls World of Sport Website",
     description: "Marshalls World of Sport Website"
   },
   {
-    src: "https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg",
+    src: "../images/webpFile/one.webp",
     alt: "Employees Shift Management Web App – Shift Manager",
     description: "Employees Shift Management Web App – Shift Manager"
   }
@@ -180,7 +180,6 @@ class RoutePage extends Component<RoutePageProps, PageState> {
     });
   };
   render() {
-    console.log("hello world");
     const { hoveredCircle } = this.state;
 
     const { params } = this.props;
@@ -346,9 +345,9 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     >
                       {" "}
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{ paddingLeft: "3%" }}>
+                      <span style={{ paddingLeft: "3%" }}>
                         {item.title}
-                      </Box>
+                      </span>
                     </Typography>
 
                     <Typography
@@ -389,9 +388,9 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{ paddingLeft: "3%" }}>
+                      <span style={{ paddingLeft: "3%" }}>
                         {item.title}
-                      </Box>
+                      </span>
                     </Typography>
                     <Typography
                       style={{
@@ -707,7 +706,6 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               <h2 className="text-3xl font-bold text-center mb-6 service-button">
                 Why Outsource Your Project to ZenQua?
               </h2>
-              {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
                 <div className="hidden sm:flex justify-center flex rounded-[20px]"
                 style={{ border: "1px solid #D9E3EA !important" }}>
                   <Grid
@@ -721,7 +719,6 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           height: "100%",
                           paddingRight: "4px",
                           backgroundColor: "transparent",
-                          // boxShadow: "none",
                         }}
                       >
                         {content.servicesData2.map(
@@ -785,7 +782,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                             <div>
                               <div
                                 className="text-2xl font-bold text-[#019dce]"
-                                // style={{ color: "#019dce" }}
+                              
                               >
                                 {service.label}
                               </div>
@@ -835,16 +832,16 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                         borderRadius: "20px",
                         background: "transparent",
                         color: "#D9E3EA",
-                        // margin: "25px",
+                        
                       }}
                     >
                       <CardActionArea>
                         <CardContent>
                           <Typography
-                            // gutterBottom
+                            
                             variant="h5"
                             component="h2"
-                            // style={{ textAlign: "center", color: "#019dce" }}
+                            
                         style={{ fontWeight:'bold' , textAlign: "center" , fontSize:'21px' , marginBottom:'5%' , color: "#019dce",}}
 
                           >
@@ -1019,7 +1016,6 @@ const MainWrapper = styled(Box)({
   },
   "& .typo-3": {
     marginTop: "2rem",
-    // color: "#D9E3EA",
     fontSize: "18px",
   },
   "& .btn1": {
