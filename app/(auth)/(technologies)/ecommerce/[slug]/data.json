@@ -1,11 +1,16 @@
 {
   "woo": {
+     "metadata": {
+      "title": "WooCommerce Development Services",
+      "description": "ZenQua provides WooCommerce development services to help you drive online traffic and increase sales. From store setup and theme customization to payment gateway integration, we offer comprehensive WooCommerce solutions.",
+      "keywords": "WooCommerce, Development, Services, Store Setup, Theme Customization, Payment Gateway, WooCommerce Expert, E-commerce Solutions"
+  },
     "section1": [
       {
         "heading1": "WooCommerce Development Company",
         "heading2": "Drive Online Traffic and Sales with WooCommerce Development services",
         "para": "ZenQua provides WooCommerce development services to help you drive online traffic and increase sales. Our team of professionals specializes in ingenious themes, plug-in and application development. With 24×7 customer support, our services make sure to resolve your bugs or problems related to operations and migration. We make use of world-class infrastructure and resources to create stunning WooCommerce applications, websites and stores with high security. Our services are pocket-friendly coupled with budgeting and accounting tools. Get highly responsive, SEO-friendly and easily navigable WooCommerce store with interactive themes, intuitive interfaces and powerful extensions by availing our WooCommerce development services.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135641/woocommerce_1-1536x1360.png",
+        "image": "woocommerce",
         "button": "Talk to Expert"
       }
     ],
@@ -139,14 +144,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "timeMaterial",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -155,17 +160,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "startupBusiness"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "smallMediumBusiness"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "largeBusiness"
       }
     ],
     "servicesData2": [
@@ -205,12 +210,18 @@
     ]
   },
   "magento": {
+    "metadata": {
+        "title": "Magento Development Services",
+        "description": "ZenQua offers expert Magento development solutions to empower your eCommerce success. Our services include Magento consulting, custom development, theme design, and integration, ensuring your online store is optimized and functional.",
+        "keywords":"Magento development, eCommerce solutions, Magento consulting services, Magento development services, Magento extension development, Magento UI UX design, Magento theme development, Magento support and maintenance, Magento integration services, Magento B2B development",
+        "url": "https://www.zenqua.com/magento-development"
+      },
     "section1": [
       {
         "heading1": "Magento Development Company",
         "heading2": "Empowering eCommerce Success with Magento",
         "para": "ZenQua provides you with expert Magento development solutions to turn your dreams of eCommerce success into reality. Our experienced and knowledgeable professionals embark on a consultative journey with you to understand what exactly your online business objectives and requirements are. We empower you with reliable technical proficiency and have the capabilities to develop direct, feature-rich and custom-tailored Magento solutions that helps to ensure your website is optimized, functional and technologically up to date. With us, you get access to the latest digital technologies and business solutions that equips you with an upper hand in the digital age. Let us help drive your business to remarkable outcomes with our enriching development services and deliver a higher ROI.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135639/smc-1536x1360.png",
+        "image": "magento",
         "button": "Talk to Expert"
       }
     ],
@@ -329,14 +340,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "timeMaterial",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -345,17 +356,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "startupBusiness"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "smallMediumBusiness"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "largeBusiness"
       }
     ],
     "servicesData2": [
@@ -395,12 +406,18 @@
     ]
   },
   "shopify": {
+  "metadata": {
+    "title": "Shopify Development Services",
+    "description": "ZenQua offers comprehensive Shopify development services for businesses of all sizes. From store setup and theme customization to integration and maintenance, our expert team is dedicated to enhancing your eCommerce experience and driving sales.",
+    "keywords": "Shopify development, eCommerce solutions, Shopify store setup, Shopify theme design, Shopify integration services, custom Shopify development, Shopify Plus development, Shopify maintenance and support, Shopify app development, Shopify consulting services",
+    "url": "https://www.zenqua.com/shopify-development"
+  },
     "section1": [
       {
         "heading1": "Shopify Development Company",
         "heading2": "From start-ups to enterprises, drive sales with a feature-rich Shopify Store",
         "para": "ZenQua is your one-stop solution for eCommerce Shopify Development. Our team of experts equips businesses with the best possible technology to enhance their brand value and generate sales. We provide a feature-rich Shopify Store with the secure, intuitive features such as categories, lists, search, carts and payment gateway services. Our resourceful developers provide personalized solutions ranging from start-ups to enterprise level companies which are cost-effective and functionally effective. Let us help you configure your online store, add and manage features, inventory and sales to help monitor your store’s performance. With ZenQua, you can make your idea alive or renovate your existing online store and rest assured about the security and usability.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135639/Shopify-2-1536x1360.png",
+        "image": "spotify",
         "button": "Talk to Expert"
       }
     ],
@@ -519,14 +536,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "timeMaterial",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -535,17 +552,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "startupBusiness"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "smallMediumBusiness"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "largeBusiness"
       }
     ],
     "servicesData2": [
@@ -585,12 +602,18 @@
     ]
   },
   "nop": {
+    "metadata": {
+    "title": "NopCommerce Development Services",
+    "description": "ZenQua offers expert NopCommerce development services to help businesses scale up with advanced eCommerce solutions. Our services include store setup, theme design, integration, maintenance, and custom development tailored to your needs.",
+    "keywords": "NopCommerce development, eCommerce solutions, custom theme design, plugin development, store setup, NopCommerce maintenance, NopCommerce consulting, mobile app development, ERP and CRM development, NopCommerce migration services",
+    "url": "https://www.zenqua.com/nopcommerce-development"
+    },
     "section1": [
       {
         "heading1": "NopCommerce Development Company",
         "heading2": "Scale-up your business with competent nopCommerce solutions",
         "para": "With the vision to help scale up businesses, ZenQua strives to provide competent nopCommerce Solutions. Our developers are here to craft incomparable eCommerce development experiences by infusing advanced functionalities & cutting-edge technology. We provide a range of services to help you set up an online store, including hosting dynamic product galleries, top-notch shopping carts, secure payment gateway support, and a plethora of user-friendly and customizable solutions to fit your specific needs. Let us be your trusted partner in growing your business with these powerful nopCommerce solutions.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135638/nopcommerce_1-1536x1360.png",
+        "image": "nop",
         "button": "Talk to Expert"
       }
     ],
@@ -709,14 +732,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "timeMaterial",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -725,17 +748,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "startupBusiness"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "smallMediumBusiness"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "largeBusiness"
       }
     ],
     "servicesData2": [

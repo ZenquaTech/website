@@ -1,7 +1,6 @@
 "use client";
 import React, { Component } from "react";
 import jsonData from "./data.json";
-import Link from 'next/link';
 import {
   Box,
   Grid,
@@ -13,12 +12,12 @@ import {
   Card,
   CardContent,
 } from "@material-ui/core";
+import dynamic from "next/dynamic";
 import { FaStar } from "react-icons/fa";
 import AddIcon from "@material-ui/icons/Add";
 import CountUp from "react-countup";
 import Carousel from "react-material-ui-carousel";
 import "./styles.css";
-import ContactUs from "@/components/ui/contactus";
 import webDesginIcon from "@/components/assets/img/projectImg/web-design.webp";
 import softwareDeveloperIcon from "@/components/assets/img/projectImg/software-developer.webp";
 import timeMaterial from "@/components/assets/img/reactjsimg/Time-Material.webp";
@@ -27,7 +26,6 @@ import largeBusiness from "@/components/assets/img/reactjsimg/large_business.web
 import startupBusiness from "@/components/assets/img/reactjsimg/startup-business.webp";
 import reactNative from "@/components/assets/img/angularimg/react-native.webp";
 import smallMediumBusiness from "@/components/assets/img/reactjsimg/small-medium_business.webp";
-import rubyOnRails from "@/components/assets/img/reactjsimg/ruby-on-rails.webp";
 import laravel from "@/components/assets/img/reactjsimg/laravel.webp";
 import django from "@/components/assets/img/reactjsimg/django.webp";
 import codeignitor from "@/components/assets/img/reactjsimg/Codeignitor.webp";
@@ -48,6 +46,10 @@ import google from "@/components/assets/img/angularimg/google.webp";
 import nodejs from "@/components/assets/img/angularimg/nodejs.webp";
 import ror from "@/components/assets/img/angularimg/nestjs.webp";
 import Image from "next/image"; 
+
+const LazyContactUsComponent = dynamic(
+  () => import("@/components/ui/contactus")
+);
 const imageMap: any = {
   laravel,
   aws,
@@ -125,9 +127,6 @@ interface State2 {
   Reduced: boolean;
   Custom: boolean;
   clickedButton6: string;
-}
-interface ContentProps {
-  body: string;
 }
 
 interface RoutePageProps {
@@ -283,11 +282,14 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                 </div>
                 <div className="mt-20 flex justify-center">
                   <Image
+                    loading="lazy"
                     src={imageMap[item.image]?.src || item.image}
                     alt={item.heading1}
                     className="object-contain"
-                    width={880}
-                    height={799}
+                    width={500}
+                    height={500}
+                    // priority
+                    sizes="(max-width: 600px) 100vw, 880px"
                   />
                 </div>
               </div>
@@ -383,7 +385,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             <Grid container>
               {content?.section3?.map((item: any, index: any) => {
                 return (
-                  <Grid item xs={12}>
+                  <Grid item xs={12} key={index}>
                     <Box className="box1">
                       <Typography style={{ color: "#D9E3EA" }}>
                         {item.heading1}
@@ -496,7 +498,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             <Grid container>
               {content?.section4?.map((item: any, index: any) => {
                 return (
-                  <Grid item xs={12}>
+                  <Grid item xs={12} key={index}>
                     <Box className="box1">
                       <Typography style={{ color: "#D9E3EA" }}>
                         {item.heading1}
@@ -682,9 +684,9 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             {/* ***********************  end********************************* */}
 
             <div className="box-border w-full mt-[4%]">
-              {content?.sectionexperties?.map((item: any) => {
+              {content?.sectionexperties?.map((item: any, index: number) => {
                 return (
-                  <>
+                  <React.Fragment key={index}>
                     <h2
                       className=" font text-center  service-button"
                       style={{ textTransform: "uppercase" }}
@@ -694,7 +696,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                     <h2 className="text-3xl font-bold text-center mb-6 service-button">
                       {item.heading1}
                     </h2>
-                  </>
+                  </React.Fragment>
                 );
               })}
 
@@ -742,54 +744,59 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                             justifyContent: "space-around",
                           }}
                         >
-                          {content?.expertise?.map((item: any) => {
-                            return (
-                              <Button
-                                className="service-button"
-                                onClick={() => {
-                                  this.setState({
-                                    clickedButton: `${item.button}`,
-                                  });
-                                }}
-                                style={{
-                                  borderBottom:
-                                    this.state.clickedButton ===
-                                    `${item.button}`
-                                      ? "2px solid #019dce"
-                                      : "none",
-                                  width: "-1px",
-                                  alignItems: "center",
-                                  fontSize:
-                                    this.state.clickedButton ===
-                                    `${item.button}`
-                                      ? "23px"
-                                      : "20px",
-                                  fontWeight: "bold",
-                                  borderRadius: 0,
-                                  background:
-                                    this.state.clickedButton ===
-                                    `${item.button}`
-                                      ? "#171717"
-                                      : "none",
-                                  color:
-                                    this.state.clickedButton ===
-                                    `${item.button}`
-                                      ? "#019dce"
-                                      : "white",
-                                }}
-                                disableRipple
-                              >
-                                {item.button}
-                              </Button>
-                            );
-                          })}
+                          {content?.expertise?.map(
+                            (item: any, index: number) => {
+                              return (
+                                <Button
+                                  key={index}
+                                  className="service-button"
+                                  onClick={() => {
+                                    this.setState({
+                                      clickedButton: `${item.button}`,
+                                    });
+                                  }}
+                                  style={{
+                                    borderBottom:
+                                      this.state.clickedButton ===
+                                      `${item.button}`
+                                        ? "2px solid #019dce"
+                                        : "none",
+                                    width: "-1px",
+                                    alignItems: "center",
+                                    fontSize:
+                                      this.state.clickedButton ===
+                                      `${item.button}`
+                                        ? "23px"
+                                        : "20px",
+                                    fontWeight: "bold",
+                                    borderRadius: 0,
+                                    background:
+                                      this.state.clickedButton ===
+                                      `${item.button}`
+                                        ? "#171717"
+                                        : "none",
+                                    color:
+                                      this.state.clickedButton ===
+                                      `${item.button}`
+                                        ? "#019dce"
+                                        : "white",
+                                  }}
+                                  disableRipple
+                                >
+                                  {item.button}
+                                </Button>
+                              );
+                            }
+                          )}
                         </Box>
                         <Box className="flex justify-center w-full p-16">
-                          {content?.expertise?.map((item: any) =>
+                          {content?.expertise?.map((item: any, index: number) =>
                             item.button === clickedButton
                               ? item?.images?.map((img: any) => {
                                   return (
                                     <Image
+                                      loading="lazy"
+                                      key={index}
                                       src={imageMap[img.img]?.src || img.img}
                                       alt={img.img || "imagetitle"}
                                       width={110}
@@ -854,6 +861,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                             >
                               {item?.images?.map((img: any, imgIndex: any) => (
                                 <Image
+                                  loading="lazy"
                                   key={imgIndex}
                                   src={imageMap[img.img]?.src || img.img}
                                   alt={img.img || "imagetitle"}
@@ -892,9 +900,10 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                   justifyContent="center"
                   style={{ width: "95%", margin: "0 auto" }}
                 >
-                  {content?.adaptable?.map((items: any) => {
+                  {content?.adaptable?.map((items: any, index) => {
                     return (
                       <Grid
+                        key={index}
                         item
                         sm={12}
                         md={6}
@@ -1060,21 +1069,22 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                         color: "#D9E3EA",
                       }}
                     >
-                      {content?.servicesData2?.map((service: any) =>
-                        this.state.clickedButton6 === service.label ? (
-                          <div>
-                            <div className="text-2xl font-bold text-[#019dce]">
-                              {service.label}
-                            </div>
+                      {content?.servicesData2?.map(
+                        (service: any, index: number) =>
+                          this.state.clickedButton6 === service.label ? (
+                            <div key={index}>
+                              <div className="text-2xl font-bold text-[#019dce]">
+                                {service.label}
+                              </div>
 
-                            <div
-                              className="text-lg  text-[#9BA9B4]"
-                              key={service.label}
-                            >
-                              {service.content}
+                              <div
+                                className="text-lg  text-[#9BA9B4]"
+                                key={service.label}
+                              >
+                                {service.content}
+                              </div>
                             </div>
-                          </div>
-                        ) : null
+                          ) : null
                       )}
                     </Paper>
                   </Grid>
@@ -1191,6 +1201,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                       <CardActionArea>
                         {item.image && (
                           <Image
+                            loading="lazy"
                             src={imageMap[item.image]?.src || item.image}
                             alt={item.title}
                             width={500}
@@ -1248,6 +1259,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                   <Grid item xs={12} lg={6} key={index}>
                     <div className="w-full h-full md:h-[400px] flex flex-col items-center">
                       <Image
+                        loading="lazy"
                         src={project.src}
                         alt={project.alt}
                         className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover rounded-xl"
@@ -1274,7 +1286,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             {/* **********************  End   ****************************** */}
 
             {/* ********************************** Contact Us *********************** */}
-            <ContactUs />
+            <LazyContactUsComponent />
 
             {/* ********************************** End *********************** */}
           </div>

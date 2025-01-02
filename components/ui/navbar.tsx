@@ -140,9 +140,9 @@ const menuData: Record<string, { title: string; items: any[] }> = {
         title: "FRONTEND Developers",
         subMenu: [
           { title: "AngularJS Developer", href: "/frontend/angular" },
-          { title: "ReactJS Developer", href: "/frontend/reactjs" },
-          { title: "VueJS Developer", href: "/frontend/vuejs" },
-          { title: "NextJS Developer", href: "/frontend/nextjs" },
+          { title: "ReactJS Developer", href: "/frontend/react" },
+          { title: "VueJS Developer", href: "/frontend/vue" },
+          { title: "NextJS Developer", href: "/frontend/next" },
         ],
       },
       {
