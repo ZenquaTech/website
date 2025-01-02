@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Grid, Paper, Typography, Divider } from "@material-ui/core";
+import { Box, Grid, Paper, Typography, Divider } from "@mui/material";
 import { FaRegCircleDot } from "react-icons/fa6";
 import { Button } from "reactstrap";
 
@@ -118,7 +118,7 @@ const Page = () => {
                   boxShadow: "none",
                 }}
               >
-                <Typography
+                <Box
                   className="w-full md:w-1/2"
                   style={{ color: "#A1A1A1", padding: "10px" }}
                 >
@@ -130,19 +130,19 @@ const Page = () => {
                   </Typography>
                   <Typography
                     variant="body1"
-                    className="text-2xl text-justify text-center mb-2 service-button lg:mt-0"
+                    className="text-justify text-center mb-2 service-button lg:mt-0"
                   >
                     ZenQua offers an excellent career where every day is filled with great excitement
                     and unmatchable growth. Our industry leaders guide in creating next-gen IT
                     solutions by using the latest tools and technologies.
                   </Typography>
-                </Typography>
+                </Box>
                 <Divider
                   orientation="vertical"
                   flexItem
                   style={{ backgroundColor: "#A1A1A1", width: "4px", margin: "0 2%" }}
                 />
-                <Typography
+                <Box
                   className="w-full md:w-1/2"
                   style={{
                     color: "#9BA9B4",
@@ -171,7 +171,7 @@ const Page = () => {
                       {title}
                     </Typography>
                   ))}
-                </Typography>
+                </Box>
               </Paper>
             </Paper>
           </Box>

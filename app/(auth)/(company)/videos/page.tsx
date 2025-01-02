@@ -1,5 +1,5 @@
 "use client";
-import { Paper, Typography, Box, Grid } from "@material-ui/core";
+import { Paper, Typography, Box, Grid } from "@mui/material";
 import React from "react";
 
 const Page = () => {
