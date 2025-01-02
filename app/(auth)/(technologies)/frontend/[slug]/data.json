@@ -5,7 +5,7 @@
              "heading1":"Angular JS Development Company",
              "heading2":"Custom AngularJS Development Services for Scalable and Dynamic Web Applications",
              "para":"ZenQua is a reputed AngularJS development company, specialized in crafting highly scalable & dynamic web applications with ease. Our construction expertise of JavaScript framework offers immaculate solutions tailored to meet the complexities of your business. Leverage the cutting-edge features of AngularJS Development, to gain a naturally developed & engaging products with user-friendly functionalities & flawless features. Our AngularJS Development services specializes in Data Binding, MVC Architecture, Built-in Scope, Routing & Multiple Views, Cross-platform development, Unit Testing, UI with HTML, Model-View Controller, Dependency Injection & Deep Linking.",
-             "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135705/Angularjs-1.png" ,
+             "image":"angular" ,
              "button":"Talk to Expert"          
          }
       ],
@@ -225,7 +225,30 @@
        "stateKey": "Custom",
        "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
      }
-   ] 
+   ],
+   "metaData":{
+  "title": "ReactJS Development",
+  "description": "ZenQua offers expert ReactJS development services for dynamic, high-performance web and mobile applications. With a focus on scalability, interactivity, and custom solutions, we specialize in Progressive Web Apps (PWA), Single Page Apps (SPA), and more. Enhance your project with our skilled ReactJS developers, tailored to your business needs.",
+  "keywords": [
+    "ReactJS development",
+    "custom web development",
+    "mobile app solutions",
+    "ReactJS services",
+    "Progressive Web Apps",
+    "Single Page Apps",
+    "web development company",
+    "interactive UI",
+    "app migration to React",
+    "enterprise web development",
+    "React Native",
+    "web app maintenance",
+    "scalable React applications",
+    "front-end development",
+    "interactive UI",
+    "ReactJS consulting",
+    "dynamic web applications"
+  ]
+}
 },
 "react": {
   "section1":[
@@ -233,7 +256,7 @@
          "heading1":"React JS Development Company",
          "heading2":"Expert ReactJS Development Services for High-Quality, Dynamic Web Applications",
          "para":"Enhance your ambitious projects with highest-grade build quality brought to you by ZenQua’s ReactJS development services. Experience the best of cutting-edge technology to develop responsive and visually appealing web and mobile applications. I-Verve as an established ReactJS development firm provides comprehensive services such as PWA (Progressive Web Apps), SPA (Single Page Apps), Static Site Generation, etc., to craft outstanding experiences for users. Our skilled experts leverage extensive open-source libraries and offer tailored Reactjs services for seamless page transitioning, efficient data updating, and connecting existing systems with React.",
-         "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135703/reactjs.png" ,
+         "image":"reactImage" ,
          "button":"Talk to Expert"          
      }
   ],
@@ -352,14 +375,14 @@
      {
          "title": "Time & Material Basis Model",
          "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-         "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+         "images":"timeMaterial",
          "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
          "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
      },
      {
          "title": "Dedicated Developer Model",
          "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-         "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+         "images":"dedicatedDevelopmentTeam",
          "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
          "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
      }
@@ -369,17 +392,17 @@
  {
    "title": "Backend Development",
    "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+   "image": "startupBusiness"
  },
  {
    "title": "Small & Medium Businesses",
    "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+   "image": "smallMediumBusiness"
  },
  {
    "title": "Large Businesses",
    "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-   "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+   "image": "largeBusiness"
  }
 ],
    "sectionexperties":[
@@ -393,17 +416,17 @@
  {
    "button": "Frame Work",
    "images":[
-     {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/ruby-on-rails.svg"},
-     {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/laravel.svg"},
-     {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/django.svg"},
-     {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/Codeignitor.svg"}
+     {"img": "rubyOnRails"},
+     {"img": "laravel"},
+     {"img": "django"},
+     {"img": "codeignitor"}
 ]
  },
  {
      "button": "Libraries",
      "images":[
-         {"img": "https://dwglogo.com/wp-content/uploads/2017/09/3630px-Nginx_logo-1024x704.png"},
-         {"img": "https://avatars.githubusercontent.com/u/47359?s=200&v=4"}
+         {"img": "nginx"},
+         {"img": "logoUser"}
     ]
    }
  
@@ -443,7 +466,30 @@
    "stateKey": "Custom",
    "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
  }
-] 
+],
+"metaData":{
+  "title": "ReactJS Development Services",
+  "description": "ZenQua offers expert ReactJS development services for dynamic, high-performance web and mobile applications. With a focus on scalability, interactivity, and custom solutions, we specialize in Progressive Web Apps (PWA), Single Page Apps (SPA), and more. Enhance your project with our skilled ReactJS developers, tailored to your business needs.",
+  "keywords": [
+    "ReactJS development",
+    "custom web development",
+    "mobile app solutions",
+    "ReactJS services",
+    "Progressive Web Apps",
+    "Single Page Apps",
+    "web development company",
+    "interactive UI",
+    "app migration to React",
+    "enterprise web development",
+    "React Native",
+    "web app maintenance",
+    "scalable React applications",
+    "front-end development",
+    "interactive UI",
+    "ReactJS consulting",
+    "dynamic web applications"
+  ]
+}
 },
   "vue": {
       "section1":[
@@ -451,7 +497,7 @@
              "heading1":"Vue JS Development Company",
              "heading2":"Powering Your Web Applications with Dynamic VueJS Development Services",
              "para":"Power your web applications with dynamic VueJS Expertise. ZenQua is a top Vue.JS development company offering a full suite of services deriving from in-depth Vue.JS consulting to single-page application development, seamless third-party integrations, application support, and maintenance. Utilizing the progressive framework of Vue. JS, let us help you create smooth, functionally-rich applications for your diverse use cases. Get in touch with us today for an exceptional web application experience.",
-             "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135703/vuejs_1.png",
+             "image":"vuejs",
              "button":"Talk to Expert"          
          }
       ],
@@ -655,7 +701,30 @@
        "stateKey": "Custom",
        "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
      }
-   ] 
+   ] ,
+   "metaData":{
+  "title": "ReactJS Development",
+  "description": "ZenQua offers expert ReactJS development services for dynamic, high-performance web and mobile applications. With a focus on scalability, interactivity, and custom solutions, we specialize in Progressive Web Apps (PWA), Single Page Apps (SPA), and more. Enhance your project with our skilled ReactJS developers, tailored to your business needs.",
+  "keywords": [
+    "ReactJS development",
+    "custom web development",
+    "mobile app solutions",
+    "ReactJS services",
+    "Progressive Web Apps",
+    "Single Page Apps",
+    "web development company",
+    "interactive UI",
+    "app migration to React",
+    "enterprise web development",
+    "React Native",
+    "web app maintenance",
+    "scalable React applications",
+    "front-end development",
+    "interactive UI",
+    "ReactJS consulting",
+    "dynamic web applications"
+  ]
+}
   },
 "knockout": {
   "section1":[
@@ -663,7 +732,7 @@
          "heading1":"Knockout JS Development Company",
          "heading2":"Building Scalable Web Applications with Custom KnockoutJS Development Services",
          "para":"ZenQua provides Custom KnockoutJS Development Services to build scalable web applications. Our expert team can develop modern and responsive web applications with KnockoutJS for a wide range of business needs. We offer the best in class services using KnockoutJS to develop robust, data-driven web applications. Moreover, our services are tailored to the latest industry trends & standards. All our services are reliable and deliverable on-time.",
-         "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135746/ASP.NET_.png" ,
+         "image":"aspNET" ,
          "button":"Talk to Expert"          
      }
   ],
@@ -883,7 +952,30 @@
    "stateKey": "Custom",
    "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
  }
-] 
+],
+"metaData":{
+  "title": "ReactJS Development",
+  "description": "ZenQua offers expert ReactJS development services for dynamic, high-performance web and mobile applications. With a focus on scalability, interactivity, and custom solutions, we specialize in Progressive Web Apps (PWA), Single Page Apps (SPA), and more. Enhance your project with our skilled ReactJS developers, tailored to your business needs.",
+  "keywords": [
+    "ReactJS development",
+    "custom web development",
+    "mobile app solutions",
+    "ReactJS services",
+    "Progressive Web Apps",
+    "Single Page Apps",
+    "web development company",
+    "interactive UI",
+    "app migration to React",
+    "enterprise web development",
+    "React Native",
+    "web app maintenance",
+    "scalable React applications",
+    "front-end development",
+    "interactive UI",
+    "ReactJS consulting",
+    "dynamic web applications"
+  ]
+}
 },
 "next": {
   "section1":[
@@ -891,7 +983,7 @@
          "heading1":"Next JS Development Company",
          "heading2":"Transform Your Web Presence with Expert NextJS Development Services",
          "para":"Transform Your Web Presence with Our Expert NextJS Development Services. Discover the power of NextJS and its highly efficient deployment capabilities. Get better performance, scalability and improved UI/UX experiences with the ultimate NextJS solutions provided by the ZenQua team of agile developers. Lead ahead in the digital world with enhanced web presence with our quality-centric and cost-effective NextJS development.",
-         "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135702/nextjs_1.png",
+         "image":"nextjs",
          "button":"Talk to Expert"          
      }
   ],
@@ -1010,14 +1102,14 @@
      {
          "title": "Time & Material Basis Model",
          "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-         "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+         "images":"timeMaterial",
          "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
          "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
      },
      {
          "title": "Dedicated Developer Model",
          "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-         "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+         "images":"dedicatedDevelopmentTeam",
          "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
          "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
      }
@@ -1027,17 +1119,17 @@
  {
    "title": "Backend Development",
    "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+   "image": "startupBusiness"
  },
  {
    "title": "Small & Medium Businesses",
    "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+   "image": "smallMediumBusiness"
  },
  {
    "title": "Large Businesses",
    "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-   "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+   "image": "largeBusiness"
  }
 ],
 "sectionexperties":[
@@ -1051,27 +1143,27 @@
  {
    "button": "Frame Work",
    "images":[
-     {"img":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/python-1.svg"},
-     {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/ruby-on-rails.svg"},
-     {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/laravel.svg"},
-     {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/django.svg"},
-     {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/Codeignitor.svg"}
+     {"img":"python"},
+     {"img": "rubyOnRails"},
+     {"img": "laravel"},
+     {"img": "django"},
+     {"img": "codeignitor"}
 ]
  },
  {
      "button": "Server",
      "images":[
-         {"img": "https://dwglogo.com/wp-content/uploads/2017/09/3630px-Nginx_logo-1024x704.png"},
-         {"img": "https://avatars.githubusercontent.com/u/47359?s=200&v=4"}
+         {"img": "nginx"},
+         {"img": "logoUser"}
     ]
    },
    {
      "button": "Database",
      "images":[
-         {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mysql.svg"},
-         {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/firebase.svg"},
-         {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mongodb.svg"},
-         {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/oracle.svg"}
+         {"img": "mysql"},
+         {"img": "firebase"},
+         {"img": "mongodb"},
+         {"img": "oracle"}
     ]
    }
  
@@ -1111,6 +1203,20 @@
    "stateKey": "Custom",
    "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
  }
-] 
+] ,
+"metaData":{
+  "title": "Next JS Development Services",
+  "description": "ZenQua offers expert Next JS development services that transform web presence with efficient deployment, improved performance, and scalable solutions. Our team specializes in SSR, integration, and static/dynamic websites, helping businesses build modern, high-performing applications.",
+  "keywords": [
+    "Next JS Development",
+    "Next JS SSR",
+    "Next JS Integration",
+    "Next JS Customization",
+    "Next JS Websites",
+    "Next JS Support",
+    "Next JS Maintenance",
+    "Next JS Framework"
+  ]
+}
 }
 }

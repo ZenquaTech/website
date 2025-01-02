@@ -117,7 +117,7 @@ export default function Footer() {
               {/* 2nd block */}
               {/* 3rd block */}
               <div className="text-sm ml-1">
-                <h6 className="text-gray-200 font-medium mb-1">Services</h6>
+                <h2 className="text-gray-200 font-medium mb-1">Services</h2>
                 <ul>
                   <li className="mb-1">
                     <Link
@@ -164,7 +164,7 @@ export default function Footer() {
 
               {/* 4th block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Contact Us</h6>
+                <h2 className="text-gray-200 font-medium mb-1">Contact Us</h2>
                 <ul>
                   <li className="mb-1">
                     <Link
