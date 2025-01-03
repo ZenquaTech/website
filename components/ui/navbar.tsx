@@ -140,9 +140,9 @@ const menuData: Record<string, { title: string; items: any[] }> = {
         title: "FRONTEND Developers",
         subMenu: [
           { title: "AngularJS Developer", href: "/frontend/angular" },
-          { title: "ReactJS Developer", href: "/frontend/reactjs" },
-          { title: "VueJS Developer", href: "/frontend/vuejs" },
-          { title: "NextJS Developer", href: "/frontend/nextjs" },
+          { title: "ReactJS Developer", href: "/frontend/react" },
+          { title: "VueJS Developer", href: "/frontend/vue" },
+          { title: "NextJS Developer", href: "/frontend/next" },
         ],
       },
       {
@@ -240,6 +240,7 @@ const Navbar = () => {
           >
             <Button
               aria-controls={`${menu}-menu`}
+              aria-expanded={openMenu === menu ? "true" : "false"}
               aria-haspopup="true"
               onMouseEnter={handleMenuEnter(menu)}
               onMouseLeave={handleMenuLeave}
@@ -266,6 +267,7 @@ const Navbar = () => {
             </Button>
             {menu !== "Expertise" && openMenu === menu && (
               <div
+                id={`${menu}-menu`}
                 onMouseEnter={handleMenuEnter(menu)}
                 onMouseLeave={handleMenuLeave}
                 style={{
@@ -287,7 +289,7 @@ const Navbar = () => {
                         flexDirection: "column",
                         backgroundColor: "#1B1A1F",
                         padding: "3% 7%",
-                        width:"98vw" ,
+                        width: "98vw",
                       }}
                     >
                       <Box style={{ display: "flex", flexDirection: "row" }}>
@@ -314,37 +316,41 @@ const Navbar = () => {
                             </Link>
                             {item?.subMenu?.length > 0 && (
                               <Box display="flex" flexDirection="column">
-                                {item.subMenu.map((subItem: any, subItemIndex: any) => (
-                                  <Link
-                                    key={subItemIndex}
-                                    href={subItem.href ? subItem.href : "/"}
-                                    passHref
-                                    onClick={handleItemClick}
-                                  >
-                                    <Typography
-                                      component="a"
+                                {item.subMenu.map(
+                                  (subItem: any, subItemIndex: any) => (
+                                    <Link
                                       key={subItemIndex}
-                                      style={{
-                                        color: "#ffffffbf",
-                                        fontSize: "12px",
-                                        fontWeight: "400",
-                                        cursor: "pointer",
-                                        opacity: "0.75",
-                                        lineHeight: "1.8rem",
-                                      }}
-                                      onMouseOver={(e) => {
-                                        const target = e.target as HTMLElement;
-                                        target.style.color = "#019dce";
-                                      }}
-                                      onMouseOut={(e) => {
-                                        const target = e.target as HTMLElement;
-                                        target.style.color = "#ffffffbf";
-                                      }}
+                                      href={subItem.href ? subItem.href : "/"}
+                                      passHref
+                                      onClick={handleItemClick}
                                     >
-                                      {subItem.title}
-                                    </Typography>
-                                  </Link>
-                                ))}
+                                      <Typography
+                                        component="a"
+                                        key={subItemIndex}
+                                        style={{
+                                          color: "#ffffffbf",
+                                          fontSize: "12px",
+                                          fontWeight: "400",
+                                          cursor: "pointer",
+                                          opacity: "0.75",
+                                          lineHeight: "1.8rem",
+                                        }}
+                                        onMouseOver={(e) => {
+                                          const target =
+                                            e.target as HTMLElement;
+                                          target.style.color = "#019dce";
+                                        }}
+                                        onMouseOut={(e) => {
+                                          const target =
+                                            e.target as HTMLElement;
+                                          target.style.color = "#ffffffbf";
+                                        }}
+                                      >
+                                        {subItem.title}
+                                      </Typography>
+                                    </Link>
+                                  )
+                                )}
                               </Box>
                             )}
                           </Box>
@@ -403,39 +409,41 @@ const Navbar = () => {
                             </Link>
                             {item.subMenu.length > 0 && (
                               <Box display="flex" flexDirection="column">
-                                {item.subMenu.map((subItem: any, subItemIndex: any) => (
-                                  <Link
-                                    key={subItemIndex}
-                                    href={subItem.href ? subItem.href : "/"}
-                                    passHref
-                                  >
-                                    <Typography
-                                      component="a"
+                                {item.subMenu.map(
+                                  (subItem: any, subItemIndex: any) => (
+                                    <Link
                                       key={subItemIndex}
-                                      style={{
-                                        color: "#ffffffbf",
-                                        fontSize: "12px",
-                                        fontWeight: "400",
-                                        cursor: "pointer",
-                                        opacity: "0.75",
-                                        lineHeight: "1.8rem",
-                                      }}
-                                      onMouseOver={(e) => {
-                                        const target =
-                                          e.target as HTMLElement;
-                                        target.style.color = "#019dce";
-                                      }}
-                                      onMouseOut={(e) => {
-                                        const target =
-                                          e.target as HTMLElement;
-                                        target.style.color = "#ffffffbf";
-                                      }}
-                                      onClick={() => handleMenuLeave}
+                                      href={subItem.href ? subItem.href : "/"}
+                                      passHref
                                     >
-                                      {subItem.title}
-                                    </Typography>
-                                  </Link>
-                                ))}
+                                      <Typography
+                                        component="a"
+                                        key={subItemIndex}
+                                        style={{
+                                          color: "#ffffffbf",
+                                          fontSize: "12px",
+                                          fontWeight: "400",
+                                          cursor: "pointer",
+                                          opacity: "0.75",
+                                          lineHeight: "1.8rem",
+                                        }}
+                                        onMouseOver={(e) => {
+                                          const target =
+                                            e.target as HTMLElement;
+                                          target.style.color = "#019dce";
+                                        }}
+                                        onMouseOut={(e) => {
+                                          const target =
+                                            e.target as HTMLElement;
+                                          target.style.color = "#ffffffbf";
+                                        }}
+                                        onClick={() => handleMenuLeave}
+                                      >
+                                        {subItem.title}
+                                      </Typography>
+                                    </Link>
+                                  )
+                                )}
                               </Box>
                             )}
                           </Box>
@@ -449,26 +457,32 @@ const Navbar = () => {
           </div>
         ))}
         <Button
+          id={`contactus-menu`}
           onMouseOver={(e) => {
             const target = e.target as HTMLElement;
             target.style.color = "#019dce";
           }}
+          style={{
+            backgroundColor: "transparent",
+            padding: "0",
+          }}
           onMouseOut={(e) => {
-            const target =
-              e.target as HTMLElement;
+            const target = e.target as HTMLElement;
             target.style.color = "#ffffffbf";
-          }}>
+          }}
+        >
           <Link href={"/contact-us"} passHref onClick={handleItemClick}>
-            <Box
+            <Typography
               style={{
                 color: "rgba(255, 255, 255, 0.75)",
+                fontFamily: "DM Sans, sans-serif",
                 textTransform: "capitalize",
-                fontSize: "16px",
+                fontSize: "0.875rempx",
                 fontWeight: "500",
               }}
             >
               Contact Us
-            </Box>
+            </Typography>
           </Link>
         </Button>
       </div>

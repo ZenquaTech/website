@@ -1,11 +1,17 @@
 {
   "nodejs": {
+    "metadata":{
+      "title": "Node.js Development Services",
+      "description": "Discover ZenQua's expertise in Node.js development. We provide custom Node.js solutions for businesses of all sizes, including app development, consulting, API integration, and maintenance. Our services ensure scalability, security, and performance optimization for your digital transformation.",
+      "keywords": "Node.js Development, Node.js Development Company, Node.js Consulting, Node.js Application Migration, Node.js API Development, Serverless Node.js Microservices, Node.js Maintenance and Support, Node.js Product Development, Backend Dashboard Development, Custom Node.js Solutions",
+       "url": "https://www.zenqua.com/backend/nodejs"
+    },
     "section1": [
       {
         "heading1": "Node JS Development Company",
         "heading2": "Accelerate Your Business with Our Node JS Development Expertise",
         "para": "Experience accelerated business growth with the help of ZenQua's Node JS development expertise. Our team is composed of experienced professionals in the areas of Node JS development that develops applications from scratch, integrates to existing teams and adopts versatile full-stack approaches built on Node.JS platform. We specialize in sustainable and feature-rich applications, utilizing best-practice techniques resulting in cost and time-efficient solutions that are reliable and highly responsive. Let us understand your specific business needs and help power your company’s digital transformation.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/07/18135051/nodejs-1920x1701-min.png",
+        "image": "nodejs",
         "button": "Talk to Expert"
       }
     ],
@@ -124,14 +130,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "timeMaterial",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -140,17 +146,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "startupBusiness"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "smallMediumBusiness"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "largeBusiness"
       }
     ],
     "sectionexperties": [
@@ -163,34 +169,34 @@
     {
       "button": "Frameworks",
       "images":[
-        {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/vuejs.svg"},
-        {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/reactjs.svg"},
-        {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/angular-1.svg"},
-        {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/nextjs.svg"}
+        {"img": "vuejs"},
+        {"img": "reactjs"},
+        {"img": "angular"},
+        {"img": "nextjs"}
         ]
     },
     {
         "button": "Languages",
         "images":[
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mysql.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/firebase.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mongodb.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/oracle.svg"}
+            {"img": "mysql"},
+            {"img": "firebase"},
+            {"img": "mongodb"},
+            {"img": "oracle"}
        ]
       },
     {
         "button": "Data Management",
         "images":[
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Azure.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Aws.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/google.svg"}
+            {"img": "azure"},
+            {"img": "aws"},
+            {"img": "google"}
        ]
       },
         {
             "button": "Search",
             "images":[
-                {"img": "https://dwglogo.com/wp-content/uploads/2017/09/3630px-Nginx_logo-1024x704.png"},
-                {"img": "https://avatars.githubusercontent.com/u/47359?s=200&v=4"}
+                {"img": "nginx"},
+                {"img": "logoUser"}
   
            ]
           }
@@ -233,12 +239,18 @@
     ]
   },
   "nestjs": {
+    "metadata": {
+    "title": "NestJS Development Services",
+    "description": "Partner with ZenQua, a leading NestJS development company, to build scalable, efficient, and reliable backend solutions. Our expert services include web development, eCommerce solutions, REST API integration, and custom app development. Enjoy secure, high-performance applications tailored to your business needs with flexible hiring models and end-to-end support.",
+    "keywords": "NestJS development, custom backend solutions, NestJS web development, eCommerce development with NestJS, REST API integration with NestJS, scalable NestJS applications, NestJS consulting services, offshore NestJS development, NestJS experts, dynamic app development with NestJS, backend systems using NestJS, NestJS application maintenance, secure web applications with NestJS, ZenQua NestJS development, modern NestJS frameworks, NestJS microservices, enterprise NestJS solutions, real-time apps with NestJS, NestJS and TypeScript development, high-performance backend systems",
+    "url": "https://www.zenqua.com/backend/nestjs"
+    },
     "section1": [
       {
         "heading1": "Nest Js Development Company",
         "heading2": "Elevating Your Backend Development with NestJS: Your Trusted Partner",
         "para": "Leverage NestJS to elevate your backend development by partnering with ZenQua, a US-based Development Company. Tap into the readability, expressiveness and high extensibility of NestJS to build custom web and mobile solutions. Get expert and end-to-end NestJS development services to take your business to the next level.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/07/18135050/nestjs_1-1920x1701-min.png",
+        "image": "ror",
         "button": "Talk to Expert"
       }
     ],
@@ -465,12 +477,18 @@
     ]
   },
   "ror": {
+    "metadata": {
+    "title": "ROR Development Services",
+    "description": "Partner with ZenQua for scalable ROR websites and applications. Leverage our expertise, tools, and robust tech stack to accelerate your business with innovative solutions.",
+    "keywords": "ROR development, custom ROR applications, ROR web development, ROR backend services, machine learning ROR solutions, offshore ROR team, scalable web applications",
+    "url": "https://www.zenqua.com/backend/ror"
+    },
     "section1": [
       {
         "heading1": " ROR Development Company",
         "heading2": "Partner with the Best ROR Development Services Provider",
         "para": "Partner with the best ROR Development Services Provider – ZenQua. With experienced ror resources, high-end tools, and robust tech stack, we are specialized in crafting scalable ROR websites and applications that will stand high against any business challenges. From PWA apps to Data Science solutions, get ready to accelerate your business with our wide array of ROR Development Services. Leverage our expertise to experience faster delivery models, best-in-class performance, and innovative solutions without compromising on quality.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/07/18135050/nestjs_1-1920x1701-min.png",
+        "image": "ror",
         "button": "Talk to Expert"
       }
     ],
@@ -589,14 +607,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "timeMaterial",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -605,17 +623,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "startupBusiness"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "smallMediumBusiness"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "largeBusiness"
       }
     ],
     "sectionexperties": [
@@ -628,34 +646,34 @@
     {
       "button": "Front End",
       "images":[
-        {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/vuejs.svg"},
-        {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/reactjs.svg"},
-        {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/angular-1.svg"},
-        {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/nextjs.svg"}
+        {"img": "vuejs"},
+        {"img": "reactjs"},
+        {"img": "angular"},
+        {"img": "nextjs"}
         ]
     },
     {
         "button": "Database",
         "images":[
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mysql.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/firebase.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mongodb.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/oracle.svg"}
+            {"img": "mysql"},
+            {"img": "firebase"},
+            {"img": "mongodb"},
+            {"img": "oracle"}
        ]
       },
     {
         "button": "Deployment",
         "images":[
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Azure.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Aws.svg"},
-            {"img": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/google.svg"}
+            {"img": "azure"},
+            {"img": "aws"},
+            {"img": "google"}
        ]
       },
       {
           "button": "Apache Foundation",
           "images":[
-              {"img": "https://dwglogo.com/wp-content/uploads/2017/09/3630px-Nginx_logo-1024x704.png"},
-              {"img": "https://avatars.githubusercontent.com/u/47359?s=200&v=4"}
+              {"img": "nginx"},
+              {"img": "logoUser"}
 
          ]
         }

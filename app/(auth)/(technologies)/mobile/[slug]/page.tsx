@@ -18,7 +18,23 @@ import CountUp from "react-countup";
 import Carousel from "react-material-ui-carousel";
 import "./styles.css";
 import ContactUs from "@/components/ui/contactus";
-
+import timeMaterial from "@/components/assets/img/reactjsimg/Time-Material.webp";
+import dedicatedDevelopmentTeam from "@/components/assets/img/reactjsimg/dedicateddevelopmentteam.webp";
+import largeBusiness from "@/components/assets/img/reactjsimg/large_business.webp";
+import startupBusiness from "@/components/assets/img/reactjsimg/startup-business.webp";
+import reactNative from "@/components/assets/img/angularimg/react-native.webp";
+import smallMediumBusiness from "@/components/assets/img/reactjsimg/small-medium_business.webp";
+import Image from "next/image";
+import webDesginIcon from "@/components/assets/img/projectImg/web-design.webp";
+import softwareDeveloperIcon from "@/components/assets/img/projectImg/software-developer.webp";
+const imageMap: any = {
+  timeMaterial,
+  dedicatedDevelopmentTeam,
+  largeBusiness,
+  startupBusiness,
+  smallMediumBusiness,
+  reactNative,
+};
 const scrollToBottom = () => {
   window.scrollTo({
     top: document.body.scrollHeight,
@@ -27,25 +43,25 @@ const scrollToBottom = () => {
 };
 const projects = [
   {
-    src: "https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg",
+    src: webDesginIcon,
     alt: "Enterprise e-Commerce Store – CAMPSAVER",
-    description: "Enterprise e-Commerce Store – CAMPSAVER"
+    description: "Enterprise e-Commerce Store – CAMPSAVER",
   },
   {
-    src: "https://media.istockphoto.com/id/1362508194/vector/modern-3d-illustration-of-web-development.jpg?s=612x612&w=0&k=20&c=FzoSgPjIPiPV7wFtCHCFDOehKVgOkDWVdgtZb8N797s=",
+    src: softwareDeveloperIcon,
     alt: "UAE Government Application – DTMC",
-    description: "UAE Government Application – DTMC"
+    description: "UAE Government Application – DTMC",
   },
   {
-    src: "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg",
+    src: webDesginIcon,
     alt: "Marshalls World of Sport Website",
-    description: "Marshalls World of Sport Website"
+    description: "Marshalls World of Sport Website",
   },
   {
-    src: "https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg",
+    src: softwareDeveloperIcon,
     alt: "Employees Shift Management Web App – Shift Manager",
-    description: "Employees Shift Management Web App – Shift Manager"
-  }
+    description: "Employees Shift Management Web App – Shift Manager",
+  },
 ];
 interface PageState {
   hoveredCircle: number | null;
@@ -207,21 +223,49 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* ************************section1********************************** */}
 
             {content?.section1?.map((item: any, index: any) => (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4" key={index}>
+              <div
+                className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                key={index}
+              >
                 <div className="bg-transparent p-8 flex flex-col text-left">
-                  <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">{item.heading1}</h2>
+                  <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">
+                    {item.heading1}
+                  </h2>
                   <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA]">
                     {item.heading2}
                   </h1>
                   <p className="text-medium my-2 text-justify text-[#9BA9B4]">
                     {item.para}
                   </p>
-                  <button className="bg-[#019dce] text-[#D9E3EA] text-md mt-4 px-6 rounded-lg py-2 w-40 font-medium" onClick={() => scrollToBottom()}>
+                  <Button
+                    variant="contained"
+                    onClick={() => scrollToBottom()}
+                    style={{
+                      alignItems: "center",
+                      fontSize: "15px",
+                      marginTop: "2%",
+                      textAlign: "center",
+                      flexWrap: "wrap",
+                      backgroundColor: "#019dce",
+                      color: "#D9E3EA",
+                      padding: "2%",
+                      fontWeight: "bold",
+                      borderRadius: "10px",
+                      width: "160px",
+                      textTransform: "none",
+                    }}
+                  >
                     {item.button}
-                  </button>
+                  </Button>
                 </div>
                 <div className="mt-20 flex justify-center">
-                  <img src={item.image} alt="" className="object-contain" />
+                  <Image
+                    src={imageMap[item.image]?.src || item.image}
+                    alt={item.heading1}
+                    className="object-contain"
+                    width={880}
+                    height={799}
+                  />
                 </div>
               </div>
             ))}
@@ -263,8 +307,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
                       <Typography
                         variant="body1"
-                        style={{ color: "#9BA9B4", marginLeft: "2%", fontSize: '16px', textAlign: 'justify' }}
-
+                        style={{
+                          color: "#9BA9B4",
+                          marginLeft: "2%",
+                          fontSize: "16px",
+                          textAlign: "justify",
+                        }}
                       >
                         {item.para}
                       </Typography>
@@ -290,7 +338,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                           color: "#D9E3EA",
                           padding: "2%",
                           fontWeight: "bold",
-                          textTransform: 'none',
+                          textTransform: "none",
                           width: "80%",
                         }}
                       >
@@ -336,12 +384,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               {content.item1.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
                   <Box
-                    sx={{
+                    style={{
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
                       height: "500px",
-                      borderRadius: '20px',
+                      borderRadius: "20px",
                       flexWrap: "wrap",
                     }}
                   >
@@ -356,9 +404,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     >
                       {" "}
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{ paddingLeft: "3%" }}>
-                        {item.title}
-                      </Box>
+                      <span style={{ paddingLeft: "3%" }}>{item.title}</span>
                     </Typography>
 
                     <Typography
@@ -385,7 +431,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       padding: "2rem",
                       height: "500px",
                       flexWrap: "wrap",
-                      borderRadius: '20px',
+                      borderRadius: "20px",
                     }}
                   >
                     <Typography
@@ -399,9 +445,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{paddingLeft: "3%" }}>
-                        {item.title}
-                      </Box>
+                      <span style={{ paddingLeft: "3%" }}>{item.title}</span>
                     </Typography>
                     <Typography
                       style={{
@@ -447,7 +491,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       margin: "1rem",
                       padding: "2rem",
                       height: "500px",
-                      borderRadius: '20px',
+                      borderRadius: "20px",
                       flexWrap: "wrap",
                     }}
                   >
@@ -462,9 +506,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{ paddingLeft: "3%" }}>
-                        {item.title}
-                      </Box>
+                      <span style={{ paddingLeft: "3%" }}>{item.title}</span>
                     </Typography>
                     <Typography
                       style={{
@@ -489,7 +531,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       margin: "1rem",
                       padding: "2rem",
                       height: "500px",
-                      borderRadius: '20px',
+                      borderRadius: "20px",
                       flexWrap: "wrap",
                     }}
                   >
@@ -504,9 +546,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{ paddingLeft: "3%" }}>
-                        {item.title}
-                      </Box>
+                      <span style={{ paddingLeft: "3%" }}>{item.title}</span>
                     </Typography>
                     <Typography
                       style={{
@@ -587,22 +627,24 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 <Grid container spacing={2}>
                   {content.project.map((item: any, index: any) => (
                     <Grid key={index} item xs={12} md={6} lg={3}>
-                    <div
-                      key={index}
-                     className="flex flex-col items-center bg-white p-8 max-w[100%] rounded-t-xl"
-                      data-aos="fade-up"
-                      data-aos-delay={index * 200}
-                    >
-                      <Box className="flex justify-center items-center text-[#019dce]">
-                        <div className="text-4xl font-bold text-black">
-                          <CountUp end={item.number} />
+                      <div
+                        key={index}
+                        className="flex flex-col items-center bg-white p-8 max-w[100%] rounded-t-xl"
+                        data-aos="fade-up"
+                        data-aos-delay={index * 200}
+                      >
+                        <Box className="flex justify-center items-center text-[#019dce]">
+                          <div className="text-4xl font-bold text-black">
+                            <CountUp end={item.number} />
+                          </div>
+                          <AddIcon style={{ fontSize: "40px" }} />
+                        </Box>
+                        <div className="text-md text-[#000] font-medium">
+                          {item.title}{" "}
                         </div>
-                        <AddIcon style={{ fontSize: "40px" }} />
-                      </Box>
-                      <div className="text-md text-[#000] font-medium">{item.title} </div>
-                    </div>
-                    <div className="h-[5px] bg-[#019dce] mt-[15px] w-full text-[#019dce]"></div>
-                  </Grid>
+                      </div>
+                      <div className="h-[5px] bg-[#019dce] mt-[15px] w-full text-[#019dce]"></div>
+                    </Grid>
                   ))}
                 </Grid>
               </div>
@@ -676,7 +718,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                                 height: "90%",
                                 width: "70%",
                               }}
-                              src={items.images}
+                              src={imageMap[items.images]?.src || items.images}
                               alt="Time & Material Model"
                             />
                           </Box>
@@ -692,8 +734,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                                 color: "#9BA9B4",
                                 width: "50%",
                                 padding: "10px",
-                                textAlign:'justify',
-                                fontSize:'16px',
+                                textAlign: "justify",
+                                fontSize: "16px",
                               }}
                             >
                               {items.para1}
@@ -793,9 +835,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       {content.servicesData2.map((service: any) =>
                         this.state.clickedButton6 === service.label ? (
                           <div>
-                            <div
-                              className="text-2xl font-bold text-[#019dce]"
-                            >
+                            <div className="text-2xl font-bold text-[#019dce]">
                               {service.label}
                             </div>
 
@@ -914,8 +954,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     <Grid item xs={12} sm container>
                       <CardActionArea>
                         {item.image && (
-                          <img
-                            src={item.image}
+                          <Image
+                            src={imageMap[item.image]?.src || item.image}
                             alt={item.title}
                             width={500}
                             height={400}
@@ -962,10 +1002,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               spacing={4}
             >
               <Grid item xs={12}>
-                <h2
-                  className=" font text-center uppercase">
-                  PORTFOLIO
-                </h2>
+                <h2 className=" font text-center uppercase">PORTFOLIO</h2>
                 <h2 className="text-3xl font-bold text-center mb-6 txt-[#D9E3EA]  ">
                   Why Outsource Your Project to ZenQua?
                 </h2>
@@ -974,7 +1011,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 {projects?.map((project, index) => (
                   <Grid item xs={12} lg={6} key={index}>
                     <div className="w-full h-full md:h-[400px] flex flex-col items-center">
-                      <img
+                      <Image
                         src={project.src}
                         alt={project.alt}
                         className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover rounded-xl"
@@ -996,12 +1033,11 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   </Box>
                 </Grid>
               </Grid>
-
             </Grid>
             {/* **********************  End   ****************************** */}
 
             {/* ********************************** Contact Us *********************** */}
-           <ContactUs/>
+            <ContactUs />
             {/* ********************************** End *********************** */}
           </div>
         </MainWrapper>
