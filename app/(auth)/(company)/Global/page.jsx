@@ -1,6 +1,6 @@
 "use client";
 import React ,{useState} from 'react';
-import { Button, Box, Typography, Grid, styled } from "@material-ui/core";
+import { Box, Typography, Grid, styled } from "@material-ui/core";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -450,7 +450,7 @@ export default function Global() {
             >
               Fixed Price 
             </Typography>
-            <Typography >
+            <Box >
               <Box
             style={{
                margin: "1rem",
@@ -474,7 +474,7 @@ export default function Global() {
               </li>
             </ul>
           </Box>
-            </Typography>
+            </Box>
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
@@ -492,7 +492,7 @@ export default function Global() {
             >
               Time And Material  
             </Typography>
-            <Typography >
+            <Box >
               <Box
             style={{
                margin: "1rem",
@@ -516,7 +516,7 @@ export default function Global() {
               </li>
             </ul>
           </Box>
-            </Typography>
+            </Box>
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
@@ -534,7 +534,7 @@ export default function Global() {
             >
               Dedicated Team 
             </Typography>
-            <Typography >
+            <Box >
               <Box
             style={{
                margin: "1rem",
@@ -558,7 +558,7 @@ export default function Global() {
               </li>
             </ul>
           </Box>
-            </Typography>
+            </Box>
           </Box>
         </Grid>
         </Grid>
@@ -607,7 +607,6 @@ const MainWrapper = styled(Box)({
     justifyContent: "center",
     flexDirection: "column",
     textAlign: "center",
-    // width: '50vw',
     margin: "50px",
     padding: "40px",
   },

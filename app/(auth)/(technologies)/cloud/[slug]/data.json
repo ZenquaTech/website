@@ -5,7 +5,7 @@
              "heading1":"AWS Cloud Development Company",
              "heading2":"AWS Managed services and cloud development Services",
              "para":"Experience the power of ZenQua's Amazon Cloud Managed Services and Cloud Development Services. Leverage our team of experienced professionals to transform your on-premise business processes and drive strategic advantages using AWS cloud services. We employ a tried and tested methodology to revolutionise your entire technological infrastructure, allowing for easy adaptability and enhancing its responsiveness. Our experts can help you efficiently create cloud infrastructures that are fast, highly secure and less complex to implement. Rely on ZenQua for comprehensive cloud solutions that fit your unique needs.",
-             "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135731/AWS.png" ,
+             "image":"../images/webpFile/AWS.webp" ,
              "button":"Talk to Expert"          
          }
       ],
@@ -124,14 +124,14 @@
          {
              "title": "Time & Material Basis Model",
              "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-             "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+             "images":"../images/webpFile/Time-Material.webp",
              "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
              "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
          },
          {
              "title": "Dedicated Developer Model",
              "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-             "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+             "images":"../images/webpFile/dedicated-development_team-2.webp",
              "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
              "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
          }
@@ -141,17 +141,17 @@
      {
        "title": "Backend Development",
        "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+       "image": "../images/webpFile/small-medium_business.webp"
      },
      {
        "title": "Small & Medium Businesses",
        "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+       "image": "../images/webpFile/startup-business.webp"
      },
      {
        "title": "Large Businesses",
        "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+       "image": "../images/webpFile/large_business.webp"
      }
    ],
    "servicesData2": [
@@ -189,7 +189,31 @@
        "stateKey": "Custom",
        "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
      }
-   ] 
+   ],
+   "metadata": {
+      "title": "AWS Cloud Development Services | ZenQua - Expert AWS Solutions & Migration",
+      "description": "ZenQua offers comprehensive AWS cloud development services, specializing in cloud migrations, AWS consulting, and managed services. Our team of AWS-certified professionals delivers tailored solutions to enhance scalability, security, and performance for your business. We provide end-to-end services including application development, cloud infrastructure optimization, and 24/7 support for AWS environments. Leverage the power of AWS with ZenQua's expert services for reliable, cost-effective cloud solutions.",
+      "keywords": [
+        "AWS cloud development services",
+        "AWS migration services",
+        "AWS consulting services",
+        "AWS cloud optimization",
+        "AWS managed services",
+        "AWS application development",
+        "AWS cloud infrastructure",
+        "AWS-certified professionals",
+        "AWS security and compliance",
+        "AWS cloud solutions",
+        "AWS support and maintenance",
+        "Cloud business intelligence with AWS",
+        "AWS cloud scalability",
+        "AWS integrations and deployments",
+        "AWS performance optimization",
+        "Cloud app modernization with AWS"
+      ],
+      "url": "https://www.zenqua.com/cloud/aws"
+      }
+
 },
 "azure": {
     "section1":[
@@ -197,7 +221,7 @@
            "heading1":"Microsoft Azure Development Company",
            "heading2":"Cloud-centric web solutions by our Microsoft Azure Certified Experts",
            "para":"ZenQua's Microsoft certified experts utilize the power of Azure to drive down costs, improve productivity, deploy applications faster, and leverage advanced payment models. We are experienced in deploying cloud-centric web solutions across multiple languages, such as VB, C#, .NET and more. Make the move to Azure for your enterprise and ZenQua can manage the shift with minimal change or disruption to existing code. We create secure environments to develop, deploy and run your application on Microsoft’s data centres that span across the globe. From boosting scalability to enhancing security and flexibility, ZenQua has the skills and experience to pivot your app for devices and frameworks. Deploy your next-gen web solution backed by Microsoft Azure.",
-           "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135729/Azure.png" ,
+           "image":"../images/webpFile/Azure.webp" ,
            "button":"Talk to Expert"          
        }
     ],
@@ -316,14 +340,14 @@
        {
            "title": "Time & Material Basis Model",
            "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+           "images":"../images/webpFile/Time-Material.webp",
            "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
            "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
        },
        {
            "title": "Dedicated Developer Model",
            "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+           "images":"../images/webpFile/dedicated-development_team-2.webp",
            "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
            "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
        }
@@ -333,17 +357,17 @@
    {
      "title": "Backend Development",
      "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+     "image": "../images/webpFile/small-medium_business.webp"
    },
    {
      "title": "Small & Medium Businesses",
      "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+     "image": "../images/webpFile/startup-business.webp"
    },
    {
      "title": "Large Businesses",
      "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+     "image": "../images/webpFile/large_business.webp"
    }
  ],
  "servicesData2": [
@@ -381,7 +405,34 @@
      "stateKey": "Custom",
      "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
    }
- ] 
+ ],
+ "metadata": {
+    "title": "Azure Cloud Development Services | ZenQua - Expert Azure Solutions & Migration",
+    "description": "ZenQua offers comprehensive Azure cloud development services, including Azure app development, migration, and cloud optimization. Our certified Azure professionals help businesses enhance scalability, security, and performance with tailored cloud solutions. We specialize in developing custom Azure web, mobile, and hybrid applications, leveraging the full potential of Microsoft Azure technologies. Partner with ZenQua for seamless Azure integration, performance optimization, and 24/7 support for your Azure environment.",
+    "keywords": [
+        "Azure cloud development services",
+        "Azure app development",
+        "Azure migration services",
+        "Azure consulting services",
+        "Azure cloud optimization",
+        "Azure managed services",
+        "Azure web development",
+        "Azure mobile app development",
+        "Azure hybrid app development",
+        "Azure-certified professionals",
+        "Azure cloud solutions",
+        "Azure analytics services",
+        "Azure performance optimization",
+        "Azure cloud infrastructure",
+        "Azure security and compliance",
+        "Azure application migration",
+        "Azure cloud scalability",
+        "Azure enterprise mobility",
+        "Azure cloud automation",
+        "Custom Azure solutions"
+    ],
+    "url": "https://www.zenqua.com/cloud/azure"
+    } 
 },
 "google": {
     "section1":[
@@ -389,7 +440,7 @@
            "heading1":"Google Cloud Development Company",
            "heading2":"Google Cloud Platform Application Development Services",
            "para":"ZenQua provides a comprehensive suite of Google Cloud Platform Application Development Services. Leverage our expertise in multi-dimensional google app engine and Google Cloud solutions to ensure post-modern efficiency and optimal performance. We have highly-skilled domain experts to develop customised solutions along with enterprise-scale implementations, maintenance and support services. Our team is ever-ready to help you with cloud migrations, app engine website consulting and data integration. Let us bring efficiency and rapid access to information to your business.",
-           "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135730/Google_Cloud.png" ,
+           "image":"../images/webpFile/Google_Cloud.webp" ,
            "button":"Talk to Expert"          
        }
     ],
@@ -508,14 +559,14 @@
        {
            "title": "Time & Material Basis Model",
            "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+           "images":"../images/webpFile/Time-Material.webp",
            "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
            "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
        },
        {
            "title": "Dedicated Developer Model",
            "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+           "images":"../images/webpFile/dedicated-development_team-2.webp",
            "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
            "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
        }
@@ -525,17 +576,17 @@
    {
      "title": "Backend Development",
      "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+     "image": "../images/webpFile/small-medium_business.webp"
    },
    {
      "title": "Small & Medium Businesses",
      "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+     "image": "../images/webpFile/startup-business.webp"
    },
    {
      "title": "Large Businesses",
      "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+     "image": "../images/webpFile/large_business.webp"
    }
  ],
  "servicesData2": [
@@ -573,6 +624,33 @@
      "stateKey": "Custom",
      "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
    }
- ] 
+ ],
+ "metadata": {
+    "title": "Google Cloud Development Services | ZenQua - Expert GCP Solutions & Migration",
+    "description": "ZenQua offers expert Google Cloud Platform (GCP) development services, including cloud migration, consulting, and optimization. Our certified GCP professionals specialize in scalable, secure, and high-performance cloud solutions tailored to your business needs. We provide custom GCP web, mobile, and hybrid app development, integrating advanced Google Cloud technologies for optimal results. With end-to-end support and seamless migration services, ZenQua ensures your Google Cloud environment is fully optimized for performance and efficiency.",
+    "keywords": [
+        "Google Cloud development services",
+        "GCP app development",
+        "Google Cloud migration services",
+        "GCP consulting services",
+        "Google Cloud optimization",
+        "Google Cloud managed services",
+        "GCP web development",
+        "Google Cloud mobile app development",
+        "Google hybrid app development",
+        "GCP-certified professionals",
+        "Google Cloud solutions",
+        "Google Cloud analytics services",
+        "GCP performance optimization",
+        "Google Cloud infrastructure",
+        "Google Cloud security and compliance",
+        "Google Cloud application migration",
+        "Google Cloud scalability",
+        "GCP enterprise mobility",
+        "Google Cloud automation",
+        "Custom Google Cloud solutions"
+    ],
+    "url": "https://www.zenqua.com/cloud/google"
+    }  
 }
 }

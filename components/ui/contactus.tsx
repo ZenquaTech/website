@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { Grid, Box, Button } from "@mui/material";
 import emailjs from "@emailjs/browser";
 
@@ -90,7 +90,7 @@ const ContactUs = () => {
     budget: "",
     projectBrief: "",
   });
-  // console.log(formData,"formData")
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
@@ -103,11 +103,7 @@ const ContactUs = () => {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    // if (!formData.captchaChecked) {
-    //   alert("Please check the 'I'm not a robot' checkbox.");
-    //   return;
-    // }
-
+  
     const templateParams = {
       from_name: formData.firstName + " " + formData.lastName,
       to_name: "Ayush tule",
@@ -138,7 +134,7 @@ const ContactUs = () => {
       )
       .then((response) => {
         alert("Email sent successfully!");
-        // Reset form
+       
         setFormData({
           firstName: "",
           lastName: "",
@@ -169,7 +165,7 @@ const ContactUs = () => {
               width: "80%",
               margin: "15px",
             }}
-            src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg"
+            src="../images/webpFile/Time-Material.webp"
             alt="Time & Material Model"
           />
           <Box>

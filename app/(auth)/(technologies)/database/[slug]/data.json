@@ -5,7 +5,7 @@
         "heading1": "MySQL Development Company",
         "heading2": "End-to-end MySQL database development solutions",
         "para": "Drive innovation and support mission-critical database deployments with ZenQua services. With unbeatable reliability and scalability, benefit from high-performance storage, data encryption, storage and process optimizations. Experience millisecond inactivity and huge throughput in accordance with your Business needs while progressively controlling cost and performance. Replicate data across availability zones and reap the benefits of assured four 9s least uptime and RPO=0 configurations while avoiding the anguish of downtime and the expense of data loss with guaranteed nine 9s data durability. Steadily reduce your costs with MySQL automation and cold data tiering to gain cloud storage savings of up to 70%.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135620/mysql_1.png",
+        "image": "../images/webpFile/mysql_1.webp",
         "button": "Talk to Expert"
       }
     ],
@@ -124,14 +124,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "../images/webpFile/Time-Material.webp",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "../images/webpFile/dedicated-development_team-2.webp",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -140,17 +140,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "../images/webpFile/small-medium_business.webp"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "../images/webpFile/startup-business.webp"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "../images/webpFile/large_business.webp"
       }
     ],
     "servicesData2": [
@@ -187,7 +187,29 @@
         "stateKey": "Custom",
         "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
       }
-    ]
+    ],
+    "metadata": {
+    "title": "MySQL Development Company | Expert MySQL Solutions for Scalable & Secure Databases",
+    "description": "ZenQua specializes in end-to-end MySQL development services, offering tailored solutions for startups, SMEs, and enterprises. Our expertise includes database architecture, optimization, performance tuning, data migration, cloud hosting, and maintenance. Leverage our experienced team for scalable, secure, and high-performance MySQL-based web applications with flexible hiring models and cost-effective solutions.",
+    "keywords": [
+      "MySQL development company",
+      "MySQL database solutions",
+      "Custom MySQL applications",
+      "MySQL database optimization",
+      "MySQL performance tuning",
+      "MySQL data migration services",
+      "MySQL cloud hosting",
+      "MySQL database architecture",
+      "MySQL database support",
+      "Offshore MySQL developers",
+      "Dedicated MySQL development team",
+      "Enterprise database solutions",
+      "MySQL backup and restore services",
+      "Full-stack MySQL services",
+      "MySQL consulting services"
+    ],
+    "url": "https://www.zenqua.com/database/mysql"
+    }
   },
   "postgresql": {
     "section1": [
@@ -195,7 +217,7 @@
         "heading1": "PostgreSQL Development Company",
         "heading2": "Custom PostgreSQL services to fuel applications with scalability",
         "para": "At ZenQua, we offer custom PostgreSQL services designed to fuel applications with scalability, reliability and data integrity. Our PostgreSQL database server management services help you store, access and maintain transactional data to drive application health and critical decision making. Leverage the advanced capabilities of PostgreSQL in an efficient and powerful data resource. Seamlessly incorporate managed data services into your application runtime to build robust applications fortified with a reliable data layer. By outsourcing PostgreSQL database management to us, you can maximize the effectiveness of your data without having to worry about tedious database setup, maintenance and upkeep.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135718/nodejs.png",
+        "image": "../images/webpFile/nodejs.webp",
         "button": "Talk to Expert"
       }
     ],
@@ -314,14 +336,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "../images/webpFile/Time-Material.webp",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "../images/webpFile/dedicated-development_team-2.webp",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -330,17 +352,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "../images/webpFile/small-medium_business.webp"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "../images/webpFile/startup-business.webp"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "../images/webpFile/large_business.webp"
       }
     ],
     "servicesData2": [
@@ -377,7 +399,23 @@
         "stateKey": "Custom",
         "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
       }
-    ]
+    ],
+    "metadata": {
+      "title": "Comprehensive PostgreSQL Development Services | ZenQuas",
+      "description": "Discover ZenQua’s expert PostgreSQL development services, offering scalable database solutions, API development, tuning, migration, and custom applications. Optimize your applications with advanced PostgreSQL capabilities for reliability, security, and performance.",
+      "keywords": [
+        "PostgreSQL development services",
+        "PostgreSQL database solutions",
+        "custom PostgreSQL API development",
+        "PostgreSQL tuning and optimization",
+        "PostgreSQL migration services",
+        "PostgreSQL support and maintenance",
+        "scalable database solutions",
+        "offshore PostgreSQL developers",
+        "ZenQua PostgreSQL expertise"
+      ],
+      "url": "https://www.zenqua.com/database/postgresql"
+      }
   },
   "mongodb": {
     "section1": [
@@ -385,7 +423,7 @@
         "heading1": "Mongodb Database Development Company",
         "heading2": "Create powerful and scalable NoSQL web and mobile app with Mongodb",
         "para": "Let ZenQua help you create powerful and scalable NoSQL web and mobile apps with MongoDB. Our experts have the skills and experience needed so you can focus on developing your next-gen applications. We offer secure, high-availability solutions for massive amounts of data and active users, with cost-effective deployment and scaling capabilities across cloud infrastructure. Count on us for secure data both on-premise and on the cloud, and the dependable experience of managing large and distributed data systems—all with the desired efficiency.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135746/ASP.NET_-768x680.png",
+        "image": "../images/webpFile/ASP.NET_-768x680.webp",
         "button": "Talk to Expert"
       }
     ],
@@ -504,14 +542,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "../images/webpFile/Time-Material.webp",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "../images/webpFile/dedicated-development_team-2.webp",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -520,17 +558,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "../images/webpFile/small-medium_business.webp"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "../images/webpFile/startup-business.webp"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "../images/webpFile/large_business.webp"
       }
     ],
     "servicesData2": [
@@ -567,7 +605,30 @@
         "stateKey": "Custom",
         "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
       }
-    ]
+    ],
+    "metadata": {
+      "title": "MongoDB Development Services | Custom Solutions & Offshore MongoDB Developers | ZenQua",
+      "description": "ZenQua offers expert MongoDB development services, including database implementation, migration, custom solutions, and performance optimization. Our offshore MongoDB developers create scalable, secure, and high-performance applications for businesses of all sizes. Trust ZenQua for your next-gen MongoDB projects, with flexible hiring models and proven success in delivering custom APIs, big data applications, and more.",
+      "keywords": [
+        "MongoDB development services",
+        "Custom MongoDB solutions",
+        "MongoDB API development",
+        "MongoDB migration services",
+        "MongoDB performance optimization",
+        "Offshore MongoDB developers",
+        "MongoDB database implementation",
+        "Big data MongoDB applications",
+        "MongoDB support and maintenance",
+        "MongoDB consulting",
+        "MEAN stack development",
+        "MongoDB integration services",
+        "Scalable MongoDB solutions",
+        "Data migration to MongoDB",
+        "MongoDB cloud solutions",
+        "MongoDB security and performance"
+      ],
+      "url": "https://www.zenqua.com/database/mongodb"
+      }
   },
   "redis": {
     "section1": [
@@ -575,7 +636,7 @@
         "heading1": "Redis Database Development Company",
         "heading2": "Develop Powerful and Scalable Web and Mobile Apps with Redis",
         "para": "Let ZenQua help you create powerful and scalable web and mobile apps with Redis. Our experienced and highly qualified team are well-versed in leveraging the distributed Redis system so you can focus on developing your future applications. Our secure,highly-available solutions allow for the storage of large amounts of data and accommodate frequent users. We provide cost-effective deployments and options for scaling across cloud infrastructures. You can count on us to provide secure data whether on-premise or on the cloud and trust us to manage large and distributed data systems with efficiency.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/05/18135152/Redis-1536x1360.png",
+        "image": "../images/webpFile/Redis-1536x1360.webp",
         "button": "Talk to Expert"
       }
     ],
@@ -694,14 +755,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "../images/webpFile/Time-Material.webp",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "../images/webpFile/dedicated-development_team-2.webp",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -710,17 +771,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "../images/webpFile/small-medium_business.webp"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "../images/webpFile/startup-business.webp"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "../images/webpFile/large_business.webp"
       }
     ],
     "servicesData2": [
@@ -757,7 +818,34 @@
         "stateKey": "Custom",
         "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
       }
-    ]
+    ],
+    "metadata": {
+      "title": "Redis Development Services | Expert Redis Solutions for Scalable Web & Mobile Apps",
+      "description": "ZenQua offers expert Redis development services for building scalable and high-performance web and mobile applications. Our Redis solutions include database migration, support & maintenance, and consulting, enabling businesses to optimize data storage, real-time streaming, and performance. From custom Redis integrations to cloud and on-premise solutions, we help businesses achieve secure, fast, and cost-effective data management.",
+      "keywords": [
+        "Redis development services",
+        "Redis database solutions",
+        "Redis API integration",
+        "Redis cloud solutions",
+        "Redis database migration",
+        "Redis performance optimization",
+        "Redis support and maintenance",
+        "Real-time Redis applications",
+        "Redis consulting services",
+        "Scalable Redis solutions",
+        "Redis caching solutions",
+        "Redis for eCommerce apps",
+        "Redis for IoT development",
+        "Offshore Redis developers",
+        "Custom Redis applications",
+        "Redis data replication",
+        "Redis cloud hosting",
+        "Redis for small and medium businesses",
+        "Redis consulting for enterprises",
+        "Dedicated Redis development team"
+      ],
+      "url": "https://www.zenqua.com/database/redis"
+      }
   },
   "firebase": {
     "section1": [
@@ -765,7 +853,7 @@
         "heading1": "Firebase Development Company",
         "heading2": "Create apps to scale your business with innovative Firebase development",
         "para": "Transform your business with I-Verve’s Firebase development services. Unleash the potential of your business with our innovative web and mobile Firebase development capabilities. Harness the benefits of Google’s infrastructure that scale with your app growth. Take advantage of our comprehensive app building tools to deliver a seamless user experience with a fully responsive app. We have the expertise to structure and maintain a database bespoke to your unique requirements. And deploy powerful and secure Firebase local development technology to help your business succeed. Unlock the power of Firebase development with ZenQua.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/05/18135138/firebase-1024x907.png",
+        "image": "../images/webpFile/firebase-1024x907.webp",
         "button": "Talk to Expert"
       }
     ],
@@ -884,14 +972,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "../images/webpFile/Time-Material.webp",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "../images/webpFile/dedicated-development_team-2.webp",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -900,17 +988,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "../images/webpFile/small-medium_business.webp"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "../images/webpFile/startup-business.webp"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "../images/webpFile/large_business.webp"
       }
     ],
     "servicesData2": [
@@ -947,6 +1035,34 @@
         "stateKey": "Custom",
         "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
       }
-    ]
+    ],
+    "metadata": {
+      "title": "Firebase Development Company | Expert Firebase Solutions, App Development & Cloud Services",
+      "description": "ZenQua is a leading Firebase development company offering customized Firebase solutions for web and mobile applications. We specialize in scalable, secure, and high-performance Firebase cloud solutions, mobile and web app development, real-time databases, Firebase migration, and cloud hosting. Our expert developers deliver seamless app experiences using Firebase services, ensuring a smooth user experience and efficient app performance. Partner with us for end-to-end Firebase development and support.",
+      "keywords": [
+        "Firebase development company",
+        "Firebase app development",
+        "Firebase cloud solutions",
+        "Firebase mobile app development",
+        "Firebase web app development",
+        "Firebase API integration",
+        "Firebase cloud hosting",
+        "Firebase database solutions",
+        "Firebase real-time database",
+        "Firebase migration services",
+        "Firebase performance optimization",
+        "Firebase cloud functions",
+        "Firebase authentication",
+        "Firebase third-party integration",
+        "Firebase support and maintenance",
+        "Firebase backend development",
+        "Firebase consulting services",
+        "Firebase app testing",
+        "Firebase scalability",
+        "Firebase web solutions",
+        "Firebase mobile solutions"
+      ],
+      "url": "https://www.zenqua.com/database/firebase"
+      }
   }
 }

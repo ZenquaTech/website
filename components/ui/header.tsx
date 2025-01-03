@@ -3,7 +3,7 @@ import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import { useEffect, useState } from "react";
 import Navbar from "./navbar";
-import { Box, useMediaQuery, useTheme } from "@material-ui/core";
+import { useMediaQuery, useTheme } from "@material-ui/core";
 
 import { ThemeProvider } from "@mui/styles";
 

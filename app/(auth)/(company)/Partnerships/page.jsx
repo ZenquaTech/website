@@ -2,7 +2,7 @@
 import { Button, Box, Typography, Grid, styled } from "@material-ui/core";
 import Image from "next/image";
 import ModeStandbyTwoToneIcon from "@mui/icons-material/ModeStandbyTwoTone";
-import { FaDatabase } from "react-icons/fa";
+
 
 export default function Partnerships() {
   const data = [
@@ -17,7 +17,7 @@ export default function Partnerships() {
       ]
       
     },
-    // Add more data objects if needed
+ 
   ];
 
   return (
@@ -79,7 +79,7 @@ export default function Partnerships() {
         <Grid item xs={12} sm={6} md={6}>
           <Box style={{ display: "flex", justifyContent: "center" }}>
             <Image
-              src="../images/channel_partners-1.svg"
+              src="/../images/webpFile/channel_partners-1.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -100,7 +100,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="../images/channel_partner_joint_venture-1.svg"
+              src="/../images/webpFile/channel_partner_joint_venture-1.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -209,7 +209,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="../images/offshore_partners.svg"
+              src="/../images/webpFile/offshore_partners.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -230,7 +230,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="../images/offshore_joint_venture.svg"
+              src="/../images/webpFile/offshore_joint_venture.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -369,7 +369,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="../images/offshore_partners.svg"
+              src="/../images/webpFile/offshore_partners.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -388,7 +388,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="../images/agent_partners.svg"
+              src="/../images/webpFile/agent_partners.webp"
               alt="Channel Partners"
               width={400}
               height={200}

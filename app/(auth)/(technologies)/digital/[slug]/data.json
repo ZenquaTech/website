@@ -5,7 +5,7 @@
              "heading1":"Search Engine Optimization Company",
              "heading2":"Search Engine Optimization – SEO Company",
              "para":"Are you looking for search engine optimisation services to help you grow your website? Look no further! We offer comprehensive SEO services tailored to your unique business needs. Our team of experienced professionals will help you to rank higher in search engine results, drive organic traffic to your website, and increase conversions. With our expertise, you can make sure your website is seen by the right people, in the right places.",
-             "image":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135733/seo_1.png" ,
+             "image":"../images/webpFile/seo_1.webp" ,
              "button":"Talk to Expert"          
          }
       ],
@@ -84,14 +84,14 @@
          {
              "title": "Time & Material Basis Model",
              "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-             "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+             "images":"../images/webpFile/Time-Material.webp",
              "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
              "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
          },
          {
              "title": "Dedicated Developer Model",
              "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-             "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+             "images":"../images/webpFile/dedicated-development_team-2.webp",
              "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
              "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
          }
@@ -101,17 +101,17 @@
      {
        "title": "Backend Development",
        "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+       "image": "../images/webpFile/small-medium_business.webp"
      },
      {
        "title": "Small & Medium Businesses",
        "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+       "image": "../images/webpFile/startup-business.webp"
      },
      {
        "title": "Large Businesses",
        "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+       "image": "../images/webpFile/large_business.webp"
      }
    ],
    "servicesData2": [
@@ -149,7 +149,34 @@
        "stateKey": "Custom",
        "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
      }
-   ] 
+   ],
+   "metadata": {
+    "title": "Google Cloud SEO Services | ZenQua - Expert GCP Development & Migration Solutions",
+    "description": "ZenQua offers tailored Google Cloud Platform (GCP) SEO services designed to enhance your website's visibility and performance. Our team of certified GCP professionals specializes in SEO strategies, cloud migration, optimization, and custom development solutions. From scalable cloud infrastructure to seamless Google Cloud app development and analytics, ZenQua ensures your business achieves the highest online rankings. Drive organic traffic, improve user engagement, and scale your business with our Google Cloud-powered SEO services.",
+    "keywords": [
+      "Google Cloud SEO services",
+      "GCP SEO optimization",
+      "Google Cloud migration services",
+      "Google Cloud SEO consulting",
+      "GCP web development services",
+      "Google Cloud app SEO optimization",
+      "SEO strategies for Google Cloud",
+      "Google Cloud application migration",
+      "Google Cloud performance optimization",
+      "GCP infrastructure and SEO",
+      "Custom Google Cloud SEO solutions",
+      "Google Cloud mobile app SEO",
+      "Google Cloud scalability for SEO",
+      "SEO on Google Cloud",
+      "GCP-certified SEO professionals",
+      "Google Cloud security and SEO compliance",
+      "Google Cloud SEO services for businesses",
+      "GCP analytics for SEO",
+      "Google Cloud digital marketing",
+      "Google Cloud enterprise SEO"
+    ],
+    "url": "https://www.zenqua.com/digital/seo"
+    }   
 },
 "smo": {
     "section1": [
@@ -157,7 +184,7 @@
           "heading1": "Social Media Optimization Company",
           "heading2": "Social Media Optimization – SMO Company",
           "para": "Are you looking to amplify your online presence and drive more traffic to your website? Look no further! Our Social Media Optimization (SMO) services are designed to do just that. We offer a comprehensive range of SMO services tailored to your unique business needs, helping you connect with your audience on the platforms they use the most.",
-          "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135733/seo_1.png",
+          "image": "../images/webpFile/seo_1.webp",
           "button": "Talk to Expert"
         }
       ],
@@ -236,14 +263,14 @@
        {
            "title": "Time & Material Basis Model",
            "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+           "images":"../images/webpFile/Time-Material.webp",
            "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
            "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
        },
        {
            "title": "Dedicated Developer Model",
            "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-           "images":"https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+           "images":"../images/webpFile/dedicated-development_team-2.webp",
            "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
            "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
        }
@@ -253,17 +280,17 @@
    {
      "title": "Backend Development",
      "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+     "image": "../images/webpFile/small-medium_business.webp"
    },
    {
      "title": "Small & Medium Businesses",
      "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+     "image": "../images/webpFile/startup-business.webp"
    },
    {
      "title": "Large Businesses",
      "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-     "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+     "image": "../images/webpFile/large_business.webp"
    }
  ],
  "servicesData2": [
@@ -301,6 +328,33 @@
      "stateKey": "Custom",
      "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
    }
- ] 
+ ],
+ "metadata": {
+  "title": "Social Media Optimization (SMO) Services & Google Cloud Development | ZenQua",
+  "description": "ZenQua provides expert Social Media Optimization (SMO) services to help you boost online visibility and engagement. Our SMO strategies, from profile optimization to content creation, drive traffic and increase brand awareness. Additionally, we offer cutting-edge Google Cloud Development Services, including migration, optimization, and consulting, to help your business scale securely and efficiently on the cloud. Partner with our certified experts to maximize your social media and cloud potential!",
+  "keywords": [
+    "Social Media Optimization (SMO) services",
+    "SMO Company",
+    "SMO Experts",
+    "Social Media Profile Optimization",
+    "Content Creation for Social Media",
+    "Community Management SMO",
+    "Paid Social Media Advertising",
+    "Google Cloud Development Services",
+    "Google Cloud Platform (GCP) migration",
+    "Google Cloud SEO optimization",
+    "GCP web and mobile app development",
+    "Google Cloud app performance optimization",
+    "GCP analytics and consulting",
+    "SMO strategies",
+    "Custom Google Cloud solutions",
+    "Google Cloud infrastructure and security",
+    "Dedicated SMO team",
+    "SMO marketing strategies",
+    "Cloud migration consulting",
+    "Google Cloud scalability"
+  ],
+  "url": "https://www.zenqua.com/digital/smo"
+  }   
 }
 }

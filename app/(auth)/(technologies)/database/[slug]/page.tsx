@@ -27,22 +27,22 @@ const scrollToBottom = () => {
 };
 const projects = [
   {
-    src: "https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg",
+    src: "../images/webpFile/one.webp",
     alt: "Enterprise e-Commerce Store – CAMPSAVER",
     description: "Enterprise e-Commerce Store – CAMPSAVER"
   },
   {
-    src: "https://media.istockphoto.com/id/1362508194/vector/modern-3d-illustration-of-web-development.jpg?s=612x612&w=0&k=20&c=FzoSgPjIPiPV7wFtCHCFDOehKVgOkDWVdgtZb8N797s=",
+    src: "../images/webpFile/two.webp",
     alt: "UAE Government Application – DTMC",
     description: "UAE Government Application – DTMC"
   },
   {
-    src: "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg",
+    src: "../images/webpFile/three.webp",
     alt: "Marshalls World of Sport Website",
     description: "Marshalls World of Sport Website"
   },
   {
-    src: "https://cdn.pixabay.com/photo/2017/01/04/20/15/web-design-1953129_640.jpg",
+    src: "../images/webpFile/one.webp",
     alt: "Employees Shift Management Web App – Shift Manager",
     description: "Employees Shift Management Web App – Shift Manager"
   }
@@ -326,7 +326,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               {content.item1.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
                   <Box
-                    sx={{
+                    style={{
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
@@ -346,9 +346,9 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                     >
                       {" "}
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{ paddingLeft: "3%" }}>
+                      <span style={{ paddingLeft: "3%" }}>
                         {item.title}
-                      </Box>
+                      </span>
                     </Typography>
 
                     <Typography
@@ -389,9 +389,9 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{ paddingLeft: "3%" }}>
+                      <span style={{ paddingLeft: "3%" }}>
                         {item.title}
-                      </Box>
+                      </span>
                     </Typography>
                     <Typography
                       style={{
@@ -452,9 +452,9 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{  paddingLeft: "3%" }}>
+                      <span style={{  paddingLeft: "3%" }}>
                         {item.title}
-                      </Box>
+                      </span>
                     </Typography>
                     <Typography
                       style={{
@@ -494,9 +494,9 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                       }}
                     >
                       <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <Box style={{  paddingLeft: "3%" }}>
+                      <span style={{  paddingLeft: "3%" }}>
                         {item.title}
-                      </Box>
+                      </span>
                     </Typography>
                     <Typography
                       style={{

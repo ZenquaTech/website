@@ -1,6 +1,5 @@
 "use client";
-import { Box, Grid, Typography, styled, Button } from "@material-ui/core";
-import StorageSharpIcon from "@mui/icons-material/StorageSharp";
+import { Box, Grid, Typography, styled, Button } from "@mui/material";
 import ModeStandbyTwoToneIcon from "@mui/icons-material/ModeStandbyTwoTone";
 import Image from "next/image";
 import { FaDatabase, FaWpexplorer, FaSpinner } from "react-icons/fa";
@@ -16,7 +15,7 @@ const models = [
       "Pre-defined solution in detail",
       "Specified Scope and Specification"
     ],
-    imageSrc: "../images/Fixed_price.svg",
+    imageSrc: "/../images/webpFile/Fixed_price.webp",
     imageAlt: "Fixed Price"
   },
   {
@@ -28,7 +27,7 @@ const models = [
       "Pay per hour model",
       "Design and specification iterations"
     ],
-    imageSrc: "../images/time_n_material.svg",
+    imageSrc: "/../images/webpFile/time_n_material.webp",
     imageAlt: "Time and Material"
   },
   {
@@ -40,13 +39,13 @@ const models = [
       "Convenient for large projects",
       "Flexibility to make numerous iterations"
     ],
-    imageSrc: "../images/dedicated_team.svg",
+    imageSrc: "/../images/webpFile/dedicated_team.webp",
     imageAlt: "Dedicated Team"
   },
   {
     title: "Team Formations",
     description: "Whether you hire a single developer or create your own team of developers, our team structure remains the same. We work with the same vigor and maintain same quality standards for all our work and processes. We are fully committed to complete your work and maintain security to give you best IT support and services. And that’s our guarantee.",
-    imageSrc: "../images/team_formation.svg",
+    imageSrc: "/../images/webpFile/team_formation.webp",
     imageAlt: "Team Formations"
   }
 ];

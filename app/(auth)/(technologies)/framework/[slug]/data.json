@@ -5,7 +5,7 @@
         "heading1": "Mern Development Company",
         "heading2": "Expand your business with our Mern Development Services",
         "para": "Boost your business with ZenQua Mern Development Services. Our experienced Mern developers draw on years of expertise to build cost-effective and efficient solutions for your business. We leverage the powerful features of the Mern framework to provide you with immersive web experiences. Our development teams stay up-to-date with the latest trends to build applications with an MVC structure, detailed library and logical structure. We create polished, secure web experiences using the latest coding standards and ensuring strict guidelines are followed. With our Mern development services, you get customized website development, tailored software development, and tailored API development according to your business requirements. ZenQua stands for outstanding service for your business success.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135625/django_1-1536x1360.png",
+        "image": "../images/webpFile/django_1-1536x1360.webp",
         "button": "Talk to Expert"
       }
     ],
@@ -124,14 +124,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "../images/webpFile/Time-Material.webp",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "../images/webpFile/dedicated-development_team-2.webp",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -140,17 +140,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "../images/webpFile/small-medium_business.webp"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "../images/webpFile/startup-business.webp"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "../images/webpFile/large_business.webp"
       }
     ],
     "servicesData2": [
@@ -187,7 +187,24 @@
         "stateKey": "Custom",
         "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
       }
-    ]
+    ],
+    "metadata": {
+    "title": "MERN Development Services | Expert Solutions for Scalable & Secure Web Applications",
+    "description": "ZenQua offers top-notch MERN development services, providing tailored solutions to businesses of all sizes. Our experienced developers specialize in custom application development, seamless API integration, eCommerce solutions, and scalable backend systems. Leverage our expertise to create cost-effective, secure, and high-performance web applications designed to elevate your business. Partner with us for flexible hiring models, end-to-end support, and cutting-edge technology.",
+    "keywords" :[
+      "MERN development services",
+      "MERN web application development",
+      "Custom MERN development",
+      "Scalable backend solutions",
+      "Secure web applications",
+      "API integration services",
+      "MERN eCommerce solutions",
+      "Dedicated MERN developers",
+      "Offshore MERN development team",
+      "Cost-effective web development"
+    ],
+    "url": "https://www.zenqua.com/framework/mern"
+    }
   },
   "mean": {
     "section1": [
@@ -195,7 +212,7 @@
         "heading1": "Mean Stack Development Company",
         "heading2": "Scalable and dynamic web applications with Mean Stack Development services",
         "para": "ZenQua provides unbeatable development services to create efficient and dynamic web applications utilizing MEAN stack. Our team of skilled professionals leverage their expertise and updated industry knowledge to deliver exceptional results. We use advanced JS database systems to ensure streamlined businesses. Our result-driven approach has helped us successfully deliver most complex web and mobile experiences. With ZenQua, you can receive complete end-to-end MEAN stack development services that are scalable and dynamic.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135718/nodejs-1024x907.png",
+        "image": "../images/webpFile/nodejs-1024x907.webp",
         "button": "Talk to Expert"
       }
     ],
@@ -314,14 +331,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "../images/webpFile/Time-Material.webp",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "../images/webpFile/dedicated-development_team-2.webp",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -330,17 +347,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "../images/webpFile/small-medium_business.webp"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "../images/webpFile/startup-business.webp"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "../images/webpFile/large_business.webp"
       }
     ],
     "servicesData2": [
@@ -377,7 +394,34 @@
         "stateKey": "Custom",
         "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
       }
-    ]
+    ],
+    "metadata": {
+    "title": "MEAN Stack Development Company | Scalable Web Apps, API Integration, and Enterprise Solutions",
+    "description": "Explore ZenQua's MEAN and NestJS development services for scalable, secure, and high-performance web and mobile applications. With expertise in MongoDB, Express.js, AngularJS, and Node.js, we deliver end-to-end solutions tailored to your business needs. Our offerings include backend development, eCommerce platforms, API integrations, migrations, and modernization services. Benefit from flexible hiring models, dedicated developers, and cost-effective solutions to accelerate your digital transformation.",
+    "keywords": [
+      "MEAN stack development company",
+      "NestJS development services",
+      "scalable web applications",
+      "backend solutions",
+      "eCommerce development",
+      "API integration",
+      "MEAN stack migration",
+      "enterprise app development",
+      "custom web apps",
+      "AngularJS solutions",
+      "Node.js programming",
+      "MongoDB expertise",
+      "Express.js framework",
+      "offshore development",
+      "time and material model",
+      "dedicated developer hiring",
+      "secure web applications",
+      "app modernization",
+      "full-stack development",
+      "cost-effective development services"
+    ],
+    "url": "https://www.zenqua.com/framework/mean"
+    }
   },
   "ror": {
     "section1": [
@@ -385,7 +429,7 @@
         "heading1": "Ruby on Rails Development Company",
         "heading2": "Partner With Best Ruby on Rails Web Development Company",
         "para": "ZenQua is a top-tier Ruby on Rails development company with a dedicated team of experts to build feature-rich, custom RoR solutions. We provide tailored services that cater to evolving needs of businesses from different domains. Our years of experience in designing, architecting, and building RoR-focused apps are highly appreciated by our clients. We upgrade existing solutions by integrating the latest version of the RoR framework without compromising on development quality. We implement Agile Methodology and adept coding to deliver outstanding post-deployment support. Partner with us to create robust custom web and mobile-based solutions powered by Ruby on Rails.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135622/ROR-1536x1360.png",
+        "image": "../images/webpFile/ROR-1536x1360.webp",
         "button": "Talk to Expert"
       }
     ],
@@ -503,14 +547,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "../images/webpFile/Time-Material.webp",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "../images/webpFile/dedicated-development_team-2.webp",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -519,17 +563,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "../images/webpFile/small-medium_business.webp"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "../images/webpFile/startup-business.webp"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "../images/webpFile/large_business.webp"
       }
     ],
     "servicesData2": [
@@ -566,6 +610,27 @@
         "stateKey": "Custom",
         "content": "We help you achieve your goals one step at a time by scaling your idea      in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently."
       }
-    ]
+    ],
+    "metadata": {
+    "title": "Ruby on Rails Development Company | Expert RoR Solutions, Custom Apps & Scalable Services",
+    "description": "ZenQua is a top-tier Ruby on Rails development company offering custom RoR solutions tailored for startups, SMEs, and large enterprises. Our services include web and app development, eCommerce solutions, API integration, cloud hosting, and modernization. Leverage our expertise to build scalable, secure, and robust web applications with agile methodologies and flexible hiring models.",
+    "keywords": [
+      "Ruby on Rails development company",
+      "RoR development services",
+      "Custom Ruby on Rails apps",
+      "Scalable web applications",
+      "RoR API integration",
+      "Ruby on Rails cloud hosting",
+      "eCommerce development solutions",
+      "Agile development",
+      "Ruby on Rails consulting",
+      "Offshore RoR developers",
+      "Dedicated Ruby on Rails team",
+      "Enterprise web applications",
+      "Maintenance and support for RoR",
+      "Full-stack Ruby on Rails services"
+    ],
+    "url": "https://www.zenqua.com/framework/ror"
+    }
   }
 }
