@@ -363,7 +363,7 @@ export default function MobileMenu() {
       behavior: "smooth",
     });
   };
-
+  useGlobalStyles();
   return (
     <div>
       {/* Hamburger button */}
@@ -390,7 +390,7 @@ export default function MobileMenu() {
         open={mobileNavOpen}
         onClose={() => setMobileNavOpen(false)}
         onOpen={() => setMobileNavOpen(true)}
-        classes={{ paper: classes.drawer }}
+        classes={{ paper: classes.drawer }}     
       >
         <List disablePadding>
           <ListItem
