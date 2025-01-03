@@ -6,6 +6,7 @@ import Navbar from "./navbar";
 import { useMediaQuery, useTheme } from "@material-ui/core";
 
 import { ThemeProvider } from "@mui/styles";
+import Image from "next/image";
 
 const scrollToBottom = () => {
   window.scrollTo({
@@ -87,14 +88,14 @@ export default function Header() {
               >
                 {/* Logo */}
                 <Link href="/" className="block" aria-label="Cruip">
-                  <img
+                  <Image
                     style={{
                       top: "0%",
                       marginTop: "-1%",
                     }}
-                    height="110px"
-                    width="110px"
-                    src="/images/WhatsApp_Image_2024-03-23_at_4.37.01_PM-removebg-preview.png"
+                    height={110}
+                    width={110}
+                    src="/../images/webpFile/WhatsApp_Image_2024-03-23_at_4.37.01_PM-removebg-preview.webp"
                     alt="logo"
                   />
                 </Link>

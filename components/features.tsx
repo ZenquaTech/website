@@ -20,6 +20,7 @@ import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import AddIcon from "@material-ui/icons/Add";
 import Data from "./ui/data.json";
 import CountUp from "react-countup";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -52,7 +53,7 @@ const people: Person[] = [
     expertise: "AWS | Azure | Linux",
     workedWith: "CICD | Terraform",
     avatarSrc:
-      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
+      "/../images/webpFile/personAvatar.webp",
   },
   {
     name: "Dev Girisha",
@@ -60,7 +61,7 @@ const people: Person[] = [
     expertise: "Core | MVC | PowerBI",
     workedWith: " SQL | APIs",
     avatarSrc:
-      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
+      "/../images/webpFile/personAvatar.webp",
   },
   {
     name: "Sumat Bala",
@@ -68,7 +69,7 @@ const people: Person[] = [
     expertise: "Net | Sharepoint | Blazor",
     workedWith: " APIs | MVC",
     avatarSrc:
-      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
+      "/../images/webpFile/personAvatar.webp",
   },
   {
     name: "Prabhakara Indra",
@@ -76,7 +77,7 @@ const people: Person[] = [
     expertise: "Net | Sharepoint | Blazor",
     workedWith: " APIs | MVC",
     avatarSrc:
-      "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
+      "/../images/webpFile/personAvatar.webp",
   },
 ];
 
@@ -1195,7 +1196,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       >
                         {item.image.map((data, idx) => (
                           <div key={idx} style={{ marginTop: "4%" }}>
-                            <img src={data.url} alt="" />
+                            <img src={data.url} alt={item.title} />
                           </div>
                         ))}
                       </Box>
@@ -2424,13 +2425,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                     background: "transparent",
                     color: "#D9E3EA",
                     boxShadow: 'none'
-                    // margin: "25px",
+                  
                   }}
                 >
                   <CardActionArea>
                     <CardContent>
                       <Typography
-                        // gutterBottom
+                      
                         variant="h5"
                         component="h2"
                         style={{
@@ -2527,21 +2528,21 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       width: "100%",
                     }}
                   >
-                    <img
-                      style={{
-                        height: "0%",
-                        width: "70%",
-                      }}
-                      src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg"
-                      alt="Time & Material Model"
-                    />
+                 
+                    <Image 
+  src="/../images/webpFile/Time-Material.webp"
+  alt="Time & Material Model"
+  width={828}
+  height={594}
+  layout="responsive"
+/>
                   </Box>
                   <Paper
                     style={{
                       marginTop: "5px",
                       backgroundColor: "transparent",
                       display: "flex",
-                      // borderRadius:'none'
+                     
                     }}
                   >
                     <Typography
@@ -2576,14 +2577,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
 
               <Grid
                 item
-                // xs={12}
+            
                 sm={12}
                 md={6}
                 style={{
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  // padding: "20px",
                 }}
               >
                 <Paper
@@ -2624,14 +2624,13 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       width: "100%",
                     }}
                   >
-                    <img
-                      style={{
-                        height: "90%",
-                        width: "70%",
-                      }}
-                      src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg"
-                      alt="Dedicated Developer Model"
-                    />
+                    <Image 
+  src="/images/webpFile/dedicated-development_team-2.webp"
+  alt="Dedicated Developer Model"
+  width={828}
+  height={594}
+  layout="responsive"
+/>
                   </Box>
                   <Paper
                     style={{
@@ -2702,6 +2701,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 {people.map((person: any, index: any) => (
                   <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
                     <Avatar
+                     alt={person.name}
                       style={{
                         borderRadius: "50%",
                         width: "100px",
@@ -2765,9 +2765,26 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       </Typography>
                       <br />
                       <Link href="/contact-us">
-                        <button className="bg-[#019dce] text-white text-md mt-4 px-8 py-2 rounded-md w-34 font-medium text-[#D9E3EA]">
-                          Hire Me
-                        </button>
+                      
+                         <Button
+                                                       variant="contained"                      
+                                                       style={{
+                                                         alignItems: "center",
+                                                         fontSize: "15px",
+                                                         marginTop: "2%",
+                                                         textAlign: "center",
+                                                         flexWrap: "wrap",
+                                                         backgroundColor: "#019dce",
+                                                         color: "#D9E3EA",
+                                                         padding: "2%",
+                                                         fontWeight: "bold",
+                                                         borderRadius: "10px",
+                                                         width: "160px",
+                                                         textTransform: "none",
+                                                       }}
+                                                     >
+                                                       Hire Me
+                                                     </Button>
                       </Link>
                     </Box>
                   </Grid>
