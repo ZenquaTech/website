@@ -223,6 +223,8 @@ const ContactUs = () => {
               <Grid item xs={12} md={6} className="m-2 font-bold" key={index}>
                 <Box className="mb-2">{field.label}</Box>
                 <select
+                  aria-label={field.label.toLowerCase().replace(" ", "")}
+                  id={field.label.toLowerCase().replace(" ", "")}
                   name={field.label.toLowerCase().replace(" ", "")}
                   value={
                     formData[

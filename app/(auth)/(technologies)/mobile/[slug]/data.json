@@ -1,5 +1,11 @@
 {
   "ios": {
+      "metaData":{
+      "title": "ReactNative App Development Services",
+    "description": "ZenQua provides modern, high-quality cross-platform mobile apps with React Native. We offer expert consultation, fast delivery, and competitive prices for iOS and Android apps.",
+    "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
+    "url": "https://www.zenqua.com/mobile/ios"
+    },
     "section1": [
       {
         "heading1": "iOS  Development Company",
@@ -190,6 +196,12 @@
     ]
   },
   "android": {
+        "metaData":{
+      "title": "ReactNative App Development Services",
+    "description": "ZenQua provides modern, high-quality cross-platform mobile apps with React Native. We offer expert consultation, fast delivery, and competitive prices for iOS and Android apps.",
+    "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
+    "url": "https://www.zenqua.com/mobile/android"
+    },
     "section1": [
       {
         "heading1": "Android App Development Company",
@@ -380,6 +392,12 @@
     ]
   },
   "swift": {
+        "metaData":{
+      "title": "ReactNative App Development Services",
+    "description": "ZenQua provides modern, high-quality cross-platform mobile apps with React Native. We offer expert consultation, fast delivery, and competitive prices for iOS and Android apps.",
+    "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
+    "url": "https://www.zenqua.com/mobile/swift"
+    },
     "section1": [
       {
         "heading1": "Swift App Development Company",
@@ -570,6 +588,12 @@
     ]
   },
   "flutter": {
+        "metaData":{
+      "title": "ReactNative App Development Services",
+    "description": "ZenQua provides modern, high-quality cross-platform mobile apps with React Native. We offer expert consultation, fast delivery, and competitive prices for iOS and Android apps.",
+    "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
+    "url": "https://www.zenqua.com/mobile/flutter"
+    },
     "section1": [
       {
         "heading1": "Flutter App Development Company",
@@ -760,12 +784,18 @@
     ]
   },
   "reactnative": {
+    "metaData":{
+      "title": "ReactNative App Development Services",
+    "description": "ZenQua provides modern, high-quality cross-platform mobile apps with React Native. We offer expert consultation, fast delivery, and competitive prices for iOS and Android apps.",
+    "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
+    "url": "https://www.zenqua.com/mobile/reactnative"
+    },
     "section1": [
       {
         "heading1": "ReactNative App Development Company",
         "heading2": "Building modern, high quality cross-platform mobile apps with React Native",
         "para": "ZenQua helps global businesses keep up with the ever-evolving mobile app needs on Android and iOS platforms. Leveraging cost-effective technology, we provide modern and high quality cross-platform apps with native look and feel. Be it high performance, timely delivery, competitive prices or excellence in customer service, ZenQua stands-out from our competitors as a top React Native app development company all over the Globe. With our team of highly skilled React Native developers, you can be confident of getting expert consultation on-the-go.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135642/react-native_1-1536x1360.png",
+        "image": "reactNative",
         "button": "Talk to Expert"
       }
     ],
@@ -884,14 +914,14 @@
       {
         "title": "Time & Material Basis Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/Time-Material.svg",
+        "images": "timeMaterial",
         "para1": "Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
         "para2": "opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
       },
       {
         "title": "Dedicated Developer Model",
         "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-        "images": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151312/dedicated-development_team-2.svg",
+        "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
@@ -900,17 +930,17 @@
       {
         "title": "Backend Development",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
+        "image": "startupBusiness"
       },
       {
         "title": "Small & Medium Businesses",
         "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
+        "image": "smallMediumBusiness"
       },
       {
         "title": "Large Businesses",
         "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
+        "image": "largeBusiness"
       }
     ],
     "servicesData2": [
