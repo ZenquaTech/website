@@ -95,7 +95,7 @@ export default function Header() {
                     }}
                     height={110}
                     width={110}
-                    src="/../images/webpFile/WhatsApp_Image_2024-03-23_at_4.37.01_PM-removebg-preview.webp"
+                    src="/images/webpFile/WhatsApp_Image_2024-03-23_at_4.37.01_PM-removebg-preview.webp"
                     alt="logo"
                   />
                 </Link>

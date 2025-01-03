@@ -2529,13 +2529,22 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                     }}
                   >
                  
-                    <Image 
-  src="/../images/webpFile/Time-Material.webp"
+                    {/* <Image 
+  src="/images/webpFile/Time-Material.webp"
   alt="Time & Material Model"
   width={828}
   height={594}
   layout="responsive"
-/>
+/> */}
+<img
+                              style={{
+                                height: "0%",
+                                width: "70%",
+                              }}
+                              src="/images/webpFile/Time-Material.webp"
+                              alt="Time & Material Model"
+                            />
+
                   </Box>
                   <Paper
                     style={{
@@ -2624,13 +2633,21 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       width: "100%",
                     }}
                   >
-                    <Image 
+                    {/* <Image 
   src="/images/webpFile/dedicated-development_team-2.webp"
   alt="Dedicated Developer Model"
   width={828}
   height={594}
   layout="responsive"
-/>
+/> */}
+<img
+                              style={{
+                                height: "90%",
+                                width: "70%",
+                              }}
+                              src="/images/webpFile/dedicated-development_team-2.webp"
+                              alt="Time & Material Model"
+                            />
                   </Box>
                   <Paper
                     style={{
