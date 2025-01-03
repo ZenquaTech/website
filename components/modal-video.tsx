@@ -3,7 +3,6 @@
 import { useState, useRef, Fragment } from "react";
 import type { StaticImageData } from "next/image";
 import { Dialog, Transition } from "@headlessui/react";
-import Image from "next/image";
 
 interface ModalVideoProps {
   thumb: StaticImageData;
@@ -16,10 +15,6 @@ interface ModalVideoProps {
 }
 
 export default function ModalVideo({
-  thumb,
-  thumbWidth,
-  thumbHeight,
-  thumbAlt,
   video,
   videoWidth,
   videoHeight,
@@ -60,6 +55,13 @@ export default function ModalVideo({
             muted
           >
             <source src="/videos/video.mp4" type="video/mp4" />
+            <track
+              src="/videos/captions-en.vtt"
+              kind="captions"
+              srcLang="en"
+              label="English"
+              default
+            />
             Your browser does not support the video tag.
           </video>
         </div>

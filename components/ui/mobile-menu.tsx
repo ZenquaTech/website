@@ -12,9 +12,27 @@ import {
   SwipeableDrawer,
   Typography,
   makeStyles,
+  styled,
   useTheme,
 } from "@material-ui/core";
 import { createTheme } from "@mui/material/styles";
+//import { makeStyles } from "@material-ui/core/styles";
+
+const useGlobalStyles = makeStyles({
+  "@global": {
+    ".MuiPaper-root::-webkit-scrollbar": {
+      width: "2px",
+    },
+    ".MuiPaper-root::-webkit-scrollbar-thumb": {
+      backgroundColor: "rgba(100, 100, 100, 0.6)",
+      borderRadius: "6px",
+    },
+    ".MuiPaper-root::-webkit-scrollbar-track": {
+      backgroundColor: "rgba(200, 200, 200, 0.3)",
+      borderRadius: "6px",
+    },
+  },
+});
 
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
 import { number } from "prop-types";
@@ -469,7 +487,7 @@ export default function MobileMenu() {
       behavior: "smooth",
     });
   };
-
+  useGlobalStyles();
   return (
     <div>
       {/* Hamburger button */}
@@ -496,7 +514,7 @@ export default function MobileMenu() {
         open={mobileNavOpen}
         onClose={() => setMobileNavOpen(false)}
         onOpen={() => setMobileNavOpen(true)}
-        classes={{ paper: classes.drawer }}
+        classes={{ paper: classes.drawer }}     
       >
         <List disablePadding>
           <ListItem

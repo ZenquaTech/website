@@ -1,8 +1,9 @@
+'use client'
 import Image from "next/image";
-
-import FeatImage01 from "@/public/images/features-03-image-01.png";
-import FeatImage02 from "@/public/images/features-03-image-02.png";
-import FeatImage03 from "@/public/images/features-03-image-03.png";
+import FeatImage01 from "@/public/images/webpFile/features-03-image-01.webp";
+import FeatImage02 from "@/public/images/webpFile/features-03-image-02.webp";
+import FeatImage03 from "@/public/images/webpFile/features-03-image-03.webp";
+import { Box } from "@material-ui/core";
 
 export default function Zigzag() {
   return (
@@ -11,9 +12,23 @@ export default function Zigzag() {
         <div className="py-12 md:py-20 border-t border-gray-800">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">
-              Reach goals that matter
-            </div>
+          
+            <Box
+      component="div"
+      style={{
+        display: "inline-flex",
+        fontSize: "0.875rem",
+        fontWeight: 600,
+        padding: "0.25rem 0.75rem",
+        margin: "0.5rem",
+        color: "#16a34a",
+        backgroundColor: "#bbf7d0",
+        borderRadius: "9999px",
+        marginBottom: "1rem",
+      }}
+    >
+      Reach goals that matter
+    </Box>
             <h1 className="h2 mb-4">One product, unlimited solutions</h1>
             <p className="text-xl text-gray-400">
               At{" "}
