@@ -363,7 +363,6 @@ export default function MobileMenu() {
       behavior: "smooth",
     });
   };
-  useGlobalStyles();
   return (
     <div>
       {/* Hamburger button */}
