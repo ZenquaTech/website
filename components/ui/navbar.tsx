@@ -462,22 +462,27 @@ const Navbar = () => {
             const target = e.target as HTMLElement;
             target.style.color = "#019dce";
           }}
+          style={{
+            backgroundColor: "transparent",
+            padding: "0",
+          }}
           onMouseOut={(e) => {
-            const target =
-              e.target as HTMLElement;
+            const target = e.target as HTMLElement;
             target.style.color = "#ffffffbf";
-          }}>
+          }}
+        >
           <Link href={"/contact-us"} passHref onClick={handleItemClick}>
-            <Box
+            <Typography
               style={{
                 color: "rgba(255, 255, 255, 0.75)",
+                fontFamily: "DM Sans, sans-serif",
                 textTransform: "capitalize",
-                fontSize: "16px",
+                fontSize: "0.875rempx",
                 fontWeight: "500",
               }}
             >
               Contact Us
-            </Box>
+            </Typography>
           </Link>
         </Button>
       </div>
