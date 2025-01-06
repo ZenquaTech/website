@@ -98,28 +98,6 @@
              "description":"We provide comprehensive Quality Assurance and Testing services for AngularJS applications, focusing on functional, unit and integration testing. Our expertise in automated testing and test-driven development ensures a reliable and high-quality end-product that meets user requirements. We use best practices such as code review and continuous integration to improve the stability and security of the application."
          }
      ],
-     "project": [
-        {
-            "title": "Project Delivered",
-           "number": "150"
-        },
-        {
-            
-            "title": "Satisfied Clients",
-            "number": 80
-        },
-        {
-            
-            "title": "Experts on Board",
-            "number": 70
-        },
-        {
-            
-            "title": "Years of Experience",
-            "number": 10
-        }
-
-    ],
      "adaptable": [
          {
              "title": "Time & Material Basis Model",
