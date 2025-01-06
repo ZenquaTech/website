@@ -21,10 +21,10 @@ import WantToHire from "@/components/ui/WantToHire";
 
 
 const LazyAdoptableApprochComponent = dynamic(
-  () => import("@/components/ui/adoptable_approch")
+  () => import("@/components/ui/AdoptableApproch")
 );
 const LazyZenquaGlanceComponent = dynamic(
-  () => import("@/components/ui/zenqua_glance")
+  () => import("@/components/ui/ZenquaGlance")
 );
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")

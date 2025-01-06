@@ -26,10 +26,10 @@ import wordpress from "@/components/assets/img/angularimg/Wordpress.webp";
 import drupal from "@/components/assets/img/angularimg/drupal.webp";
 
 const LazyZenquaGlanceComponent = dynamic(
-  () => import("@/components/ui/zenqua_glance")
+  () => import("@/components/ui/ZenquaGlance")
 );
 const LazyAdoptableApprochComponent = dynamic(
-  () => import("@/components/ui/adoptable_approch")
+  () => import("@/components/ui/AdoptableApproch")
 );
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
