@@ -95,23 +95,6 @@
          }
            
      ],
-     "business" : [
-     {
-       "title": "Backend Development",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "../images/webpFile/small-medium_business.webp"
-     },
-     {
-       "title": "Small & Medium Businesses",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "../images/webpFile/startup-business.webp"
-     },
-     {
-       "title": "Large Businesses",
-       "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-       "image": "../images/webpFile/large_business.webp"
-     }
-   ],
    "servicesData2": [
      {
        "label": "Cost-Effectiveness",
@@ -232,23 +215,6 @@
           "description": "We leverage analytics and performance metrics to continuously refine and improve our strategies. Regular reporting and analysis help us track the effectiveness of our SMO efforts, ensuring optimal results for your business."
         }
     ],
-   "business" : [
-   {
-     "title": "Backend Development",
-     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "../images/webpFile/small-medium_business.webp"
-   },
-   {
-     "title": "Small & Medium Businesses",
-     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "../images/webpFile/startup-business.webp"
-   },
-   {
-     "title": "Large Businesses",
-     "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-     "image": "../images/webpFile/large_business.webp"
-   }
- ],
  "servicesData2": [
    {
      "label": "Cost-Effectiveness",

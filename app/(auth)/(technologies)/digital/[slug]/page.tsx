@@ -16,9 +16,15 @@ import dynamic from "next/dynamic";
 import { FaStar } from "react-icons/fa";
 import Carousel from "react-material-ui-carousel";
 import "./styles.css";
-import ContactUs from "@/components/ui/contactus";
-import WantToHire from "@/components/ui/WantToHire";
-
+const LazyBusinessEmpowermentComponent = dynamic(
+  () => import("@/components/ui/BusinessEmpowerment")
+);
+const LazyContactComponent = dynamic(
+  () => import("@/components/ui/contactus")
+);
+const LazyWantToHireComponent = dynamic(
+  () => import("@/components/ui/WantToHire")
+);
 const LazyZenquaGlanceComponent = dynamic(
   () => import("@/components/ui/zenqua_glance")
 );
@@ -223,7 +229,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* ************************end********************************** */}
 
             {/* ************************section2********************************** */}
-            <WantToHire
+            <LazyWantToHireComponent
               headingText={content.section2?.heading1}
               buttonText={content.section2?.button}
             />
@@ -679,75 +685,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* ***********************      BUSINESS EMPOWERMENT   ***************************** */}
 
-            <Box style={{ marginTop: "5%" }}>
-              <h2
-                className=" font text-center  service-button"
-                style={{ textTransform: "uppercase" }}
-              >
-                BUSINESS EMPOWERMENT
-              </h2>
-              <h2 className="text-3xl font-bold text-center mb-6 service-button">
-                Tailored development solutions for all business types
-              </h2>
-              <Carousel
-                autoPlay={true}
-                navButtonsAlwaysVisible={false}
-                indicators={false}
-                animation="slide"
-              >
-                {content.business.map((item: any, i: any) => (
-                  <Grid
-                    key={i}
-                    container
-                    style={{
-                      background: "transparent",
-                      color: "#9BA9B4",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      textAlign: "justify",
-                    }}
-                  >
-                    <Grid item xs={12} sm container>
-                      <CardActionArea>
-                        {item.image && (
-                          <img
-                            src={item.image}
-                            alt={item.title}
-                            width={500}
-                            height={400}
-                          />
-                        )}
-                      </CardActionArea>
-                    </Grid>
-                    <Grid item xs={12} sm container>
-                      <Grid item xs container direction="column" spacing={2}>
-                        <Grid item>
-                          <Typography
-                            style={{
-                              color: "#D9E3EA",
-                              fontSize: "30px",
-                              fontWeight: "bold",
-                            }}
-                          >
-                            {item.title}
-                          </Typography>
-                        </Grid>
-                        <Grid item>
-                          <Typography
-                            style={{
-                              color: "#9BA9B4",
-                              fontSize: "16px",
-                            }}
-                          >
-                            {item.description}
-                          </Typography>
-                        </Grid>
-                      </Grid>
-                    </Grid>
-                  </Grid>
-                ))}
-              </Carousel>
-            </Box>
+        <LazyBusinessEmpowermentComponent/>
             {/* **********************  End   ****************************** */}
 
             {/* ***********************     PORTFOLIO  ***************************** */}
@@ -757,7 +695,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* **********************  End   ****************************** */}
 
             {/* ********************************** Contact Us *********************** */}
-            <ContactUs />
+            <LazyContactComponent />
             {/* ********************************** End *********************** */}
           </div>
         </MainWrapper>

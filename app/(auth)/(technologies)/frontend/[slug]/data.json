@@ -94,23 +94,6 @@
              "description":"We provide comprehensive Quality Assurance and Testing services for AngularJS applications, focusing on functional, unit and integration testing. Our expertise in automated testing and test-driven development ensures a reliable and high-quality end-product that meets user requirements. We use best practices such as code review and continuous integration to improve the stability and security of the application."
          }
      ],
-     "business" : [
-     {
-       "title": "Backend Development",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "startupBusiness"
-     },
-     {
-       "title": "Small & Medium Businesses",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "smallMediumBusiness"
-     },
-     {
-       "title": "Large Businesses",
-       "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-       "image": "largeBusiness"
-     }
-   ],
    "sectionexperties":[
     {
         "heading":"TEACH STACK",
@@ -323,23 +306,6 @@
      }
        
  ],
- "business" : [
- {
-   "title": "Backend Development",
-   "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "startupBusiness"
- },
- {
-   "title": "Small & Medium Businesses",
-   "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "smallMediumBusiness"
- },
- {
-   "title": "Large Businesses",
-   "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-   "image": "largeBusiness"
- }
-],
    "sectionexperties":[
     {
         "heading":"TEACH STACK",
@@ -544,23 +510,6 @@
          }
            
      ],
-     "business" : [
-     {
-       "title": "Backend Development",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
-     },
-     {
-       "title": "Small & Medium Businesses",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
-     },
-     {
-       "title": "Large Businesses",
-       "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-       "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
-     }
-   ],
    "sectionexperties":[
     {
         "heading":"TOOLKIT",
@@ -759,23 +708,6 @@
      }
        
  ],
- "business" : [
- {
-   "title": "Backend Development",
-   "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
- },
- {
-   "title": "Small & Medium Businesses",
-   "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
- },
- {
-   "title": "Large Businesses",
-   "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-   "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
- }
-],
    "sectionexperties":[
     {
         "heading":"TEACH STACK",
@@ -1008,23 +940,6 @@
      }
        
  ],
- "business" : [
- {
-   "title": "Backend Development",
-   "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "startupBusiness"
- },
- {
-   "title": "Small & Medium Businesses",
-   "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-   "image": "smallMediumBusiness"
- },
- {
-   "title": "Large Businesses",
-   "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-   "image": "largeBusiness"
- }
-],
 "sectionexperties":[
  {
      "heading":"TEACH STACK",
