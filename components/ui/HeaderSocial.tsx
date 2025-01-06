@@ -15,6 +15,7 @@ function HeaderSocial() {
         href="//www.linkedin.com/company/zenqua-technologies/"
         target="_blank"
       >
+
         <BsLinkedin />
       </a>
       <a

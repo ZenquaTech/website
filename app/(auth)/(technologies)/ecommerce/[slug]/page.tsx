@@ -13,8 +13,6 @@ import {
   CardContent,
 } from "@material-ui/core";
 import { FaStar } from "react-icons/fa";
-import AddIcon from "@material-ui/icons/Add";
-import CountUp from "react-countup";
 import Carousel from "react-material-ui-carousel";
 import ContactUs from "../../../../../components/ui/contactus";
 import timeMaterial from "@/components/assets/img/reactjsimg/Time-Material.webp";
@@ -28,6 +26,8 @@ import magento from "@/components/assets/img/angularimg/smc.webp";
 import nop from "@/components/assets/img/angularimg/nopcommerce.webp";
 import webDesginIcon from "@/components/assets/img/projectImg/web-design.webp";
 import softwareDeveloperIcon from "@/components/assets/img/projectImg/software-developer.webp";
+import Zenqua_glance from "../../../../../components/ui/zenqua_glance";
+
 const imageMap: any = {
   timeMaterial,
   dedicatedDevelopmentTeam,
@@ -554,39 +554,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* *******************************GLANCE******************************    */}
 
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 max-w-[100%] mt-[4%] ">
-              <h2 className=" font text-center uppercase service-button text-[#D9E3EA]">
-                ZenQua AT GLANCE
-              </h2>
-              <h2 className="text-3xl font-bold text-center mb-8 text-[#D9E3EA] hover:text-[#019dce]">
-                Over 150+ Completed Projects & Still Counting.
-              </h2>
-              <div className="max-w[100%]">
-                <Grid container spacing={2}>
-                  {content.project.map((item: any, index: any) => (
-                    <Grid key={index} item xs={12} md={6} lg={3}>
-                      <div
-                        key={index}
-                        className="flex flex-col items-center bg-white p-8 max-w[100%] rounded-t-xl"
-                        data-aos="fade-up"
-                        data-aos-delay={index * 200}
-                      >
-                        <Box className="flex justify-center items-center text-[#019dce]">
-                          <div className="text-4xl font-bold text-black">
-                            <CountUp end={item.number} />
-                          </div>
-                          <AddIcon style={{ fontSize: "40px" }} />
-                        </Box>
-                        <div className="text-md text-[#000] font-medium">
-                          {item.title}{" "}
-                        </div>
-                      </div>
-                      <div className="h-[5px] bg-[#019dce] mt-[15px] w-full text-[#019dce]"></div>
-                    </Grid>
-                  ))}
-                </Grid>
-              </div>
-            </div>
+            <Zenqua_glance/>
 
             {/* ***********************  end********************************* */}
 
