@@ -44,11 +44,17 @@ import google from "@/components/assets/img/angularimg/google.webp";
 import nodejs from "@/components/assets/img/angularimg/nodejs.webp";
 import ror from "@/components/assets/img/angularimg/nestjs.webp";
 import Image from "next/image"; 
-import Zenqua_glance from "../../../../../components/ui/zenqua_glance";
 
 const LazyContactUsComponent = dynamic(
   () => import("@/components/ui/contactus")
 );
+const LazyZenquaGlanceComponent = dynamic(
+  () => import("@/components/ui/zenqua_glance")
+);
+const LazyAdoptableApprochComponent = dynamic(
+  () => import("@/components/ui/adoptable_approch")
+);
+
 const imageMap: any = {
   laravel,
   aws,
@@ -647,7 +653,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             {/* *******************************GLANCE******************************    */}
 
            
-            <Zenqua_glance/>
+            <LazyZenquaGlanceComponent/>
 
             {/* ***********************  end********************************* */}
 
@@ -852,7 +858,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             </div>
 
             {/* *********************************************************** */}
-
+{/* 
             <Box className="w-full flex justify-center">
               <div className="w-[100%] mt-[20px]">
                 <h2 className="font text-center uppercase text-[#D9E3EA]">
@@ -959,7 +965,8 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                   })}
                 </Grid>
               </div>
-            </Box>
+            </Box> */}
+            <LazyAdoptableApprochComponent/>
 
             {/* ******************** Why Outsource Your Project to ZenQua? ************************ */}
 
