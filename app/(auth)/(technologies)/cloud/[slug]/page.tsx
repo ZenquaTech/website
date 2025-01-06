@@ -27,6 +27,9 @@ const LazyZenquaGlanceComponent = dynamic(
   () => import("@/components/ui/zenqua_glance")
 );
 
+const LazyPortfolioProjects = dynamic(
+  () => import("@/components/ui/PortfolioProjects")
+);
 const scrollToBottom = () => {
   window.scrollTo({
     top: document.body.scrollHeight,
@@ -34,28 +37,6 @@ const scrollToBottom = () => {
   });
 };
 
-const projects = [
-  {
-    src: "../images/webpFile/one.webp",
-    alt: "Enterprise e-Commerce Store – CAMPSAVER",
-    description: "Enterprise e-Commerce Store – CAMPSAVER"
-  },
-  {
-    src: "../images/webpFile/two.webp",
-    alt: "UAE Government Application – DTMC",
-    description: "UAE Government Application – DTMC"
-  },
-  {
-    src: "../images/webpFile/three.webp",
-    alt: "Marshalls World of Sport Website",
-    description: "Marshalls World of Sport Website"
-  },
-  {
-    src: "../images/webpFile/one.webp",
-    alt: "Employees Shift Management Web App – Shift Manager",
-    description: "Employees Shift Management Web App – Shift Manager"
-  }
-];
 interface PageState {
   hoveredCircle: number | null;
   clickedButton: string;
@@ -213,7 +194,6 @@ class RoutePage extends Component<RoutePageProps, PageState> {
         <MainWrapper>
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
-
             {content?.section1?.map((item: any, index: any) => (
               <div
                 className="grid grid-cols-1 md:grid-cols-2 gap-4"
@@ -246,17 +226,13 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               </div>
             ))}
             {/* ************************end********************************** */}
-
             {/* ************************section2********************************** */}
-
             <WantToHire
               headingText={content.section2?.heading1}
               buttonText={content.section2?.button}
             />
             {/* ************************end********************************** */}
-
             {/* ************************section3********************************** */}
-
             <Grid container>
               {content.section3.map((item: any, index: any) => {
                 return (
@@ -283,7 +259,6 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 );
               })}
             </Grid>
-
             <Grid container>
               {content.item1.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
@@ -324,7 +299,6 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 </Grid>
               ))}
             </Grid>
-
             <Grid container>
               {content.item2.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
@@ -364,11 +338,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 </Grid>
               ))}
             </Grid>
-
             {/* ***********************end************************** */}
-
             {/* ************************section4********************************** */}
-
             <Grid container>
               {content.section4.map((item: any, index: any) => {
                 return (
@@ -385,7 +356,6 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 );
               })}
             </Grid>
-
             <Grid container>
               {content.item3.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
@@ -425,7 +395,6 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 </Grid>
               ))}
             </Grid>
-
             <Grid container>
               {content.item4.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
@@ -465,9 +434,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 </Grid>
               ))}
             </Grid>
-
             {/* ***********************end************************** */}
-
             <div className="max-w-6xl mx-auto px-4 sm:px-6 max-w-[100%] mt-[4%] ">
               <h2 className=" font text-center service-button uppercase">
                 OUR PROCESS
@@ -518,20 +485,17 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 {/* <img src={image} alt="C++ logo" className="responsive-image" /> */}
               </div>
             </div>
-
             {/* *******************************GLANCE******************************    */}
 
           
             <LazyZenquaGlanceComponent/>
 
             {/* ***********************  end********************************* */}
-
             {/* *********************************************************** */}
 
             <LazyAdoptableApprochComponent/>
 
             {/* ******************** Why Outsource Your Project to ZenQua? ************************ */}
-
             <div className="box-border w-full mt-[4%]">
               <h2 className=" font text-center uppercase text-[#D9E3EA]">
                 WHY US
@@ -699,11 +663,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                 </Carousel>
               </Box>
             </div>
-
             {/* ********************  End ************************ */}
-
             {/* ***********************      BUSINESS EMPOWERMENT   ***************************** */}
-
             <Box style={{ marginTop: "5%" }}>
               <h2
                 className=" font text-center  service-button"
@@ -774,53 +735,11 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               </Carousel>
             </Box>
             {/* **********************  End   ****************************** */}
-
             {/* ***********************     PORTFOLIO  ***************************** */}
-
-            <Grid
-              container
-              className=" pt-24 pb-8 px-24 flex text-center"
-              spacing={4}
-            >
-              <Grid item xs={12}>
-                <h2 className=" font text-center uppercase">PORTFOLIO</h2>
-                <h2 className="text-3xl font-bold text-center mb-6 txt-[#D9E3EA]  ">
-                  Why Outsource Your Project to ZenQua?
-                </h2>
-              </Grid>
-              <Grid container spacing={3}>
-                {projects?.map((project, index) => (
-                  <Grid item xs={12} lg={6} key={index}>
-                    <div className="w-full h-full md:h-[400px] flex flex-col items-center">
-                      <img
-                        src={project.src}
-                        alt={project.alt}
-                        className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover rounded-xl"
-                      />
-                      <p className="text-center w-full text-[#9BA9B4] py-4 text-sm md:text-base lg:text-lg xl:text-xl">
-                        {project.description}
-                      </p>
-                    </div>
-                  </Grid>
-                ))}
-                <Grid item xs={12}>
-                  <Box className="w-full flex justify-center mt-4">
-                    <Button
-                      variant="contained"
-                      className="text-lg text-left text-white bg-[#019dce] hover:bg-[#1a7687] h-12 w-36 normal-case"
-                    >
-                      Load More
-                    </Button>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Grid>
-
+            <LazyPortfolioProjects/>
             {/* **********************  End   ****************************** */}
-
             {/* ********************************** Contact Us *********************** */}
             <ContactUs />
-
             {/* ********************************** End *********************** */}
           </div>
         </MainWrapper>
