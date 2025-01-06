@@ -48,12 +48,14 @@ const LazyContactUsComponent = dynamic(
   () => import("@/components/ui/contactus")
 );
 const LazyZenquaGlanceComponent = dynamic(
-  () => import("@/components/ui/zenqua_glance")
+  () => import("@/components/ui/ZenquaGlance")
 );
 const LazyAdoptableApprochComponent = dynamic(
-  () => import("@/components/ui/adoptable_approch")
+  () => import("@/components/ui/AdoptableApproch")
 );
-
+const LazyWhatWeDoComponent = dynamic(
+  () => import("@/components/ui/WhatWeDo")
+);
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
 );
@@ -292,8 +294,8 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             {/* ************************end********************************** */}
 
             {/* ************************section3********************************** */}
-
-            <Grid container>
+           <LazyWhatWeDoComponent content={content}/>
+            {/* <Grid container>
               {content?.section3?.map((item: any, index: any) => {
                 return (
                   <Grid item xs={12} key={index}>
@@ -318,9 +320,9 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                   </Grid>
                 );
               })}
-            </Grid>
+            </Grid> */}
 
-            <Grid container>
+            {/* <Grid container>
               {content?.item1?.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
                   <Box
@@ -360,9 +362,9 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                   </Box>
                 </Grid>
               ))}
-            </Grid>
+            </Grid> */}
 
-            <Grid container>
+            {/* <Grid container>
               {content?.item2?.map((item: any, index: any) => (
                 <Grid item xs={12} md={6} lg={4} key={index}>
                   <Box
@@ -400,7 +402,8 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                   </Box>
                 </Grid>
               ))}
-            </Grid>
+            </Grid> */}
+
 
             {/* ***********************end************************** */}
 

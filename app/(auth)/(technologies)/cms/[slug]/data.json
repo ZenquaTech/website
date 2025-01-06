@@ -41,9 +41,7 @@
         "starLogo": "<FaStar />",
         "title": "PSD to WordPress Integration",
         "description": "We offer professional PSD to WordPress Integration services to help clients build custom websites. Our experienced developers are skilled in HTML coding, WordPress theme integration, and responsive design techniques. We utilize the latest technologies to ensure fast loading times, secure coding, and cross-browser compatibility."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "WooCommerce Development",
@@ -60,6 +58,7 @@
         "description": "We provide comprehensive WordPress Support & Maintenance services to keep your WordPress website running smoothly and efficiently. Our services include plugin and theme updates, server maintenance, security audits, performance optimization, and backup solutions. Additionally, we provide personalized customer service, troubleshooting, and problem-solving to ensure that your WordPress website is running optimally."
       }
     ],
+   
     "section4": [
       {
         "heading1": "EXPERTISE IN WORDPRESS DEVELOPMENT",
@@ -228,9 +227,7 @@
         "starLogo": "<FaStar />",
         "title": "PSD to Drupal Integration",
         "description": "PSD to Drupal Integration services offered by our company specialize in transforming static PSD designs into dynamic, responsive Drupal websites. Leveraging the latest technologies, our expert Drupal developers efficiently convert complex PSD designs into fully functional Drupal themes. We also offer custom Drupal development services to enhance the user experience."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Drupal Migration Services",

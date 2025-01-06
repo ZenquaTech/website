@@ -1,7 +1,7 @@
 import { Grid, Box } from '@material-ui/core'
 import React from 'react'
 import CountUp from 'react-countup'
-import Data from "../ui/data.json";
+import Data from "./data.json";
 import AddIcon from "@material-ui/icons/Add";
 
 function zenqua_glance() {

@@ -19,10 +19,10 @@ import Carousel from "react-material-ui-carousel";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const LazyZenquaGlanceComponent = dynamic(
-  () => import("@/components/ui/zenqua_glance")
+  () => import("@/components/ui/ZenquaGlance")
 );
 const LazyAdoptableApprochComponent = dynamic(
-  () => import("@/components/ui/adoptable_approch")
+  () => import("@/components/ui/AdoptableApproch")
 );
 
 

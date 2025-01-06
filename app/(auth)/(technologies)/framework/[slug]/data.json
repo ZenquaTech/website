@@ -36,9 +36,7 @@
         "starLogo": "<FaStar />",
         "title": "Mern eCommerce & MCommerce Development",
         "description": "Our team of certified Mern developers brings with them an exceptional range of knowledge in designing hybrid applications with responsive & secure frontend platforms and Mern based backend. Our specialties include developing custom websites, apps & APIs, and integrations with payment gateways. We boast of an impressive portfolio of successful projects based add-ons and customizations for overall eCommerce & MCommerce needs."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Mern API Development",
@@ -55,6 +53,7 @@
         "description": "We provides professional Mern Migration Services to help migrate databases, applications or components with ease. With proven experience in Mern migration, our highly skilled migration experts can ensure minimal disruption with rapid speed. We handle project planning, execution and implementation, providing solutions with massive scalability and impeccable secure automation processes."
       }
     ],
+    
     "section4": [
       {
         "heading1": "EXPERTISE IN DJANGO DEVELOPMENT",
@@ -224,9 +223,7 @@
         "starLogo": "<FaStar />",
         "title": "Migrations & Porting to MEAN Stack",
         "description": "Our experienced team has comprehensive knowledge of the MEAN Stack and can provide tailored solutions to migrate existing data or develop custom porting to the MEAN Stack. Our services include modifications and upgrades to existing applications, establishing availability and scalability, and assisting with the transfer of applications to different hosting environments."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "MEAN Stack Web Development and Integration",
@@ -438,9 +435,7 @@
         "starLogo": "<FaStar />",
         "title": "ROR Support & Maintenance",
         "description": "Our team of experienced developers can help you identify and fix any issues you may have with your application and make sure it runs smoothly. We also offer maintenance services to keep your application up to date with the latest security patches and software updates. We strive to ensure your application meets all of your needs and is fully optimized for maximum performance."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "ROR Consulting Services",
