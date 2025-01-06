@@ -238,7 +238,14 @@
         "starLogo": "<FaStar />",
         "title": "Maintenance and Support",
         "description": "We provide comprehensive Maintenance and Support services for Reactjs applications, including monitoring, debugging, troubleshooting and performance optimization. Our team of experienced Reactjs developers are capable of implementing and managing custom solutions for all types of Reactjs applications. We also offer proactive maintenance and support to ensure the smooth and reliable functioning of your Reactjs applications."
-      },
+      }
+      
+    
+    ],
+
+    "item3": [
+     
+     
       {
         "starLogo": "<FaStar />",
         "title": "React UI UX Development",
@@ -253,7 +260,10 @@
         "starLogo": "<FaStar />",
         "title": "React JS Plugin Development",
         "description": "We specialize in developing robust, reliable and high-performance plugins using ReactJS. Our expert developers are well-versed in leveraging the powerful features of ReactJS such as JSX, components, virtual DOM, server-side rendering, and more to build plugins. We ensure the best user experience and scalability in our ReactJS plugins."
-      },
+      }
+    ],
+    "item4": [
+      
       {
         "starLogo": "<FaStar />",
         "title": "React JS Front-End Development",
