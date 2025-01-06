@@ -12,6 +12,7 @@ import {
   Card,
   CardContent,
 } from "@material-ui/core";
+import dynamic from "next/dynamic";
 import { FaStar } from "react-icons/fa";
 import Carousel from "react-material-ui-carousel";
 import "./styles.css";
@@ -23,12 +24,18 @@ import startupBusiness from "@/components/assets/img/reactjsimg/startup-business
 import reactNative from "@/components/assets/img/angularimg/react-native.webp";
 import smallMediumBusiness from "@/components/assets/img/reactjsimg/small-medium_business.webp";
 import Image from "next/image";
-import Zenqua_glance from "../../../../../components/ui/zenqua_glance";
 import WantToHire from "@/components/ui/WantToHire";
-import dynamic from "next/dynamic";
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
 );
+const LazyZenquaGlanceComponent = dynamic(
+  () => import("@/components/ui/zenqua_glance")
+);
+const LazyAdoptableApprochComponent = dynamic(
+  () => import("@/components/ui/adoptable_approch")
+);
+
+
 const imageMap: any = {
   timeMaterial,
   dedicatedDevelopmentTeam,
@@ -524,117 +531,13 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* *******************************GLANCE******************************    */}
 
-            <Zenqua_glance/>
+            <LazyZenquaGlanceComponent/>
 
             {/* ***********************  end********************************* */}
 
             {/* *********************************************************** */}
 
-            <Box className="w-full flex justify-center">
-              <div className="w-[100%] mt-[20px]">
-                <h2 className="font text-center uppercase text-[#D9E3EA]">
-                  ADAPTABLE APPROACH
-                </h2>
-                <h2 className="text-3xl font-bold text-center mb-6 text-[#D9E3EA]">
-                  Our Flexible Engagement Models
-                </h2>
-
-                <Grid
-                  container
-                  spacing={2}
-                  justifyContent="center"
-                  style={{ width: "95%", margin: "0 auto" }}
-                >
-                  {content.adaptable.map((items: any) => {
-                    return (
-                      <Grid
-                        item
-                        sm={12}
-                        md={6}
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          alignItems: "center",
-                        }}
-                      >
-                        <Paper
-                          style={{
-                            height: "max(70%,100%)",
-                            flexWrap: "wrap",
-                            backgroundColor: "transparent",
-                            boxShadow: "0px 0px 5px #D9E3EA",
-                            width: "100%",
-                            boxSizing: "border-box",
-                            padding: "20px",
-                          }}
-                        >
-                          <h2 className="font-bold text-xl text-[#D9E3EA]">
-                            {items.title}
-                          </h2>
-                          <Typography
-                            style={{
-                              textAlign: "justify",
-                              color: "#9BA9B4",
-                              marginTop: "5%",
-                              fontSize: "16px",
-                            }}
-                          >
-                            {items.decription}
-                          </Typography>
-                          <Box
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              padding: "5%",
-                              width: "100%",
-                            }}
-                          >
-                            <img
-                              style={{
-                                height: "90%",
-                                width: "70%",
-                              }}
-                              src={imageMap[items.images]?.src || items.images}
-                              alt="Time & Material Model"
-                            />
-                          </Box>
-                          <Paper
-                            style={{
-                              marginTop: "5px",
-                              backgroundColor: "transparent",
-                              display: "flex",
-                            }}
-                          >
-                            <Typography
-                              style={{
-                                color: "#9BA9B4",
-                                width: "50%",
-                                padding: "10px",
-                                textAlign: "justify",
-                                fontSize: "16px",
-                              }}
-                            >
-                              {items.para1}
-                            </Typography>
-                            <Typography
-                              style={{
-                                color: "#9BA9B4",
-                                width: "50%",
-                                padding: "10px",
-                                textAlign: "justify",
-                                fontSize: "16px",
-                              }}
-                            >
-                              {items.para2}
-                            </Typography>
-                          </Paper>
-                        </Paper>
-                      </Grid>
-                    );
-                  })}
-                </Grid>
-              </div>
-            </Box>
+            <LazyAdoptableApprochComponent/>
 
             <div className="box-border w-full mt-[4%]">
               <h2 className=" font text-center uppercase text-[#D9E3EA]">

@@ -15,7 +15,7 @@ const models = [
       "Pre-defined solution in detail",
       "Specified Scope and Specification"
     ],
-    imageSrc: "/../images/webpFile/Fixed_price.webp",
+    imageSrc: "/images/webpFile/Fixed_price.webp",
     imageAlt: "Fixed Price"
   },
   {
@@ -27,7 +27,7 @@ const models = [
       "Pay per hour model",
       "Design and specification iterations"
     ],
-    imageSrc: "/../images/webpFile/time_n_material.webp",
+    imageSrc: "/images/webpFile/time_n_material.webp",
     imageAlt: "Time and Material"
   },
   {
@@ -39,13 +39,13 @@ const models = [
       "Convenient for large projects",
       "Flexibility to make numerous iterations"
     ],
-    imageSrc: "/../images/webpFile/dedicated_team.webp",
+    imageSrc: "/images/webpFile/dedicated_team.webp",
     imageAlt: "Dedicated Team"
   },
   {
     title: "Team Formations",
     description: "Whether you hire a single developer or create your own team of developers, our team structure remains the same. We work with the same vigor and maintain same quality standards for all our work and processes. We are fully committed to complete your work and maintain security to give you best IT support and services. And that’s our guarantee.",
-    imageSrc: "/../images/webpFile/team_formation.webp",
+    imageSrc: "/images/webpFile/team_formation.webp",
     imageAlt: "Team Formations"
   }
 ];
