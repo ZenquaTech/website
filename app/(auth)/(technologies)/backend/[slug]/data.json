@@ -42,24 +42,22 @@
             "starLogo": "<FaStar />",
             "title": "Node Js Application Migration",
             "description":"We have experience in migrating complex applications from platforms such as .Net, PHP, and JAVA to Node.js, and automating database migration to MongoDB. If you have an existing application on another platform, we can help you migrate it to Node.js. We can also provide guidance and advice on best practices for Node.js development and help you optimize your application for maximum performance."
-        }
-    ],
-    "item2": [
-        {
-            "starLogo": "<FaStar />",
-            "title": "Node JS Maintenance And Support",
-            "description":"As a top Node.js development company, we offer complete support and maintenance services to ensure the regular updating, scaling, and optimal performance of your Node.js applications. Our SLA-based support covers front-end/back-end maintenance, app updates, and new releases, providing you with peace of mind and the assurance that your applications are in good hands."
         },
         {
-            "starLogo": "<FaStar />",
-            "title": "Node.Js API Development & Integration",
-            "description":"Our team of skilled Node.js programmers specializes in building REST and JSON APIs to enhance security, improve efficiency, and provide a seamless user experience. We have experience in developing scalable and robust API-based Node.js solutions and have the expertise to create secure REST APIs from scratch in a timely manner."
-        },
-        {
-            "starLogo": "<FaStar />",
-            "title": "Serverless Node.Js Microservices",
-            "description":"Creating serverless microservices using Node.js, which can greatly improve the performance of your server-side applications. By implementing microservices APIs, we can help you achieve faster response times, better scalability, and more efficient resource utilization. Let us help you take your server-side applications to the next level with our expertise in Node.js microservices development."
-        }
+          "starLogo": "<FaStar />",
+          "title": "Node JS Maintenance And Support",
+          "description":"As a top Node.js development company, we offer complete support and maintenance services to ensure the regular updating, scaling, and optimal performance of your Node.js applications. Our SLA-based support covers front-end/back-end maintenance, app updates, and new releases, providing you with peace of mind and the assurance that your applications are in good hands."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Node.Js API Development & Integration",
+          "description":"Our team of skilled Node.js programmers specializes in building REST and JSON APIs to enhance security, improve efficiency, and provide a seamless user experience. We have experience in developing scalable and robust API-based Node.js solutions and have the expertise to create secure REST APIs from scratch in a timely manner."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Serverless Node.Js Microservices",
+          "description":"Creating serverless microservices using Node.js, which can greatly improve the performance of your server-side applications. By implementing microservices APIs, we can help you achieve faster response times, better scalability, and more efficient resource utilization. Let us help you take your server-side applications to the next level with our expertise in Node.js microservices development."
+      }
     ],
     "section4": [
       {
@@ -240,24 +238,22 @@
             "starLogo": "<FaStar />",
             "title": "NestJS Backend Development",
             "description":"We provides comprehensive services for developing robust backend applications. It offers an integrated TypeScript-based platform for building efficient, scalable and maintainable server-side applications. It utilizes progressive JavaScript, modern tools and techniques, and provides comprehensive solutions for building APIs, microservices and web applications. The platform is highly extensible, making it easy to customize and extend existing features. It also offers a wide range of integrations and supports a wide variety of databases."
-        }
-    ],
-    "item2": [
-        {
-            "starLogo": "<FaStar />",
-            "title": "NestJS Custom Development",
-            "description":"We provides expert services for developing custom NestJS applications. Our team of experienced developers create robust, secure, and reliable solutions to meet your business needs. We provide end-to-end development, including architecture design, code implementation, testing, and deployment. Our services are tailored to meet your specific requirements and timeline. Enjoy fast and reliable support. Get your custom NestJS applications today!"
         },
         {
-            "starLogo": "<FaStar />",
-            "title": "App Architecture Development",
-            "description":"Our team of designers are ready to help you create an interactive and user-friendly web application, portal, or widget using AngularJS. We are committed to making sure the user experience is at the forefront of every build. We understand the importance of creating a product that is both visually appealing and intuitive to use, and strive to meet our customer’s expectations every step of the way. We use the latest industry standards to ensure our applications are reliable and secure."
-        },
-        {
-            "starLogo": "<FaStar />",
-            "title": "NestJS Maintenance & Support",
-            "description":"We provide comprehensive NestJS maintenance and support services, including troubleshooting, bug fixing, feature development, code refactoring, and system upgrades. Our experienced team of experts will help you maintain optimal performance and ensure your application is up-to-date with the latest NestJS technologies. We are committed to delivering quality service, reliable support, and fast turnaround times."
-        }
+          "starLogo": "<FaStar />",
+          "title": "NestJS Custom Development",
+          "description":"We provides expert services for developing custom NestJS applications. Our team of experienced developers create robust, secure, and reliable solutions to meet your business needs. We provide end-to-end development, including architecture design, code implementation, testing, and deployment. Our services are tailored to meet your specific requirements and timeline. Enjoy fast and reliable support. Get your custom NestJS applications today!"
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "App Architecture Development",
+          "description":"Our team of designers are ready to help you create an interactive and user-friendly web application, portal, or widget using AngularJS. We are committed to making sure the user experience is at the forefront of every build. We understand the importance of creating a product that is both visually appealing and intuitive to use, and strive to meet our customer’s expectations every step of the way. We use the latest industry standards to ensure our applications are reliable and secure."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "NestJS Maintenance & Support",
+          "description":"We provide comprehensive NestJS maintenance and support services, including troubleshooting, bug fixing, feature development, code refactoring, and system upgrades. Our experienced team of experts will help you maintain optimal performance and ensure your application is up-to-date with the latest NestJS technologies. We are committed to delivering quality service, reliable support, and fast turnaround times."
+      }
     ],
     "section4": [
       {
@@ -474,24 +470,22 @@
             "starLogo": "<FaStar />",
             "title": "ROR Mobile App Development",
             "description":"We provide comprehensive ROR Mobile App Development services, utilizing cutting-edge technology and modern tools to create robust and secure mobile applications. Our experienced team of developers can build powerful mobile solutions, using the flexibility and scalability of ROR to achieve desired results."
-        }
-    ],
-    "item2": [
-        {
-            "starLogo": "<FaStar />",
-            "title": "ROR backend Development",
-            "description":"We offer ROR Backend Development Services with a comprehensive range of development solutions, including API integration, web application development, database design, and more. Our team has expertise in developing custom solutions in ROR, leveraging the latest tools and technologies to ensure reliable, secure and efficient results."
         },
         {
-            "starLogo": "<FaStar />",
-            "title": "ROR Framework development",
-            "description":"We offer comprehensive ROR Framework development services. Our ROR development team has extensive experience developing robust and reliable applications using a variety of ROR frameworks such as Django, Flask, Pyramid, and CherryPy. We specialize in full-stack development, providing custom solutions that meet the unique needs of each client."
-        },
-        {
-            "starLogo": "<FaStar />",
-            "title": "Custom ROR Application Development",
-            "description":"Our team of experienced developers provide custom ROR application development services, utilizing the latest technologies and frameworks to create high-performance, scalable, and secure solutions. We specialize in creating web and mobile applications, data processing and analysis systems, machine learning and artificial intelligence applications, and more."
-        }
+          "starLogo": "<FaStar />",
+          "title": "ROR backend Development",
+          "description":"We offer ROR Backend Development Services with a comprehensive range of development solutions, including API integration, web application development, database design, and more. Our team has expertise in developing custom solutions in ROR, leveraging the latest tools and technologies to ensure reliable, secure and efficient results."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "ROR Framework development",
+          "description":"We offer comprehensive ROR Framework development services. Our ROR development team has extensive experience developing robust and reliable applications using a variety of ROR frameworks such as Django, Flask, Pyramid, and CherryPy. We specialize in full-stack development, providing custom solutions that meet the unique needs of each client."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Custom ROR Application Development",
+          "description":"Our team of experienced developers provide custom ROR application development services, utilizing the latest technologies and frameworks to create high-performance, scalable, and secure solutions. We specialize in creating web and mobile applications, data processing and analysis systems, machine learning and artificial intelligence applications, and more."
+      }
     ],
     "section4": [
       {

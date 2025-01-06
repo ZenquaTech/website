@@ -31,6 +31,9 @@ const LazyPortfolioProjects = dynamic(
 const LazyZenquaGlanceComponent = dynamic(
   () => import("@/components/ui/ZenquaGlance")
 );
+const LazyWhatWeDoComponent = dynamic(
+  () => import("@/components/ui/WhatWeDo")
+);
 const LazyAdoptableApprochComponent = dynamic(
   () => import("@/components/ui/AdoptableApproch")
 );
@@ -267,8 +270,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* ************************end********************************** */}
 
             {/* ************************section3********************************** */}
-
-            <Grid container>
+            <LazyWhatWeDoComponent content={content}/>
+            {/* <Grid container>
               {content.section3.map((item: any, index: any) => {
                 return (
                   <Grid item xs={12}>
@@ -374,7 +377,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   </Box>
                 </Grid>
               ))}
-            </Grid>
+            </Grid> */}
 
             {/* ***********************end************************** */}
 

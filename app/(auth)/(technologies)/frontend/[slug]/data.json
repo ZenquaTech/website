@@ -35,9 +35,7 @@
         "starLogo": "<FaStar />",
         "title": "AngularJS Upgrading and Migration",
         "description": "Providing Upgrading and Migration services in AngularJS is an essential part of any web development process. Our team of experts are skilled in creating innovative solutions to ensure a seamless transition to the latest AngularJS version, while ensuring all existing code is upgraded and migrated with minimal disruption. Our team ensures all applications are optimised for performance and security, making sure all data is preserved."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "AngularJS UI/UX Solutions",
@@ -240,10 +238,7 @@
         "starLogo": "<FaStar />",
         "title": "Maintenance and Support",
         "description": "We provide comprehensive Maintenance and Support services for Reactjs applications, including monitoring, debugging, troubleshooting and performance optimization. Our team of experienced Reactjs developers are capable of implementing and managing custom solutions for all types of Reactjs applications. We also offer proactive maintenance and support to ensure the smooth and reliable functioning of your Reactjs applications."
-      }
-    ],
-    "item2": [],
-    "item3": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "React UI UX Development",
@@ -258,9 +253,7 @@
         "starLogo": "<FaStar />",
         "title": "React JS Plugin Development",
         "description": "We specialize in developing robust, reliable and high-performance plugins using ReactJS. Our expert developers are well-versed in leveraging the powerful features of ReactJS such as JSX, components, virtual DOM, server-side rendering, and more to build plugins. We ensure the best user experience and scalability in our ReactJS plugins."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "React JS Front-End Development",
@@ -277,6 +270,7 @@
         "description": "Our React consulting services provide clients with comprehensive expertise in React JS. We offer comprehensive development and consulting services for the React framework, including component-based architecture, state management, and the React ecosystem. Our experienced team has deep knowledge of React, JavaScript, and the full web development stack. We specialize in building custom React applications that are performant, secure, and reliable."
       }
     ],
+
     "project": [
       {
         "title": "Project Delivered",
@@ -426,9 +420,7 @@
         "starLogo": "<FaStar />",
         "title": "VueJs Web App Development",
         "description": "We offer expert services for Vue.js web application development, leveraging the powerful features of the framework including components, routing, and state management. Our team is skilled in creating robust and scalable web applications and leveraging the latest technologies and libraries. We provide guidance on best practices and ensure code is well-structured and maintainable."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "CInteractive UI Development with VueJs",
@@ -641,9 +633,7 @@
         "starLogo": "<FaStar />",
         "title": "Custom Knockout.js Development Services",
         "description": "Company provides custom Knockout.js development services to help clients create dynamic and interactive web applications. Our developers utilize Knockout.js’ Model-View-ViewModel (MVVM) architecture to develop single page applications, create custom bindings, and integrate existing libraries. We also provide maintenance services to ensure optimal performance."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Knockout.js Application Migration Services",
@@ -900,9 +890,7 @@
         "starLogo": "<FaStar />",
         "title": "Next Js Static & Dynamic Websites",
         "description": "Our team has vast expeience in creating Next.js websites, utilizing the framework’s powerful features to create both static and dynamic web applications. We leverage Next.js’ server-side rendering capabilities to provide improved performance, faster loading speeds, and enhanced SEO capabilities, while leveraging its React-based development environment to create feature-rich, interactive websites."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Next Js Customization Services",

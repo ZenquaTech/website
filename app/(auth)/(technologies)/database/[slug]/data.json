@@ -35,9 +35,7 @@
         "starLogo": "<FaStar />",
         "title": "MySQL Integration",
         "description": "Our MySQL integration service provides data transfer and synchronization between databases, streamlining your business processes. Our experts specialize in creating efficient, reliable, and secure connections using JDBC and ODBC drivers, as well as custom SQL queries. We can help you connect your applications to MySQL databases, synchronize data across multiple databases, and migrate data from one database to another.."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "MySQL Upgrades",
@@ -243,9 +241,7 @@
         "starLogo": "<FaStar />",
         "title": "PostgreSQL API Development",
         "description": "We specialize in PostgreSQL API Development, offering comprehensive services to help you create secure and reliable system integrations. Our database engineers are adept at designing, developing and deploying custom APIs that allow you to seamlessly connect your application to PostgreSQL databases. From creating the structure and logic of the API to complete testing and debugging, we ensure the highest quality results."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "PostgreSQL Tuning",
@@ -407,9 +403,7 @@
         "starLogo": "<FaStar />",
         "title": "RESTful APIs Development",
         "description": "We have extensive experience in designing and developing RESTful APIs in MongoDB. Our MongoDB Experts can create custom solutions that are tailored to your exact business requirements. We also offer a range of services including integration with third-party APIs, scalability, and performance optimization. Our MongoDB expertise allows us to develop robust, secure APIs that are optimized for speed and scalability."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Data Migration to MongoDB",
@@ -616,9 +610,7 @@
         "starLogo": "<FaStar />",
         "title": "IoT Application Development",
         "description": "We are experts in IoT Application Development using Redis. We use Redis to create powerful, scalable, and flexible applications that can be used in a variety of IoT scenarios. Our team of experienced engineers has extensive experience in leveraging the various components of Redis to create robust and secure applications for IoT-enabled devices. We understand the importance of taking advantage of the scalability and cost-effectiveness of Redis to create powerful and efficient applications for the IoT space."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Redis Support & Maintenance",
@@ -829,9 +821,7 @@
         "starLogo": "<FaStar />",
         "title": "Firebase Web App Development",
         "description": "We provide Firebase web app development services to meet the needs of our clients. Our team of experienced engineers is well-versed in the development of reliable and secure web apps using the Firebase platform. We have extensive experience in configuring Firebase to facilitate authentication, cloud functions, cloud storage, hosting, and more. We also specialize in developing custom UI/UX designs to create an engaging user experience. Our team of experts can help you develop a Firebase web app that meets your business goals."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Cloud Firestore",

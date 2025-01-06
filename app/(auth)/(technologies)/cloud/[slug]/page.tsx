@@ -26,10 +26,13 @@ const LazyAdoptableApprochComponent = dynamic(
 const LazyZenquaGlanceComponent = dynamic(
   () => import("@/components/ui/ZenquaGlance")
 );
-
+const LazyWhatWeDoComponent = dynamic(
+  () => import("@/components/ui/WhatWeDo")
+);
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
 );
+
 const scrollToBottom = () => {
   window.scrollTo({
     top: document.body.scrollHeight,
@@ -233,7 +236,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             />
             {/* ************************end********************************** */}
             {/* ************************section3********************************** */}
-            <Grid container>
+            <LazyWhatWeDoComponent content={content}/>
+            {/* <Grid container>
               {content.section3.map((item: any, index: any) => {
                 return (
                   <Grid item xs={12}>
@@ -337,7 +341,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
                   </Box>
                 </Grid>
               ))}
-            </Grid>
+            </Grid> */}
             {/* ***********************end************************** */}
             {/* ************************section4********************************** */}
             <Grid container>
