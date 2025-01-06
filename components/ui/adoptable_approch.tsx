@@ -46,6 +46,7 @@ function adoptable_approch() {
               <Typography
                 style={{
                   textAlign: "justify",
+                  hyphens: "auto",
                   color: "#9BA9B4",
                   marginTop: "5%",
                   fontSize: "16px",
@@ -86,6 +87,7 @@ function adoptable_approch() {
                     width: "50%",
                     padding: "10px",
                     textAlign: "justify",
+                    hyphens: "auto",
                     fontSize: "16px",
                   }}
                 >
@@ -99,6 +101,7 @@ function adoptable_approch() {
                     width: "50%",
                     padding: "10px",
                     textAlign: "justify",
+                    hyphens: "auto",
                     fontSize: "16px",
                   }}
                 >
@@ -139,6 +142,7 @@ function adoptable_approch() {
               <Typography
                 style={{
                   textAlign: "justify",
+                  hyphens: "auto",
                   color: "#9BA9B4",
                   marginTop: "5%",
                   fontSize: "16px",
@@ -179,6 +183,7 @@ function adoptable_approch() {
                     width: "50%",
                     padding: "10px",
                     textAlign: "justify",
+                    hyphens: "auto",
                     fontSize: "16px",
                   }}
                 >
@@ -192,6 +197,7 @@ function adoptable_approch() {
                     width: "50%",
                     padding: "10px",
                     textAlign: "justify",
+                    hyphens: "auto",
                     fontSize: "16px",
                   }}
                 >

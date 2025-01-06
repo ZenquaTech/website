@@ -523,23 +523,6 @@
            "description":"Our team has in-depth expertise in leveraging Google Cloud's powerful, cost-effective solutions to create custom solutions for a wide range of industries. We are able to utilize Google Cloud's unique features, such as Artificial Intelligence and Machine Learning, to develop powerful, tailored solutions that optimize operations and improve user experience."
        }
    ],
-   "adaptable": [
-       {
-           "title": "Time & Material Basis Model",
-           "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-           "images":"../images/webpFile/Time-Material.webp",
-           "para1":"Flexibility to hire resources as needed.cost-effective way to hire expert developers. ability to scale resources up and down as needed.",
-           "para2":"opportunity to work with experienced professionals.Quickly lunch projects with minimal overhead. Access to specialized skills and expertise.."
-       },
-       {
-           "title": "Dedicated Developer Model",
-           "decription": "Time and Material hiring model offers flexibility, cost saving, access to expertise, scalability & time-saving for projects with dynamic requirements. Ideal for businesses with long-term projects needing future modifications.",
-           "images":"../images/webpFile/dedicated-development_team-2.webp",
-           "para1":"Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
-           "para2":"Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
-       }
-         
-   ],
    "business" : [
    {
      "title": "Backend Development",
