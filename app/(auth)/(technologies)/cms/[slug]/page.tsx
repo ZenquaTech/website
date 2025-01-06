@@ -28,6 +28,7 @@ import softwareDeveloperIcon from "@/components/assets/img/projectImg/software-d
 import Zenqua_glance from "../../../../../components/ui/zenqua_glance";
 
 import Image from "next/image";
+import WantToHire from "@/components/ui/WantToHire";
 const imageMap: any = {
   wordpress,
   timeMaterial,
@@ -255,82 +256,10 @@ class RoutePage extends Component<RoutePageProps,PageState> {
 
             {/* ************************section2********************************** */}
 
-            <Box
-              style={{
-                flexGrow: "1px",
-                borderLeft: "2px solid rgb(32, 144, 164)",
-                marginTop: "4%",
-              }}
-            >
-              {content.section2.map((item: any, index: any) => {
-                return (
-                  <Grid container spacing={2} key={index}>
-                    <Grid item xs={12} md={8}>
-                      <Typography
-                        style={{
-                          color: "#D9E3EA",
-                          fontWeight: "bold",
-                          fontSize: "24px",
-                          marginBottom: "4px",
-                          marginLeft: "2%",
-                        }}
-                      >
-                        {item.heading}
-                        <span
-                          style={{
-                            color: "#019dce",
-                            flexWrap: "wrap",
-                            margin: "1%",
-                          }}
-                        >
-                          {item.heading1}
-                        </span>
-                      </Typography>
-
-                      <Typography
-                        variant="body1"
-                        style={{
-                          color: "#9BA9B4",
-                          marginLeft: "2%",
-                          fontSize: "16px",
-                          textAlign: "justify",
-                        }}
-                      >
-                        {item.para}
-                      </Typography>
-                    </Grid>
-
-                    <Grid
-                      item
-                      xs={12}
-                      md={4}
-                      container
-                      justifyContent="center"
-                      alignItems="center"
-                    >
-                      <Button
-                        variant="contained"
-                        style={{
-                          alignItems: "center",
-                          fontSize: "15px",
-                          marginTop: "2%",
-                          textAlign: "center",
-                          flexWrap: "wrap",
-                          backgroundColor: "#019dce",
-                          color: "#D9E3EA",
-                          padding: "2%",
-                          fontWeight: "bold",
-                          textTransform: "none",
-                          width: "80%",
-                        }}
-                      >
-                        {item.button}
-                      </Button>
-                    </Grid>
-                  </Grid>
-                );
-              })}
-            </Box>
+            <WantToHire
+              headingText={content.section2?.heading1}
+              buttonText={content.section2?.button}
+            />
             {/* ************************end********************************** */}
 
             {/* ************************section3********************************** */}
@@ -620,7 +549,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                   justifyContent="center"
                   style={{ width: "95%", margin: "0 auto" }}
                 >
-                  {content.adaptable.map((items: any,index:number) => {
+                  {content.adaptable.map((items: any, index: number) => {
                     return (
                       <Grid
                         key={index}
@@ -791,24 +720,25 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                         color: "#D9E3EA",
                       }}
                     >
-                      {content.servicesData2.map((service: any,index:number) =>
-                        this.state.clickedButton6 === service.label ? (
-                          <div key={index}>
-                            <div
-                              className="text-2xl font-bold text-[#019dce]"
-                              // style={{ color: "#019dce" }}
-                            >
-                              {service.label}
-                            </div>
+                      {content.servicesData2.map(
+                        (service: any, index: number) =>
+                          this.state.clickedButton6 === service.label ? (
+                            <div key={index}>
+                              <div
+                                className="text-2xl font-bold text-[#019dce]"
+                                // style={{ color: "#019dce" }}
+                              >
+                                {service.label}
+                              </div>
 
-                            <div
-                              className="text-xl  text-[#9BA9B4]"
-                              key={service.label}
-                            >
-                              {service.content}
+                              <div
+                                className="text-xl  text-[#9BA9B4]"
+                                key={service.label}
+                              >
+                                {service.content}
+                              </div>
                             </div>
-                          </div>
-                        ) : null
+                          ) : null
                       )}
                     </Paper>
                   </Grid>

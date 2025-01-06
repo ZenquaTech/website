@@ -44,6 +44,8 @@ import google from "@/components/assets/img/angularimg/google.webp";
 import nodejs from "@/components/assets/img/angularimg/nodejs.webp";
 import ror from "@/components/assets/img/angularimg/nestjs.webp";
 import Image from "next/image"; 
+import WantToHire from "@/components/ui/WantToHire";
+import Zenqua_glance from "../../../../../components/ui/zenqua_glance";
 
 const LazyContactUsComponent = dynamic(
   () => import("@/components/ui/contactus")
@@ -304,85 +306,10 @@ class RoutePage extends Component<RoutePageProps,PageState> {
 
             {/* ************************section2********************************** */}
 
-            <Box
-              style={{
-                flexGrow: "1px",
-                borderLeft: "2px solid rgb(32, 144, 164)",
-                marginTop: "4%",
-              }}
-            >
-              {content?.section2?.map((item: any, index: any) => {
-                return (
-                  <Grid container spacing={2} key={index}>
-                    <Grid item xs={12} md={8}>
-                      <Typography
-                        style={{
-                          color: "#D9E3EA",
-                          fontWeight: "bold",
-                          fontSize: "24px",
-                          marginBottom: "4px",
-                          marginLeft: "2%",
-                        }}
-                      >
-                        {item.heading}
-                        <span
-                          style={{
-                            color: "#019dce",
-                            flexWrap: "wrap",
-                            margin: "1%",
-                          }}
-                        >
-                          {item.heading1}
-                        </span>
-                      </Typography>
-
-                      <Typography
-                        variant="body1"
-                        style={{
-                          color: "#9BA9B4",
-                          marginLeft: "2%",
-                          fontSize: "16px",
-                          textAlign: "justify",
-                        }}
-                      >
-                        {item.para}
-                      </Typography>
-                    </Grid>
-
-                    <Grid
-                      item
-                      xs={12}
-                      md={4}
-                      container
-                      justifyContent="center"
-                      alignItems="center"
-                    >
-                      {/* <Link href="/contact-us"> */}
-                      <Button
-                        variant="contained"
-                        style={{
-                          alignItems: "center",
-                          fontSize: "15px",
-                          marginTop: "2%",
-                          textAlign: "center",
-                          flexWrap: "wrap",
-                          backgroundColor: "#019dce",
-                          color: "#D9E3EA",
-                          padding: "2%",
-                          fontWeight: "bold",
-                          borderRadius: "10px",
-                          width: "80%",
-                          textTransform: "none",
-                        }}
-                      >
-                        {item.button}
-                      </Button>
-                      {/* </Link> */}
-                    </Grid>
-                  </Grid>
-                );
-              })}
-            </Box>
+            <WantToHire
+              headingText={content.section2?.heading1}
+              buttonText={content.section2?.button}
+            />
             {/* ************************end********************************** */}
 
             {/* ************************section3********************************** */}

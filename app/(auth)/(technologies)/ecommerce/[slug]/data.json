@@ -14,14 +14,11 @@
         "button": "Talk to Expert"
       }
     ],
-    "section2": [
+    "section2": 
       {
-        "heading": "Want To Hire An Offshore ",
         "heading1": "WooCommerce Development Team?",
-        "para": "We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
         "button": "Hire WooCommerce developer"
-      }
-    ],
+      },
     "section3": [
       {
         "heading1": "WHAT WE DO",
@@ -225,14 +222,12 @@
         "button": "Talk to Expert"
       }
     ],
-    "section2": [
+    "section2": 
       {
-        "heading": "Want To Hire An Offshore",
         "heading1": "Magento Development Team?",
-        "para": "We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
         "button": "Hire MAGENTO DEVELOPER"
       }
-    ],
+    ,
     "section3": [
       {
         "heading1": "WHAT WE DO",
@@ -399,14 +394,11 @@
         "button": "Talk to Expert"
       }
     ],
-    "section2": [
-      {
-        "heading": "Want To Hire An Offshore ",
+    "section2": {
         "heading1": "Shopify Development Team?",
-        "para": "We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
         "button": "Hire SHOPIFY DEVELOPER"
       }
-    ],
+    ,
     "section3": [
       {
         "heading1": "WHAT WE DO",
@@ -595,14 +587,12 @@
         "button": "Talk to Expert"
       }
     ],
-    "section2": [
+    "section2": 
       {
-        "heading": "Want To Hire An Offshore ",
         "heading1": "Nopcommerce Development Team?",
-        "para": "We are proud to offer you a no-cost, no-risk opportunity to build your dream business. Our experienced professionals are here to help you get your idea off the ground. With our support, you’ll be ready to take the next step in no time. Try us out for the first 7 days at no cost and no commitment. Give us a try today!",
         "button": "Hire NOPCOMMERCE DEVELOPER"
       }
-    ],
+    ,
     "section3": [
       {
         "heading1": "WHAT WE DO",
