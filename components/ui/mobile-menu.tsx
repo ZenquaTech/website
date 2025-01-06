@@ -1,123 +1,25 @@
 "use client";
-
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import {
   Box,
   Collapse,
-  IconButton,
   List,
   ListItem,
   ListItemText,
   SwipeableDrawer,
-  Typography,
   makeStyles,
-  styled,
-  useTheme,
 } from "@material-ui/core";
-import { createTheme } from "@mui/material/styles";
-//import { makeStyles } from "@material-ui/core/styles";
+import { Add,Clear } from "@material-ui/icons";
 
-const useGlobalStyles = makeStyles({
-  "@global": {
-    ".MuiPaper-root::-webkit-scrollbar": {
-      width: "2px",
-    },
-    ".MuiPaper-root::-webkit-scrollbar-thumb": {
-      backgroundColor: "rgba(100, 100, 100, 0.6)",
-      borderRadius: "6px",
-    },
-    ".MuiPaper-root::-webkit-scrollbar-track": {
-      backgroundColor: "rgba(200, 200, 200, 0.3)",
-      borderRadius: "6px",
-    },
-  },
-});
-
-import { ExpandLess, ExpandMore } from "@material-ui/icons";
-import { number } from "prop-types";
 const useStyles = makeStyles((theme) => ({
-  toolbarMargin: {
-    marginBottom: "3em",
-    [theme.breakpoints.down("xs")]: {
-      marginBottom: "2em",
-    },
-    [theme.breakpoints.down("md")]: {
-      marginBottom: "2em",
-    },
-  },
-  logo: {
-    height: 25,
-    marginLeft: "2em",
-    [theme.breakpoints.down("md")]: {
-      height: 20,
-    },
-    [theme.breakpoints.down("xs")]: {
-      height: 20,
-    },
-  },
-  logoContainer: {
-    marginLeft: "6em",
-    marginRight: "4em",
-    padding: 0,
-    "&:hover": {
-      backgroundColor: "transparent",
-    },
-    [theme.breakpoints.down("md")]: {
-      marginRight: "1em",
-      marginLeft: "1em",
-    },
-    [theme.breakpoints.down("sm")]: {
-      marginRight: 0,
-      marginLeft: 0,
-    },
-  },
-  tabContainer: {
-    marginRight: "auto",
-  },
-  tab: {
-    ...theme.typography,
-    minWidth: 10,
-    marginLeft: "25px",
-  },
-  button: {
-    ...theme.typography,
-    borderRadius: "50px",
-    marginLeft: "50px",
-    marginRight: "50px",
-    height: "45px",
-    "&:hover": {
-      backgroundColor: theme.palette.secondary.light,
-    },
-  },
-  menu: {
-    backgroundColor: "rgb(34 43 69)",
-    borderBottom: "#F037A5",
-    backgroundImage:
-      "linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05))",
-    boxShadow: "rgb(0 0 0 / 25%) 0px 3px 6px 0px",
-    color: "white",
-    borderRadius: "0px",
-  },
   menuItem: {
     ...theme.typography,
-    opacity: 0.7,
-    "&:hover": {
-      opacity: 1,
-    },
-  },
-  drawerIcon: {
-    height: "50px",
-    width: "50px",
-  },
-  drawerIconContainer: {
-    marginLeft: "auto",
-    "&:hover": {
-      backgroundColor: "transparent",
-    },
   },
   drawer: {
-    backgroundColor: "black",
+   scrollBehavior: "smooth",
+    scrollbarWidth:"none",
+    backgroundColor: "#1B1A1F",
     color: "white",
     borderBottom: "#F037A5",
     backgroundImage:
@@ -127,87 +29,89 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerItem: {
     ...theme.typography,
-    opacity: 1,
     fontSize: "16px",
     fontWeight: 500,
   },
-  drawerItemEstimate: {
-    "&:hover": {},
+  buttonConfig: {
+    color: "#ffffffbf",
+    "&:hover": {
+      color: "#019dce",
+    },
+    fontSize: "16px",
+    fontWeight: 500,
+    fontFamily: "DM Sans, sans-serif",
+    textTransform: "capitalize",
+    width: " 100%",
+    textAlign: "start",
+    padding: "15px",
+  },
+  menuTitle: {
+    color: "#ffffffbf",
+    "&:hover": {
+      color: "#019dce",
+    },
+    "& .MuiListItemText-root": {},
+
+    "& .MuiListItemText-primary": {
+      fontSize: "16px",
+      fontWeight: 500,
+      fontFamily: "DM Sans, sans-serif",
+      textTransform: "capitalize",
+    },
+  },
+  subMenuItemStyle: {
+    color: "#ffffffa6",
+    opacity: 0.9,
+    "&:hover": {
+      color: "#019dce",
+    },
+    "& .MuiListItemText-primary": {
+      fontFamily: "DM Sans, sans-serif",
+      textTransform: "capitalize",
+      fontWeight: "bold",
+      marginRight: "20px",
+      fontSize: "12.544px",
+    },
+  },
+  subMenuTitleStyle: {
+    color: "#ffffffa6",
+    "&:hover": {
+      color: "#019dce",
+    },
+    "& .MuiListItemText-primary": {
+      fontFamily: "DM Sans, sans-serif",
+      fontWeight: "bold",
+      opacity: "0.65",
+      fontSize: "12.544px",
+    },
   },
   drawerItemSelected: {
     "& .MuiListItemText-root": {
-      opacity: 1,
+      // opacity: 1,
       backgroundColor: "red",
-    },
-  },
-  appBar: {
-    zIndex: theme.zIndex.modal + 1,
-    backgroundColor: "rgb(34 43 69)",
-    borderBottom: "#F037A5",
-    backgroundImage:
-      "linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05))",
-    boxShadow: "rgb(0 0 0 / 25%) 0px 3px 6px 0px",
-    paddingRight: "5%",
-  },
-  searchIcon: {
-    padding: theme.spacing(0, 0.2),
-    height: "100%",
-    position: "absolute",
-    pointerEvents: "none",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    color: "black",
-  },
-  search: {
-    position: "relative",
-    borderRadius: theme.shape.borderRadius,
-    border: "1px solid black",
-    backgroundColor: theme.palette.common.white,
-    "&:hover": {
-      backgroundColor: theme.palette.common.white,
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: "100%",
-    [theme.breakpoints.up("sm")]: {
-      marginLeft: theme.spacing(3),
-      width: "auto",
-    },
-  },
-  inputRoot: {
-    color: "black",
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
+      color: "orange",
     },
   },
 }));
+
 
 const menuData = [
   {
     title: "Company",
     items: [
       {
-        title: "About Us",
+        title: "ABOUT US",
+        href: "/",
         subMenu: [
-          { title: "Partnerships", href: "/partnership" },
-          { title: "Engagement Models" },
-          { title: "Global Delivery Models" },
-          { title: "Contact Us" },
+          { title: "Partnerships", href: "/Partnerships" },
+          { title: "Engagement Models", href: "/engagement-model" },
+          { title: "Global Delivery Models", href: "/Global" },
+          { title: "Contact Us", href: "/contact-us" },
         ],
       },
       {
-        title: "PRODUCTS",
-        subMenu: [{ title: "Infinity SMS" }],
-      },
-      {
         title: "INSIGHTS",
+        href: "/",
         subMenu: [
           { title: "Blogs", href: "/blogs" },
           { title: "White Papers" },
@@ -216,9 +120,10 @@ const menuData = [
       },
       {
         title: "CAREERS",
+        href: "/",
         subMenu: [
-          { title: "Open Positions", href: "/open" },
-          { title: "Why Join Us", href: "/why" },
+          { title: "Open Positions", href: "/career" },
+          { title: "Why Join Us", href: "/why-join-us" },
         ],
       },
     ],
@@ -228,15 +133,16 @@ const menuData = [
     items: [
       {
         title: "BACKEND",
-        href: "/backend",
+        href: "/",
         subMenu: [
           { title: "NodeJS", href: "/backend/nodejs" },
           { title: "NestJS", href: "/backend/nestjs" },
-          { title: "Python", href: "/backend/python" },
+          { title: "ROR", href: "/backend/ror" },
         ],
       },
       {
         title: "FRONTEND",
+        href: "/",
         subMenu: [
           { title: "AngularJS", href: "/frontend/angular" },
           { title: "ReactJS", href: "/frontend/react" },
@@ -246,16 +152,12 @@ const menuData = [
       },
       {
         title: "MOBILE",
-        subMenu: [
-          { title: "iOS", href: "/mobile/ios" },
-          { title: "Android", href: "/mobile/android" },
-          { title: "Swift", href: "/mobile/swift" },
-          { title: "Flutter", href: "/mobile/flutter" },
-          { title: "React Native", href: "/mobile/reactnative" },
-        ],
+        href: "/",
+        subMenu: [{ title: "React Native", href: "/mobile/reactnative" }],
       },
       {
-        title: "E-Commerce",
+        title: "E-COMMERCE",
+        href: "/",
         subMenu: [
           { title: "Woo Commerce", href: "/ecommerce/woo" },
           { title: "Magento", href: "/ecommerce/magento" },
@@ -265,21 +167,21 @@ const menuData = [
       },
       {
         title: "CMS",
-        subMenu: [
-          { title: "WordPress", href: "/cms/wordpress" },
-          { title: "Drupal", href: "/cms/drupal" },
-        ],
+        href: "/",
+        subMenu: [{ title: "WordPress", href: "/cms/wordpress" }],
       },
       {
         title: "FRAMEWORKS",
+        href: "/",
         subMenu: [
-          { title: "Django", href: "/framework/django" },
-          { title: "MEAN Stack", href: "/framework/mern" },
+          { title: "MERN Stack", href: "/framework/mern" },
+          { title: "MEAN Stack", href: "/framework/mean" },
           { title: "Ruby on Rails", href: "/framework/ror" },
         ],
       },
       {
         title: "DATABASE",
+        href: "/",
         subMenu: [
           { title: "MYSQL", href: "/database/mysql" },
           { title: "PostgreSQL", href: "/database/postgresql" },
@@ -290,6 +192,7 @@ const menuData = [
       },
       {
         title: "CLOUD",
+        href: "/",
         subMenu: [
           { title: "AWS Cloud", href: "/cloud/aws" },
           { title: "Azure Cloud", href: "/cloud/azure" },
@@ -300,10 +203,8 @@ const menuData = [
       },
       {
         title: "DIGITAL MARKETING",
-        subMenu: [
-          { title: "SEO", href: "digital/seo" },
-          { title: "SMO", href: "digital/smo" },
-        ],
+        href: "/",
+        subMenu: [{ title: "SEO", href: "/digital/seo" }],
       },
     ],
   },
@@ -311,134 +212,127 @@ const menuData = [
     title: "Hire Developers",
     items: [
       {
-        title: "BACKEND Developers",
+        title: "BACKEND DEVELOPERS",
+        href: "/",
         subMenu: [
-          { title: "NodeJS Developer", href: "/backendD/nodejsdeveloper" },
-          { title: "NestJS Developer", href: "/backendD/nestjsdeveloper" },
-          { title: "Python Developer", href: "/backendD/pythondeveloper" },
+          { title: "NodeJS Developer", href: "/backend/nodejs" },
+          { title: "NestJS Developer", href: "/backend/nestjs" },
+          { title: "ROR Developer", href: "/backend/ror" },
         ],
       },
       {
-        title: "FRONTEND Developers",
+        title: "FRONTEND DEVELOPERS",
+        href: "/",
         subMenu: [
-          { title: "AngularJS Developer", href: "/frontendD/angulardeveloper" },
-          { title: "ReactJS Developer", href: "/frontendD/reactjsdeveloper" },
-          { title: "VueJS Developer", href: "/frontendD/vuejsdeveloper" },
-          { title: "NextJS Developer", href: "/frontendD/nextjsdeveloper" },
+          { title: "AngularJS Developer", href: "/frontend/angular" },
+          { title: "ReactJS Developer", href: "/frontend/react" },
+          { title: "VueJS Developer", href: "/frontend/vue" },
+          { title: "NextJS Developer", href: "/frontend/next" },
         ],
       },
       {
-        title: "MOBILE Developer",
+        title: "MOBILE DEVELOPERS",
+        href: "/",
         subMenu: [
-          { title: "iOS Developer", href: "/mobileD/ios" },
-          { title: "Android Developer", href: "/mobileD/reactnative" },
-          { title: "Swift Developer", href: "/mobileD/flutter" },
-          { title: "Flutter Developer", href: "/mobileD/" },
-          { title: "React Native Developer", href: "/mobileD/" },
+          { title: "React Native Developer", href: "/mobile/reactnative" },
         ],
       },
       {
-        title: "E-Commerce Developers",
+        title: "E-COMMERCE DEVELOPERS",
+        href: "/",
         subMenu: [
-          { title: "Woo Commerce Developer" },
-          { title: "Magento Developer" },
-          { title: "Shopify Developer" },
-          { title: "Nop Commerce Developer" },
+          { title: "Woo Commerce Developer", href: "/ecommerce/woo" },
+          { title: "Magento Developer", href: "/ecommerce/magento" },
+          { title: "Shopify Developer", href: "/ecommerce/shopify" },
+          { title: "Nop Commerce Developer", href: "/ecommerce/nop" },
         ],
       },
       {
-        title: "CMS Developer",
+        title: "CMS DEVELOPERS",
+        href: "/",
+        subMenu: [{ title: "WordPress Developer", href: "/cms/wordpress" }],
+      },
+      {
+        title: "FRAMEWORKS DEVELOPERS",
+        href: "/",
         subMenu: [
-          { title: "WordPress Developer" },
-          { title: "Drupal Developer" },
+          { title: "MERN Stack Developer", href: "/framework/mern" },
+          { title: "MEAN Stack Developer", href: "/framework/mean" },
+          { title: "Ruby on Rails Developer", href: "/framework/ror" },
         ],
       },
       {
-        title: "FRAMEWORKS Developer",
+        title: "DATABASE DEVELOPERS",
+        href: "/",
         subMenu: [
-          { title: "Laravel Developer" },
-          { title: "Django Developer" },
-          { title: "MEAN Stack Developer" },
-          { title: "Ruby on Rails Developer" },
+          { title: "MYSQL Developer", href: "/database/mysql" },
+          { title: "PostgreSQL Developer", href: "/database/postgresql" },
+          { title: "MongoDB Developer", href: "/database/mongodb" },
+          { title: "Redis Developer", href: "/database/redis" },
+          { title: "Firebase Developer", href: "/database/firebase" },
         ],
       },
       {
-        title: "DATABASE Developers",
+        title: "DEVOPS DEVELOPERS",
+        href: "/",
         subMenu: [
-          { title: "MYSQL Developer" },
-          { title: "PostgreSQL Developer" },
-          { title: "MongoDB Developer" },
-          { title: "Redis Developer" },
-          { title: "Oracle Developer" },
-          { title: "Firebase Developer" },
-        ],
-      },
-      {
-        title: "DEVOPS developers",
-        subMenu: [
-          { title: "AWS Engineer developer" },
-          { title: "Azure Engineer developer" },
-          { title: "Google Cloud Engineer developer" },
-          { title: "" },
-          { title: "" },
+          { title: "AWS Engineer developer", href: "/cloud/aws" },
+          { title: "Azure Engineer developer", href: "/cloud/azure" },
+          { title: "Google Cloud Engineer developer", href: "/cloud/google" },
         ],
       },
     ],
   },
-
   {
-    title: " Expertise",
+    title: "Expertise",
+    href: "/",
     items: [
       {
-        title: "Expertise",
-        subMenu: [
-          { title: "ReactJS Developer" },
-          { title: "React Native Developer" },
-          { title: "NodeJS Developer" },
-          { title: "NextJS Developer" },
-          { title: "Ruby on Rails" },
-        ],
+        title: "ReactJS Developer",
+        href: "/frontend/react",
+        subMenu: [],
+      },
+      {
+        title: "React Native Developer",
+        href: "/mobile/reactnative",
+        subMenu: [],
+      },
+      {
+        title: "NodeJS Developer",
+        href: "/backend/nodejs",
+        subMenu: [],
+      },
+      {
+        title: "NodeJS Developer",
+        href: "/frontend/next",
+        subMenu: [],
+      },
+      {
+        title: "Ruby on Rails",
+        href: "/backend/ror",
+        subMenu: [],
       },
     ],
-  },
-  {
-    title: "Our Work",
-    items: [{ title: "BACKEND DEVELOPERS", subMenu: [] }],
   },
 ];
 
 export default function MobileMenu() {
   const classes = useStyles();
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
-
   const trigger = useRef<HTMLButtonElement>(null);
   const mobileNav = useRef<HTMLDivElement>(null);
-  const [openSubMenu, setOpenSubMenu] = useState(0);
-  const [openSubItem, setOpenSubItem] = useState(0);
+  const [openSubMenu, setOpenSubMenu] = useState<number | null>(null);
+  const [openSubItem, setOpenSubItem] = useState<number | null>(null);
 
   const handleSubMenuToggle = (index: number) => {
-    setOpenSubMenu(openSubMenu === index ? 0 : index);
+    setOpenSubMenu(openSubMenu === index ? null : index);
   };
 
   const handleSubItemToggle = (index:number) => {
-    setOpenSubItem(openSubItem === index ? 0 : index);
+    setOpenSubItem(openSubItem === index ? null : index);
   };
 
-  const [selected, setSelected] = useState(0);
-  const [selectedTitle, setSelectedTitle] = useState(0);
-  const [selectedSubTitle, setSelectedSubTitle] = useState(0);
 
-  const handleSelect = (index:number) => {
-    setSelected(index);
-  };
-  const handleSelectTitle = (index:number) => {
-    setSelectedTitle(index);
-  };
-  const handleSelectSubTitle = (index:number) => {
-    setSelectedSubTitle(index);
-  };
-
-  // close the mobile menu on click outside
   useEffect(() => {
     const clickHandler = ({ target }: { target: EventTarget | null }): void => {
       if (!mobileNav.current || !trigger.current) return;
@@ -454,7 +348,6 @@ export default function MobileMenu() {
     return () => document.removeEventListener("click", clickHandler);
   });
 
-  // close the mobile menu if the esc key is pressed
   useEffect(() => {
     const keyHandler = ({ keyCode }: { keyCode: number }): void => {
       if (!mobileNavOpen || keyCode !== 27) return;
@@ -464,30 +357,12 @@ export default function MobileMenu() {
     return () => document.removeEventListener("keydown", keyHandler);
   });
 
-  const routes = [
-    { name: "Home", link: "/", activeIndex: 0 },
-    {
-      name: "Services",
-      link: "/services",
-      activeIndex: 1,
-    },
-    { name: "The Revolution", link: "/revolution", activeIndex: 2 },
-    { name: "About Us", link: "/about", activeIndex: 3 },
-    { name: "Contact Us", link: "/contact", activeIndex: 4 },
-  ];
-  const [opend, setOpend] = useState(false);
-
-  const handleClickd = () => {
-    setOpend(!opend);
-  };
-
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
       behavior: "smooth",
     });
   };
-  useGlobalStyles();
   return (
     <div>
       {/* Hamburger button */}
@@ -519,8 +394,10 @@ export default function MobileMenu() {
         <List disablePadding>
           <ListItem
             button
-            style={{ marginBottom: "50px" }}
             classes={{ selected: classes.drawerItemSelected }}
+            style={{
+              marginBottom: "50px",
+            }}
           >
             <ListItemText className={classes.drawerItem} />
           </ListItem>
@@ -530,16 +407,19 @@ export default function MobileMenu() {
                 button
                 onClick={() => {
                   handleSubMenuToggle(index);
-                  handleSelect(index);
                 }}
-                classes={{ selected: classes.drawerItemSelected }}
+                className={classes.menuTitle}
+                classes={{ selected: classes.menuTitle }}
               >
                 <ListItemText
-                  className={classes.drawerItem}
-                  style={{ color: selected === index ? "blue" : "white" }}
+                  className={classes.menuTitle}
                   primary={menu.title}
                 />
-                {openSubMenu === index ? <ExpandLess /> : <ExpandMore />}
+                {openSubMenu === index ? (
+                  <Clear style={{ fontSize: "15px" }} />
+                ) : (
+                  <Add style={{ fontSize: "15px" }} />
+                )}
               </ListItem>
               <Collapse in={openSubMenu === index} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
@@ -552,32 +432,40 @@ export default function MobileMenu() {
                         button
                         onClick={() => {
                           handleSubItemToggle(subIndex);
-                          handleSelectTitle(subIndex);
                         }}
+                        className={classes.subMenuItemStyle}
                       >
                         <Box className="w-full flex justify-between">
-                          <Link
-                            key={subIndex}
-                            href={item.href ? item.href : "/"}
-                            passHref
-                            className="w-1/2"
-                          >
+                          {item.href !== "/" ? (
+                            <Link
+                              key={subIndex}
+                              href={item.href ? item.href : "/"}
+                              passHref
+                              className="w-1/2"
+                            >
+                              <ListItemText
+                                onClick={() => {
+                                  setMobileNavOpen(false);
+                                }}
+                                className={classes.subMenuItemStyle}
+                                primary={item.title}
+                              />
+                            </Link>
+                          ) : (
                             <ListItemText
-                              className={classes.drawerItem}
-                              style={{
-                                color:
-                                  selectedTitle === subIndex ? "blue" : "white",
-                              }}
+                              className={classes.subMenuItemStyle}
                               primary={item.title}
                             />
-                          </Link>
-                          <Box className="w-1/2 flex justify-end">
-                            {openSubItem === subIndex ? (
-                              <ExpandLess />
-                            ) : (
-                              <ExpandMore />
-                            )}
-                          </Box>
+                          )}
+                          {item.subMenu.length > 0 && (
+                            <Box className="w-1/2 flex justify-end">
+                              {openSubItem === subIndex ? (
+                                <Clear style={{ fontSize: "15px" }} />
+                              ) : (
+                                <Add style={{ fontSize: "15px" }} />
+                              )}
+                            </Box>
+                          )}
                         </Box>
                       </ListItem>
 
@@ -591,10 +479,18 @@ export default function MobileMenu() {
                             <ListItem
                               classes={{
                                 root: classes.menuItem,
-                                // selected: classes.drawerItemSelected,
                               }}
                               key={subItemIndex}
                               button
+                              className={classes.subMenuTitleStyle}
+                              onMouseOver={(e) => {
+                                const target = e.target as HTMLElement;
+                                target.style.color = "#019dce";
+                              }}
+                              onMouseOut={(e) => {
+                                const target = e.target as HTMLElement;
+                                target.style.color = "#ffffffbf";
+                              }}
                             >
                               <Link
                                 key={subItemIndex}
@@ -602,17 +498,10 @@ export default function MobileMenu() {
                                 passHref
                               >
                                 <ListItemText
-                                  className={classes.drawerItem}
+                                  className={classes.subMenuTitleStyle}
                                   primary={subItem.title}
                                   onClick={() => {
                                     setMobileNavOpen(false);
-                                    handleSelectSubTitle(subIndex);
-                                  }}
-                                  style={{
-                                    color:
-                                      selectedSubTitle === subItemIndex
-                                        ? "blue"
-                                        : "white",
                                   }}
                                 />
                               </Link>
@@ -631,12 +520,7 @@ export default function MobileMenu() {
               scrollToBottom();
               setMobileNavOpen(false);
             }}
-            style={{
-              width: " 100%",
-              fontSize: "15px",
-              textAlign: "start",
-              padding: "15px",
-            }}
+            className={classes.buttonConfig}
           >
             Contact Us
           </button>
