@@ -11,13 +11,20 @@ import {
   CardActionArea,
   Avatar,
 } from "@material-ui/core";
+import dynamic from "next/dynamic";
 import Link from 'next/link';
 import React, { Component } from "react";
 import Paper from "@material-ui/core/Paper";
 import Carousel from "react-material-ui-carousel";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-import Zenqua_glance from "./ui/zenqua_glance";
-import Adoptable_approch from "./ui/adoptable_approch";
+
+const LazyZenquaGlanceComponent = dynamic(
+  () => import("@/components/ui/zenqua_glance")
+);
+const LazyAdoptableApprochComponent = dynamic(
+  () => import("@/components/ui/adoptable_approch")
+);
+
 
 interface Statistic {
   label: string;
@@ -1009,7 +1016,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
 
     return (
       <>
-        <Zenqua_glance/>
+        <LazyZenquaGlanceComponent/>
 
         {/* ***************  Our Core Services Start ******************* */}
         <div className="m-[50px] box-border">
@@ -2424,7 +2431,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
 
         {/* ************Our Flexible Engagement Models************ */}
 
-        <Adoptable_approch/>
+        <LazyAdoptableApprochComponent/>
 
         {/* ************************ */}
         <center>

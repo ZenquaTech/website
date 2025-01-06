@@ -79,7 +79,7 @@ export default function Partnerships() {
         <Grid item xs={12} sm={6} md={6}>
           <Box style={{ display: "flex", justifyContent: "center" }}>
             <Image
-              src="/../images/webpFile/channel_partners-1.webp"
+              src="/images/webpFile/channel_partners-1.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -100,7 +100,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="/../images/webpFile/channel_partner_joint_venture-1.webp"
+              src="/images/webpFile/channel_partner_joint_venture-1.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -209,7 +209,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="/../images/webpFile/offshore_partners.webp"
+              src="/images/webpFile/offshore_partners.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -230,7 +230,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="/../images/webpFile/offshore_joint_venture.webp"
+              src="/images/webpFile/offshore_joint_venture.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -369,7 +369,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="/../images/webpFile/offshore_partners.webp"
+              src="/images/webpFile/offshore_partners.webp"
               alt="Channel Partners"
               width={400}
               height={200}
@@ -388,7 +388,7 @@ export default function Partnerships() {
             }}
           >
             <Image
-              src="/../images/webpFile/agent_partners.webp"
+              src="/images/webpFile/agent_partners.webp"
               alt="Channel Partners"
               width={400}
               height={200}
