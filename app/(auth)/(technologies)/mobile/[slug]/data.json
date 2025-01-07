@@ -6,7 +6,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/ios"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "iOS  Development Company",
         "heading2": "Custom iOS apps to help you get ahead of your competition",
@@ -14,7 +14,7 @@
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135651/IOS.png",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "IOS Development Team?",
@@ -100,23 +100,6 @@
         "description": "We provide high-quality maintenance and upgrade services for iOS apps, ensuring optimal performance, security, and scalability. We use the latest tools and technologies to ensure all updates are implemented successfully, keeping your app up-to-date and secure. We also provide support and troubleshooting for existing iOS apps, minimizing downtime and ensuring maximum user satisfaction."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -160,7 +143,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/android"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Android App Development Company",
         "heading2": "Custom Android App Solutions to give your users a world-class experience.",
@@ -168,7 +151,7 @@
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135650/Android-1536x1360.png",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "Android Development Team?",
@@ -292,23 +275,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -352,7 +318,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/swift"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Swift App Development Company",
         "heading2": "Renowned Swift App Development Services",
@@ -360,7 +326,7 @@
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135649/Swift-1536x1360.png",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2":{
         "heading1": "Swift Development Team?",
         "button": "Hire SWIFT Developer"
@@ -483,23 +449,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -543,7 +492,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/flutter"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Flutter App Development Company",
         "heading2": "Develop next-gen apps for iOS and Android with a single codebase.",
@@ -551,7 +500,7 @@
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135648/Flutter-1536x1360.png",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "Flutter App Development Team?",
@@ -676,23 +625,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -736,7 +668,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/reactnative"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "ReactNative App Development Company",
         "heading2": "Building modern, high quality cross-platform mobile apps with React Native",
@@ -744,7 +676,7 @@
         "image": "reactNative",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2":{
         "heading1": "ReactNative Development Team?",
         "button": "Hire REACTNATIVE Developer"
@@ -865,23 +797,6 @@
         "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
-      }
-    ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "startupBusiness"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "smallMediumBusiness"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "largeBusiness"
       }
     ],
     "servicesData2": [

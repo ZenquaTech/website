@@ -15,7 +15,6 @@ import {
 import dynamic from "next/dynamic";
 import { FaStar } from "react-icons/fa";
 import Carousel from "react-material-ui-carousel";
-import ContactUs from "../../../../../components/ui/contactus";
 import timeMaterial from "@/components/assets/img/reactjsimg/Time-Material.webp";
 import dedicatedDevelopmentTeam from "@/components/assets/img/reactjsimg/dedicateddevelopmentteam.webp";
 import largeBusiness from "@/components/assets/img/reactjsimg/large_business.webp";
@@ -25,7 +24,15 @@ import woocommerce from "@/components/assets/img/angularimg/woocommerce.webp";
 import spotify from "@/components/assets/img/angularimg/Shopify.webp"
 import magento from "@/components/assets/img/angularimg/smc.webp";
 import nop from "@/components/assets/img/angularimg/nopcommerce.webp";
-
+const LazyBusinessEmpowermentComponent = dynamic(
+  () => import("@/components/ui/BusinessEmpowerment")
+);
+const LazyContactComponent = dynamic(
+  () => import("@/components/ui/contactus")
+);
+const LazyWantToHireComponent = dynamic(
+  () => import("@/components/ui/WantToHire")
+);
 const LazyAdoptableApprochComponent = dynamic(
   () => import("@/components/ui/AdoptableApproch")
 );
@@ -38,6 +45,8 @@ const LazyWhatWeDoComponent = dynamic(
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
 );
+const LazyHeroContent = dynamic(() => import("@/components/ui/HeroContent"));
+
 const imageMap: any = {
   timeMaterial,
   dedicatedDevelopmentTeam,
@@ -52,7 +61,8 @@ const imageMap: any = {
 
 import "./styles.css";
 import Image from "next/image";
-import WantToHire from "@/components/ui/WantToHire";
+import HeroContent from "@/components/ui/HeroContent";
+
 
 const scrollToBottom = () => {
   window.scrollTo({
@@ -219,65 +229,24 @@ class RoutePage extends Component<RoutePageProps, PageState> {
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
 
-            {content?.section1?.map((item: any, index: any) => (
-              <div
-                className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                key={index}
-              >
-                <div className="bg-transparent p-8 flex flex-col text-left">
-                  <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">
-                    {item.heading1}
-                  </h2>
-                  <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA]">
-                    {item.heading2}
-                  </h1>
-                  <p className="text-medium my-2 text-justify text-[#9BA9B4]">
-                    {item.para}
-                  </p>
-                  <Button
-                    variant="contained"
-                    onClick={() => scrollToBottom()}
-                    style={{
-                      alignItems: "center",
-                      fontSize: "15px",
-                      marginTop: "2%",
-                      textAlign: "center",
-                      flexWrap: "wrap",
-                      backgroundColor: "#019dce",
-                      color: "#D9E3EA",
-                      padding: "2%",
-                      fontWeight: "bold",
-                      borderRadius: "10px",
-                      width: "160px",
-                      textTransform: "none",
-                    }}
-                  >
-                    {item.button}
-                  </Button>
-                </div>
-                <div className="mt-20 flex justify-center">
-                  <Image
-                    src={imageMap[item.image]?.src || item.image}
-                    alt={item.heading1}
-                    className="object-contain"
-                    width={880}
-                    height={799}
-                  />
-                </div>
-              </div>
-            ))}
+            <HeroContent
+              item={content.section1}
+              image={
+                imageMap[content.section1.image]?.src || content.section1.image
+              }
+            />
             {/* ************************end********************************** */}
 
             {/* ************************section2********************************** */}
 
-            <WantToHire
+            <LazyWantToHireComponent
               headingText={content.section2?.heading1}
               buttonText={content.section2?.button}
             />
             {/* ************************end********************************** */}
 
             {/* ************************section3********************************** */}
-            <LazyWhatWeDoComponent content={content}/>
+            <LazyWhatWeDoComponent content={content} />
 
             {/* <Grid container>
               {content.section3.map((item: any, index: any) => {
@@ -543,13 +512,13 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* *******************************GLANCE******************************    */}
 
-            <LazyZenquaGlanceComponent/>
+            <LazyZenquaGlanceComponent />
 
             {/* ***********************  end********************************* */}
 
             {/* *********************************************************** */}
 
-            <LazyAdoptableApprochComponent/>
+            <LazyAdoptableApprochComponent />
 
             {/* ******************** Why Outsource Your Project to ZenQua? ************************ */}
 
@@ -733,85 +702,17 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* ***********************      BUSINESS EMPOWERMENT   ***************************** */}
 
-            <Box style={{ marginTop: "5%" }}>
-              <h2
-                className=" font text-center  service-button"
-                style={{ textTransform: "uppercase" }}
-              >
-                BUSINESS EMPOWERMENT
-              </h2>
-              <h2 className="text-3xl font-bold text-center mb-6 service-button">
-                Tailored development solutions for all business types
-              </h2>
-              <Carousel
-                autoPlay={true}
-                navButtonsAlwaysVisible={false}
-                indicators={false}
-                animation="slide"
-              >
-                {content.business.map((item: any, i: any) => (
-                  <Grid
-                    key={i}
-                    container
-                    style={{
-                      background: "transparent",
-                      color: "#9BA9B4",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      textAlign: "justify",
-                    }}
-                  >
-                    <Grid item xs={12} sm container>
-                      <CardActionArea>
-                        {item.image && (
-                          <Image
-                            src={imageMap[item.image]?.src || item.image}
-                            alt={item.title}
-                            width={500}
-                            height={400}
-                          />
-                        )}
-                      </CardActionArea>
-                    </Grid>
-                    <Grid item xs={12} sm container>
-                      <Grid item xs container direction="column" spacing={2}>
-                        <Grid item>
-                          <Typography
-                            style={{
-                              color: "#D9E3EA",
-                              fontSize: "30px",
-                              fontWeight: "bold",
-                            }}
-                          >
-                            {item.title}
-                          </Typography>
-                        </Grid>
-                        <Grid item>
-                          <Typography
-                            style={{
-                              color: "#9BA9B4",
-                              fontSize: "19px",
-                            }}
-                          >
-                            {item.description}
-                          </Typography>
-                        </Grid>
-                      </Grid>
-                    </Grid>
-                  </Grid>
-                ))}
-              </Carousel>
-            </Box>
+            <LazyBusinessEmpowermentComponent />
             {/* **********************  End   ****************************** */}
 
             {/* ***********************     PORTFOLIO  ***************************** */}
 
-            <LazyPortfolioProjects/>
+            <LazyPortfolioProjects />
 
             {/* **********************  End   ****************************** */}
 
             {/* ********************************** Contact Us *********************** */}
-            <ContactUs />
+            <LazyContactComponent />
             {/* ********************************** End *********************** */}
           </div>
         </MainWrapper>

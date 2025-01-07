@@ -6,7 +6,7 @@
       "keywords": "Node.js Development, Node.js Development Company, Node.js Consulting, Node.js Application Migration, Node.js API Development, Serverless Node.js Microservices, Node.js Maintenance and Support, Node.js Product Development, Backend Dashboard Development, Custom Node.js Solutions",
        "url": "https://www.zenqua.com/backend/nodejs"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Node JS Development Company",
         "heading2": "Accelerate Your Business with Our Node JS Development Expertise",
@@ -14,7 +14,7 @@
         "image": "nodejs",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "NodeJS Development Team?",
         "button": "Hire NodeJS Developer"
@@ -98,23 +98,6 @@
             "title": "Real-Time Web Socket Programming",
             "description":"We implement real-time web socket programming concepts to take advantage of low-latency benefits and develop web applications using Node.js. This ensure that your application provides a seamless and efficient user experience, improving its overall performance and success."
         }
-    ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "startupBusiness"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "smallMediumBusiness"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "largeBusiness"
-      }
     ],
     "sectionexperties": [
       {
@@ -202,7 +185,7 @@
     "keywords": "NestJS development, custom backend solutions, NestJS web development, eCommerce development with NestJS, REST API integration with NestJS, scalable NestJS applications, NestJS consulting services, offshore NestJS development, NestJS experts, dynamic app development with NestJS, backend systems using NestJS, NestJS application maintenance, secure web applications with NestJS, ZenQua NestJS development, modern NestJS frameworks, NestJS microservices, enterprise NestJS solutions, real-time apps with NestJS, NestJS and TypeScript development, high-performance backend systems",
     "url": "https://www.zenqua.com/backend/nestjs"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Nest Js Development Company",
         "heading2": "Elevating Your Backend Development with NestJS: Your Trusted Partner",
@@ -210,7 +193,7 @@
         "image": "ror",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "NestJS Development Team?",
         "button": "Hire NestJS Developer"
@@ -333,23 +316,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/small-medium_business.svg"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/startup-business.svg"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151309/large_business.svg"
-      }
-    ],
     "sectionexperties": [
       {
         "heading": "TEACH STACK",
@@ -435,7 +401,7 @@
     "keywords": "ROR development, custom ROR applications, ROR web development, ROR backend services, machine learning ROR solutions, offshore ROR team, scalable web applications",
     "url": "https://www.zenqua.com/backend/ror"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": " ROR Development Company",
         "heading2": "Partner with the Best ROR Development Services Provider",
@@ -443,7 +409,7 @@
         "image": "ror",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "ROR Development Team?",
         "button": "Hire ROR Developer"
@@ -563,23 +529,6 @@
         "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
-      }
-    ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "startupBusiness"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "smallMediumBusiness"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "largeBusiness"
       }
     ],
     "sectionexperties": [

@@ -1,14 +1,14 @@
 {
   "mern": {
-    "section1": [
+    "section1": 
       {
         "heading1": "Mern Development Company",
         "heading2": "Expand your business with our Mern Development Services",
         "para": "Boost your business with ZenQua Mern Development Services. Our experienced Mern developers draw on years of expertise to build cost-effective and efficient solutions for your business. We leverage the powerful features of the Mern framework to provide you with immersive web experiences. Our development teams stay up-to-date with the latest trends to build applications with an MVC structure, detailed library and logical structure. We create polished, secure web experiences using the latest coding standards and ensuring strict guidelines are followed. With our Mern development services, you get customized website development, tailored software development, and tailored API development according to your business requirements. ZenQua stands for outstanding service for your business success.",
-        "image": "../images/webpFile/django_1-1536x1360.webp",
+        "image": "django",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "Mern Development Team?",
         "button": "Hire Mern DEVELOPER"
@@ -116,23 +116,6 @@
         }
 
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/small-medium_business.webp"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/startup-business.webp"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "../images/webpFile/large_business.webp"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -187,15 +170,15 @@
     }
   },
   "mean": {
-    "section1": [
+    "section1": 
       {
         "heading1": "Mean Stack Development Company",
         "heading2": "Scalable and dynamic web applications with Mean Stack Development services",
         "para": "ZenQua provides unbeatable development services to create efficient and dynamic web applications utilizing MEAN stack. Our team of skilled professionals leverage their expertise and updated industry knowledge to deliver exceptional results. We use advanced JS database systems to ensure streamlined businesses. Our result-driven approach has helped us successfully deliver most complex web and mobile experiences. With ZenQua, you can receive complete end-to-end MEAN stack development services that are scalable and dynamic.",
-        "image": "../images/webpFile/nodejs-1024x907.webp",
+        "image": "nodejs",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "MEAN Stack Development Team?",
@@ -318,23 +301,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/small-medium_business.webp"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/startup-business.webp"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "../images/webpFile/large_business.webp"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -399,15 +365,15 @@
     }
   },
   "ror": {
-    "section1": [
+    "section1": 
       {
         "heading1": "Ruby on Rails Development Company",
         "heading2": "Partner With Best Ruby on Rails Web Development Company",
         "para": "ZenQua is a top-tier Ruby on Rails development company with a dedicated team of experts to build feature-rich, custom RoR solutions. We provide tailored services that cater to evolving needs of businesses from different domains. Our years of experience in designing, architecting, and building RoR-focused apps are highly appreciated by our clients. We upgrade existing solutions by integrating the latest version of the RoR framework without compromising on development quality. We implement Agile Methodology and adept coding to deliver outstanding post-deployment support. Partner with us to create robust custom web and mobile-based solutions powered by Ruby on Rails.",
-        "image": "../images/webpFile/ROR-1536x1360.webp",
+        "image": "ROR",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "ROR Development Team?",
         "button": "Hire ROR DEVELOPER"
@@ -489,23 +455,6 @@
         "starLogo": "<FaStar />",
         "title": "Rescue Mission",
         "description": "Our ROR Rescue Mission helps businesses maximize their return on investment. It offers comprehensive services, such as code optimization, issue resolution, performance monitoring, and security enhancements. Our services guarantee improved performance, scalability, and security."
-      }
-    ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/small-medium_business.webp"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/startup-business.webp"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "../images/webpFile/large_business.webp"
       }
     ],
     "servicesData2": [

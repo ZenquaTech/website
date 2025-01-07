@@ -1,14 +1,14 @@
 { 
   "aws": {
-      "section1":[
+      "section1":
          {
              "heading1":"AWS Cloud Development Company",
              "heading2":"AWS Managed services and cloud development Services",
              "para":"Experience the power of ZenQua's Amazon Cloud Managed Services and Cloud Development Services. Leverage our team of experienced professionals to transform your on-premise business processes and drive strategic advantages using AWS cloud services. We employ a tried and tested methodology to revolutionise your entire technological infrastructure, allowing for easy adaptability and enhancing its responsiveness. Our experts can help you efficiently create cloud infrastructures that are fast, highly secure and less complex to implement. Rely on ZenQua for comprehensive cloud solutions that fit your unique needs.",
-             "image":"../images/webpFile/AWS.webp" ,
+             "image":"AWS" ,
              "button":"Talk to Expert"          
          }
-      ],
+      ,
       "section2":{
              "heading1":"AWS Engineers ?",
              "button":"Hire AWS ENGINEER"          
@@ -133,23 +133,6 @@
          }
            
      ],
-     "business" : [
-     {
-       "title": "Backend Development",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "../images/webpFile/small-medium_business.webp"
-     },
-     {
-       "title": "Small & Medium Businesses",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "../images/webpFile/startup-business.webp"
-     },
-     {
-       "title": "Large Businesses",
-       "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-       "image": "../images/webpFile/large_business.webp"
-     }
-   ],
    "servicesData2": [
      {
        "label": "Cost-Effectiveness",
@@ -212,15 +195,15 @@
 
 },
 "azure": {
-    "section1":[
+    "section1":
        {
            "heading1":"Microsoft Azure Development Company",
            "heading2":"Cloud-centric web solutions by our Microsoft Azure Certified Experts",
            "para":"ZenQua's Microsoft certified experts utilize the power of Azure to drive down costs, improve productivity, deploy applications faster, and leverage advanced payment models. We are experienced in deploying cloud-centric web solutions across multiple languages, such as VB, C#, .NET and more. Make the move to Azure for your enterprise and ZenQua can manage the shift with minimal change or disruption to existing code. We create secure environments to develop, deploy and run your application on Microsoft’s data centres that span across the globe. From boosting scalability to enhancing security and flexibility, ZenQua has the skills and experience to pivot your app for devices and frameworks. Deploy your next-gen web solution backed by Microsoft Azure.",
-           "image":"../images/webpFile/Azure.webp" ,
+           "image":"Azure" ,
            "button":"Talk to Expert"          
        }
-    ],
+    ,
     "section2":
        {
            "heading1":"Azure Engineers?",
@@ -344,23 +327,6 @@
        }
          
    ],
-   "business" : [
-   {
-     "title": "Backend Development",
-     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "../images/webpFile/small-medium_business.webp"
-   },
-   {
-     "title": "Small & Medium Businesses",
-     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "../images/webpFile/startup-business.webp"
-   },
-   {
-     "title": "Large Businesses",
-     "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-     "image": "../images/webpFile/large_business.webp"
-   }
- ],
  "servicesData2": [
    {
      "label": "Cost-Effectiveness",
@@ -426,15 +392,15 @@
     } 
 },
 "google": {
-    "section1":[
+    "section1":
        {
            "heading1":"Google Cloud Development Company",
            "heading2":"Google Cloud Platform Application Development Services",
            "para":"ZenQua provides a comprehensive suite of Google Cloud Platform Application Development Services. Leverage our expertise in multi-dimensional google app engine and Google Cloud solutions to ensure post-modern efficiency and optimal performance. We have highly-skilled domain experts to develop customised solutions along with enterprise-scale implementations, maintenance and support services. Our team is ever-ready to help you with cloud migrations, app engine website consulting and data integration. Let us bring efficiency and rapid access to information to your business.",
-           "image":"../images/webpFile/Google_Cloud.webp" ,
+           "image":"GoogleCloud" ,
            "button":"Talk to Expert"          
        }
-    ],
+    ,
     "section2":{
            "heading1":"Google Cloud Development Team?",
            "button":"Hire GCD ENGINEER"          
@@ -519,23 +485,6 @@
            "description":"Our team has in-depth expertise in leveraging Google Cloud's powerful, cost-effective solutions to create custom solutions for a wide range of industries. We are able to utilize Google Cloud's unique features, such as Artificial Intelligence and Machine Learning, to develop powerful, tailored solutions that optimize operations and improve user experience."
        }
    ],
-   "business" : [
-   {
-     "title": "Backend Development",
-     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "../images/webpFile/small-medium_business.webp"
-   },
-   {
-     "title": "Small & Medium Businesses",
-     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "../images/webpFile/startup-business.webp"
-   },
-   {
-     "title": "Large Businesses",
-     "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-     "image": "../images/webpFile/large_business.webp"
-   }
- ],
  "servicesData2": [
    {
      "label": "Cost-Effectiveness",

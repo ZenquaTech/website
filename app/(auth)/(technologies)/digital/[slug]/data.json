@@ -1,14 +1,14 @@
 { 
   "seo": {
-      "section1":[
+      "section1":
          {
              "heading1":"Search Engine Optimization Company",
              "heading2":"Search Engine Optimization – SEO Company",
              "para":"Are you looking for search engine optimisation services to help you grow your website? Look no further! We offer comprehensive SEO services tailored to your unique business needs. Our team of experienced professionals will help you to rank higher in search engine results, drive organic traffic to your website, and increase conversions. With our expertise, you can make sure your website is seen by the right people, in the right places.",
-             "image":"../images/webpFile/seo_1.webp" ,
+             "image":"seo" ,
              "button":"Talk to Expert"          
          }
-      ],
+      ,
       "section2":
          {
              "heading1":"SEO Team?",
@@ -94,23 +94,6 @@
          }
            
      ],
-     "business" : [
-     {
-       "title": "Backend Development",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "../images/webpFile/small-medium_business.webp"
-     },
-     {
-       "title": "Small & Medium Businesses",
-       "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-       "image": "../images/webpFile/startup-business.webp"
-     },
-     {
-       "title": "Large Businesses",
-       "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-       "image": "../images/webpFile/large_business.webp"
-     }
-   ],
    "servicesData2": [
      {
        "label": "Cost-Effectiveness",
@@ -176,15 +159,15 @@
     }   
 },
 "smo": {
-    "section1": [
+    "section1": 
         {
           "heading1": "Social Media Optimization Company",
           "heading2": "Social Media Optimization – SMO Company",
           "para": "Are you looking to amplify your online presence and drive more traffic to your website? Look no further! Our Social Media Optimization (SMO) services are designed to do just that. We offer a comprehensive range of SMO services tailored to your unique business needs, helping you connect with your audience on the platforms they use the most.",
-          "image": "../images/webpFile/seo_1.webp",
+          "image": "seo",
           "button": "Talk to Expert"
         }
-      ],
+      ,
       "section2": 
         {
           "heading1": "SMO Team?",
@@ -229,23 +212,6 @@
           "description": "We leverage analytics and performance metrics to continuously refine and improve our strategies. Regular reporting and analysis help us track the effectiveness of our SMO efforts, ensuring optimal results for your business."
         }
       ],
-   "business" : [
-   {
-     "title": "Backend Development",
-     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "../images/webpFile/small-medium_business.webp"
-   },
-   {
-     "title": "Small & Medium Businesses",
-     "description":"Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-     "image": "../images/webpFile/startup-business.webp"
-   },
-   {
-     "title": "Large Businesses",
-     "description":  "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-     "image": "../images/webpFile/large_business.webp"
-   }
- ],
  "servicesData2": [
    {
      "label": "Cost-Effectiveness",

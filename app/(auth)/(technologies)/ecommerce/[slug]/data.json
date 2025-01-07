@@ -5,7 +5,7 @@
       "description": "ZenQua provides WooCommerce development services to help you drive online traffic and increase sales. From store setup and theme customization to payment gateway integration, we offer comprehensive WooCommerce solutions.",
       "keywords": "WooCommerce, Development, Services, Store Setup, Theme Customization, Payment Gateway, WooCommerce Expert, E-commerce Solutions"
   },
-    "section1": [
+    "section1": 
       {
         "heading1": "WooCommerce Development Company",
         "heading2": "Drive Online Traffic and Sales with WooCommerce Development services",
@@ -13,7 +13,7 @@
         "image": "woocommerce",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "WooCommerce Development Team?",
@@ -151,23 +151,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "startupBusiness"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "smallMediumBusiness"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "largeBusiness"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -211,7 +194,7 @@
         "keywords":"Magento development, eCommerce solutions, Magento consulting services, Magento development services, Magento extension development, Magento UI UX design, Magento theme development, Magento support and maintenance, Magento integration services, Magento B2B development",
         "url": "https://www.zenqua.com/magento-development"
       },
-    "section1": [
+    "section1": 
       {
         "heading1": "Magento Development Company",
         "heading2": "Empowering eCommerce Success with Magento",
@@ -219,7 +202,7 @@
         "image": "magento",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "Magento Development Team?",
@@ -305,23 +288,6 @@
         "description": "We specialize in providing professional Magento B2B Development services that empower businesses to design, develop, and deploy robust eCommerce solutions. Our services include custom module development, API integration, 3rd party integration, performance optimization, scalability solutions, and platform migration."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "startupBusiness"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "smallMediumBusiness"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "largeBusiness"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -365,7 +331,7 @@
     "keywords": "Shopify development, eCommerce solutions, Shopify store setup, Shopify theme design, Shopify integration services, custom Shopify development, Shopify Plus development, Shopify maintenance and support, Shopify app development, Shopify consulting services",
     "url": "https://www.zenqua.com/shopify-development"
   },
-    "section1": [
+    "section1": 
       {
         "heading1": "Shopify Development Company",
         "heading2": "From start-ups to enterprises, drive sales with a feature-rich Shopify Store",
@@ -373,7 +339,7 @@
         "image": "spotify",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "Shopify Development Team?",
         "button": "Hire SHOPIFY DEVELOPER"
@@ -496,23 +462,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "startupBusiness"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "smallMediumBusiness"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "largeBusiness"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -556,7 +505,7 @@
     "keywords": "NopCommerce development, eCommerce solutions, custom theme design, plugin development, store setup, NopCommerce maintenance, NopCommerce consulting, mobile app development, ERP and CRM development, NopCommerce migration services",
     "url": "https://www.zenqua.com/nopcommerce-development"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "NopCommerce Development Company",
         "heading2": "Scale-up your business with competent nopCommerce solutions",
@@ -564,7 +513,7 @@
         "image": "nop",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "Nopcommerce Development Team?",
@@ -686,23 +635,6 @@
         "images": "dedicatedDevelopmentTeam",
         "para1": "Ability to create a team around your project’s needs.Long-term commitment to your project’s success. Accessto wide range of specialized skills.",
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
-      }
-    ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "startupBusiness"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "smallMediumBusiness"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "largeBusiness"
       }
     ],
     "servicesData2": [

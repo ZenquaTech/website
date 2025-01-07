@@ -1,14 +1,14 @@
 {
   "mysql": {
-    "section1": [
+    "section1": 
       {
         "heading1": "MySQL Development Company",
         "heading2": "End-to-end MySQL database development solutions",
         "para": "Drive innovation and support mission-critical database deployments with ZenQua services. With unbeatable reliability and scalability, benefit from high-performance storage, data encryption, storage and process optimizations. Experience millisecond inactivity and huge throughput in accordance with your Business needs while progressively controlling cost and performance. Replicate data across availability zones and reap the benefits of assured four 9s least uptime and RPO=0 configurations while avoiding the anguish of downtime and the expense of data loss with guaranteed nine 9s data durability. Steadily reduce your costs with MySQL automation and cold data tiering to gain cloud storage savings of up to 70%.",
-        "image": "../images/webpFile/mysql_1.webp",
+        "image": "mysql",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "Mysql Development Team?",
         "button": "Hire MYSQL DEVELOPER"
@@ -130,23 +130,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/small-medium_business.webp"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/startup-business.webp"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "../images/webpFile/large_business.webp"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -206,15 +189,15 @@
     }
   },
   "postgresql": {
-    "section1": [
+    "section1": 
       {
         "heading1": "PostgreSQL Development Company",
         "heading2": "Custom PostgreSQL services to fuel applications with scalability",
         "para": "At ZenQua, we offer custom PostgreSQL services designed to fuel applications with scalability, reliability and data integrity. Our PostgreSQL database server management services help you store, access and maintain transactional data to drive application health and critical decision making. Leverage the advanced capabilities of PostgreSQL in an efficient and powerful data resource. Seamlessly incorporate managed data services into your application runtime to build robust applications fortified with a reliable data layer. By outsourcing PostgreSQL database management to us, you can maximize the effectiveness of your data without having to worry about tedious database setup, maintenance and upkeep.",
-        "image": "../images/webpFile/nodejs.webp",
+        "image": "postgresql",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "Postgres Development Team?",
         "button": "Hire Postgres DEVELOPER?"
@@ -298,23 +281,7 @@
         "description": "We are experts in PostgreSQL Application Development, specialized in creating robust applications using the PostgreSQL relational database technology. Our expertise includes developing custom PostgreSQL solutions, integrating PostgreSQL with other technologies, providing maintenance and support services, and providing custom application development for PostgreSQL. We use the latest PostgreSQL features."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/small-medium_business.webp"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/startup-business.webp"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "../images/webpFile/large_business.webp"
-      }
-    ],
+
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -368,15 +335,15 @@
       }
   },
   "mongodb": {
-    "section1": [
+    "section1": 
       {
         "heading1": "Mongodb Database Development Company",
         "heading2": "Create powerful and scalable NoSQL web and mobile app with Mongodb",
         "para": "Let ZenQua help you create powerful and scalable NoSQL web and mobile apps with MongoDB. Our experts have the skills and experience needed so you can focus on developing your next-gen applications. We offer secure, high-availability solutions for massive amounts of data and active users, with cost-effective deployment and scaling capabilities across cloud infrastructure. Count on us for secure data both on-premise and on the cloud, and the dependable experience of managing large and distributed data systems—all with the desired efficiency.",
-        "image": "../images/webpFile/ASP.NET_-768x680.webp",
+        "image": "ASPNET",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "Mongodb Development Team?",
         "button": "Hire Mongodb DEVELOPER"
@@ -498,23 +465,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/small-medium_business.webp"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/startup-business.webp"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "../images/webpFile/large_business.webp"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -575,15 +525,15 @@
       }
   },
   "redis": {
-    "section1": [
+    "section1": 
       {
         "heading1": "Redis Database Development Company",
         "heading2": "Develop Powerful and Scalable Web and Mobile Apps with Redis",
         "para": "Let ZenQua help you create powerful and scalable web and mobile apps with Redis. Our experienced and highly qualified team are well-versed in leveraging the distributed Redis system so you can focus on developing your future applications. Our secure,highly-available solutions allow for the storage of large amounts of data and accommodate frequent users. We provide cost-effective deployments and options for scaling across cloud infrastructures. You can count on us to provide secure data whether on-premise or on the cloud and trust us to manage large and distributed data systems with efficiency.",
-        "image": "../images/webpFile/Redis-1536x1360.webp",
+        "image": "Redis",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2":{
         "heading1": "Redis Development Team?",
         "button": "Hire REDIS DEVELOPER"
@@ -705,23 +655,6 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/small-medium_business.webp"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/startup-business.webp"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "../images/webpFile/large_business.webp"
-      }
-    ],
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -786,15 +719,15 @@
       }
   },
   "firebase": {
-    "section1": [
+    "section1": 
       {
         "heading1": "Firebase Development Company",
         "heading2": "Create apps to scale your business with innovative Firebase development",
         "para": "Transform your business with I-Verve’s Firebase development services. Unleash the potential of your business with our innovative web and mobile Firebase development capabilities. Harness the benefits of Google’s infrastructure that scale with your app growth. Take advantage of our comprehensive app building tools to deliver a seamless user experience with a fully responsive app. We have the expertise to structure and maintain a database bespoke to your unique requirements. And deploy powerful and secure Firebase local development technology to help your business succeed. Unlock the power of Firebase development with ZenQua.",
-        "image": "../images/webpFile/firebase-1024x907.webp",
+        "image": "firebase",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "FireBase Development Team?",
         "button": "Hire FIREBASE DEVELOPER"
@@ -916,23 +849,7 @@
         "para2": "Ability to use existing framework environments.Increased accountability from a dedicated team.Long-term cost savings from dedicated resources."
       }
     ],
-    "business": [
-      {
-        "title": "Backend Development",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/small-medium_business.webp"
-      },
-      {
-        "title": "Small & Medium Businesses",
-        "description": "Our team of experts specializes in building custom web systems for small and medium-sized businesses to streamline their routine processes and enable them to focus on growth and other important tasks. Our solutions are designed with scalability in mind, ensuring they can handle future increases in workload and the number of concurrent users.",
-        "image": "../images/webpFile/startup-business.webp"
-      },
-      {
-        "title": "Large Businesses",
-        "description": "We provide the perfect solution for large businesses looking to streamline their processes and manage digital success. Our web and app development service offers the perfect combination of the most up-to-date technology stack, secure product functionality, and standard development processes that protect against common threats and vulnerabilities. We ensure our customers, suppliers, partners, and investors receive the best service when it comes to their digital needs.",
-        "image": "../images/webpFile/large_business.webp"
-      }
-    ],
+
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
