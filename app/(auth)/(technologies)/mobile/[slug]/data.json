@@ -6,7 +6,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/ios"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "iOS  Development Company",
         "heading2": "Custom iOS apps to help you get ahead of your competition",
@@ -14,7 +14,7 @@
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135651/IOS.png",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "IOS Development Team?",
@@ -143,7 +143,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/android"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Android App Development Company",
         "heading2": "Custom Android App Solutions to give your users a world-class experience.",
@@ -151,7 +151,7 @@
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135650/Android-1536x1360.png",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "Android Development Team?",
@@ -318,7 +318,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/swift"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Swift App Development Company",
         "heading2": "Renowned Swift App Development Services",
@@ -326,7 +326,7 @@
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135649/Swift-1536x1360.png",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2":{
         "heading1": "Swift Development Team?",
         "button": "Hire SWIFT Developer"
@@ -492,7 +492,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/flutter"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Flutter App Development Company",
         "heading2": "Develop next-gen apps for iOS and Android with a single codebase.",
@@ -500,7 +500,7 @@
         "image": "https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18135648/Flutter-1536x1360.png",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": 
       {
         "heading1": "Flutter App Development Team?",
@@ -668,7 +668,7 @@
     "keywords": "React Native development, cross-platform mobile apps, mobile app development, React Native consulting, app migration, app development services, mobile development company, iOS, Android, app performance",
     "url": "https://www.zenqua.com/mobile/reactnative"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "ReactNative App Development Company",
         "heading2": "Building modern, high quality cross-platform mobile apps with React Native",
@@ -676,7 +676,7 @@
         "image": "reactNative",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2":{
         "heading1": "ReactNative Development Team?",
         "button": "Hire REACTNATIVE Developer"

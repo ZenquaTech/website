@@ -23,6 +23,7 @@ import startupBusiness from "@/components/assets/img/reactjsimg/startup-business
 import reactNative from "@/components/assets/img/angularimg/react-native.webp";
 import smallMediumBusiness from "@/components/assets/img/reactjsimg/small-medium_business.webp";
 import Image from "next/image";
+const LazyHeroContent = dynamic(() => import("@/components/ui/HeroContent"));
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
 );
@@ -218,53 +219,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
 
-            {content?.section1?.map((item: any, index: any) => (
-              <div
-                className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                key={index}
-              >
-                <div className="bg-transparent p-8 flex flex-col text-left">
-                  <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">
-                    {item.heading1}
-                  </h2>
-                  <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA]">
-                    {item.heading2}
-                  </h1>
-                  <p className="text-medium my-2 text-justify text-[#9BA9B4]">
-                    {item.para}
-                  </p>
-                  <Button
-                    variant="contained"
-                    onClick={() => scrollToBottom()}
-                    style={{
-                      alignItems: "center",
-                      fontSize: "15px",
-                      marginTop: "2%",
-                      textAlign: "center",
-                      flexWrap: "wrap",
-                      backgroundColor: "#019dce",
-                      color: "#D9E3EA",
-                      padding: "2%",
-                      fontWeight: "bold",
-                      borderRadius: "10px",
-                      width: "160px",
-                      textTransform: "none",
-                    }}
-                  >
-                    {item.button}
-                  </Button>
-                </div>
-                <div className="mt-20 flex justify-center">
-                  <Image
-                    src={imageMap[item.image]?.src || item.image}
-                    alt={item.heading1}
-                    className="object-contain"
-                    width={880}
-                    height={799}
-                  />
-                </div>
-              </div>
-            ))}
+            <LazyHeroContent
+              item={content.section1}
+              image={
+                imageMap[content.section1.image]?.src || content.section1.image
+              }
+            />
             {/* ************************end********************************** */}
 
             {/* ************************section2********************************** */}
@@ -276,7 +236,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* ************************end********************************** */}
 
             {/* ************************section3********************************** */}
-            <LazyWhatWeDoComponent content={content}/>
+            <LazyWhatWeDoComponent content={content} />
             {/* <Grid container>
               {content.section3.map((item: any, index: any) => {
                 return (
@@ -540,13 +500,13 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* *******************************GLANCE******************************    */}
 
-            <LazyZenquaGlanceComponent/>
+            <LazyZenquaGlanceComponent />
 
             {/* ***********************  end********************************* */}
 
             {/* *********************************************************** */}
 
-            <LazyAdoptableApprochComponent/>
+            <LazyAdoptableApprochComponent />
 
             <div className="box-border w-full mt-[4%]">
               <h2 className=" font text-center uppercase text-[#D9E3EA]">
@@ -711,12 +671,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               </Box>
             </div>
 
-         <LazyBusinessEmpowermentComponent/>
+            <LazyBusinessEmpowermentComponent />
             {/* **********************  End   ****************************** */}
 
             {/* ***********************     PORTFOLIO  ***************************** */}
 
-            <LazyPortfolioProjects/>
+            <LazyPortfolioProjects />
             {/* **********************  End   ****************************** */}
 
             {/* ********************************** Contact Us *********************** */}

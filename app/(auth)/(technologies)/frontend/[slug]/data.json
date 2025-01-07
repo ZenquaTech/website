@@ -1,6 +1,6 @@
 {
   "angular": {
-    "section1": [
+    "section1": 
       {
         "heading1": "Angular JS Development Company",
         "heading2": "Custom AngularJS Development Services for Scalable and Dynamic Web Applications",
@@ -8,7 +8,7 @@
         "image": "angular",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
       "heading1": "Angular Js  Development Team?",
       "button": "Hire Angular Js  Developer"
@@ -182,7 +182,7 @@
     }
   },
   "react": {
-    "section1": [
+    "section1": 
       {
         "heading1": "React JS Development Company",
         "heading2": "Expert ReactJS Development Services for High-Quality, Dynamic Web Applications",
@@ -190,7 +190,7 @@
         "image": "reactImage",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
       "heading1": "ReactJs Development Team?",
       "button": "Hire ReactJs Developer"
@@ -384,7 +384,7 @@
     }
   },
   "vue": {
-    "section1": [
+    "section1": 
       {
         "heading1": "Vue JS Development Company",
         "heading2": "Powering Your Web Applications with Dynamic VueJS Development Services",
@@ -392,7 +392,7 @@
         "image": "vuejs",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
       "heading1": "VueJs Development Team?",
       "button": "Hire Vuejs Developer"
@@ -574,7 +574,7 @@
 }
   },
 "knockout": {
-  "section1":[
+  "section1":
      {
          "heading1":"Knockout JS Development Company",
          "heading2":"Building Scalable Web Applications with Custom KnockoutJS Development Services",
@@ -582,7 +582,7 @@
          "image":"aspNET" ,
          "button":"Talk to Expert"          
      }
-  ],
+  ,
   "section2":
      {
          "heading1":"Knockout.js Development Team?",
@@ -805,7 +805,7 @@
 }
 },
 "next": {
-  "section1":[
+  "section1":
      {
          "heading1":"Next JS Development Company",
          "heading2":"Transform Your Web Presence with Expert NextJS Development Services",
@@ -813,7 +813,7 @@
          "image":"nextjs",
          "button":"Talk to Expert"          
      }
-  ],
+  ,
   "section2":
      {
          "heading1":"NextJs Development Team?",

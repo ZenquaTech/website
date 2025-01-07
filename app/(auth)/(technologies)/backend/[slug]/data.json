@@ -6,7 +6,7 @@
       "keywords": "Node.js Development, Node.js Development Company, Node.js Consulting, Node.js Application Migration, Node.js API Development, Serverless Node.js Microservices, Node.js Maintenance and Support, Node.js Product Development, Backend Dashboard Development, Custom Node.js Solutions",
        "url": "https://www.zenqua.com/backend/nodejs"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Node JS Development Company",
         "heading2": "Accelerate Your Business with Our Node JS Development Expertise",
@@ -14,7 +14,7 @@
         "image": "nodejs",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "NodeJS Development Team?",
         "button": "Hire NodeJS Developer"
@@ -185,7 +185,7 @@
     "keywords": "NestJS development, custom backend solutions, NestJS web development, eCommerce development with NestJS, REST API integration with NestJS, scalable NestJS applications, NestJS consulting services, offshore NestJS development, NestJS experts, dynamic app development with NestJS, backend systems using NestJS, NestJS application maintenance, secure web applications with NestJS, ZenQua NestJS development, modern NestJS frameworks, NestJS microservices, enterprise NestJS solutions, real-time apps with NestJS, NestJS and TypeScript development, high-performance backend systems",
     "url": "https://www.zenqua.com/backend/nestjs"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": "Nest Js Development Company",
         "heading2": "Elevating Your Backend Development with NestJS: Your Trusted Partner",
@@ -193,7 +193,7 @@
         "image": "ror",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "NestJS Development Team?",
         "button": "Hire NestJS Developer"
@@ -401,7 +401,7 @@
     "keywords": "ROR development, custom ROR applications, ROR web development, ROR backend services, machine learning ROR solutions, offshore ROR team, scalable web applications",
     "url": "https://www.zenqua.com/backend/ror"
     },
-    "section1": [
+    "section1": 
       {
         "heading1": " ROR Development Company",
         "heading2": "Partner with the Best ROR Development Services Provider",
@@ -409,7 +409,7 @@
         "image": "ror",
         "button": "Talk to Expert"
       }
-    ],
+    ,
     "section2": {
         "heading1": "ROR Development Team?",
         "button": "Hire ROR Developer"

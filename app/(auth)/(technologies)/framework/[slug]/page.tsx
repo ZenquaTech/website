@@ -16,6 +16,10 @@ import dynamic from "next/dynamic";
 import { FaStar } from "react-icons/fa";
 import Carousel from "react-material-ui-carousel";
 import "./styles.css";
+import ROR from "@/public/images/webpFile/ROR-1536x1360.webp";
+import nodejs from "@/public/images/webpFile/nodejs-1024x907.webp";
+import django from "@/public/images/webpFile/django_1-1536x1360.webp";
+const LazyHeroContent = dynamic(() => import("@/components/ui/HeroContent"));
 const LazyBusinessEmpowermentComponent = dynamic(
   () => import("@/components/ui/BusinessEmpowerment")
 );
@@ -38,34 +42,11 @@ const LazyWhatWeDoComponent = dynamic(
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
 );
-const scrollToBottom = () => {
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: "smooth",
-  });
-};
-const projects = [
-  {
-    src: "../images/webpFile/one.webp",
-    alt: "Enterprise e-Commerce Store – CAMPSAVER",
-    description: "Enterprise e-Commerce Store – CAMPSAVER"
-  },
-  {
-    src: "../images/webpFile/two.webp",
-    alt: "UAE Government Application – DTMC",
-    description: "UAE Government Application – DTMC"
-  },
-  {
-    src: "../images/webpFile/three.webp",
-    alt: "Marshalls World of Sport Website",
-    description: "Marshalls World of Sport Website"
-  },
-  {
-    src: "../images/webpFile/one.webp",
-    alt: "Employees Shift Management Web App – Shift Manager",
-    description: "Employees Shift Management Web App – Shift Manager"
-  }
-];
+const imageMap: any = {
+  django,
+  ROR,
+  nodejs
+}
 
 interface PageState {
   hoveredCircle: number | null;
@@ -98,13 +79,6 @@ interface RoutePageProps {
   params: {
     slug: string;
   };
-}
-
-class Content extends Component<ContentProps> {
-  render() {
-    const { body } = this.props;
-    return <div dangerouslySetInnerHTML={{ __html: body }} />;
-  }
 }
 
 class RoutePage extends Component<RoutePageProps, PageState> {
@@ -208,54 +182,18 @@ class RoutePage extends Component<RoutePageProps, PageState> {
       body: "Content not available for this route.",
     };
 
-    const { clickedButton } = this.state;
-
-    const style1 = {
-      flexWrap: "wrap" as "nowrap" | "wrap" | "wrap-reverse",
-      backgroundColor: "transparent",
-      boxShadow: "0px 0px 5px #D9E3EA",
-    };
-
-    const { Cost, Vast, Time, Experienced, Reduced, Custom, clickedButton6 } =
-      this.state;
-
     return (
       <>
         <MainWrapper>
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
 
-            {content?.section1?.map((item: any, index: any) => (
-              <div
-                className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                key={index}
-              >
-                <div className="bg-transparent p-8 flex flex-col text-left">
-                  <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">
-                    {item.heading1}
-                  </h2>
-                  <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA]">
-                    {item.heading2}
-                  </h1>
-                  <p className="text-medium my-2 text-justify text-[#9BA9B4]">
-                    {item.para}
-                  </p>
-                  <button
-                    className="bg-[#019dce] text-[#D9E3EA] text-md mt-4 px-6 rounded-lg py-2 w-40 font-medium"
-                    onClick={() => scrollToBottom()}
-                  >
-                    {item.button}
-                  </button>
-                </div>
-                <div className="mt-20 flex justify-center">
-                  <img
-                    src={item.image}
-                    alt="image"
-                    className="object-contain"
-                  />
-                </div>
-              </div>
-            ))}
+            <LazyHeroContent
+              item={content.section1}
+              image={
+                imageMap[content.section1.image]?.src || content.section1.image
+              }
+            />
             {/* ************************end********************************** */}
 
             {/* ************************section2********************************** */}
@@ -268,7 +206,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* ************************section3********************************** */}
 
-            <LazyWhatWeDoComponent content={content}/>
+            <LazyWhatWeDoComponent content={content} />
             {/* <Grid container>
               {content.section3.map((item: any, index: any) => {
                 return (
@@ -538,7 +476,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* *********************************************************** */}
 
-            <LazyAdoptableApprochComponent/>
+            <LazyAdoptableApprochComponent />
 
             {/* ******************** Why Outsource Your Project to ZenQua? ************************ */}
 
@@ -711,12 +649,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* ***********************      BUSINESS EMPOWERMENT   ***************************** */}
 
-           <LazyBusinessEmpowermentComponent/>
+            <LazyBusinessEmpowermentComponent />
             {/* **********************  End   ****************************** */}
 
             {/* ***********************     PORTFOLIO  ***************************** */}
 
-            <LazyPortfolioProjects/>
+            <LazyPortfolioProjects />
             {/* **********************  End   ****************************** */}
 
             {/* ********************************** Contact Us *********************** */}
