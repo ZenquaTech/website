@@ -36,25 +36,24 @@
              "starLogo": "<FaStar />",
              "title": "AWS Cloud Migration Services",
              "description":"We are an experienced provider of AWS Cloud Migration Services, having a proven track record of successful migrations. Our cloud experts have extensive experience in planning and executing migrations from on-premise and other cloud solutions to AWS Cloud. We also provide post-migration support and maintenance services to ensure optimal performance and scalability of your cloud environment."
-         }
-     ],
-     "item2": [
-         {
-             "starLogo": "<FaStar />",
-             "title": "AWS Cloud Managed Services",
-             "description":"We provide comprehensive AWS Cloud Managed Services to our clients, enabling them to focus on their core business. Our AWS certified professionals are well versed in architecting, deploying and managing cloud-based applications. We ensure that the applications are monitored, maintained and secured in accordance with best practices and industry standards. Our services extend to include cloud migration, cost optimization, performance optimization and 24×7 support."
          },
          {
-             "starLogo": "<FaStar />",
-             "title": "Cloud Business Intelligence & Analytics",
-             "description":"Our suite of services allows us to quickly deploy and scale cloud analytics solutions with minimal effort and cost. We leverage AWS services such as Amazon Redshift, Amazon Athena, Amazon EMR, Amazon Kinesis, and Amazon QuickSight to rapidly build and deploy end-to-end cloud analytics solutions. We specialize in designing data pipelines, data warehousing, data lakes, analytics dashboards and data visualizations that allow our customers to gain insights quickly and cost-effectively."
-         },
-         {
-             "starLogo": "<FaStar />",
-             "title": "Cloud migration & app modernization with AWS?",
-             "description":"Our skilled developers and engineers leverage their expertise in the .NET framework and CRM platforms such as Dynamics 365, Salesforce, and Hubspot to create custom solutions that streamline your business processes. We offer end-to-end services including design, development, testing, and deployment of CRM solutions, ensuring seamless integration with your existing systems. Our experts also provide ongoing support and maintenance to ensure your CRM is always up to date and running smoothly."
-         }
+            "starLogo": "<FaStar />",
+            "title": "AWS Cloud Managed Services",
+            "description":"We provide comprehensive AWS Cloud Managed Services to our clients, enabling them to focus on their core business. Our AWS certified professionals are well versed in architecting, deploying and managing cloud-based applications. We ensure that the applications are monitored, maintained and secured in accordance with best practices and industry standards. Our services extend to include cloud migration, cost optimization, performance optimization and 24×7 support."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "Cloud Business Intelligence & Analytics",
+            "description":"Our suite of services allows us to quickly deploy and scale cloud analytics solutions with minimal effort and cost. We leverage AWS services such as Amazon Redshift, Amazon Athena, Amazon EMR, Amazon Kinesis, and Amazon QuickSight to rapidly build and deploy end-to-end cloud analytics solutions. We specialize in designing data pipelines, data warehousing, data lakes, analytics dashboards and data visualizations that allow our customers to gain insights quickly and cost-effectively."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "Cloud migration & app modernization with AWS?",
+            "description":"Our skilled developers and engineers leverage their expertise in the .NET framework and CRM platforms such as Dynamics 365, Salesforce, and Hubspot to create custom solutions that streamline your business processes. We offer end-to-end services including design, development, testing, and deployment of CRM solutions, ensuring seamless integration with your existing systems. Our experts also provide ongoing support and maintenance to ensure your CRM is always up to date and running smoothly."
+        }
      ],
+     
      "section4": [
          {
              "heading1":"Advanced AWS Services",
@@ -232,24 +231,22 @@
            "starLogo": "<FaStar />",
            "title": "Azure Hybride App Development",
            "description":"Azure hybrid app development is one of our core areas of expertise. We provide end-to-end solutions for the development, deployment, and management of your hybrid applications. Our Azure experts are well-versed in cloud-native development and the latest Azure technologies, ensuring your applications are developed with best practices and industry standards in mind."
-       }
-   ],
-   "item2": [
-       {
-           "starLogo": "<FaStar />",
-           "title": "Azure Asp.net MVP Development",
-           "description":"We specialize in developing applications based on Microsoft Azure cloud computing platform, leveraging the latest version of the Asp.net framework. Our highly experienced Asp.net MVP developers are well-versed in the nuances of this technology and are capable of delivering robust, secure, and reliable applications. We ensure that the applications we develop leverage the latest Azure features and comply with industry standards and security protocols."
        },
        {
-           "starLogo": "<FaStar />",
-           "title": "Python Development with Azure",
-           "description":"Our expertise lies in leveraging the power of Python, along with the scalability and high availability of Azure, to provide industry-leading solutions for our clients. Our team is highly experienced in developing solutions that leverage the full range of Azure services, such as Azure Functions, Azure App Services, Azure Machine Learning, and Azure Container Service."
-       },
-       {
-           "starLogo": "<FaStar />",
-           "title": "Azure Analytics Services",
-           "description":"Azure Analytics Solutions are designed to help customers extract maximum value from their data. Our expertise in Azure Analytics provides customers with powerful and cost-effective tools to obtain actionable insights. Our Azure certified professionals are experienced in leveraging Azure technologies such as Azure Databricks, Azure SQL Data Warehouse, and Azure HDInsight to develop custom cloud-based analytics solutions."
-       }
+        "starLogo": "<FaStar />",
+        "title": "Azure Asp.net MVP Development",
+        "description":"We specialize in developing applications based on Microsoft Azure cloud computing platform, leveraging the latest version of the Asp.net framework. Our highly experienced Asp.net MVP developers are well-versed in the nuances of this technology and are capable of delivering robust, secure, and reliable applications. We ensure that the applications we develop leverage the latest Azure features and comply with industry standards and security protocols."
+    },
+    {
+        "starLogo": "<FaStar />",
+        "title": "Python Development with Azure",
+        "description":"Our expertise lies in leveraging the power of Python, along with the scalability and high availability of Azure, to provide industry-leading solutions for our clients. Our team is highly experienced in developing solutions that leverage the full range of Azure services, such as Azure Functions, Azure App Services, Azure Machine Learning, and Azure Container Service."
+    },
+    {
+        "starLogo": "<FaStar />",
+        "title": "Azure Analytics Services",
+        "description":"Azure Analytics Solutions are designed to help customers extract maximum value from their data. Our expertise in Azure Analytics provides customers with powerful and cost-effective tools to obtain actionable insights. Our Azure certified professionals are experienced in leveraging Azure technologies such as Azure Databricks, Azure SQL Data Warehouse, and Azure HDInsight to develop custom cloud-based analytics solutions."
+    }
    ],
    "section4": [
        {
@@ -430,25 +427,24 @@
            "starLogo": "<FaStar />",
            "title": "Google G Suite Services",
            "description":"Our google certified professionals have the technical knowledge and expertise to ensure that your business is utilising the full range of Google G Suite Services, including Gmail, Calendar, Drive, Docs, Sheets, and Slides. We provide comprehensive support and training to ensure that you and your team are fully equipped to take full advantage of Google G Suite’s powerful collaboration tools."
-       }
-   ],
-   "item2": [
-       {
-           "starLogo": "<FaStar />",
-           "title": "GCP Integration Services",
-           "description":"We are a leading provider of GCP Integration Services, providing comprehensive solutions that enable organizations to maximize the power of the Google Cloud Platform. Our experts are well-versed in GCP integration, from the simplest of requirements to the most complex of scenarios. We have deep experience in helping organizations to develop and implement custom GCP integration solutions that meet their specific requirements."
        },
        {
-           "starLogo": "<FaStar />",
-           "title": "GCP Migration Services",
-           "description":"Our company specializes in providing expert ASP.NET Cloud Application Development services. We utilize our in-depth knowledge of Microsoft Azure and other cloud technologies to build scalable and secure cloud-based applications. We also provide end-to-end cloud application development services, including architecture design, implementation, and deployment, as well as ongoing maintenance and support, to ensure the smooth operation of our clients’ cloud-based solutions."
-       },
-       {
-           "starLogo": "<FaStar />",
-           "title": "Google Cloud Managed Services",
-           "description":"Google Cloud Managed Services provide organizations with the ability to easily deploy, manage, and optimize their cloud infrastructure. We have extensive experience in the deployment of Google Cloud Platform services, such as BigQuery, Compute Engine, Cloud Storage, Kubernetes, App Engine, Cloud Spanner, and Cloud TPU, as well as providing ongoing management, monitoring, and optimization of these services."
-       }
+        "starLogo": "<FaStar />",
+        "title": "GCP Integration Services",
+        "description":"We are a leading provider of GCP Integration Services, providing comprehensive solutions that enable organizations to maximize the power of the Google Cloud Platform. Our experts are well-versed in GCP integration, from the simplest of requirements to the most complex of scenarios. We have deep experience in helping organizations to develop and implement custom GCP integration solutions that meet their specific requirements."
+    },
+    {
+        "starLogo": "<FaStar />",
+        "title": "GCP Migration Services",
+        "description":"Our company specializes in providing expert ASP.NET Cloud Application Development services. We utilize our in-depth knowledge of Microsoft Azure and other cloud technologies to build scalable and secure cloud-based applications. We also provide end-to-end cloud application development services, including architecture design, implementation, and deployment, as well as ongoing maintenance and support, to ensure the smooth operation of our clients’ cloud-based solutions."
+    },
+    {
+        "starLogo": "<FaStar />",
+        "title": "Google Cloud Managed Services",
+        "description":"Google Cloud Managed Services provide organizations with the ability to easily deploy, manage, and optimize their cloud infrastructure. We have extensive experience in the deployment of Google Cloud Platform services, such as BigQuery, Compute Engine, Cloud Storage, Kubernetes, App Engine, Cloud Spanner, and Cloud TPU, as well as providing ongoing management, monitoring, and optimization of these services."
+    }
    ],
+ 
    "section4": [
        {
            "heading1":"EXPERTISE IN GOOGLE CLOUD SERVICE",

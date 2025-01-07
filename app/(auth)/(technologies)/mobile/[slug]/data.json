@@ -43,9 +43,7 @@
         "starLogo": "<FaStar />",
         "title": "Custom iOS Application Development",
         "description": "We use advanced technologies to create custom iOS apps for diverse industries. Our comprehensive project management and personalized customer service ensure timely and budget-friendly delivery. We integrate existing system components to create a robust app tailored to our clients’ specific needs."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "iOS Software Testing",
@@ -182,9 +180,7 @@
         "starLogo": "<FaStar />",
         "title": "Custom Android Application Development",
         "description": "We offer custom Android Application Development services to help our clients better serve their customers. Our experienced team of Android developers make use of the latest technology and frameworks to create powerful, intuitive and reliable apps that are tailored to our clients’ specific needs. Our apps are designed to work across multiple platforms and devices, and we ensure the highest quality product with comprehensive testing."
-      }
-    ],
-    "item2": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Android Software Testing",
@@ -358,24 +354,22 @@
             "starLogo": "<FaStar />",
             "title": "Swift Enterprise Application Development",
             "description": "Our company specializes in Swift Enterprise Application Development services, utilizing the latest Apple technologies to build enterprise level iOS applications. Our developers have extensive experience in building applications for various industries, including healthcare, finance, e-commerce, and education. We also specialize in building enterprise applications that integrate with existing enterprise systems, such as ERPs, CRMs, and CMSs, to ensure seamless data exchange and business continuity."
-        }
-    ],
-    "item2":[
-        {
-            "starLogo": "<FaStar />",
-            "title": "Swift App Consulting Services",
-            "description": "Our Swift App Consulting services cover the entire application development lifecycle, from ideation to deployment and post-deployment support. We provide guidance on the best practices for Swift app development, including code quality, testing, and documentation. Our team of experts also assists clients in choosing the right development tools and frameworks, based on their application requirements and project scope. Furthermore, we offer Swift App Consulting services for various domains, including enterprise, gaming, social media, and e-commerce."
         },
         {
-            "starLogo": "<FaStar />",
-            "title": "Existing App Maintenance",
-            "description": "As part of our Existing Swift App Maintenance services, we help clients ensure that their Swift applications are up-to-date with the latest security patches, libraries, and frameworks. Our developers also perform regular code reviews to identify and fix bugs, improve application performance, and enhance user experience. We also offer assistance with integrating new features, services, and APIs into clients’ existing Swift applications, ensuring that they remain up-to-date and relevant in a rapidly evolving technology landscape."
-        },
-        {
-            "starLogo": "<FaStar />",
-            "title": "Swift iOS Development Solutions",
-            "description": "Our Swift iOS development services are designed to cater to the diverse needs of businesses in various industries. Our developers have a deep understanding of the iOS platform and the various components of the iOS SDK, including Cocoa Touch, UIKit, Core Data, and Core Animation. From app design and development to testing and deployment, we follow a rigorous development process to ensure the quality, performance, and security of our iOS applications."
-        }
+          "starLogo": "<FaStar />",
+          "title": "Swift App Consulting Services",
+          "description": "Our Swift App Consulting services cover the entire application development lifecycle, from ideation to deployment and post-deployment support. We provide guidance on the best practices for Swift app development, including code quality, testing, and documentation. Our team of experts also assists clients in choosing the right development tools and frameworks, based on their application requirements and project scope. Furthermore, we offer Swift App Consulting services for various domains, including enterprise, gaming, social media, and e-commerce."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Existing App Maintenance",
+          "description": "As part of our Existing Swift App Maintenance services, we help clients ensure that their Swift applications are up-to-date with the latest security patches, libraries, and frameworks. Our developers also perform regular code reviews to identify and fix bugs, improve application performance, and enhance user experience. We also offer assistance with integrating new features, services, and APIs into clients’ existing Swift applications, ensuring that they remain up-to-date and relevant in a rapidly evolving technology landscape."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Swift iOS Development Solutions",
+          "description": "Our Swift iOS development services are designed to cater to the diverse needs of businesses in various industries. Our developers have a deep understanding of the iOS platform and the various components of the iOS SDK, including Cocoa Touch, UIKit, Core Data, and Core Animation. From app design and development to testing and deployment, we follow a rigorous development process to ensure the quality, performance, and security of our iOS applications."
+      }
     ],
     "section4": [
       {
@@ -535,9 +529,7 @@
           "starLogo": "<FaStar />",
           "title": "Advanced and Native App Development",
           "description": "We are a leading Flutter App Development Company providing advanced and native app development solutions. Our team of experts make use of the latest technologies to deliver high-performing apps that are tailored to meet your business needs and objectives. With our experienced developers and advanced tools, we help you create highly interactive, scalable, and customized apps that are intuitive and user-friendly."
-        }
-      ],
-      "item2": [
+        },
         {
           "starLogo": "<FaStar />",
           "title": "Flutter App Design Services",
@@ -554,6 +546,7 @@
           "description": "At ZenQua Inc, our Support and Maintenance services help customers maintain their Flutter apps. Our team of experts provide 24/7 support and regular maintenance to ensure that your apps remain up-to-date and bug-free. We provide solutions for any issue you may encounter and can help you with any upcoming feature requests."
         }
       ],
+    
     "section4": [
       {
         "heading1": "EXPERTISE IN FLUTTER DEVELOPMENT",
@@ -711,9 +704,7 @@
           "starLogo": "<FaStar />",
           "title": "React Native App Migration Services",
           "description": "We offer React Native App Migration Services, utilizing our expertise in JavaScript, React, and Redux to ensure a seamless transition from legacy technologies to the robust React Native framework. Our services include code refactoring, bug fixing, debugging, and performance optimization."
-        }
-      ],
-      "item2": [
+        },
         {
           "starLogo": "<FaStar />",
           "title": "MVP Development Services",

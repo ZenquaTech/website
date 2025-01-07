@@ -27,10 +27,13 @@ const LazyBusinessEmpowermentComponent = dynamic(
   () => import("@/components/ui/BusinessEmpowerment")
 );
 const LazyZenquaGlanceComponent = dynamic(
-  () => import("@/components/ui/zenqua_glance")
+  () => import("@/components/ui/ZenquaGlance")
 );
 const LazyAdoptableApprochComponent = dynamic(
-  () => import("@/components/ui/adoptable_approch")
+  () => import("@/components/ui/AdoptableApproch")
+);
+const LazyWhatWeDoComponent = dynamic(
+  () => import("@/components/ui/WhatWeDo")
 );
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
@@ -247,7 +250,8 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             />
             {/* ************************end********************************** */}
             {/* ************************section3********************************** */}
-            <Grid container>
+            <LazyWhatWeDoComponent content={content}/>
+            {/* <Grid container>
               {content.section3.map((item: any, index: any) => {
                 return (
                   <Grid key={index} item xs={12}>
@@ -351,7 +355,8 @@ class RoutePage extends Component<RoutePageProps,PageState> {
                   </Box>
                 </Grid>
               ))}
-            </Grid>
+            </Grid> */}
+
             {/* ***********************end************************** */}
             {/* ************************section4********************************** */}
             <Grid container>

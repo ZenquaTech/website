@@ -37,25 +37,24 @@
              "starLogo": "<FaStar />",
              "title": "Technical SEO",
              "description":"Our Technical SEO Services focus on optimizing websites for higher visibility in search engines through optimization of content, keyword research, backlink building, and technical analysis of a website’s structure and speed. We also perform complete site audits to identify potential issues related to performance and design. Our team of specialists understand how best to optimize websites and drive quality traffic to your website."
-         }
-     ],
-     "item2": [
-         {
-             "starLogo": "<FaStar />",
-             "title": "On-Page SEO Services",
-             "description":"We provide comprehensive On-Page SEO services to help ensure your website is 100% optimized for the best possible organic search engine rankings. Our services include keyword research and analysis, website structure optimization, content optimization, metatag changes, canonical tag updates, and other related activities that ensure your website is SEO."
          },
          {
-             "starLogo": "<FaStar />",
-             "title": "Off-Page SEO Services",
-             "description":"We provide comprehensive Off-Page SEO services to help our clients establish and build their online presence. Our proven methods help clients create engaging content, build backlinks, participate in social media, and increase their visibility on major search engines. Our goal is to get clients noticed, boost their authority, and attract more customers."
-         },
-         {
-             "starLogo": "<FaStar />",
-             "title": "Conversion Rate Optimization",
-             "description":"We provide Conversion Rate Optimization services to ensure that your website traffic generates relevant leads and conversion goals. Our approach to optimizing conversion rates leverages thorough research and analysis, to identify and target areas of improvement such as optimizing user experience, analyzing user behaviour and leveraging creative and effective landing pages."
-         }
+          "starLogo": "<FaStar />",
+          "title": "On-Page SEO Services",
+          "description":"We provide comprehensive On-Page SEO services to help ensure your website is 100% optimized for the best possible organic search engine rankings. Our services include keyword research and analysis, website structure optimization, content optimization, metatag changes, canonical tag updates, and other related activities that ensure your website is SEO."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Off-Page SEO Services",
+          "description":"We provide comprehensive Off-Page SEO services to help our clients establish and build their online presence. Our proven methods help clients create engaging content, build backlinks, participate in social media, and increase their visibility on major search engines. Our goal is to get clients noticed, boost their authority, and attract more customers."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Conversion Rate Optimization",
+          "description":"We provide Conversion Rate Optimization services to ensure that your website traffic generates relevant leads and conversion goals. Our approach to optimizing conversion rates leverages thorough research and analysis, to identify and target areas of improvement such as optimizing user experience, analyzing user behaviour and leveraging creative and effective landing pages."
+      }
      ],
+    
      "project": [
          {
              "title": "Project Delivered",
@@ -196,9 +195,7 @@
           "starLogo": "<FaStar />",
           "title": "Content Creation",
           "description": "Our creative team produces engaging content that captures your brand's voice and resonates with your audience. We focus on creating content that drives interaction and fosters a sense of community around your brand."
-        }
-      ],
-      "item2": [
+        },
         {
           "starLogo": "<FaStar />",
           "title": "Community Management",
@@ -214,7 +211,7 @@
           "title": "Performance Analysis",
           "description": "We leverage analytics and performance metrics to continuously refine and improve our strategies. Regular reporting and analysis help us track the effectiveness of our SMO efforts, ensuring optimal results for your business."
         }
-    ],
+      ],
  "servicesData2": [
    {
      "label": "Cost-Effectiveness",
