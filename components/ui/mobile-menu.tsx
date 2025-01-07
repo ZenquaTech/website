@@ -104,25 +104,12 @@ const menuData = [
         href: "/",
         subMenu: [
           { title: "Partnerships", href: "/Partnerships" },
-          { title: "Engagement Models", href: "/engagement-model" },
-          { title: "Global Delivery Models", href: "/Global" },
-          { title: "Contact Us", href: "/contact-us" },
-        ],
-      },
-      {
-        title: "INSIGHTS",
-        href: "/",
-        subMenu: [
-          { title: "Blogs", href: "/blogs" },
-          { title: "White Papers" },
-          { title: "Videos", href: "/videos" },
         ],
       },
       {
         title: "CAREERS",
         href: "/",
         subMenu: [
-          { title: "Open Positions", href: "/career" },
           { title: "Why Join Us", href: "/why-join-us" },
         ],
       },

@@ -848,17 +848,24 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
 
     return (
       <>
-        <LazyZenquaGlanceComponent/>
+        <LazyZenquaGlanceComponent />
 
         {/* ***************  Our Core Services Start ******************* */}
-        <div className="m-[50px] box-border">
+        <div className="m-[50px] box-border" id="what-we-do">
           <h2 className=" font text-center uppercase service-button text-[#D9E3EA]">
             WHAT WE DO
           </h2>
           <h2 className="text-4xl font-extrabold text-center mb-4 service-button text-[#D9E3EA] ">
             Our Core Services
           </h2>
-          <div style={{ display: "flex", justifyContent: "center", boxShadow: "0px 0px 3px white", borderRadius: '20px' }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              boxShadow: "0px 0px 3px white",
+              borderRadius: "20px",
+            }}
+          >
             <div className="hidden sm:flex justify-center">
               <Grid container spacing={0} className="justify-center w-full">
                 <Grid item xs={6} sm={3} lg={3} xl={2}>
@@ -866,7 +873,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                     style={{
                       height: "100%",
                       padding: "2px",
-                      boxShadow: 'none',
+                      boxShadow: "none",
                       backgroundColor: "transparent",
                     }}
                   >
@@ -935,7 +942,6 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
               navButtonsAlwaysVisible={false}
               indicators={false}
               animation="slide"
-
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -1013,13 +1019,10 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
             TRENDING TECHNOLOGIES
           </h2>
           <h2 className="text-4xl font-extrabold text-center mb-10 service-button text-[#D9E3EA] ">
-
             Improve and Innovate with the Tech Trends
           </h2>
 
-          <Box
-            className="text-[#9BA9B4] justify-center flex w-full"
-          >
+          <Box className="text-[#9BA9B4] justify-center flex w-full">
             <div className="hidden sm:block flex-wrap justify-center items-center w-full">
               <Grid
                 container
@@ -1037,7 +1040,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       padding: "theme.spacing(2)",
                       backgroundColor: "transparent",
                       boxShadow: "0px 0px 5px white",
-                      borderRadius: '20px',
+                      borderRadius: "20px",
                       width: "92%",
                     }}
                   >
@@ -1101,7 +1104,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         style={{
                           borderBottom:
                             this.state.clickedButton2 ===
-                              "Artificial Intelligence"
+                            "Artificial Intelligence"
                               ? "2px solid #019dce"
                               : "none",
                           width: "-1px",
@@ -1110,24 +1113,24 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           padding: "6px 18px",
                           fontSize:
                             this.state.clickedButton2 ===
-                              "Artificial Intelligence"
+                            "Artificial Intelligence"
                               ? "16px"
                               : "14.50px",
                           fontWeight: "bold",
                           borderRadius: 0,
                           background:
                             this.state.clickedButton2 ===
-                              "Artificial Intelligence"
+                            "Artificial Intelligence"
                               ? "#171717"
                               : "none",
                           color:
                             this.state.clickedButton2 ===
-                              "Artificial Intelligence"
+                            "Artificial Intelligence"
                               ? "#019dce"
                               : "#D9E3EA",
                           backgroundColor:
                             this.state.clickedButton2 ===
-                              "Artificial Intelligence"
+                            "Artificial Intelligence"
                               ? "#222224"
                               : "transparent",
                         }}
@@ -1249,7 +1252,6 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                               : "transparent",
                         }}
                         disableRipple
-
                       >
                         Blockchain
                       </Button>
@@ -1293,7 +1295,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       </Button>
                     </Box>
 
-                    <div style={{ width: "100%", padding: '10px' }}>
+                    <div style={{ width: "100%", padding: "10px" }}>
                       {clickedButton2 === "Big Data" && (
                         <div style={{ margin: "20px" }}>
                           <Typography
@@ -1312,7 +1314,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                             style={{
                               margin: "10px",
                               fontSize: "25px",
-                              fontWeight: '600',
+                              fontWeight: "600",
                               color: "#D9E3EA",
                             }}
                           >
@@ -1333,7 +1335,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1356,7 +1358,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   display: "flex",
                                   alignItems: "center",
                                   borderRadius: "none",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1378,7 +1380,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   display: "flex",
                                   alignItems: "center",
                                   borderRadius: "none",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1400,7 +1402,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   display: "flex",
                                   alignItems: "center",
                                   borderRadius: "none",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1416,7 +1418,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                         </div>
                       )}
                       {clickedButton2 === "Artificial Intelligence" && (
-                        <div style={{ color: "white", padding: '10px' }}>
+                        <div style={{ color: "white", padding: "10px" }}>
                           <Typography
                             variant="body1"
                             style={{
@@ -1431,7 +1433,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
+                            style={{
+                              margin: "10px",
+                              fontSize: "25px",
+                              fontWeight: "600",
+                            }}
                           >
                             Selected AI Technologies We Master :
                           </Typography>
@@ -1449,7 +1455,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1469,7 +1475,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1489,7 +1495,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1509,7 +1515,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1538,7 +1544,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
+                            style={{
+                              margin: "10px",
+                              fontSize: "25px",
+                              fontWeight: "600",
+                            }}
                           >
                             Selected Solutions :
                           </Typography>
@@ -1556,7 +1566,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1576,7 +1586,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1596,7 +1606,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1616,7 +1626,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1646,7 +1656,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
+                            style={{
+                              margin: "10px",
+                              fontSize: "25px",
+                              fontWeight: "600",
+                            }}
                           >
                             Services We Offer:
                           </Typography>
@@ -1664,7 +1678,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1684,7 +1698,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1704,7 +1718,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1724,7 +1738,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1754,7 +1768,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
+                            style={{
+                              margin: "10px",
+                              fontSize: "25px",
+                              fontWeight: "600",
+                            }}
                           >
                             Services We Offer:
                           </Typography>
@@ -1773,7 +1791,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1795,7 +1813,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1827,8 +1845,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           </Typography>
                           <Typography
                             variant="h6"
-                            style={{ margin: "10px", fontSize: "25px", fontWeight: '600' }}
-
+                            style={{
+                              margin: "10px",
+                              fontSize: "25px",
+                              fontWeight: "600",
+                            }}
                           >
                             Services We Offer:
                           </Typography>
@@ -1847,7 +1868,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1868,7 +1889,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                                   color: "rgba(255,255,255,.75)",
                                   display: "flex",
                                   alignItems: "center",
-                                  boxShadow: "none"
+                                  boxShadow: "none",
                                 }}
                               >
                                 <FiberManualRecordIcon
@@ -1895,7 +1916,6 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 navButtonsAlwaysVisible={false}
                 indicators={false}
                 animation="slide"
-
                 sx={{
                   display: "flex",
                   flexDirection: "column",
@@ -2058,73 +2078,72 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
         {/* ************ZenQua Industry Expertise */}
 
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-  <div style={{ boxSizing: "border-box", width: "98%" }}>
-    <Grid container spacing={2} style={{ padding: "20px" }}>
-      <Grid item xs={12} className="py-3">
-        <h2 className="font text-center uppercase text-[#D9E3EA]">
-          INDUSTRIES WE SERVE
-        </h2>
-        <h2 className="text-4xl font-extrabold text-center mb-6 service-button text-[#D9E3EA]">
-          ZenQua Industry Expertise
-        </h2>
-      </Grid>
+          <div style={{ boxSizing: "border-box", width: "98%" }}>
+            <Grid container spacing={2} style={{ padding: "20px" }}>
+              <Grid item xs={12} className="py-3">
+                <h2 className="font text-center uppercase text-[#D9E3EA]">
+                  INDUSTRIES WE SERVE
+                </h2>
+                <h2 className="text-4xl font-extrabold text-center mb-6 service-button text-[#D9E3EA]">
+                  ZenQua Industry Expertise
+                </h2>
+              </Grid>
 
-      {[
-        "Health & Medicare",
-        "Logistics & Distribution",
-        "Real Estate",
-        "eCommerce & Retail",
-        "Finance & Banking",
-        "Education & Elearning",
-        "Travel & Hospitality",
-        "Manufacturing",
-        "Oil & Gas",
-      ].map((industry, index) => (
-        <Grid item xs={12} md={6} lg={4} key={index}>
-          <Paper
-            elevation={1}
-            style={{
-              backgroundColor: "transparent",
-              padding: "10px",
-              height: "10vh",
-              width: "92%",
-              flexWrap: "wrap",
-              color: "white",
-              boxShadow: "0px 0px 8px #fff",
-              margin: "10px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              marginLeft: "3%",
-              transition: "transform 0.3s ease",
-            }}
-            className="hover:scale-105"
-          >
-            <Typography
-              variant="subtitle1"
-              align="center"
-              style={{
-                fontSize: "x-large",
-                color: "#9BA9B4",
-                fontWeight: "bold",
-              }}
-            >
-              {industry}
-            </Typography>
-          </Paper>
-        </Grid>
-      ))}
-    </Grid>
-  </div>
-</Box>
-
+              {[
+                "Health & Medicare",
+                "Logistics & Distribution",
+                "Real Estate",
+                "eCommerce & Retail",
+                "Finance & Banking",
+                "Education & Elearning",
+                "Travel & Hospitality",
+                "Manufacturing",
+                "Oil & Gas",
+              ].map((industry, index) => (
+                <Grid item xs={12} md={6} lg={4} key={index}>
+                  <Paper
+                    elevation={1}
+                    style={{
+                      backgroundColor: "transparent",
+                      padding: "10px",
+                      height: "10vh",
+                      width: "92%",
+                      flexWrap: "wrap",
+                      color: "white",
+                      boxShadow: "0px 0px 8px #fff",
+                      margin: "10px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      marginLeft: "3%",
+                      transition: "transform 0.3s ease",
+                    }}
+                    className="hover:scale-105"
+                  >
+                    <Typography
+                      variant="subtitle1"
+                      align="center"
+                      style={{
+                        fontSize: "x-large",
+                        color: "#9BA9B4",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {industry}
+                    </Typography>
+                  </Paper>
+                </Grid>
+              ))}
+            </Grid>
+          </div>
+        </Box>
 
         {/* ********** Why Outsource Your Project to ZenQua?************** */}
 
         <LazyWhyUs isFeature={true} />
         {/* ************Our Flexible Engagement Models************ */}
 
-        <LazyAdoptableApprochComponent/>
+        <LazyAdoptableApprochComponent />
 
         {/* ************************ */}
         <center>
@@ -2155,7 +2174,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                 {people.map((person: any, index: any) => (
                   <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
                     <Avatar
-                     alt={person.name}
+                      alt={person.name}
                       style={{
                         borderRadius: "50%",
                         width: "100px",
@@ -2166,7 +2185,6 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                     <Box
                       className="bg-gray-700"
                       sx={{
-
                         height: { xs: "300px" },
                         width: {
                           xs: "55vw",
@@ -2175,7 +2193,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                           lg: "19vw",
                         },
                         marginTop: "-50px",
-                        borderRadius: '20px'
+                        borderRadius: "20px",
                       }}
                     >
                       <br />
@@ -2183,7 +2201,7 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       <Typography
                         style={{
                           fontSize: "16px",
-                          fontWeight: '600',
+                          fontWeight: "600",
                           marginTop: "20px",
                           color: "#D9E3EA",
                         }}
@@ -2219,26 +2237,25 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
                       </Typography>
                       <br />
                       <Link href="/contact-us">
-                      
-                         <Button
-                                                       variant="contained"                      
-                                                       style={{
-                                                         alignItems: "center",
-                                                         fontSize: "15px",
-                                                         marginTop: "2%",
-                                                         textAlign: "center",
-                                                         flexWrap: "wrap",
-                                                         backgroundColor: "#019dce",
-                                                         color: "#D9E3EA",
-                                                         padding: "2%",
-                                                         fontWeight: "bold",
-                                                         borderRadius: "10px",
-                                                         width: "160px",
-                                                         textTransform: "none",
-                                                       }}
-                                                     >
-                                                       Hire Me
-                                                     </Button>
+                        <Button
+                          variant="contained"
+                          style={{
+                            alignItems: "center",
+                            fontSize: "15px",
+                            marginTop: "2%",
+                            textAlign: "center",
+                            flexWrap: "wrap",
+                            backgroundColor: "#019dce",
+                            color: "#D9E3EA",
+                            padding: "2%",
+                            fontWeight: "bold",
+                            borderRadius: "10px",
+                            width: "160px",
+                            textTransform: "none",
+                          }}
+                        >
+                          Hire Me
+                        </Button>
                       </Link>
                     </Box>
                   </Grid>

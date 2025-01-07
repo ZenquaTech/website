@@ -21,32 +21,18 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-
+          // { title: "Open Positions", href: "/career" },
 const menuData: Record<string, { title: string; items: any[] }> = {
   Company: {
     title: "COMPANY",
     items: [
       {
         title: "ABOUT US",
-        subMenu: [
-          { title: "Partnerships", href: "/Partnerships" },
-          { title: "Engagement Models", href: "/engagement-model" },
-          { title: "Global Delivery Models", href: "/Global" },
-          { title: "Contact Us", href: "/contact-us" },
-        ],
-      },
-      {
-        title: "INSIGHTS",
-        subMenu: [
-          { title: "Blogs", href: "/blogs"},
-          { title: "White Papers" },
-          { title: "Videos", href: "/videos" },
-        ],
+        subMenu: [{ title: "Partnerships", href: "/Partnerships" }],
       },
       {
         title: "CAREERS",
         subMenu: [
-          { title: "Open Positions", href: "/career" },
           { title: "Why Join Us", href: "/why-join-us" },
         ],
       },
@@ -265,195 +251,199 @@ const Navbar = () => {
                 {menu}
               </Box>
             </Button>
-            {menu !== "Expertise" && openMenu === menu && (
-              <div
-                id={`${menu}-menu`}
-                onMouseEnter={handleMenuEnter(menu)}
-                onMouseLeave={handleMenuLeave}
-                style={{
-                  position: "absolute",
-                  backgroundColor: "#1B1A1F",
-                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                  zIndex: 10,
-                  borderRadius: "20px",
-                  left: 10,
-                  right: 10,
-                }}
-              >
-                <Grid container spacing={1}>
-                  <Grid item xs={12}>
-                    <Paper
-                      style={{
-                        borderRadius: "20px",
-                        display: "flex",
-                        flexDirection: "column",
-                        backgroundColor: "#1B1A1F",
-                        padding: "3% 7%",
-                        width: "98vw",
-                      }}
-                    >
-                      <Box style={{ display: "flex", flexDirection: "row" }}>
-                        {menuData[menu].items.map((item, itemIndex) => (
-                          <Box
-                            key={itemIndex}
-                            display="flex"
-                            flexDirection="column"
-                            marginBottom="10px"
-                            style={{ flex: 1, margin: "0 10px" }}
-                          >
-                            <Link href={item.href ? item.href : "/"} passHref>
-                              <Typography
-                                style={{
-                                  color: "#ffffffa6",
-                                  opacity: "0.65",
-                                  fontWeight: "bold",
-                                  marginRight: "20px",
-                                  fontSize: "12.544px",
-                                }}
-                              >
-                                {item.title}
-                              </Typography>
-                            </Link>
-                            {item?.subMenu?.length > 0 && (
-                              <Box display="flex" flexDirection="column">
-                                {item.subMenu.map(
-                                  (subItem: any, subItemIndex: any) => (
-                                    <Link
-                                      key={subItemIndex}
-                                      href={subItem.href ? subItem.href : "/"}
-                                      passHref
-                                      onClick={handleItemClick}
-                                    >
-                                      <Typography
-                                        component="a"
+            {menu !== "Expertise" &&
+              menu !== "Company" &&
+              openMenu === menu && (
+                <div
+                  id={`${menu}-menu`}
+                  onMouseEnter={handleMenuEnter(menu)}
+                  onMouseLeave={handleMenuLeave}
+                  style={{
+                    position: "absolute",
+                    backgroundColor: "#1B1A1F",
+                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                    zIndex: 10,
+                    borderRadius: "20px",
+                    left: 10,
+                    right: 10,
+                  }}
+                >
+                  <Grid container spacing={1}>
+                    <Grid item xs={12}>
+                      <Paper
+                        style={{
+                          borderRadius: "20px",
+                          display: "flex",
+                          flexDirection: "column",
+                          backgroundColor: "#1B1A1F",
+                          padding: "3% 7%",
+                          width: "98vw",
+                        }}
+                      >
+                        <Box style={{ display: "flex", flexDirection: "row" }}>
+                          {menuData[menu].items.map((item, itemIndex) => (
+                            <Box
+                              key={itemIndex}
+                              display="flex"
+                              flexDirection="column"
+                              marginBottom="10px"
+                              style={{ flex: 1, margin: "0 10px" }}
+                            >
+                              <Link href={item.href ? item.href : "/"} passHref>
+                                <Typography
+                                  style={{
+                                    color: "#ffffffa6",
+                                    opacity: "0.65",
+                                    fontWeight: "bold",
+                                    marginRight: "20px",
+                                    fontSize: "12.544px",
+                                  }}
+                                >
+                                  {item.title}
+                                </Typography>
+                              </Link>
+                              {item?.subMenu?.length > 0 && (
+                                <Box display="flex" flexDirection="column">
+                                  {item.subMenu.map(
+                                    (subItem: any, subItemIndex: any) => (
+                                      <Link
                                         key={subItemIndex}
-                                        style={{
-                                          color: "#ffffffbf",
-                                          fontSize: "12px",
-                                          fontWeight: "400",
-                                          cursor: "pointer",
-                                          opacity: "0.75",
-                                          lineHeight: "1.8rem",
-                                        }}
-                                        onMouseOver={(e) => {
-                                          const target =
-                                            e.target as HTMLElement;
-                                          target.style.color = "#019dce";
-                                        }}
-                                        onMouseOut={(e) => {
-                                          const target =
-                                            e.target as HTMLElement;
-                                          target.style.color = "#ffffffbf";
-                                        }}
+                                        href={subItem.href ? subItem.href : "/"}
+                                        passHref
+                                        onClick={handleItemClick}
                                       >
-                                        {subItem.title}
-                                      </Typography>
-                                    </Link>
-                                  )
-                                )}
-                              </Box>
-                            )}
-                          </Box>
-                        ))}
-                      </Box>
-                    </Paper>
+                                        <Typography
+                                          component="a"
+                                          key={subItemIndex}
+                                          style={{
+                                            color: "#ffffffbf",
+                                            fontSize: "12px",
+                                            fontWeight: "400",
+                                            cursor: "pointer",
+                                            opacity: "0.75",
+                                            lineHeight: "1.8rem",
+                                          }}
+                                          onMouseOver={(e) => {
+                                            const target =
+                                              e.target as HTMLElement;
+                                            target.style.color = "#019dce";
+                                          }}
+                                          onMouseOut={(e) => {
+                                            const target =
+                                              e.target as HTMLElement;
+                                            target.style.color = "#ffffffbf";
+                                          }}
+                                        >
+                                          {subItem.title}
+                                        </Typography>
+                                      </Link>
+                                    )
+                                  )}
+                                </Box>
+                              )}
+                            </Box>
+                          ))}
+                        </Box>
+                      </Paper>
+                    </Grid>
                   </Grid>
-                </Grid>
-              </div>
-            )}
-            {menu === "Expertise" && openMenu === menu && (
-              <div
-                onMouseEnter={handleMenuEnter(menu)}
-                onMouseLeave={handleMenuLeave}
-                style={{
-                  position: "absolute",
-                  backgroundColor: "red",
-                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                  zIndex: 10,
-                  borderRadius: "20px",
-                }}
-              >
-                <Grid container spacing={1}>
-                  <Grid item xs={12}>
-                    <Paper
-                      style={{
-                        borderRadius: "5.6px",
-                        display: "flex",
-                        flexDirection: "column",
-                        backgroundColor: "#1B1A1F",
-                        padding: "10% 0px",
-                        width: "216px",
-                      }}
-                    >
-                      <Box style={{ display: "flex", flexDirection: "row" }}>
-                        {menuData[menu].items.map((item, itemIndex) => (
-                          <Box
-                            key={itemIndex}
-                            display="flex"
-                            flexDirection="column"
-                            marginBottom="10px"
-                            style={{ flex: 1, margin: "0 10px" }}
-                          >
-                            <Link href={item.href ? item.href : "/"} passHref>
-                              <Typography
-                                style={{
-                                  color: "#ffffffa6",
-                                  opacity: "0.65",
-                                  fontWeight: "bold",
-                                  marginRight: "20px",
-                                  fontSize: "12.544px",
-                                }}
-                              >
-                                {item.title}
-                              </Typography>
-                            </Link>
-                            {item.subMenu.length > 0 && (
-                              <Box display="flex" flexDirection="column">
-                                {item.subMenu.map(
-                                  (subItem: any, subItemIndex: any) => (
-                                    <Link
-                                      key={subItemIndex}
-                                      href={subItem.href ? subItem.href : "/"}
-                                      passHref
-                                    >
-                                      <Typography
-                                        component="a"
+                </div>
+              )}
+            {(menu === "Expertise" ||
+              menu === "Company" ) &&
+              openMenu === menu && (
+                <div
+                  onMouseEnter={handleMenuEnter(menu)}
+                  onMouseLeave={handleMenuLeave}
+                  style={{
+                    position: "absolute",
+                    backgroundColor: "red",
+                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                    zIndex: 10,
+                    borderRadius: "20px",
+                  }}
+                >
+                  <Grid container spacing={1}>
+                    <Grid item xs={12}>
+                      <Paper
+                        style={{
+                          borderRadius: "5.6px",
+                          display: "flex",
+                          flexDirection: "column",
+                          backgroundColor: "#1B1A1F",
+                          padding: "10% 0px",
+                          width: "216px",
+                        }}
+                      >
+                        <Box style={{ display: "flex", flexDirection: "row" }}>
+                          {menuData[menu].items.map((item, itemIndex) => (
+                            <Box
+                              key={itemIndex}
+                              display="flex"
+                              flexDirection="column"
+                              marginBottom="10px"
+                              style={{ flex: 1, margin: "0 10px" }}
+                            >
+                              <Link href={item.href ? item.href : "/"} passHref>
+                                <Typography
+                                  style={{
+                                    color: "#ffffffa6",
+                                    opacity: "0.65",
+                                    fontWeight: "bold",
+                                    marginRight: "20px",
+                                    fontSize: "12.544px",
+                                  }}
+                                >
+                                  {item.title}
+                                </Typography>
+                              </Link>
+                              {item.subMenu.length > 0 && (
+                                <Box display="flex" flexDirection="column">
+                                  {item.subMenu.map(
+                                    (subItem: any, subItemIndex: any) => (
+                                      <Link
                                         key={subItemIndex}
-                                        style={{
-                                          color: "#ffffffbf",
-                                          fontSize: "12px",
-                                          fontWeight: "400",
-                                          cursor: "pointer",
-                                          opacity: "0.75",
-                                          lineHeight: "1.8rem",
-                                        }}
-                                        onMouseOver={(e) => {
-                                          const target =
-                                            e.target as HTMLElement;
-                                          target.style.color = "#019dce";
-                                        }}
-                                        onMouseOut={(e) => {
-                                          const target =
-                                            e.target as HTMLElement;
-                                          target.style.color = "#ffffffbf";
-                                        }}
-                                        onClick={() => handleMenuLeave}
+                                        href={subItem.href ? subItem.href : "/"}
+                                        passHref
                                       >
-                                        {subItem.title}
-                                      </Typography>
-                                    </Link>
-                                  )
-                                )}
-                              </Box>
-                            )}
-                          </Box>
-                        ))}
-                      </Box>
-                    </Paper>
+                                        <Typography
+                                          component="a"
+                                          key={subItemIndex}
+                                          style={{
+                                            color: "#ffffffbf",
+                                            fontSize: "12px",
+                                            fontWeight: "400",
+                                            cursor: "pointer",
+                                            opacity: "0.75",
+                                            lineHeight: "1.8rem",
+                                          }}
+                                          onMouseOver={(e) => {
+                                            const target =
+                                              e.target as HTMLElement;
+                                            target.style.color = "#019dce";
+                                          }}
+                                          onMouseOut={(e) => {
+                                            const target =
+                                              e.target as HTMLElement;
+                                            target.style.color = "#ffffffbf";
+                                          }}
+                                          onClick={() => handleMenuLeave}
+                                        >
+                                          {subItem.title}
+                                        </Typography>
+                                      </Link>
+                                    )
+                                  )}
+                                </Box>
+                              )}
+                            </Box>
+                          ))}
+                        </Box>
+                      </Paper>
+                    </Grid>
                   </Grid>
-                </Grid>
-              </div>
-            )}
+                </div>
+              )}
           </div>
         ))}
         <Button

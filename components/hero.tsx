@@ -5,6 +5,12 @@ import VideoThumb from "@/public/images/hero-image-01.jpg";
 import { Button } from "@material-ui/core";
 
 export default function Hero() {
+  const scrollUp = () => {
+    const container = document.getElementById("what-we-do");
+    if (container) {
+      container.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-justify hyphens-auto">
@@ -23,27 +29,27 @@ export default function Hero() {
             of digital transformation and build a future-proof scaffolding for
             success.
           </p>
-         
-                             <Button
-                               variant="contained"                      
-                               style={{
-                                 alignItems: "center",
-                                 fontSize: "15px",
-                                 marginTop: "2%",
-                                 textAlign: "center",
-                                 flexWrap: "wrap",
-                                 backgroundColor: "#019dce",
-                                 color: "#D9E3EA",
-                                 padding: "2%",
-                                 fontWeight: "bold",
-                                 borderRadius: "10px",
-                                 width: "160px",
-                                 textTransform: "none",
-                               }}
-                             >
-                               What we do
-                             </Button>
-     
+
+          <Button
+            variant="contained"
+            style={{
+              alignItems: "center",
+              fontSize: "15px",
+              marginTop: "2%",
+              textAlign: "center",
+              flexWrap: "wrap",
+              backgroundColor: "#019dce",
+              color: "#D9E3EA",
+              padding: "2%",
+              fontWeight: "bold",
+              borderRadius: "10px",
+              width: "160px",
+              textTransform: "none",
+            }}
+            onClick={scrollUp}
+          >
+            What we do
+          </Button>
         </div>
         <div className="mt-20 flex justify-center">
           <ModalVideo
