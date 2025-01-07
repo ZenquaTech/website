@@ -38,6 +38,7 @@ import mysql from "@/components/assets/img/angularimg/mysql.webp";
 import oracle from "@/components/assets/img/angularimg/oracle.webp";
 import python from "@/components/assets/img/angularimg/python.webp";
 import smallMediumBusiness from "@/components/assets/img/reactjsimg/small-medium_business.webp";
+import HeroContent from "@/components/ui/HeroContent";
 const LazyBusinessEmpowermentComponent = dynamic(
   () => import("@/components/ui/BusinessEmpowerment")
 );
@@ -227,7 +228,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
         <MainWrapper>
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
-            <LazyHeroContent
+            <HeroContent
               item={content.section1}
               image={
                 imageMap[content.section1.image]?.src || content.section1.image

@@ -19,6 +19,7 @@ import "./styles.css";
 import AWS from "@/public/images/webpFile/AWS.webp"
 import Azure from "@/public/images/webpFile/Azure.webp"
 import GoogleCloud from "@/public/images/webpFile/Google_Cloud.webp";
+import HeroContent from "@/components/ui/HeroContent";
 const LazyContactComponent = dynamic(
   () => import("@/components/ui/contactus")
 );
@@ -210,7 +211,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
         <MainWrapper>
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
-            <LazyHeroContent
+            <HeroContent
               item={content.section1}
               image={
                 imageMap[content.section1.image]?.src || content.section1.image

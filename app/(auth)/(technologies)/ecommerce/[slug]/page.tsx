@@ -61,6 +61,7 @@ const imageMap: any = {
 
 import "./styles.css";
 import Image from "next/image";
+import HeroContent from "@/components/ui/HeroContent";
 
 
 const scrollToBottom = () => {
@@ -228,7 +229,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
 
-            <LazyHeroContent
+            <HeroContent
               item={content.section1}
               image={
                 imageMap[content.section1.image]?.src || content.section1.image

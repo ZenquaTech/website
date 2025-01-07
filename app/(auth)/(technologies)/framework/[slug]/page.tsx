@@ -19,6 +19,7 @@ import "./styles.css";
 import ROR from "@/public/images/webpFile/ROR-1536x1360.webp";
 import nodejs from "@/public/images/webpFile/nodejs-1024x907.webp";
 import django from "@/public/images/webpFile/django_1-1536x1360.webp";
+import HeroContent from "@/components/ui/HeroContent";
 const LazyHeroContent = dynamic(() => import("@/components/ui/HeroContent"));
 const LazyBusinessEmpowermentComponent = dynamic(
   () => import("@/components/ui/BusinessEmpowerment")
@@ -188,7 +189,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
 
-            <LazyHeroContent
+            <HeroContent
               item={content.section1}
               image={
                 imageMap[content.section1.image]?.src || content.section1.image

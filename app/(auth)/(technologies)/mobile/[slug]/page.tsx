@@ -23,6 +23,7 @@ import startupBusiness from "@/components/assets/img/reactjsimg/startup-business
 import reactNative from "@/components/assets/img/angularimg/react-native.webp";
 import smallMediumBusiness from "@/components/assets/img/reactjsimg/small-medium_business.webp";
 import Image from "next/image";
+import HeroContent from "@/components/ui/HeroContent";
 const LazyHeroContent = dynamic(() => import("@/components/ui/HeroContent"));
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
@@ -219,7 +220,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
 
-            <LazyHeroContent
+            <HeroContent
               item={content.section1}
               image={
                 imageMap[content.section1.image]?.src || content.section1.image

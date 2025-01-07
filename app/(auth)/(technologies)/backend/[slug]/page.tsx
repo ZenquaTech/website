@@ -42,6 +42,7 @@ import google from "@/components/assets/img/angularimg/google.webp";
 import nodejs from "@/components/assets/img/angularimg/nodejs.webp";
 import ror from "@/components/assets/img/angularimg/nestjs.webp";
 import Image from "next/image"; 
+import HeroContent from "@/components/ui/HeroContent";
 const LazyWantToHireComponent = dynamic(
   () => import("@/components/ui/WantToHire")
 );
@@ -237,7 +238,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
           <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
             {/* ************************section1********************************** */}
 
-            <LazyHeroContent
+            <HeroContent
               item={content.section1}
               image={
                 imageMap[content.section1.image]?.src || content.section1.image
