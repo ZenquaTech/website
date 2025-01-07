@@ -1,30 +1,17 @@
 "use client";
 import React, { Component } from "react";
 import jsonData from "./data.json";
-import {
-  Box,
-  Grid,
-  Button,
-  Typography,
-  Paper,
-  styled,
-  CardActionArea,
-  Card,
-  CardContent,
-} from "@material-ui/core";
+import { Box, styled } from "@material-ui/core";
 import dynamic from "next/dynamic";
-import Carousel from "react-material-ui-carousel";
 import "./styles.css";
-import AWS from "@/public/images/webpFile/AWS.webp"
-import Azure from "@/public/images/webpFile/Azure.webp"
+import AWS from "@/public/images/webpFile/AWS.webp";
+import Azure from "@/public/images/webpFile/Azure.webp";
 import GoogleCloud from "@/public/images/webpFile/Google_Cloud.webp";
 import HeroContent from "@/components/ui/HeroContent";
 const LazyCircleContent = dynamic(
   () => import("@/components/ui/CircleContent")
 );
-const LazyContactComponent = dynamic(
-  () => import("@/components/ui/contactus")
-);
+const LazyContactComponent = dynamic(() => import("@/components/ui/contactus"));
 const LazyWantToHireComponent = dynamic(
   () => import("@/components/ui/WantToHire")
 );
@@ -37,11 +24,8 @@ const LazyAdoptableApprochComponent = dynamic(
 const LazyZenquaGlanceComponent = dynamic(
   () => import("@/components/ui/ZenquaGlance")
 );
-const LazyWhatWeDoComponent = dynamic(
-  () => import("@/components/ui/WhatWeDo")
-);
-const LazyExpertiesComponent = dynamic(
-  () => import("@/components/ui/Experties")
+const LazyWhatWeDoAndExpertiesComponent = dynamic(
+  () => import("@/components/ui/WhatWeDoAndExperties")
 );
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
@@ -50,8 +34,8 @@ const LazyWhyUsContent = dynamic(() => import("@/components/ui/WhyUs"));
 const imageMap: any = {
   AWS,
   GoogleCloud,
-  Azure
-}
+  Azure,
+};
 
 interface PageState {
   hoveredCircle: number | null;
@@ -105,13 +89,11 @@ class RoutePage extends Component<RoutePageProps, PageState> {
         Reduced: false,
         Custom: false,
         clickedButton6: "Cost-Effectiveness",
-      }
-    }
+      },
+    };
   }
 
   render() {
-   
-
     const { params } = this.props;
     const content = jsonData[params.slug as keyof typeof jsonData] || {
       title: "Page not found",
@@ -136,17 +118,25 @@ class RoutePage extends Component<RoutePageProps, PageState> {
               buttonText={content.section2?.button}
             />
             {/* ************************end********************************** */}
+
             {/* ************************section3********************************** */}
-          
-            <LazyWhatWeDoComponent content={content} />
-          
+
+            <LazyWhatWeDoAndExpertiesComponent
+              item={content.item1}
+              content={content.section3}
+            />
+
             {/* ***********************end************************** */}
+
             {/* ************************section4********************************** */}
-            
-            <LazyExpertiesComponent content={content}/>
-           
+
+            <LazyWhatWeDoAndExpertiesComponent
+              item={content.item3}
+              content={content.section4}
+            />
+
             {/* ***********************end************************** */}
-              <LazyCircleContent/>
+            <LazyCircleContent />
             {/* *******************************GLANCE******************************    */}
 
             <LazyZenquaGlanceComponent />
@@ -157,7 +147,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             <LazyAdoptableApprochComponent />
 
             {/* ******************** Why Outsource Your Project to ZenQua? ************************ */}
-            <LazyWhyUsContent/>
+            <LazyWhyUsContent />
             {/* ********************  End ************************ */}
             {/* ***********************      BUSINESS EMPOWERMENT   ***************************** */}
             <LazyBusinessEmpowermentComponent />

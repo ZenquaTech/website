@@ -1,26 +1,15 @@
 "use client";
 import React, { Component } from "react";
 import jsonData from "./data.json";
-import {
-  Box,
-  Grid,
-  Button,
-  Typography,
-  Paper,
-  styled,
-  CardActionArea,
-  Card,
-  CardContent,
-} from "@material-ui/core";
+import { Box, styled } from "@material-ui/core";
 import dynamic from "next/dynamic";
-import Carousel from "react-material-ui-carousel";
 import timeMaterial from "@/components/assets/img/reactjsimg/Time-Material.webp";
 import dedicatedDevelopmentTeam from "@/components/assets/img/reactjsimg/dedicateddevelopmentteam.webp";
 import largeBusiness from "@/components/assets/img/reactjsimg/large_business.webp";
 import startupBusiness from "@/components/assets/img/reactjsimg/startup-business.webp";
 import smallMediumBusiness from "@/components/assets/img/reactjsimg/small-medium_business.webp";
 import woocommerce from "@/components/assets/img/angularimg/woocommerce.webp";
-import spotify from "@/components/assets/img/angularimg/Shopify.webp"
+import spotify from "@/components/assets/img/angularimg/Shopify.webp";
 import magento from "@/components/assets/img/angularimg/smc.webp";
 import nop from "@/components/assets/img/angularimg/nopcommerce.webp";
 const LazyCircleContent = dynamic(
@@ -29,9 +18,7 @@ const LazyCircleContent = dynamic(
 const LazyBusinessEmpowermentComponent = dynamic(
   () => import("@/components/ui/BusinessEmpowerment")
 );
-const LazyContactComponent = dynamic(
-  () => import("@/components/ui/contactus")
-);
+const LazyContactComponent = dynamic(() => import("@/components/ui/contactus"));
 const LazyWantToHireComponent = dynamic(
   () => import("@/components/ui/WantToHire")
 );
@@ -41,11 +28,8 @@ const LazyAdoptableApprochComponent = dynamic(
 const LazyZenquaGlanceComponent = dynamic(
   () => import("@/components/ui/ZenquaGlance")
 );
-const LazyWhatWeDoComponent = dynamic(
-  () => import("@/components/ui/WhatWeDo")
-);
-const LazyExpertiesComponent = dynamic(
-  () => import("@/components/ui/Experties")
+const LazyWhatWeDoAndExpertiesComponent = dynamic(
+  () => import("@/components/ui/WhatWeDoAndExperties")
 );
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
@@ -61,12 +45,11 @@ const imageMap: any = {
   woocommerce,
   spotify,
   nop,
-  magento
+  magento,
 };
 
 import "./styles.css";
 import HeroContent from "@/components/ui/HeroContent";
-
 
 interface PageState {
   hoveredCircle: number | null;
@@ -98,7 +81,6 @@ interface RoutePageProps {
   };
 }
 
-
 class RoutePage extends Component<RoutePageProps, PageState> {
   constructor(props: RoutePageProps) {
     super(props);
@@ -121,8 +103,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
         Reduced: false,
         Custom: false,
         clickedButton6: "Cost-Effectiveness",
-      }
-    }
+      },
+    };
   }
   render() {
     const { params } = this.props;
@@ -155,17 +137,23 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* ************************section3********************************** */}
 
-            <LazyWhatWeDoComponent content={content} />
+            <LazyWhatWeDoAndExpertiesComponent
+              item={content.item1}
+              content={content.section3}
+            />
 
             {/* ***********************end************************** */}
 
             {/* ************************section4********************************** */}
-          
-            <LazyExpertiesComponent content={content}/>
-         
+
+            <LazyWhatWeDoAndExpertiesComponent
+              item={content.item3}
+              content={content.section4}
+            />
+
             {/* ***********************end************************** */}
 
-            <LazyCircleContent/>
+            <LazyCircleContent />
 
             {/* *******************************GLANCE******************************    */}
 
@@ -179,7 +167,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             {/* ******************** Why Outsource Your Project to ZenQua? ************************ */}
 
-            <LazyWhyUsContent/>
+            <LazyWhyUsContent />
             {/* ********************  End ************************ */}
 
             {/* ***********************      BUSINESS EMPOWERMENT   ***************************** */}

@@ -4,31 +4,16 @@ import {
   Typography,
   Box,
   styled,
-  Card,
   CardActionArea,
-  CardContent,
-  image,
-  Select,
-  MenuItem,
-  FormControlLabel,
-  Checkbox,
   Button,
-  style
   } from "@material-ui/core";
-// import { Button } from "reactstrap";
 import styles from "./infinite.module.css";
 import Image from "next/image";
 import Carousel from "react-material-ui-carousel";
-import React,{useState} from "react";
+import React from "react";
 
 
 export default function InfinitySms() {
-
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleCheckboxClick = () => {
-    setIsChecked(true);
-  }
 
   const items = [
     {
@@ -558,7 +543,7 @@ export default function InfinitySms() {
         <CardActionArea>
           
           {item.image && (
-            <img
+            <Image
               src={item.image}
               alt={item.title}
                width={500}
@@ -617,7 +602,7 @@ export default function InfinitySms() {
               <Box className="text-5xl font-bold text-center service-button mt-16 mb-12">
                 Contact Us
               </Box>
-              <img
+              <Image
                 style={{
                   height: "100%",
                   width: "80%",

@@ -1,5 +1,6 @@
 import { Grid, Paper, Typography, Box } from "@material-ui/core";
 import React from "react";
+import Image from "next/image";
 
 function adoptable_approch() {
   return (
@@ -65,7 +66,7 @@ function adoptable_approch() {
                   width: "100%",
                 }}
               >
-                <img
+                <Image
                   style={{
                     height: "0%",
                     width: "70%",
@@ -161,7 +162,7 @@ function adoptable_approch() {
                   width: "100%",
                 }}
               >
-                <img
+                <Image
                   style={{
                     height: "90%",
                     width: "70%",

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 export const services = () => {
   return (
     <div>
@@ -10,7 +10,7 @@ export const services = () => {
             <div className="container">
               <nav className="navbar navbar-expand-lg custom_nav-container pt-3">
                 <a className="navbar-brand mr-5" href="index.html">
-                  <img src="images/logo.png" alt="" />
+                  <Image src="images/logo.png" alt="" />
                   <span>Fregg</span>
                 </a>
                 <button
@@ -81,7 +81,7 @@ export const services = () => {
                 <div className="col-md-6">
                   <div className="box">
                     <div className="img-box">
-                      <img src="images/s-1.png" alt="" />
+                      <Image src="images/s-1.png" alt="" />
                     </div>
                     <h4>Written with Love</h4>
                     <p>
@@ -97,7 +97,7 @@ export const services = () => {
                 <div className="col-md-6">
                   <div className="box align-items-end align-items-md-start text-right text-md-left">
                     <div className="img-box">
-                      <img src="images/s-2.png" alt="" />
+                      <Image src="images/s-2.png" alt="" />
                     </div>
                     <h4>Fast Turnaround</h4>
                     <p>
@@ -116,7 +116,7 @@ export const services = () => {
                 <div className="col-md-6">
                   <div className="box">
                     <div className="img-box">
-                      <img src="images/s-3.png" alt="" />
+                      <Image src="images/s-3.png" alt="" />
                     </div>
                     <h4>Up to Date</h4>
                     <p>
@@ -133,7 +133,7 @@ export const services = () => {
                 <div className="col-md-6">
                   <div className="box align-items-end align-items-md-start text-right text-md-left">
                     <div className="img-box">
-                      <img src="images/s-4.png" alt="" />
+                      <Image src="images/s-4.png" alt="" />
                     </div>
                     <h4>Premium Content</h4>
                     <p>
@@ -162,16 +162,16 @@ export const services = () => {
             </div>
             <div className="box">
               <a href="" className="img-box">
-                <img src="images/location.png" alt="" className="img-1" />
-                <img src="images/location-o.png" alt="" className="img-2" />
+                <Image src="images/location.png" alt="" className="img-1" />
+                <Image src="images/location-o.png" alt="" className="img-2" />
               </a>
               <a href="" className="img-box">
-                <img src="images/call.png" alt="" className="img-1" />
-                <img src="images/call-o.png" alt="" className="img-2" />
+                <Image src="images/call.png" alt="" className="img-1" />
+                <Image src="images/call-o.png" alt="" className="img-2" />
               </a>
               <a href="" className="img-box">
-                <img src="images/envelope.png" alt="" className="img-1" />
-                <img src="images/envelope-o.png" alt="" className="img-2" />
+                <Image src="images/envelope.png" alt="" className="img-1" />
+                <Image src="images/envelope-o.png" alt="" className="img-2" />
               </a>
             </div>
           </div>

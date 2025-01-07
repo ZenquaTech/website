@@ -40,7 +40,7 @@ import azure from "@/components/assets/img/angularimg/Azure.webp";
 import google from "@/components/assets/img/angularimg/google.webp";
 import nodejs from "@/components/assets/img/angularimg/nodejs.webp";
 import ror from "@/components/assets/img/angularimg/nestjs.webp";
-import Image from "next/image"; 
+import Image from "next/image";
 import HeroContent from "@/components/ui/HeroContent";
 
 const LazyCircleContent = dynamic(
@@ -61,11 +61,8 @@ const LazyZenquaGlanceComponent = dynamic(
 const LazyAdoptableApprochComponent = dynamic(
   () => import("@/components/ui/AdoptableApproch")
 );
-const LazyWhatWeDoComponent = dynamic(
-  () => import("@/components/ui/WhatWeDo")
-);
-const LazyExpertiesComponent = dynamic(
-  () => import("@/components/ui/Experties")
+const LazyWhatWeDoAndExpertiesComponent = dynamic(
+  () => import("@/components/ui/WhatWeDoAndExperties")
 );
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
@@ -99,7 +96,6 @@ const imageMap: any = {
   nextjs,
 };
 
-
 interface PageState {
   hoveredCircle: number | null;
   clickedButton: string;
@@ -130,7 +126,7 @@ interface RoutePageProps {
   };
 }
 
-class RoutePage extends Component<RoutePageProps,PageState> {
+class RoutePage extends Component<RoutePageProps, PageState> {
   constructor(props: RoutePageProps) {
     super(props);
     this.state = {
@@ -152,22 +148,11 @@ class RoutePage extends Component<RoutePageProps,PageState> {
         Reduced: false,
         Custom: false,
         clickedButton6: "Cost-Effectiveness",
-      }
-    }
+      },
+    };
   }
 
- 
-
-
-
-  handleClick6 = (stateKey: keyof State2, label: string) => {
-    this.setState({
-      clickedButton6: label,
-    });
-  };
   render() {
-    const { hoveredCircle } = this.state;
-
     const { params } = this.props;
     const content = jsonData[params.slug as keyof typeof jsonData] || {
       title: "Page not found",
@@ -200,18 +185,24 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             {/* ************************end********************************** */}
 
             {/* ************************section3********************************** */}
-            <LazyWhatWeDoComponent content={content} />
+
+            <LazyWhatWeDoAndExpertiesComponent
+              item={content.item1}
+              content={content.section3}
+            />
 
             {/* ***********************end************************** */}
 
             {/* ************************section4********************************** */}
-            <LazyExpertiesComponent content={content}/>
-{/* 
-       
+
+            <LazyWhatWeDoAndExpertiesComponent
+              item={content.item3}
+              content={content.section4}
+            />
 
             {/* ***********************end************************** */}
 
-            <LazyCircleContent/>
+            <LazyCircleContent />
 
             {/* *******************************GLANCE******************************    */}
 
@@ -425,7 +416,7 @@ class RoutePage extends Component<RoutePageProps,PageState> {
 
             {/* ******************** Why Outsource Your Project to ZenQua? ************************ */}
 
-            <LazyWhyUs/>
+            <LazyWhyUs />
 
             {/* ********************  End ************************ */}
 

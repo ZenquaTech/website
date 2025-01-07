@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from "react";
 import { Grid, Box, Button } from "@mui/material";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 
 type FormData = {
   firstName: string;
@@ -159,7 +160,7 @@ const ContactUs = () => {
           <Box className="text-5xl font-bold text-center service-button mt-16 mb-12">
             Contact Us
           </Box>
-          <img
+          <Image
             style={{
               height: "100%",
               width: "80%",
