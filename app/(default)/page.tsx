@@ -5,8 +5,9 @@ import Zigzag from '@/components/zigzag';
 import Testimonials from '@/components/testimonials';
 
 export const metadata = {
-  title: 'Zenqua Technologies Pvt Ltd',
-  description: 'Page description',
+  title: 'The leading Custom Software development solutions | Zenqua technology',
+  description: 'Top Software Development company In Indore offering Custom Solutions,app Development, Web design, and IT Services For Businesses WorldWide',
+  keywords:"best it custom software development company 2024 , best software development company in indore, top it services company in indore,best software services in indore, custom software development company , best app development company in indore, software development companies"
 };
 
 export default function Home() {
