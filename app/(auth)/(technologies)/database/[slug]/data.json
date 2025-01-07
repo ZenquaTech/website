@@ -73,9 +73,7 @@
         "starLogo": "<FaStar />",
         "title": "MySQL Health Check",
         "description": "Our services include analyzing database configuration, reviewing queries and query performance, checking replication configuration and status, identifying and resolving problems with replication, and ensuring data integrity. Additionally, we offer performance tuning and optimization, backup and recovery strategies, and storage and security management."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "MySQL Migration",
@@ -262,9 +260,7 @@
         "starLogo": "<FaStar />",
         "title": "Backup/Restore/Recovery Services",
         "description": "Our PostgreSQL administrators are your guardian angels, keeping your data safe and secure. We provide comprehensive solutions tailored to your needs, from backup and recovery to data replication and point-in-time recovery. With us, you can count on a reliable and efficient service to help you safeguard your invaluable data."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "PostgreSQL API Development",
@@ -281,7 +277,6 @@
         "description": "We are experts in PostgreSQL Application Development, specialized in creating robust applications using the PostgreSQL relational database technology. Our expertise includes developing custom PostgreSQL solutions, integrating PostgreSQL with other technologies, providing maintenance and support services, and providing custom application development for PostgreSQL. We use the latest PostgreSQL features."
       }
     ],
-
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",
@@ -408,9 +403,7 @@
         "starLogo": "<FaStar />",
         "title": "MEAN Stack Development",
         "description": "Our MEAN Stack Development services provide clients with an end-to-end solution for web application development using MongoDB, ExpressJS, AngularJS, and Node.js. With our expertise in the MEAN Stack, we deliver projects quickly and cost-effectively, ensuring successful outcomes."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Performance Optimization",
@@ -598,9 +591,7 @@
         "starLogo": "<FaStar />",
         "title": "Proficiency with Redis",
         "description": "Our professionals are highly knowledgeable and experienced in working with Redis. We have successfully implemented Redis in many projects, providing customized solutions that fit the specific needs of our clients. Our team can provide a range of Redis-related services, from installation to data management, analytics, and more."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Understanding of Non-relational Databases",
@@ -792,9 +783,7 @@
         "starLogo": "<FaStar />",
         "title": "Firebase QA Testing Services",
         "description": "Our Firebase QA Testing Services provide reliable and accurate testing of mobile and web applications built on the Firebase platform. Our experienced QA engineers are equipped with the latest tools and techniques to ensure bug-free and secure applications. We use automated testing tools, manual testing processes, and specialize in compatibility testing to provide comprehensive testing solutions. Our services cover functional, performance, usability, and security testing to ensure a seamless user experience."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Firebase Performance Monitoring",

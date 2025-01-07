@@ -75,9 +75,7 @@
         "starLogo": "<FaStar />",
         "title": "Custom Mern app development",
         "description": "We provide comprehensive Mern Custom App development solutions that enable clients to build and deploy powerful custom applications. Our expertise includes development of robust, secure and scalable custom applications utilizing the powerful Mern Framework. Our development team is highly experienced in leveraging latest-tech to customize the applications to suit specific business requirements. Leveraging our years of experience in the industry, we ensure to deliver reliable solutions that are tailored to help accelerate ROI."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Machine Learning with Mern",
@@ -244,9 +242,7 @@
         "starLogo": "<FaStar />",
         "title": "ExpressJS Framework Development",
         "description": "We offer ExpressJS Framework Development solutions via cutting-edge technology and expert specialists, with years of experience in full-stack JavaScript engineering. Our services include delivering tailored solutions best suiting customer needs, as well as integrating existing functionalities with Express.js modules to create advanced and secure web-applications."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Node.js Server-Side Environment Programming",
@@ -438,9 +434,7 @@
         "starLogo": "<FaStar />",
         "title": "Maintenance & Support",
         "description": "Our ROR developers offer maintenance and support services for web applications. They have expertise in database design, debugging, optimization, and troubleshooting. They are experienced with APIs, authentication, authorization, security, and performance optimization."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Code Audit",
@@ -457,6 +451,7 @@
         "description": "Our ROR Rescue Mission helps businesses maximize their return on investment. It offers comprehensive services, such as code optimization, issue resolution, performance monitoring, and security enhancements. Our services guarantee improved performance, scalability, and security."
       }
     ],
+  
     "servicesData2": [
       {
         "label": "Cost-Effectiveness",

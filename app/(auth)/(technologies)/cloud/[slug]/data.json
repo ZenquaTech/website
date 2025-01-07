@@ -75,24 +75,22 @@
              "starLogo": "<FaStar />",
              "title": "AWS Migrations",
              "description":"Our AWS certified engineers has extensive experience with migrating applications and databases to the AWS cloud. We use an automated process to ensure a smooth transition with minimal downtime. Our team is also well-versed in the nuances of the AWS platform, allowing us to support clients through the entire migration process."
-         }
-     ],
-     "item4": [
-         {
-             "starLogo": "<FaStar />",
-             "title": "AWS Support",
-             "description":"Our AWS certified experts have vast experience and knowledge to help customers to deploy, manage and troubleshoot their applications running on AWS. We provide a wide range of services, from technical support and consulting to migration and optimization. With our 24/7 support, we can help you find the best solutions to any AWS related issues quickly and efficiently."
          },
          {
-             "starLogo": "<FaStar />",
-             "title": "AWS Integrations",
-             "description":"We specialize in providing comprehensive AWS Integrations services that enable organizations to quickly and seamlessly integrate with their existing IT systems. Our experienced team of cloud and integration experts have the necessary skills to develop and deploy dynamic integration solutions tailored to the specific needs of our customers."
-         },
-         {
-             "starLogo": "<FaStar />",
-             "title": "AWS Security",
-             "description":"Our AWS security experts ensure that your AWS environment is secure and compliant. We offer a wide range of security services, including secure architecture design, secure identity and access management, and monitoring and logging. Additionally, we offer managed services to ensure that your AWS environment is always up-to-date with the latest security patches and configurations."
-         }
+            "starLogo": "<FaStar />",
+            "title": "AWS Support",
+            "description":"Our AWS certified experts have vast experience and knowledge to help customers to deploy, manage and troubleshoot their applications running on AWS. We provide a wide range of services, from technical support and consulting to migration and optimization. With our 24/7 support, we can help you find the best solutions to any AWS related issues quickly and efficiently."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "AWS Integrations",
+            "description":"We specialize in providing comprehensive AWS Integrations services that enable organizations to quickly and seamlessly integrate with their existing IT systems. Our experienced team of cloud and integration experts have the necessary skills to develop and deploy dynamic integration solutions tailored to the specific needs of our customers."
+        },
+        {
+            "starLogo": "<FaStar />",
+            "title": "AWS Security",
+            "description":"Our AWS security experts ensure that your AWS environment is secure and compliant. We offer a wide range of security services, including secure architecture design, secure identity and access management, and monitoring and logging. Additionally, we offer managed services to ensure that your AWS environment is always up-to-date with the latest security patches and configurations."
+        }
      ],
      "project": [
          {
