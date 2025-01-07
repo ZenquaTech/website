@@ -80,24 +80,22 @@
             "starLogo": "<FaStar />",
             "title": "Backend Dashboard Development",
             "description":"Whether you need to create a new dashboard or update an existing one, our team of experienced developers can help you build customized solutions and have the expertise to deliver that meet your unique business requirements and exceed your expectations."
-        }
-    ],
-    "item4": [
-        {
-            "starLogo": "<FaStar />",
-            "title": "Node.js Blockchain Application",
-            "description":"Our team of Node.js experts has extensive experience in building Blockchain-based solutions. We can help you create a secure and efficient backend-as-a-service (BaaS) platform that supports cryptocurrency trade. Our in-depth understanding of Blockchain technology and Node.js allows us to deliver top-quality solutions that meet your specific needs."
         },
         {
-            "starLogo": "<FaStar />",
-            "title": "NPM Development",
-            "description":"If you need help creating and publishing a private NPM package, our team at i-Verve is here to assist you. We have the skills and expertise to guide you through the process and ensure that your package is kept safe. We understand the importance of security and can help you navigate the complexities of private package development."
-        },
-        {
-            "starLogo": "<FaStar />",
-            "title": "Real-Time Web Socket Programming",
-            "description":"We implement real-time web socket programming concepts to take advantage of low-latency benefits and develop web applications using Node.js. This ensure that your application provides a seamless and efficient user experience, improving its overall performance and success."
-        }
+          "starLogo": "<FaStar />",
+          "title": "Node.js Blockchain Application",
+          "description":"Our team of Node.js experts has extensive experience in building Blockchain-based solutions. We can help you create a secure and efficient backend-as-a-service (BaaS) platform that supports cryptocurrency trade. Our in-depth understanding of Blockchain technology and Node.js allows us to deliver top-quality solutions that meet your specific needs."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "NPM Development",
+          "description":"If you need help creating and publishing a private NPM package, our team at i-Verve is here to assist you. We have the skills and expertise to guide you through the process and ensure that your package is kept safe. We understand the importance of security and can help you navigate the complexities of private package development."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Real-Time Web Socket Programming",
+          "description":"We implement real-time web socket programming concepts to take advantage of low-latency benefits and develop web applications using Node.js. This ensure that your application provides a seamless and efficient user experience, improving its overall performance and success."
+      }
     ],
     "sectionexperties": [
       {
@@ -259,24 +257,22 @@
             "starLogo": "<FaStar />",
             "title": "Web application development",
             "description":"We have extensive experience in creating robust, secure and scalable applications. Specializing in developing enterprise grade, cutting-edge web applications using the latest technologies. Proven track record of delivering successful projects on time and within budget. Offering a complete range of services including design, development, testing, and deployment."
-        }
-    ],
-    "item4": [
-        {
-            "starLogo": "<FaStar />",
-            "title": "Plugin Development",
-            "description":"Our team of experts specialize in developing custom plugins for NestJs to enhance the functionality of your application. We provide comprehensive solutions that are tailored to your specific needs, with a focus on scalability, performance and security. Our developers use the latest technologies to create robust and flexible plugins that are fully integrated with your system."
         },
         {
-            "starLogo": "<FaStar />",
-            "title": "Support and Maintenance",
-            "description":"Providing comprehensive technical assistance, troubleshooting, and maintenance to ensure smooth operation of Nest.js applications. Offering expertise in the development of Nest.js applications, including installation, configuration, debugging, and performance optimization. Delivering high-quality solutions tailored to customer needs."
-        },
-        {
-            "starLogo": "<FaStar />",
-            "title": "Nest JS Consulting",
-            "description":"We offers tailored solutions to help businesses build effective server-side applications. Our experts provide expert advice and development services to ensure optimal performance and scalability. We provide end-to-end solutions using NestJs, Typescript, and GraphQL. Our team of experienced professionals is here to provide support and guidance for a successful project."
-        }
+          "starLogo": "<FaStar />",
+          "title": "Plugin Development",
+          "description":"Our team of experts specialize in developing custom plugins for NestJs to enhance the functionality of your application. We provide comprehensive solutions that are tailored to your specific needs, with a focus on scalability, performance and security. Our developers use the latest technologies to create robust and flexible plugins that are fully integrated with your system."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Support and Maintenance",
+          "description":"Providing comprehensive technical assistance, troubleshooting, and maintenance to ensure smooth operation of Nest.js applications. Offering expertise in the development of Nest.js applications, including installation, configuration, debugging, and performance optimization. Delivering high-quality solutions tailored to customer needs."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Nest JS Consulting",
+          "description":"We offers tailored solutions to help businesses build effective server-side applications. Our experts provide expert advice and development services to ensure optimal performance and scalability. We provide end-to-end solutions using NestJs, Typescript, and GraphQL. Our team of experienced professionals is here to provide support and guidance for a successful project."
+      }
     ],
 "project": [
         {
@@ -474,25 +470,24 @@
             "starLogo": "<FaStar />",
             "title": "Natural Language Processing",
             "description":"Looking to build a chatbot or digital assistant platform to improve market research and analysis by processing more information quickly? Our ROR development team can help you build smart chatbots that will provide immediate responses to queries and will help you build trust."
-        }
-    ],
-    "item4": [
-        {
-            "starLogo": "<FaStar />",
-            "title": "Big Data Processing",
-            "description":"We specialize in providing Big Data Processing services using ROR development. Our expertise includes data processing, machine learning, data visualization, and web development. Our team of experienced professionals provide reliable, secure and scalable solutions to help you achieve your business objectives."
         },
         {
-            "starLogo": "<FaStar />",
-            "title": "Medical Image Processing",
-            "description":"Our ROR development services can help your healthcare organization achieve significant improvements in diagnostic accuracy, surgical and treatment planning, research, and computer-assisted surgeries through the implementation of medical image processing. By taking advantage of these benefits, you can enhance patient care and increase organizational efficiency. Contact us to learn more about how we can help."
-        },
-        {
-            "starLogo": "<FaStar />",
-            "title": "Blockchain",
-            "description":"We provide comprehensive ROR Development services for Blockchain solutions, including distributed ledger technology, smart contracts, and cryptocurrency wallets. Our experienced developers leverage cutting-edge technologies to create secure, reliable, and scalable applications. We also offer consulting and support to ensure smooth integration of Blockchain solutions into existing systems."
-        }
+          "starLogo": "<FaStar />",
+          "title": "Big Data Processing",
+          "description":"We specialize in providing Big Data Processing services using ROR development. Our expertise includes data processing, machine learning, data visualization, and web development. Our team of experienced professionals provide reliable, secure and scalable solutions to help you achieve your business objectives."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Medical Image Processing",
+          "description":"Our ROR development services can help your healthcare organization achieve significant improvements in diagnostic accuracy, surgical and treatment planning, research, and computer-assisted surgeries through the implementation of medical image processing. By taking advantage of these benefits, you can enhance patient care and increase organizational efficiency. Contact us to learn more about how we can help."
+      },
+      {
+          "starLogo": "<FaStar />",
+          "title": "Blockchain",
+          "description":"We provide comprehensive ROR Development services for Blockchain solutions, including distributed ledger technology, smart contracts, and cryptocurrency wallets. Our experienced developers leverage cutting-edge technologies to create secure, reliable, and scalable applications. We also offer consulting and support to ensure smooth integration of Blockchain solutions into existing systems."
+      }
     ],
+   
     "project": [
         {
             "title": "Project Delivered",

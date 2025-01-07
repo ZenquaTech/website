@@ -13,7 +13,6 @@ import {
   CardContent,
 } from "@material-ui/core";
 import dynamic from "next/dynamic";
-import { FaStar } from "react-icons/fa";
 import Carousel from "react-material-ui-carousel";
 import "./styles.css";
 import timeMaterial from "@/components/assets/img/reactjsimg/Time-Material.webp";
@@ -35,6 +34,9 @@ const LazyAdoptableApprochComponent = dynamic(
 const LazyWhatWeDoComponent = dynamic(
   () => import("@/components/ui/WhatWeDo")
 );
+const LazyExpertiesComponent = dynamic(
+  () => import("@/components/ui/Experties")
+);
 const LazyPortfolioProjects = dynamic(
   () => import("@/components/ui/PortfolioProjects")
 );
@@ -42,7 +44,6 @@ const LazyContactUs = dynamic(
   () => import("@/components/ui/contactus")
 );
 const LazyWantToHire = dynamic(() => import("@/components/ui/WantToHire"));
-import Image from "next/image";
 import HeroContent from "@/components/ui/HeroContent";
 const LazyWhyUsContent = dynamic(
   () => import("@/components/ui/WhyUs")
@@ -213,209 +214,14 @@ class RoutePage extends Component<RoutePageProps,PageState> {
             />
             {/* ************************end********************************** */}
             {/* ************************section3********************************** */}
+          
             <LazyWhatWeDoComponent content={content} />
-            {/* <Grid container>
-              {content.section3.map((item: any, index: any) => {
-                return (
-                  <Grid key={index} item xs={12}>
-                    <Box className="box1">
-                      <Typography style={{ color: "#D9E3EA" }}>
-                        {item.heading1}
-                      </Typography>
-                      <Typography className="typo-2 text-center text-[#D9E3EA]">
-                        {item.heading2}
-                      </Typography>
-                      <Typography
-                        className="text-justify py-2"
-                        style={{
-                          fontSize: "16px",
-                          color: "#9BA9B4",
-                          width: "98%",
-                        }}
-                      >
-                        {item.para}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                );
-              })}
-            </Grid>
-            <Grid container>
-              {content.item1.map((item: any, index: any) => (
-                <Grid item xs={12} md={6} lg={4} key={index}>
-                  <Box
-                    style={{
-                      boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
-                      margin: "1rem",
-                      padding: "2rem",
-                      height: "500px",
-                      borderRadius: "20px",
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <Typography
-                      style={{
-                        display: "flex",
-                        marginTop: "1rem",
-                        fontSize: "21px",
-                        color: "#D9E3EA",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {" "}
-                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <span style={{ paddingLeft: "3%" }}>{item.title}</span>
-                    </Typography>
-
-                    <Typography
-                      style={{
-                        textAlign: "justify",
-                        marginTop: "1rem",
-                        color: "#9BA9B4",
-                      }}
-                    >
-                      {item.description}
-                    </Typography>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
-            <Grid container>
-              {content.item2.map((item: any, index: any) => (
-                <Grid item xs={12} md={6} lg={4} key={index}>
-                  <Box
-                    style={{
-                      boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
-                      margin: "1rem",
-                      padding: "2rem",
-                      height: "500px",
-                      flexWrap: "wrap",
-                      borderRadius: "20px",
-                    }}
-                  >
-                    <Typography
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        marginTop: "1rem",
-                        fontSize: "21px",
-                        color: "#D9E3EA",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <span style={{ paddingLeft: "3%" }}>{item.title}</span>
-                    </Typography>
-                    <Typography
-                      style={{
-                        textAlign: "justify",
-                        marginTop: "1rem",
-                        color: "#9BA9B4",
-                      }}
-                    >
-                      {item.description}
-                    </Typography>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid> */}
 
             {/* ***********************end************************** */}
             {/* ************************section4********************************** */}
-            <Grid container>
-              {content.section4.map((item: any, index: any) => {
-                return (
-                  <Grid item xs={12} key={index}>
-                    <Box className="box1">
-                      <Typography style={{ color: "#D9E3EA" }}>
-                        {item.heading1}
-                      </Typography>
-                      <Typography className="typo-2 text-center">
-                        {item.heading2}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                );
-              })}
-            </Grid>
-            <Grid container>
-              {content.item3.map((item: any, index: any) => (
-                <Grid item xs={12} md={6} lg={4} key={index}>
-                  <Box
-                    style={{
-                      boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
-                      margin: "1rem",
-                      padding: "2rem",
-                      height: "500px",
-                      flexWrap: "wrap",
-                      borderRadius: "20px",
-                    }}
-                  >
-                    <Typography
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        marginTop: "1rem",
-                        fontSize: "21px",
-                        color: "#D9E3EA",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <span style={{ paddingLeft: "3%" }}>{item.title}</span>
-                    </Typography>
-                    <Typography
-                      style={{
-                        textAlign: "justify",
-                        marginTop: "1rem",
-                        color: "#9BA9B4",
-                      }}
-                    >
-                      {item.description}
-                    </Typography>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
-            <Grid container>
-              {content.item4.map((item: any, index: any) => (
-                <Grid item xs={12} md={6} lg={4} key={index}>
-                  <Box
-                    style={{
-                      boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
-                      margin: "1rem",
-                      padding: "2rem",
-                      height: "500px",
-                      flexWrap: "wrap",
-                      borderRadius: "20px",
-                    }}
-                  >
-                    <Typography
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        marginTop: "1rem",
-                        fontSize: "21px",
-                        color: "#D9E3EA",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      <FaStar style={{ color: "#019dce", fontSize: "150%" }} />
-                      <span style={{ paddingLeft: "3%" }}>{item.title}</span>
-                    </Typography>
-                    <Typography
-                      style={{
-                        textAlign: "justify",
-                        marginTop: "1rem",
-                        color: "#9BA9B4",
-                      }}
-                    >
-                      {item.description}
-                    </Typography>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
+         
+            <LazyExpertiesComponent content={content}/>
+        
             {/* ***********************end************************** */}
             <div className="max-w-6xl mx-auto px-4 sm:px-6 max-w-[100%] mt-[4%] ">
               <h2 className=" font text-center service-button uppercase">
@@ -505,7 +311,6 @@ const MainWrapper = styled(Box)({
   },
   "& .typo-3": {
     marginTop: "2rem",
-    // color: "#D9E3EA",
     fontSize: "18px",
   },
   "& .btn1": {

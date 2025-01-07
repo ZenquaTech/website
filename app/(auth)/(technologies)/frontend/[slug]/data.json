@@ -73,9 +73,7 @@
         "starLogo": "<FaStar />",
         "title": "Angular Js Frontend development",
         "description": "We provide comprehensive Angular JS Frontend development services, including feature-rich user interfaces, rapid prototyping, dynamic data binding, and custom directives. Our team of experienced professionals can quickly implement AngularJS code for single-page applications, mobile applications, and complex web applications. We also offer custom plugins to boost performance and scalability."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Single Page Applications development",
@@ -260,10 +258,7 @@
         "starLogo": "<FaStar />",
         "title": "React JS Plugin Development",
         "description": "We specialize in developing robust, reliable and high-performance plugins using ReactJS. Our expert developers are well-versed in leveraging the powerful features of ReactJS such as JSX, components, virtual DOM, server-side rendering, and more to build plugins. We ensure the best user experience and scalability in our ReactJS plugins."
-      }
-    ],
-    "item4": [
-      
+      },
       {
         "starLogo": "<FaStar />",
         "title": "React JS Front-End Development",
@@ -457,9 +452,7 @@
         "starLogo": "<FaStar />",
         "title": "Real-Time App Development",
         "description": "We are experts in building real-time applications using Vue.js, leveraging its reactive components and state management libraries to create powerful and efficient user interfaces. Our team is proficient in the entire Vue development cycle, from setting up the project and writing custom components, to integrating with external services and deploying to production."
-      }
-    ],
-    "item4": [
+      },
       {
         "starLogo": "<FaStar />",
         "title": "Single Page App Development",
@@ -651,24 +644,22 @@
          "starLogo": "<FaStar />",
          "title": "Re-engineering Services with Knockout.Js",
          "description":"Our expertise in Re-engineering Services with Knockout.js enables us to provide rapid development, robust models, and a simplified binding system that minimizes development time and cost. These services ensure that your website is optimized for performance and compatibility with all major browsers."
-     }
- ],
- "item4": [
-     {
-         "starLogo": "<FaStar />",
-         "title": "Secure & Scalable Web Application",
-         "description":"We specialize in providing secure and scalable web application development solutions, leveraging the latest technologies to create robust solutions that are tailored to the specific needs of clients. Our experienced developers are proficient in building web applications that are highly secure, maintainable, and scalable to handle changing business requirements."
      },
      {
-         "starLogo": "<FaStar />",
-         "title": "Progressive Web Application",
-         "description":"We specialize in developing Progressive Web Applications (PWAs) using Knockout.js that are robust, secure and highly optimized for performance. Our experienced developers are adept at leveraging Knockout's powerful MVVM architecture to create responsive PWAs that load quickly, respond quickly in any network environment and provide a seamless user experience."
-     },
-     {
-         "starLogo": "<FaStar />",
-         "title": "Third Party Plugin",
-         "description":"We specialize in developing Third Party Plugins using KnockoutJs for data binding and templating. Our skilled developers have extensive experience in developing custom plugins for web applications, providing fast and reliable solutions for complex tasks. We use cutting-edge technologies to create highly optimized and feature-rich plugins with superior performance."
-     }
+      "starLogo": "<FaStar />",
+      "title": "Secure & Scalable Web Application",
+      "description":"We specialize in providing secure and scalable web application development solutions, leveraging the latest technologies to create robust solutions that are tailored to the specific needs of clients. Our experienced developers are proficient in building web applications that are highly secure, maintainable, and scalable to handle changing business requirements."
+  },
+  {
+      "starLogo": "<FaStar />",
+      "title": "Progressive Web Application",
+      "description":"We specialize in developing Progressive Web Applications (PWAs) using Knockout.js that are robust, secure and highly optimized for performance. Our experienced developers are adept at leveraging Knockout's powerful MVVM architecture to create responsive PWAs that load quickly, respond quickly in any network environment and provide a seamless user experience."
+  },
+  {
+      "starLogo": "<FaStar />",
+      "title": "Third Party Plugin",
+      "description":"We specialize in developing Third Party Plugins using KnockoutJs for data binding and templating. Our skilled developers have extensive experience in developing custom plugins for web applications, providing fast and reliable solutions for complex tasks. We use cutting-edge technologies to create highly optimized and feature-rich plugins with superior performance."
+  }
  ],
  "project": [
      {
@@ -882,24 +873,22 @@
          "starLogo": "<FaStar />",
          "title": "Automatic Routing",
          "description":"We have extensive experience in Nextjs development, with a focus on Automatic Routing. Our team is adept at implementing advanced routing techniques, like dynamic routing, custom routing, and nested routing, for optimal application performance. We also have experience in optimizing page loading times with prefetching and code splitting."
-     }
- ],
- "item4": [
-     {
-         "starLogo": "<FaStar />",
-         "title": "Reusable Elements",
-         "description":"At zenqua Inc, we specialize in developing reusable elements in Next.js. Our expertise includes creating components and libraries that are optimized for performance and scalability, leveraging the Next.js Router API and React Context API to enable secure, efficient data transfer between components, and optimizing data fetching with the Next.js Static Generation and Server-Side Rendering features."
      },
      {
-         "starLogo": "<FaStar />",
-         "title": "pre-rendering",
-         "description":"Our expertise in pre-rendering for Next.js development includes server-side rendering of HTML pages, static page generation and Client-side Rendering (CSR). We have extensive experience with dynamic data fetching, optimization of page loads, performance and SEO. We provide solutions to ensure the best performance and scalability of your Next.js web applications."
-     },
-     {
-         "starLogo": "<FaStar />",
-         "title": "Scalability",
-         "description":"Our expertise in Nextjs development includes scaling websites and applications to meet increased demand. We leverage Nextjs' server-side rendering, data prefetching, and code-splitting to ensure optimal performance and scalability. We also utilize the latest technologies such as GraphQL and Apollo to ensure that our clients' needs are met."
-     }
+      "starLogo": "<FaStar />",
+      "title": "Reusable Elements",
+      "description":"At zenqua Inc, we specialize in developing reusable elements in Next.js. Our expertise includes creating components and libraries that are optimized for performance and scalability, leveraging the Next.js Router API and React Context API to enable secure, efficient data transfer between components, and optimizing data fetching with the Next.js Static Generation and Server-Side Rendering features."
+  },
+  {
+      "starLogo": "<FaStar />",
+      "title": "pre-rendering",
+      "description":"Our expertise in pre-rendering for Next.js development includes server-side rendering of HTML pages, static page generation and Client-side Rendering (CSR). We have extensive experience with dynamic data fetching, optimization of page loads, performance and SEO. We provide solutions to ensure the best performance and scalability of your Next.js web applications."
+  },
+  {
+      "starLogo": "<FaStar />",
+      "title": "Scalability",
+      "description":"Our expertise in Nextjs development includes scaling websites and applications to meet increased demand. We leverage Nextjs' server-side rendering, data prefetching, and code-splitting to ensure optimal performance and scalability. We also utilize the latest technologies such as GraphQL and Apollo to ensure that our clients' needs are met."
+  }
  ],
  "project": [
      {
