@@ -1,19 +1,8 @@
 "use client";
 import React, { Component } from "react";
 import jsonData from "./data.json";
-import {
-  Box,
-  Grid,
-  Button,
-  Typography,
-  Paper,
-  styled,
-  CardActionArea,
-  Card,
-  CardContent,
-} from "@material-ui/core";
+import { Box, styled } from "@material-ui/core";
 import dynamic from "next/dynamic";
-import Carousel from "react-material-ui-carousel";
 import "./styles.css";
 import timeMaterial from "@/components/assets/img/reactjsimg/Time-Material.webp";
 import dedicatedDevelopmentTeam from "@/components/assets/img/reactjsimg/dedicateddevelopmentteam.webp";
@@ -32,11 +21,8 @@ const LazyPortfolioProjects = dynamic(
 const LazyZenquaGlanceComponent = dynamic(
   () => import("@/components/ui/ZenquaGlance")
 );
-const LazyWhatWeDoComponent = dynamic(
-  () => import("@/components/ui/WhatWeDo")
-);
-const LazyExpertiesComponent = dynamic(
-  () => import("@/components/ui/Experties")
+const LazyWhatWeDoAndExpertiesComponent = dynamic(
+  () => import("@/components/ui/WhatWeDoAndExperties")
 );
 const LazyAdoptableApprochComponent = dynamic(
   () => import("@/components/ui/AdoptableApproch")
@@ -90,8 +76,6 @@ interface RoutePageProps {
   };
 }
 
-
-
 class RoutePage extends Component<RoutePageProps, PageState> {
   constructor(props: RoutePageProps) {
     super(props);
@@ -114,8 +98,8 @@ class RoutePage extends Component<RoutePageProps, PageState> {
         Reduced: false,
         Custom: false,
         clickedButton6: "Cost-Effectiveness",
-      }
-    }
+      },
+    };
   }
 
   render() {
@@ -147,18 +131,24 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             {/* ************************end********************************** */}
 
             {/* ************************section3********************************** */}
-           
-            <LazyWhatWeDoComponent content={content} />
+
+            <LazyWhatWeDoAndExpertiesComponent
+              item={content.item1}
+              content={content.section3}
+            />
 
             {/* ***********************end************************** */}
 
             {/* ************************section4********************************** */}
 
-            <LazyExpertiesComponent content={content}/>
+            <LazyWhatWeDoAndExpertiesComponent
+              item={content.item3}
+              content={content.section4}
+            />
 
             {/* ***********************end************************** */}
 
-            <LazyCircleContent/>
+            <LazyCircleContent />
 
             {/* *******************************GLANCE******************************    */}
 
@@ -170,7 +160,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
             <LazyAdoptableApprochComponent />
 
-            <LazyWhyUsContent/>
+            <LazyWhyUsContent />
 
             <LazyBusinessEmpowermentComponent />
             {/* **********************  End   ****************************** */}

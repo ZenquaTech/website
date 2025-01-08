@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -25,14 +26,14 @@ export default function Footer() {
                       fontWeight: 600,
                     }}
                   >
-                    <img
+                    <Image
                       style={{
                         position: "relative",
                         left: "-35px",
                         top: "-20px",
                       }}
-                      height="150px"
-                      width="150px"
+                      height={"150"}
+                      width={"150"}
                       src="/images/WhatsApp_Image_2024-03-23_at_4.37.01_PM-removebg-preview.png"
                       alt="logo"
                     />

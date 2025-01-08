@@ -1,5 +1,6 @@
 import { Grid, Paper, Typography, Box } from "@material-ui/core";
 import React from "react";
+import Image from "next/image";
 
 function adoptable_approch() {
   return (
@@ -65,14 +66,20 @@ function adoptable_approch() {
                   width: "100%",
                 }}
               >
-                <img
-                  style={{
-                    height: "0%",
-                    width: "70%",
-                  }}
+                 <div 
+                 style={{
+                  position: 'relative',
+                  height: "0%",
+                  width: "70%", 
+                }}
+                >
+                  <Image
+                  width={700}
+                  height={475}
+                   layout="responsive"
                   src="/images/webpFile/Time-Material.webp"
                   alt="Time & Material Model"
-                />
+                /></div>
               </Box>
               <Paper
                 style={{
@@ -161,14 +168,15 @@ function adoptable_approch() {
                   width: "100%",
                 }}
               >
-                <img
-                  style={{
-                    height: "90%",
-                    width: "70%",
-                  }}
+                <div style={{position:'relative', height: "90%",
+                    width: "70%",}}>
+                <Image
+                  width={700}
+                  height={475}
+                  layout="responsive"
                   src="/images/webpFile/dedicated-development_team-2.webp"
                   alt="Time & Material Model"
-                />
+                /></div>
               </Box>
               <Paper
                 style={{

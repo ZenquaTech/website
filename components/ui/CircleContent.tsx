@@ -109,7 +109,6 @@ function CircleContent() {
               </div>
             ))}
           </div>
-          {/* <img src={image} alt="C++ logo" className="responsive-image" /> */}
         </div>
       </div>
     </>
