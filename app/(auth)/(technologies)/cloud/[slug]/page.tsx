@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import jsonData from "./data.json";
 import { Box, styled } from "@material-ui/core";
 import dynamic from "next/dynamic";
-import "./styles.css";
 import AWS from "@/public/images/webpFile/AWS.webp";
 import Azure from "@/public/images/webpFile/Azure.webp";
 import GoogleCloud from "@/public/images/webpFile/Google_Cloud.webp";

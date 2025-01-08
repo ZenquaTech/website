@@ -1,15 +1,15 @@
 import { Button } from '@material-ui/core'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
 import React from 'react'
 
-const scrollToBottom = () => {
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: "smooth",
-  });
-};
 
-function HeroContent({item,image}:any) {
+
+function HeroContent({ item, image }: any) {
+  const router = useRouter()
+  const scrollToBottom = () => {
+    router.push("/contact-us");
+  };
   return (
     <div
     className="grid grid-cols-1 md:grid-cols-2 gap-4"

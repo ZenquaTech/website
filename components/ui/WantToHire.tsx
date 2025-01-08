@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Typography } from "@material-ui/core";
-import React, { memo } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { useRouter } from "next/navigation";
 
 // Define styles with makeStyles
 const useStyles = makeStyles((theme) => ({
@@ -49,6 +50,10 @@ const useStyles = makeStyles((theme) => ({
 
 function WantToHire({ headingText, buttonText }: any) {
   const classes = useStyles();
+   const router = useRouter();
+   const scrollToBottom = () => {
+     router.push("/contact-us");
+   };
 
   return (
     <Box className={classes.container}>
@@ -75,7 +80,11 @@ function WantToHire({ headingText, buttonText }: any) {
           justifyContent="center"
           alignItems="center"
         >
-          <Button variant="contained" className={classes.button}>
+          <Button
+            variant="contained"
+            onClick={scrollToBottom}
+            className={classes.button}
+          >
             {buttonText}
           </Button>
         </Grid>
@@ -84,4 +93,4 @@ function WantToHire({ headingText, buttonText }: any) {
   );
 }
 
-export default memo(WantToHire);
+export default WantToHire;
