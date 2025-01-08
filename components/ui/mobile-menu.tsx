@@ -11,6 +11,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import { Add,Clear } from "@material-ui/icons";
+import { useRouter } from "next/navigation";
 
 const useStyles = makeStyles((theme) => ({
   menuItem: {
@@ -43,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "capitalize",
     width: " 100%",
     textAlign: "start",
-    padding: "15px",
+    padding: "8px 16px",
   },
   menuTitle: {
     color: "#ffffffbf",
@@ -304,6 +305,7 @@ const menuData = [
 ];
 
 export default function MobileMenu() {
+   const router = useRouter();
   const classes = useStyles();
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
   const trigger = useRef<HTMLButtonElement>(null);
@@ -376,7 +378,7 @@ export default function MobileMenu() {
         open={mobileNavOpen}
         onClose={() => setMobileNavOpen(false)}
         onOpen={() => setMobileNavOpen(true)}
-        classes={{ paper: classes.drawer }}     
+        classes={{ paper: classes.drawer }}
       >
         <List disablePadding>
           <ListItem
@@ -502,6 +504,15 @@ export default function MobileMenu() {
               </Collapse>
             </React.Fragment>
           ))}
+          <button
+            onClick={() => {
+              router.push("/career");
+              setMobileNavOpen(false);
+            }}
+            className={classes.buttonConfig}
+          >
+            Open Positions
+          </button>
           <button
             onClick={() => {
               scrollToBottom();

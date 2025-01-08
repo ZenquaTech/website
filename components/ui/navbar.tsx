@@ -222,7 +222,7 @@ const Navbar = () => {
         {Object.keys(menuData).map((menu) => (
           <div
             key={menu}
-            style={{ display: "inline-block", marginRight: "20px" }}
+            style={{ display: "inline-block", marginRight: "17px" }}
           >
             <Button
               aria-controls={`${menu}-menu`}
@@ -349,8 +349,7 @@ const Navbar = () => {
                   </Grid>
                 </div>
               )}
-            {(menu === "Expertise" ||
-              menu === "Company" ) &&
+            {(menu === "Expertise" || menu === "Company") &&
               openMenu === menu && (
                 <div
                   onMouseEnter={handleMenuEnter(menu)}
@@ -447,6 +446,36 @@ const Navbar = () => {
           </div>
         ))}
         <Button
+          id={`open-postions-menu`}
+          onMouseOver={(e) => {
+            const target = e.target as HTMLElement;
+            target.style.color = "#019dce";
+          }}
+          style={{
+            backgroundColor: "transparent",
+            padding: "0",
+            marginRight: "25px",
+          }}
+          onMouseOut={(e) => {
+            const target = e.target as HTMLElement;
+            target.style.color = "#ffffffbf";
+          }}
+        >
+          <Link href={"/career"} passHref>
+            <Typography
+              style={{
+                color: "rgba(255, 255, 255, 0.75)",
+                fontFamily: "var(--font-dm-sans), sans-serif",
+                textTransform: "capitalize",
+                fontSize: "0.875rempx",
+                fontWeight: "500",
+              }}
+            >
+              Open Positions
+            </Typography>
+          </Link>
+        </Button>
+        <Button
           id={`contactus-menu`}
           onMouseOver={(e) => {
             const target = e.target as HTMLElement;
@@ -465,7 +494,7 @@ const Navbar = () => {
             <Typography
               style={{
                 color: "rgba(255, 255, 255, 0.75)",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "var(--font-dm-sans), sans-serif",
                 textTransform: "capitalize",
                 fontSize: "0.875rempx",
                 fontWeight: "500",
