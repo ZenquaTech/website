@@ -48,7 +48,6 @@ const imageMap: any = {
   magento,
 };
 
-import "./styles.css";
 import HeroContent from "@/components/ui/HeroContent";
 
 interface PageState {
