@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import jsonData from "./data.json";
 import { Box, styled } from "@material-ui/core";
 import dynamic from "next/dynamic";
-import "./styles.css";
 import ROR from "@/public/images/webpFile/ROR-1536x1360.webp";
 import nodejs from "@/public/images/webpFile/nodejs-1024x907.webp";
 import django from "@/public/images/webpFile/django_1-1536x1360.webp";
