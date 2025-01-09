@@ -4,7 +4,6 @@ import jsonData from "./data.json";
 import { Box, styled } from "@material-ui/core";
 import dynamic from "next/dynamic";
 import seo from "@/public/images/webpFile/seo_1.webp";
-import "./styles.css";
 import HeroContent from "@/components/ui/HeroContent";
 const LazyCircleContent = dynamic(
   () => import("@/components/ui/CircleContent")

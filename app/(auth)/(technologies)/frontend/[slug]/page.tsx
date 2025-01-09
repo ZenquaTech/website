@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import jsonData from "./data.json";
 import { Box, styled } from "@material-ui/core";
 import dynamic from "next/dynamic";
-import "./styles.css";
 import reactImage from "@/components/assets/img/reactjsimg/reactjs.webp";
 import timeMaterial from "@/components/assets/img/reactjsimg/Time-Material.webp";
 import dedicatedDevelopmentTeam from "@/components/assets/img/reactjsimg/dedicateddevelopmentteam.webp";

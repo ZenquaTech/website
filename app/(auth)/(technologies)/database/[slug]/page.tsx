@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import jsonData from "./data.json";
 import { Box, styled } from "@material-ui/core";
 import dynamic from "next/dynamic";
-import "./styles.css";
 import mysql from "@/public/images/webpFile/mysql_1.webp";
 import postgresql from "@/public/images/webpFile/nodejs-1024x907.webp";
 import ASPNET from "@/public/images/webpFile/ASP.NET_-768x680.webp";

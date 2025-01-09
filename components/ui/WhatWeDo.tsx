@@ -1,5 +1,5 @@
 import { Grid, Box, Typography } from '@material-ui/core';
-import React, { memo } from 'react'
+import React from 'react'
 import { FaStar } from 'react-icons/fa';
 
 function WhatWeDo({content}:any) {
@@ -75,4 +75,4 @@ function WhatWeDo({content}:any) {
   )
 }
 
-export default memo(WhatWeDo)
+export default WhatWeDo

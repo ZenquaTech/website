@@ -2,6 +2,7 @@
 import { Button, Box, Typography, Grid, styled } from "@material-ui/core";
 import Image from "next/image";
 import ModeStandbyTwoToneIcon from "@mui/icons-material/ModeStandbyTwoTone";
+import { useRouter } from "next/navigation";
 
 
 export default function Partnerships() {
@@ -19,7 +20,10 @@ export default function Partnerships() {
     },
  
   ];
-
+ const router = useRouter()
+  const scrollToBottom = () => {
+    router.push("/contact-us");
+  };
   return (
     <MainWrapper>
       <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
@@ -38,7 +42,7 @@ export default function Partnerships() {
               own and whose goals align with ours.
             </Typography>
             <Box style={{ marginTop: "5rem" }}>
-              <Button className="typo-4">Talk to Expert</Button>
+              <Button onClick={scrollToBottom} className="typo-4">Talk to Expert</Button>
             </Box>
             <Box
               style={{
@@ -565,7 +569,7 @@ export default function Partnerships() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
-              <Button style={{ backgroundColor: "#fff", fontSize: "15px", color: "#019dce", borderRadius: "5px", textTransform: 'none', padding: '8px 10px', fontWeight: '600' }}>
+              <Button onClick={scrollToBottom} style={{ backgroundColor: "#fff", fontSize: "15px", color: "#019dce", borderRadius: "5px", textTransform: 'none', padding: '8px 10px', fontWeight: '600' }}>
                 Partner With Us
               </Button>
             </Box>
