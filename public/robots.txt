@@ -1,5 +1,9 @@
-# robots.txt for Zenqua Technologies
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://www.zenqua.com
+
+# Sitemaps
 Sitemap: https://www.zenqua.com/sitemap.xml
