@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/hero-image-01.jpg";
+import VideoThumb from "@/public/images/bestItcompanyinindorezenqua.webp";
 import { Button } from "@material-ui/core";
 
 export default function Hero() {
