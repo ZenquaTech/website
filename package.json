@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -22,6 +23,7 @@
     "aos": "^3.0.0-beta.6",
     "ga-gtag": "^1.2.0",
     "headroom.js": "^0.12.0",
+    "http-server": "^14.1.1",
     "init": "^0.1.2",
     "next": "^14.0.4",
     "next-sitemap": "^4.2.3",
