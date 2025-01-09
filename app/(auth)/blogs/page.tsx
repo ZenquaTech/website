@@ -3,7 +3,7 @@ import { Paper, Typography, Avatar, Box, Grid } from "@material-ui/core";
 import React from "react";
 import { Button } from "reactstrap";
 import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/hero-image-01.jpg";
+import VideoThumb from "@/public/images/bestItcompanyinindorezenqua.webp";
 
 const Page = () => {
   const style1 = {
