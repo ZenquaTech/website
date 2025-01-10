@@ -1,9 +1,18 @@
 import Head from 'next/head';
-import Hero from '@/components/hero';
+
 import dynamic from 'next/dynamic';
-const LazyFeatures = dynamic(() => import("@/components/features"));
-const LazyTestimonials = dynamic(() => import("@/components/testimonials"));
-const LazyZigzag = dynamic(() => import("@/components/zigzag"));
+const LazyHero = dynamic(()=>import('@/components/hero'),{
+  loading:()=><div>loading</div>
+})
+const LazyFeatures = dynamic(() => import("@/components/features"),{
+  loading:()=><div>loading</div>
+});
+const LazyTestimonials = dynamic(() => import("@/components/testimonials"),{
+  loading:()=><div>loading</div>
+});
+const LazyZigzag = dynamic(() => import("@/components/zigzag"),{
+  loading:()=><div>loading</div>
+});
 export const metadata = {
   title: 'The leading Custom Software development solutions | Zenqua technology',
   description: 'Top Software Development company In Indore offering Custom Solutions,app Development, Web design, and IT Services For Businesses WorldWide',
@@ -80,7 +89,7 @@ export default function Home() {
           }}
         />
       </Head>
-      <Hero />
+      <LazyHero />
       <LazyFeatures />
       <LazyZigzag />
       <LazyTestimonials />

@@ -17,14 +17,21 @@ import Link from 'next/link';
 import Image from "next/image";
 import React, { Component } from "react";
 import Paper from "@material-ui/core/Paper";
+
 import Carousel from "react-material-ui-carousel";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-const LazyWhyUs = dynamic(() => import("@/components/ui/WhyUs"));
+const LazyWhyUs = dynamic(() => import("@/components/ui/WhyUs"),{
+  loading:()=><div>loading</div>
+});
 const LazyZenquaGlanceComponent = dynamic(
-  () => import("@/components/ui/ZenquaGlance")
+  () => import("@/components/ui/ZenquaGlance"),{
+    loading:()=><div>loading</div>
+  }
 );
 const LazyAdoptableApprochComponent = dynamic(
-  () => import("@/components/ui/AdoptableApproch")
+  () => import("@/components/ui/AdoptableApproch"),{
+    loading:()=><div>loading</div>
+  }
 );
 
 
@@ -172,9 +179,9 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               width={'100'}
-              height={'100'}
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/python-1.svg"
               alt="Backend Development"
+              height={'100'}
+              src="/images/python-1.webp"
             />
             <p>Python</p>
           </div>
@@ -182,7 +189,7 @@ const servicesData: ServiceData[] = [
             <Image
               width={'100'}
               height={'100'}
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/nodejs-1.svg"
+              src="/images/nodejs-1.webp"
               alt="Backend Development"
             />
             <p>NodeJS</p>
@@ -191,7 +198,7 @@ const servicesData: ServiceData[] = [
             <Image
               width={'100'}
               height={'100'}
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/ruby-on-rails.svg"
+              src="/images/ruby-on-rails.webp"
               alt="Backend Development"
             />
             <p>Ruby on Rails</p>
@@ -221,7 +228,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/vuejs.svg"
+              src="/images/vuejs.webp"
               alt="Frontend Development"
               className="flex mt-4"
             />
@@ -230,7 +237,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/reactjs.svg"
+              src="/images/reactjs.webp"
               alt="Frontend Development"
               className="flex mt-4"
             />
@@ -239,7 +246,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/angular-1.svg"
+              src="/images/angular-1.webp"
               alt="Frontend Development"
               className="flex mt-4"
             />
@@ -248,7 +255,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/nextjs.svg"
+              src="images/nextjs.webp"
               alt="Frontend Development"
               className="flex mt-4"
             />
@@ -278,7 +285,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/reactjs.svg"
+              src="/images/reactjs.webp"
               alt="ReactNative"
               className="flex mt-4"
             />
@@ -287,7 +294,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/apple.svg"
+              src="/images/apple.webp"
               alt="iOS"
               className="flex mt-4"
             />
@@ -296,7 +303,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/flutter.svg"
+              src="/images/flutter.webp"
               alt="Flutter"
               className="flex mt-4"
             />
@@ -305,7 +312,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/swift.svg"
+              src="website/public/images/swift.webp"
               alt="Swift"
               className="flex mt-4"
             />
@@ -335,7 +342,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/ruby-on-rails.svg"
+              src="/images/ruby-on-rails.webp"
               alt="ror"
               className="flex mt-4"
             />
@@ -344,7 +351,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/laravel.svg"
+              src="website/public/images/laravel.webp"
               alt="laravel"
               className="flex mt-4"
             />
@@ -353,7 +360,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/django.svg"
+              src="/images/django.webp"
               alt="django"
               className="flex mt-4"
             />
@@ -362,7 +369,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151311/Codeignitor.svg"
+              src="/images/Codeignitor.webp"
               alt="Codeignitor"
               className="flex mt-4"
             />
@@ -393,7 +400,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/magento.svg"
+              src="/images/magento.webp"
               alt="magento"
               className="flex mt-4"
             />
@@ -402,7 +409,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/nopcommerce.svg"
+              src="/images/nopcommerce.webp"
               alt="nopcommerce"
               className="flex mt-4"
             />
@@ -411,7 +418,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Shopify.svg"
+              src="/images/Shopify.webp"
               alt="Shopify"
               className="flex mt-4"
             />
@@ -450,7 +457,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/wordpress.svg"
+              src="/images/wordpress.webp"
               alt="wordpress"
               className="flex mt-4"
             />
@@ -459,7 +466,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/drupal.svg"
+              src="/images/drupal.webp"
               alt="drupal"
               className="flex mt-4"
             />
@@ -490,7 +497,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mysql.svg"
+              src="/images/mysql.webp"
               alt="mysql"
               className="flex mt-4"
             />
@@ -499,7 +506,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/firebase.svg"
+              src="/images/firebase.webp"
               alt="firebase"
               className="flex mt-4"
             />
@@ -508,7 +515,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
              layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/mongodb.svg"
+              src="/images/mongodb.webp"
               alt="mongodb"
               className="flex mt-4"
             />
@@ -538,7 +545,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Azure.svg"
+              src="/images/Azure.webp"
               alt="Azure"
               className="flex mt-4"
             />
@@ -547,7 +554,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/Aws.svg"
+              src="/images/Aws.webp"
               alt="Aws"
               className="flex mt-4"
             />
@@ -556,7 +563,7 @@ const servicesData: ServiceData[] = [
           <div className="flex flex-col items-center mt-4">
             <Image
               layout="intrinsic"
-              src="https://d1ocmjvagn5mw1.cloudfront.net/wp-content/uploads/2023/04/18151310/google.svg"
+              src="/images/google.webp"
               alt="google"
               className="flex mt-4"
             />
