@@ -6,7 +6,10 @@ export default function Footer() {
   return (
     <footer>
       <div className="py-5 md:py-0">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div
+          // className="max-w-6xl mx-auto px-4 sm:px-6"
+          className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 "
+        >
           {/* Top area: Blocks */}
           <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
             {/* 1st block */}
@@ -173,7 +176,7 @@ export default function Footer() {
               <div className="text-sm">
                 <h2 className="text-gray-200 font-medium mb-1">Contact Us</h2>
                 <ul>
-                  <li className="mb-1">
+                  <li className="mb-1" style={{width:"300px"}} >
                     <Link
                       href="/"
                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"

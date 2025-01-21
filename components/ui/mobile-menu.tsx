@@ -361,6 +361,7 @@ export default function MobileMenu() {
         aria-controls="mobile-nav"
         aria-expanded={mobileNavOpen}
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
+        style={{marginRight:"30px"}}
       >
         <span className="sr-only">Menu</span>
         <svg

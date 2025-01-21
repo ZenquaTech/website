@@ -4,7 +4,11 @@ import Image from "next/image";
 
 function adoptable_approch() {
   return (
-    <div className="w-full flex justify-center">
+    <div
+      // className="w-full flex justify-center"
+      // className="max-w-6xl mx-auto px-4 sm:px-6 flex justify-center bg-yellow-800"
+      className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8 flex justify-center "
+    >
       <div className="w-[94%] mt-[20px]">
         <h2 className="font text-center uppercase text-[#D9E3EA]">
           ADAPTABLE APPROACH
@@ -66,20 +70,21 @@ function adoptable_approch() {
                   width: "100%",
                 }}
               >
-                 <div 
-                 style={{
-                  position: 'relative',
-                  height: "0%",
-                  width: "70%", 
-                }}
+                <div
+                  style={{
+                    position: "relative",
+                    height: "0%",
+                    width: "70%",
+                  }}
                 >
                   <Image
-                  width={700}
-                  height={475}
-                   layout="responsive"
-                  src="/images/webpFile/Time-Material.webp"
-                  alt="Time & Material Model"
-                /></div>
+                    width={700}
+                    height={475}
+                    layout="responsive"
+                    src="/images/webpFile/Time-Material.webp"
+                    alt="Time & Material Model"
+                  />
+                </div>
               </Box>
               <Paper
                 style={{
@@ -168,15 +173,17 @@ function adoptable_approch() {
                   width: "100%",
                 }}
               >
-                <div style={{position:'relative', height: "90%",
-                    width: "70%",}}>
-                <Image
-                  width={700}
-                  height={475}
-                  layout="responsive"
-                  src="/images/webpFile/dedicated-development_team-2.webp"
-                  alt="Time & Material Model"
-                /></div>
+                <div
+                  style={{ position: "relative", height: "90%", width: "70%" }}
+                >
+                  <Image
+                    width={700}
+                    height={475}
+                    layout="responsive"
+                    src="/images/webpFile/dedicated-development_team-2.webp"
+                    alt="Time & Material Model"
+                  />
+                </div>
               </Box>
               <Paper
                 style={{

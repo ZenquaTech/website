@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Hero from '@/components/hero';
 import dynamic from 'next/dynamic';
+import Script from 'next/script';
 const LazyFeatures = dynamic(() => import("@/components/features"));
 const LazyTestimonials = dynamic(() => import("@/components/testimonials"));
 const LazyZigzag = dynamic(() => import("@/components/zigzag"));
@@ -18,7 +19,7 @@ export default function Home() {
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="https://www.zenqua.com/favicon.ico" />
         {/* Organization Schema */}
-        <script
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -50,7 +51,7 @@ export default function Home() {
           }}
         />
         {/* Breadcrumb Schema */}
-        <script
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
