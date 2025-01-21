@@ -35,7 +35,8 @@ export default function ModalVideo({
           <video
             style={{
               boxShadow: "2px 2px 30px rgb(255 255 255 / 10%)",
-              borderRadius: "3px",
+              borderRadius: "20px",
+              width:"550px"
             }}
             controls
             autoPlay

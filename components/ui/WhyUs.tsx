@@ -59,9 +59,11 @@ function WhyUs({isFeature=false}:any) {
   };
   return (
     <div
-      className={
-        isFeature ? "m-[50px] box-border" : "box-border w-full mt-[4%]"
-      }
+      // className={
+      //   isFeature ? "m-[50px] box-border" : "box-border w-full mt-[4%]"
+      // }
+      // className="max-w-6xl mx-auto px-4 sm:px-6 bg-yellow-800"
+      className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8 "
     >
       <h2 className=" font text-center uppercase text-[#D9E3EA]">WHY US</h2>
       <h2

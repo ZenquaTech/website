@@ -64,14 +64,15 @@ export default function Header() {
     <>
       <header
         className="absolute w-full z-30"
-        style={{ width: "95%", justifyContent: "space-between", zIndex: 1000 }}
+        // className="max-w-6xl mx-auto px-4 sm:px-6"
+        style={{ justifyContent: "space-between", zIndex: 1000 }}
       >
         <nav
           className="md:flex md:grow "
           style={{ backgroundColor: "transparent", width: "100%" }}
         >
           <div
-            className="max-w-6xl mx-auto"
+            className="w-full max-w-[100rem] mx-auto"
             style={{ width: "100%" }}
           >
             <div
@@ -89,6 +90,7 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="block" aria-label="Cruip">
                   <Image
+                    priority
                     style={{
                       top: "0%",
                       marginTop: "-1%",
