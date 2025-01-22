@@ -18,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
     ...theme.typography,
   },
   drawer: {
-   scrollBehavior: "smooth",
-    scrollbarWidth:"none",
+    scrollBehavior: "smooth",
+    scrollbarWidth: "none",
     backgroundColor: "#1B1A1F",
     color: "white",
     borderBottom: "#F037A5",
@@ -37,6 +37,21 @@ const useStyles = makeStyles((theme) => ({
     color: "#ffffffbf",
     "&:hover": {
       color: "#019dce",
+    },
+    fontSize: "16px",
+    fontWeight: 500,
+    fontFamily: "DM Sans, sans-serif",
+    textTransform: "capitalize",
+    width: " 100%",
+    textAlign: "start",
+    padding: "8px 16px",
+  },
+  buttonConfig2: {
+    color: "#ffffffbf",
+    "&:hover": {
+      backgroundColor: "#019dce",
+      // #019dce
+      color:"white"
     },
     fontSize: "16px",
     fontWeight: 500,
@@ -361,7 +376,7 @@ export default function MobileMenu() {
         aria-controls="mobile-nav"
         aria-expanded={mobileNavOpen}
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
-        style={{marginRight:"30px"}}
+        style={{ marginRight: "30px" }}
       >
         <span className="sr-only">Menu</span>
         <svg
@@ -522,6 +537,20 @@ export default function MobileMenu() {
             className={classes.buttonConfig}
           >
             Contact Us
+          </button>
+          <button
+            onClick={() => {
+              scrollToBottom();
+              setMobileNavOpen(false);
+               window.open(
+                 "https://calendly.com/zenqua/30min",
+                 "_blank",
+                 "noopener,noreferrer"
+               );
+            }}
+            className={classes.buttonConfig2}
+          >
+            Book Consultation
           </button>
         </List>
       </SwipeableDrawer>

@@ -778,7 +778,7 @@ function HeroWhatWeDo() {
             <Card
               key={i}
               style={{
-                height: "58vh",
+                // height: "58vh",
                 width: "100%",
                 border: "solid 1px white",
                 borderRadius: "20px",
@@ -808,9 +808,10 @@ function HeroWhatWeDo() {
                       color: "#9BA9B4 ",
                       fontSize: "19px",
                       textAlign: "justify",
+                      wordBreak:"break-all"
                     }}
                   >
-                    {item.description}
+                    {item.description.replace(/\s+/g, " ").trim()}
                   </Typography>
                   <Box
                     style={{

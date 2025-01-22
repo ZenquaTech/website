@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react";
 import { Grid, Box, Button } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
-
+import contactUsImage from "@/public/images/webpFile/Time-Material.webp"
 type FormData = {
   firstName: string;
   lastName: string;
@@ -160,19 +160,19 @@ const ContactUs = () => {
           <Box className="text-5xl font-bold text-center service-button mt-16 mb-12">
             Contact Us
           </Box>
-          <div 
-          style={{
-            height: "100%",
-            width: "80%",
-            margin: "15px",
-          }}
+          <div
+            style={{
+              height: "100%",
+              width: "80%",
+              margin: "15px",
+            }}
           ></div>
           <Image
-             width={700}
-             height={475}
-             layout="responsive"
-             src="/../images/webpFile/Time-Material.webp"
-             alt="Time & Material Model"
+            width={700}
+            height={475}
+            layout="responsive"
+            src={contactUsImage}
+            alt="Time & Material Model"
           />
           <Box>
             <h2 className="text-md text-center mb-10 mt-20 w-[97%] text-[#9BA9B4]">
