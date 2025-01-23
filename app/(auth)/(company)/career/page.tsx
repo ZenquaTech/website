@@ -3,8 +3,11 @@ import React from "react";
 import { Box, Grid, Paper, Typography, Divider } from "@mui/material";
 import { FaRegCircleDot } from "react-icons/fa6";
 import { Button } from "reactstrap";
+import { useMediaQuery, useTheme } from "@material-ui/core";
 
 const Page = () => {
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const commonStyle = {
     color: "white",
     backgroundColor: "transparent",
@@ -19,21 +22,32 @@ const Page = () => {
      "mailto:contact@zenqua.com?subject=Job%20Title&body=Write%20your%20message%20here";
  };
   return (
-    <>
+    <div
+      // style={{ marginTop: "100px", padding: "27px" }}
+      className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[100px]  mb-8"
+    >
       <Box
         sx={{
           boxSizing: "border-box",
           width: "100%",
-          marginTop: "8%",
+          // marginTop: "8%",
           marginBottom: "5%",
         }}
       >
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <div style={{ boxSizing: "border-box", width: "92%" }}>
+          <div
+            style={{
+              boxSizing: "border-box",
+              // width: "92%"
+            }}
+          >
             <Grid
               container
               spacing={2}
-              style={{ color: "#D9E3EA", padding: "20px" }}
+              style={{
+                color: "#D9E3EA",
+                // padding: "20px"
+              }}
             >
               <Grid item xs={12}>
                 <Typography
@@ -46,7 +60,7 @@ const Page = () => {
               </Grid>
               <Grid item xs={12}>
                 <Typography
-                  variant="h2"
+                  variant={isSmallScreen ? "h4" : "h2"}
                   align="center"
                   style={{ fontWeight: "bold" }}
                 >
@@ -108,7 +122,7 @@ const Page = () => {
         container
         spacing={1}
         justifyContent="center"
-        style={{ width: "100vw", margin: "0 auto", display: "flex" }}
+        // style={{ width: "100vw", margin: "0 auto", display: "flex" }}
       >
         <Grid
           item
@@ -117,7 +131,6 @@ const Page = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            padding: "20px",
             marginBottom: "5%",
           }}
         >
@@ -221,7 +234,7 @@ const Page = () => {
           <Grid container spacing={2} style={{ padding: "20px" }}>
             <Grid item xs={12}>
               <Typography
-                variant="h2"
+                variant={isSmallScreen ? "h4" : "h2"}
                 align="center"
                 style={{ fontWeight: "bold" }}
               >
@@ -265,7 +278,7 @@ const Page = () => {
           </Grid>
         </div>
       </Box>
-    </>
+    </div>
   );
 };
 

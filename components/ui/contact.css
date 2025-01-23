@@ -1,0 +1,13 @@
+
+.paperDesgin{
+    margin-top: 5px;
+        background-color: transparent;
+        display: flex;
+}
+
+@media (max-width: 961px) {
+    .paperDesgin {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}

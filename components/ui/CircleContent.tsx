@@ -22,23 +22,23 @@ import "./ui.css"
       title: "Maintenance",
     },
   ];
+const getCircleContent = (index: number): string => {
+  switch (index) {
+    case 1:
+      return "At Zenqua, we begin with a discovery phase where our business analyst and project manager thoroughly research and define the idea, ensuring it is viable, feasible, and valuable. This phase includes gathering requirements, validating the concept, and providing accurate time and cost estimates to the customer.";
+    case 2:
+      return "After discovery, our UX/UI design team analyzes requirements to create effective information architecture. We produce wireframes that focus on usability over aesthetics, followed by interactive prototypes for user feedback. Once approved, the final UI design is crafted based on these prototypes.";
+    case 3:
+      return "Zenqua follows Agile practices to ensure flexibility, quality, and customer feedback integration. The project is divided into sprints, where tasks are prioritized, features are developed, and QA engineers rigorously test them to ensure functionality and reliability.";
+    case 4:
+      return "Launching your solution involves releasing the final product to users after thorough testing and bug fixes. We also provide detailed release notes that highlight key updates and improvements, ensuring users are informed and engaged with your product.";
+    case 5:
+      return "Post-launch, we offer ongoing maintenance to keep your product updated and reliable. Choose between a monthly maintenance plan or a task backlog approach, ensuring your app remains bug-free and operational 24/7.";
+    default:
+      return "";
+  }
+};
 
-  const getCircleContent = (index: number): string => {
-    switch (index) {
-      case 1:
-        return "At zenqua, we begin the custom software development process with a discovery phase where our business analyst and project Manager collect, research, and fully undertand the subject idea and specify the main requirements for the product. At this stage, we quickly validate if your business ideas are viable, feasible, and usable. At the end of this stage, we provides accurate time and cost estimates to our customers.";
-      case 2:
-        return "We are done with the discovery phase, our UX/UI design team begins analyzing project requirements. this helps our design team ensure that the app's information architecture is structured effectively. Next, our team create a wireframe, which are rough sketches that show the layout and position of elements on a web page. These wireframes do not include any logos or colors, and are designed to prioritize usability over visual appeal. Once the wireframes are approved by the customer, our UI/UX design team turns them into clickable prototypes that allow for the first user interaction. The final UI design is based on these prototypes.";
-      case 3:
-        return "zenqua follows the Agile philosophy in the software development process to reduce the risk of project failure, continuously improve our products, and be responsive to any necessary changes. This approach gives our customers full control over their projects through the inclusion of feedback, transparency, and quality control features. As a result, they receive high-quality digital products. To complete the software development process, we divide it into short sprints. We begin each sprint by prioritizing tasks in the backlog and then have our software developers build the required functionality. After a piece of functionality is completed, our quality assurance engineers test it to ensure it functions properly and is bug-free.";
-      case 4:
-        return "So, basically, when we launch your software solution, it means we're releasing the final version to your end users. This happens after we've fixed all the bugs and made all the improvements. This is the last step in the development process, and it's when you can see how people are using your product. Along with putting the solution out there for everyone to use, our team will also put together some release notes. These are like technical instructions that have details about the bugs we fixed and the enhancements we made. The release notes are a big deal because they help us connect with users and get the word out about your new product.";
-      case 5:
-        return "To keep your PHP app relevant and responsive to customer needs, ongoing updates and maintenance are necessary. We provide high-quality post-launch maintenance and support services to ensure that your app is bug-free and available 24/7. We offer two options for maintaining your digital product: a set number of hours for a monthly fee, or a backlog of tasks that takes a minimum of 80 hours to complete.";
-      default:
-        return "";
-    }
-  };
 
   const getCirclePositionClass = (index: number): string => {
     switch (index) {
@@ -62,8 +62,10 @@ function CircleContent() {
         setHoveredCircle(circleIndex);
     };
   return (
-    <>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 max-w-[100%] mt-[4%] ">
+    <div className='mb-12'>
+      <div 
+      className="max-w-6xl mx-auto px-4 sm:px-6 max-w-[95%] mt-[4%] "
+      >
         <h2 className=" font text-center service-button uppercase">
           OUR PROCESS
         </h2>
@@ -111,7 +113,7 @@ function CircleContent() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

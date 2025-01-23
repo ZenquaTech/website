@@ -37,7 +37,7 @@ export default function Header() {
   const [screenWidth, setScreenWidth] = useState<number>(0);
   const theme = useTheme();
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
 
   useEffect(() => {
     const handleResize = () => {

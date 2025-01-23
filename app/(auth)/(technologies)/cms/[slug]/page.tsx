@@ -107,7 +107,10 @@ class RoutePage extends Component<RoutePageProps, PageState> {
     return (
       <>
         <MainWrapper>
-          <div className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8">
+          <div
+            // className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8"
+            className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 max-sm:mt-20 mb-8"
+          >
             {/* ************************section1********************************** */}
             <HeroContent
               item={content.section1}

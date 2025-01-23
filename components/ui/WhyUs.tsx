@@ -52,7 +52,7 @@ const servicesData = [
       "We help you achieve your goals one step at a time by scaling your idea in a budget-focused manner. Our customized web and application development approach, suitable for startups, businesses and enterprises, allows you to make small investments and move forward in a controlled environment with the best java industry expertise. Our standardized process helps you reach your milestones efficiently.",
   },
 ];
-function WhyUs({isFeature=false}:any) {
+function WhyUs({isFeature=false,isCSSApply=false}:any) {
   const [clickedButton6, setClickedButton6] = useState("Cost-Effectiveness");
   const handleClick6 = (stateKey: any, label: string) => {
     setClickedButton6(label);
@@ -63,7 +63,7 @@ function WhyUs({isFeature=false}:any) {
       //   isFeature ? "m-[50px] box-border" : "box-border w-full mt-[4%]"
       // }
       // className="max-w-6xl mx-auto px-4 sm:px-6 bg-yellow-800"
-      className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8 "
+      className={isCSSApply ? "w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8 " : "mt-14"}
     >
       <h2 className=" font text-center uppercase text-[#D9E3EA]">WHY US</h2>
       <h2

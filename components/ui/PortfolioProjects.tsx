@@ -1,26 +1,11 @@
-import { Box, Button, Grid } from '@material-ui/core';
-import Image from 'next/image';
-import React from 'react'
+import { Box, Button, Grid, useMediaQuery } from "@material-ui/core";
+import Image from "next/image";
+import React from "react";
 import webDesginIcon from "@/components/assets/img/projectImg/web-design.webp";
 import softwareDeveloperIcon from "@/components/assets/img/projectImg/software-developer.webp";
 
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
-  gridContainer: {
-    paddingTop: "6rem", // 24px
-    paddingBottom: "2rem", // 8px
-    paddingLeft: "6rem", // 24px
-    paddingRight: "6rem", // 24px
-    textAlign: "center",
-    display: "flex",
-    flexWrap: "wrap",
-    [theme.breakpoints.down("xs")]: {
-      paddingLeft: "2rem", // 8px
-      paddingRight: "2rem", // 8px
-    },
-  },
-}));
 const projects = [
   {
     src: webDesginIcon,
@@ -44,9 +29,22 @@ const projects = [
   },
 ];
 function PortfolioProjects() {
-   const classes = useStyles();
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Grid container className={classes.gridContainer} spacing={4}>
+    <Grid
+      container
+      style={{
+        paddingTop: "6rem", // 24px
+        paddingBottom: "2rem", // 8px
+        paddingLeft: isSmallScreen ? "2rem" : "6rem", // 24px
+        paddingRight: isSmallScreen ? "2rem" : "6rem", // 24px
+        textAlign: "center",
+        display: "flex",
+        flexWrap: "wrap",
+      }}
+      spacing={4}
+    >
       <Grid item xs={12}>
         <h2 className=" font text-center uppercase">PORTFOLIO</h2>
         <h2 className="text-3xl font-bold text-center mb-6 txt-[#D9E3EA]  ">
@@ -73,7 +71,20 @@ function PortfolioProjects() {
           <Box className="w-full flex justify-center mt-4">
             <Button
               variant="contained"
-              className="text-lg text-left text-white bg-[#019dce] hover:bg-[#1a7687] h-12 w-36 normal-case"
+              style={{
+                alignItems: "center",
+                fontSize: "15px",
+                marginTop: "2%",
+                textAlign: "center",
+                backgroundColor: "#019dce",
+                color: "#D9E3EA",
+                padding: "2%",
+                fontWeight: "bold",
+                borderRadius: "10px",
+                width: "9rem",
+                height: "3rem",
+                textTransform: "none",
+              }}
             >
               Load More
             </Button>
@@ -84,4 +95,4 @@ function PortfolioProjects() {
   );
 }
 
-export default PortfolioProjects
+export default PortfolioProjects;

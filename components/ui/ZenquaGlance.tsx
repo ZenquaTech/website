@@ -4,11 +4,15 @@ import CountUp from 'react-countup'
 import Data from "./data.json";
 import AddIcon from "@material-ui/icons/Add";
 
-function zenqua_glance() {
+function zenqua_glance({ isCSSApply = false }: { isCSSApply?: boolean }) {
   return (
     <div
       // className="max-w-6xl mx-auto px-4 sm:px-6 bg-yellow-800"
-      className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8 "
+      className={
+        isCSSApply
+          ? "w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8"
+          : ""
+      }
     >
       <h2 className=" font text-center service-button uppercase text-[#D9E3EA] ">
         ZenQua AT GLANCE

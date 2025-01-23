@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Grid, Button, Paper, Typography, Box } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, Theme } from "@material-ui/core/styles";
 import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
@@ -20,8 +20,39 @@ const useStyles = makeStyles((theme) => ({
       opacity: 1,
     },
   },
+  button: {
+    marginLeft: "60px",
+    // marginRight: "50px",
+    borderRadius: "50px",
+    textTransform: "none",
+    height: "45px",
+    // bos: 0 0 10px 0 rgba(139, 139, 139, .5);
+    boxShadow: " 0 0 10px 0 rgba(139, 139, 139, .5)",
+    fontSize: "1rem",
+    border: "2px solid rgba(255, 255, 255, 0.75)",
+    color: "rgba(255, 255, 255, 0.75)",
+    fontFamily: "var(--font-dm-sans), sans-serif",
+
+    // textTransform: "capitalize",
+    // fontSize: "0.875rempx",
+    // fontWeight: "700",
+
+    // marginLeft: "50px",
+    // marginRight: "50px",
+    // borderRadius: "50px",
+    // fontFamily: "Pacifico",
+    // textTransform: "none",
+    // height: "45px",
+    // fontSize: "1rem",
+    // color: "white",
+    fontWeight: "bolder",
+    "&:hover": {
+      backgroundColor: "#019dce",
+      color: "#FFF",
+    },
+  },
 }));
-          // { title: "Open Positions", href: "/career" },
+// { title: "Open Positions", href: "/career" },
 const menuData: Record<string, { title: string; items: any[] }> = {
   Company: {
     title: "COMPANY",
@@ -32,9 +63,7 @@ const menuData: Record<string, { title: string; items: any[] }> = {
       },
       {
         title: "CAREERS",
-        subMenu: [
-          { title: "Why Join Us", href: "/why-join-us" },
-        ],
+        subMenu: [{ title: "Why Join Us", href: "/why-join-us" }],
       },
     ],
   },
@@ -503,6 +532,21 @@ const Navbar = () => {
               Contact Us
             </Typography>
           </Link>
+        </Button>
+        <Button
+          variant="outlined"
+          classes={{
+            root: classes.button,
+          }}
+          onClick={() => {
+            window.open(
+              "https://calendly.com/zenqua/30min",
+              "_blank",
+              "noopener,noreferrer"
+            );
+          }}
+        >
+          Book Consultation
         </Button>
       </div>
     </Grid>

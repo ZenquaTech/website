@@ -4,7 +4,7 @@ import { FaStar } from 'react-icons/fa';
 
 function WhatWeDoAndExperties({item,content}:any) {
   return (
-    <div>
+    <div >
            <Grid container>
               {content?.map((item: any, index: any) => {
                 return (
@@ -21,7 +21,7 @@ function WhatWeDoAndExperties({item,content}:any) {
                         style={{
                           fontSize: "19px",
                           color: "#9BA9B4",
-                          width: "98%",
+                          // width: "98%",
                         }}
                       >
                         {item.para}
@@ -31,15 +31,15 @@ function WhatWeDoAndExperties({item,content}:any) {
                 );
               })}
             </Grid>
-            <Grid container>
+            <Grid container style={{paddingBottom:"2rem"}}>
               {item?.map((item: any, index: any) => (
-                <Grid item xs={12} md={6} lg={4} key={index}>
+                <Grid item xs={12} md={6} lg={4} key={index} style={{marginTop:"1rem"}}>
                   <Box
                     style={{
                       boxShadow: "0 0 10px 0 rgba(139,139,139,.5)",
                       margin: "1rem",
                       padding: "2rem",
-                      height: "500px",
+                      height: "100%",
                       borderRadius: "20px",
                       flexWrap: "wrap",
                     }}
@@ -63,6 +63,7 @@ function WhatWeDoAndExperties({item,content}:any) {
                         textAlign: "justify",
                         marginTop: "1rem",
                         color: "#9BA9B4",
+                        hyphens:"auto"
                       }}
                     >
                       {item.description}

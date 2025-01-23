@@ -1,15 +1,27 @@
-import { Grid, Paper, Typography, Box } from "@material-ui/core";
+"use client";
+import {
+  Grid,
+  Paper,
+  Typography,
+  Box,
+  makeStyles,
+  useMediaQuery,
+  useTheme,
+} from "@material-ui/core";
 import React from "react";
+
 import Image from "next/image";
 
-function adoptable_approch() {
+function adoptable_approch({ isCSSApply = false }: { isCSSApply?: boolean }) {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <div
       // className="w-full flex justify-center"
       // className="max-w-6xl mx-auto px-4 sm:px-6 flex justify-center bg-yellow-800"
-      className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8 flex justify-center "
+      className={isCSSApply?"w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8 flex justify-center ":"mt-20"}
     >
-      <div className="w-[94%] mt-[20px]">
+      <div className="mt-[20px]">
         <h2 className="font text-center uppercase text-[#D9E3EA]">
           ADAPTABLE APPROACH
         </h2>
@@ -17,12 +29,7 @@ function adoptable_approch() {
           Our Flexible Engagement Models
         </h2>
 
-        <Grid
-          container
-          spacing={2}
-          justifyContent="center"
-          style={{ width: "95%", margin: "0 auto" }}
-        >
+        <Grid container spacing={2} justifyContent="center">
           <Grid
             item
             sm={12}
@@ -91,15 +98,18 @@ function adoptable_approch() {
                   marginTop: "5px",
                   backgroundColor: "transparent",
                   display: "flex",
+                  flexDirection: !isSmallScreen ? "row" : "column",
                 }}
+                // className="paperDesgin"
+                // className="bg-red-900"
+                elevation={0}
               >
                 <Typography
                   style={{
                     color: "#9BA9B4",
-                    width: "50%",
                     padding: "10px",
                     textAlign: "justify",
-                    hyphens: "auto",
+                    wordBreak: "break-all",
                     fontSize: "16px",
                   }}
                 >
@@ -110,9 +120,9 @@ function adoptable_approch() {
                 <Typography
                   style={{
                     color: "#9BA9B4",
-                    width: "50%",
                     padding: "10px",
                     textAlign: "justify",
+                    wordBreak: "break-all",
                     hyphens: "auto",
                     fontSize: "16px",
                   }}
@@ -190,15 +200,17 @@ function adoptable_approch() {
                   marginTop: "5px",
                   backgroundColor: "transparent",
                   display: "flex",
+                  flexDirection: !isSmallScreen ? "row" : "column",
                 }}
+                elevation={0}
               >
                 <Typography
                   style={{
                     color: "#9BA9B4",
-                    width: "50%",
                     padding: "10px",
                     textAlign: "justify",
                     hyphens: "auto",
+                    wordBreak: "break-all",
                     fontSize: "16px",
                   }}
                 >
@@ -209,9 +221,9 @@ function adoptable_approch() {
                 <Typography
                   style={{
                     color: "#9BA9B4",
-                    width: "50%",
                     padding: "10px",
                     textAlign: "justify",
+                    wordBreak: "break-all",
                     hyphens: "auto",
                     fontSize: "16px",
                   }}

@@ -26,8 +26,13 @@ export default function Partnerships() {
   };
   return (
     <MainWrapper>
-      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
-        <Grid item xs={12}>
+      <Grid
+        container
+        //  className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
+           className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[100px]  mb-8"
+         >
+        <Grid item
+         xs={12}>
           <Box className="box-1">
              <Typography className="typo-1">Explore Our Partnerships</Typography>
             <Typography className="typo-2">
@@ -60,7 +65,11 @@ export default function Partnerships() {
 
       {/* //first container */}
 
-      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
+      <Grid 
+      container 
+      // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
+      className="w-full max-w-[100rem] mx-auto px-4 sm:px-6  mb-8"
+      >
         <Grid item xs={12} sm={6} md={6}>
         {data.map((item, index) => (
           <Box key={index}>
@@ -94,7 +103,11 @@ export default function Partnerships() {
 
       {/* //second container */}
 
-      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
+      <Grid
+        container 
+        // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
+        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[100px]  mb-8"
+        >
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
@@ -177,7 +190,11 @@ export default function Partnerships() {
 
       {/* //Third container */}
 
-      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
+      <Grid
+        container 
+        // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
+        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
+        >
         <Grid item xs={12} sm={6} md={6}>
             <Typography className="typo-10">Offshore Partners</Typography>
           <Box>
@@ -224,7 +241,11 @@ export default function Partnerships() {
 
       {/* //fourth container */}
 
-      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
+      <Grid 
+      container 
+        // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
+        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
+      >
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
@@ -324,7 +345,11 @@ export default function Partnerships() {
       </Grid>
 
       {/* //fifth container */}
-      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
+      <Grid 
+      container 
+        // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
+        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
+      >
         <Grid item xs={12} sm={6} md={6}>
           <Box>
             <Typography
@@ -383,7 +408,11 @@ export default function Partnerships() {
       </Grid>
 
       {/* //sixth container */}
-      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
+      <Grid 
+        container
+        // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
+        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
+        >
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
@@ -461,7 +490,11 @@ export default function Partnerships() {
         </Grid>
       </Grid>
 
-      <Grid container className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8">
+      <Grid
+        container 
+        // className="max-w-[95%] mx-auto px-4 sm:px-6 mb-8"
+        className="w-full max-w-[100rem] mx-auto px-4 sm:px-6   mb-8"
+        >
         <Grid item xs={12}>
           <Box>
             <Typography
@@ -561,8 +594,11 @@ export default function Partnerships() {
       </Grid>
 
       {/* //seventh container */}
-
-      <Box style={{ display: "flex", flexDirection: "column", justifyContent: "center", fontSize: "18px", backgroundColor: "#019dce", textAlign: "center", marginBottom: "2rem" }}>
+      <Grid className="w-full max-w-[100rem] mx-auto  mb-8">
+              <Box
+      // className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[100px]  mb-8"
+        style={{ display: "flex", flexDirection: "column", justifyContent: "center", fontSize: "18px", backgroundColor: "#019dce", textAlign: "center", marginBottom: "2rem" }}
+        >
         <Grid container className="max-w-[95%] mx-auto py-6">
           <Grid item sm={8} md={8}>
             <Typography style={{ fontSize: "28px", color: "#fff", fontWeight: '600' }}>Partnerships Are Great. Let's Get Work Together</Typography>
@@ -576,6 +612,8 @@ export default function Partnerships() {
           </Grid>
         </Grid>
       </Box>
+</Grid>
+
     </MainWrapper>
   );
 }
@@ -583,9 +621,10 @@ export default function Partnerships() {
 const MainWrapper = styled(Box)({
   "& .typo-1": {
     color: "white",
-    marginTop: "7rem",
+    // marginTop: "7rem",
     justifyContent: "space-around",
     fontWeight: "bold",
+   textAlign: "center",
     fontSize: "15px",
     marginLeft: "1rem",
   },
@@ -593,7 +632,7 @@ const MainWrapper = styled(Box)({
   "& .typo-2": {
     fontSize: "40px",
     fontWeight: "bold",
-    marginTop: "3rem",
+    marginTop: "1rem",
     fontFamily: "sans-serif",
     color: "#fff",
     textAlign: "center",
@@ -675,9 +714,9 @@ const MainWrapper = styled(Box)({
     justifyContent: "space-around",
   },
 
-  "& .box-1": {
-    "@media (max-width:600px)": {
-      display: "none",
-    },
-  },
+  // "& .box-1": {
+  //   "@media (max-width:600px)": {
+  //     display: "none",
+  //   },
+  // },
 });
