@@ -48,11 +48,11 @@ class StatsCard extends Component<StatsCardProps, StatsCardState> {
   render() {
     return (
       <>
-        <LazyZenquaGlanceComponent />
-        <LazyHeroWhatWeDo />  
+        <LazyZenquaGlanceComponent isCSSApply={true} />
+        <LazyHeroWhatWeDo />
         <LazyZenquaIndustryExpertise />
-        <LazyWhyUs isFeature={true} />
-        <LazyAdoptableApprochComponent />
+        <LazyWhyUs isFeature={true} isCSSApply={true} />
+        <LazyAdoptableApprochComponent isCSSApply={true} />
         <LazyHireDeveloper />
       </>
     );

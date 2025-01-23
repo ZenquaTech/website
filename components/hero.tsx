@@ -19,9 +19,9 @@ export default function Hero() {
         className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8 "
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-justify hyphens-auto">
-          <div className="bg-transparent pt-8 pr-8 pb-8 flex flex-col text-left">
+          <div className="bg-transparent pt-8 pr-8 pb-8  flex flex-col text-left">
             <h2 className="text-lg mt-12 font-bold text-[#D9E3EA] ">
-              Best Web and Mobile App Development Company
+              Best Web and Mobile App Development Company 
             </h2>
             <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA] ">
               Developing Software For Your Digital Success

@@ -1,8 +1,9 @@
 import { ChangeEvent, useState } from "react";
-import { Grid, Box, Button } from "@mui/material";
+import { Grid, Box, Button, useMediaQuery } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import contactUsImage from "@/public/images/webpFile/Time-Material.webp"
+import { useTheme } from "@material-ui/core";
 type FormData = {
   firstName: string;
   lastName: string;
@@ -80,6 +81,8 @@ const selectFields = [
 ];
 
 const ContactUs = () => {
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -154,7 +157,7 @@ const ContactUs = () => {
   };
 
   return (
-    <Grid container className="my-24 px-4 sm:px-16">
+    <Grid container className="my-24">
       <Grid item xs={12} md={6}>
         <Box className="w-full flex flex-col justify-center items-center p-[20px]">
           <Box className="text-5xl font-bold text-center service-button mt-16 mb-12">
@@ -170,7 +173,8 @@ const ContactUs = () => {
           <Image
             width={700}
             height={475}
-            layout="responsive"
+            // layout="responsive"
+            style={{width:"400px"}}
             src={contactUsImage}
             alt="Time & Material Model"
           />
@@ -192,8 +196,8 @@ const ContactUs = () => {
         <Box
           component="form"
           onSubmit={handleSubmit}
-          className="w-full p-12 border rounded-xl m-8"
-          style={{ boxSizing: "border-box", margin: "30px" }}
+          className="w-full p-12 border rounded-xl max-sm:p-3"
+          style={{ boxSizing: "border-box",margin:isSmallScreen?"0px":"30px" }}
         >
           <Grid container spacing={3}>
             {fields.map((field, index) => (

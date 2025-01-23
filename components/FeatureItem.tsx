@@ -28,8 +28,9 @@ const FeatureItem = ({
       
     >
       <Image
-        className="max-w-full mx-auto md:max-w-none h-auto"
+        className="max-w-full mx-auto md:max-w-auto h-auto"
         src={imageSrc}
+
         width={540}
         height={405}
         style={{borderRadius:"20px"}}

@@ -13,14 +13,14 @@ import React from "react";
 import Image from "next/image";
 import "./contact.css";
 
-function adoptable_approch() {
+function adoptable_approch({ isCSSApply = false }: { isCSSApply?: boolean }) {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <div
       // className="w-full flex justify-center"
       // className="max-w-6xl mx-auto px-4 sm:px-6 flex justify-center bg-yellow-800"
-      className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8 flex justify-center "
+      className={isCSSApply?"w-full max-w-[100rem] mx-auto px-4 sm:px-6 mb-8 flex justify-center ":"mt-20"}
     >
       <div className="mt-[20px]">
         <h2 className="font text-center uppercase text-[#D9E3EA]">

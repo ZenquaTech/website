@@ -25,7 +25,7 @@ const business = [
     ]
 function BusinessEmpowerment() {
   return (
-    <Box style={{ marginTop: "5%" }}>
+    <Box style={{ marginTop: "5%",marginBottom:"5%" }}>
       <h2
         className=" font text-center  service-button"
         style={{ textTransform: "uppercase" }}
