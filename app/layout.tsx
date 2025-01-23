@@ -6,6 +6,7 @@ import Header from "@/components/ui/header";
 import Script from "next/script";
 import localFont from "@next/font/local";
 import HeaderSocial from "@/components/ui/HeaderSocial";
+import { usePathname } from "next/navigation";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -37,6 +38,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+  const pathname = usePathname (); 
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
 
@@ -69,8 +72,8 @@ export default function RootLayout({
         </Script>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          <HeaderSocial />
-          {children}
+          {pathname !== "/contact-us" && <HeaderSocial />}  
+          {children}  
           {/* <Banner /> */}
         </div>
       </body>
