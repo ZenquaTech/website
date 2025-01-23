@@ -11,7 +11,6 @@ import {
 import React from "react";
 
 import Image from "next/image";
-import "./contact.css";
 
 function adoptable_approch({ isCSSApply = false }: { isCSSApply?: boolean }) {
   const theme = useTheme();
