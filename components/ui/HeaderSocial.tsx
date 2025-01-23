@@ -6,7 +6,7 @@ import { GoDash } from "react-icons/go";
 
 
 
-function HeaderSocial() {
+function HeaderSocial( ) {
   return (
     <div className="header__socials">
       <a
