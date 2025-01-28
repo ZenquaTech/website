@@ -527,7 +527,7 @@ export default function MobileMenu() {
             }}
             className={classes.buttonConfig}
           >
-            Open Positions
+            Apply
           </button>
           <button
             onClick={() => {

@@ -1,13 +1,24 @@
 "use client";
-import React from "react";
-import { Box, Grid, Paper, Typography, Divider } from "@mui/material";
-import { FaRegCircleDot } from "react-icons/fa6";
-import { Button } from "reactstrap";
+import React, { useState, useRef } from "react";
+import {
+  Box,
+  Grid,
+  Paper,
+  Typography,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+} from "@mui/material";
 import { useMediaQuery, useTheme } from "@material-ui/core";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Page = () => {
-    const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMdScreen = useMediaQuery(theme.breakpoints.down("md"));
   const commonStyle = {
     color: "white",
     backgroundColor: "transparent",
@@ -17,10 +28,152 @@ const Page = () => {
     boxShadow: "0px 0px 8px #fff",
     transition: "transform 0.3s ease",
   };
- const handleMailTo = () => {
-   window.location.href =
-     "mailto:contact@zenqua.com?subject=Job%20Title&body=Write%20your%20message%20here";
- };
+  const [content, setContent] = React.useState<string | null>(null);
+  const [filename, setFilename] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [openModal, setOpenModal] = useState(false);
+  const [formData, setFormData] = useState<any>({
+    fullname: "",
+    email: "",
+    phone: "",
+    coverletter: "",
+    techstack: "",
+    experience: "",
+    captchaChecked: false,
+  });
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const form: any = useRef();
+
+  const handleChange = (event: any) => {
+    const { name, value, type, checked } = event.target;
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+  const validateForm = () => {
+    const validationErrors: { [key: string]: string } = {};
+
+    if (!formData.fullname.trim())
+      validationErrors.fullname = "Full Name is required.";
+    if (!formData.email.trim()) {
+      validationErrors.email = "Email is required.";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      validationErrors.email = "Email is invalid.";
+    }
+    if (!formData.phone.trim()) {
+      validationErrors.phone = "Phone is required.";
+    } else if (!/^\d{10}$/.test(formData.phone)) {
+      validationErrors.phone = "Phone must be a valid 10-digit number.";
+    }
+    if (!formData.coverletter.trim())
+      validationErrors.coverletter = "Cover Letter is required.";
+    if (!formData.techstack.trim())
+      validationErrors.techstack = "Tech Stack is required.";
+    if (!formData.experience.trim())
+      validationErrors.experience = "Experience is required.";
+    if (!content) validationErrors.file = "Please upload a CV/Resume.";
+    if (!formData.captchaChecked)
+      validationErrors.captchaChecked =
+        "You must agree to the terms and conditions.";
+
+    return validationErrors;
+  };
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+    setLoading(true);
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      setLoading(false);
+      return;
+    }
+    if (content === null) {
+      alert("Please select a file to upload");
+      setLoading(false);
+      return;
+    }
+    const base64Content = content.split(",")[1];
+    try {
+      const res: any = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ content: base64Content, filename, formData }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (data) {
+          setFormData({
+            fullname: "",
+            email: "",
+            phone: "",
+            coverletter: "",
+            techstack: "",
+            experience: "",
+            captchaChecked: false,
+          });
+
+          setContent(null);
+          setFilename("");
+          setErrors({});
+
+          // Clear file input using ref
+          if (fileInputRef.current) {
+            fileInputRef.current.value = "";
+          }
+          // notify("Your application has been submitted.", "success");
+          setOpenModal(true);
+        } else {
+          notify("Something went wrong. No response data received.", "error");
+        }
+      } else {
+        const errorMessage = `Request failed with status: ${res.status}`;
+        console.error(errorMessage);
+        notify(errorMessage, "error");
+      }
+    } catch (e) {
+      notify(
+        "Something went wrong while submitting your application.",
+        "error"
+      );
+    } finally {
+      // Reset loading state after the submission attempt
+      setLoading(false);
+    }
+  };
+  const notify = (message: any, type: any) =>
+    toast(<p style={{ fontSize: 16 }}>{message}</p>, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      rtl: false,
+      pauseOnFocusLoss: true,
+      draggable: true,
+      pauseOnHover: true,
+      type,
+    });
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+  const onAddFileAction = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const reader = new FileReader();
+    const files = e.target.files;
+    if (files && files.length > 0) {
+      reader.onload = (r) => {
+        if (r.target?.result) {
+          setContent(r.target.result.toString());
+          setFilename(files[0].name);
+          setErrors((prevErrors) => ({ ...prevErrors, file: "" })); // Clear file error
+        }
+      };
+      reader.readAsDataURL(files[0]);
+    }
+  };
+
   return (
     <div
       // style={{ marginTop: "100px", padding: "27px" }}
@@ -118,166 +271,225 @@ const Page = () => {
         </Box>
       </Box>
 
-      <Grid
-        container
-        spacing={1}
-        justifyContent="center"
-        // style={{ width: "100vw", margin: "0 auto", display: "flex" }}
+      <Box
+        className=" bg-gray-800 rounded-[20px]"
+        style={{
+          boxSizing: "border-box",
+          marginLeft: isMdScreen ? "" : "100px",
+          marginRight: isMdScreen ? "" : "100px",
+          padding: isSmallScreen ? "1.5rem" : "3rem",
+          marginBottom: "150px",
+        }}
       >
-        <Grid
-          item
-          sm={12}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginBottom: "5%",
-          }}
-        >
-          <Box className="flex justify-center" style={{ width: "100%" }}>
-            <Paper
-              style={{
-                height: "max(70%,100%)",
-                backgroundColor: "transparent",
-                boxShadow: "0px 0px 5px white",
-                width: "92%",
-                padding: "20px",
-              }}
-            >
-              <Paper
-                className="flex-col md:flex-row"
-                style={{
-                  marginTop: "5px",
-                  backgroundColor: "transparent",
-                  display: "flex",
-                  boxShadow: "none",
-                }}
+        <h1 className="text-[24px] mb-6 font-bold   text-[#D9E3EA]">
+          Apply for the Job
+        </h1>
+        <form ref={form}>
+          <Grid container spacing={3}>
+            {["Full Name", "Email", "Phone"].map((label, index) => (
+              <Grid
+                item
+                xs={12}
+                md={12}
+                className="m-[10px] font-bold"
+                key={index}
               >
-                <Box
-                  className="w-full md:w-1/2"
-                  style={{ color: "#A1A1A1", padding: "10px" }}
-                >
-                  <Typography
-                    variant="h5"
-                    style={{
-                      fontWeight: "bold",
-                      color: "#fff",
-                      marginBottom: "1rem",
-                    }}
-                  >
-                    Featured Jobs We're Hiring
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    className="text-justify text-center mb-2 service-button lg:mt-0"
-                  >
-                    ZenQua offers an excellent career where every day is filled
-                    with great excitement and unmatchable growth. Our industry
-                    leaders guide in creating next-gen IT solutions by using the
-                    latest tools and technologies.
-                  </Typography>
+                <Box className="mb-[10px]">
+                  {label}
+                  <span className="text-red-500 ml-1">*</span>
                 </Box>
-                <Divider
-                  orientation="vertical"
-                  flexItem
-                  style={{
-                    backgroundColor: "#A1A1A1",
-                    width: "4px",
-                    margin: "0 2%",
-                  }}
+                <input
+                  onChange={handleChange}
+                  name={label.toLowerCase().replace(" ", "")}
+                  value={formData[label.toLowerCase().replace(" ", "")]}
+                  type={label === "Email" ? "email" : "text"}
+                  placeholder={label}
+                  className={`input input-bordered w-full bg-gray-800 text-white bg-[rgba(150,144,162,.08)] focus:bg-gray-800  ${
+                    errors[label.toLowerCase().replace(" ", "")]
+                      ? "border-red-500 focus:border-red-500"
+                      : "focus:border-[#019dce]"
+                  }`}
+                  // className="input input-bordered w-full bg-gray-800 text-white bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce] "
                 />
-                <Box
-                  className="w-full md:w-1/2"
+                {errors[label.toLowerCase().replace(" ", "")] && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors[label.toLowerCase().replace(" ", "")]}
+                  </p>
+                )}
+              </Grid>
+            ))}
+            <Grid item xs={12} className="m-[10px] font-bold">
+              <Box className="mb-[10px]">
+                Cover Letter
+                <span className="text-red-500 ml-1">*</span>
+              </Box>
+              <textarea
+                onChange={handleChange}
+                name="coverletter"
+                value={formData.coverletter}
+                className={`textarea textarea-bordered h-24 w-full bg-gray-800 text-white bg-[rgba(150,144,162,.08)] focus:bg-gray-800  ${
+                  errors.coverletter
+                    ? "border-red-500 focus:border-red-500"
+                    : "focus:border-[#019dce]"
+                }`}
+                placeholder="Cover Letter"
+              ></textarea>
+              {errors.coverletter && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.coverletter}
+                </p>
+              )}
+            </Grid>
+            {["Tech Stack", "Experience"].map((label, index) => (
+              <Grid
+                item
+                xs={12}
+                md={12}
+                className="m-[10px] font-bold"
+                key={index}
+              >
+                <Box className="mb-[10px]">
+                  {label}
+                  <span className="text-red-500 ml-1">*</span>
+                </Box>
+                <input
+                  onChange={handleChange}
+                  name={label.toLowerCase().replace(" ", "")}
+                  type={label === "Email" ? "email" : "text"}
+                  value={formData[label.toLowerCase().replace(" ", "")]}
+                  placeholder={label}
+                  className={`input input-bordered w-full bg-gray-800 text-white bg-[rgba(150,144,162,.08)] focus:bg-gray-800 focus:border-[#019dce] ${
+                    errors[label.toLowerCase().replace(" ", "")]
+                      ? "border-red-500 focus:border-red-500"
+                      : "focus:border-[#019dce]"
+                  }`}
+                />
+                {errors[label.toLowerCase().replace(" ", "")] && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors[label.toLowerCase().replace(" ", "")]}
+                  </p>
+                )}
+              </Grid>
+            ))}
+            <Grid item xs={12} className="m-[10px] font-bold">
+              <Box className="mb-[10px]">
+                Upload CV/Resume
+                <span className="text-red-500 ml-1">*</span>
+              </Box>
+              <input
+                type="file"
+                name="file"
+                ref={fileInputRef}
+                // value={File}
+
+                onChange={onAddFileAction}
+                accept=".pdf, .doc, .docx"
+                className={`${errors.file ? "border-red-500" : ""}`}
+              />
+              {errors.file && (
+                <p className="text-red-500 text-sm mt-1">{errors.file}</p>
+              )}
+              <Box style={{ marginTop: "10px" }}>
+                <span
                   style={{
-                    color: "#9BA9B4",
-                    backgroundColor: "transparent",
-                    padding: "10px",
-                    display: "flex",
-                    flexDirection: "column",
+                    color: "rgb(155 169 180 / var(--tw-text-opacity))",
+                    fontSize: "13px",
                   }}
                 >
-                  <Typography
-                    variant="h5"
-                    style={{
-                      fontWeight: "bold",
-                      color: "#fff",
-                      marginBottom: "1rem",
-                    }}
-                  >
-                    Job Title
-                  </Typography>
-                  {[
-                    "Trainee",
-                    "ASP.Net Developer",
-                    "Power BI Developer",
-                    "Power Apps Developer",
-                    "DevOps Engineer",
-                    "Java Developer",
-                  ].map((title, idx) => (
-                    <Typography
-                      key={idx}
-                      style={{ display: "flex", alignItems: "center" }}
-                    >
-                      <FaRegCircleDot style={{ marginRight: "2%" }} />
-                      {title}
-                    </Typography>
-                  ))}
-                </Box>
-              </Paper>
-            </Paper>
-          </Box>
-        </Grid>
-      </Grid>
+                  Allowed Type(s): .pdf, .doc, .docx
+                </span>
+              </Box>
+            </Grid>
+            <Grid item xs={12} className="m-[10px]">
+              <label className="flex items-center">
+                <input
+                  type="checkbox"
+                  name="captchaChecked"
+                  value={formData.captchaChecked}
+                  checked={formData.captchaChecked}
+                  onChange={handleChange}
+                  className="form-checkbox h-5 w-5 text-green-500 rounded-md mr-2"
+                />
+                By using this form you agree with the storage and handling of
+                your data by this website.
+                <span className="text-red-500 ml-1">*</span>
+              </label>
+              {errors.captchaChecked && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.captchaChecked}
+                </p>
+              )}
+            </Grid>
 
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <div style={{ boxSizing: "border-box", width: "80%" }}>
-          <Grid container spacing={2} style={{ padding: "20px" }}>
-            <Grid item xs={12}>
-              <Typography
-                variant={isSmallScreen ? "h4" : "h2"}
-                align="center"
-                style={{ fontWeight: "bold" }}
-              >
-                Join Our Innovative Team
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography
-                variant="h6"
-                align="center"
-                className="text-[#9BA9B4] mb-2 service-button mt-2 lg:mt-0"
-              >
-                Give Yourself a Chance to work on trending and emerging
-                projects.
-              </Typography>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              style={{ display: "flex", justifyContent: "center" }}
-            >
+            <Grid item xs={12} className="m-[10px] font-bold">
               <Button
-                variant="contained"
-                onClick={handleMailTo}
                 style={{
-                  borderRadius: "10px",
-                  fontSize: "17px",
-                  textTransform: "none",
-                  marginTop: "8px 30px",
                   backgroundColor: "#019dce",
-                  color: "#FFF",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginBottom: "10%",
+                  color: "white",
+                  padding: "10px 30px",
+                  fontWeight: "bold",
+                  textTransform: "none",
                 }}
+                disabled={loading}
+                onClick={handleSubmit}
               >
-                Apply Now
+                {loading ? "Submitting..." : "Submit"}
               </Button>
             </Grid>
           </Grid>
-        </div>
+        </form>
       </Box>
+      <ToastContainer />
+      <Dialog
+        open={openModal}
+        onClose={handleCloseModal}
+        PaperProps={{
+          style: {
+            backgroundColor: "#25282C",
+            borderRadius: "20px",
+            boxShadow: "rgb(255, 255, 255) 0px 0px 7px",
+          },
+        }}
+      >
+        <DialogContent>
+          <Typography style={{ fontWeight: "500", color: "white" }}>
+            Your application has been submitted successfully!
+          </Typography>
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            sx={{
+              marginTop: "1rem",
+              color: "rgb(155 169 180 / var(--tw-text-opacity))",
+            }}
+          >
+            For more updates, follow us on{" "}
+            <a
+              href="https://www.linkedin.com/company/zenqua-technologies/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#019dce" }}
+            >
+              LinkedIn
+            </a>
+            .
+          </Typography>
+        </DialogContent>
+        <DialogActions style={{ padding: "20px 24px" }}>
+          <Button
+            onClick={handleCloseModal}
+            style={{
+              backgroundColor: "#019dce",
+              color: "white",
+              padding: "5px 20px",
+              fontWeight: "bold",
+              textTransform: "none",
+            }}
+          >
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 };

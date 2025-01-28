@@ -500,7 +500,7 @@ const Navbar = () => {
                 fontWeight: "500",
               }}
             >
-              Open Positions
+              Apply
             </Typography>
           </Link>
         </Button>
