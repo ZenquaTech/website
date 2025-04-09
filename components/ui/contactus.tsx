@@ -173,7 +173,7 @@ const ContactUs = () => {
           <Image
             width={700}
             height={475}
-            // layout="responsive"
+             layout="responsive"
             style={{width:"400px"}}
             src={contactUsImage}
             alt="Time & Material Model"

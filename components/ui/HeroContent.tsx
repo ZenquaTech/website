@@ -26,13 +26,13 @@ function HeroContent({ item, image }: any) {
         style={{ width: isSmallScreen ? "100%" : "60%" }}
       >
         <h2 className="text-lg mt-12 font-bold text-[#D9E3EA]">
-          {item.heading1}
+          {item?.heading1}
         </h2>
         <h1 className="text-2xl md:text-3xl font-bold my-4 text-[#D9E3EA]">
-          {item.heading2}
+          {item?.heading2}
         </h1>
         <p className="text-medium my-2 text-justify text-[#9BA9B4]">
-          {item.para}
+          {item?.para}
         </p>
         <Button
           variant="contained"
@@ -52,7 +52,7 @@ function HeroContent({ item, image }: any) {
             textTransform: "none",
           }}
         >
-          {item.button}
+          {item?.button}
         </Button>
       </div>
       <div
@@ -61,7 +61,7 @@ function HeroContent({ item, image }: any) {
       >
         <Image
           src={image}
-          alt={item.heading1}
+          alt={item?.heading1}
           className="object-contain"
           width={880}
           height={799}

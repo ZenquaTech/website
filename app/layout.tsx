@@ -8,12 +8,15 @@ import localFont from "@next/font/local";
 import HeaderSocial from "@/components/ui/HeaderSocial";
 import { usePathname } from "next/navigation";
 import { ThemeProvider, useTheme } from "@material-ui/core";
+import SchemaMarkup from "@/components/SchemaMarkup";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
 
+// Removed metadata export
 
 const surt = localFont({
   src: "./../public/DMSans-VariableFont_opsz,wght.ttf",
@@ -34,14 +37,15 @@ declare global {
     gtag: (...args: any[]) => void;
   }
 }
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-
-  const pathname = usePathname (); 
-  const theme = useTheme()
+  const pathname = usePathname(); 
+  const theme = useTheme();
+  
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
 
@@ -72,13 +76,14 @@ export default function RootLayout({
           gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
         `}
         </Script>
-         <ThemeProvider theme={theme}>
-        <div className="flex flex-col min-h-screen overflow-hidden">
-          <Header />
-          {pathname !== "/contact-us" && <HeaderSocial />}  
-          {children}  
-          {/* <Banner /> */}
-        </div>
+        <ThemeProvider theme={theme}>
+          <div className="flex flex-col min-h-screen overflow-hidden">
+            <Header />
+            {pathname !== "/contact-us" && <HeaderSocial />}  
+            <SchemaMarkup/>
+            {children}  
+            {/* <Banner /> */}
+          </div>
         </ThemeProvider>
       </body>
     </html>

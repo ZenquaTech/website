@@ -9,6 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import heroImageIcon from "@/public/images/zenquaphoto.jpg"
 import locationImageIcon from "@/public/images/location1.png"
+import Head from "next/head";
 
 import Image from "next/image";
 export default function ContactUs() {
@@ -95,6 +96,12 @@ export default function ContactUs() {
 
   return (
     <MainWrapper>
+      <Head>
+        {/* Adding meta keyword for SEO */}
+        <meta name="keywords" content="top 10 vue.js company in Indore, vue.js development, best vue.js companies, IT staff augmentation, vue.js experts in Indore, vue.js developers" />
+        <meta name="description" content="Looking for the top Vue.js companies in Indore? Hire the best Vue.js developers and IT staff augmentation services." />
+        <title>Top Vue.js Company in Indore | Hire Vue.js Developers</title>
+      </Head>
       {/* First Container */}
       <Grid container className="my-20 px-4">
         <Grid item xs={12} className="flex justify-start ">
