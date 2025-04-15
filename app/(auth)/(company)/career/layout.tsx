@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: "ZenQua Technologies Pvt Ltd",
       images: [
         {
-          url: new URL("/images/zenqua-og-image.jpg", metadataBase).toString(),
+          url: new URL("https://www.zenqua.com/images/zenqua-og-image.jpg", metadataBase).toString(),
           width: 800,
           height: 600,
           alt: "ZenQua Technologies",
