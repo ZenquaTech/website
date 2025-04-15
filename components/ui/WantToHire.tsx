@@ -29,7 +29,7 @@ function WantToHire({ headingText, buttonText }: any) {
               marginLeft: 16,
             }}
           >
-            Want To Hire An Offshore
+            Want To Hire An Offshore 
             <span style={{ color: "#019dce", flexWrap: "wrap", margin: 8 }}>
               {headingText}
             </span>
