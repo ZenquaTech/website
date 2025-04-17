@@ -16,6 +16,7 @@ const inter = Inter({
   display: "swap",
 });
 
+// Removed metadata export
 
 const surt = localFont({
   src: "./../public/DMSans-VariableFont_opsz,wght.ttf",
@@ -36,14 +37,15 @@ declare global {
     gtag: (...args: any[]) => void;
   }
 }
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-
-  const pathname = usePathname (); 
-  const theme = useTheme()
+  const pathname = usePathname(); 
+  const theme = useTheme();
+  
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
 

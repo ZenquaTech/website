@@ -25,6 +25,7 @@ import oracle from "@/components/assets/img/angularimg/oracle.webp";
 import python from "@/components/assets/img/angularimg/python.webp";
 import smallMediumBusiness from "@/components/assets/img/reactjsimg/small-medium_business.webp";
 import HeroContent from "@/components/ui/HeroContent";
+import Head from 'next/head';
 const LazyCircleContent = dynamic(
   () => import("@/components/ui/CircleContent")
 );
@@ -138,6 +139,12 @@ class RoutePage extends Component<RoutePageProps, PageState> {
 
     return (
       <>
+      <Head>
+        {/* Adding meta keyword for SEO */}
+        <meta name="keywords" content="top 10 vue.js company in Indore, vue.js development, best vue.js companies, IT staff augmentation, vue.js experts in Indore, vue.js developers" />
+        <meta name="description" content="Looking for the top Vue.js companies in Indore? Hire the best Vue.js developers and IT staff augmentation services." />
+        <title>Top Vue.js Company in Indore | Hire Vue.js Developers</title>
+      </Head>
         <MainWrapper>
           <div 
             // className="max-w-[95%] mx-auto px-4 sm:px-6 md:mt-12 sm:mt-20 mb-8"
@@ -147,7 +154,7 @@ class RoutePage extends Component<RoutePageProps, PageState> {
             <HeroContent
               item={content.section1}
               image={
-                imageMap[content.section1.image]?.src || content.section1.image
+                imageMap[content?.section1?.image]?.src || content.section1?.image
               }
             />
 

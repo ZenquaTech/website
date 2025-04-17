@@ -14,6 +14,7 @@ import {
 import { useMediaQuery, useTheme } from "@material-ui/core";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Head from "next/head";
 
 const Page = () => {
   const theme = useTheme();
@@ -179,6 +180,12 @@ const Page = () => {
       // style={{ marginTop: "100px", padding: "27px" }}
       className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 mt-[100px]  mb-8"
     >
+      <Head>
+        {/* Adding meta keyword for SEO */}
+        <meta name="keywords" content="top 10 vue.js company in Indore, vue.js development, best vue.js companies, IT staff augmentation, vue.js experts in Indore, vue.js developers" />
+        <meta name="description" content="Looking for the top Vue.js companies in Indore? Hire the best Vue.js developers and IT staff augmentation services." />
+        <title>Top Vue.js Company in Indore | Hire Vue.js Developers</title>
+      </Head>
       <Box
         sx={{
           boxSizing: "border-box",
