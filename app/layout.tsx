@@ -8,6 +8,8 @@ import localFont from "@next/font/local";
 import HeaderSocial from "@/components/ui/HeaderSocial";
 import { usePathname } from "next/navigation";
 import { ThemeProvider, useTheme } from "@material-ui/core";
+import PHeader from "@/components/Product/PHeader";
+import Footer from "@/components/Product/Footer";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -74,9 +76,11 @@ export default function RootLayout({
         </Script>
          <ThemeProvider theme={theme}>
         <div className="flex flex-col min-h-screen overflow-hidden">
-          <Header />
+          {pathname === "/product"   &&  <PHeader /> } 
+          {pathname !== "/product" && pathname !== "/poc-booking"  && pathname !== "/thank-you"  && <Header />}
           {pathname !== "/contact-us" && <HeaderSocial />}  
           {children}  
+          {pathname === "/product"  &&  <Footer /> } 
           {/* <Banner /> */}
         </div>
         </ThemeProvider>
