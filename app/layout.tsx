@@ -1,92 +1,35 @@
-"use client";
-import "./css/style.css";
-import { Inter, Architects_Daughter } from "next/font/google";
-import { useEffect } from "react";
-import Header from "@/components/ui/header";
-import Script from "next/script";
-import localFont from "@next/font/local";
-import HeaderSocial from "@/components/ui/HeaderSocial";
-import { usePathname } from "next/navigation";
-import { ThemeProvider, useTheme } from "@material-ui/core";
-import PHeader from "@/components/Product/PHeader";
-import Footer from "@/components/Product/Footer";
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
+// app/layout.tsx
+import './css/style.css';
+import { Metadata } from 'next';
+import ClientRootLayout from './ClientRootLayout';
 
-// Removed metadata export
+export const metadata: Metadata = {
+  metadataBase: new URL('https://www.zenqua.com'),
+  title: 'Zenqua | Custom Software Solutions',
+  description: 'Top Software Development company in Indore offering Custom Solutions...',
+  openGraph: {
+    title: 'Zenqua | Custom Software Solutions',
+    description: 'Top Software Development company in Indore...',
+    url: 'https://www.zenqua.com',
+    siteName: 'Zenqua Technology',
+    images: [
+      {
+        url: '/images/zenqua-og-image.jpg',
+        width: 1600,
+        height: 400,
+        alt: 'Zenqua OG Banner',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Zenqua | Custom Software Solutions',
+    description: 'Top Software Development company in Indore...',
+    images: ['/images/zenqua-og-image.jpg'],
+  },
+};
 
-const surt = localFont({
-  src: "./../public/DMSans-VariableFont_opsz,wght.ttf",
-  variable: "--font-dmsans",
-  display: "swap",
-});
-
-const architects_daughter = Architects_Daughter({
-  subsets: ["latin"],
-  variable: "--font-architects-daughter",
-  weight: "400",
-  display: "swap",
-});
-
-declare global {
-  interface Window {
-    dataLayer: any[];
-    gtag: (...args: any[]) => void;
-  }
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const pathname = usePathname(); 
-  const theme = useTheme();
-  
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-
-    // Define gtag function
-    window.gtag = function gtag() {
-      window.dataLayer.push(arguments);
-    };
-
-    // Initialize Google Analytics
-    window.gtag("js", new Date());
-    window.gtag("config", process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "");
-  }, []);
-
-  return (
-    <html lang="en">
-      <body
-        className={`${surt.variable} ${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}
-      >
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-        `}
-        </Script>
-         <ThemeProvider theme={theme}>
-        <div className="flex flex-col min-h-screen overflow-hidden">
-          {pathname === "/product"   &&  <PHeader /> } 
-          {pathname !== "/product" && pathname !== "/poc-booking"  && pathname !== "/thank-you"  && <Header />}
-          {pathname !== "/contact-us" && <HeaderSocial />}  
-          {children}  
-          {pathname === "/product"  &&  <Footer /> } 
-          {/* <Banner /> */}
-        </div>
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <ClientRootLayout>{children}</ClientRootLayout>;
 }

@@ -33,15 +33,15 @@ export default function Home() {
         <meta property="og:type" content="website" />
      
         <meta property="og:image" content="https://www.zenqua.com/images/zenqua-og-image.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="400" />
         <meta property="og:site_name" content="Zenqua Technology" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content="https://www.zenqua.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.zenqua.com/images/zenqua-og-image.jpg" />
 
         {/* Organization Schema */}
         <Script
