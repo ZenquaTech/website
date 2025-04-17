@@ -16,10 +16,8 @@ import {
 import DeleteIcon from "@mui/icons-material/Delete";
 import { useState } from "react";
 import AddFeatureModal from "@/components/modals/Add-Feature-modal";
-// import { useNavigate } from "react-router-dom";
-// import { useDispatch } from "react-redux";
-// import { openAddFeatureModal } from "../redux/slices/addFeatureModalSlice";
-// import AddFeatureModal from "../models/AddFeature-model";
+import '../css/poc-booking-css.css'
+
 
 const featuresList = [
   { name: "Google", price: 2 },
@@ -28,8 +26,6 @@ const featuresList = [
 ];
 
 const POCBookingForm = () => {
-  // const dispatch = useDispatch();
-  // const navigate = useNavigate();
 
   const [selectedFeatures, setSelectedFeatures] = useState([
     { name: "Facbook" },
@@ -42,17 +38,6 @@ const POCBookingForm = () => {
 
   const arrow = "/images/product/arrow.svg";
 
-  // const handleAddFeature = () => {
-  //   if (
-  //     newFeature &&
-  //     !selectedFeatures.find((item) => item.name === newFeature)
-  //   ) {
-  //     const feature = featuresList.find((item) => item.name === newFeature);
-  //     setSelectedFeatures([...selectedFeatures, feature]);
-  //   }
-  //   setNewFeature("");
-  // };
-
   const handleDelete = (featureName: any) => {
     setSelectedFeatures(selectedFeatures.filter((f) => f.name !== featureName));
   };
@@ -61,36 +46,8 @@ const POCBookingForm = () => {
       prev.filter((feature) => feature.name !== name)
     );
   };
-
-  // const totalCost = selectedFeatures.reduce((sum, item) => sum + item.price, 0);
-
   return (
     <>
-      <style>
-        {`
-            .input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  width: 100%;
-}
-
-.input-group label {
-  font-weight: 500;
-  color: #333;
-  font-size: 14px;
-}
-
-.custom-input {
-  padding: 12px 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  outline: none;
-  transition: border-color 0.2s ease;
-}
-          `}
-      </style>
       <Box sx={{ minHeight: "100vh", py: 4, backgroundColor: "#fff" }}>
         <Box sx={{ ml: 4, mb: 2 }}>
           <img
