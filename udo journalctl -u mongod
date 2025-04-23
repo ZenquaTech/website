@@ -1,0 +1,10 @@
+[0;1;31m●[0m mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Mon 2025-03-24 17:55:41 IST; 17s ago
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 55748 (code=exited, status=14)
+
+Mar 24 17:55:41 developer systemd[1]: Started MongoDB Database Server.
+Mar 24 17:55:41 developer mongod[55748]: {"t":{"$date":"2025-03-24T12:25:41.335Z"},"s":"I",  "c":"CONTROL",  "id":7484500, "ctx":"-","msg":"Environment variable MONGODB_CONFIG_OVERRIDE_NOFORK == 1, overriding \"processManagement.fork\" to false"}
+Mar 24 17:55:41 developer systemd[1]: [0;1;39m[0;1;31m[0;1;39mmongod.service: Main process exited, code=exited, status=14/n/a[0m
+Mar 24 17:55:41 developer systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmongod.service: Failed with result 'exit-code'.[0m
