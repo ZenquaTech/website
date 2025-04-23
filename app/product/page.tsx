@@ -23,30 +23,35 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Footer from "@/components/Product/Footer";
+import { useProductContext } from "@/context/product/productContext";
 
 const Products = () => {
-  const [cartItems, setCartItems] = useState([]);
   const [products, setProducts] = useState([]);
   const [category, setCategory] = useState("");
   const [industries, setIndustries] = useState([]);
   const [price, setPrice] = useState("");
   const meetingImg = "/images/product/meeting.png";
-  const video = "/images/product/video.png"
-  
-  const handleRemove = (type : string, value:any) => {
+  const video = "/images/product/video.png";
+  const { cart, setCart } = useProductContext();
+  const handleRemove = (type: string, value: any) => {
     if (type === "category") setCategory("");
     if (type === "price") setPrice("");
     if (type === "industry") {
       setIndustries((prev) => prev.filter((item) => item !== value));
     }
   };
+  const handleAddToCart = (product: any) => {
+    const updatedCartItems = [...cart, product];
+    setCart(updatedCartItems);
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+  };
   const getAllProducts = () => {
     axios
-      .get("http://localhost:9000/api/product/get_products")
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/product/get_products`)
       .then((res) => {
-        const updatedProducts = res.data.products.map((product : any) => {
-          const isInCart = cartItems.some(
-            (cartItem : any) => cartItem._id === product._id
+        const updatedProducts = res.data.products.map((product: any) => {
+          const isInCart = cart.some(
+            (cartItem: any) => cartItem._id === product._id
           );
           return {
             ...product,
@@ -62,7 +67,7 @@ const Products = () => {
 
   useEffect(() => {
     getAllProducts();
-  }, [cartItems]);
+  }, [cart]);
 
   return (
     <>
@@ -72,42 +77,34 @@ const Products = () => {
           flexDirection: "column",
           minHeight: "100vh", // Ensures the footer stays at the bottom
           backgroundColor: "#fff",
+          marginTop: 10,
         }}
       >
         <Box
-         sx={{
-          width: "1440px",
-          height: "540px",
-          position: "relative", // <-- add this!
-          backgroundImage: `linear-gradient(#000000C2, #000000C2), url(${meetingImg})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover", // better than "100% 100%" for scaling
-          backgroundPosition: "center",
-        }}
+          sx={{
+            width: "100%", // Fixed width
+            height: { xs: "auto", md: "540px" },
+            position: "relative",
+            backgroundImage: `linear-gradient(#000000C2, #000000C2), url(${meetingImg})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            py: { xs: 6, md: 0 },
+            margin: "0 auto",
+          }}
         >
-          <Container
-            sx={{
-              width: 842,
-              height: 235,
-              position: "absolute",
-              top: 152.5,
-              left: 299,
-              display: "flex",
-              alignItems: "center",
-              marginTop: "46px",
-              gap: "30px",
-              backgroundColor: "transparent", // add background if needed
-            }}
-          >
-            <Grid spacing={4}>
-              <Grid item xs={12} md={6}>
+          <Container maxWidth="md">
+            <Grid container spacing={4} justifyContent="center">
+              <Grid item xs={12}>
                 <Typography
                   sx={{
                     fontFamily: "Roboto",
                     fontWeight: 700,
-                    fontSize: "48px",
-                    lineHeight: "100%",
-                    letterSpacing: 0,
+                    fontSize: { xs: "28px", sm: "36px", md: "48px" },
+                    lineHeight: "120%",
                     textAlign: "center",
                     textTransform: "capitalize",
                     color: "#fff",
@@ -116,6 +113,7 @@ const Products = () => {
                 >
                   Experience the fastest way to build an AI proof of concept
                 </Typography>
+
                 <Typography
                   variant="body1"
                   sx={{
@@ -123,6 +121,7 @@ const Products = () => {
                     mb: 3,
                     textAlign: "center",
                     fontFamily: "Roboto",
+                    fontSize: { xs: "16px", md: "18px" },
                   }}
                 >
                   From feature selection & fast delivery, we simplify AI POC
@@ -133,22 +132,17 @@ const Products = () => {
                   variant="contained"
                   color="primary"
                   endIcon={<ArrowForwardIcon />}
-                  style={{backgroundColor : '#3b7be3'}}
+                  style={{ backgroundColor: "#3b7be3" }}
                   sx={{
                     width: "178px",
                     height: "56px",
-                    gap: "10px",
                     borderRadius: "8px",
-                    paddingTop: "16px",
-                    paddingRight: "26px",
-                    paddingBottom: "16px",
-                    paddingLeft: "26px",
                     fontWeight: "bold",
                     textTransform: "none",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    margin: "0 auto",
+                    mx: "auto",
                   }}
                 >
                   Get Started
@@ -157,6 +151,7 @@ const Products = () => {
             </Grid>
           </Container>
         </Box>
+
         <Box
           sx={{
             width: "1200px",
@@ -183,7 +178,7 @@ const Products = () => {
               </Typography>
               <Typography
                 variant="h5"
-                sx={{ fontWeight: 700, marginBottom: 2, color: 'black'}}
+                sx={{ fontWeight: 700, marginBottom: 2, color: "black" }}
               >
                 We simplify the journey by giving you the tools to build a
                 custom Proof of Concept without any technical barriers.
@@ -398,7 +393,7 @@ const Products = () => {
             {category && (
               <Chip
                 label={category}
-                onDelete={() => handleRemove("category","")}
+                onDelete={() => handleRemove("category", "")}
                 sx={{
                   height: 32,
                   borderRadius: "26px",
@@ -423,7 +418,7 @@ const Products = () => {
             {price && (
               <Chip
                 label={price}
-                onDelete={() => handleRemove("price",'')}
+                onDelete={() => handleRemove("price", "")}
                 sx={{
                   height: 32,
                   borderRadius: "26px",
@@ -463,16 +458,18 @@ const Products = () => {
         </Box>
         <Box
           sx={{
-            flexGrow: 1, // Makes sure this area takes available space
-            display: "flex",
             flexWrap: "wrap",
+            width: 1200,
+            margin: "0 auto",
+            display: "flex",
+            flexDirection: "row",
             gap: "30px",
-            justifyContent: "center",
             paddingTop: "20px",
             paddingBottom: "50px",
+            backgroundColor: "background.paper",
           }}
         >
-          {products.map((data : any, index) => (
+          {products.map((data: any, index) => (
             <Card
               key={index}
               sx={{
@@ -488,12 +485,12 @@ const Products = () => {
               <Box>
                 <CardMedia
                   component="img"
-                  image={`http://localhost:9000/${data.image}`}
+                  image={`${process.env.NEXT_PUBLIC_BASE_URL}/${data.image}`}
                   alt={data.title}
                   sx={{
-                    height: 200,        // or '200px'
-                    width: 400,         // set your desired width
-                    borderRadius: "4px"
+                    height: 200, // or '200px'
+                    width: 400, // set your desired width
+                    borderRadius: "4px",
                   }}
                 />
                 <CardContent>
@@ -517,6 +514,8 @@ const Products = () => {
 
               <Button
                 variant="outlined"
+                disabled={data.isSelected}
+                onClick={() => handleAddToCart(data)}
                 sx={{
                   width: "100%",
                   height: 43,
@@ -533,13 +532,12 @@ const Products = () => {
                   },
                 }}
               >
-                Add to Cart
+                {data.isSelected ? "Added" : "Add to Cart"}
               </Button>
             </Card>
           ))}
         </Box>
       </Box>
-      <Footer />
     </>
   );
 };

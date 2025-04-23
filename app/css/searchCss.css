@@ -1,96 +1,117 @@
-* {
-  box-sizing: border-box;
+/* Header Layout */
+.header {
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  align-items: center;
+  position: fixed;  /* Fix the header */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
 }
 
+/* Ensure the rest of the content doesn't get hidden behind the fixed header */
 body {
   margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  background-color: #fff;
 }
 
-.header {
-  width: 100%;
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  z-index: 1000;
+.main-content {
+  margin-top: 80px;  /* Push content below the header */
+  overflow-y: auto;
+  padding: 20px;
+  height: calc(100vh - 80px);  /* Full viewport height minus the header */
 }
 
+/* Other existing styles */
 .header-content {
-  max-width: 1440px;
-  width: 100%;
-  height: 92px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 120px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.logo-img {
-  height: 110px;
-  object-fit: contain;
+.block {
+  display: flex;
+  align-items: center;
 }
 
 .search-cart {
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 430px;
-  height: 44px;
 }
 
-.search-field .MuiOutlinedInput-root {
-  width: 368px;
-  height: 44px;
-  padding: 0 14px;
-  border-radius: 100px;
+.custom-search {
+  position: relative;
 }
 
-.search-field .MuiOutlinedInput-input {
-  padding: 12px 0;
+.search-input {
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
 }
 
-.cart-badge {
-  color: #019dce;
+.search-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-a {
-  text-decoration: none;
+.cartIcon-img {
+  width: 35px;
+  height: 35px;
 }
 
 @media (max-width: 768px) {
+  /* Mobile Layout */
   .header-content {
     flex-direction: column;
-    padding: 16px;
-    gap: 12px;
-    height: auto;
+    align-items: center;
+  }
+
+  .custom-search {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-input {
+    width: 80%;
   }
 
   .search-cart {
+    margin-top: 10px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
   }
 
-.search-field .MuiOutlinedInput-root {
-    width: 100%;
+  .cartIcon-img {
+    width: 30px;
+    height: 30px;
   }
 
-input[type="text"] {
-  width: 100%;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 999px; /* fully rounded, pill shape */
-  font-size: 14px;
-  color: black; /* text color */
-  outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background-color: white;
-}
+  /* For Logo */
+  .block img {
+    width: 90px;
+    height: 90px;
+  }
 
-input[type="text"]:focus {
-  border-color: #0070f3;
-  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
-}
-
+  /* Hide search button on mobile */
+  .search-button {
+    display: none;
+  }
 }

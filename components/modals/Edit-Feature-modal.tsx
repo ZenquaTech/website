@@ -1,19 +1,35 @@
 "use client";
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, useEffect, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close"; 
+import CloseIcon from "@mui/icons-material/Close";
 
-interface AddProductModalProps {
+interface EditProductModalProps {
   open: boolean;
   onClose: () => void;
+  product: {
+    _id: string;
+    title?: string;
+    description?: string;
+    image?: string;
+  };
+  onUpdated: () => void; // Callback to refresh list
 }
 
-const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
-  const [title, setTitle] = useState<string>("");
-  const [description, setDescription] = useState<string>("");
+const EditProductModal: React.FC<EditProductModalProps> = ({
+  open,
+  onClose,
+  product,
+  onUpdated,
+}) => {
+  const [title, setTitle] = useState<string>(product?.title || "");
+  const [description, setDescription] = useState<string>(product?.description || "");
   const [image, setImage] = useState<File | null>(null);
-  const [isHovered, setIsHovered] = useState<boolean>(false);
+
+  useEffect(() => {
+    setTitle(product?.title || "");
+    setDescription(product?.description || "");
+  }, [product]);
 
   const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -22,36 +38,42 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
     }
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    const formdata = new FormData();
-    formdata.append("title", title);
-    formdata.append("description", description);
-    if (image) {
-      formdata.append("image", image);
-    }
-
-    axios
-      .post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/product/add_product`, formdata)
-      .then((res) => {
-        if (res.data.result === "true") {
-          onClose?.(); // Close the modal after successful product addition
-        } else {
-          console.log(res.data.message);
-        }
-      })
-      .catch((err) => {
-        console.log(err);
+  
+    try {
+      const formdata = new FormData();
+      formdata.append("product_id", product._id);
+      formdata.append("title", title);
+      formdata.append("description", description);
+      if (image) {
+        formdata.append("image", image);
+      }
+  
+      const res = await axios.put(`${process.env.NEXT_PUBLIC_BASE_URL}/api/product/update_product`, formdata, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
       });
+    
+      if (res.data.result === true) {
+        onClose();
+        setTimeout(() => {
+          window.location.reload();
+        }, 300); 
+      } else {
+        console.error("Update failed:", res.data.message);
+      }
+    } catch (error) {
+      console.error("Error updating product:", error);
+    }
   };
-
-  // Inline styles
+  
   const modalStyle = {
     display: open ? 'block' : 'none',
     position: 'fixed' as 'fixed',
-    top: '0',
-    left: '0',
+    top: 0,
+    left: 0,
     width: '100%',
     height: '100%',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -65,7 +87,7 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
     margin: '100px auto',
     maxWidth: '600px',
     width: '100%',
-    position: 'relative' as 'relative', // Position relative for absolute close button
+    position: 'relative' as 'relative',
   };
 
   const inputStyled = {
@@ -78,18 +100,9 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
     color: '#9BA9B4',
   };
 
-  const buttonStyle = {
-    padding: '10px',
-    color: 'black',
-    boxShadow: '0px 0px 8px #fff',
-    marginTop: '15px',
-    cursor: 'pointer' as 'pointer',
-  };
-
   return (
     <div style={modalStyle}>
       <div style={modalContentStyle}>
-        {/* Close Button (X) */}
         <Button
           style={{
             position: 'absolute',
@@ -97,13 +110,13 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
             right: '10px',
             padding: '5px',
           }}
-          onClick={onClose} // Close the modal on clicking the X button
+          onClick={onClose}
         >
           <CloseIcon />
         </Button>
 
         <form onSubmit={handleSubmit}>
-          <h3 style={{ color: "#9BA9B4", marginBottom: '20px' }}>Add Product</h3>
+          <h3 style={{ color: "#9BA9B4", marginBottom: '20px' }}>Edit Product</h3>
 
           <input
             type="text"
@@ -128,18 +141,16 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
             style={inputStyled}
           />
 
-          {/* Buttons: Cancel and Add Product */}
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '15px' }}>
             <Button
               type="button"
               variant="contained"
+              onClick={onClose}
               style={{
-                ...buttonStyle,
                 backgroundColor: '#f0f0f0',
-
+                color: '#000',
                 width: '48%',
               }}
-              onClick={onClose} // Close the modal on cancel
             >
               Cancel
             </Button>
@@ -147,13 +158,12 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
               type="submit"
               variant="contained"
               style={{
-                ...buttonStyle,
-                color: 'white',
                 backgroundColor: '#3f51b5',
+                color: '#fff',
                 width: '48%',
               }}
             >
-              Add Product
+              Save Changes
             </Button>
           </div>
         </form>
@@ -162,4 +172,4 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
   );
 };
 
-export default AddProductModal;
+export default EditProductModal;

@@ -5,9 +5,10 @@ import {
   Card,
   CardContent,
   Checkbox,
-  Chip,
   FormControlLabel,
   Grid,
+  Radio,
+  RadioGroup,
   TextField,
   Typography,
 } from "@mui/material";
@@ -15,11 +16,10 @@ import { useState } from "react";
 import "../css/poc-booking-css.css";
 import emailjs from "@emailjs/browser";
 import { useProductContext } from "@/context/product/productContext";
-import { useRouter } from 'next/navigation';
-import Footer from "@/components/Product/Footer";
+import { useRouter } from "next/navigation";
+import Footer from "@/components/ui/footer";
 
-const POCBookingForm = () => {
- 
+const Feedback = () => {
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -32,42 +32,6 @@ const POCBookingForm = () => {
   const arrow = "/images/product/arrow.svg";
   const router = useRouter();
 
-  const handleSubmit = (event: any) => {
-    event.preventDefault();
-    router.push('/thank-you');
-    setIsLoading(true);
-    const templateParams = {
-      title: "Confirmation Email",
-      fullName: fullName,
-      email: email,
-      projectName: projectName,
-      message: message,
-      selectedFeatures: cart.map((product) => product.title),
-    };
-
-    emailjs
-      .send(
-        "service_14pyn8e",
-        "template_zzxciyv",
-        templateParams,
-        "iV2LpGhkJHKT6wGLR"
-      )
-      .then((response) => {
-        setEmail("");
-        setFullName("");
-        setMessage("");
-        setProjectName("");
-        setTermsAccepted(false);
-        router.push('/thank-you');
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
-  };
-
   return (
     <>
       <Box sx={{ minHeight: "100vh", py: 4, backgroundColor: "#fff" }}>
@@ -76,7 +40,7 @@ const POCBookingForm = () => {
             src={arrow}
             alt="Back"
             style={{ cursor: "pointer", margin: "0 130px" }}
-            onClick={() => router.push('/product')} 
+            onClick={() => router.push("/product")}
           />
         </Box>
 
@@ -103,7 +67,7 @@ const POCBookingForm = () => {
                 fontWeight={600}
                 sx={{ margin: "auto", color: "#019DCE" }}
               >
-                Submit Request
+                Feedback/Inquiry
               </Typography>
             </Box>
 
@@ -117,10 +81,10 @@ const POCBookingForm = () => {
                 lineHeight: "100%",
               }}
             >
-              Fill details below to book development of your build POC.
+              Please fill out the form below to share your feedback with us.
             </Typography>
 
-            <form onSubmit={handleSubmit}>
+            <form>
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12}>
@@ -155,76 +119,50 @@ const POCBookingForm = () => {
                   </Grid>
                   <Grid item xs={12}>
                     <div className="input-group">
-                      <label htmlFor="projectName">
-                        Project Name (optional)
-                      </label>
-                      <input
-                        type="text"
-                        value={projectName}
-                        id="projectName"
-                        name="projectName"
-                        onChange={(e) => setProjectName(e.target.value)}
-                        placeholder="Project Name"
-                        className="custom-input"
-                      />
+                      <label htmlFor="type">Select Type</label>
+                      <RadioGroup
+                        row
+                        id="type"
+                        name="type"
+                        value={projectName} // reuse projectName as state if you want
+                        onChange={(e) => setProjectName(e.target.value)} // or rename to setType if you'd like
+                      >
+                        <FormControlLabel
+                          value="Feedback"
+                          control={<Radio />}
+                          label="Feedback"
+                        />
+                        <FormControlLabel
+                          value="Inquiry"
+                          control={<Radio />}
+                          label="Inquiry"
+                        />
+                      </RadioGroup>
                     </div>
                   </Grid>
+                </Grid>
 
-                  <Grid item xs={12}>
-                    <Typography variant="body2" fontWeight={500}>
-                      Selected Features
-                    </Typography>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    multiline
+                    rows={3}
+                    label="Description"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
+                </Grid>
 
-                    <Box
-                      sx={{ mt: 1, display: "flex", gap: 1, flexWrap: "wrap" }}
-                    >
-                      {cart.map((feature) => (
-                        <Chip
-                          key={feature.title}
-                          label={feature.title}
-                          sx={{
-                            height: "32px",
-                            padding: "8px 10px",
-                            borderRadius: "4px",
-                            "& .MuiChip-label": {
-                              padding: 0,
-                            },
-                            minWidth: "fit-content",
-                            width: "auto",
-                            maxWidth: "100%",
-                            "& .MuiChip-deleteIcon": {
-                              fontSize: "16px",
-                              marginLeft: "4px",
-                              color: "#019DCE",
-                            },
-                          }}
-                        />
-                      ))}
-                    </Box>
-                  </Grid>
-
-                  <Grid item xs={12}>
-                    <TextField
-                      fullWidth
-                      multiline
-                      rows={3}
-                      label="Message"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                    />
-                  </Grid>
-
-                  <Grid item xs={12}>
-                    <FormControlLabel
-                      control={
-                        <Checkbox
-                          checked={termsAccepted}
-                          onChange={(e) => setTermsAccepted(e.target.checked)}
-                        />
-                      }
-                      label="I accept the Terms & Conditions"
-                    />
-                  </Grid>
+                <Grid item xs={12}>
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        checked={termsAccepted}
+                        onChange={(e) => setTermsAccepted(e.target.checked)}
+                      />
+                    }
+                    label="I accept the Terms & Conditions"
+                  />
                 </Grid>
               </CardContent>
 
@@ -243,7 +181,7 @@ const POCBookingForm = () => {
                   type="submit"
                   fullWidth
                   variant="contained"
-                  disabled={!termsAccepted || isLoading} 
+                  disabled={!termsAccepted || isLoading}
                   style={{
                     backgroundColor: termsAccepted ? "#019DCE" : "grey",
                   }}
@@ -273,4 +211,4 @@ const POCBookingForm = () => {
   );
 };
 
-export default POCBookingForm;
+export default Feedback;
