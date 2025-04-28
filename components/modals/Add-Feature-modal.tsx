@@ -2,7 +2,8 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close"; 
+import CloseIcon from "@mui/icons-material/Close";
+import { categoryOptions, industryOption } from "../common";
 
 interface AddProductModalProps {
   open: boolean;
@@ -14,6 +15,9 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
   const [description, setDescription] = useState<string>("");
   const [image, setImage] = useState<File | null>(null);
   const [isHovered, setIsHovered] = useState<boolean>(false);
+
+  const [category, setCategory] = useState<string>("");
+  const [industries, setIndustries] = useState<string>("");
 
   const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -28,12 +32,17 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
     const formdata = new FormData();
     formdata.append("title", title);
     formdata.append("description", description);
+    formdata.append("category", category);
+    formdata.append("industry", industries);
     if (image) {
       formdata.append("image", image);
     }
 
     axios
-      .post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/product/add_product`, formdata)
+      .post(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/product/add_product`,
+        formdata
+      )
       .then((res) => {
         if (res.data.result === "true") {
           onClose?.(); // Close the modal after successful product addition
@@ -48,42 +57,42 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
 
   // Inline styles
   const modalStyle = {
-    display: open ? 'block' : 'none',
-    position: 'fixed' as 'fixed',
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    display: open ? "block" : "none",
+    position: "fixed" as "fixed",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
     zIndex: 9999,
   };
 
   const modalContentStyle = {
-    backgroundColor: 'white',
-    borderRadius: '8px',
-    padding: '20px',
-    margin: '100px auto',
-    maxWidth: '600px',
-    width: '100%',
-    position: 'relative' as 'relative', // Position relative for absolute close button
+    backgroundColor: "white",
+    borderRadius: "8px",
+    padding: "20px",
+    margin: "100px auto",
+    maxWidth: "600px",
+    width: "100%",
+    position: "relative" as "relative", // Position relative for absolute close button
   };
 
   const inputStyled = {
-    marginBottom: '10px',
-    padding: '8px',
-    width: '100%',
-    borderRadius: '4px',
-    border: '1px solid #9BA9B4',
-    fontSize: '16px',
-    color: '#9BA9B4',
+    marginBottom: "10px",
+    padding: "8px",
+    width: "100%",
+    borderRadius: "4px",
+    border: "1px solid #9BA9B4",
+    fontSize: "16px",
+    color: "#000000",
   };
 
   const buttonStyle = {
-    padding: '10px',
-    color: 'black',
-    boxShadow: '0px 0px 8px #fff',
-    marginTop: '15px',
-    cursor: 'pointer' as 'pointer',
+    padding: "10px",
+    color: "black",
+    boxShadow: "0px 0px 8px #fff",
+    marginTop: "15px",
+    cursor: "pointer" as "pointer",
   };
 
   return (
@@ -92,10 +101,10 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
         {/* Close Button (X) */}
         <Button
           style={{
-            position: 'absolute',
-            top: '10px',
-            right: '10px',
-            padding: '5px',
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            padding: "5px",
           }}
           onClick={onClose} // Close the modal on clicking the X button
         >
@@ -103,7 +112,9 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
         </Button>
 
         <form onSubmit={handleSubmit}>
-          <h3 style={{ color: "#9BA9B4", marginBottom: '20px' }}>Add Product</h3>
+          <h3 style={{ color: "#000000", marginBottom: "20px" }}>
+            Add Product
+          </h3>
 
           <input
             type="text"
@@ -119,7 +130,7 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
             onChange={(e) => setDescription(e.target.value)}
             required
             rows={4}
-            style={{ ...inputStyled, height: '100px' }}
+            style={{ ...inputStyled, height: "100px" }}
           />
           <input
             type="file"
@@ -128,16 +139,56 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
             style={inputStyled}
           />
 
+          {/* Category Dropdown */}
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            required
+            style={{ ...inputStyled }}
+          >
+            <option value="" disabled>
+              Select Category
+            </option>
+            {categoryOptions.map((option) => (
+              <option key={option} value={option}>
+                {option.charAt(0).toUpperCase() + option.slice(1)}
+              </option>
+            ))}
+          </select>
+
+          {/* Industry Dropdown */}
+          <select
+            value={industries}
+            onChange={(e) => setIndustries(e.target.value)}
+            required
+            style={{ ...inputStyled }}
+          >
+            <option value="" disabled>
+              Select Industry Type
+            </option>
+            {industryOption.map((option) => (
+              <option key={option} value={option}>
+                {option.charAt(0).toUpperCase() + option.slice(1)}
+              </option>
+            ))}
+          </select>
+
           {/* Buttons: Cancel and Add Product */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '15px' }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              marginTop: "15px",
+            }}
+          >
             <Button
               type="button"
               variant="contained"
               style={{
                 ...buttonStyle,
-                backgroundColor: '#f0f0f0',
+                backgroundColor: "#f0f0f0",
 
-                width: '48%',
+                width: "48%",
               }}
               onClick={onClose} // Close the modal on cancel
             >
@@ -148,9 +199,9 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
               variant="contained"
               style={{
                 ...buttonStyle,
-                color: 'white',
-                backgroundColor: '#3f51b5',
-                width: '48%',
+                color: "white",
+                backgroundColor: "#3f51b5",
+                width: "48%",
               }}
             >
               Add Product
