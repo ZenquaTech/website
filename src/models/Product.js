@@ -13,6 +13,14 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    category : {
+        type : String,
+        required : true
+    },
+    industry : {
+        type : String,
+        required : true
+    },
     isDeleted: { 
         type: Boolean, 
         default: false 
