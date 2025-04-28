@@ -32,6 +32,52 @@ const Feedback = () => {
   const arrow = "/images/product/arrow.svg";
   const router = useRouter();
 
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+  
+    if (!fullName || !email || !projectName || !message) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+  
+    setIsLoading(true);
+  
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/feedback/submit`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName,
+          email,
+          type: projectName, // Feedback or Inquiry
+          message,
+        }),
+      });
+  
+      const data = await response.json();
+  
+      if (data.result) {
+        alert("Thank you for your submission!");
+        // Reset form
+        setFullName("");
+        setEmail("");
+        setProjectName("");
+        setMessage("");
+        setTermsAccepted(false);
+      } else {
+        alert(data.message || "Something went wrong. Try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting feedback:", error);
+      alert("Failed to send feedback. Please try again later.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+  
+
   return (
     <>
       <Box sx={{ minHeight: "100vh", py: 4, backgroundColor: "#fff" }}>
@@ -84,7 +130,7 @@ const Feedback = () => {
               Please fill out the form below to share your feedback with us.
             </Typography>
 
-            <form>
+            <form onSubmit={handleSubmit}>
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12}>

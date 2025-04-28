@@ -12,7 +12,7 @@ const PHeader = () => {
     <>
      <header className="header" style={{width: '100%', margin: '0 auto'}}>
         <div className="header-content">
-          <Link href="/" className="block" aria-label="Home">
+          <Link href="/" className="block-product" aria-label="Home">
               <Image
                 priority
                 height={110}
