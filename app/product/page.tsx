@@ -28,12 +28,18 @@ import Tooltip from "@mui/material/Tooltip"; // Make sure it's imported at the t
 import { useProductContext } from "@/context/product/productContext";
 import { categoryOptions, industryOption } from "@/components/common";
 
+type Category = {
+  _id: string;
+  name: string;
+};
+
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [category, setCategory] = useState<string[]>([]);
   const [industries, setIndustries] = useState<string[]>([]);
   const [price, setPrice] = useState("");
   const [loading, setLoading] = useState(true);
+   const [categoryData, setCategoryData] = useState<Category[]>([]);
   const [tooltipOpenIndex, setTooltipOpenIndex] = useState<number | null>(null);
   const [originalProducts, setOriginalProducts] = useState([]); // Store the original unfilter
   const meetingImg = "/images/product/meeting.png";
@@ -70,6 +76,19 @@ const Products = () => {
       )
     );
   };
+
+   const getCategory = async () => {
+      await axios
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/category/getCategory`)
+        .then((res) => {
+          if (res?.data) {
+            setCategoryData(res?.data?.data);
+          } else {
+            setCategoryData([]);
+          }
+        })
+        .catch((err) => console.error("Error :  ", err));
+    };
 
   const getAllProducts = () => {
     setLoading(true);
@@ -119,6 +138,7 @@ const Products = () => {
   useEffect(() => {
     if (isFirstRender.current) {
       getAllProducts();
+      getCategory()
       isFirstRender.current = false;
     } else {
       // Filter products by selected category when category changes
@@ -140,9 +160,7 @@ const Products = () => {
       isFirstRender.current = false;
     } else {
       // Filter products by selected category when category changes
-      console.log(category, "category");
       const filteredProducts = filterProductsByCategory(category);
-      console.log(filteredProducts, "filteredProducts");
       setProducts(filteredProducts);
     }
   }, [category]); // This effect will now run when the category changes
@@ -389,11 +407,11 @@ const Products = () => {
                     },
                   }}
                 >
-                  {categoryOptions.map((option) => (
-                    <MenuItem key={option} value={option}>
-                      {option.charAt(0).toUpperCase() + option.slice(1)}
-                    </MenuItem>
-                  ))}
+                   {categoryData.map((option) => (
+              <MenuItem key={option._id} value={option._id}>
+                {option.name.charAt(0).toUpperCase() + option.name.slice(1)}
+              </MenuItem>
+            ))}
                 </Select>
               </FormControl>
 
@@ -472,10 +490,15 @@ const Products = () => {
           <Box
             sx={{ display: "flex", gap: 1, flexWrap: "wrap", marginTop: "6px" }}
           >
+
+            
             {category.map((category) => (
               <Chip
                 key={category}
-                label={category}
+                label={
+                  categoryData.find((cat) => cat._id === category)?.name
+                }
+                // label={category}
                 onDelete={() => handleRemove("category", category)}
                 sx={{
                   height: 32,
@@ -615,7 +638,7 @@ const Products = () => {
                         Category:
                       </Typography>
                       <Chip
-                        label={data?.category}
+                        label={categoryData.find((cat) => cat._id === data?.category)?.name}
                         size="small"
                         sx={{
                           backgroundColor: "#e0e0e0",

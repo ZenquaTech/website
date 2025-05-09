@@ -1,23 +1,26 @@
 "use client";
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { categoryOptions, industryOption } from "../common";
+import { industryOption } from "../common";
 
 interface AddProductModalProps {
   open: boolean;
   onClose: () => void;
 }
+type Category = {
+  _id: string;
+  name: string;
+};
 
 const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
   const [title, setTitle] = useState<string>("");
   const [description, setDescription] = useState<string>("");
   const [image, setImage] = useState<File | null>(null);
-  const [isHovered, setIsHovered] = useState<boolean>(false);
-
-  const [category, setCategory] = useState<string>("");
+  const [categoryData, setCategoryData] = useState<Category[]>([]);
   const [industries, setIndustries] = useState<string>("");
+  const [category, setCategory] = useState("");
 
   const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -25,14 +28,24 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
       setImage(file);
     }
   };
-
+  const getCategory = async () => {
+    await axios
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/category/getCategory`)
+      .then((res) => {
+        if (res?.data) {
+          setCategoryData(res?.data?.data);
+        } else {
+          setCategoryData([]);
+        }
+      })
+      .catch((err) => console.error("Error :  ", err));
+  };
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
     const formdata = new FormData();
     formdata.append("title", title);
     formdata.append("description", description);
-    formdata.append("category", category);
+    formdata.append("category",category );
     formdata.append("industry", industries);
     if (image) {
       formdata.append("image", image);
@@ -55,6 +68,9 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
       });
   };
 
+  useEffect(() => {
+    getCategory();
+  }, []);
   // Inline styles
   const modalStyle = {
     display: open ? "block" : "none",
@@ -149,9 +165,9 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
             <option value="" disabled>
               Select Category
             </option>
-            {categoryOptions.map((option) => (
-              <option key={option} value={option}>
-                {option.charAt(0).toUpperCase() + option.slice(1)}
+            {categoryData.map((option) => (
+              <option key={option._id} value={option._id}>
+                {option.name.charAt(0).toUpperCase() + option.name.slice(1)}
               </option>
             ))}
           </select>

@@ -88,6 +88,8 @@ export default function RootLayout({
           && pathname !== '/admin' 
           && pathname !== '/feedback'
           && pathname !== '/login'
+           &&pathname !== '/feedbackEnquiry'
+           &&pathname !== '/category'
           && <Header />}
 
           {pathname !== "/contact-us" 
@@ -96,6 +98,8 @@ export default function RootLayout({
           && pathname !== '/admin' 
           && pathname !== '/feedback'
           && pathname !== '/login'
+          &&pathname !== '/feedbackEnquiry'
+          &&pathname !== '/category'
           && <HeaderSocial />}  
           {children}  
           {pathname === "/product"  &&  <Footer /> } 

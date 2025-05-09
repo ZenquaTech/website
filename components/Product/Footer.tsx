@@ -61,7 +61,7 @@ const Footer = () => {
                   <li className="mb-1">
                     <Link
                       href="/feedback"
-                      className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
+                      className="text-white hover:text-gray-100 transition duration-150 ease-in-out"
                     >
                       Feedback/Inquiry
                     </Link>
