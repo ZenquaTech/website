@@ -123,7 +123,7 @@ exports.updateProductById = async (req, res) => {
     }
 
     try {
-      const { title, description, product_id } = req.body;
+      const { title, description, product_id,category, industry } = req.body;
 
       if (!product_id) {
         return res.status(400).json({
@@ -135,6 +135,8 @@ exports.updateProductById = async (req, res) => {
       const updateData = {
         title: title,
         description: description,
+        category : category,
+        industry : industry
       };
 
       if (req.file) {

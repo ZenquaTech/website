@@ -3,6 +3,8 @@ const feedBackEnquiryController = require('../controllers/enquiryFeedbackControl
 
 const router = express.Router();
 
-
-router.post('/api/feedback/submit', feedBackEnquiryController.createEnquiryFeedback)
+router.post('/submit', feedBackEnquiryController.createEnquiryFeedback)
 router.get('/getfeedbackenquiry', feedBackEnquiryController.getEnquiryFeedbacks)
+router.delete('/deletefeedbackenquiry/:id', feedBackEnquiryController.deleteEnquiryFeedback)
+
+module.exports = router

@@ -5,6 +5,8 @@ const cors = require("cors");
 const connectDB = require("./src/utils/dbConnection");
 const productRoutes = require("./src/routes/productRoutes");
 const userRoutes = require('./src/routes/userRoutes')
+const feedbackRoutes=require('./src/routes/enquiryFeedbackRoutes')
+const categoryRoutes=require('./src/routes/categoryRoute')
 const path = require("path");
 
 const PORT = process.env.PORT || 8040;
@@ -21,6 +23,8 @@ app.get("/", (req, res) => {
 
 app.use("/api/product", productRoutes);
 app.use('/user', userRoutes)
+app.use('/api/feedback',feedbackRoutes)
+app.use('/api/category',categoryRoutes)
 app.use("/uploads", express.static(path.resolve(__dirname, "uploads")));
 
 connectDB();

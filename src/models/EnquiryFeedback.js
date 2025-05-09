@@ -12,7 +12,7 @@ const enquiryFeedbackSchema = new mongoose.Schema({
     },
     type: {
         type: String,
-        enum: ['Enquiry', 'Feedback'],
+        enum: ['Inquiry', 'Feedback'],
         required: true,
     },
     message: {
@@ -23,6 +23,7 @@ const enquiryFeedbackSchema = new mongoose.Schema({
     timestamps: true, // Automatically adds createdAt and updatedAt fields
 });
 
-const EnquiryFeedback = mongoose.model('EnquiryFeedback', enquiryFeedbackSchema);
+
+const EnquiryFeedback = mongoose.model('Feedback', enquiryFeedbackSchema);
 
 module.exports = EnquiryFeedback;
