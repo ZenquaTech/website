@@ -27,14 +27,14 @@ const PHeader = () => {
 
           {/* Search and Cart on larger screens */}
           <div className="search-cart">
-            <div className="custom-search">
+            {/* <div className="custom-search">
               <input
                 type="text"
                 placeholder="Search..."
                 className="search-input"
               />
               <button type="submit" className="search-button"></button>
-            </div>
+            </div> */}
 
             <IconButton
               component={Link}

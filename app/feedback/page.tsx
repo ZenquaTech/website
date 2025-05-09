@@ -17,31 +17,53 @@ import "../css/poc-booking-css.css";
 import emailjs from "@emailjs/browser";
 import { useProductContext } from "@/context/product/productContext";
 import { useRouter } from "next/navigation";
-import Footer from "@/components/ui/footer";
+import Footer from "@/components/Product/Footer";
 
 const Feedback = () => {
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [projectName, setProjectName] = useState("");
+  const [projectName, setProjectName] = useState("Feedback");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  
+  const [errors, setErrors] = useState({
+    fullName: "",
+    email: "",
+    type: "",
+    message: "",
+  });
 
   const { cart } = useProductContext();
-
   const arrow = "/images/product/arrow.svg";
   const router = useRouter();
 
+  const validate = () => {
+    const newErrors = {
+      fullName: fullName ? "" : "Full name is required.",
+      email: email
+        ? /\S+@\S+\.\S+/.test(email)
+          ? ""
+          : "Invalid email address."
+        : "Email is required.",
+      type: projectName ? "" : "Type is required.",
+      message: message ? "" : "Message is required.",
+    };
+
+    setErrors(newErrors);
+
+    return Object.values(newErrors).every((err) => err === "");
+  };
+
   const handleSubmit = async (e:any) => {
     e.preventDefault();
-  
-    if (!fullName || !email || !projectName || !message) {
-      alert("Please fill in all required fields.");
+
+    if (!validate()) {
       return;
     }
-  
+
     setIsLoading(true);
-  
+
     try {
       const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/feedback/submit`, {
         method: "POST",
@@ -55,15 +77,16 @@ const Feedback = () => {
           message,
         }),
       });
-  
+
       const data = await response.json();
-  
+
       if (data.result) {
-        alert("Thank you for your submission!");
+        router.push('/thank-you');
+        // alert("Thank you for your submission!");
         // Reset form
         setFullName("");
         setEmail("");
-        setProjectName("");
+        setProjectName("Feedback");
         setMessage("");
         setTermsAccepted(false);
       } else {
@@ -76,7 +99,6 @@ const Feedback = () => {
       setIsLoading(false);
     }
   };
-  
 
   return (
     <>
@@ -141,11 +163,11 @@ const Feedback = () => {
                         id="name"
                         value={fullName}
                         name="name"
-                        required
                         onChange={(e) => setFullName(e.target.value)}
                         placeholder="Full name"
                         className="custom-input"
                       />
+                      {errors.fullName && <p className="error-text">{errors.fullName}</p>}
                     </div>
                   </Grid>
                   <Grid item xs={12}>
@@ -156,11 +178,11 @@ const Feedback = () => {
                         id="email"
                         name="email"
                         value={email}
-                        required
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter your email"
                         className="custom-input"
                       />
+                      {errors.email && <p className="error-text">{errors.email}</p>}
                     </div>
                   </Grid>
                   <Grid item xs={12}>
@@ -170,8 +192,8 @@ const Feedback = () => {
                         row
                         id="type"
                         name="type"
-                        value={projectName} // reuse projectName as state if you want
-                        onChange={(e) => setProjectName(e.target.value)} // or rename to setType if you'd like
+                        value={projectName}
+                        onChange={(e) => setProjectName(e.target.value)}
                       >
                         <FormControlLabel
                           value="Feedback"
@@ -184,6 +206,7 @@ const Feedback = () => {
                           label="Inquiry"
                         />
                       </RadioGroup>
+                      {errors.type && <p className="error-text">{errors.type}</p>}
                     </div>
                   </Grid>
                 </Grid>
@@ -197,6 +220,7 @@ const Feedback = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   />
+                  {errors.message && <p className="error-text">{errors.message}</p>}
                 </Grid>
 
                 <Grid item xs={12}>

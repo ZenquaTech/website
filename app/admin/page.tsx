@@ -20,12 +20,17 @@ import {
 import AddProductModal from "@/components/modals/Add-Feature-modal";
 import EditProductModal from "@/components/modals/Edit-Feature-modal";
 import { useRouter } from "next/navigation";
+import Sidebar from "@/components/Product/Sidebar";
+
+
 
 type Product = {
   _id: string;
   title?: string;
   image?: string;
   description?: string;
+  category?: string;
+  industry?: string;
 };
 
 const columns = [
@@ -70,6 +75,9 @@ export default function AdminDashboard() {
     setRowsPerPage(newRowsPerPage);
     setPage(0); // Reset to page 0
   };
+
+  
+
 
   const getProducts = () => {
     axios
@@ -140,182 +148,177 @@ export default function AdminDashboard() {
   }
   return (
     <>
-      <Box
-        display="flex"
-        justifyContent="space-between"
-        alignItems="center"
-        mb={2}
-      >
-        <Typography
-          variant="h3"
-          gutterBottom
-          sx={{ color: "#D9E3EA", fontWeight: "10px" }}
+      <Box display="flex">
+        {/* Sidebar or left block */}
+        <Sidebar/>
+
+        {/* Main Content Area */}
+        <Paper
+          sx={{
+            width: "100%",
+            overflow: "hidden",
+            backgroundColor: "#313330",
+            padding: 2,
+          }}
         >
-          Product List
-        </Typography>
-        <Box>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={() => setOpen(true)}
-            sx={{ marginRight: 5 }}
-            style={{
-              alignItems: "center",
-              fontSize: "15px",
-              marginTop: "2%",
-              textAlign: "center",
-              flexWrap: "wrap",
-              backgroundColor: "#019dce",
-              color: "#D9E3EA",
-              padding: "2%",
-              fontWeight: "bold",
-              borderRadius: "10px",
-              width: "160px",
-              textTransform: "none",
-            }}
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            mb={2}
           >
-            Add Product
-          </Button>
-        </Box>
-      </Box>
-      <Paper
-        sx={{ width: "100%", overflow: "hidden", backgroundColor: "#313330" }}
-      >
-        <TableContainer sx={{ maxHeight: 550 }}>
-          <Table stickyHeader aria-label="sticky table">
-            <TableHead>
-              <TableRow>
-                {columns.map((column) => (
-                  <TableCell
-                    key={column.id}
-                    // align={column.align}
-                    style={{
-                      minWidth: column.minWidth,
-                      fontWeight: "bold",
-                      color: "white",
-                      backgroundColor: "#313330",
-                    }}
-                  >
-                    {column.label}
-                  </TableCell>
-                ))}
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {Array.isArray(products) &&
-                products
-                  .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                  .map((row, index) => (
-                    <TableRow hover role="checkbox" tabIndex={-1} key={row._id}>
-                      <TableCell
-                        style={{
-                          color: "#9BA9B4",
-                        }}
-                      >
-                        {index + 1 + page * rowsPerPage}
-                      </TableCell>
-                      <TableCell>
-                        <Avatar
-                          src={`${process.env.NEXT_PUBLIC_BASE_URL}/${row.image}`}
-                          alt=""
-                        />
-                      </TableCell>
-                      <TableCell
-                        style={{
-                          color: "#9BA9B4",
-                        }}
-                      >
-                        {row.title}
-                      </TableCell>
-                      <TableCell
-                        style={{
-                          color: "#9BA9B4",
-                        }}
-                      >
-                        {row.description}
-                      </TableCell>
-                      <TableCell align="right">
-                        <Stack
-                          direction="row"
-                          spacing={1}
-                          justifyContent="flex-end"
-                        >
-                          <Button
-                            variant="outlined"
-                            size="small"
-                            onClick={() => handleEdit(row)}
-                            style={{
-                              alignItems: "center",
-                              fontSize: "15px",
-                              marginTop: "2%",
-                              textAlign: "center",
-                              flexWrap: "wrap",
-                              backgroundColor: "#019dce",
-                              color: "#D9E3EA",
-                              padding: "2%",
-                              fontWeight: "bold",
-                              borderRadius: "10px",
-                              width: "70px",
-                              textTransform: "none",
-                            }}
-                          >
-                            Edit
-                          </Button>
-                          <Button
-                            variant="contained"
-                            size="small"
-                            color="error"
-                            onClick={() => {
-                              onDeleteHandler(row._id);
-                            }}
-                            style={{
-                              alignItems: "center",
-                              fontSize: "15px",
-                              marginTop: "2%",
-                              textAlign: "center",
-                              flexWrap: "wrap",
-                              backgroundColor: "#e63905",
-                              color: "#D9E3EA",
-                              padding: "2%",
-                              fontWeight: "bold",
-                              borderRadius: "10px",
-                              width: "70px",
-                              textTransform: "none",
-                            }}
-                          >
-                            Delete
-                          </Button>
-                        </Stack>
-                      </TableCell>
-                    </TableRow>
+            {/* Uncomment if you want a title */}
+
+            <Typography
+              variant="h4"
+              gutterBottom
+              sx={{ color: "#D9E3EA", fontWeight: "bold" }}
+            >
+              Product List
+            </Typography>
+
+            <Box
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+              mb={3}
+            >
+              <Button
+                variant="contained"
+                onClick={() => setOpen(true)}
+                sx={{
+                  fontSize: "15px",
+                  backgroundColor: "#019dce",
+                  color: "#D9E3EA",
+                  padding: "8px 16px",
+                  fontWeight: "bold",
+                  borderRadius: "10px",
+                  width: "160px",
+                  textTransform: "none",
+                }}
+              >
+                Add Product
+              </Button>
+            </Box>
+          </Box>
+
+          <TableContainer sx={{ maxHeight: 550 }}>
+            <Table stickyHeader aria-label="sticky table">
+              <TableHead>
+                <TableRow>
+                  {columns.map((column) => (
+                    <TableCell
+                      key={column.id}
+                      style={{
+                        minWidth: column.minWidth,
+                        fontWeight: "bold",
+                        color: "white",
+                        backgroundColor: "#313330",
+                      }}
+                    >
+                      {column.label}
+                    </TableCell>
                   ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-        {totalProducts > rowsPerPage && (
-          <TablePagination
-            rowsPerPageOptions={[10, 25, 100]}
-            component="div"
-            count={totalProducts}
-            rowsPerPage={rowsPerPage}
-            page={page}
-            onPageChange={handleChangePage}
-            onRowsPerPageChange={handleChangeRowsPerPage}
-            style={{
-              color: "#9BA9B4",
-            }}
-          />
-        )}
-      </Paper>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {Array.isArray(products) &&
+                  products
+                    .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                    .map((row, index) => (
+                      <TableRow
+                        hover
+                        role="checkbox"
+                        tabIndex={-1}
+                        key={row._id}
+                      >
+                        <TableCell sx={{ color: "#9BA9B4" }}>
+                          {index + 1 + page * rowsPerPage}
+                        </TableCell>
+                        <TableCell>
+                          <Avatar
+                            src={`${process.env.NEXT_PUBLIC_BASE_URL}/${row.image}`}
+                            alt=""
+                          />
+                        </TableCell>
+                        <TableCell sx={{ color: "#9BA9B4" }}>
+                          {row.title}
+                        </TableCell>
+                        <TableCell sx={{ color: "#9BA9B4" }}>
+                          {row.description}
+                        </TableCell>
+                        <TableCell align="right">
+                          <Stack
+                            direction="row"
+                            spacing={1}
+                            justifyContent="flex-end"
+                          >
+                            <Button
+                              variant="outlined"
+                              size="small"
+                              onClick={() => handleEdit(row)}
+                              sx={{
+                                fontSize: "15px",
+                                backgroundColor: "#019dce",
+                                color: "#D9E3EA",
+                                padding: "4px 8px",
+                                fontWeight: "bold",
+                                borderRadius: "10px",
+                                width: "70px",
+                                textTransform: "none",
+                              }}
+                            >
+                              Edit
+                            </Button>
+                            <Button
+                              variant="contained"
+                              size="small"
+                              color="error"
+                              onClick={() => onDeleteHandler(row._id)}
+                              sx={{
+                                fontSize: "15px",
+                                backgroundColor: "#e63905",
+                                color: "#D9E3EA",
+                                padding: "4px 8px",
+                                fontWeight: "bold",
+                                borderRadius: "10px",
+                                width: "70px",
+                                textTransform: "none",
+                              }}
+                            >
+                              Delete
+                            </Button>
+                          </Stack>
+                        </TableCell>
+                      </TableRow>
+                    ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
 
-      <AddProductModal open={open} onClose={() => setOpen(false)} />
+          {totalProducts > rowsPerPage && (
+            <TablePagination
+              rowsPerPageOptions={[10, 25, 100]}
+              component="div"
+              count={totalProducts}
+              rowsPerPage={rowsPerPage}
+              page={page}
+              onPageChange={handleChangePage}
+              onRowsPerPageChange={handleChangeRowsPerPage}
+              sx={{ color: "#9BA9B4" }}
+            />
+          )}
+        </Paper>
+      </Box>
+     {open&& <AddProductModal open={open} onClose={() => setOpen(false)} />}
 
-      <EditProductModal
+     {editOpen&& <EditProductModal
         open={editOpen}
         onClose={() => setEditOpen(false)}
         product={selectedProduct!}
         onUpdated={getProducts}
       />
+     }
     </>
   );
 }
