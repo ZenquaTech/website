@@ -9,7 +9,7 @@ import HeaderSocial from "@/components/ui/HeaderSocial";
 import { usePathname } from "next/navigation";
 import { ThemeProvider, useTheme } from "@material-ui/core";
 import PHeader from "@/components/Product/PHeader";
-import Footer from "@/components/Product/Footer";
+import Footer from "@/components/ui/footer";
 import { ProductProvider } from "@/context/product/productContext";
 const inter = Inter({
   subsets: ["latin"],
