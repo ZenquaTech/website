@@ -26,6 +26,7 @@ app.use('/user', userRoutes)
 app.use('/api/feedback',feedbackRoutes)
 app.use('/api/category',categoryRoutes)
 app.use("/uploads", express.static(path.resolve(__dirname, "uploads")));
+app.use('/api/admin/product', productRoutes); // admin API
 
 connectDB();
 

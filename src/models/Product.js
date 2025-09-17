@@ -13,20 +13,26 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    category : {
-        type : String,
-        required : true
+    category: {
+        type: String,
+        required: true
     },
-    industry : {
-        type : String,
-        required : true
+    priceType: {
+        type: String,
+        enum: ["free", "paid"],
+        default: "free",
+        required: true
     },
-    isDeleted: { 
-        type: Boolean, 
-        default: false 
+    isDeleted: {
+        type: Boolean,
+        default: false
+    },
+    rating: {
+        type: Number,
+        default: 0
     }
 }, {
-    timestamps: true 
+    timestamps: true
 });
 
 const Product = mongoose.model('Product', productSchema);

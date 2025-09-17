@@ -44,13 +44,16 @@ exports.addProduct = async (req, res) => {
       return res.status(422).json({ error: err });
     }
     try {
-      const { title, description, category, industry } = req.body;
+      const { title, description, category, priceType, isDeleted, rating } = req.body;
       const newProduct = new Product({
         title: title,
         description: description,
         image: req.file.path,
-        category : category,
-        industry : industry
+        category: category,
+        priceType: priceType || "free",
+        isDeleted: isDeleted === "true",
+        rating: rating !== undefined ? Number(rating) : null
+
       });
 
       const data = await newProduct.save();
@@ -70,7 +73,27 @@ exports.addProduct = async (req, res) => {
 
 exports.getProduct = async (req, res) => {
   try {
-    const products = await Product.find({ isDeleted: false })
+    const products = await Product.aggregate([
+      { $match: { isDeleted: false } },
+      {
+        $addFields: {
+          rating: {
+            $cond: {
+              if: { $or: [{ $eq: [{ $ifNull: ["$rating", 0] }, 0] }] },
+              then: 999999,
+              else: "$rating"
+            }
+          }
+        }
+      },
+      {
+        $sort: {
+          rating: 1,
+          createdAt: -1
+        }
+      }
+    ]);
+
     res.status(200).json({
       result: "true",
       message: "fatching product successfully",
@@ -84,6 +107,20 @@ exports.getProduct = async (req, res) => {
   }
 };
 
+exports.getAllProductsForAdmin = async (req, res) => {
+  try {
+    const products = await Product.find(); // no filter, gets all products
+    res.status(200).json({
+      result: "true",
+      message: "All products for admin",
+      products,
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+
 exports.getProductById = async (req, res) => {
   try {
 
@@ -94,7 +131,7 @@ exports.getProductById = async (req, res) => {
       });
     }
 
-    const product = await Product.findOne({ _id : req.body.product_id });
+    const product = await Product.findOne({ _id: req.body.product_id });
     if (!product) {
       return res.status(400).json({
         result: false,
@@ -102,12 +139,12 @@ exports.getProductById = async (req, res) => {
       });
     }
 
-      res.status(200).json({
-        result: true,
-        message: "fatching product successfully",
-        product: product,
-      })
-    
+    res.status(200).json({
+      result: true,
+      message: "fatching product successfully",
+      product: product,
+    })
+
   } catch (error) {
     console.log(error);
     res.status(500).json({
@@ -123,7 +160,7 @@ exports.updateProductById = async (req, res) => {
     }
 
     try {
-      const { title, description, product_id,category, industry } = req.body;
+      const { title, description, product_id, category, priceType, isDeleted, rating } = req.body;
 
       if (!product_id) {
         return res.status(400).json({
@@ -135,8 +172,12 @@ exports.updateProductById = async (req, res) => {
       const updateData = {
         title: title,
         description: description,
-        category : category,
-        industry : industry
+        category: category,
+        priceType: priceType || "free",
+        isDeleted: isDeleted === "true",
+        rating: rating != null ? Number(rating) : undefined
+
+
       };
 
       if (req.file) {
