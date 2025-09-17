@@ -10,10 +10,3 @@ export const categoryOptions = [
   "upload",
   "theme"
 ];
-
-
-// categoryOptions.ts
-export const industryOption = [
-  "IT",
-  "other"
-];
