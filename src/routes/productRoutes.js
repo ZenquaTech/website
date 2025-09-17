@@ -11,6 +11,9 @@ router.put('/update_product' , productController.updateProductById)
 router.post('/delete_product', productController.deleteProductById)
 router.post('/soft_delete_product', productController.softDeleteById)
 
+// Admin route to get all products (no isDeleted filter)
+router.get('/get_all_products', productController.getAllProductsForAdmin);
+
 
 module.exports = router;
 
