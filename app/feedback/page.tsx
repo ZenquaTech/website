@@ -17,7 +17,7 @@ import "../css/poc-booking-css.css";
 import emailjs from "@emailjs/browser";
 import { useProductContext } from "@/context/product/productContext";
 import { useRouter } from "next/navigation";
-import Footer from "@/components/Product/Footer";
+import Footer from "@/components/ui/footer";
 
 const Feedback = () => {
   const [termsAccepted, setTermsAccepted] = useState(false);
