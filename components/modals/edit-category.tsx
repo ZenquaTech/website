@@ -3,7 +3,7 @@ import React, { useState, useEffect, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { categoryOptions, industryOption } from "../common";
+import { categoryOptions } from "../common";
 
 interface EditProductModalProps {
   open: boolean;

@@ -3,7 +3,7 @@ import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { industryOption } from "../common";
+
 
 interface AddProductModalProps {
   open: boolean;
@@ -21,6 +21,14 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
   const [categoryData, setCategoryData] = useState<Category[]>([]);
   const [industries, setIndustries] = useState<string>("");
   const [category, setCategory] = useState("");
+  const [priceType, setPriceType] = useState<"" | "free" | "paid">("");
+  // const [isDeleted, setIsDeleted] = useState(false);
+  const [isDeleted, setIsDeleted] = useState<string>("");
+  const [rating, setRating] = useState<number | "">("");
+  const [totalProducts, setTotalProducts] = useState<number>(0);
+
+
+
 
   const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -40,13 +48,39 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
       })
       .catch((err) => console.error("Error :  ", err));
   };
+
+  const getTotalProducts = async () => {
+    try {
+      const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/product/get_products`);
+      console.log("API response:", res);
+      if (res?.data?.products) {
+        setTotalProducts(res.data.products.length); // or res.data.total if API gives total count
+      }
+    } catch (err) {
+      console.error("Error fetching total products:", err);
+    }
+  };
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
+    if (!image) {
+      alert("Please select an image for the product.");
+      return;
+    }
     const formdata = new FormData();
     formdata.append("title", title);
     formdata.append("description", description);
-    formdata.append("category",category );
-    formdata.append("industry", industries);
+    formdata.append("category", category);
+    formdata.append("priceType", priceType); // NEW
+    //  formdata.append("isDeleted", isDeleted.toString());
+    formdata.append("isDeleted", (isDeleted === "true").toString());
+
+
+    if (rating !== "") {
+      formdata.append("rating", String(Number(rating)));
+    }
+
     if (image) {
       formdata.append("image", image);
     }
@@ -70,6 +104,7 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
 
   useEffect(() => {
     getCategory();
+    getTotalProducts();
   }, []);
   // Inline styles
   const modalStyle = {
@@ -90,6 +125,8 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
     margin: "100px auto",
     maxWidth: "600px",
     width: "100%",
+    maxHeight: "80vh",
+    overflowY: "auto" as const,
     position: "relative" as "relative", // Position relative for absolute close button
   };
 
@@ -172,21 +209,50 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ open, onClose }) => {
             ))}
           </select>
 
-          {/* Industry Dropdown */}
+          {/* Price Type */}
           <select
-            value={industries}
-            onChange={(e) => setIndustries(e.target.value)}
+            value={priceType}
+            onChange={(e) => setPriceType(e.target.value as "" | "free" | "paid")}
             required
-            style={{ ...inputStyled }}
+            style={inputStyled}
           >
             <option value="" disabled>
-              Select Industry Type
+              Select Price Type
             </option>
-            {industryOption.map((option) => (
-              <option key={option} value={option}>
-                {option.charAt(0).toUpperCase() + option.slice(1)}
-              </option>
-            ))}
+            <option value="free">Free</option>
+            <option value="paid">Paid</option>
+          </select>
+
+          {/* Status Dropdown */}
+          <select
+            value={isDeleted}
+            onChange={(e) => setIsDeleted(e.target.value)}
+            required
+            style={inputStyled}
+          >
+            <option value="" disabled>
+              Select Status
+            </option>
+            <option value="false">Active</option>
+            <option value="true">InActive</option>
+          </select>
+
+          {/* Rating Dropdown */}
+          <select
+            value={rating === "" ? "" : String(rating)}
+            onChange={(e) => setRating(e.target.value === "" ? "" : Number(e.target.value))}
+            required
+            style={inputStyled}
+          >
+            <option value="" disabled>
+              Select Rating
+            </option>
+            {totalProducts > 0 &&
+              Array.from({ length: totalProducts }, (_, i) => i + 1).map((num) => (
+                <option key={num} value={num}>
+                  {num}
+                </option>
+              ))}
           </select>
 
           {/* Buttons: Cancel and Add Product */}

@@ -3,7 +3,7 @@ import React, { useState, useEffect, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { categoryOptions, industryOption } from "../common";
+import { categoryOptions } from "../common";
 
 interface EditProductModalProps {
   open: boolean;
@@ -14,9 +14,13 @@ interface EditProductModalProps {
     description?: string;
     image?: string;
     category?: string;
-    industry?: string;
+    priceType?: "free" | "paid";
+    isDeleted?: boolean;
+    rating?: number;
+
   };
   onUpdated: () => void; // Callback to refresh list
+
 }
 type Category = {
   _id: string;
@@ -35,15 +39,25 @@ const EditProductModal: React.FC<EditProductModalProps> = ({
   );
   const [image, setImage] = useState<File | null>(null);
   const [category, setCategory] = useState<string>(product?.category || "");
-  const [industries, setIndustries] = useState<string>(product?.industry || "");
   const [categoryData, setCategoryData] = useState<Category[]>([]);
+  const [priceType, setPriceType] = useState<"" | "free" | "paid">("");
+  // const [isDeleted, setIsDeleted] = useState<boolean>(product?.isDeleted || false);
+  const [isDeleted, setIsDeleted] = useState<string>("");
+
+  const [rating, setRating] = useState<string>("");
+  const [totalProducts, setTotalProducts] = useState<number>(0);
+
 
   useEffect(() => {
     setTitle(product?.title || "");
     setDescription(product?.description || "");
     setCategory(product?.category || "");
-    setIndustries(product?.industry || "");
+    setPriceType(product?.priceType || "");
+    // setIsDeleted(product?.isDeleted || false);
+    setIsDeleted(product?.isDeleted !== undefined ? String(product.isDeleted) : "");
+    setRating(product?.rating ? String(product.rating) : "");
     getCategory();
+    getTotalProducts();
   }, [product]);
 
   const getCategory = async () => {
@@ -57,6 +71,18 @@ const EditProductModal: React.FC<EditProductModalProps> = ({
         }
       })
       .catch((err) => console.error("Error :  ", err));
+  };
+  const getTotalProducts = async () => {
+    try {
+      const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/product/get_products`);
+      if (res?.data?.products) {
+        setTotalProducts(res.data.products.length);
+      } else {
+        setTotalProducts(0);
+      }
+    } catch (err) {
+      console.error("Error fetching total products:", err);
+    }
   };
 
   const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -75,7 +101,19 @@ const EditProductModal: React.FC<EditProductModalProps> = ({
       formdata.append("title", title);
       formdata.append("description", description);
       formdata.append("category", category);
-      formdata.append("industry", industries);
+      formdata.append("priceType", priceType);
+      // formdata.append("isDeleted", isDeleted.toString());
+      formdata.append("isDeleted", (isDeleted === "true").toString());
+
+      // if (rating !== "") {
+      //   formdata.append("rating", rating);
+      // }
+      if (rating !== "") {
+        formdata.append("rating", String(Number(rating)));
+      }
+
+
+
       if (image) {
         formdata.append("image", image);
       }
@@ -93,6 +131,7 @@ const EditProductModal: React.FC<EditProductModalProps> = ({
       if (res.data.result === true) {
         onClose();
         onUpdated()
+
       } else {
         console.error("Update failed:", res.data.message);
       }
@@ -119,6 +158,8 @@ const EditProductModal: React.FC<EditProductModalProps> = ({
     margin: "100px auto",
     maxWidth: "600px",
     width: "100%",
+    maxHeight: "80vh",
+    overflowY: "auto" as const,
     position: "relative" as "relative",
   };
 
@@ -192,21 +233,76 @@ const EditProductModal: React.FC<EditProductModalProps> = ({
             ))}
           </select>
 
-          {/* Industry Dropdown */}
+          {/* Price Type */}
           <select
-            value={industries}
-            onChange={(e) => setIndustries(e.target.value)}
+            value={priceType}
+            onChange={(e) => setPriceType(e.target.value as "" | "free" | "paid")}
             required
-            style={{ ...inputStyled }}
+            style={inputStyled}
           >
             <option value="" disabled>
-              Select Industry Type
+              Select Price Type
             </option>
-            {industryOption.map((option) => (
-              <option key={option} value={option}>
-                {option.charAt(0).toUpperCase() + option.slice(1)}
+            <option value="free">Free</option>
+            <option value="paid">Paid</option>
+          </select>
+
+          {/* Status Dropdown */}
+          {/* <select
+            value={isDeleted ? "true" : "false"}
+            onChange={(e) => setIsDeleted(e.target.value === "true")}
+            required
+            style={inputStyled}
+          >
+            <option value="false">false</option>
+            <option value="true">true</option>
+          </select> */}
+
+          <select
+            value={isDeleted}
+            onChange={(e) => setIsDeleted(e.target.value)}
+            required
+            style={inputStyled}
+          >
+            <option value="" disabled>
+              Select Status
+            </option>
+            <option value="false">Active</option>
+            <option value="true">InActive</option>
+          </select>
+
+          {/* rating Dropdown */}
+
+          {/* <select
+            value={rating}
+            onChange={(e) => setRating(e.target.value)}
+            style={inputStyled}
+          >
+            <option value="" disabled>
+              Select Rating
+            </option>
+
+            {Array.from({ length: 50 }, (_, i) => i + 1).map((num) => (
+              <option key={num} value={String(num)}>
+                {num}
               </option>
             ))}
+          </select> */}
+
+          <select
+            value={rating}
+            onChange={(e) => setRating(e.target.value)}
+            style={inputStyled}
+          >
+            <option value="" disabled>
+              Select Rating
+            </option>
+            {totalProducts > 0 &&
+              Array.from({ length: totalProducts }, (_, i) => i + 1).map((num) => (
+                <option key={num} value={String(num)}>
+                  {num}
+                </option>
+              ))}
           </select>
 
           <div

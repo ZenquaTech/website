@@ -23,10 +23,9 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Footer from "@/components/Product/Footer";
 import Tooltip from "@mui/material/Tooltip"; // Make sure it's imported at the top
 import { useProductContext } from "@/context/product/productContext";
-import { categoryOptions, industryOption } from "@/components/common";
+import { categoryOptions } from "@/components/common";
 
 type Category = {
   _id: string;
@@ -39,7 +38,7 @@ const Products = () => {
   const [industries, setIndustries] = useState<string[]>([]);
   const [price, setPrice] = useState("");
   const [loading, setLoading] = useState(true);
-   const [categoryData, setCategoryData] = useState<Category[]>([]);
+  const [categoryData, setCategoryData] = useState<Category[]>([]);
   const [tooltipOpenIndex, setTooltipOpenIndex] = useState<number | null>(null);
   const [originalProducts, setOriginalProducts] = useState([]); // Store the original unfilter
   const meetingImg = "/images/product/meeting.png";
@@ -77,18 +76,18 @@ const Products = () => {
     );
   };
 
-   const getCategory = async () => {
-      await axios
-        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/category/getCategory`)
-        .then((res) => {
-          if (res?.data) {
-            setCategoryData(res?.data?.data);
-          } else {
-            setCategoryData([]);
-          }
-        })
-        .catch((err) => console.error("Error :  ", err));
-    };
+  const getCategory = async () => {
+    await axios
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/category/getCategory`)
+      .then((res) => {
+        if (res?.data) {
+          setCategoryData(res?.data?.data);
+        } else {
+          setCategoryData([]);
+        }
+      })
+      .catch((err) => console.error("Error :  ", err));
+  };
 
   const getAllProducts = () => {
     setLoading(true);
@@ -104,6 +103,7 @@ const Products = () => {
             isSelected: isInCart,
           };
         });
+       
         setLoading(false);
         setOriginalProducts(updatedProducts); // Save the original products
         setProducts(updatedProducts);
@@ -407,11 +407,11 @@ const Products = () => {
                     },
                   }}
                 >
-                   {categoryData.map((option) => (
-              <MenuItem key={option._id} value={option._id}>
-                {option.name.charAt(0).toUpperCase() + option.name.slice(1)}
-              </MenuItem>
-            ))}
+                  {categoryData.map((option) => (
+                    <MenuItem key={option._id} value={option._id}>
+                      {option.name.charAt(0).toUpperCase() + option.name.slice(1)}
+                    </MenuItem>
+                  ))}
                 </Select>
               </FormControl>
 
@@ -491,7 +491,7 @@ const Products = () => {
             sx={{ display: "flex", gap: 1, flexWrap: "wrap", marginTop: "6px" }}
           >
 
-            
+
             {category.map((category) => (
               <Chip
                 key={category}
@@ -602,7 +602,7 @@ const Products = () => {
                     key={index}
                     sx={{
                       height: 200, // or '200px'
-                      width: 400, // set your desired width
+                       width: 400, // set your desired width
                       borderRadius: "4px",
                     }}
                   />
@@ -621,17 +621,29 @@ const Products = () => {
                         {data.title}
                       </Typography>
 
-                      <Chip
+                      {/* <Chip
                         label={data.isFree ? "paid" : "Free"}
                         size="small"
                         sx={{
-                          backgroundColor: data.isFree ? "#f44336" : "#4caf50",
+                           backgroundColor: data.isFree ? "#f44336" : "#4caf50",
+                          color: "#fff",
+                          fontWeight: "bold",
+                          borderRadius: "12px",
+                          px: 1.5,
+                        }}
+                      /> */}
+                      <Chip
+                        label={data.priceType === "paid" ? "Paid" : "Free"}
+                        size="small"
+                        sx={{
+                          backgroundColor: data.priceType === "paid" ? "#f44336" : "#4caf50", // Red for Paid, Green for Free
                           color: "#fff",
                           fontWeight: "bold",
                           borderRadius: "12px",
                           px: 1.5,
                         }}
                       />
+
                     </Box>
                     <Box display="flex" alignItems="center" gap={1}>
                       <Typography variant="body2" color="text.secondary">
@@ -665,7 +677,7 @@ const Products = () => {
                         }}
                       />
                     </Box> */}
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color="text.secondary">                 
                       {data.description.slice(0, 80)}
                       <Tooltip
                         title={data.description}

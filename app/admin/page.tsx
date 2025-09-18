@@ -22,8 +22,6 @@ import EditProductModal from "@/components/modals/Edit-Feature-modal";
 import { useRouter } from "next/navigation";
 import Sidebar from "@/components/Product/Sidebar";
 
-
-
 type Product = {
   _id: string;
   title?: string;
@@ -76,12 +74,9 @@ export default function AdminDashboard() {
     setPage(0); // Reset to page 0
   };
 
-  
-
-
   const getProducts = () => {
     axios
-      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/product/get_products`)
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/product/get_all_products`)
       .then((res) => {
         if (res?.data && res?.data?.products) {
           setProducts(res?.data.products);
@@ -150,7 +145,7 @@ export default function AdminDashboard() {
     <>
       <Box display="flex">
         {/* Sidebar or left block */}
-        <Sidebar/>
+        <Sidebar />
 
         {/* Main Content Area */}
         <Paper
@@ -310,15 +305,15 @@ export default function AdminDashboard() {
           )}
         </Paper>
       </Box>
-     {open&& <AddProductModal open={open} onClose={() => setOpen(false)} />}
+      {open && <AddProductModal open={open} onClose={() => setOpen(false)} />}
 
-     {editOpen&& <EditProductModal
+      {editOpen && <EditProductModal
         open={editOpen}
         onClose={() => setEditOpen(false)}
         product={selectedProduct!}
         onUpdated={getProducts}
       />
-     }
+      }
     </>
   );
 }
