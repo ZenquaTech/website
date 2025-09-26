@@ -3,7 +3,9 @@ import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import { useEffect, useState } from "react";
 import Navbar from "./navbar";
-import { useMediaQuery, useTheme } from "@material-ui/core";
+import { useMediaQuery, useTheme, IconButton, Badge } from "@material-ui/core";
+import { usePathname } from "next/navigation";
+import { useProductContext } from "@/context/product/productContext";
 
 import { ThemeProvider } from "@mui/styles";
 import Image from "next/image";
@@ -38,6 +40,12 @@ export default function Header() {
   const theme = useTheme();
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
   const matches = useMediaQuery(theme.breakpoints.down("md"));
+  const pathname = usePathname();
+  const { cart } = useProductContext();
+  const isProductPage = pathname?.startsWith("/product");
+  const cartIcon = "/images/product/cart.svg";
+  const isSticky = pathname === "/product";
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -63,9 +71,15 @@ export default function Header() {
   return (
     <>
       <header
-        className="absolute w-full z-30"
+        //  className="absolute w-full z-30"
+        className={`${isSticky ? "fixed top-0" : "absolute"} w-full z-30`}
+
         // className="max-w-6xl mx-auto px-4 sm:px-6"
-        style={{ justifyContent: "space-between", zIndex: 1000 }}
+        style={{
+          justifyContent: "space-between", zIndex: 1000,
+          backgroundColor: isSticky ? "#151719" : "transparent", //for product page
+          height: isSticky ? (matches ? "75px" : "80px") : "80px", //for product page
+        }}
       >
         <nav
           className="md:flex md:grow "
@@ -76,7 +90,7 @@ export default function Header() {
             style={{ width: "100%" }}
           >
             <div
-              className="flex items-center justify-between h-20"
+              className="flex items-center justify-between h-20 relative"
               style={{ justifyContent: "space-between" }}
             >
               {/* Site branding */}
@@ -121,6 +135,21 @@ export default function Header() {
                   </div>
                 </div>
               )}
+              {isProductPage && (
+                <div className="absolute right-14 top-1/2 transform -translate-y-1/2 flex items-center">
+                  <IconButton
+                    component={Link}
+                    href="/poc-booking"
+                    color="primary"
+                    style={{ padding: 8 }}
+                  >
+                    <Badge badgeContent={cart.length} color="secondary">
+                      <img src={cartIcon} alt="Cart" className="cartIcon-img" />
+                    </Badge>
+                  </IconButton>
+                </div>
+              )}
+
             </div>
           </div>
           {!matches ? (
