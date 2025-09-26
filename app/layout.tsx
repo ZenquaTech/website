@@ -64,6 +64,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${surt.variable} ${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}
+        
       >
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
@@ -81,9 +82,9 @@ export default function RootLayout({
 
          <ThemeProvider theme={theme}>
         <div className="flex flex-col min-h-screen overflow-hidden">
-          {pathname === "/product"   &&  <PHeader /> } 
-          {pathname !== "/product" 
-          && pathname !== "/poc-booking"  
+          {pathname === "/product"   &&  <Header /> } 
+          { 
+           pathname !== "/poc-booking"  
           && pathname !== "/thank-you"  
           && pathname !== '/admin' 
           && pathname !== '/feedback'
