@@ -1,4 +1,4 @@
-//-------------------------------------------old code created in material ui v5 ------------------------------------------------------
+// //-------------------------------------------old code created in material ui v5 ------------------------------------------------------
 // "use client";
 // import React, { useEffect, useRef, useState } from "react";
 // import {
@@ -1614,7 +1614,8 @@ const Products = () => {
   const [showFirstAddPopup, setShowFirstAddPopup] = useState(false);
   const [showTooltipIndex, setShowTooltipIndex] = useState<number | null>(null);
   //for pagination
-  const [visibleCount, setVisibleCount] = useState(10);
+  const [visibleCount, setVisibleCount] = useState(6);
+  const [loadingMore, setLoadingMore] = useState(false);
 
   const { cart, setCart } = useProductContext();
   const router = useRouter();
@@ -1691,9 +1692,31 @@ const Products = () => {
 
   const visibleProducts = products.slice(0, visibleCount);
 
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 10);
-  };
+
+
+  //Infinite scroll logic
+  useEffect(() => {
+    const handleScroll = () => {
+      if (loadingMore || loading) return;
+
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 200
+      ) {
+        if (visibleCount < products.length) {
+          setLoadingMore(true);
+          setTimeout(() => {
+            // setVisibleCount((prev) => prev + 3); 
+            setVisibleCount((prev) => Math.min(prev + 6, products.length));
+            setLoadingMore(false);
+          }, 1500);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [visibleCount, products.length, loading, loadingMore]);
 
   const scrollToFeatures = () => {
     if (featuresRef.current) {
@@ -1889,7 +1912,7 @@ const Products = () => {
         )}
       </div>
 
-      {!loading && visibleCount < products.length && (
+      {/* {!loading && visibleCount < products.length && (
         <div className="flex justify-center mb-12">
           <button
             onClick={handleLoadMore}
@@ -1898,10 +1921,51 @@ const Products = () => {
             Load More
           </button>
         </div>
+      )} */}
+
+
+      {/* Bottom loader */}
+      {loadingMore && (
+        <div className="flex justify-center mb-8">
+          <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-[#019DCE]"></div>
+        </div>
       )}
-    
 
+      {/*  Go to Cart button at bottom */}
+      {!loading && visibleCount >= originalProducts.length && (
+        <div className="flex justify-center mb-16">
+          <button
+            onClick={() => router.push("/poc-booking")}
+            className="relative flex items-center gap-3 px-6 py-3 
+                 text-[#019DCE] font-semibold rounded-xl 
+                 hover:text-white transition-all duration-300 ease-in-out"
+          >
+            {/* Cart Icon with Badge */}
+            <div className="relative">
+              <img
+                src="/images/product/cart.svg"
+                alt="Cart"
+                className="w-9 h-9"
+              />
+              {cart.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white 
+                           text-xs font-bold rounded-full h-5 w-5 flex 
+                           items-center justify-center shadow-md">
+                  {cart.length}
+                </span>
+              )}
+            </div>
 
+            {/* Button Text */}
+            <span className="text-base md:text-lg">Go to Cart</span>
+
+            {/* Arrow Icon */}
+            <span className="text-xl">→</span>
+          </button>
+        </div>
+      )}
+
+      {/* first time product popup */}
       {showFirstAddPopup && (
         <div className="fixed top-20 right-5 bg-[#22c55e] text-white p-4 rounded shadow-lg z-50 animate-fade-in flex items-center justify-between min-w-[280px] border border-gray-700">
           <span className="mr-4 text-sm md:text-base">
@@ -1915,7 +1979,7 @@ const Products = () => {
             ×
           </button>
         </div>
-      )}
+      )}   
     </div>
   );
 };
